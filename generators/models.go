@@ -4,7 +4,6 @@ package main
 type TokenListToken struct {
 	ChainID  int    `json:"chainId"`
 	Decimals int    `json:"decimals"`
-	Count    int    `json:"count,omitempty"`
 	Address  string `json:"address"`
 	Name     string `json:"name"`
 	Symbol   string `json:"symbol"`
@@ -20,8 +19,11 @@ type TokenListData struct {
 		Minor int `json:"minor"`
 		Patch int `json:"patch"`
 	} `json:"version"`
-	Tags     map[string]interface{} `json:"tags"`
-	LogoURI  string                 `json:"logoURI"`
-	Keywords []string               `json:"keywords"`
-	Tokens   []TokenListToken       `json:"tokens"`
+	LogoURI           string                    `json:"logoURI"`
+	Tags              []string                  `json:"tags"`
+	Keywords          []string                  `json:"keywords"`
+	Tokens            []TokenListToken          `json:"tokens"`
+	PreviousTokensMap map[string]TokenListToken `json:"-"`
+	NextTokensMap     map[string]TokenListToken `json:"-"`
+	Extra             map[string]interface{}    `json:"extra,omitempty"`
 }

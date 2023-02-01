@@ -4,7 +4,6 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
-	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
 /**************************************************************************************************
@@ -74,9 +73,7 @@ func getDecimals(name string, contractAddress common.Address) ethereum.Call {
 
 /**************************************************************************************************
 ** fetchBasicInformations will, for a list of addresses, fetch all the relevant basic information
-** for the related token. This includes the name, the symbol, the decimals and the details about
-** the "underlying tokens" (ex: dai for aDAI). Supported underlying are Curve, AAVE, Compound.
-** Yearn's underlying are already in the initial token list.
+** for the related token. This includes the name, the symbol and the decimals.
 **
 ** Arguments:
 ** - chainID: the chain ID of the network we are working on
@@ -108,22 +105,19 @@ func fetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 	}
 
 	/**********************************************************************************************
-	** Regular fix for Fantom's RPC, which limit the number of calls in a multicall to a very low
-	** number. We split the multicall in multiple calls of 3 calls each.
-	** Otherwise, we just send the multicall as is.
+	** Regular fix for some RPC, which limit the number of calls in a multicall to a very low
+	** number.
 	**********************************************************************************************/
-	// maxBatch := math.MaxInt64
-	// if chainID == 250 {
-	maxBatch := 100
-	// }
+	maxBatch := 420
+	if chainID == 250 || chainID == 56 || chainID == 137 {
+		maxBatch = 420
+	}
 
 	/**********************************************************************************************
-	** Then we can proceed the responses. We will create a new relatedTokensList to be able to know
-	** which token to fetch then (ex: for aDAI, we also need to fetch the DAI token).
-	** Nb: A special case is for Ethereum coin, which is defaulted as address 0xEeeee....EEeE.
+	** Then we can proceed the responses.
 	**********************************************************************************************/
 	tokenList := make(map[string]*TERC20)
-	response := caller.ExecuteByBatch(calls, maxBatch, nil)
+	response := caller.ExecuteByBatch(chainID, calls, maxBatch, nil)
 	for _, token := range tokens {
 		rawName := response[token.String()+`name`]
 		rawSymbol := response[token.String()+`symbol`]
@@ -131,12 +125,80 @@ func fetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 
 		newToken := &TERC20{
 			Address:  token,
-			Name:     helpers.DecodeString(rawName),
-			Symbol:   helpers.DecodeString(rawSymbol),
-			Decimals: helpers.DecodeUint64(rawDecimals),
+			Name:     decodeString(rawName),
+			Symbol:   decodeString(rawSymbol),
+			Decimals: decodeUint64(rawDecimals),
 		}
 		tokenList[token.Hex()] = newToken
 	}
 
 	return tokenList
+}
+
+func fetchNames(chainID uint64, tokens []common.Address) map[string]string {
+	/**********************************************************************************************
+	** The first step is to prepare the multicall, connecting to the multicall instance and
+	** preparing the array of calls to send. All calls for all tokens will be send in a single
+	** multicall and will later be accessible via a concatened string `tokenAddress + methodName`.
+	**********************************************************************************************/
+	caller := ethereum.MulticallClientForChainID[chainID]
+	calls := []ethereum.Call{}
+	for _, token := range tokens {
+		calls = append(calls, getName(token.String(), token))
+	}
+
+	/**********************************************************************************************
+	** Regular fix for some RPC, which limit the number of calls in a multicall to a very low
+	** number.
+	**********************************************************************************************/
+	maxBatch := 420
+	if chainID == 250 || chainID == 56 || chainID == 137 {
+		maxBatch = 420
+	}
+
+	/**********************************************************************************************
+	** Then we can proceed the responses.
+	**********************************************************************************************/
+	nameList := make(map[string]string)
+	response := caller.ExecuteByBatch(chainID, calls, maxBatch, nil)
+	for _, token := range tokens {
+		rawName := response[token.String()+`name`]
+		nameList[token.Hex()] = decodeString(rawName)
+	}
+
+	return nameList
+}
+
+func fetchDecimals(chainID uint64, tokens []common.Address) map[string]uint64 {
+	/**********************************************************************************************
+	** The first step is to prepare the multicall, connecting to the multicall instance and
+	** preparing the array of calls to send. All calls for all tokens will be send in a single
+	** multicall and will later be accessible via a concatened string `tokenAddress + methodName`.
+	**********************************************************************************************/
+	caller := ethereum.MulticallClientForChainID[chainID]
+	calls := []ethereum.Call{}
+	for _, token := range tokens {
+		calls = append(calls, getDecimals(token.String(), token))
+	}
+
+	/**********************************************************************************************
+	** Regular fix for some RPC, which limit the number of calls in a multicall to a very low
+	** number.
+	**********************************************************************************************/
+	maxBatch := 420
+	if chainID == 250 || chainID == 56 || chainID == 137 {
+		maxBatch = 420
+	}
+
+	/**********************************************************************************************
+	** Then we can proceed the responses.
+	**********************************************************************************************/
+	decimalsList := make(map[string]uint64)
+	response := caller.ExecuteByBatch(chainID, calls, maxBatch, nil)
+	for _, token := range tokens {
+		rawDecimals := response[token.String()+`decimals`]
+		decimalsList[token.Hex()] = decodeUint64(rawDecimals)
+	}
+
+	return decimalsList
 }

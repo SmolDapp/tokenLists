@@ -12,6 +12,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
+	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 type Call struct {
@@ -102,6 +103,7 @@ func (caller *TEthMultiCaller) execute(
 // avoid the gasLimit error, and execute as many transactions as required to get
 // the results.
 func (caller *TEthMultiCaller) ExecuteByBatch(
+	chainID uint64,
 	calls []Call,
 	batchSize int,
 	blockNumber *big.Int,
@@ -127,23 +129,27 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 
 		tempPackedResp, err := caller.execute(group, blockNumber)
 		if err != nil {
+			logs.Error(chainID, err)
 			continue
 		}
 
 		// Unpack results
 		unpackedResp, err := caller.Abi.Unpack("tryAggregate", tempPackedResp)
 		if err != nil {
+			logs.Error(chainID, err)
 			continue
 		}
 
 		a, err := json.Marshal(unpackedResp[0])
 		if err != nil {
+			logs.Error(chainID, err)
 			continue
 		}
 
 		// Unpack results
 		var tempResp []CallResponse
 		if err := json.Unmarshal(a, &tempResp); err != nil {
+			logs.Error(chainID, err)
 			continue
 		}
 
