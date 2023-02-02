@@ -23,7 +23,7 @@ jobs:
            go-version-file: './go.mod'
            go-version: '1.19.3'
         - name: run
-          run: go run ./generators
+          run: ${{ secrets.GOENV }} go run ./generators
         - name: Commit files
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
