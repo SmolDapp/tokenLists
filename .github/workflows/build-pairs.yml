@@ -1,13 +1,7 @@
-name: 📑 Updating lists
+name: 📑 Updating pairs lists
 on:
   schedule:
-    - cron: '0 0 * * Sun'
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    - cron: '0 0 * * Mon'
   workflow_dispatch:
 
 jobs:
@@ -35,7 +29,7 @@ jobs:
             RPC_URI_FOR_250=${{ secrets.RPC_URI_FOR_250 }} 
             RPC_URI_FOR_42161=${{ secrets.RPC_URI_FOR_42161 }} 
             RPC_URI_FOR_43114=${{ secrets.RPC_URI_FOR_43114 }} 
-            go run ./generators coingecko 1inch paraswap defillama yearn curve cowswap uniswap sushiswap ledgers portals wido
+            go run ./generators uniswap-pairs sushiswap-pairs
         - name: Commit files
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
