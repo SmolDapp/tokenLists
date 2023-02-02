@@ -236,7 +236,7 @@ func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken,
 }
 
 func buildUniswapPairsTokenList() {
-	tokenList := loadTokenListFromJsonFile(`uniswap-pair.json`)
+	tokenList := loadTokenListFromJsonFile(`uniswap-pairs.json`)
 	tokenList.Name = "Uniswap Token Pairs"
 	tokenList.LogoURI = "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir"
 
@@ -249,5 +249,5 @@ func buildUniswapPairsTokenList() {
 		tokenList.Extra[`lastBlockSyncFor_`+chainIDStr] = blockNumber
 	}
 
-	saveTokenListInJsonFile(tokenList, tokens, `uniswap-pair.json`, Append)
+	saveTokenListInJsonFile(tokenList, tokens, `uniswap-pairs.json`, Append)
 }

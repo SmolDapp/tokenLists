@@ -210,7 +210,7 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]TokenListToke
 }
 
 func buildSushiswapPairsTokenList() {
-	tokenList := loadTokenListFromJsonFile(`sushiswap-pair.json`)
+	tokenList := loadTokenListFromJsonFile(`sushiswap-pairs.json`)
 	tokenList.Name = "SushiSwap Token Pairs"
 	tokenList.LogoURI = "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png"
 
@@ -223,5 +223,5 @@ func buildSushiswapPairsTokenList() {
 		tokenList.Extra[`lastBlockSyncFor_`+chainIDStr] = blockNumber
 	}
 
-	saveTokenListInJsonFile(tokenList, tokens, `sushiswap-pair.json`, Append)
+	saveTokenListInJsonFile(tokenList, tokens, `sushiswap-pairs.json`, Append)
 }

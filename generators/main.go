@@ -19,7 +19,7 @@ var instructionToFunction = map[string]func(){
 	`cowswap`:         buildCowswapTokenList,
 	`uniswap`:         buildUniswapTokenList,
 	`sushiswap`:       buildSushiswapTokenList,
-	`ledgers`:         buildLedgersTokenList,
+	`ledger`:          buildLedgersTokenList,
 	`portals`:         buildPortalsTokenList,
 	`wido`:            buildWidoTokenList,
 	`uniswap-pairs`:   buildUniswapPairsTokenList,
@@ -37,7 +37,6 @@ func main() {
 			logs.Success(`Done!`)
 		}
 	} else {
-		//grab each arg and run the generator
 		for _, arg := range os.Args[1:] {
 			logs.Info(`Running generator:`, strings.ToTitle(arg))
 			instructionToFunction[arg]()
