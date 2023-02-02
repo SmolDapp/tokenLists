@@ -27,7 +27,6 @@ type TokenListData struct {
 		Patch int `json:"patch"`
 	} `json:"version"`
 	LogoURI           string                    `json:"logoURI"`
-	Tags              []string                  `json:"tags"`
 	Keywords          []string                  `json:"keywords"`
 	Tokens            []TokenListToken          `json:"tokens"`
 	PreviousTokensMap map[string]TokenListToken `json:"-"`
@@ -40,7 +39,6 @@ func InitTokenList() TokenListData {
 	newTokenList := TokenListData{
 		Name:      ``,
 		Timestamp: ``,
-		Tags:      []string{},
 		Keywords:  []string{},
 		Tokens:    []TokenListToken{},
 	}

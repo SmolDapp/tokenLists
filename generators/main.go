@@ -43,4 +43,5 @@ func main() {
 			logs.Success(`Done!`)
 		}
 	}
+	buildSummary()
 }
