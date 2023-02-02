@@ -1,9 +1,8 @@
-package main
+package ethereum
 
 import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
-	"github.com/migratooor/tokenLists/generators/common/ethereum"
 )
 
 /**************************************************************************************************
@@ -13,10 +12,10 @@ import (
 
 var ERC20ABI, _ = contracts.ERC20MetaData.GetAbi()
 
-func getName(name string, contractAddress common.Address) ethereum.Call {
+func getName(name string, contractAddress common.Address) Call {
 	parsedData, err := ERC20ABI.Pack("name")
 	if err != nil {
-		return ethereum.Call{
+		return Call{
 			Target:   contractAddress,
 			Abi:      ERC20ABI,
 			Method:   `name`,
@@ -24,7 +23,7 @@ func getName(name string, contractAddress common.Address) ethereum.Call {
 			Name:     name,
 		}
 	}
-	return ethereum.Call{
+	return Call{
 		Target:   contractAddress,
 		Abi:      ERC20ABI,
 		Method:   `name`,
@@ -32,10 +31,10 @@ func getName(name string, contractAddress common.Address) ethereum.Call {
 		Name:     name,
 	}
 }
-func getSymbol(name string, contractAddress common.Address) ethereum.Call {
+func getSymbol(name string, contractAddress common.Address) Call {
 	parsedData, err := ERC20ABI.Pack("symbol")
 	if err != nil {
-		return ethereum.Call{
+		return Call{
 			Target:   contractAddress,
 			Abi:      ERC20ABI,
 			Method:   `symbol`,
@@ -43,7 +42,7 @@ func getSymbol(name string, contractAddress common.Address) ethereum.Call {
 			Name:     name,
 		}
 	}
-	return ethereum.Call{
+	return Call{
 		Target:   contractAddress,
 		Abi:      ERC20ABI,
 		Method:   `symbol`,
@@ -51,10 +50,10 @@ func getSymbol(name string, contractAddress common.Address) ethereum.Call {
 		Name:     name,
 	}
 }
-func getDecimals(name string, contractAddress common.Address) ethereum.Call {
+func getDecimals(name string, contractAddress common.Address) Call {
 	parsedData, err := ERC20ABI.Pack("decimals")
 	if err != nil {
-		return ethereum.Call{
+		return Call{
 			Target:   contractAddress,
 			Abi:      ERC20ABI,
 			Method:   `decimals`,
@@ -62,7 +61,7 @@ func getDecimals(name string, contractAddress common.Address) ethereum.Call {
 			Name:     name,
 		}
 	}
-	return ethereum.Call{
+	return Call{
 		Target:   contractAddress,
 		Abi:      ERC20ABI,
 		Method:   `decimals`,
@@ -90,14 +89,14 @@ type TERC20 struct {
 	Decimals uint64
 }
 
-func fetchBasicInformations(chainID uint64, tokens []common.Address) map[string]*TERC20 {
+func FetchBasicInformations(chainID uint64, tokens []common.Address) map[string]*TERC20 {
 	/**********************************************************************************************
 	** The first step is to prepare the multicall, connecting to the multicall instance and
 	** preparing the array of calls to send. All calls for all tokens will be send in a single
 	** multicall and will later be accessible via a concatened string `tokenAddress + methodName`.
 	**********************************************************************************************/
-	caller := ethereum.MulticallClientForChainID[chainID]
-	calls := []ethereum.Call{}
+	caller := MulticallClientForChainID[chainID]
+	calls := []Call{}
 	for _, token := range tokens {
 		calls = append(calls, getName(token.String(), token))
 		calls = append(calls, getSymbol(token.String(), token))
@@ -135,14 +134,14 @@ func fetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 	return tokenList
 }
 
-func fetchNames(chainID uint64, tokens []common.Address) map[string]string {
+func FetchNames(chainID uint64, tokens []common.Address) map[string]string {
 	/**********************************************************************************************
 	** The first step is to prepare the multicall, connecting to the multicall instance and
 	** preparing the array of calls to send. All calls for all tokens will be send in a single
 	** multicall and will later be accessible via a concatened string `tokenAddress + methodName`.
 	**********************************************************************************************/
-	caller := ethereum.MulticallClientForChainID[chainID]
-	calls := []ethereum.Call{}
+	caller := MulticallClientForChainID[chainID]
+	calls := []Call{}
 	for _, token := range tokens {
 		calls = append(calls, getName(token.String(), token))
 	}
@@ -169,14 +168,14 @@ func fetchNames(chainID uint64, tokens []common.Address) map[string]string {
 	return nameList
 }
 
-func fetchDecimals(chainID uint64, tokens []common.Address) map[string]uint64 {
+func FetchDecimals(chainID uint64, tokens []common.Address) map[string]uint64 {
 	/**********************************************************************************************
 	** The first step is to prepare the multicall, connecting to the multicall instance and
 	** preparing the array of calls to send. All calls for all tokens will be send in a single
 	** multicall and will later be accessible via a concatened string `tokenAddress + methodName`.
 	**********************************************************************************************/
-	caller := ethereum.MulticallClientForChainID[chainID]
-	calls := []ethereum.Call{}
+	caller := MulticallClientForChainID[chainID]
+	calls := []Call{}
 	for _, token := range tokens {
 		calls = append(calls, getDecimals(token.String(), token))
 	}

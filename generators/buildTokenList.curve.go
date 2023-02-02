@@ -1,14 +1,11 @@
 package main
 
 import (
-	"encoding/json"
-	"io/ioutil"
-	"net/http"
 	"sync"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
-	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 type TCurveTokenData struct {
@@ -93,20 +90,19 @@ func handleCurveTokenList(listPerChainID map[uint64][]TCurveTokenData) []TokenLi
 				}
 			}
 
-			tokensInfo := fetchBasicInformations(chainID, listOfAddresses)
-			for _, token := range listOfAddresses {
-				if tokenInfo, ok := tokensInfo[token.Hex()]; ok {
-					if (tokenInfo.Name == `` || tokenInfo.Symbol == `` || tokenInfo.Decimals == 0) || helpers.IsIgnoredToken(chainID, token) {
-						continue
+			tokensInfo := ethereum.FetchBasicInformations(chainID, listOfAddresses)
+			for _, address := range listOfAddresses {
+				if token, ok := tokensInfo[address.Hex()]; ok {
+					if newToken, err := SetToken(
+						token.Address,
+						token.Name,
+						token.Symbol,
+						``,
+						chainID,
+						int(token.Decimals),
+					); err == nil {
+						tokensForChainID[chainID] = append(tokensForChainID[chainID], newToken)
 					}
-					tokensForChainID[chainID] = append(tokensForChainID[chainID], TokenListToken{
-						ChainID:  int(chainID),
-						Address:  token.Hex(),
-						Name:     tokenInfo.Name,
-						Symbol:   tokenInfo.Symbol,
-						Decimals: int(tokenInfo.Decimals),
-						LogoURI:  ``,
-					})
 				}
 			}
 		}(chainID, list)
@@ -125,33 +121,12 @@ func fetchCurveTokenList() []TokenListToken {
 	listPerChainID := make(map[uint64][]TCurveTokenData)
 
 	for chainID, uris := range APIURIForCurve {
-		if helpers.IsIgnoredChain(chainID) {
+		if helpers.IsChainIDIgnored(chainID) {
 			continue
 		}
 
 		for _, uri := range uris {
-			resp, err := http.Get(uri)
-			if err != nil {
-				logs.Error(err)
-				return []TokenListToken{}
-			}
-			defer resp.Body.Close()
-			body, err := ioutil.ReadAll(resp.Body)
-			if err != nil {
-				logs.Error(err)
-				return []TokenListToken{}
-			}
-			if (resp.StatusCode < 200) || (resp.StatusCode > 299) {
-				logs.Error(`impossible to fetch Curve token list`)
-				return []TokenListToken{}
-			}
-
-			var list TCurveList
-			if err := json.Unmarshal(body, &list); err != nil {
-				logs.Error(err)
-				return []TokenListToken{}
-			}
-
+			list := helpers.FetchJSON[TCurveList](uri)
 			listPerChainID[chainID] = append(listPerChainID[chainID], list.Data.PoolData...)
 		}
 	}

@@ -1,13 +1,9 @@
 package main
 
 import (
-	"encoding/json"
-	"io/ioutil"
-	"net/http"
-
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
-	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 type TParaswapTokenData struct {
@@ -31,59 +27,33 @@ func fetchParaswapTokenList() []TokenListToken {
 	tokens := []TokenListToken{}
 
 	for chainID, uri := range APIURIForParaswap {
-		if helpers.IsIgnoredChain(chainID) {
+		if helpers.IsChainIDIgnored(chainID) {
 			continue
 		}
 
-		resp, err := http.Get(uri)
-		if err != nil {
-			logs.Error(err)
-			return []TokenListToken{}
-		}
-		defer resp.Body.Close()
-		body, err := ioutil.ReadAll(resp.Body)
-		if err != nil {
-			logs.Error(err)
-			return []TokenListToken{}
-		}
-		if (resp.StatusCode < 200) || (resp.StatusCode > 299) {
-			logs.Error(`impossible to fetch Paraswap token list`)
-			return []TokenListToken{}
-		}
-
-		var list TParaswapList
-		if err := json.Unmarshal(body, &list); err != nil {
-			logs.Error(err)
-			return []TokenListToken{}
-		}
-
 		tokenAddresses := []common.Address{}
+		list := helpers.FetchJSON[TParaswapList](uri)
 		for _, v := range list.Tokens {
 			tokenAddresses = append(tokenAddresses, common.HexToAddress(v.Address))
 		}
-		tokensInfo := fetchNames(chainID, tokenAddresses)
+		tokensInfo := ethereum.FetchNames(chainID, tokenAddresses)
 
-		for _, v := range list.Tokens {
-			name, ok := tokensInfo[common.HexToAddress(v.Address).Hex()]
-			if !ok {
-				continue
-			}
-			if (name == `` || v.Symbol == `` || v.Decimals == 0) || helpers.IsIgnoredToken(chainID, common.HexToAddress(v.Address)) {
-				continue
-			}
-
-			logoURI := v.LogoURI
+		for _, token := range list.Tokens {
+			logoURI := token.LogoURI
 			if logoURI == `https://cdn.paraswap.io/token/token.png` {
 				logoURI = ``
 			}
-			tokens = append(tokens, TokenListToken{
-				ChainID:  int(chainID),
-				Decimals: v.Decimals,
-				Address:  common.HexToAddress(v.Address).Hex(),
-				Name:     name,
-				Symbol:   v.Symbol,
-				LogoURI:  logoURI,
-			})
+
+			if newToken, err := SetToken(
+				common.HexToAddress(token.Address),
+				helpers.SafeString(tokensInfo[common.HexToAddress(token.Address).Hex()], ``),
+				token.Symbol,
+				helpers.SafeString(token.LogoURI, ``),
+				chainID,
+				token.Decimals,
+			); err == nil {
+				tokens = append(tokens, newToken)
+			}
 		}
 	}
 

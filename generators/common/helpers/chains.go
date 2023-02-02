@@ -1,6 +1,22 @@
 package helpers
 
-var IGNORED_CHAINIDS = map[uint64]bool{
+var SUPPORTED_CHAIN_IDS = map[uint64]bool{
+	1:     true, // Ethereum
+	10:    true, // Optimism
+	56:    true, // Binance Smart Chain
+	100:   true, // xDai/Gnosis
+	137:   true, // Polygon
+	250:   true, // Fantom
+	42161: true, // Arbitrum
+	43114: true, // Avalanche
+}
+
+// IsChainIDSupported returns true if the chainID is supported by our program
+func IsChainIDSupported(chainID uint64) bool {
+	return SUPPORTED_CHAIN_IDS[chainID]
+}
+
+var IGNORED_CHAIN_IDS = map[uint64]bool{
 	3:           true, // Ropsten
 	4:           true, // Rinkeby
 	5:           true, // Goerli
@@ -31,6 +47,7 @@ var IGNORED_CHAINIDS = map[uint64]bool{
 	11297108109: true, // Palm
 }
 
-func IsIgnoredChain(chainId uint64) bool {
-	return IGNORED_CHAINIDS[chainId]
+// IsChainIDIgnored returns true if the chainID is ignored by our program
+func IsChainIDIgnored(chainID uint64) bool {
+	return IGNORED_CHAIN_IDS[chainID]
 }

@@ -1,14 +1,11 @@
 package main
 
 import (
-	"encoding/json"
-	"io/ioutil"
-	"net/http"
 	"sync"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
-	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 type TDefillamaList struct {
@@ -63,20 +60,19 @@ func handleDefillamaTokenList(listPerChainID map[uint64][]TDefillamaList) []Toke
 				listOfAddresses = append(listOfAddresses, token.Address)
 			}
 
-			decimalsInfo := fetchDecimals(chainID, listOfAddresses)
+			decimalsInfo := ethereum.FetchDecimals(chainID, listOfAddresses)
 			for _, token := range list {
-				if decimal, ok := decimalsInfo[token.Address.Hex()]; ok {
-					if (token.Name == `` || token.Symbol == `` || decimal == 0) || helpers.IsIgnoredToken(chainID, token.Address) {
-						continue
+				if decimals, ok := decimalsInfo[token.Address.Hex()]; ok {
+					if newToken, err := SetToken(
+						token.Address,
+						token.Name,
+						token.Symbol,
+						token.LogoURI,
+						chainID,
+						int(decimals),
+					); err == nil {
+						tokensForChainID[chainID] = append(tokensForChainID[chainID], newToken)
 					}
-					tokensForChainID[chainID] = append(tokensForChainID[chainID], TokenListToken{
-						ChainID:  int(chainID),
-						Address:  token.Address.Hex(),
-						Name:     token.Name,
-						Symbol:   token.Symbol,
-						Decimals: int(decimal),
-						LogoURI:  token.LogoURI,
-					})
 				}
 			}
 		}(chainID, list)
@@ -92,28 +88,7 @@ func handleDefillamaTokenList(listPerChainID map[uint64][]TDefillamaList) []Toke
 }
 
 func fetchDefillamaTokenList() []TokenListToken {
-	resp, err := http.Get(`https://defillama-datasets.llama.fi/tokenlist/all.json`)
-	if err != nil {
-		logs.Error(err)
-		return []TokenListToken{}
-	}
-	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		logs.Error(err)
-		return []TokenListToken{}
-	}
-	if (resp.StatusCode < 200) || (resp.StatusCode > 299) {
-		logs.Error(`impossible to fetch DefiLlama token list`)
-		return []TokenListToken{}
-	}
-
-	list := []TDefillamaList{}
-	if err := json.Unmarshal(body, &list); err != nil {
-		logs.Error(err)
-		return []TokenListToken{}
-	}
-
+	list := helpers.FetchJSON[[]TDefillamaList](`https://defillama-datasets.llama.fi/tokenlist/all.json`)
 	listPerChainID := make(map[uint64][]TDefillamaList)
 	for _, v := range list {
 		if len(v.Platforms) == 0 {
@@ -121,7 +96,7 @@ func fetchDefillamaTokenList() []TokenListToken {
 		}
 		for platformName, addressOnPlatform := range v.Platforms {
 			chainID := defillamaMapNetworkNameToChainID(platformName)
-			if chainID == 0 || helpers.IsIgnoredChain(chainID) {
+			if chainID == 0 || helpers.IsChainIDIgnored(chainID) {
 				continue
 			}
 			if helpers.IsIgnoredToken(chainID, common.HexToAddress(addressOnPlatform)) {

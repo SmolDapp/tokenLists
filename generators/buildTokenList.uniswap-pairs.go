@@ -81,10 +81,10 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address, a
 			defer perChainWG.Done()
 
 			chainIDStr := strconv.FormatUint(chainID, 10)
-			tokensInfo := fetchBasicInformations(chainID, list)
+			tokensInfo := ethereum.FetchBasicInformations(chainID, list)
 			for _, address := range list {
 				if token, ok := tokensInfo[address.Hex()]; ok {
-					if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(chainID, address) {
+					if token.Name == `` || token.Symbol == `` {
 						continue
 					}
 
@@ -99,14 +99,16 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address, a
 						symbol = `UNI-V2 ` + tokensInfo[token1].Symbol + ` + ` + tokensInfo[token2].Symbol
 					}
 
-					tokensForChainID[chainID] = append(tokensForChainID[chainID], TokenListToken{
-						ChainID:  int(chainID),
-						Address:  token.Address.Hex(),
-						Name:     name,
-						Symbol:   symbol,
-						Decimals: int(token.Decimals),
-						LogoURI:  ``,
-					})
+					if newToken, err := SetToken(
+						token.Address,
+						name,
+						symbol,
+						``,
+						chainID,
+						int(token.Decimals),
+					); err == nil {
+						tokensForChainID[chainID] = append(tokensForChainID[chainID], newToken)
+					}
 				}
 			}
 		}(chainID, list)
@@ -132,7 +134,7 @@ func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken,
 	** and see the pairs and tokens that are being used
 	**************************************************************************/
 	for chainID, uniContract := range UniswapContractsPerChainID {
-		if helpers.IsIgnoredChain(chainID) {
+		if helpers.IsChainIDIgnored(chainID) {
 			continue
 		}
 		tokensPerChainID[chainID] = []common.Address{}

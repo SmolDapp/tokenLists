@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"errors"
 	"io/ioutil"
-	"os"
 	"reflect"
 	"sort"
 	"strconv"
@@ -16,20 +15,12 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
-type JSONTokensMethods string
+type JSONSaveTokensMethods string
 
 const (
-	Standard JSONTokensMethods = "Standard"
-	Append   JSONTokensMethods = "Append"
+	Standard JSONSaveTokensMethods = "Standard"
+	Append   JSONSaveTokensMethods = "Append"
 )
-
-// create creates a file with the given path and returns the file object
-func create(p string) error {
-	if err := os.MkdirAll(p, 0770); err != nil {
-		return err
-	}
-	return nil
-}
 
 // loadTokenListFromJsonFile loads a token list from a json file
 func loadTokenListFromJsonFile(filePath string) TokenListData {
@@ -37,20 +28,19 @@ func loadTokenListFromJsonFile(filePath string) TokenListData {
 	content, err := ioutil.ReadFile(helpers.BASE_PATH + `/lists/` + filePath)
 	if err != nil {
 		logs.Error(err)
-		return initEmptyTokenList()
+		return InitTokenList()
 	}
-	err = json.Unmarshal(content, &tokenList)
-	if err != nil {
+	if err = json.Unmarshal(content, &tokenList); err != nil {
 		logs.Error(err)
-		return initEmptyTokenList()
+		return InitTokenList()
 	}
 
 	tokenList.PreviousTokensMap = make(map[string]TokenListToken)
 	for _, token := range tokenList.Tokens {
-		if helpers.IsIgnoredChain(uint64(token.ChainID)) {
+		if helpers.IsChainIDIgnored(token.ChainID) {
 			continue
 		}
-		key := GetKey(uint64(token.ChainID), common.HexToAddress(token.Address))
+		key := getKey(token.ChainID, common.HexToAddress(token.Address))
 		tokenList.PreviousTokensMap[key] = token
 	}
 	tokenList.NextTokensMap = make(map[string]TokenListToken)
@@ -62,7 +52,7 @@ func saveTokenListInJsonFile(
 	tokenList TokenListData,
 	tokens []TokenListToken,
 	filePath string,
-	method JSONTokensMethods,
+	method JSONSaveTokensMethods,
 ) error {
 	/**************************************************************************
 	** First part is transforming the token list into a map. This will allow
@@ -73,21 +63,21 @@ func saveTokenListInJsonFile(
 	**************************************************************************/
 	if method == Append {
 		for _, token := range tokenList.PreviousTokensMap {
-			if helpers.IsIgnoredChain(uint64(token.ChainID)) {
+			if helpers.IsChainIDIgnored(token.ChainID) {
 				continue
 			}
-			if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(uint64(token.ChainID), common.HexToAddress(token.Address)) {
+			if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(token.ChainID, common.HexToAddress(token.Address)) {
 				continue
 			}
-			tokenList.NextTokensMap[GetKey(uint64(token.ChainID), common.HexToAddress(token.Address))] = token
+			tokenList.NextTokensMap[getKey(token.ChainID, common.HexToAddress(token.Address))] = token
 		}
 	}
 
 	for _, token := range tokens {
-		if helpers.IsIgnoredChain(uint64(token.ChainID)) {
+		if helpers.IsChainIDIgnored(token.ChainID) {
 			continue
 		}
-		tokenList.NextTokensMap[GetKey(uint64(token.ChainID), common.HexToAddress(token.Address))] = token
+		tokenList.NextTokensMap[getKey(token.ChainID, common.HexToAddress(token.Address))] = token
 	}
 
 	if len(tokenList.NextTokensMap) == 0 {
@@ -107,7 +97,7 @@ func saveTokenListInJsonFile(
 	shouldBumpMinor := false
 	shouldBumpPatch := false
 	for _, token := range tokenList.NextTokensMap {
-		key := GetKey(uint64(token.ChainID), common.HexToAddress(token.Address))
+		key := getKey(token.ChainID, common.HexToAddress(token.Address))
 		if _, ok := tokenList.PreviousTokensMap[key]; !ok {
 			shouldBumpMinor = true
 		} else if !reflect.DeepEqual(token, tokenList.PreviousTokensMap[key]) {
@@ -148,7 +138,7 @@ func saveTokenListInJsonFile(
 		}
 
 		token := tokenList.NextTokensMap[k]
-		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(uint64(token.ChainID), common.HexToAddress(token.Address)) {
+		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(token.ChainID, common.HexToAddress(token.Address)) {
 			continue
 		}
 		tokenList.Tokens[i] = tokenList.NextTokensMap[k]
@@ -168,7 +158,7 @@ func saveTokenListInJsonFile(
 	}
 
 	for chainID, tokens := range tokeListPerChainID {
-		if helpers.IsIgnoredChain(chainID) {
+		if helpers.IsChainIDIgnored(chainID) {
 			continue
 		}
 		chainIDStr := strconv.FormatUint(chainID, 10)
@@ -177,7 +167,7 @@ func saveTokenListInJsonFile(
 		if err != nil {
 			return err
 		}
-		create(helpers.BASE_PATH + `/lists/` + chainIDStr)
+		helpers.CreateFile(helpers.BASE_PATH + `/lists/` + chainIDStr)
 		if err = ioutil.WriteFile(helpers.BASE_PATH+`/lists/`+chainIDStr+`/`+filePath, jsonData, 0644); err != nil {
 			logs.Error(err)
 			return err
@@ -187,43 +177,9 @@ func saveTokenListInJsonFile(
 	return nil
 }
 
-// initEmptyTokenList initializes an empty token list
-func initEmptyTokenList() TokenListData {
-	newTokenList := TokenListData{
-		Name:      ``,
-		Timestamp: ``,
-		Tags:      []string{},
-		Keywords:  []string{},
-		Tokens:    []TokenListToken{},
-	}
-	newTokenList.Version.Major = 0
-	newTokenList.Version.Minor = 0
-	newTokenList.Version.Patch = 0
-	newTokenList.PreviousTokensMap = make(map[string]TokenListToken)
-	newTokenList.NextTokensMap = make(map[string]TokenListToken)
-
-	return newTokenList
-}
-
-// GetKey returns the key of a token in a specific format to make it sortable
-func GetKey(chainID uint64, address common.Address) string {
-	chainIDStr := strconv.FormatUint(uint64(chainID), 10)
+// getKey returns the key of a token in a specific format to make it sortable
+func getKey(chainID uint64, address common.Address) string {
+	chainIDStr := strconv.FormatUint(chainID, 10)
 	chainIDStr = strings.Repeat("0", 18-len(chainIDStr)) + chainIDStr
 	return chainIDStr + `_` + address.Hex()
-}
-
-// decodeString decodes a string from a slice of interfaces
-func decodeString(something []interface{}) string {
-	if len(something) == 0 {
-		return ""
-	}
-	return something[0].(string)
-}
-
-// decodeUint64 decodes a uint64 from a slice of interfaces
-func decodeUint64(something []interface{}) uint64 {
-	if len(something) == 0 {
-		return 0
-	}
-	return uint64(something[0].(uint8))
 }

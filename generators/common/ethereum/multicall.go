@@ -172,3 +172,19 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 
 	return results
 }
+
+// decodeString decodes a string from a slice of interfaces
+func decodeString(something []interface{}) string {
+	if len(something) == 0 {
+		return ""
+	}
+	return something[0].(string)
+}
+
+// decodeUint64 decodes a uint64 from a slice of interfaces
+func decodeUint64(something []interface{}) uint64 {
+	if len(something) == 0 {
+		return 0
+	}
+	return uint64(something[0].(uint8))
+}

@@ -1,15 +1,12 @@
 package main
 
 import (
-	"encoding/json"
-	"io/ioutil"
-	"net/http"
 	"strconv"
 	"sync"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
-	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 type TCoingeckoList struct {
@@ -43,21 +40,7 @@ func coingeckoMapNetworkNameToChainID(network string) uint64 {
 
 func fetchCoingeckoLegacyListLogoURI() map[string]string {
 	logoURIList := make(map[string]string)
-	resp, err := http.Get(`https://tokens.coingecko.com/uniswap/all.json`)
-	if err != nil {
-		return logoURIList
-	}
-	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return logoURIList
-	}
-
-	var list TokenListData
-	if err := json.Unmarshal(body, &list); err != nil {
-		return logoURIList
-	}
-
+	list := helpers.FetchJSON[TokenListData](`https://tokens.coingecko.com/uniswap/all.json`)
 	for _, v := range list.Tokens {
 		chainIDStr := strconv.FormatInt(int64(v.ChainID), 10)
 		logoURIList[chainIDStr+`_`+common.HexToAddress(v.Address).Hex()] = v.LogoURI
@@ -82,26 +65,19 @@ func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []To
 	for chainID, list := range tokensPerChainID {
 		go func(chainID uint64, list []common.Address) {
 			defer perChainWG.Done()
-			tokensInfo := fetchBasicInformations(chainID, list)
+			tokensInfo := ethereum.FetchBasicInformations(chainID, list)
 			for _, address := range list {
 				if token, ok := tokensInfo[address.Hex()]; ok {
-					if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(chainID, token.Address) {
-						continue
+					if newToken, err := SetToken(
+						token.Address,
+						token.Name,
+						token.Symbol,
+						helpers.SafeString(logoURIs[strconv.FormatInt(int64(chainID), 10)+`_`+token.Address.Hex()], ``),
+						chainID,
+						int(token.Decimals),
+					); err == nil {
+						tokensForChainID[chainID] = append(tokensForChainID[chainID], newToken)
 					}
-
-					logoURI := ``
-					if v, ok := logoURIs[strconv.FormatInt(int64(chainID), 10)+`_`+token.Address.Hex()]; ok {
-						logoURI = v
-					}
-
-					tokensForChainID[chainID] = append(tokensForChainID[chainID], TokenListToken{
-						ChainID:  int(chainID),
-						Address:  token.Address.Hex(),
-						Name:     token.Name,
-						Symbol:   token.Symbol,
-						Decimals: int(token.Decimals),
-						LogoURI:  logoURI,
-					})
 				}
 			}
 		}(chainID, list)
@@ -118,27 +94,7 @@ func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []To
 
 func fetchCoingeckoTokenList() []TokenListToken {
 	tokensPerChainID := make(map[uint64][]common.Address)
-	resp, err := http.Get(`https://api.coingecko.com/api/v3/coins/list?include_platform=true`)
-	if err != nil {
-		logs.Error(err)
-		return []TokenListToken{}
-	}
-	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		logs.Error(err)
-		return []TokenListToken{}
-	}
-	if (resp.StatusCode < 200) || (resp.StatusCode > 299) {
-		logs.Error(`impossible to fetch Coingecko token list`)
-		return []TokenListToken{}
-	}
-
-	list := []TCoingeckoList{}
-	if err := json.Unmarshal(body, &list); err != nil {
-		logs.Error(err)
-		return []TokenListToken{}
-	}
+	list := helpers.FetchJSON[[]TCoingeckoList](`https://api.coingecko.com/api/v3/coins/list?include_platform=true`)
 
 	for _, v := range list {
 		if len(v.Platforms) == 0 {
@@ -147,7 +103,7 @@ func fetchCoingeckoTokenList() []TokenListToken {
 
 		for platformName, addressOnPlatform := range v.Platforms {
 			chainID := coingeckoMapNetworkNameToChainID(platformName)
-			if chainID == 0 || helpers.IsIgnoredChain(chainID) {
+			if chainID == 0 || helpers.IsChainIDIgnored(chainID) {
 				continue
 			}
 			if helpers.IsIgnoredToken(chainID, common.HexToAddress(addressOnPlatform)) {

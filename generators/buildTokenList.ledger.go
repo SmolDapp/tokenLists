@@ -6,6 +6,7 @@ import (
 	"strings"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -13,21 +14,19 @@ func handleLedgerTokenList(tokensPerChainID map[uint64][]common.Address) []Token
 	tokenList := []TokenListToken{}
 
 	for chainID, list := range tokensPerChainID {
-		tokensInfo := fetchBasicInformations(chainID, list)
+		tokensInfo := ethereum.FetchBasicInformations(chainID, list)
 		for _, address := range list {
 			if token, ok := tokensInfo[address.Hex()]; ok {
-				if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(chainID, token.Address) {
-					continue
+				if newToken, err := SetToken(
+					token.Address,
+					token.Name,
+					token.Symbol,
+					``,
+					chainID,
+					int(token.Decimals),
+				); err == nil {
+					tokenList = append(tokenList, newToken)
 				}
-
-				tokenList = append(tokenList, TokenListToken{
-					ChainID:  int(chainID),
-					Address:  token.Address.Hex(),
-					Name:     token.Name,
-					Symbol:   token.Symbol,
-					Decimals: int(token.Decimals),
-					LogoURI:  ``,
-				})
 			}
 		}
 	}
