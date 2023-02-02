@@ -24,7 +24,16 @@ jobs:
            go-version-file: './go.mod'
            go-version: '1.19.3'
         - name: run
-          run: ENV_TEXT=${{ secrets.GOENV }} go run ./generators
+          run: >
+            RPC_URI_FOR_1=${{ secrets.RPC_URI_FOR_1 }} 
+            RPC_URI_FOR_10=${{ secrets.RPC_URI_FOR_10 }} 
+            RPC_URI_FOR_56=${{ secrets.RPC_URI_FOR_56 }} 
+            RPC_URI_FOR_100=${{ secrets.RPC_URI_FOR_100 }} 
+            RPC_URI_FOR_137=${{ secrets.RPC_URI_FOR_137 }} 
+            RPC_URI_FOR_250=${{ secrets.RPC_URI_FOR_250 }} 
+            RPC_URI_FOR_42161=${{ secrets.RPC_URI_FOR_42161 }} 
+            RPC_URI_FOR_43114=${{ secrets.RPC_URI_FOR_43114 }} 
+            go run ./generators
         - name: Commit files
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

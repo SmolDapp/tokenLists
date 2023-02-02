@@ -93,7 +93,7 @@ func saveTokenListInJsonFile(
 	if len(tokenList.NextTokensMap) == 0 {
 		return errors.New(`token list is empty`)
 	}
-	tokenList.Timestamp = time.Now().Format(time.RFC3339)
+	tokenList.Timestamp = time.Now().UTC().Format(`02/01/2006 15:04:05`)
 	tokenList.Tokens = []TokenListToken{}
 
 	/**************************************************************************
