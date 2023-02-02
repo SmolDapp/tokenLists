@@ -20,7 +20,8 @@ jobs:
         - name: GoSetup
           uses: actions/setup-go@v3
           with:
-            go-version: '1.16.1' # The Go version to download (if necessary) and use.
+           go-version-file: './go.mod'
+           go-version: '1.19.3'
         - name: run
           run: go run ./generators
         - name: Commit files
