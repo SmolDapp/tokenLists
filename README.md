@@ -15,13 +15,13 @@ It's difficult to assign blame for this project's woes. One of the hallmarks of 
 These lists are great resources for token discovery, scripts and apps, but their reliability is currently questionable.
 
 ### Introducing Tokenlistooor!
-Tokenlistooor is a fork of the Uniswap project with a focus on automation and some extra features:
-- **⚙ One Project, One File, One Automatic Generation**: All lists are generated via the Generator script, using either the project API, the project official TokenList or directly via some SmartContract Interactions. No more manual work!
-- **📝 Automatic versioning**: All lists are updated based on a Patch/Minor/Major version, where a Patch means an edit, a Minor an addition and a Major a deletation. With Tokenlistooor, no need to worry, the detection and the bumping is automagic!
-- **🔎 Per network lists for smaller files**: Sometime you just need a list for one network. No need to fetch all the rest, you can just access the one you want for the chain you want!
-- **♻️ Auto-updates**: All the lists are regenerated every week or every time a push is made, bumping the versions and grabing the new elements! Nothing else to do!
-- **🔗 Multichain support**: Support for chains 1, 10, 56, 100, 137, 250, 42161, 43114
-- **🦄 Multiple A-Tier protocols**: The generators are ready for multiple projects, Coingecko, 1Inch, Paraswap, DefiLlama, Yearn, Curve, Cowswap, Uniswap, Sushiswap, Ledgers, Portals, Wido and more soon!
+Tokenlistooor is a fork of the Uniswap project, with a focus on automation and some extra features. It's a one-stop shop for all your list-generation needs:
+- **⚙ One Project, One File, One Automatic Generation**: Generate lists using the project API, the project official TokenList, or directly via SmartContract Interactions - no more manual work!
+- **📝 Automatic Versioning**: All lists are updated automatically, based on a Patch/Minor/Major versioning system. A patch means an edit, a minor an addition, and a major a deletion - Tokenlistooor takes care of the rest!
+- **🔎 Per Network Lists for Smaller Files**: Need a list for a single network? No need to fetch all the rest - just access the one you want for the chain you need!
+- **♻️ Auto-Updates**: All lists are regenerated weekly or whenever a push is made, bumping the versions and grabbing the new elements - nothing else to do!
+- **🔗 Multichain Support**: Supports chains 1, 10, 56, 100, 137, 250, 42161, and 43114.
+- **🦄 Multiple A-Tier Protocols**: Generators are ready for multiple projects, including Coingecko, 1Inch, Paraswap, DefiLlama, Yearn, Curve, Cowswap, Uniswap, Sushiswap, Ledgers, Portals, Wido and more soon!
 
 
 ### How to use the generator
