@@ -33,6 +33,17 @@ var RPC_ENDPOINTS = map[uint64]string{
 	43114: `https://1rpc.io/avax/c`,
 }
 
+var DEFAULT_RPC_ENDPOINTS = map[uint64]string{
+	1:     `https://eth.public-rpc.com`,
+	10:    `https://mainnet.optimism.io`,
+	56:    `https://1rpc.io/bnb`,
+	100:   `https://rpc.gnosis.gateway.fm`,
+	137:   `https://polygon.llamarpc.com`,
+	250:   `https://rpc.ftm.tools`,
+	42161: `https://arbitrum.public-rpc.com`,
+	43114: `https://1rpc.io/avax/c`,
+}
+
 // MULTICALL_ADDRESSES contains the address of the multicall2 contract for a specific chainID
 var MULTICALL_ADDRESSES = map[uint64]common.Address{
 	1:     common.HexToAddress(`0x5ba1e12693dc8f9c48aad8770482f4739beed696`),
@@ -57,8 +68,13 @@ func init() {
 	for _, chainID := range SUPPORTED_CHAIN_IDS {
 		client, err := ethclient.Dial(GetRPCURI(chainID))
 		if err != nil {
-			logs.Error(err)
-			continue
+			os.Setenv(`RPC_URI_FOR_`+strconv.FormatUint(chainID, 10), DEFAULT_RPC_ENDPOINTS[chainID])
+			RPC_ENDPOINTS[chainID] = useEnv(`RPC_URI_FOR_`+strconv.FormatUint(chainID, 10), RPC_ENDPOINTS[chainID])
+			client, err = ethclient.Dial(RPC_ENDPOINTS[chainID])
+			if err != nil {
+				logs.Error(err)
+				continue
+			}
 		}
 		RPC[chainID] = client
 	}
