@@ -13,12 +13,12 @@ func main() {
 	// build1InchTokenList()
 	// buildParaswapTokenList()
 	// buildDefillamaTokenList()
-	// buildYearnTokenList()
+	buildYearnTokenList()
 	// buildCurveTokenList()
 	// buildCowswapTokenList()
 
 	// buildUniswapTokenList()
-	buildUniswapPairsTokenList()
+	// buildUniswapPairsTokenList()
 
 	// buildSushiswapTokenList()
 	// buildSushiswapPairsTokenList()
