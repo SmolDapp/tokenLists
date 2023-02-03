@@ -93,10 +93,16 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address, a
 					symbol := token.Symbol
 					if tokensOfThisPair, ok := allV2Pairs[chainIDStr+`_`+address.Hex()]; ok {
 						splittedTokens := strings.Split(tokensOfThisPair, `_`)
-						token1 := splittedTokens[0]
-						token2 := splittedTokens[1]
-						name = `Uniswap V2 ` + tokensInfo[token1].Name + ` + ` + tokensInfo[token2].Name
-						symbol = `UNI-V2 ` + tokensInfo[token1].Symbol + ` + ` + tokensInfo[token2].Symbol
+						if len(splittedTokens) == 2 {
+							token1 := splittedTokens[0]
+							token2 := splittedTokens[1]
+							if tokensInfo[token1] != nil && tokensInfo[token2] == nil {
+								token1 := splittedTokens[0]
+								token2 := splittedTokens[1]
+								name = `Uniswap V2 ` + tokensInfo[token1].Name + ` + ` + tokensInfo[token2].Name
+								symbol = `UNI-V2 ` + tokensInfo[token1].Symbol + ` + ` + tokensInfo[token2].Symbol
+							}
+						}
 					}
 
 					if newToken, err := SetToken(
@@ -125,13 +131,15 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address, a
 func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken, map[uint64]string) {
 	tokensPerChainID := make(map[uint64][]common.Address)
 
-	allTokens := make(map[string]bool)
+	allTokens := make(map[string]uint64)
 	allV2Pairs := make(map[string]string)
 	lastBlockSync := make(map[uint64]string)
 
 	/**************************************************************************
 	** Looping through all the Uniswap contracts per chainID to read the logs
-	** and see the pairs and tokens that are being used
+	** and see the pairs and tokens that are being used.
+	** In order to be included, a PAIR must have tokens that are both in at
+	** least 10 different pairs.
 	**************************************************************************/
 	for chainID, uniContract := range UniswapContractsPerChainID {
 		if helpers.IsChainIDIgnored(chainID) {
@@ -180,11 +188,19 @@ func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken,
 							if log.Error() != nil {
 								continue
 							}
-							allTokens[log.Event.Token0.Hex()] = true
-							allTokens[log.Event.Token1.Hex()] = true
-							allTokens[log.Event.Pair.Hex()] = true
+							if _, ok := allTokens[log.Event.Token0.Hex()]; !ok {
+								allTokens[log.Event.Token0.Hex()] = 0
+							}
+							if _, ok := allTokens[log.Event.Token1.Hex()]; !ok {
+								allTokens[log.Event.Token1.Hex()] = 0
+							}
+							if _, ok := allTokens[log.Event.Pair.Hex()]; !ok {
+								allTokens[log.Event.Pair.Hex()] = 0
+							}
+							allTokens[log.Event.Token0.Hex()]++
+							allTokens[log.Event.Token1.Hex()]++
 							allV2Pairs[chainIDStr+`_`+log.Event.Pair.Hex()] = log.Event.Token0.Hex() + `_` + log.Event.Token1.Hex()
-							count += 3
+							count += 2
 						}
 					} else {
 						logs.Error("Error fetching all tokens from uniswap factory contract: ", err)
@@ -208,8 +224,14 @@ func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken,
 							if log.Error() != nil {
 								continue
 							}
-							allTokens[log.Event.Token0.Hex()] = true
-							allTokens[log.Event.Token1.Hex()] = true
+							if _, ok := allTokens[log.Event.Token0.Hex()]; !ok {
+								allTokens[log.Event.Token0.Hex()] = 0
+							}
+							if _, ok := allTokens[log.Event.Token1.Hex()]; !ok {
+								allTokens[log.Event.Token1.Hex()] = 0
+							}
+							allTokens[log.Event.Token0.Hex()]++
+							allTokens[log.Event.Token1.Hex()]++
 							count += 2
 						}
 					} else {
@@ -218,6 +240,16 @@ func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken,
 				}
 			}
 			lastBlockSync[chainID] = strconv.FormatUint(currentBlockNumber, 10)
+		}
+		/**********************************************************************
+		** Adding the pairs that have at least 10 tokens in common
+		**********************************************************************/
+		for pair, tokensInPair := range allV2Pairs {
+			tokens := strings.Split(tokensInPair, `_`)
+			if (allTokens[tokens[0]] >= 10) && (allTokens[tokens[1]] >= 10) {
+				chainAndPair := strings.Split(pair, `_`)
+				allTokens[chainAndPair[1]] = 10
+			}
 		}
 
 		/**********************************************************************

@@ -29,7 +29,6 @@ var instructionToFunction = map[string]func(){
 func main() {
 	helpers.Init()
 	ethereum.Init()
-
 	if len(os.Args) < 2 {
 		for name, generator := range instructionToFunction {
 			logs.Info(`Running generator:`, strings.ToTitle(name))

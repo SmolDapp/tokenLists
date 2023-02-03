@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"io/ioutil"
+	"sort"
 
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
@@ -44,6 +45,10 @@ func buildSummary() {
 			TokenCount: len(tokenList.Tokens),
 		})
 	}
+
+	sort.Slice(tokenListSummary.Lists, func(i, j int) bool {
+		return tokenListSummary.Lists[i].Name < tokenListSummary.Lists[j].Name
+	})
 
 	jsonData, _ := json.MarshalIndent(tokenListSummary, "", "  ")
 	ioutil.WriteFile(helpers.BASE_PATH+`/lists/summary.json`, jsonData, 0644)
