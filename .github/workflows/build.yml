@@ -35,7 +35,7 @@ jobs:
             RPC_URI_FOR_250=${{ secrets.RPC_URI_FOR_250 }} 
             RPC_URI_FOR_42161=${{ secrets.RPC_URI_FOR_42161 }} 
             RPC_URI_FOR_43114=${{ secrets.RPC_URI_FOR_43114 }} 
-            go run ./generators coingecko 1inch paraswap defillama yearn curve cowswap uniswap sushiswap ledgers portals wido
+            go run ./generators coingecko 1inch paraswap defillama yearn curve cowswap uniswap sushiswap ledger portals wido
         - name: Commit files
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
