@@ -19,9 +19,10 @@ type TokenListToken struct {
 
 // TokenListData is the token list struct used in the default token list
 type TokenListData struct {
-	Name      string `json:"name"`
-	Timestamp string `json:"timestamp"`
-	Version   struct {
+	Name        string `json:"name"`
+	Description string `json:"description"`
+	Timestamp   string `json:"timestamp"`
+	Version     struct {
 		Major int `json:"major"`
 		Minor int `json:"minor"`
 		Patch int `json:"patch"`

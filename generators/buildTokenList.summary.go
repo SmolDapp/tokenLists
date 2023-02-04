@@ -10,12 +10,14 @@ import (
 
 // TMinTokenListData is the minimal data of a token list for the tokenListooor project
 type TMinTokenListData struct {
-	Name       string   `json:"name"`
-	Timestamp  string   `json:"timestamp"`
-	LogoURI    string   `json:"logoURI"`
-	Keywords   []string `json:"keywords"`
-	TokenCount int      `json:"tokenCount"`
-	Version    struct {
+	Name        string   `json:"name"`
+	Description string   `json:"description"`
+	Timestamp   string   `json:"timestamp"`
+	LogoURI     string   `json:"logoURI"`
+	URI         string   `json:"URI"`
+	Keywords    []string `json:"keywords"`
+	TokenCount  int      `json:"tokenCount"`
+	Version     struct {
 		Major int `json:"major"`
 		Minor int `json:"minor"`
 		Patch int `json:"patch"`
@@ -30,16 +32,19 @@ type TTokenListSummary struct {
 	Lists     []TMinTokenListData `json:"tokens"`
 }
 
+var BASE_URI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/`
+
 func buildSummary() {
 	tokenListSummary := TTokenListSummary{}
 	tokenListSummary.Name = `Tokenlistooor summary`
-	tokenListSummary.LogoURI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg`
+	tokenListSummary.LogoURI = BASE_URI + `.github/tokenlistooor.svg`
 	for name := range instructionToFunction {
 		tokenList := loadTokenListFromJsonFile(name + `.json`)
 		tokenListSummary.Lists = append(tokenListSummary.Lists, TMinTokenListData{
 			Name:       tokenList.Name,
 			Timestamp:  tokenList.Timestamp,
 			LogoURI:    tokenList.LogoURI,
+			URI:        BASE_URI + `lists/` + name + `.json`,
 			Keywords:   tokenList.Keywords,
 			Version:    tokenList.Version,
 			TokenCount: len(tokenList.Tokens),
