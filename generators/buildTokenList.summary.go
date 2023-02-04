@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"sort"
+	"time"
 
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
@@ -27,7 +28,7 @@ type TMinTokenListData struct {
 // TTokenListSummary is the summary of a token list for the tokenListooor project
 type TTokenListSummary struct {
 	Name      string              `json:"name"`
-	Timestamp string              `json:"timestamp"`
+	Timestamp int64               `json:"timestamp"`
 	LogoURI   string              `json:"logoURI"`
 	Lists     []TMinTokenListData `json:"lists"`
 }
@@ -38,6 +39,7 @@ func buildSummary() {
 	tokenListSummary := TTokenListSummary{}
 	tokenListSummary.Name = `Tokenlistooor summary`
 	tokenListSummary.LogoURI = BASE_URI + `.github/tokenlistooor.svg`
+	tokenListSummary.Timestamp = time.Now().UTC().Unix()
 	for name := range instructionToFunction {
 		tokenList := loadTokenListFromJsonFile(name + `.json`)
 		tokenListSummary.Lists = append(tokenListSummary.Lists, TMinTokenListData{
