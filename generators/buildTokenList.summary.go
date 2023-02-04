@@ -29,7 +29,7 @@ type TTokenListSummary struct {
 	Name      string              `json:"name"`
 	Timestamp string              `json:"timestamp"`
 	LogoURI   string              `json:"logoURI"`
-	Lists     []TMinTokenListData `json:"tokens"`
+	Lists     []TMinTokenListData `json:"lists"`
 }
 
 var BASE_URI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/`
