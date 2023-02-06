@@ -7,17 +7,8 @@ import (
 
 var TOKENLISTOOOR_LISTS = []string{
 	`coingecko`,
-	`1inch`,
-	`paraswap`,
-	`defillama`,
 	`yearn`,
 	`curve`,
-	`cowswap`,
-	`uniswap`,
-	`sushiswap`,
-	`ledger`,
-	`portals`,
-	`wido`,
 }
 
 func contains(arr []TokenListToken, value TokenListToken) bool {
