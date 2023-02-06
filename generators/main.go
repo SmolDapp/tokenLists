@@ -24,6 +24,7 @@ var instructionToFunction = map[string]func(){
 	`wido`:            buildWidoTokenList,
 	`uniswap-pairs`:   buildUniswapPairsTokenList,
 	`sushiswap-pairs`: buildSushiswapPairsTokenList,
+	`tokenlistooor`:   buildTokenListooorList,
 }
 
 func main() {
