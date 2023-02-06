@@ -2,11 +2,10 @@ package main
 
 import (
 	"github.com/migratooor/tokenLists/generators/common/helpers"
-	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 var TOKENLISTOOOR_LISTS = []string{
-	`coingecko`,
+	`paraswap`,
 	`yearn`,
 	`curve`,
 }
@@ -31,7 +30,6 @@ func buildTokenListooorList() {
 	**************************************************************************/
 	tokenListMap := make(map[string]TokenListToken)
 	for _, name := range TOKENLISTOOOR_LISTS {
-		logs.Info(`Adding tokens from`, name)
 		sourceTokenList := loadTokenListFromJsonFile(name + `.json`)
 		for _, token := range sourceTokenList.Tokens {
 			if data, ok := tokenListMap[helpers.ToAddress(token.Address)]; ok {
@@ -51,6 +49,5 @@ func buildTokenListooorList() {
 	for _, token := range tokenListMap {
 		tokens = append(tokens, token)
 	}
-
 	saveTokenListInJsonFile(tokenList, tokens, `tokenlistooor.json`, Standard)
 }
