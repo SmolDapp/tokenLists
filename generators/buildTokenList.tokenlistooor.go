@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 var TOKENLISTOOOR_LISTS = []string{
@@ -33,15 +34,32 @@ func buildTokenListooorList() {
 	tokenList.Name = `Tokenlistooor Token List`
 	tokenList.LogoURI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg`
 
+	/**************************************************************************
+	** Create a map of all tokens from all lists and only add the missing ones
+	** in it. Map are WAY faster than arrays.
+	**************************************************************************/
+	tokenListMap := make(map[string]TokenListToken)
 	for _, name := range TOKENLISTOOOR_LISTS {
+		logs.Info(`Adding tokens from`, name)
 		sourceTokenList := loadTokenListFromJsonFile(name + `.json`)
 		for _, token := range sourceTokenList.Tokens {
-			if contains(tokenList.Tokens, token) {
+			if data, ok := tokenListMap[helpers.ToAddress(token.Address)]; ok {
+				data.LogoURI = helpers.SafeString(data.LogoURI, token.LogoURI)
+				tokenListMap[helpers.ToAddress(token.Address)] = data
 				continue
 			}
-			tokenList.Tokens = append(tokenList.Tokens, token)
+			tokenListMap[helpers.ToAddress(token.Address)] = token
 		}
 	}
 
-	saveTokenListInJsonFile(tokenList, tokenList.Tokens, `tokenlistooor.json`, Standard)
+	/**************************************************************************
+	** Transform the map into an array to be able to save it correctly in the
+	** JSON file.
+	**************************************************************************/
+	tokens := []TokenListToken{}
+	for _, token := range tokenListMap {
+		tokens = append(tokens, token)
+	}
+
+	saveTokenListInJsonFile(tokenList, tokens, `tokenlistooor.json`, Standard)
 }
