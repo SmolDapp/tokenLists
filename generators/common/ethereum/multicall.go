@@ -3,7 +3,9 @@ package ethereum
 import (
 	"context"
 	"encoding/json"
+	"math"
 	"math/big"
+	"strings"
 	"time"
 
 	"github.com/ethereum/go-ethereum"
@@ -129,27 +131,40 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 
 		tempPackedResp, err := caller.execute(group, blockNumber)
 		if err != nil {
-			logs.Error(chainID, err)
-			continue
+			LIMIT_ERROR := strings.Contains(strings.ToLower(err.Error()), "call retuned result on length") && strings.Contains(strings.ToLower(err.Error()), "exceeding limit")
+			SIZE_ERROR := strings.Contains(strings.ToLower(err.Error()), "request entity too large")
+
+			if LIMIT_ERROR {
+				logs.Warning("Multicall gas limit error, retrying with smaller batch size", "batchSize", batchSize)
+			} else if SIZE_ERROR {
+				logs.Warning("Multicall size error, retrying with smaller batch size", "batchSize", batchSize)
+			}
+			//check if error is a request entity too large
+			if LIMIT_ERROR || SIZE_ERROR {
+				if batchSize == math.MaxInt64 {
+					return caller.ExecuteByBatch(chainID, calls, 10000, blockNumber)
+				}
+				return caller.ExecuteByBatch(chainID, calls, batchSize/2, blockNumber)
+			} else {
+				logs.Error(err)
+				continue
+			}
 		}
 
 		// Unpack results
 		unpackedResp, err := caller.Abi.Unpack("tryAggregate", tempPackedResp)
 		if err != nil {
-			logs.Error(chainID, err)
 			continue
 		}
 
 		a, err := json.Marshal(unpackedResp[0])
 		if err != nil {
-			logs.Error(chainID, err)
 			continue
 		}
 
 		// Unpack results
 		var tempResp []CallResponse
 		if err := json.Unmarshal(a, &tempResp); err != nil {
-			logs.Error(chainID, err)
 			continue
 		}
 
@@ -171,20 +186,4 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 	}
 
 	return results
-}
-
-// decodeString decodes a string from a slice of interfaces
-func decodeString(something []interface{}) string {
-	if len(something) == 0 {
-		return ""
-	}
-	return something[0].(string)
-}
-
-// decodeUint64 decodes a uint64 from a slice of interfaces
-func decodeUint64(something []interface{}) uint64 {
-	if len(something) == 0 {
-		return 0
-	}
-	return uint64(something[0].(uint8))
 }
