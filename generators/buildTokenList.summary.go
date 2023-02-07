@@ -40,16 +40,17 @@ func buildSummary() {
 	tokenListSummary.Name = `Tokenlistooor summary`
 	tokenListSummary.LogoURI = BASE_URI + `.github/tokenlistooor.svg`
 	tokenListSummary.Timestamp = time.Now().UTC().Unix()
-	for name := range instructionToFunction {
+	for name, data := range instructionToFunction {
 		tokenList := loadTokenListFromJsonFile(name + `.json`)
 		tokenListSummary.Lists = append(tokenListSummary.Lists, TMinTokenListData{
-			Name:       tokenList.Name,
-			Timestamp:  tokenList.Timestamp,
-			LogoURI:    tokenList.LogoURI,
-			URI:        BASE_URI + `lists/` + name + `.json`,
-			Keywords:   tokenList.Keywords,
-			Version:    tokenList.Version,
-			TokenCount: len(tokenList.Tokens),
+			Name:        tokenList.Name,
+			Timestamp:   tokenList.Timestamp,
+			LogoURI:     tokenList.LogoURI,
+			URI:         BASE_URI + `lists/` + name + `.json`,
+			Keywords:    tokenList.Keywords,
+			Version:     tokenList.Version,
+			TokenCount:  len(tokenList.Tokens),
+			Description: data.Description,
 		})
 	}
 
