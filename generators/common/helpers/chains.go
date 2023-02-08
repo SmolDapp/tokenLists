@@ -24,12 +24,14 @@ var IGNORED_CHAIN_IDS = map[uint64]bool{
 	42:          true, // Kovan
 	65:          true, // OKExChain
 	66:          true, // OKxChain
+	69:          true, // Optimism Kovan
 	97:          true, // Binance Smart Chain Testnet
 	122:         true, // Fuse
 	128:         true, // Heco
 	199:         true, // Bitorrent
 	256:         true, // Heco Testnet
 	288:         true, // Boba
+	420:         true, // Optimism Goerli
 	1088:        true, // Metis Andromeda
 	1284:        true, // Moonbeam
 	1285:        true, // Moonriver
