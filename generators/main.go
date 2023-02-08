@@ -18,77 +18,82 @@ type TGenerators struct {
 var instructionToFunction = map[string]TGenerators{
 	`coingecko`: {
 		Exec:        buildCoingeckoTokenList,
-		Name:        `coingecko`,
+		Name:        `CoinGecko`,
 		Description: `A list of tokens available showing in CoinGecko data agregator.`,
 	},
 	`1inch`: {
 		Exec:        build1InchTokenList,
-		Name:        `1inch`,
-		Description: `A list of tokens available in 1inch DeFi / DEX aggregator`,
+		Name:        `1Inch`,
+		Description: `A list of tokens available in 1Inch DeFi / DEX aggregator`,
 	},
 	`paraswap`: {
 		Exec:        buildParaswapTokenList,
-		Name:        `paraswap`,
+		Name:        `Paraswap`,
 		Description: `A list of tokens available for trading on Paraswap DEX`,
 	},
 	`defillama`: {
 		Exec:        buildDefillamaTokenList,
-		Name:        `defillama`,
+		Name:        `DefiLlama`,
 		Description: `A list of tokens available in DefiLlama token service`,
 	},
 	`yearn`: {
 		Exec:        buildYearnTokenList,
-		Name:        `yearn`,
+		Name:        `Yearn`,
 		Description: `A list of tokens available for depositing in Yearn, as well as the tokens that represent yVaults.`,
 	},
 	`curve`: {
 		Exec:        buildCurveTokenList,
-		Name:        `curve`,
+		Name:        `Curve`,
 		Description: `A list of tokens available for trading on Curve, the largest stableswap.`,
 	},
 	`cowswap`: {
 		Exec:        buildCowswapTokenList,
-		Name:        `cowswap`,
+		Name:        `Cow Swap`,
 		Description: `A list of tokens available for trading on CoW Swap, a DEX focused on MEV protection.`,
 	},
 	`uniswap`: {
 		Exec:        buildUniswapTokenList,
-		Name:        `uniswap`,
+		Name:        `UniSwap`,
 		Description: `A list of tokens available on UniSwap DEX.`,
 	},
 	`sushiswap`: {
 		Exec:        buildSushiswapTokenList,
-		Name:        `sushiswap`,
+		Name:        `SushiSwap`,
 		Description: `A list of tokens available on SushiSwap DEX.`,
 	},
 	`ledger`: {
 		Exec:        buildLedgersTokenList,
-		Name:        `ledger`,
+		Name:        `Ledger`,
 		Description: `A list of tokens supported in Ledger Live App`,
 	},
 	`portals`: {
 		Exec:        buildPortalsTokenList,
-		Name:        `portals`,
+		Name:        `Portals`,
 		Description: `A list of tokens available for trading on Portals DEX.`,
 	},
 	`wido`: {
 		Exec:        buildWidoTokenList,
-		Name:        `wido`,
+		Name:        `Wido`,
 		Description: `A list of tokens supported by the Wido Router`,
 	},
 	`uniswap-pairs`: {
 		Exec:        buildUniswapPairsTokenList,
-		Name:        `uniswap-pairs`,
+		Name:        `UniSwap (pairs)`,
 		Description: `A list of token pairs (liquidity pools) available for trading on UniSwap.`,
 	},
 	`sushiswap-pairs`: {
 		Exec:        buildSushiswapPairsTokenList,
-		Name:        `sushiswap-pairs`,
+		Name:        `SushiSwap (pairs)`,
 		Description: `A list of token pairs (liquidity pools) available for trading on SushiSwap.`,
+	},
+	`optimism`: {
+		Exec:        buildOptimismTokenList,
+		Name:        `Optimism`,
+		Description: `A list of okens used as the source of truth for the Optimism Gateway.`,
 	},
 	`tokenlistooor`: {
 		Exec:        buildTokenListooorList,
-		Name:        `tokenlistooor`,
+		Name:        `Tokenlistooor`,
 		Description: `An aggregated list of tokens from Paraswap, Yearn, and Curve`,
 	},
 }

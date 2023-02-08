@@ -8,6 +8,7 @@ var TOKENLISTOOOR_LISTS = []string{
 	`paraswap`,
 	`yearn`,
 	`curve`,
+	`optimism`,
 }
 
 func contains(arr []TokenListToken, value TokenListToken) bool {
