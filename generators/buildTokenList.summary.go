@@ -18,7 +18,11 @@ type TMinTokenListData struct {
 	URI         string   `json:"URI"`
 	Keywords    []string `json:"keywords"`
 	TokenCount  int      `json:"tokenCount"`
-	Version     struct {
+	Metadata    struct {
+		SupportedChains  []int  `json:"supportedChains"`
+		GenerationMethod string `json:"generationMethod"`
+	}
+	Version struct {
 		Major int `json:"major"`
 		Minor int `json:"minor"`
 		Patch int `json:"patch"`
@@ -35,14 +39,27 @@ type TTokenListSummary struct {
 
 var BASE_URI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/`
 
+func listSupportedChains(list []TokenListToken) []int {
+	detectedChainsMap := map[int]bool{}
+	detectedChains := []int{}
+	for _, token := range list {
+		detectedChainsMap[int(token.ChainID)] = true
+	}
+	for chainID := range detectedChainsMap {
+		detectedChains = append(detectedChains, chainID)
+	}
+	sort.Ints(detectedChains)
+	return detectedChains
+}
+
 func buildSummary() {
 	tokenListSummary := TTokenListSummary{}
 	tokenListSummary.Name = `Tokenlistooor summary`
 	tokenListSummary.LogoURI = BASE_URI + `.github/tokenlistooor.svg`
 	tokenListSummary.Timestamp = time.Now().UTC().Unix()
-	for name, data := range instructionToFunction {
+	for name, data := range GENERATORS {
 		tokenList := loadTokenListFromJsonFile(name + `.json`)
-		tokenListSummary.Lists = append(tokenListSummary.Lists, TMinTokenListData{
+		listElement := TMinTokenListData{
 			Name:        tokenList.Name,
 			Timestamp:   tokenList.Timestamp,
 			LogoURI:     tokenList.LogoURI,
@@ -51,7 +68,10 @@ func buildSummary() {
 			Version:     tokenList.Version,
 			TokenCount:  len(tokenList.Tokens),
 			Description: data.Description,
-		})
+		}
+		listElement.Metadata.SupportedChains = listSupportedChains(tokenList.Tokens)
+		listElement.Metadata.GenerationMethod = string(data.GenerationMethod)
+		tokenListSummary.Lists = append(tokenListSummary.Lists, listElement)
 	}
 
 	sort.Slice(tokenListSummary.Lists, func(i, j int) bool {
