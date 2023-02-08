@@ -8,6 +8,7 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/ethereum/go-ethereum/common"
@@ -182,4 +183,22 @@ func getKey(chainID uint64, address common.Address) string {
 	chainIDStr := strconv.FormatUint(chainID, 10)
 	chainIDStr = strings.Repeat("0", 18-len(chainIDStr)) + chainIDStr
 	return chainIDStr + `_` + address.Hex()
+}
+
+func initSyncMap[T any](chainIDs map[uint64]T) sync.Map {
+	tokensForChainIDSyncMap := sync.Map{}
+	for chainID := range chainIDs {
+		tokensForChainIDSyncMap.Store(chainID, []TokenListToken{})
+	}
+	return tokensForChainIDSyncMap
+}
+
+func extractSyncMap(mapper sync.Map) []TokenListToken {
+	tokenList := []TokenListToken{}
+	mapper.Range(func(chainID, syncMapRaw interface{}) bool {
+		syncMap, _ := syncMapRaw.([]TokenListToken)
+		tokenList = append(tokenList, syncMap...)
+		return true
+	})
+	return tokenList
 }

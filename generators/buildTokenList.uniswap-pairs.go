@@ -64,14 +64,7 @@ var UniswapContractsPerChainID = map[uint64][]TUniContracts{
 }
 
 func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address, allV2Pairs map[string]string) []TokenListToken {
-	tokensForChainID := make(map[uint64][]TokenListToken)
-
-	// Initialize the map before the goroutines to avoid `fatal error: concurrent map writes`
-	for chainID := range tokensPerChainID {
-		if _, ok := tokensForChainID[chainID]; !ok {
-			tokensForChainID[chainID] = []TokenListToken{}
-		}
-	}
+	tokensForChainIDSyncMap := initSyncMap(tokensPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
 	perChainWG := sync.WaitGroup{}
@@ -79,6 +72,8 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address, a
 	for chainID, list := range tokensPerChainID {
 		go func(chainID uint64, list []common.Address) {
 			defer perChainWG.Done()
+			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
+			syncMap := syncMapRaw.([]TokenListToken)
 
 			chainIDStr := strconv.FormatUint(chainID, 10)
 			tokensInfo := ethereum.FetchBasicInformations(chainID, list)
@@ -113,7 +108,7 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address, a
 						chainID,
 						int(token.Decimals),
 					); err == nil {
-						tokensForChainID[chainID] = append(tokensForChainID[chainID], newToken)
+						tokensForChainIDSyncMap.Store(chainID, append(syncMap, newToken))
 					}
 				}
 			}
@@ -121,11 +116,7 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address, a
 	}
 	perChainWG.Wait()
 
-	tokenList := []TokenListToken{}
-	for chainID := range tokensPerChainID {
-		tokenList = append(tokenList, tokensForChainID[chainID]...)
-	}
-	return tokenList
+	return extractSyncMap(tokensForChainIDSyncMap)
 }
 
 func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken, map[uint64]string) {

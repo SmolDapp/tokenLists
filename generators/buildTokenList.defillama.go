@@ -39,14 +39,7 @@ func defillamaMapNetworkNameToChainID(network string) uint64 {
 }
 
 func handleDefillamaTokenList(listPerChainID map[uint64][]TDefillamaList) []TokenListToken {
-	tokensForChainID := make(map[uint64][]TokenListToken)
-
-	// Initialize the map before the goroutines to avoid `fatal error: concurrent map writes`
-	for chainID := range listPerChainID {
-		if _, ok := tokensForChainID[chainID]; !ok {
-			tokensForChainID[chainID] = []TokenListToken{}
-		}
-	}
+	tokensForChainIDSyncMap := initSyncMap(listPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
 	perChainWG := sync.WaitGroup{}
@@ -54,6 +47,8 @@ func handleDefillamaTokenList(listPerChainID map[uint64][]TDefillamaList) []Toke
 	for chainID, list := range listPerChainID {
 		go func(chainID uint64, list []TDefillamaList) {
 			defer perChainWG.Done()
+			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
+			syncMap := syncMapRaw.([]TokenListToken)
 
 			listOfAddresses := []common.Address{}
 			for _, token := range list {
@@ -71,7 +66,7 @@ func handleDefillamaTokenList(listPerChainID map[uint64][]TDefillamaList) []Toke
 						chainID,
 						int(decimals),
 					); err == nil {
-						tokensForChainID[chainID] = append(tokensForChainID[chainID], newToken)
+						tokensForChainIDSyncMap.Store(chainID, append(syncMap, newToken))
 					}
 				}
 			}
@@ -79,12 +74,7 @@ func handleDefillamaTokenList(listPerChainID map[uint64][]TDefillamaList) []Toke
 	}
 	perChainWG.Wait()
 
-	tokenList := []TokenListToken{}
-	// Merge all the tokens for all the chains
-	for chainID := range listPerChainID {
-		tokenList = append(tokenList, tokensForChainID[chainID]...)
-	}
-	return tokenList
+	return extractSyncMap(tokensForChainIDSyncMap)
 }
 
 func fetchDefillamaTokenList() []TokenListToken {

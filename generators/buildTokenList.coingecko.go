@@ -50,14 +50,7 @@ func fetchCoingeckoLegacyListLogoURI() map[string]string {
 
 func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []TokenListToken {
 	logoURIs := fetchCoingeckoLegacyListLogoURI()
-	tokensForChainID := make(map[uint64][]TokenListToken)
-
-	// Initialize the map before the goroutines to avoid `fatal error: concurrent map writes`
-	for chainID := range tokensPerChainID {
-		if _, ok := tokensForChainID[chainID]; !ok {
-			tokensForChainID[chainID] = []TokenListToken{}
-		}
-	}
+	tokensForChainIDSyncMap := initSyncMap(tokensPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
 	perChainWG := sync.WaitGroup{}
@@ -65,6 +58,9 @@ func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []To
 	for chainID, list := range tokensPerChainID {
 		go func(chainID uint64, list []common.Address) {
 			defer perChainWG.Done()
+			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
+			syncMap := syncMapRaw.([]TokenListToken)
+
 			tokensInfo := ethereum.FetchBasicInformations(chainID, list)
 			for _, address := range list {
 				if token, ok := tokensInfo[address.Hex()]; ok {
@@ -76,7 +72,7 @@ func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []To
 						chainID,
 						int(token.Decimals),
 					); err == nil {
-						tokensForChainID[chainID] = append(tokensForChainID[chainID], newToken)
+						tokensForChainIDSyncMap.Store(chainID, append(syncMap, newToken))
 					}
 				}
 			}
@@ -84,12 +80,7 @@ func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []To
 	}
 	perChainWG.Wait()
 
-	tokenList := []TokenListToken{}
-	// Merge all the tokens for all the chains
-	for chainID := range tokensPerChainID {
-		tokenList = append(tokenList, tokensForChainID[chainID]...)
-	}
-	return tokenList
+	return extractSyncMap(tokensForChainIDSyncMap)
 }
 
 func fetchCoingeckoTokenList() []TokenListToken {

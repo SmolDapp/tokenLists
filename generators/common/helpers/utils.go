@@ -1,6 +1,8 @@
 package helpers
 
-import "github.com/ethereum/go-ethereum/common"
+import (
+	"github.com/ethereum/go-ethereum/common"
+)
 
 // SafeString returns the provided variable or a fallback if it is empty
 func SafeString(value string, fallback string) string {
