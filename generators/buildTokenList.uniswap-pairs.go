@@ -178,13 +178,13 @@ func buildUniswapPairsTokenList() {
 	tokenList.Name = "Uniswap Token Pairs"
 	tokenList.LogoURI = "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir"
 
-	tokens, lastBlockSync := fetchUniswapPairsTokenList(tokenList.Extra)
-	if tokenList.Extra == nil {
-		tokenList.Extra = make(map[string]interface{})
+	tokens, lastBlockSync := fetchUniswapPairsTokenList(tokenList.Metadata)
+	if tokenList.Metadata == nil {
+		tokenList.Metadata = make(map[string]interface{})
 	}
 	for chainID, blockNumber := range lastBlockSync {
 		chainIDStr := strconv.FormatUint(chainID, 10)
-		tokenList.Extra[`lastBlockSyncFor_`+chainIDStr] = blockNumber
+		tokenList.Metadata[`lastBlockSyncFor_`+chainIDStr] = blockNumber
 	}
 
 	saveTokenListInJsonFile(tokenList, tokens, `uniswap-pairs.json`, Append)

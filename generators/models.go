@@ -32,7 +32,7 @@ type TokenListData struct {
 	Tokens            []TokenListToken          `json:"tokens"`
 	PreviousTokensMap map[string]TokenListToken `json:"-"`
 	NextTokensMap     map[string]TokenListToken `json:"-"`
-	Extra             map[string]interface{}    `json:"extra,omitempty"`
+	Metadata          map[string]interface{}    `json:"metadata,omitempty"`
 }
 
 // InitTokenList initializes the token list

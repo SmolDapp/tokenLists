@@ -186,16 +186,14 @@ func buildUniswapPoolsTokenList() {
 	tokenList.Name = "Uniswap Token Pools"
 	tokenList.LogoURI = "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir"
 
-	tokens, lastBlockSync := fetchUniswapPoolsTokenList(tokenList.Extra)
-	if tokenList.Extra == nil {
-		tokenList.Extra = make(map[string]interface{})
+	tokens, lastBlockSync := fetchUniswapPoolsTokenList(tokenList.Metadata)
+	if tokenList.Metadata == nil {
+		tokenList.Metadata = make(map[string]interface{})
 	}
 	for chainID, blockNumber := range lastBlockSync {
 		chainIDStr := strconv.FormatUint(chainID, 10)
-		tokenList.Extra[`lastBlockSyncFor_`+chainIDStr] = blockNumber
+		tokenList.Metadata[`lastBlockSyncFor_`+chainIDStr] = blockNumber
 	}
-
-	logs.Pretty(len(tokens), `Uniswap pools tokens`)
 
 	saveTokenListInJsonFile(tokenList, tokens, `uniswap-pools.json`, Append)
 }

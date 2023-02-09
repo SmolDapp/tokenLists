@@ -148,13 +148,13 @@ func buildSushiswapPairsTokenList() {
 	tokenList.Name = "SushiSwap Token Pairs"
 	tokenList.LogoURI = "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png"
 
-	tokens, lastBlockSync := fetchSushiswapPairsTokenList(tokenList.Extra)
-	if tokenList.Extra == nil {
-		tokenList.Extra = make(map[string]interface{})
+	tokens, lastBlockSync := fetchSushiswapPairsTokenList(tokenList.Metadata)
+	if tokenList.Metadata == nil {
+		tokenList.Metadata = make(map[string]interface{})
 	}
 	for chainID, blockNumber := range lastBlockSync {
 		chainIDStr := strconv.FormatUint(chainID, 10)
-		tokenList.Extra[`lastBlockSyncFor_`+chainIDStr] = blockNumber
+		tokenList.Metadata[`lastBlockSyncFor_`+chainIDStr] = blockNumber
 	}
 
 	saveTokenListInJsonFile(tokenList, tokens, `sushiswap-pairs.json`, Append)
