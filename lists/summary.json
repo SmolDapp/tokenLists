@@ -1,6 +1,6 @@
 {
   "name": "Tokenlistooor summary",
-  "timestamp": 1675882337,
+  "timestamp": 1675976735,
   "logoURI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg",
   "lists": [
     {
@@ -162,6 +162,33 @@
       }
     },
     {
+      "name": "Messari Token List",
+      "description": "A list of tokens registered in Messari",
+      "timestamp": "09/02/2023 21:05:35",
+      "logoURI": "https://messari.io/images/logo_tcr-check.svg",
+      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/messari.json",
+      "keywords": [],
+      "tokenCount": 16067,
+      "Metadata": {
+        "supportedChains": [
+          1,
+          10,
+          56,
+          100,
+          137,
+          250,
+          42161,
+          43114
+        ],
+        "generationMethod": "API"
+      },
+      "version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 0
+      }
+    },
+    {
       "name": "Optimism",
       "description": "A list of okens used as the source of truth for the Optimism Gateway.",
       "timestamp": "08/02/2023 14:01:51",
@@ -239,7 +266,7 @@
     {
       "name": "SushiSwap Menu",
       "description": "A list of tokens available on SushiSwap DEX.",
-      "timestamp": "08/02/2023 18:51:43",
+      "timestamp": "09/02/2023 20:53:08",
       "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
       "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/sushiswap.json",
       "keywords": [
@@ -262,18 +289,44 @@
       },
       "version": {
         "major": 0,
-        "minor": 2,
+        "minor": 1,
         "patch": 0
       }
     },
     {
       "name": "SushiSwap Token Pairs",
-      "description": "A list of token pairs (liquidity pools) available for trading on SushiSwap.",
-      "timestamp": "03/02/2023 04:31:44",
+      "description": "A list of token used in the SushiSwap Liquidity Pools.",
+      "timestamp": "09/02/2023 20:34:35",
       "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
       "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/sushiswap-pairs.json",
       "keywords": [],
-      "tokenCount": 1665,
+      "tokenCount": 974,
+      "Metadata": {
+        "supportedChains": [
+          1,
+          56,
+          100,
+          137,
+          250,
+          42161,
+          43114
+        ],
+        "generationMethod": "Events"
+      },
+      "version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 0
+      }
+    },
+    {
+      "name": "SushiSwap Token Pools",
+      "description": "A list of Liquidity Pool available on SushiSwap DEX.",
+      "timestamp": "09/02/2023 18:45:39",
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/sushiswap-pools.json",
+      "keywords": [],
+      "tokenCount": 15689,
       "Metadata": {
         "supportedChains": [
           1,
@@ -322,7 +375,7 @@
     {
       "name": "Uniswap Labs Default",
       "description": "A list of tokens available on UniSwap DEX.",
-      "timestamp": "08/02/2023 18:51:43",
+      "timestamp": "09/02/2023 20:53:08",
       "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
       "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/uniswap.json",
       "keywords": [
@@ -340,19 +393,19 @@
         "generationMethod": "External"
       },
       "version": {
-        "major": 7,
-        "minor": 0,
+        "major": 0,
+        "minor": 1,
         "patch": 0
       }
     },
     {
       "name": "Uniswap Token Pairs",
       "description": "A list of token pairs (liquidity pools) available for trading on UniSwap.",
-      "timestamp": "03/02/2023 10:12:52",
+      "timestamp": "09/02/2023 17:36:17",
       "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
       "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/uniswap-pairs.json",
       "keywords": [],
-      "tokenCount": 284801,
+      "tokenCount": 1300,
       "Metadata": {
         "supportedChains": [
           1,
@@ -364,7 +417,29 @@
       },
       "version": {
         "major": 0,
-        "minor": 2,
+        "minor": 1,
+        "patch": 0
+      }
+    },
+    {
+      "name": "Uniswap Token Pools",
+      "description": "A list of Liquidity Pool available on Uniswap V2 DEX.",
+      "timestamp": "09/02/2023 17:15:25",
+      "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
+      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/uniswap-pools.json",
+      "keywords": [],
+      "tokenCount": 12044,
+      "Metadata": {
+        "supportedChains": [
+          1,
+          10,
+          137
+        ],
+        "generationMethod": "Events"
+      },
+      "version": {
+        "major": 0,
+        "minor": 1,
         "patch": 0
       }
     },

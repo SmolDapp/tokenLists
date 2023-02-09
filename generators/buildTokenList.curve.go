@@ -96,7 +96,8 @@ func handleCurveTokenList(listPerChainID map[uint64][]TCurveTokenData) []TokenLi
 						chainID,
 						int(token.Decimals),
 					); err == nil {
-						tokensForChainIDSyncMap.Store(chainID, append(syncMap, newToken))
+						syncMap = append(syncMap, newToken)
+						tokensForChainIDSyncMap.Store(chainID, syncMap)
 					}
 				}
 			}

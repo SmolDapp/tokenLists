@@ -72,7 +72,8 @@ func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []To
 						chainID,
 						int(token.Decimals),
 					); err == nil {
-						tokensForChainIDSyncMap.Store(chainID, append(syncMap, newToken))
+						syncMap = append(syncMap, newToken)
+						tokensForChainIDSyncMap.Store(chainID, syncMap)
 					}
 				}
 			}

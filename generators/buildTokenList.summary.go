@@ -21,7 +21,7 @@ type TMinTokenListData struct {
 	Metadata    struct {
 		SupportedChains  []int  `json:"supportedChains"`
 		GenerationMethod string `json:"generationMethod"`
-	}
+	} `json:"metadata"`
 	Version struct {
 		Major int `json:"major"`
 		Minor int `json:"minor"`

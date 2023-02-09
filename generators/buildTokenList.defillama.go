@@ -66,7 +66,8 @@ func handleDefillamaTokenList(listPerChainID map[uint64][]TDefillamaList) []Toke
 						chainID,
 						int(decimals),
 					); err == nil {
-						tokensForChainIDSyncMap.Store(chainID, append(syncMap, newToken))
+						syncMap = append(syncMap, newToken)
+						tokensForChainIDSyncMap.Store(chainID, syncMap)
 					}
 				}
 			}

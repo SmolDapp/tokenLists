@@ -2,9 +2,7 @@ package main
 
 import (
 	"context"
-	"math/big"
 	"strconv"
-	"strings"
 	"sync"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
@@ -15,57 +13,9 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
-type TSushiContracts struct {
-	ContractAddress common.Address
-	BlockNumber     *big.Int
-}
+var SUSHI_PAIR_THRESHOLD = 3
 
-var SushiswapContractsPerChainID = map[uint64][]TSushiContracts{
-	1: {
-		{
-			ContractAddress: common.HexToAddress(`0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac`),
-			BlockNumber:     big.NewInt(10_794_229),
-		},
-	},
-	56: {
-		{
-			ContractAddress: common.HexToAddress(`0xc35DADB65012eC5796536bD9864eD8773aBc74C4`),
-			BlockNumber:     big.NewInt(5_205_069),
-		},
-	},
-	100: {
-		{
-			ContractAddress: common.HexToAddress(`0xc35DADB65012eC5796536bD9864eD8773aBc74C4`),
-			BlockNumber:     big.NewInt(14_735_904),
-		},
-	},
-	137: {
-		{
-			ContractAddress: common.HexToAddress(`0xc35DADB65012eC5796536bD9864eD8773aBc74C4`),
-			BlockNumber:     big.NewInt(11_333_218),
-		},
-	},
-	250: {
-		{
-			ContractAddress: common.HexToAddress(`0xc35DADB65012eC5796536bD9864eD8773aBc74C4`),
-			BlockNumber:     big.NewInt(2_457_879),
-		},
-	},
-	42161: {
-		{
-			ContractAddress: common.HexToAddress(`0xc35DADB65012eC5796536bD9864eD8773aBc74C4`),
-			BlockNumber:     big.NewInt(70),
-		},
-	},
-	43114: {
-		{
-			ContractAddress: common.HexToAddress(`0xc35DADB65012eC5796536bD9864eD8773aBc74C4`),
-			BlockNumber:     big.NewInt(506_190),
-		},
-	},
-}
-
-func handleSushiswapPairsTokenList(tokensPerChainID map[uint64][]common.Address, allV2Pairs map[string]string) []TokenListToken {
+func handleSushiswapPairsTokenList(tokensPerChainID map[uint64][]common.Address) []TokenListToken {
 	tokensForChainIDSyncMap := initSyncMap(tokensPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
@@ -77,38 +27,22 @@ func handleSushiswapPairsTokenList(tokensPerChainID map[uint64][]common.Address,
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
 			syncMap := syncMapRaw.([]TokenListToken)
 
-			chainIDStr := strconv.FormatUint(chainID, 10)
 			tokensInfo := ethereum.FetchBasicInformations(chainID, list)
 			for _, address := range list {
 				if token, ok := tokensInfo[address.Hex()]; ok {
 					if token.Name == `` || token.Symbol == `` {
 						continue
 					}
-
-					//We need to check if the token is a pair. If so we will overwrite the name and symbol
-					name := token.Name
-					symbol := token.Symbol
-					if tokensOfThisPair, ok := allV2Pairs[chainIDStr+`_`+address.Hex()]; ok {
-						splittedTokens := strings.Split(tokensOfThisPair, `_`)
-						if len(splittedTokens) == 2 {
-							token1 := splittedTokens[0]
-							token2 := splittedTokens[1]
-							if tokensInfo[token1] != nil && tokensInfo[token2] == nil {
-								name = `Sushiswap V2 ` + tokensInfo[token1].Name + ` + ` + tokensInfo[token2].Name
-								symbol = `SUSHI-V2 ` + tokensInfo[token1].Symbol + ` + ` + tokensInfo[token2].Symbol
-							}
-						}
-					}
-
 					if newToken, err := SetToken(
 						token.Address,
-						name,
-						symbol,
+						token.Name,
+						token.Symbol,
 						``,
 						chainID,
 						int(token.Decimals),
 					); err == nil {
-						tokensForChainIDSyncMap.Store(chainID, append(syncMap, newToken))
+						syncMap = append(syncMap, newToken)
+						tokensForChainIDSyncMap.Store(chainID, syncMap)
 					}
 				}
 			}
@@ -121,9 +55,7 @@ func handleSushiswapPairsTokenList(tokensPerChainID map[uint64][]common.Address,
 
 func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken, map[uint64]string) {
 	tokensPerChainID := make(map[uint64][]common.Address)
-
-	allTokens := make(map[string]uint64)
-	allV2Pairs := make(map[string]string)
+	allTokens := make(map[string]int)
 	lastBlockSync := make(map[uint64]string)
 
 	/**************************************************************************
@@ -149,11 +81,10 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]TokenListToke
 		}
 		client := ethereum.GetRPC(chainID)
 		currentBlockNumber, _ := client.BlockNumber(context.Background())
-		threshold := uint64(200_000)
+		threshold := uint64(100_000)
 		if chainID == 56 {
 			threshold = uint64(5_000)
 		}
-		count := 0
 
 		for _, sushiContract := range sushiContract {
 			start := sushiContract.BlockNumber.Uint64()
@@ -171,7 +102,7 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]TokenListToke
 					End:     &end,
 					Context: nil,
 				}
-				logs.Info(`v2 - start: `, startBlockToTest, ` end: `, end, ` current count: `, count, ` total: `, len(allTokens), ` current block: `, currentBlockNumber, ` chainID: `, chainIDStr)
+				logs.Info(`v2 - start: `, startBlockToTest, ` end: `, end, ` total: `, len(allTokens), ` current block: `, currentBlockNumber, ` chainID: `, chainIDStr)
 				if log, err := sushiV2Factory.FilterPairCreated(options, nil, nil); err == nil {
 					for log.Next() {
 						if log.Error() != nil {
@@ -183,14 +114,9 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]TokenListToke
 						if _, ok := allTokens[log.Event.Token1.Hex()]; !ok {
 							allTokens[log.Event.Token1.Hex()] = 0
 						}
-						if _, ok := allTokens[log.Event.Pair.Hex()]; !ok {
-							allTokens[log.Event.Pair.Hex()] = 0
-						}
 
 						allTokens[log.Event.Token0.Hex()]++
 						allTokens[log.Event.Token1.Hex()]++
-						allV2Pairs[chainIDStr+`_`+log.Event.Pair.Hex()] = log.Event.Token0.Hex() + `_` + log.Event.Token1.Hex()
-						count += 2
 					}
 				} else {
 					logs.Error("Error fetching all tokens from sushiswap factory contract: ", err)
@@ -201,32 +127,20 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]TokenListToke
 		}
 
 		/**********************************************************************
-		** Adding the pairs that have at least 10 tokens in common
-		**********************************************************************/
-		for pair, tokensInPair := range allV2Pairs {
-			tokens := strings.Split(tokensInPair, `_`)
-			if (allTokens[tokens[0]] >= 10) && (allTokens[tokens[1]] >= 10) {
-				chainAndPair := strings.Split(pair, `_`)
-				allTokens[chainAndPair[1]] = 10
-			}
-		}
-
-		/**********************************************************************
 		** Transforming the output to the format that we need for the handle
 		** function
 		**********************************************************************/
 		for address, count := range allTokens {
-			if count < 10 {
-				continue
-			}
 			if helpers.IsIgnoredToken(chainID, common.HexToAddress(address)) {
 				continue
 			}
-			tokensPerChainID[chainID] = append(tokensPerChainID[chainID], common.HexToAddress(address))
+			if count >= SUSHI_PAIR_THRESHOLD {
+				tokensPerChainID[chainID] = append(tokensPerChainID[chainID], common.HexToAddress(address))
+			}
 		}
 	}
 
-	return handleSushiswapPairsTokenList(tokensPerChainID, allV2Pairs), lastBlockSync
+	return handleSushiswapPairsTokenList(tokensPerChainID), lastBlockSync
 }
 
 func buildSushiswapPairsTokenList() {
