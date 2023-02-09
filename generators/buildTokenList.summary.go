@@ -74,6 +74,24 @@ func buildSummary() {
 		tokenListSummary.Lists = append(tokenListSummary.Lists, listElement)
 	}
 
+	//Also add the tokenListooor list
+	{
+		tokenListooorList := loadTokenListFromJsonFile(`tokenListooor.json`)
+		listElement := TMinTokenListData{
+			Name:        tokenListooorList.Name,
+			Timestamp:   tokenListooorList.Timestamp,
+			LogoURI:     tokenListooorList.LogoURI,
+			URI:         BASE_URI + `lists/tokenListooor.json`,
+			Keywords:    tokenListooorList.Keywords,
+			Version:     tokenListooorList.Version,
+			TokenCount:  len(tokenListooorList.Tokens),
+			Description: `A curated list of tokens from all the token lists on tokenlistooor.`,
+		}
+		listElement.Metadata.SupportedChains = listSupportedChains(tokenListooorList.Tokens)
+		listElement.Metadata.GenerationMethod = string(GenerationAPI)
+		tokenListSummary.Lists = append(tokenListSummary.Lists, listElement)
+	}
+
 	sort.Slice(tokenListSummary.Lists, func(i, j int) bool {
 		return tokenListSummary.Lists[i].Name < tokenListSummary.Lists[j].Name
 	})
