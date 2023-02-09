@@ -81,7 +81,7 @@ func buildSummary() {
 			Name:        tokenListooorList.Name,
 			Timestamp:   tokenListooorList.Timestamp,
 			LogoURI:     tokenListooorList.LogoURI,
-			URI:         BASE_URI + `lists/tokenListooor.json`,
+			URI:         BASE_URI + `lists/tokenlistooor.json`,
 			Keywords:    tokenListooorList.Keywords,
 			Version:     tokenListooorList.Version,
 			TokenCount:  len(tokenListooorList.Tokens),
