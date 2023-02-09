@@ -104,7 +104,7 @@ var GENERATORS = map[string]TGenerators{
 		Name:             `SushiSwap (token pairs)`,
 		Description:      `A list of token used in the SushiSwap Liquidity Pools.`,
 		GenerationMethod: GenerationEvents,
-		GeneratorType:    GeneratorToken,
+		GeneratorType:    GeneratorPool,
 	},
 	`sushiswap-pools`: {
 		Exec:             buildSushiswapPoolsTokenList,
@@ -120,19 +120,12 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},
-	`tokenlistooor`: {
-		Exec:             buildTokenListooorList,
-		Name:             `Tokenlistooor`,
-		Description:      `An aggregated list of tokens from Paraswap, Yearn, and Curve`,
-		GenerationMethod: GenerationAPI,
-		GeneratorType:    GeneratorToken,
-	},
 	`uniswap-pairs`: {
 		Exec:             buildUniswapPairsTokenList,
 		Name:             `UniSwap (pairs)`,
 		Description:      `A list of token pairs (liquidity pools) available for trading on UniSwap.`,
 		GenerationMethod: GenerationEvents,
-		GeneratorType:    GeneratorToken,
+		GeneratorType:    GeneratorPool,
 	},
 	`uniswap-pools`: {
 		Exec:             buildUniswapPoolsTokenList,

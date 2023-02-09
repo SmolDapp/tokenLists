@@ -20,7 +20,7 @@ func contains(arr []TokenListToken, value TokenListToken) bool {
 	return false
 }
 
-func buildTokenListooorList() {
+func buildTokenListooorList_v1() {
 	tokenList := loadTokenListFromJsonFile(`tokenlistooor.json`)
 	tokenList.Name = `Tokenlistooor Token List`
 	tokenList.LogoURI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg`
@@ -51,4 +51,62 @@ func buildTokenListooorList() {
 		tokens = append(tokens, token)
 	}
 	saveTokenListInJsonFile(tokenList, tokens, `tokenlistooor.json`, Standard)
+}
+
+func buildTokenListooorList() {
+	tokenList := loadTokenListFromJsonFile(`tokenlistooor.json`)
+	tokenList.Name = `Tokenlistooor Token List`
+	tokenList.LogoURI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg`
+	tokenList.Description = `A curated list of tokens from all the token lists on tokenlistooor.`
+
+	/**************************************************************************
+	** Create a map of all tokens from all lists and only add the missing ones
+	** in it. Map are WAY faster than arrays.
+	**************************************************************************/
+	allTokens := make(map[uint64]map[string]TokenListToken)
+	allTokensPlain := []TokenListToken{}
+
+	for name, generatorData := range GENERATORS {
+		if generatorData.GeneratorType == GeneratorPool {
+			continue
+		}
+
+		tokenList := loadTokenListFromJsonFile(name + `.json`)
+		for _, token := range tokenList.Tokens {
+			if _, ok := allTokens[token.ChainID]; !ok {
+				allTokens[token.ChainID] = make(map[string]TokenListToken)
+			}
+			if existingToken, ok := allTokens[token.ChainID][helpers.ToAddress(token.Address)]; ok {
+				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
+					Address:  existingToken.Address,
+					Name:     helpers.SafeString(existingToken.Name, token.Name),
+					Symbol:   helpers.SafeString(existingToken.Symbol, token.Symbol),
+					LogoURI:  helpers.SafeString(existingToken.LogoURI, token.LogoURI),
+					Decimals: helpers.SafeInt(existingToken.Decimals, token.Decimals),
+					ChainID:  token.ChainID,
+					Count:    existingToken.Count + 1,
+				}
+			} else {
+				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
+					Address:  helpers.ToAddress(token.Address),
+					Name:     helpers.SafeString(token.Name, ``),
+					Symbol:   helpers.SafeString(token.Symbol, ``),
+					LogoURI:  helpers.SafeString(token.LogoURI, ``),
+					Decimals: helpers.SafeInt(token.Decimals, 18),
+					ChainID:  token.ChainID,
+					Count:    1,
+				}
+			}
+		}
+	}
+
+	for _, tokens := range allTokens {
+		for _, token := range tokens {
+			if token.Count >= 5 {
+				allTokensPlain = append(allTokensPlain, token)
+			}
+		}
+	}
+
+	saveTokenListInJsonFile(tokenList, allTokensPlain, `tokenlistooor.json`, Standard)
 }

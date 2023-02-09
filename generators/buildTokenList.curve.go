@@ -4,7 +4,6 @@ import (
 	"sync"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -85,7 +84,7 @@ func handleCurveTokenList(listPerChainID map[uint64][]TCurveTokenData) []TokenLi
 				}
 			}
 
-			tokensInfo := ethereum.FetchBasicInformations(chainID, listOfAddresses)
+			tokensInfo := retrieveBasicInformations(chainID, listOfAddresses)
 			for _, address := range listOfAddresses {
 				if token, ok := tokensInfo[address.Hex()]; ok {
 					if newToken, err := SetToken(

@@ -33,7 +33,7 @@ func handleSushiswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address,
 			** underlying tokens and use their name and symbol to build the pair name.
 			** The first step is to fetch the data for all the underlying tokens.
 			**************************************************************************/
-			underlyingTokenInfo := ethereum.FetchBasicInformations(chainID, list)
+			underlyingTokenInfo := retrieveBasicInformations(chainID, list)
 
 			/**************************************************************************
 			** Once we have the data for all the underlying tokens, we can loop over

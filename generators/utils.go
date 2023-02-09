@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
@@ -201,4 +202,72 @@ func extractSyncMap(mapper sync.Map) []TokenListToken {
 		return true
 	})
 	return tokenList
+}
+
+func loadAllTokens() map[uint64]map[string]TokenListToken {
+	allTokens := make(map[uint64]map[string]TokenListToken)
+	for name := range GENERATORS {
+		tokenList := loadTokenListFromJsonFile(name + `.json`)
+		for _, token := range tokenList.Tokens {
+			if _, ok := allTokens[token.ChainID]; !ok {
+				allTokens[token.ChainID] = make(map[string]TokenListToken)
+			}
+			if existingToken, ok := allTokens[token.ChainID][helpers.ToAddress(token.Address)]; ok {
+				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
+					Address:  existingToken.Address,
+					Name:     helpers.SafeString(existingToken.Name, token.Name),
+					Symbol:   helpers.SafeString(existingToken.Symbol, token.Symbol),
+					LogoURI:  helpers.SafeString(existingToken.LogoURI, token.LogoURI),
+					Decimals: helpers.SafeInt(existingToken.Decimals, token.Decimals),
+					ChainID:  token.ChainID,
+					Count:    existingToken.Count + 1,
+				}
+			} else {
+				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
+					Address:  helpers.ToAddress(token.Address),
+					Name:     helpers.SafeString(token.Name, ``),
+					Symbol:   helpers.SafeString(token.Symbol, ``),
+					LogoURI:  helpers.SafeString(token.LogoURI, ``),
+					Decimals: helpers.SafeInt(token.Decimals, 18),
+					ChainID:  token.ChainID,
+					Count:    1,
+				}
+			}
+		}
+	}
+	return allTokens
+}
+
+func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[string]*ethereum.TERC20 {
+	erc20Map := make(map[string]*ethereum.TERC20)
+	missingAddresses := []common.Address{}
+
+	for _, v := range addresses {
+		//check in ALL_EXISTING_TOKENS[chainID][helpers.ToAddress(v)]
+		if token, ok := ALL_EXISTING_TOKENS[chainID][v.Hex()]; ok {
+			erc20Map[v.Hex()] = &ethereum.TERC20{
+				Address:  v,
+				Name:     token.Name,
+				Symbol:   token.Symbol,
+				Decimals: uint64(token.Decimals),
+				ChainID:  chainID,
+			}
+		} else {
+			missingAddresses = append(missingAddresses, v)
+		}
+	}
+	erc20FromChain := ethereum.FetchBasicInformations(chainID, missingAddresses)
+	for k, v := range erc20FromChain {
+		erc20Map[k] = v
+		ALL_EXISTING_TOKENS[chainID][k] = TokenListToken{
+			Address:  v.Address.Hex(),
+			Name:     v.Name,
+			Symbol:   v.Symbol,
+			LogoURI:  ``,
+			Decimals: int(v.Decimals),
+			ChainID:  chainID,
+			Count:    1,
+		}
+	}
+	return erc20Map
 }

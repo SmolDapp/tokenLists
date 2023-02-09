@@ -1,19 +1,1075 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "08/02/2023 18:51:42",
+  "timestamp": "09/02/2023 21:23:10",
   "version": {
     "major": 4,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
   "keywords": [],
   "tokens": [
     {
+      "address": "0x00E3852AEdBFA153629BeFc870fa45c4d859652c",
+      "name": "Curve.fi Factory USD Metapool: ARB / ETH",
+      "symbol": "ARBETH3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x065f44Cd602Cc6680E82E516125839b9BbbbE57e",
+      "name": "Curve.fi Factory USD Metapool: HoneyCRV",
+      "symbol": "hCRV3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x07094aB16Ad163F21C76adcEDC36aD8E494fAb74",
+      "name": "Curve.fi Factory USD Metapool: ETH/USDT",
+      "symbol": "ETHUSDT3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x0F24131384044A9D1670fa135CefD3f25870446e",
+      "name": "Curve.fi Factory USD Metapool: tsc",
+      "symbol": "tsc3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x0a824B5d4C96EA0EC46306Efbd34Bf88fE1277e0",
+      "name": "Curve.fi Factory Pool: deBridge-ETH",
+      "symbol": "deETH+ETH-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x115D8bF0a53e751f8A472F88D587944EC1C8CA6D",
+      "name": "pTokens BTC",
+      "symbol": "pBTC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x116172B2482c5dC3E6f445C16Ac13367aC3FCd35",
+      "name": "handleEUR",
+      "symbol": "fxEUR",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978",
+      "name": "Curve DAO Token",
+      "symbol": "CRV",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x13780E6d5696DD91454F6d3BbC2616687fEa43d0",
+      "name": "TerraUSD",
+      "symbol": "UST",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0x15a1C069Fcf6F79a3D5Bb5d4A8ba004FbF4fABAc",
+      "name": "Curve.fi Factory Plain Pool: axlUSDC/USDC",
+      "symbol": "axlUSDC-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+      "name": "Frax",
+      "symbol": "FRAX",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x1A9263e73FF417fe1e73E8182df92a7a3463bF9f",
+      "name": "ETH Max Yield Index",
+      "symbol": "ETHMAXY",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x1C5ffa4FB4907B681c61B8c82b28C4672ceb1974",
+      "name": "Curve.fi Factory Plain Pool: 4pool",
+      "symbol": "4pool-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x1cDAEf9e69aDa311bDe095fD3be6752b6a626bC8",
+      "name": "Curve.fi Factory Plain Pool: ETH/UNI",
+      "symbol": "ethUNI-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x1d42783E7eeacae12EbC315D1D2D0E3C6230a068",
+      "name": "80-20 TriCrypto Strategy",
+      "symbol": "TCS",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x1dDcaa4Ed761428ae348BEfC6718BCb12e63bFaa",
+      "name": "deBridge USD Coin",
+      "symbol": "deUSDC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0x1da20Ac34187b2d9c74F729B85acB225D3341b25",
+      "name": "Curve.fi Factory Plain Pool: 2T/USDC",
+      "symbol": "2TUSDC-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x239e14A19DFF93a17339DCC444f74406C17f8E67",
+      "name": "Curve Tricrypto Pool Vault",
+      "symbol": "yvCurve-Tricrypto",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x268C6c52B84A484Fe4A8f36311BF418d22036A86",
+      "name": "Curve.fi Factory USD Metapool: tsc",
+      "symbol": "tsc3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x27c60A5a3F6D69b88B46Ab55924ECA5778f8BC88",
+      "name": "Curve.fi Factory USD Metapool: DAI+2pool",
+      "symbol": "DAI2CRV3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x298D15d9208ab16a59f45FC37133252F1Cf68991",
+      "name": "Curve.fi Factory USD Metapool: ust",
+      "symbol": "ust3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x2CB445366FbE025569D6883Aa931E79deF202802",
+      "name": "Curve.fi Factory USD Metapool: Chromium Dollar",
+      "symbol": "Cr3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x2ce5Fd6f6F4a159987eac99FF5158B7B62189Acf",
+      "name": "Curve.fi Factory USD Metapool: dForce",
+      "symbol": "USX2CRV3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x2d871631058827b703535228fb9Ab5F35cf19E76",
+      "name": "deBridge Frax",
+      "symbol": "deFRAX",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 8
+    },
+    {
+      "address": "0x305fC0A3EEd959a3bBDC54300a1A140925B4b058",
+      "name": "Curve.fi Factory Pool: ETHMAXY/ETH",
+      "symbol": "crvETHMAXY-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x30dF229cefa463e991e29D42DB0bae2e122B2AC7",
+      "name": "Curve.fi Factory USD Metapool: MIM",
+      "symbol": "MIM3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x37C9Be6C81990398e9B87494484Afc6a4608C25d",
+      "name": "Curve.fi Factory Plain Pool: Aave aDAI+aUSC+aUSDT",
+      "symbol": "a3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3E01dD8a5E1fb3481F0F589056b428Fc308AF0Fb",
+      "name": "Curve.fi WBTC/renBTC",
+      "symbol": "btcCRV",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3a43A5851A3e3E0e25A3c1089670269786be1577",
+      "name": "Curve.fi Factory Plain Pool: USDs+FRAX",
+      "symbol": "USDsFRAX-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3d49594Ed8c108F817512829C102E4059c76a220",
+      "name": "Curve.fi Factory USD Metapool: yvCurve-Tricrypto",
+      "symbol": "YCURVE3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3dFe1324A0ee9d86337d06aEB829dEb4528DB9CA",
+      "name": "Curve EURS-2Crv",
+      "symbol": "crvEURSUSD",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3e4Cff6E50F37F731284A92d44AE943e17077fD4",
+      "name": "Dogelon",
+      "symbol": "ELON",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x428663216f2Ec5d4180e89B187664d2333EfE229",
+      "name": "Curve.fi Factory Plain Pool: Loopfi pDF",
+      "symbol": "pDFDF-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x445109BcF194c538B73EA60C71bb773849bc9b79",
+      "name": "Curve.fi Factory Plain Pool: MAI",
+      "symbol": "MAI-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x48E8DCb9fbE51899Df8960415fB11dfb8745C2DB",
+      "name": "Curve.fi Factory USD Metapool: DOLLAR",
+      "symbol": "DL3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x4C85E8fd7eB58506098D491d9Fd52E79c176D046",
+      "name": "ARBITRUM COIN",
+      "symbol": "ARB",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 2
+    },
+    {
+      "address": "0x4b043CDd981dBD9a0c229d23b80Cc1EB3c50b05B",
+      "name": "Curve.fi Factory USD Metapool: MIM/FRAXBP",
+      "symbol": "MIMFRAXBP3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x4f947b40BEEB9D8130437781a560E5c7D089730f",
+      "name": "KAKI USDC",
+      "symbol": "kUSDC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x53ec54521050a6786E078Bf5ffA526c0d7BD55a9",
+      "name": "Chromium Dollar",
+      "symbol": "Cr",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x574a0d632844549b15C46338445c04C73724860d",
+      "name": "Dollar",
+      "symbol": "DL",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x58eE50d72904C62Aca4D712648f9edd85f63D056",
+      "name": "Dogelon Index",
+      "symbol": "ELONINDEX",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x59bF0545FCa0E5Ad48E13DA269faCD2E8C886Ba4",
+      "name": "Curve.fi Factory Plain Pool: VST+FRAX",
+      "symbol": "VSTFRAX-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x5Aa2a79293424bf39171d704A364FDE3B641DB25",
+      "name": "Curve.fi Factory Plain Pool: WETH/WBTC/USDC",
+      "symbol": "Blue chip-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x5CCaeDc2A2C19aB773D75Dd55071680636C242FA",
+      "name": "Curve.fi Factory USD Metapool: AnotherPool",
+      "symbol": "USDCUSDT3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x5c999Df25df87A8DfbDD4730c3467de69482bfa8",
+      "name": "Curve.fi Factory USD Metapool: USDS/FRAXBP",
+      "symbol": "USDSFRAXBP3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x5f16C819c22009746b79d3170D8c214C7C950B4E",
+      "name": "Curve.fi Factory Plain Pool: 3pool",
+      "symbol": "3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x6041631c566Eb8dc6258A75Fa5370761d4873990",
+      "name": "Curve.fi Factory Plain Pool: Tricrypto - MIM",
+      "symbol": "TryMIM-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+      "name": "Aave Arbitrum USDC",
+      "symbol": "aArbUSDC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0x63171ae9A9886e49547dd40aDB70F04EABA39D6b",
+      "name": "Curve.fi Factory USD Metapool: VST+FRAXBP",
+      "symbol": "VSTFRAXBP3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x641441c631e2F909700d2f41FD87F0aA6A6b4EDb",
+      "name": "dForce USD",
+      "symbol": "USX",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x64343594Ab9b56e99087BfA6F2335Db24c2d1F17",
+      "name": "Vesta Stable",
+      "symbol": "VST",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x661cf823583e7BdE97954e98fAc2Ef777493a8dc",
+      "name": "Curve.fi Factory USD Metapool: qxccrv",
+      "symbol": "qxccrv3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x667A881B28dC2d464d6Ede7f8b13F6a7ffe71659",
+      "name": "Curve.fi Factory USD Metapool: pbtc+renCrv",
+      "symbol": "pbtc3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x6BF6fc7EaF84174bb7e1610Efd865f0eBD2AA96D",
+      "name": "Curve.fi Factory USD Metapool: test",
+      "symbol": "t3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
+      "name": "Aave Arbitrum USDT",
+      "symbol": "aArbUSDT",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0x6d209d0E183d01A6b8577516e3c861f347C699fD",
+      "name": "2tanium Dollar",
+      "symbol": "2T",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x760f619540CE0C17AFfd5fBEa504c73D7C7eD62b",
+      "name": "qxc",
+      "symbol": "qxc",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x76b44e0Cf9bD024dbEd09E1785DF295D59770138",
+      "name": "Curve.fi Factory USD Metapool: deBridge-USDC",
+      "symbol": "deUSDС+2P3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x779671D3bD8a650a8D68F644cFBC6869fDd67837",
+      "name": "TEST",
+      "symbol": "TEST",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x7C01B05DDE0FbB38e2902a9fC3447BEb877d9455",
+      "name": "Curve.fi Factory Plain Pool: gTrade gDAI/DAI",
+      "symbol": "gDAIDAI-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x7F2d1C7b8911901de7c9785d6E7A7A10d8dEff66",
+      "name": "Curve.fi Factory USD Metapool: qxccrv",
+      "symbol": "qxccrv3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x7f90122BF0700F9E7e1F688fe926940E8839F353",
+      "name": "Curve.fi USDC/USDT",
+      "symbol": "2CRV",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8177ae5A1e32Ec91E62a3d118fC0B36C82CA84Ce",
+      "name": "Curve.fi Factory USD Metapool: Chromium Dollar",
+      "symbol": "Cr3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
+      "name": "Aave Arbitrum DAI",
+      "symbol": "aArbDAI",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x83f5FDBE2C63DfA6bAd455585Ad3e8e43920B7ea",
+      "name": "Pussy Dollar",
+      "symbol": "PD",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x850c7cC8757CE1fa8CeD709f297D842E12E61759",
+      "name": "Curve.fi Factory USD Metapool: HoneyCRV",
+      "symbol": "hCRV3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8616E8EA83f048ab9A5eC513c9412Dd2993bcE3F",
+      "name": "handleUSD",
+      "symbol": "fxUSD",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8a5b8058C1523111768E5F2DEF3b11644F0e165b",
+      "name": "Curve.fi Factory Plain Pool: pDF/DF",
+      "symbol": "Loopfi pDF-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8c0E0cC1D66a1b1fF10EBB1D99Bb9779311d6dE6",
+      "name": "Curve.fi Factory Plain Pool: ELONINDEX/ELON",
+      "symbol": "ELONL2ELON-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8e0B8c8BB9db49a46697F3a5Bb8A308e744821D2",
+      "name": "Curve.fi USD-BTC-ETH",
+      "symbol": "crv3crypto",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x92926170cc85A4BA573bd86d61348bE650E3Eae5",
+      "name": "Curve.fi Factory USD Metapool: TEST TEST TEST",
+      "symbol": "TTT3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x92E8f8766914d4990fD7c30d743841471D4F6a59",
+      "name": "StableUSD",
+      "symbol": "USDS",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0x93004D8477f117eA359b71ec02f2706c8175c55c",
+      "name": "Curve.fi Factory Plain Pool: USDC/USDT/WBTC",
+      "symbol": "CRV3STABLE-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x93FC1235119c554576D8AB23583371fc25B803ee",
+      "name": "Loopfi DF",
+      "symbol": "pDF",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b",
+      "name": "LUSD Stablecoin",
+      "symbol": "LUSD",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x943F3B750447AbDd61cdF68AE6c3912cd3bedA04",
+      "name": "Curve.fi Factory Plain Pool: MAI",
+      "symbol": "MAI-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x9C907Ee3bC1da92095a81B806Ae8cBA6c597703c",
+      "name": "Curve.fi Factory USD Metapool: LUSD",
+      "symbol": "LUSD3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xAEA2E71b631fA93683BCF256A8689dFa0e094fcD",
+      "name": "Curve.fi Factory USD Metapool: kUSDC+2Crv",
+      "symbol": "kUSDC3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xAcD7B3D9c10e97d0efA418903C0c7669E702E4C0",
+      "name": "Eleven.finance",
+      "symbol": "ELE",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xB1f0Ca2e34912a093e89c5615C4f61b196e4D8D0",
+      "name": "Curve.fi Factory USD Metapool: Dai",
+      "symbol": "DAI2POOL3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xB793245362f405cd5F6b1F98707350B7919d1b1A",
+      "name": "Dollar",
+      "symbol": "DL",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xB89B080Bb9fb489516FC7Fc98bC4eb3f5A92c54E",
+      "name": "Curve.fi Factory USD Metapool: PD/USDT",
+      "symbol": "PDUSDT3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xC120Ef573752aAD82484eBc9A752daD6f3FEC54B",
+      "name": "Curve.fi Factory Pool: Eleven.finance",
+      "symbol": "ELE-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xC9B8a3FDECB9D5b218d02555a8Baf332E5B740d5",
       "name": "Curve.fi Factory Plain Pool: FRAXBP",
       "symbol": "FRAXBP-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xCaba6cfd4C83E1806467d937842D18128f90C13b",
+      "name": "Loopfi DF",
+      "symbol": "pDF",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xD22a58f79e9481D1a88e00c343885A588b34b68B",
+      "name": "STASIS EURS Token",
+      "symbol": "EURS",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 2
+    },
+    {
+      "address": "0xD74f5255D557944cf7Dd0E45FF521520002D5748",
+      "name": "Sperax USD",
+      "symbol": "USDs",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xD79138c49c49200a1Afc935171D1bDAd084FDc95",
+      "name": "Curve.fi Factory USD Metapool: TEST TEST TEST TEST",
+      "symbol": "TTTT3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xDBf31dF14B66535aF65AaC99C32e9eA844e14501",
+      "name": "renBTC",
+      "symbol": "renBTC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 8
+    },
+    {
+      "address": "0xDbcD16e622c95AcB2650b38eC799f76BFC557a0b",
+      "name": "Curve.fi ETH/wstETH",
+      "symbol": "wstETHCRV",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xE013593CEA239E445d2271106836b00C9E7356ae",
+      "name": "Curve.fi Factory Plain Pool: Aave USDC+USDT",
+      "symbol": "a2CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xE9dcF2d2A17eAD11fab8b198578B20535370Be6a",
+      "name": "Curve.fi Factory USD Metapool: MIM-2pool",
+      "symbol": "MIM-2pool3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+      "name": "Axelar Wrapped USDC",
+      "symbol": "axlUSDC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0xF0B5cEeFc89684889e5F7e0A7775Bd100FcD3709",
+      "name": "DigitalDollar",
+      "symbol": "DUSD",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0xF72beaCc6fD334E14a7DDAC25c3ce1Eb8a827E10",
+      "name": "Curve.fi Factory USD Metapool: FRAX-2pool",
+      "symbol": "FRAX-2pool3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xF92C2A3C91bf869F77f9cB221C5AB1B1ada8a586",
+      "name": "Curve.fi Factory USD Metapool: DAI-2pool",
+      "symbol": "dai-2pool3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A",
+      "name": "Magic Internet Money",
+      "symbol": "MIM",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+      "name": "USD Coin (Arb1)",
+      "symbol": "USDC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0",
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0xa852739519fd46387e2163fc0FB0EfaA94Aa83c4",
+      "name": "Curve.fi Factory Plain Pool: 2stable",
+      "symbol": "2stable-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xaB174fFA530C888649C44C4d21C849BBAaBc723F",
+      "name": "Curve.fi Factory USD Metapool: handleFRAXBP",
+      "symbol": "fxUSD_FRAX3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xaE6aab43C4f3E0cea4Ab83752C278f8dEbabA689",
+      "name": "dForce",
+      "symbol": "DF",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xaa9dFbf31d2f807cA4d9f7BE281D75cA7BDCE64D",
+      "name": "Curve.fi Factory USD Metapool: deBridge-FRAX",
+      "symbol": "deFRAX-2CR3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xb0D2EB3C2cA3c6916FAb8DCbf9d9c165649231AE",
+      "name": "Curve.fi Factory Plain Pool: handleEUR",
+      "symbol": "fxEUR_CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xb1781BF9C582A71269c6098E4155Ea8b15B35305",
+      "name": "Volta Stable Coin",
+      "symbol": "VOLT",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xb3F21Fc59Bc06209D5fb82c474F21582AEf09a20",
+      "name": "Curve.fi Factory Plain Pool: Holy Trinitussy",
+      "symbol": "CRVUSSY-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xb6C7Af9a5703B8E03358dE0A6c07e3208B0CD6A4",
+      "name": "Curve.fi Factory USD Metapool: VST+FRAXBP",
+      "symbol": "VSTFRAXBP3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xbb8a6436e0E9A22bb7F1dC76aFB4421D8195620E",
+      "name": "Curve.fi Factory USD Metapool: DOLLAR",
+      "symbol": "DL3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xbcda256079372C6FE5d1b813AB9DeF5C9D78Ab8F",
+      "name": "Curve.fi Factory Plain Pool: deUSDC/2CRV",
+      "symbol": "deUSDC/2CR-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xc1796710a28f1cBbFE1e8a79A65eE96446607a47",
+      "name": "Curve.fi Factory Plain Pool: VST+FRAX",
+      "symbol": "VSTFRAX-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xc5536d59D026BE19b4267810f43aC083cD607b64",
+      "name": "Curve.fi Factory USD Metapool: MAIPool",
+      "symbol": "MAI+2pool3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xcAB86F6Fb6d1C2cBeeB97854A0C023446A075Fe3",
+      "name": "deBridge Ether",
+      "symbol": "deETH",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xcb11EE4B70d73e38a383b8691cAFb221059669cC",
+      "name": "Curve.fi Factory USD Metapool: TOPG",
+      "symbol": "TOPG3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xd0DD5D76cF0fC06DaBC48632735566DCa241a35e",
+      "name": "Curve.fi Factory USD Metapool: handle3pool",
+      "symbol": "fxUSD_2CRV3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xd39016475200ab8957e9C772C949Ef54bDA69111",
+      "name": "Curve.fi Factory Pool: ETHMAXY/ETH",
+      "symbol": "crvETHMAXY-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xd85E038593d7A098614721EaE955EC2022B9B91B",
+      "name": "Gains Network DAI",
+      "symbol": "gDAI",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xd92Be5A1c565Db5256cDD537B875ED46111Bd8b0",
+      "name": "Curve.fi Factory USD Metapool: volt-2usd",
+      "symbol": "VOLT2USD3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xdC6eBB38Be3FDBA42Ff65da6Aafb9eDE6443DFDB",
+      "name": "Curve.fi Factory USD Metapool: Holy Trinitussy",
+      "symbol": "CRVUSSY3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xdE31e75182276738B0c025daa8F80020A4F2fbFE",
+      "name": "Honey Token",
+      "symbol": "HONEY",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xdb721E854aC98d1782dd80fD60d9c73ef7C4707F",
+      "name": "Curve.fi Factory USD Metapool: TEST TEST",
+      "symbol": "TT3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xe018c227bC84e44c96391d3067FAb5A9A46b7E62",
+      "name": "Chromium Dollar",
+      "symbol": "Cr",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xe413f1611781f66B25aF566276Ee562D050E5Fc4",
+      "name": "Curve.fi Factory Plain Pool: DUSDDAI",
+      "symbol": "DUSDDAI-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xe5042bbac35056f3f95bF0a79D9eB64dc0daFDb8",
+      "name": "Curve.fi Factory Plain Pool: DUSDDAI",
+      "symbol": "DUSDDAI-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xf07d553B195080F84F582e88ecdD54bAa122b279",
+      "name": "Curve.fi Factory USD Metapool: FRAX+2CRV",
+      "symbol": "FRAX+2CRV3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xf31BFaA54b3b5E57e602686320Da7F1eE295A6eE",
+      "name": "Curve.fi Factory USD Metapool: handle2pool",
+      "symbol": "fxUSD_2CRV3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xf3b9DDB3132543E06349AFF9A12f8503D4ca5b47",
+      "name": "Curve.fi Factory Plain Pool: CRV+ETH",
+      "symbol": "crveth-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xfC78eAFf2E8290D3d608B689e93ec6954E21B6C2",
+      "name": "Curve.fi Factory Plain Pool: Loopfi pDF",
+      "symbol": "pDFDF-f",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18

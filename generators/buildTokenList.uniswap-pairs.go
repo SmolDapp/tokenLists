@@ -25,7 +25,7 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address) [
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
 			syncMap := syncMapRaw.([]TokenListToken)
 
-			tokensInfo := ethereum.FetchBasicInformations(chainID, list)
+			tokensInfo := retrieveBasicInformations(chainID, list)
 			for _, address := range list {
 				if token, ok := tokensInfo[address.Hex()]; ok {
 					if token.Name == `` || token.Symbol == `` {

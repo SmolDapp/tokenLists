@@ -5,7 +5,6 @@ import (
 	"sync"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -61,7 +60,7 @@ func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []To
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
 			syncMap := syncMapRaw.([]TokenListToken)
 
-			tokensInfo := ethereum.FetchBasicInformations(chainID, list)
+			tokensInfo := retrieveBasicInformations(chainID, list)
 			for _, address := range list {
 				if token, ok := tokensInfo[address.Hex()]; ok {
 					if newToken, err := SetToken(

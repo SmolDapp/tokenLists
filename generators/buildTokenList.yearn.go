@@ -4,7 +4,6 @@ import (
 	"strconv"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -62,7 +61,7 @@ func fetchYearnTokenList() []TokenListToken {
 		** This fetch could be bypassed by checking the list returned by the API
 		** and checking if the token is in the list.
 		**************************************************************************/
-		underlyingTokensInfo := ethereum.FetchBasicInformations(chainID, vaultsUnderlyingAddress)
+		underlyingTokensInfo := retrieveBasicInformations(chainID, vaultsUnderlyingAddress)
 		for _, token := range underlyingTokensInfo {
 			if newToken, err := SetToken(
 				token.Address,

@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -14,7 +13,7 @@ func handleLedgerTokenList(tokensPerChainID map[uint64][]common.Address) []Token
 	tokenList := []TokenListToken{}
 
 	for chainID, list := range tokensPerChainID {
-		tokensInfo := ethereum.FetchBasicInformations(chainID, list)
+		tokensInfo := retrieveBasicInformations(chainID, list)
 		for _, address := range list {
 			if token, ok := tokensInfo[address.Hex()]; ok {
 				if newToken, err := SetToken(

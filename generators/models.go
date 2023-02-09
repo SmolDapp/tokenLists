@@ -15,6 +15,9 @@ type TokenListToken struct {
 	LogoURI  string `json:"logoURI"`
 	ChainID  uint64 `json:"chainId"`
 	Decimals int    `json:"decimals"`
+
+	// The following fields are optional and not exported
+	Count int `json:"-"` // Use for aggregation: number of time this token was found
 }
 
 // TokenListData is the token list struct used in the default token list
