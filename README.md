@@ -28,3 +28,12 @@ Tokenlistooor is a fork of the Uniswap project, with a focus on automation and s
 To start the generator, run the following command:
 `go run ./generators nameOfTheList`
 
+### Credits and Usage
+- Using [1Inch](https://1inch.io/) API to generate the 1Inch Token List
+- Using [Coingecko](https://www.coingecko.com/) API to generate the Coingecko Token List
+- Using [Curve](https://curve.fi/) API to generate the Curve Token List
+- Using [Messari](https://messari.io) API to generate the Messari Token List
+- Using [Paraswap](https://www.paraswap.io/) API to generate the Paraswap Token List
+- Using [Portals](https://portals.fi/) API to generate the Portals Token List
+- Using [Wido](https://www.joinwido.com/) API to generate the Wido Token List
+- Using [Yearn](https://yearn.finance) API to generate the Yearn Token List
