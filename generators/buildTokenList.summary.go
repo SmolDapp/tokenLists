@@ -76,7 +76,7 @@ func buildSummary() {
 
 	//Also add the tokenListooor list
 	{
-		tokenListooorList := loadTokenListFromJsonFile(`tokenListooor.json`)
+		tokenListooorList := loadTokenListFromJsonFile(`tokenlistooor.json`)
 		listElement := TMinTokenListData{
 			Name:        tokenListooorList.Name,
 			Timestamp:   tokenListooorList.Timestamp,
