@@ -1,10 +1,10 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "13/02/2023 10:47:50",
+  "timestamp": "19/02/2023 00:38:22",
   "version": {
     "major": 1,
-    "minor": 3,
+    "minor": 4,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -84,8 +84,8 @@
     },
     {
       "address": "0x04D549bAfE83B8BdCCC8dF38F15b90199D20f1eE",
-      "name": "Curve TBTCSBTC23CRV-f Factory yVault",
-      "symbol": "yvCurve-TBTCSBTC23CRV-f-f",
+      "name": "Curve tBTC Factory yVault",
+      "symbol": "yvCurve-tBTC-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x04D549bAfE83B8BdCCC8dF38F15b90199D20f1eE/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -620,8 +620,8 @@
     },
     {
       "address": "0x3221BFBE308144f19089CB197b7C11c2Bf495906",
-      "name": "Curve BTRFLYETH-f Factory yVault",
-      "symbol": "yvCurve-BTRFLYETH-f-f",
+      "name": "Curve BTRFLY-ETH Factory yVault",
+      "symbol": "yvCurve-BTRFLY-ETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x3221BFBE308144f19089CB197b7C11c2Bf495906/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -788,8 +788,8 @@
     },
     {
       "address": "0x3a51269E0707A3416044bad5066858A12198fCf5",
-      "name": "Curve CLEVETH-f Factory yVault",
-      "symbol": "yvCurve-CLEVETH-f-f",
+      "name": "Curve CLEV-ETH Factory yVault",
+      "symbol": "yvCurve-CLEV-ETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x3a51269E0707A3416044bad5066858A12198fCf5/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -844,8 +844,8 @@
     },
     {
       "address": "0x429EA2d8d5B06CA40dD986FaC0734BA0E0CaC022",
-      "name": "Curve sdCRV-CRV Factory yVault",
-      "symbol": "yvCurve-sdCRV-CRV-f",
+      "name": "Curve sdCRV Factory yVault",
+      "symbol": "yvCurve-sdCRV-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x429EA2d8d5B06CA40dD986FaC0734BA0E0CaC022/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1011,6 +1011,14 @@
       "decimals": 2
     },
     {
+      "address": "0x4aCc1BF7D6a591016641325aA6664A1Cd178F002",
+      "name": "Curve.fi Factory Crypto Pool: DYDX/ETH",
+      "symbol": "DYDXETH-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x4aCc1BF7D6a591016641325aA6664A1Cd178F002/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x4c1317326fD8EFDeBdBE5e1cd052010D97723bd6",
       "name": "Yearn CRV",
       "symbol": "yCRV",
@@ -1068,8 +1076,8 @@
     },
     {
       "address": "0x5331009B82853e9FB711bC0b300E1b374724AdaC",
-      "name": "Curve sdYFI-YFI Factory yVault",
-      "symbol": "yvCurve-sdYFI-YFI-f",
+      "name": "Curve sdYFI Factory yVault",
+      "symbol": "yvCurve-sdYFI-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x5331009B82853e9FB711bC0b300E1b374724AdaC/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1204,8 +1212,8 @@
     },
     {
       "address": "0x5CBF567cb0C3D319A052C91eFB3B3318899338DF",
-      "name": "Curve pETH-ETH-f Factory yVault",
-      "symbol": "yvCurve-pETH-ETH-f-f",
+      "name": "Curve pETH Factory yVault",
+      "symbol": "yvCurve-pETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x5CBF567cb0C3D319A052C91eFB3B3318899338DF/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1340,8 +1348,8 @@
     },
     {
       "address": "0x63c5c0604Ec410130C69C958aCab81794f7a622F",
-      "name": "Curve ETH MATIC-f Factory yVault",
-      "symbol": "yvCurve-ETH MATIC-f-f",
+      "name": "Curve MATIC-ETH Factory yVault",
+      "symbol": "yvCurve-MATIC-ETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x63c5c0604Ec410130C69C958aCab81794f7a622F/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1580,8 +1588,8 @@
     },
     {
       "address": "0x7788A5492bc948e1d8c2caa53b2e0a60ed5403b0",
-      "name": "Curve OHMFRAXBP-f Factory yVault",
-      "symbol": "yvCurve-OHMFRAXBP-f-f",
+      "name": "Curve OHM-FRAXBP Factory yVault",
+      "symbol": "yvCurve-OHM-FRAXBP-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x7788A5492bc948e1d8c2caa53b2e0a60ed5403b0/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1620,8 +1628,8 @@
     },
     {
       "address": "0x7B50775383d3D6f0215A8F290f2C9e2eEBBEceb2",
-      "name": "Balancer Aave Boosted StablePool (USD)",
-      "symbol": "BB-A-USD",
+      "name": "Balancer Boosted Aave USD",
+      "symbol": "bb-a-usd",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x7B50775383d3D6f0215A8F290f2C9e2eEBBEceb2/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1668,8 +1676,8 @@
     },
     {
       "address": "0x7e113c504263354ba99290dadAd00D1e1F2b6476",
-      "name": "Curve sdFXS-FXS Factory yVault",
-      "symbol": "yvCurve-sdFXS-FXS-f",
+      "name": "Curve sdFXS Factory yVault",
+      "symbol": "yvCurve-sdFXS-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x7e113c504263354ba99290dadAd00D1e1F2b6476/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1988,8 +1996,8 @@
     },
     {
       "address": "0x9E0E0AF468FbD041Cab7883c5eEf16D1A99a47C3",
-      "name": "Curve sdANGLE-ANGLE Factory yVault",
-      "symbol": "yvCurve-sdAG-AG-f",
+      "name": "Curve sdANGLE Factory yVault",
+      "symbol": "yvCurve-sdANGLE-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x9E0E0AF468FbD041Cab7883c5eEf16D1A99a47C3/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -2388,8 +2396,8 @@
     },
     {
       "address": "0xDb26d8815EdA864Dfa43306766f2F8CA50C03F9E",
-      "name": "Curve msUSDFRAX3CRV-f Factory yVault",
-      "symbol": "yvCurve-msUSDFRAX3CRV-f-f",
+      "name": "Curve msUSD-FRAXBP Factory yVault",
+      "symbol": "yvCurve-msUSD-FRAXBP-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xDb26d8815EdA864Dfa43306766f2F8CA50C03F9E/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -2851,6 +2859,14 @@
       "decimals": 18
     },
     {
+      "address": "0xca46d6e44499AfbD8795f8F86910F068a6bF1a7c",
+      "name": "Curve DYDX-ETH Factory yVault",
+      "symbol": "yvCurve-DYDX-ETH-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xca46d6e44499AfbD8795f8F86910F068a6bF1a7c/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xcaE0347E9fafC1e08880C79c8331F15c786083E0",
       "name": "USDC yVault",
       "symbol": "yvUSDC",
@@ -2916,8 +2932,8 @@
     },
     {
       "address": "0xdA816459F1AB5631232FE5e97a05BBBb94970c95",
-      "name": "yvDAI",
-      "symbol": "yvdai",
+      "name": "DAI yVault",
+      "symbol": "yvDAI",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xdA816459F1AB5631232FE5e97a05BBBb94970c95/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -2996,8 +3012,8 @@
     },
     {
       "address": "0xe1747F4D30479D7a2DCFEa5af69fb86B8f71cCeC",
-      "name": "Curve TRYB3POOL-f Factory yVault",
-      "symbol": "yvCurve-TRYB3POOL-f-f",
+      "name": "Curve TRYb Factory yVault",
+      "symbol": "yvCurve-TRYb-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xe1747F4D30479D7a2DCFEa5af69fb86B8f71cCeC/logo-128.png",
       "chainId": 1,
       "decimals": 18
