@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "19/02/2023 00:38:00",
+  "timestamp": "26/02/2023 00:42:33",
   "version": {
     "major": 4,
-    "minor": 4,
+    "minor": 5,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -14,6 +14,14 @@
       "address": "0x00E3852AEdBFA153629BeFc870fa45c4d859652c",
       "name": "Curve.fi Factory USD Metapool: ARB / ETH",
       "symbol": "ARBETH3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x0149123760957395f283AF81fE8c904348aA33FC",
+      "name": "Curve.fi Factory Plain Pool: ORDER/USDT",
+      "symbol": "ORDERUSDT-f",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -252,8 +260,8 @@
     },
     {
       "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
-      "name": "MAI",
-      "symbol": "mimatic",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -334,6 +342,14 @@
       "address": "0x4f947b40BEEB9D8130437781a560E5c7D089730f",
       "name": "KAKI USDC",
       "symbol": "kUSDC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x50C1F96e1dc4007A006E4119bd6F1F0BF12661dd",
+      "name": "ORDER",
+      "symbol": "ORDER",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -437,7 +453,7 @@
     {
       "address": "0x641441c631e2F909700d2f41FD87F0aA6A6b4EDb",
       "name": "dForce USD",
-      "symbol": "usx",
+      "symbol": "USX",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -668,7 +684,7 @@
     },
     {
       "address": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b",
-      "name": "LUSD Stablecoin",
+      "name": "Liquity USD",
       "symbol": "LUSD",
       "logoURI": "",
       "chainId": 42161,
@@ -820,8 +836,8 @@
     },
     {
       "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
-      "name": "Axelar USDC",
-      "symbol": "axlusdc",
+      "name": "Axelar Wrapped USDC",
+      "symbol": "axlUSDC",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 6
@@ -837,7 +853,7 @@
     {
       "address": "0xF0B5cEeFc89684889e5F7e0A7775Bd100FcD3709",
       "name": "DigitalDollar",
-      "symbol": "dusd",
+      "symbol": "DUSD",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 6
@@ -1044,8 +1060,8 @@
     },
     {
       "address": "0xdE31e75182276738B0c025daa8F80020A4F2fbFE",
-      "name": "Honey Pot BeeKeepers",
-      "symbol": "honey",
+      "name": "Honey Token",
+      "symbol": "HONEY",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
