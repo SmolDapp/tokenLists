@@ -1,10 +1,10 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "26/02/2023 00:45:40",
+  "timestamp": "05/03/2023 00:49:24",
   "version": {
     "major": 1,
-    "minor": 5,
+    "minor": 6,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -35,6 +35,14 @@
       "decimals": 18
     },
     {
+      "address": "0x22687Ca792A8Cb5E169a77E0949e71Fe37147604",
+      "name": "Velodrome USDC-DOLA yVault",
+      "symbol": "yvVelo-USDC-DOLA",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x22687Ca792A8Cb5E169a77E0949e71Fe37147604/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x2a90F479002DAae9934c3a70EBB6e8DbeB46292b",
       "name": "sUSD yVault",
       "symbol": "yvsUSD",
@@ -44,8 +52,8 @@
     },
     {
       "address": "0x4200000000000000000000000000000000000006",
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
+      "name": "WETH",
+      "symbol": "weth",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x4200000000000000000000000000000000000006/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -53,7 +61,7 @@
     {
       "address": "0x4200000000000000000000000000000000000042",
       "name": "Optimism",
-      "symbol": "OP",
+      "symbol": "op",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x4200000000000000000000000000000000000042/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -84,11 +92,19 @@
     },
     {
       "address": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
-      "name": "Wrapped BTC",
-      "symbol": "WBTC",
+      "name": "Wrapped Bitcoin",
+      "symbol": "wbtc",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x68f180fcCe6836688e9084f035309E29Bf0A2095/logo-128.png",
       "chainId": 10,
       "decimals": 8
+    },
+    {
+      "address": "0x6C5019D345Ec05004A7E7B0623A91a0D9B8D590d",
+      "name": "StableV1 AMM - USDC/DOLA",
+      "symbol": "sAMM-USDC/DOLA",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x6C5019D345Ec05004A7E7B0623A91a0D9B8D590d/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x7Bc5728BC2b59B45a58d9A576E2Ffc5f0505B35E",
@@ -117,23 +133,23 @@
     {
       "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
       "name": "USD Coin",
-      "symbol": "USDC",
+      "symbol": "usdc",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x7F5c764cBc14f9669B88837ca1490cCa17c31607/logo-128.png",
       "chainId": 10,
       "decimals": 6
     },
     {
       "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
-      "name": "Synth sUSD",
-      "symbol": "sUSD",
+      "name": "sUSD",
+      "symbol": "susd",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
-      "name": "Tether USD",
-      "symbol": "USDT",
+      "name": "Tether",
+      "symbol": "usdt",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x94b008aA00579c1307B0EF2c499aD98a8ce58e58/logo-128.png",
       "chainId": 10,
       "decimals": 6
@@ -156,8 +172,8 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai Stablecoin",
-      "symbol": "DAI",
+      "name": "Dai",
+      "symbol": "dai",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1/logo-128.png",
       "chainId": 10,
       "decimals": 18
