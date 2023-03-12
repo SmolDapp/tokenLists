@@ -81,7 +81,7 @@ var GENERATORS = map[string]TGenerators{
 	`optimism`: {
 		Exec:             buildOptimismTokenList,
 		Name:             `Optimism`,
-		Description:      `A list of okens used as the source of truth for the Optimism Gateway.`,
+		Description:      `A list of tokens used as the source of truth for the Optimism Gateway.`,
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},
