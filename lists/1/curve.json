@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "05/03/2023 00:50:25",
+  "timestamp": "12/03/2023 00:42:32",
   "version": {
-    "major": 4,
-    "minor": 6,
+    "major": 5,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -46,6 +46,14 @@
       "address": "0x0012940cf77a3cB5BADE409B96A60E22506CF7d0",
       "name": "Curve.fi Factory Crypto Pool: STATE / WBTC",
       "symbol": "STATEWBTC-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x008410c50Aa8422D0C2a357A2F10b9A78fA7c496",
+      "name": "Curve.fi Factory Crypto Pool: STG/USDC",
+      "symbol": "STGUSDC-f",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -733,7 +741,7 @@
     {
       "address": "0x16de59092dAE5CcF4A1E6439D611fd0653f0Bd01",
       "name": "iearn DAI",
-      "symbol": "yDAIv2",
+      "symbol": "yDAI",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -869,7 +877,7 @@
     {
       "address": "0x1BEf2e5DE862034Fb0ed456DF59d29Ecadc9934C",
       "name": "NAOS USD",
-      "symbol": "NUSD",
+      "symbol": "nusd",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -1205,7 +1213,7 @@
     {
       "address": "0x26EA744E5B887E5205727f55dFBE8685e3b21951",
       "name": "iearn USDC",
-      "symbol": "yUSDCv3",
+      "symbol": "yUSDC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -1278,6 +1286,14 @@
       "address": "0x29059568bB40344487d62f7450E78b8E6C74e0e5",
       "name": "Curve.fi Factory Crypto Pool: YFI/ETH",
       "symbol": "YFIETH-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x29601081894e958384db3611E8085a5B9eeb9Dd7",
+      "name": "Curve.fi Factory Crypto Pool: STG/FRAX-USDC",
+      "symbol": "STGFRAXBP-f",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -1518,6 +1534,14 @@
       "address": "0x326290A1B0004eeE78fa6ED4F1d8f4b2523ab669",
       "name": "Curve.fi Factory USD Metapool: XAI/FRAXBP",
       "symbol": "XAIFRAXBP3CRV-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x326f5834d73a2dc02b3c492E9ef1b24399d430b3",
+      "name": "StargateToken",
+      "symbol": "STG",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2077,7 +2101,7 @@
     {
       "address": "0x48759F220ED983dB51fA7A8C0D2AAb8f3ce4166a",
       "name": "Iron Bank Tether USD",
-      "symbol": "cyUSDT",
+      "symbol": "iUSDT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 8
@@ -2283,6 +2307,14 @@
       "decimals": 18
     },
     {
+      "address": "0x5007c634BD59dd211875346A5D0cfd10DFD1CdC0",
+      "name": "Curve.fi Factory Plain Pool: cvxCrv/Crv",
+      "symbol": "cvxcrv-crv-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x50122108f7b3B10ac219d066275087D37E4F4a61",
       "name": "Curve.fi Factory USD Metapool: MTBT/3CRV",
       "symbol": "MTBT3CRV-f",
@@ -2380,8 +2412,8 @@
     },
     {
       "address": "0x530824DA86689C9C17CdC2871Ff29B058345b44a",
-      "name": "Short-term Treasury Bill Token",
-      "symbol": "STBT",
+      "name": "Short-term T-Bill Token",
+      "symbol": "stbt",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -3003,6 +3035,14 @@
       "decimals": 6
     },
     {
+      "address": "0x68934F60758243eafAf4D2cFeD27BF8010bede3a",
+      "name": "Curve.fi Factory USD Metapool: Zunami UZD/FRAXBP",
+      "symbol": "UZDFRAXBP3CRV-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x694650a0B2866472c2EEA27827CE6253C1D13074",
       "name": "Curve.fi Factory Plain Pool: tFRAX/FRAX Test",
       "symbol": "tFRAX+FRAX-f",
@@ -3397,7 +3437,7 @@
     {
       "address": "0x76Eb2FE28b36B3ee97F3Adae0C69606eeDB2A37c",
       "name": "Iron Bank USD Coin",
-      "symbol": "cyUSDC",
+      "symbol": "iUSDC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 8
@@ -3733,7 +3773,7 @@
     {
       "address": "0x83f798e925BcD4017Eb265844FDDAbb448f1707D",
       "name": "iearn USDT",
-      "symbol": "yUSDTv2",
+      "symbol": "yUSDT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -3907,6 +3947,14 @@
       "decimals": 18
     },
     {
+      "address": "0x892D701d94a43bDBCB5eA28891DaCA2Fa22A690b",
+      "name": "Curve.fi Factory USD Metapool: STBT/3CRV",
+      "symbol": "STBT3CRV-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x893DA8A02b487FEF2F7e3F35DF49d7625aE549a3",
       "name": "Curve.fi Factory Crypto Pool: SDT / FRAXBP",
       "symbol": "sdtfraxbp-f",
@@ -4069,7 +4117,7 @@
     {
       "address": "0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
       "name": "tBTC",
-      "symbol": "tBTC",
+      "symbol": "TBTC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4077,7 +4125,7 @@
     {
       "address": "0x8e595470Ed749b85C6F7669de83EAe304C2ec68F",
       "name": "Iron Bank Dai Stablecoin",
-      "symbol": "cyDAI",
+      "symbol": "iDAI",
       "logoURI": "",
       "chainId": 1,
       "decimals": 8
@@ -4307,6 +4355,14 @@
       "decimals": 18
     },
     {
+      "address": "0x971add32Ea87f10bD192671630be3BE8A11b8623",
+      "name": "Curve.fi Factory Plain Pool: cvxCrv/Crv",
+      "symbol": "cvxcrv-crv-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x973F054eDBECD287209c36A2651094fA52F99a71",
       "name": "ARTH USD Rebase",
       "symbol": "ARTH.usd",
@@ -4396,8 +4452,8 @@
     },
     {
       "address": "0x99534Ef705Df1FFf4e4bD7bbaAF9b0dFf038EbFe",
-      "name": "Ankr Reward Earning MATIC",
-      "symbol": "AMATICB",
+      "name": "Ankr MATIC Reward Earning Bond",
+      "symbol": "amaticb",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4430,6 +4486,14 @@
       "address": "0x99d1Fa417f94dcD62BfE781a1213c092a47041Bc",
       "name": "Curve (iearn fork) DAI",
       "symbol": "ycDAI",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x99f5aCc8EC2Da2BC0771c32814EFF52b712de1E5",
+      "name": "Curve.fi Factory Plain Pool: yCRV",
+      "symbol": "yCRV-f",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5044,7 +5108,7 @@
     },
     {
       "address": "0xC0d4Ceb216B3BA9C3701B291766fDCbA977ceC3A",
-      "name": "Blockchain Monster Coin",
+      "name": "Redacted Cartel",
       "symbol": "BTRFLY",
       "logoURI": "",
       "chainId": 1,
@@ -5101,7 +5165,7 @@
     {
       "address": "0xC2cB1040220768554cf699b0d863A3cd4324ce32",
       "name": "iearn DAI",
-      "symbol": "yDAIv3",
+      "symbol": "yDAI",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5444,7 +5508,7 @@
     },
     {
       "address": "0xDE12c7959E1a72bbe8a5f7A1dc8f8EeF9Ab011B3",
-      "name": "ShareToken",
+      "name": "DEI Token",
       "symbol": "DEI",
       "logoURI": "",
       "chainId": 1,
@@ -5523,9 +5587,17 @@
       "decimals": 18
     },
     {
+      "address": "0xE60986759872393a8360A4a7abEAb3A6e0BA7848",
+      "name": "Curve.fi Factory USD Metapool: pUSDFRAXBP-A100",
+      "symbol": "pUSDFRAXBP3CRV-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xE6354ed5bC4b393a5Aad09f21c46E101e692d447",
       "name": "iearn USDT",
-      "symbol": "yUSDTv3",
+      "symbol": "yUSDT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -5724,7 +5796,7 @@
     },
     {
       "address": "0xF48e200EAF9906362BB1442fca31e0835773b8B4",
-      "name": "Synth sAUD",
+      "name": "sAUD",
       "symbol": "SAUD",
       "logoURI": "",
       "chainId": 1,
@@ -5813,7 +5885,7 @@
     {
       "address": "0xFAFdF0C4c1CB09d430Bf88c75D88BB46DAe09967",
       "name": "Iron Bank AUD",
-      "symbol": "ibAUD",
+      "symbol": "IBAUD",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6139,6 +6211,14 @@
       "decimals": 18
     },
     {
+      "address": "0xb40b6608B2743E691C9B54DdBDEe7bf03cd79f1c",
+      "name": "UZD Zunami Stable",
+      "symbol": "UZD",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xb548E49Bb6f33A77885836723b73EF9C8dBC047B",
       "name": "Curve.fi Factory USD Metapool: USDT/DAI",
       "symbol": "USDTDAI_OP3CRV-f",
@@ -6181,7 +6261,7 @@
     {
       "address": "0xb8b295df2cd735b15BE5Eb419517Aa626fc43cD5",
       "name": "Staked LINK",
-      "symbol": "stLINK",
+      "symbol": "stlink",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6220,8 +6300,8 @@
     },
     {
       "address": "0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6",
-      "name": "Synth sLINK",
-      "symbol": "sLINK",
+      "name": "sLINK",
+      "symbol": "SLINK",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6661,7 +6741,7 @@
     {
       "address": "0xd6aD7a6750A7593E092a9B218d66C0A814a3436e",
       "name": "iearn USDC",
-      "symbol": "yUSDCv2",
+      "symbol": "yUSDC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -6796,8 +6876,8 @@
     },
     {
       "address": "0xe1406825186D63980fd6e2eC61888f7B91C4bAe4",
-      "name": "vBTC",
-      "symbol": "vBTC",
+      "name": "Strudel BTC",
+      "symbol": "VBTC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
