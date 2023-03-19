@@ -1,11 +1,11 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "17/03/2023 19:59:38",
+  "timestamp": "19/03/2023 00:40:26",
   "version": {
     "major": 1,
     "minor": 7,
-    "patch": 0
+    "patch": 1
   },
   "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
   "keywords": [
@@ -61,7 +61,7 @@
     {
       "address": "0x0316EB71485b0Ab14103307bf65a021042c6d380",
       "name": "Huobi BTC",
-      "symbol": "hbtc",
+      "symbol": "hBTC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0316EB71485b0Ab14103307bf65a021042c6d380/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -140,7 +140,7 @@
     },
     {
       "address": "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
-      "name": "Gemini Dollar",
+      "name": "Gemini dollar",
       "symbol": "GUSD",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd/logo-128.png",
       "chainId": 1,
@@ -165,7 +165,7 @@
     {
       "address": "0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3",
       "name": "Curve.fi renBTC/wBTC/sBTC",
-      "symbol": "crvrenwsbtc",
+      "symbol": "sbtcCRV",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -277,7 +277,7 @@
     {
       "address": "0x1456688345527bE1f37E9e627DA0837D6f08C925",
       "name": "USDP Stablecoin",
-      "symbol": "usdp",
+      "symbol": "USDP",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x1456688345527bE1f37E9e627DA0837D6f08C925/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -308,8 +308,8 @@
     },
     {
       "address": "0x178E029173417b1F9C8bC16DCeC6f697bC323746",
-      "name": "FIAT-USDC-DAI Stable Pool",
-      "symbol": "FUD",
+      "name": "BalancerV2 LP FIAT/DAI/USDC",
+      "symbol": "FIAT/DAI/USDC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x178E029173417b1F9C8bC16DCeC6f697bC323746/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -621,7 +621,7 @@
     {
       "address": "0x3175Df0976dFA876431C2E9eE6Bc45b65d3473CC",
       "name": "Curve.fi FRAX/USDC",
-      "symbol": "crvfrax",
+      "symbol": "crvFRAX",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x3175Df0976dFA876431C2E9eE6Bc45b65d3473CC/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -964,8 +964,8 @@
     },
     {
       "address": "0x49849C98ae39Fff122806C06791Fa73784FB3675",
-      "name": "LP renBTC Curve",
-      "symbol": "renbtccurve",
+      "name": "Curve.fi renBTC/wBTC",
+      "symbol": "RENBTCCURVE",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x49849C98ae39Fff122806C06791Fa73784FB3675/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1060,7 +1060,7 @@
     },
     {
       "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
-      "name": "Chain Link",
+      "name": "ChainLink Token",
       "symbol": "LINK",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo-128.png",
       "chainId": 1,
@@ -1508,8 +1508,8 @@
     },
     {
       "address": "0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490",
-      "name": "LP 3pool Curve",
-      "symbol": "3crv",
+      "name": "Curve.fi DAI/USDC/USDT",
+      "symbol": "3CRV",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1660,15 +1660,15 @@
     },
     {
       "address": "0x7B50775383d3D6f0215A8F290f2C9e2eEBBEceb2",
-      "name": "Balancer Boosted Aave USD",
-      "symbol": "bb-a-usd",
+      "name": "Balancer Aave Boosted StablePool (USD)",
+      "symbol": "BB-A-USD",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x7B50775383d3D6f0215A8F290f2C9e2eEBBEceb2/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x7Da96a3891Add058AdA2E826306D812C638D87a7",
-      "name": "USDT yVault",
+      "name": "Yearn yvUSDT 0.3.5",
       "symbol": "yvUSDT",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x7Da96a3891Add058AdA2E826306D812C638D87a7/logo-128.png",
       "chainId": 1,
@@ -1972,7 +1972,7 @@
     },
     {
       "address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
-      "name": "Ocean Protocol",
+      "name": "Ocean Token",
       "symbol": "OCEAN",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x967da4048cD07aB37855c090aAF366e4ce1b9F48/logo-128.png",
       "chainId": 1,
@@ -2316,8 +2316,8 @@
     },
     {
       "address": "0xC25a3A3b969415c80451098fa907EC722572917F",
-      "name": "LP-sCurve",
-      "symbol": "scurve",
+      "name": "RealToken S 9920 Bishop St Detroit MI",
+      "symbol": "SCURVE",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xC25a3A3b969415c80451098fa907EC722572917F/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -2549,7 +2549,7 @@
     {
       "address": "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D",
       "name": "renBTC",
-      "symbol": "renbtc",
+      "symbol": "renBTC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D/logo-128.png",
       "chainId": 1,
       "decimals": 8
@@ -2572,8 +2572,8 @@
     },
     {
       "address": "0xEd279fDD11cA84bEef15AF5D39BB4d4bEE23F0cA",
-      "name": "LUSD3CRV-f",
-      "symbol": "lusd3crv",
+      "name": "Curve.fi Factory USD Metapool: Liquity",
+      "symbol": "LUSD3CRV-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xEd279fDD11cA84bEef15AF5D39BB4d4bEE23F0cA/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -2661,7 +2661,7 @@
     {
       "address": "0xFCc5c47bE19d06BF83eB04298b026F81069ff65b",
       "name": "Yearn CRV",
-      "symbol": "ycrv",
+      "symbol": "yCRV",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xFCc5c47bE19d06BF83eB04298b026F81069ff65b/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -2917,7 +2917,7 @@
     {
       "address": "0xc5bDdf9843308380375a611c18B50Fb9341f502A",
       "name": "veCRV-DAO yVault",
-      "symbol": "yve-crvdao",
+      "symbol": "yveCRV",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xc5bDdf9843308380375a611c18B50Fb9341f502A/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -3044,8 +3044,8 @@
     },
     {
       "address": "0xdA816459F1AB5631232FE5e97a05BBBb94970c95",
-      "name": "yvDAI",
-      "symbol": "yvdai",
+      "name": "Yearn yvDAI 0.4.3",
+      "symbol": "yvDAI",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xdA816459F1AB5631232FE5e97a05BBBb94970c95/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -3076,8 +3076,8 @@
     },
     {
       "address": "0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8",
-      "name": "LP-yCurve",
-      "symbol": "ycurve",
+      "name": "Curve.fi yDAI/yUSDC/yUSDT/yTUSD",
+      "symbol": "yCurve",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -3188,8 +3188,8 @@
     },
     {
       "address": "0xf4d2888d29D722226FafA5d9B24F9164c092421E",
-      "name": "LooksRare",
-      "symbol": "looks",
+      "name": "LooksRare Token",
+      "symbol": "LOOKS",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xf4d2888d29D722226FafA5d9B24F9164c092421E/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -3220,8 +3220,8 @@
     },
     {
       "address": "0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6",
-      "name": "sBTC",
-      "symbol": "sbtc",
+      "name": "Synth sBTC",
+      "symbol": "sBTC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6/logo-128.png",
       "chainId": 1,
       "decimals": 18

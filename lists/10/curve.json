@@ -1,11 +1,11 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "17/03/2023 20:02:27",
+  "timestamp": "19/03/2023 00:40:26",
   "version": {
     "major": 5,
     "minor": 1,
-    "patch": 0
+    "patch": 1
   },
   "logoURI": "https://classic.curve.fi/logo.png",
   "keywords": [],
@@ -92,8 +92,8 @@
     },
     {
       "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
-      "name": "Wrapped liquid staked Ether 2.0",
-      "symbol": "wstETH",
+      "name": "Wrapped stETH",
+      "symbol": "WSTETH",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -124,7 +124,7 @@
     },
     {
       "address": "0x2E3D870790dC77A83DD1d18184Acc7439A53f475",
-      "name": "FRAX",
+      "name": "Frax",
       "symbol": "FRAX",
       "logoURI": "",
       "chainId": 10,
@@ -188,7 +188,7 @@
     },
     {
       "address": "0x4200000000000000000000000000000000000006",
-      "name": "Wrapped Ether",
+      "name": "WETH",
       "symbol": "WETH",
       "logoURI": "",
       "chainId": 10,
@@ -284,8 +284,8 @@
     },
     {
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
-      "name": "Aave USDC",
-      "symbol": "ausdc",
+      "name": "Aave Optimism USDC",
+      "symbol": "aOptUSDC",
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
@@ -316,7 +316,7 @@
     },
     {
       "address": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
-      "name": "Wrapped BTC",
+      "name": "Wrapped Bitcoin",
       "symbol": "WBTC",
       "logoURI": "",
       "chainId": 10,
@@ -332,16 +332,16 @@
     },
     {
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
-      "name": "Aave USDT",
-      "symbol": "ausdt",
+      "name": "Aave Optimism USDT",
+      "symbol": "aOptUSDT",
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
     },
     {
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
-      "name": "Aave SUSD",
-      "symbol": "asusd",
+      "name": "Aave Optimism SUSD",
+      "symbol": "aOptSUSD",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -420,8 +420,8 @@
     },
     {
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
-      "name": "Aave DAI",
-      "symbol": "adai",
+      "name": "Aave Optimism DAI",
+      "symbol": "aOptDAI",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -460,8 +460,8 @@
     },
     {
       "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
-      "name": "Synthetix USD",
-      "symbol": "sUSD",
+      "name": "sUSD",
+      "symbol": "SUSD",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -476,7 +476,7 @@
     },
     {
       "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
-      "name": "Tether USD",
+      "name": "Tether",
       "symbol": "USDT",
       "logoURI": "",
       "chainId": 10,
@@ -556,7 +556,7 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai Stablecoin",
+      "name": "Dai",
       "symbol": "DAI",
       "logoURI": "",
       "chainId": 10,
@@ -572,8 +572,8 @@
     },
     {
       "address": "0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49",
-      "name": "Synthetic Ether",
-      "symbol": "sETH",
+      "name": "sETH",
+      "symbol": "SETH",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -596,7 +596,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Ethereum",
+      "name": "ETH",
       "symbol": "ETH",
       "logoURI": "",
       "chainId": 10,
@@ -684,7 +684,7 @@
     },
     {
       "address": "0xc40F949F8a4e094D1b49a23ea9241D289B7b2819",
-      "name": "LUSD Stablecoin",
+      "name": "Liquity USD",
       "symbol": "LUSD",
       "logoURI": "",
       "chainId": 10,
@@ -692,8 +692,8 @@
     },
     {
       "address": "0xc5Db22719A06418028A40A9B5E9A7c02959D0d08",
-      "name": "Synthetic Chainlink",
-      "symbol": "sLINK",
+      "name": "sLINK",
+      "symbol": "SLINK",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -709,7 +709,7 @@
     {
       "address": "0xdFA46478F9e5EA86d57387849598dbFB2e964b02",
       "name": "MAI",
-      "symbol": "mimatic",
+      "symbol": "MIMATIC",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
