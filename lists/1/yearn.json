@@ -1,11 +1,11 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "19/03/2023 00:40:26",
+  "timestamp": "21/03/2023 17:00:54",
   "version": {
     "major": 1,
-    "minor": 7,
-    "patch": 1
+    "minor": 8,
+    "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
   "keywords": [
@@ -61,7 +61,7 @@
     {
       "address": "0x0316EB71485b0Ab14103307bf65a021042c6d380",
       "name": "Huobi BTC",
-      "symbol": "hBTC",
+      "symbol": "HBTC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0316EB71485b0Ab14103307bf65a021042c6d380/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -165,7 +165,7 @@
     {
       "address": "0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3",
       "name": "Curve.fi renBTC/wBTC/sBTC",
-      "symbol": "sbtcCRV",
+      "symbol": "crvRenWSBTC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -308,8 +308,8 @@
     },
     {
       "address": "0x178E029173417b1F9C8bC16DCeC6f697bC323746",
-      "name": "BalancerV2 LP FIAT/DAI/USDC",
-      "symbol": "FIAT/DAI/USDC",
+      "name": "FIAT-USDC-DAI Stable Pool",
+      "symbol": "FUD",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x178E029173417b1F9C8bC16DCeC6f697bC323746/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -527,6 +527,14 @@
       "name": "Curve.fi Factory Crypto Pool: YFI/ETH",
       "symbol": "YFIETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x29059568bB40344487d62f7450E78b8E6C74e0e5/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x2Ab6578239eD541Ef7cC7D11a45D740cE9F0a1F4",
+      "name": "Curve CTRETH-f Factory yVault",
+      "symbol": "yvCurve-CTRETH-f-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x2Ab6578239eD541Ef7cC7D11a45D740cE9F0a1F4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -835,6 +843,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3f0e7916681452D23Cd36B1281457DA721F2E5dF",
+      "name": "Curve.fi Factory Crypto Pool: Concentrator CTR/ETH",
+      "symbol": "CTRETH-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x3f0e7916681452D23Cd36B1281457DA721F2E5dF/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x410e3E86ef427e30B9235497143881f717d93c2A",
       "name": "Curve.fi bBTC/sbtcCRV",
       "symbol": "bBTC/sbtcCRV",
@@ -965,7 +981,7 @@
     {
       "address": "0x49849C98ae39Fff122806C06791Fa73784FB3675",
       "name": "Curve.fi renBTC/wBTC",
-      "symbol": "RENBTCCURVE",
+      "symbol": "crvRenWBTC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x49849C98ae39Fff122806C06791Fa73784FB3675/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1060,7 +1076,7 @@
     },
     {
       "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
-      "name": "ChainLink Token",
+      "name": "Chainlink",
       "symbol": "LINK",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo-128.png",
       "chainId": 1,
@@ -1509,7 +1525,7 @@
     {
       "address": "0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490",
       "name": "Curve.fi DAI/USDC/USDT",
-      "symbol": "3CRV",
+      "symbol": "3Crv",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1661,14 +1677,14 @@
     {
       "address": "0x7B50775383d3D6f0215A8F290f2C9e2eEBBEceb2",
       "name": "Balancer Aave Boosted StablePool (USD)",
-      "symbol": "BB-A-USD",
+      "symbol": "bb-a-USD",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x7B50775383d3D6f0215A8F290f2C9e2eEBBEceb2/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x7Da96a3891Add058AdA2E826306D812C638D87a7",
-      "name": "Yearn yvUSDT 0.3.5",
+      "name": "USDT yVault",
       "symbol": "yvUSDT",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x7Da96a3891Add058AdA2E826306D812C638D87a7/logo-128.png",
       "chainId": 1,
@@ -1836,7 +1852,7 @@
     },
     {
       "address": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
-      "name": "Frax",
+      "name": "FRAX",
       "symbol": "FRAX",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x853d955aCEf822Db058eb8505911ED77F175b99e/logo-128.png",
       "chainId": 1,
@@ -1961,6 +1977,14 @@
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x902cF5373317BB3E42660e9F4e85AA21532c0e44/logo-128.png",
       "chainId": 1,
       "decimals": 6
+    },
+    {
+      "address": "0x91aE8fEaBe09182Fe5F91Fc273040b7D8F7aeFE7",
+      "name": "Curve Paxos Factory yVault",
+      "symbol": "yvCurve-USDP-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x91aE8fEaBe09182Fe5F91Fc273040b7D8F7aeFE7/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x94e131324b6054c0D789b190b2dAC504e4361b53",
@@ -2284,7 +2308,7 @@
     },
     {
       "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
-      "name": "Synthetix Network Token",
+      "name": "Synthetix",
       "symbol": "SNX",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F/logo-128.png",
       "chainId": 1,
@@ -2316,8 +2340,8 @@
     },
     {
       "address": "0xC25a3A3b969415c80451098fa907EC722572917F",
-      "name": "RealToken S 9920 Bishop St Detroit MI",
-      "symbol": "SCURVE",
+      "name": "Curve.fi DAI/USDC/USDT/sUSD",
+      "symbol": "crvPlain3andSUSD",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xC25a3A3b969415c80451098fa907EC722572917F/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -2917,7 +2941,7 @@
     {
       "address": "0xc5bDdf9843308380375a611c18B50Fb9341f502A",
       "name": "veCRV-DAO yVault",
-      "symbol": "yveCRV",
+      "symbol": "yveCRV-DAO",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xc5bDdf9843308380375a611c18B50Fb9341f502A/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -3044,7 +3068,7 @@
     },
     {
       "address": "0xdA816459F1AB5631232FE5e97a05BBBb94970c95",
-      "name": "Yearn yvDAI 0.4.3",
+      "name": "DAI yVault",
       "symbol": "yvDAI",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xdA816459F1AB5631232FE5e97a05BBBb94970c95/logo-128.png",
       "chainId": 1,
@@ -3077,7 +3101,7 @@
     {
       "address": "0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8",
       "name": "Curve.fi yDAI/yUSDC/yUSDT/yTUSD",
-      "symbol": "yCurve",
+      "symbol": "yDAI+yUSDC+yUSDT+yTUSD",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8/logo-128.png",
       "chainId": 1,
       "decimals": 18

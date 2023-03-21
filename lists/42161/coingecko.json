@@ -1,9 +1,9 @@
 {
   "name": "CoinGecko",
   "description": "",
-  "timestamp": "19/03/2023 00:39:59",
+  "timestamp": "21/03/2023 17:01:20",
   "version": {
-    "major": 1222,
+    "major": 1223,
     "minor": 0,
     "patch": 0
   },
@@ -102,14 +102,6 @@
       "decimals": 18
     },
     {
-      "address": "0x0C4681e6C0235179ec3D4F4fc4DF3d14FDD96017",
-      "name": "Radiant Capital",
-      "symbol": "RDNT",
-      "logoURI": "",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x0D81E50bC677fa67341c44D7eaA9228DEE64A4e1",
       "name": "BarnBridge",
       "symbol": "BOND",
@@ -159,7 +151,7 @@
     },
     {
       "address": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978",
-      "name": "Curve DAO",
+      "name": "Curve DAO Token",
       "symbol": "CRV",
       "logoURI": "",
       "chainId": 42161,
@@ -169,6 +161,14 @@
       "address": "0x123389C2f0e9194d9bA98c21E63c375B67614108",
       "name": "EthereumMax",
       "symbol": "EMAX",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x12F7cf4F2E3f87678EC5207Fc920c815E31524df",
+      "name": "Dotlab",
+      "symbol": "DTL",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -200,7 +200,7 @@
     {
       "address": "0x155f0DD04424939368972f4e1838687d6a831151",
       "name": "ArbiDoge",
-      "symbol": "ADOGE",
+      "symbol": "ADoge",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -214,12 +214,36 @@
       "decimals": 9
     },
     {
+      "address": "0x1689A6E1f09658FF37d0bB131514E701045876dA",
+      "name": "ZooDAO",
+      "symbol": "ZOO",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x1772D876F9dF830693b8004322cb8885B77E47E5",
+      "name": "Auradx",
+      "symbol": "DallE2",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
       "name": "Frax",
       "symbol": "FRAX",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x17afc249db786fC300f2d26381Fec5CF0C3913Fb",
+      "name": "Shiba Cartel",
+      "symbol": "PESOS",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 9
     },
     {
       "address": "0x18c11FD286C5EC11c3b683Caa813B77f5163A122",
@@ -311,7 +335,7 @@
     },
     {
       "address": "0x289ba1701C2F088cf0faf8B3705246331cB8A839",
-      "name": "Livepeer",
+      "name": "Livepeer Token",
       "symbol": "LPT",
       "logoURI": "",
       "chainId": 42161,
@@ -359,7 +383,7 @@
     },
     {
       "address": "0x2c852D3334188BE136bFC540EF2bB8C37b590BAD",
-      "name": "MagicLand",
+      "name": "MAGICToken",
       "symbol": "MAGIC",
       "logoURI": "",
       "chainId": 42161,
@@ -375,11 +399,19 @@
     },
     {
       "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
-      "name": "Wrapped Bitcoin",
+      "name": "Wrapped BTC",
       "symbol": "WBTC",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 8
+    },
+    {
+      "address": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
+      "name": "Radiant",
+      "symbol": "RDNT",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
     },
     {
       "address": "0x30dcBa0405004cF124045793E1933C798Af9E66a",
@@ -423,7 +455,7 @@
     },
     {
       "address": "0x32Eb7902D4134bf98A28b963D26de779AF92A212",
-      "name": "Dopex Rebate",
+      "name": "Dopex Rebate Token",
       "symbol": "RDPX",
       "logoURI": "",
       "chainId": 42161,
@@ -432,7 +464,7 @@
     {
       "address": "0x3509f19581aFEDEff07c53592bc0Ca84e4855475",
       "name": "xDollar Stablecoin",
-      "symbol": "XUSD",
+      "symbol": "xUSD",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -455,7 +487,7 @@
     },
     {
       "address": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07",
-      "name": "JOE",
+      "name": "JoeToken",
       "symbol": "JOE",
       "logoURI": "",
       "chainId": 42161,
@@ -503,7 +535,7 @@
     },
     {
       "address": "0x3E6648C5a70A150A88bCE65F4aD4d506Fe15d2AF",
-      "name": "Spell",
+      "name": "Spell Token",
       "symbol": "SPELL",
       "logoURI": "",
       "chainId": 42161,
@@ -511,8 +543,8 @@
     },
     {
       "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
-      "name": "MAI",
-      "symbol": "MIMATIC",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -607,7 +639,7 @@
     },
     {
       "address": "0x45D55EADf0ED5495B369E040aF0717eaFaE3b731",
-      "name": "ELLERIUM",
+      "name": "Ellerium",
       "symbol": "ELM",
       "logoURI": "",
       "chainId": 42161,
@@ -631,7 +663,7 @@
     },
     {
       "address": "0x46d0cE7de6247b0A95f67b43B589b4041BaE7fbE",
-      "name": "Loopring",
+      "name": "LoopringCoin V2",
       "symbol": "LRC",
       "logoURI": "",
       "chainId": 42161,
@@ -679,7 +711,7 @@
     },
     {
       "address": "0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42",
-      "name": "MUX Protocol",
+      "name": "MCDEX Token",
       "symbol": "MCB",
       "logoURI": "",
       "chainId": 42161,
@@ -703,7 +735,7 @@
     },
     {
       "address": "0x51318B7D00db7ACc4026C88c3952B66278B6A67F",
-      "name": "PlutusDAO",
+      "name": "Plutus",
       "symbol": "PLS",
       "logoURI": "",
       "chainId": 42161,
@@ -727,8 +759,16 @@
     },
     {
       "address": "0x539bdE0d7Dbd336b79148AA742883198BBF60342",
-      "name": "Magic",
+      "name": "MAGIC",
       "symbol": "MAGIC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x547C669cBBF746652e19F4686716763c8dBa703f",
+      "name": "Open Meta Trade",
+      "symbol": "OMT",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -775,8 +815,8 @@
     },
     {
       "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
-      "name": "Wrapped stETH",
-      "symbol": "WSTETH",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -855,7 +895,7 @@
     },
     {
       "address": "0x6694340fc020c5E6B96567843da2df01b2CE1eb6",
-      "name": "Stargate Finance",
+      "name": "StargateToken",
       "symbol": "STG",
       "logoURI": "",
       "chainId": 42161,
@@ -865,6 +905,14 @@
       "address": "0x6740Acb82ac5C63A7ad2397ee1faed7c788F5f8c",
       "name": "AlienFi",
       "symbol": "ALIEN",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x67C31056358b8977Ea95a3a899dD380D4BceD706",
+      "name": "ETHforestAI",
+      "symbol": "ETHFAI",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -887,8 +935,16 @@
     },
     {
       "address": "0x69Eb4FA4a2fbd498C257C57Ea8b7655a2559A581",
-      "name": "DODO",
+      "name": "DODO bird",
       "symbol": "DODO",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x6A7661795C374c0bFC635934efAddFf3A7Ee23b6",
+      "name": "Dola USD Stablecoin",
+      "symbol": "DOLA",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -903,7 +959,7 @@
     },
     {
       "address": "0x6C2C06790b3E3E3c38e12Ee22F8183b37a13EE55",
-      "name": "Dopex",
+      "name": "Dopex Governance Token",
       "symbol": "DPX",
       "logoURI": "",
       "chainId": 42161,
@@ -945,6 +1001,14 @@
       "address": "0x6e7118b82fB9608342c288a90eEb5E614AaeE2E9",
       "name": "Edgeware",
       "symbol": "EDG",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x6eEd9140F80F9E989CB23AeCBD20b97a29FFc80F",
+      "name": "ECG",
+      "symbol": "ECG",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -999,7 +1063,7 @@
     },
     {
       "address": "0x75C9bC761d88f70156DAf83aa010E84680baF131",
-      "name": "Saddle Finance",
+      "name": "Saddle DAO",
       "symbol": "SDL",
       "logoURI": "",
       "chainId": 42161,
@@ -1087,7 +1151,7 @@
     },
     {
       "address": "0x8038F3C971414FD1FC220bA727F2D4A0fC98cb65",
-      "name": "dHEDGE DAO",
+      "name": "dHedge DAO Token",
       "symbol": "DHT",
       "logoURI": "",
       "chainId": 42161,
@@ -1111,7 +1175,7 @@
     },
     {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-      "name": "WETH",
+      "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "",
       "chainId": 42161,
@@ -1119,7 +1183,7 @@
     },
     {
       "address": "0x82e3A8F066a6989666b031d916c43672085b1582",
-      "name": "yearn.finance",
+      "name": "yearn finance",
       "symbol": "YFI",
       "logoURI": "",
       "chainId": 42161,
@@ -1208,7 +1272,7 @@
     {
       "address": "0x8D9bA570D6cb60C7e3e0F31343Efe75AB8E65FB1",
       "name": "Governance OHM",
-      "symbol": "GOHM",
+      "symbol": "gOHM",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -1223,7 +1287,7 @@
     },
     {
       "address": "0x93C15cd7DE26f07265f0272E0b831C5D7fAb174f",
-      "name": "Liquid Finance",
+      "name": "Liquid",
       "symbol": "LIQD",
       "logoURI": "",
       "chainId": 42161,
@@ -1311,7 +1375,7 @@
     },
     {
       "address": "0x9E758B8a98a42d612b3D38B66a22074DC03D7370",
-      "name": "Symbiosis Finance",
+      "name": "Symbiosis",
       "symbol": "SIS",
       "logoURI": "",
       "chainId": 42161,
@@ -1366,6 +1430,14 @@
       "decimals": 18
     },
     {
+      "address": "0x9ed7E4B1BFF939ad473dA5E7a218C771D1569456",
+      "name": "Reunit Token",
+      "symbol": "REUNI",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
       "address": "0x9f20de1fc9b161b34089cbEAE888168B44b03461",
       "name": "Arbis Finance",
       "symbol": "ARBIS",
@@ -1383,7 +1455,7 @@
     },
     {
       "address": "0xA72159FC390f0E3C6D415e658264c7c4051E9b87",
-      "name": "Tracer DAO",
+      "name": "Tracer",
       "symbol": "TCR",
       "logoURI": "",
       "chainId": 42161,
@@ -1399,8 +1471,8 @@
     },
     {
       "address": "0xA970AF1a584579B618be4d69aD6F73459D112F95",
-      "name": "sUSD",
-      "symbol": "SUSD",
+      "name": "Synth sUSD",
+      "symbol": "sUSD",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -1503,7 +1575,7 @@
     },
     {
       "address": "0xBfa641051Ba0a0Ad1b0AcF549a89536A0D76472E",
-      "name": "Badger DAO",
+      "name": "Badger",
       "symbol": "BADGER",
       "logoURI": "",
       "chainId": 42161,
@@ -1590,6 +1662,14 @@
       "decimals": 18
     },
     {
+      "address": "0xD5954c3084a1cCd70B4dA011E67760B8e78aeE84",
+      "name": "ArbiDex Token",
+      "symbol": "ARX",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xD5A56b510247DB33695b0bEa29992AC6670081ea",
       "name": "Goons of Balatroon",
       "symbol": "GOB",
@@ -1600,7 +1680,7 @@
     {
       "address": "0xD74f5255D557944cf7Dd0E45FF521520002D5748",
       "name": "Sperax USD",
-      "symbol": "USDS",
+      "symbol": "USDs",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -1623,7 +1703,7 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "",
       "chainId": 42161,
@@ -1632,7 +1712,7 @@
     {
       "address": "0xDDc0385169797937066bBd8EF409b5B3c0dFEB52",
       "name": "Wrapped USDR",
-      "symbol": "WUSDR",
+      "symbol": "wUSDR",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 9
@@ -1678,6 +1758,14 @@
       "decimals": 18
     },
     {
+      "address": "0xECA14F81085e5B8d1c9D32Dcb596681574723561",
+      "name": "Spool DAO Token",
+      "symbol": "SPOOL",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xECf2ADafF1De8A512f6e8bfe67a2C836EDb25Da3",
       "name": "Wonderful Memories",
       "symbol": "WMEMO",
@@ -1711,7 +1799,7 @@
     },
     {
       "address": "0xEe9801669C6138E84bD50dEB500827b776777d28",
-      "name": "O3 Swap",
+      "name": "O3 Swap Token",
       "symbol": "O3",
       "logoURI": "",
       "chainId": 42161,
@@ -1776,7 +1864,7 @@
     {
       "address": "0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7",
       "name": "agEUR",
-      "symbol": "AGEUR",
+      "symbol": "agEUR",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -1791,7 +1879,7 @@
     },
     {
       "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-      "name": "USD Coin",
+      "name": "USD Coin (Arb1)",
       "symbol": "USDC",
       "logoURI": "",
       "chainId": 42161,
@@ -1815,7 +1903,7 @@
     },
     {
       "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-      "name": "Tether",
+      "name": "Tether USD",
       "symbol": "USDT",
       "logoURI": "",
       "chainId": 42161,
@@ -1823,7 +1911,7 @@
     },
     {
       "address": "0xa0b862F60edEf4452F25B4160F177db44DeB6Cf1",
-      "name": "Gnosis",
+      "name": "Gnosis Token",
       "symbol": "GNO",
       "logoURI": "",
       "chainId": 42161,
@@ -1847,7 +1935,7 @@
     },
     {
       "address": "0xa684cd057951541187f288294a1e1C2646aA2d24",
-      "name": "Vesta Finance",
+      "name": "Vesta",
       "symbol": "VSTA",
       "logoURI": "",
       "chainId": 42161,
@@ -1935,7 +2023,7 @@
     },
     {
       "address": "0xc136E6B376a9946B156db1ED3A34b08AFdAeD76d",
-      "name": "CreDA",
+      "name": "CreDA Protocol Token",
       "symbol": "CREDA",
       "logoURI": "",
       "chainId": 42161,
@@ -1951,7 +2039,7 @@
     },
     {
       "address": "0xc5102fE9359FD9a28f877a67E36B0F050d81a3CC",
-      "name": "Hop Protocol",
+      "name": "Hop",
       "symbol": "HOP",
       "logoURI": "",
       "chainId": 42161,
@@ -2014,8 +2102,16 @@
       "decimals": 18
     },
     {
+      "address": "0xd45e486A90eBb84E9336d371A35dCb021424B96C",
+      "name": "SQUAD",
+      "symbol": "SQUAD",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xd4d42F0b6DEF4CE0383636770eF773390d85c61A",
-      "name": "Sushi",
+      "name": "SushiToken",
       "symbol": "SUSHI",
       "logoURI": "",
       "chainId": 42161,
@@ -2047,7 +2143,7 @@
     },
     {
       "address": "0xdE31e75182276738B0c025daa8F80020A4F2fbFE",
-      "name": "Honey Pot BeeKeepers",
+      "name": "Honey Token",
       "symbol": "HONEY",
       "logoURI": "",
       "chainId": 42161,
@@ -2079,8 +2175,8 @@
     },
     {
       "address": "0xe20B9e246db5a0d21BF9209E4858Bc9A3ff7A034",
-      "name": "Banano",
-      "symbol": "BAN",
+      "name": "Wrapped Banano",
+      "symbol": "wBAN",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -2175,7 +2271,7 @@
     },
     {
       "address": "0xef888bcA6AB6B1d26dbeC977C455388ecd794794",
-      "name": "Rari Governance",
+      "name": "Rari Governance Token",
       "symbol": "RGT",
       "logoURI": "",
       "chainId": 42161,
@@ -2191,7 +2287,7 @@
     },
     {
       "address": "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
-      "name": "Chainlink",
+      "name": "ChainLink Token",
       "symbol": "LINK",
       "logoURI": "",
       "chainId": 42161,

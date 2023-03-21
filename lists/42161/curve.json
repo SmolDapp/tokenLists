@@ -1,11 +1,11 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "19/03/2023 00:40:26",
+  "timestamp": "21/03/2023 17:01:26",
   "version": {
     "major": 5,
-    "minor": 1,
-    "patch": 1
+    "minor": 2,
+    "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
   "keywords": [],
@@ -76,7 +76,7 @@
     },
     {
       "address": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978",
-      "name": "Curve DAO",
+      "name": "Curve DAO Token",
       "symbol": "CRV",
       "logoURI": "",
       "chainId": 42161,
@@ -164,7 +164,7 @@
     },
     {
       "address": "0x239e14A19DFF93a17339DCC444f74406C17f8E67",
-      "name": "Yearn yvCurve-Tricrypto 0.4.3",
+      "name": "Curve Tricrypto Pool Vault",
       "symbol": "yvCurve-Tricrypto",
       "logoURI": "",
       "chainId": 42161,
@@ -220,7 +220,7 @@
     },
     {
       "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
-      "name": "Wrapped Bitcoin",
+      "name": "Wrapped BTC",
       "symbol": "WBTC",
       "logoURI": "",
       "chainId": 42161,
@@ -238,6 +238,14 @@
       "address": "0x30dF229cefa463e991e29D42DB0bae2e122B2AC7",
       "name": "Curve.fi Factory USD Metapool: MIM",
       "symbol": "MIM3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x357547528d53C04420bc43Bc4f97252A4B860D9A",
+      "name": "Curve.fi Factory USD Metapool: axlUSDCFRAXBP",
+      "symbol": "axlFRAX3CRV-f",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -268,8 +276,8 @@
     },
     {
       "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
-      "name": "MAI",
-      "symbol": "MIMATIC",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -278,6 +286,14 @@
       "address": "0x3a43A5851A3e3E0e25A3c1089670269786be1577",
       "name": "Curve.fi Factory Plain Pool: USDs+FRAX",
       "symbol": "USDsFRAX-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3aef260cb6A5b469f970FAe7A1e233Dbd5939378",
+      "name": "Real Estate USD",
+      "symbol": "REUSD",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -388,8 +404,8 @@
     },
     {
       "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
-      "name": "Wrapped stETH",
-      "symbol": "WSTETH",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -531,6 +547,14 @@
       "decimals": 6
     },
     {
+      "address": "0x741aEa6c7707b39Bd950da945f84D6b8bA455D48",
+      "name": "Curve.fi Factory USD Metapool: axlUSDCFRAXBP",
+      "symbol": "axlFRAX3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x75183Ba0a9D7f0b006FBD2F130ED7DdBcb3c5907",
       "name": "Curve.fi Factory USD Metapool: axlUSDC/FRAXBP",
       "symbol": "axlFRAXBP3CRV-f",
@@ -604,7 +628,7 @@
     },
     {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-      "name": "WETH",
+      "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "",
       "chainId": 42161,
@@ -797,7 +821,7 @@
     {
       "address": "0xD74f5255D557944cf7Dd0E45FF521520002D5748",
       "name": "Sperax USD",
-      "symbol": "USDS",
+      "symbol": "USDs",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -812,7 +836,7 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "",
       "chainId": 42161,
@@ -900,7 +924,7 @@
     },
     {
       "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-      "name": "USD Coin",
+      "name": "USD Coin (Arb1)",
       "symbol": "USDC",
       "logoURI": "",
       "chainId": 42161,
@@ -916,7 +940,7 @@
     },
     {
       "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-      "name": "Tether",
+      "name": "Tether USD",
       "symbol": "USDT",
       "logoURI": "",
       "chainId": 42161,
@@ -1051,6 +1075,14 @@
       "decimals": 18
     },
     {
+      "address": "0xd7bB79aeE866672419999a0496D99c54741D67B5",
+      "name": "Curve.fi Factory USD Metapool: REUSD/2CRV",
+      "symbol": "REUSD3CRV-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xd85E038593d7A098614721EaE955EC2022B9B91B",
       "name": "Gains Network DAI",
       "symbol": "gDAI",
@@ -1076,7 +1108,7 @@
     },
     {
       "address": "0xdE31e75182276738B0c025daa8F80020A4F2fbFE",
-      "name": "Honey Pot BeeKeepers",
+      "name": "Honey Token",
       "symbol": "HONEY",
       "logoURI": "",
       "chainId": 42161,
