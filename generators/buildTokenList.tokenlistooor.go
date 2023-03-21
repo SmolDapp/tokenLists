@@ -67,10 +67,15 @@ func buildTokenListooorList() {
 	allTokensPlain := []TokenListToken{}
 
 	for name, generatorData := range GENERATORS {
+		shouldByPassCount := name == `yearn`
 		if generatorData.GeneratorType == GeneratorPool {
 			continue
 		}
 
+		initialCount := 1
+		if shouldByPassCount {
+			initialCount = 5
+		}
 		tokenList := loadTokenListFromJsonFile(name + `.json`)
 		for _, token := range tokenList.Tokens {
 			if _, ok := allTokens[token.ChainID]; !ok {
@@ -94,7 +99,7 @@ func buildTokenListooorList() {
 					LogoURI:  helpers.SafeString(token.LogoURI, ``),
 					Decimals: helpers.SafeInt(token.Decimals, 18),
 					ChainID:  token.ChainID,
-					Count:    1,
+					Count:    initialCount,
 				}
 			}
 		}
