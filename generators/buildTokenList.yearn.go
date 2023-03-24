@@ -7,27 +7,35 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
+type TExternalERC20Token struct {
+	Address                   string   `json:"address"`
+	UnderlyingTokensAddresses []string `json:"underlyingTokensAddresses"`
+	Name                      string   `json:"name"`
+	Symbol                    string   `json:"symbol"`
+	Type                      string   `json:"type"`
+	DisplayName               string   `json:"display_name"`
+	DisplaySymbol             string   `json:"display_symbol"`
+	Description               string   `json:"description"`
+	Icon                      string   `json:"icon"`
+	Decimals                  uint64   `json:"decimals"`
+}
 type TYearnTokenData struct {
-	Address          string   `json:"address"`
-	Name             string   `json:"name"`
-	Symbol           string   `json:"symbol"`
-	DisplayName      string   `json:"display_name"`
-	DisplaySymbol    string   `json:"display_symbol"`
-	Description      string   `json:"description"`
-	Website          string   `json:"website"`
-	Categories       []string `json:"categories"`
-	UnderlyingTokens []string `json:"underlyingTokens"`
-	Decimals         uint64   `json:"decimals"`
-	IsVault          bool     `json:"isVault"`
+	Address       string              `json:"address"`
+	Name          string              `json:"name"`
+	Symbol        string              `json:"symbol"`
+	DisplayName   string              `json:"display_name"`
+	DisplaySymbol string              `json:"display_symbol"`
+	Token         TExternalERC20Token `json:"token"`
+	Decimals      uint64              `json:"decimals"`
+	ChainID       uint64              `json:"chainID"`
 }
 
 func fetchYearnTokenList() []TokenListToken {
 	tokens := []TokenListToken{}
-	list := helpers.FetchJSON[map[string]map[string]TYearnTokenData](`https://ydaemon.yearn.finance/tokens/all`)
+	list := helpers.FetchJSON[[]TYearnTokenData](`https://ydaemon.yearn.finance/vaults/all?migrable=ignore`)
 
-	for chainIDStr, tokensList := range list {
-		chainID, _ := strconv.ParseUint(chainIDStr, 10, 64)
-		vaultsUnderlyingAddress := []common.Address{}
+	for _, vault := range list {
+		chainIDStr := strconv.FormatUint(vault.ChainID, 10)
 
 		/**************************************************************************
 		** The API from Yearn returns a list of tokens for each chainID. For each
@@ -36,45 +44,27 @@ func fetchYearnTokenList() []TokenListToken {
 		** tokens to add to the token list. As the data is not directly available
 		** with the vault information, we can fetch the token details after.
 		**************************************************************************/
-		for _, token := range tokensList {
-			if !token.IsVault {
-				continue
-			}
-			if newToken, err := SetToken(
-				common.HexToAddress(token.Address),
-				helpers.SafeString(token.DisplayName, token.Name),
-				helpers.SafeString(token.DisplaySymbol, token.Symbol),
-				`https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/`+chainIDStr+`/`+token.Address+`/logo-128.png`,
-				chainID,
-				int(token.Decimals),
-			); err == nil {
-				tokens = append(tokens, newToken)
-			}
-			for _, underlyingToken := range token.UnderlyingTokens {
-				vaultsUnderlyingAddress = append(vaultsUnderlyingAddress, common.HexToAddress(underlyingToken))
-			}
+		if newToken, err := SetToken(
+			common.HexToAddress(vault.Address),
+			helpers.SafeString(vault.DisplayName, vault.Name),
+			helpers.SafeString(vault.DisplaySymbol, vault.Symbol),
+			`https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/`+chainIDStr+`/`+vault.Address+`/logo-128.png`,
+			vault.ChainID,
+			int(vault.Decimals),
+		); err == nil {
+			tokens = append(tokens, newToken)
 		}
 
-		/**************************************************************************
-		** For each underlying token for this chain, we fetch the basic information
-		** and add it to the list of tokens to add to the token list.
-		** This fetch could be bypassed by checking the list returned by the API
-		** and checking if the token is in the list.
-		**************************************************************************/
-		underlyingTokensInfo := retrieveBasicInformations(chainID, vaultsUnderlyingAddress)
-		for _, token := range underlyingTokensInfo {
-			if newToken, err := SetToken(
-				token.Address,
-				token.Name,
-				token.Symbol,
-				`https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/`+chainIDStr+`/`+token.Address.Hex()+`/logo-128.png`,
-				chainID,
-				int(token.Decimals),
-			); err == nil {
-				tokens = append(tokens, newToken)
-			}
+		if newToken, err := SetToken(
+			common.HexToAddress(vault.Token.Address),
+			helpers.SafeString(vault.Token.DisplayName, vault.Token.Name),
+			helpers.SafeString(vault.Token.DisplaySymbol, vault.Token.Symbol),
+			`https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/`+chainIDStr+`/`+vault.Token.Address+`/logo-128.png`,
+			vault.ChainID,
+			int(vault.Token.Decimals),
+		); err == nil {
+			tokens = append(tokens, newToken)
 		}
-
 	}
 	return tokens
 }
