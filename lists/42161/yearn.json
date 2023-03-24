@@ -1,10 +1,10 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "21/03/2023 17:00:54",
+  "timestamp": "24/03/2023 12:25:24",
   "version": {
-    "major": 1,
-    "minor": 8,
+    "major": 2,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -20,7 +20,7 @@
   "tokens": [
     {
       "address": "0x1dBa7641dc69188D6086a73B972aC4bda29Ec35d",
-      "name": "Curve MIM Pool Vault",
+      "name": "Curve MIM 3Pool",
       "symbol": "yvCurve-MIM",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x1dBa7641dc69188D6086a73B972aC4bda29Ec35d/logo-128.png",
       "chainId": 42161,
@@ -28,7 +28,7 @@
     },
     {
       "address": "0x239e14A19DFF93a17339DCC444f74406C17f8E67",
-      "name": "Curve Tricrypto Pool Vault",
+      "name": "Curve Tricrypto",
       "symbol": "yvCurve-Tricrypto",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x239e14A19DFF93a17339DCC444f74406C17f8E67/logo-128.png",
       "chainId": 42161,
@@ -36,65 +36,33 @@
     },
     {
       "address": "0x30dF229cefa463e991e29D42DB0bae2e122B2AC7",
-      "name": "Curve.fi Factory USD Metapool: MIM",
-      "symbol": "MIM3CRV-f",
-      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x30dF229cefa463e991e29D42DB0bae2e122B2AC7/logo-128.png",
+      "name": "Curve MIM 3Pool",
+      "symbol": "crvMIM3Poo",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x30df229cefa463e991e29d42db0bae2e122b2ac7/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
     {
       "address": "0x49448d2B94fb9C4e41a30aD8315D32f46004A34b",
-      "name": "2CRV yVault",
+      "name": "Curve 2Pool",
       "symbol": "yv2CRV",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x49448d2B94fb9C4e41a30aD8315D32f46004A34b/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
     {
-      "address": "0x59bF0545FCa0E5Ad48E13DA269faCD2E8C886Ba4",
-      "name": "Curve.fi Factory Plain Pool: VST+FRAX",
-      "symbol": "VSTFRAX-f",
-      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x59bF0545FCa0E5Ad48E13DA269faCD2E8C886Ba4/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x630c9050E6b0014C6Fe4C214D4840909345aDB7D",
-      "name": "Curve FRAX-VST Pool Vault",
-      "symbol": "yvCurve-FRAX+VST",
-      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x630c9050E6b0014C6Fe4C214D4840909345aDB7D/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x7f90122BF0700F9E7e1F688fe926940E8839F353",
-      "name": "Curve.fi USDC/USDT",
+      "name": "Curve 2Pool",
       "symbol": "2CRV",
-      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x7f90122BF0700F9E7e1F688fe926940E8839F353/logo-128.png",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x7f90122bf0700f9e7e1f688fe926940e8839f353/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
     {
       "address": "0x8e0B8c8BB9db49a46697F3a5Bb8A308e744821D2",
-      "name": "Curve.fi USD-BTC-ETH",
-      "symbol": "crv3crypto",
-      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x8e0B8c8BB9db49a46697F3a5Bb8A308e744821D2/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x976a1C749cd8153909e0B04EebE931eF8957b15b",
-      "name": "PHPTest",
-      "symbol": "yPHP",
-      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x976a1C749cd8153909e0B04EebE931eF8957b15b/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xFa247d0D55a324ca19985577a2cDcFC383D87953",
-      "name": "Philippine Peso",
-      "symbol": "PHP",
-      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0xFa247d0D55a324ca19985577a2cDcFC383D87953/logo-128.png",
+      "name": "Curve triCrypto Pool",
+      "symbol": "crvTricrypto",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x8e0b8c8bb9db49a46697f3a5bb8a308e744821d2/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     }
