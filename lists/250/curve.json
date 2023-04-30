@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "23/04/2023 00:37:40",
+  "timestamp": "30/04/2023 00:37:56",
   "version": {
     "major": 5,
-    "minor": 8,
+    "minor": 9,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -52,8 +52,8 @@
     },
     {
       "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
-      "name": "Tether",
-      "symbol": "USDT",
+      "name": "Frapped USDT",
+      "symbol": "fUSDT",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -102,6 +102,14 @@
       "address": "0x0F5e1fC301437b344271c14Ffb52431a97CE4113",
       "name": "Curve.fi Factory Plain Pool: USA/Russian",
       "symbol": "USA-f",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x0cA1E358E320717494a0cC9211Fc0d5546d23A60",
+      "name": "Curve.fi Factory USD Metapool: STAR DAI USDC",
+      "symbol": "STAR3CRV-f",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -156,7 +164,7 @@
     },
     {
       "address": "0x13082681E8CE9bd0aF505912d306403592490Fc7",
-      "name": "Parallel",
+      "name": "PAR Stablecoin",
       "symbol": "PAR",
       "logoURI": "",
       "chainId": 250,
@@ -212,7 +220,7 @@
     },
     {
       "address": "0x1E4F97b9f9F913c46F1632781732927B9019C68b",
-      "name": "Curve",
+      "name": "Curve DAO",
       "symbol": "CRV",
       "logoURI": "",
       "chainId": 250,
@@ -411,6 +419,14 @@
       "decimals": 18
     },
     {
+      "address": "0x319324Bc3Cf6829289E3934E655ACCC97B05c149",
+      "name": "Curve.fi Factory Plain Pool: eUSDT Pool",
+      "symbol": "eUSDT-f",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x31D8F85BCE2a4A096A2d207F8f113D1C3feC7c06",
       "name": "Curve.fi Factory Pool: My aFTM Pool",
       "symbol": "FTMaFTM-f",
@@ -523,6 +539,14 @@
       "decimals": 18
     },
     {
+      "address": "0x41D57c869F84D4b1D23403dd59fE8587595A4629",
+      "name": "Curve.fi Factory Plain Pool: eTUSD Pool",
+      "symbol": "eTUSD-f",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x41e3dF7f716aB5AF28c1497B354D79342923196a",
       "name": "aUSD",
       "symbol": "AUSD",
@@ -582,6 +606,14 @@
       "address": "0x44F7237df00E386af8e79B817D05ED9f6FE0f296",
       "name": "Wrapped Solana",
       "symbol": "sol",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x4560262B27655C9C2978b030CCF7815777D7A3f1",
+      "name": "Curve.fi Factory Plain Pool: EUSD",
+      "symbol": "EUSD-f",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -716,7 +748,7 @@
     },
     {
       "address": "0x5Cc61A78F164885776AA610fb0FE1257df78E59B",
-      "name": "SpiritSwap",
+      "name": "SpiritSwap Token",
       "symbol": "SPIRIT",
       "logoURI": "",
       "chainId": 250,
@@ -820,7 +852,7 @@
     },
     {
       "address": "0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7",
-      "name": "Tomb",
+      "name": "TOMB",
       "symbol": "TOMB",
       "logoURI": "",
       "chainId": 250,
@@ -884,7 +916,7 @@
     },
     {
       "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
-      "name": "WETH",
+      "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "",
       "chainId": 250,
@@ -902,6 +934,14 @@
       "address": "0x78AE5704B6664a07f14c7d3a14a98e7d6DfC80aa",
       "name": "Curve.fi Factory Plain Pool: Lunaria Fantom",
       "symbol": "crvlnWFTM-f",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x7C0D9e7B60A0BD5fC9bcC4fA87915EdfFF489177",
+      "name": "Curve.fi Factory Plain Pool: eUSDC Pool",
+      "symbol": "eUSDC-f",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -964,7 +1004,7 @@
     },
     {
       "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
-      "name": "Spookyswap",
+      "name": "SpookyToken",
       "symbol": "BOO",
       "logoURI": "",
       "chainId": 250,
@@ -1019,6 +1059,14 @@
       "decimals": 18
     },
     {
+      "address": "0x87c2DcFA0960A0f6F9840a6119b7b5D82A5aEBC9",
+      "name": "Curve.fi Factory Plain Pool: eDAI Pool",
+      "symbol": "eDAI-f",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x8B63F036F5a34226065bC0a7B0aE5bb5eBA1fF3D",
       "name": "Curve.fi Factory Pool: Topshelf FTML",
       "symbol": "FTM/FTML-f",
@@ -1028,7 +1076,7 @@
     },
     {
       "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "",
       "chainId": 250,
@@ -1109,7 +1157,7 @@
     {
       "address": "0x940F41F0ec9ba1A34CF001cc03347ac092F5F6B5",
       "name": "Geist fUSDT",
-      "symbol": "GFUSDT",
+      "symbol": "gfUSDT",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -1293,7 +1341,7 @@
     {
       "address": "0xAd84341756Bf337f5a0164515b1f6F993D194E1f",
       "name": "Fantom USD",
-      "symbol": "FUSD",
+      "symbol": "fUSD",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1437,7 +1485,7 @@
     {
       "address": "0xD02a30d33153877BC20e5721ee53DeDEE0422B2F",
       "name": "Curve.fi gDAI/gUSDC/gUSDT",
-      "symbol": "G3CRV",
+      "symbol": "g3CRV",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1460,8 +1508,8 @@
     },
     {
       "address": "0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454",
-      "name": "Wrapped BNB",
-      "symbol": "WBNB",
+      "name": "BNB",
+      "symbol": "BNB",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1572,7 +1620,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "FTM",
+      "name": "Fantom Token",
       "symbol": "FTM",
       "logoURI": "",
       "chainId": 250,
@@ -1686,6 +1734,14 @@
       "address": "0xa5c3620fae9adB58E0626836a2D03Aeb6a26749e",
       "name": "Curve.fi Factory Plain Pool: FINAL TEST",
       "symbol": "DAI/STB-f",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0xa9827790a96609B405f7680d6bD2427210F61361",
+      "name": "STAR",
+      "symbol": "STAR",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1844,7 +1900,7 @@
     },
     {
       "address": "0xdc301622e621166BD8E82f2cA0A26c13Ad0BE355",
-      "name": "FRAX",
+      "name": "Frax",
       "symbol": "FRAX",
       "logoURI": "",
       "chainId": 250,
@@ -1980,8 +2036,8 @@
     },
     {
       "address": "0xfB98B335551a418cD0737375a2ea0ded62Ea213b",
-      "name": "MAI",
-      "symbol": "MIMATIC",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
