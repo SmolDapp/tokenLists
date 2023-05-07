@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "01/05/2023 11:23:36",
+  "timestamp": "07/05/2023 00:35:54",
   "version": {
     "major": 5,
-    "minor": 10,
+    "minor": 11,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -45,15 +45,15 @@
     {
       "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
       "name": "USD Coin",
-      "symbol": "USDC",
+      "symbol": "usdc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
     },
     {
       "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
-      "name": "Frapped USDT",
-      "symbol": "fUSDT",
+      "name": "Tether",
+      "symbol": "usdt",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -164,8 +164,8 @@
     },
     {
       "address": "0x13082681E8CE9bd0aF505912d306403592490Fc7",
-      "name": "PAR Stablecoin",
-      "symbol": "PAR",
+      "name": "Parallel",
+      "symbol": "par",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -221,7 +221,7 @@
     {
       "address": "0x1E4F97b9f9F913c46F1632781732927B9019C68b",
       "name": "Curve DAO",
-      "symbol": "CRV",
+      "symbol": "crv",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -301,7 +301,7 @@
     {
       "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
       "name": "Wrapped Fantom",
-      "symbol": "WFTM",
+      "symbol": "wftm",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -373,7 +373,7 @@
     {
       "address": "0x29b0Da86e484E1C0029B56e817912d778aC0EC69",
       "name": "yearn.finance",
-      "symbol": "YFI",
+      "symbol": "yfi",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -388,8 +388,8 @@
     },
     {
       "address": "0x2dd7C9371965472E5A5fD28fbE165007c61439E1",
-      "name": "Curve MIM 3Pool",
-      "symbol": "crvMIM3Pool",
+      "name": "Curve.fi Factory Plain Pool: 3poolV2",
+      "symbol": "3poolV2-f",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -436,8 +436,8 @@
     },
     {
       "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
-      "name": "Bitcoin",
-      "symbol": "BTC",
+      "name": "Wrapped Bitcoin",
+      "symbol": "wbtc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 8
@@ -668,8 +668,8 @@
     },
     {
       "address": "0x511D35c52a3C244E7b8bd92c0C297755FbD89212",
-      "name": "Avalanche",
-      "symbol": "AVAX",
+      "name": "Wrapped AVAX",
+      "symbol": "wavax",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -716,8 +716,8 @@
     },
     {
       "address": "0x58e57cA18B7A47112b877E31929798Cd3D703b0f",
-      "name": "Curve triCrypto Pool",
-      "symbol": "crvTricrypto",
+      "name": "Curve.fi USD-BTC-ETH",
+      "symbol": "crv3crypto",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -748,8 +748,8 @@
     },
     {
       "address": "0x5Cc61A78F164885776AA610fb0FE1257df78E59B",
-      "name": "SpiritSwap Token",
-      "symbol": "SPIRIT",
+      "name": "SpiritSwap",
+      "symbol": "spirit",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -852,8 +852,8 @@
     },
     {
       "address": "0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7",
-      "name": "TOMB",
-      "symbol": "TOMB",
+      "name": "Tomb",
+      "symbol": "tomb",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -909,15 +909,15 @@
     {
       "address": "0x74E23dF9110Aa9eA0b6ff2fAEE01e740CA1c642e",
       "name": "TOR",
-      "symbol": "TOR",
+      "symbol": "tor",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
     },
     {
       "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
-      "name": "Ethereum",
-      "symbol": "ETH",
+      "name": "WETH",
+      "symbol": "weth",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -989,7 +989,7 @@
     {
       "address": "0x82f0B8B456c1A451378467398982d4834b6829c1",
       "name": "Magic Internet Money",
-      "symbol": "MIM",
+      "symbol": "mim",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1004,8 +1004,8 @@
     },
     {
       "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
-      "name": "SpookyToken",
-      "symbol": "BOO",
+      "name": "Spookyswap",
+      "symbol": "boo",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1076,8 +1076,8 @@
     },
     {
       "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
-      "name": "Dai Stablecoin",
-      "symbol": "DAI",
+      "name": "Dai",
+      "symbol": "dai",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1157,7 +1157,7 @@
     {
       "address": "0x940F41F0ec9ba1A34CF001cc03347ac092F5F6B5",
       "name": "Geist fUSDT",
-      "symbol": "gfUSDT",
+      "symbol": "gfusdt",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -1221,7 +1221,7 @@
     {
       "address": "0x9879aBDea01a879644185341F7aF7d8343556B7a",
       "name": "TrueUSD",
-      "symbol": "TUSD",
+      "symbol": "tusd",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1484,8 +1484,8 @@
     },
     {
       "address": "0xD02a30d33153877BC20e5721ee53DeDEE0422B2F",
-      "name": "Curve Geist Pool",
-      "symbol": "crvGEIST",
+      "name": "Curve.fi gDAI/gUSDC/gUSDT",
+      "symbol": "g3crv",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1508,8 +1508,8 @@
     },
     {
       "address": "0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454",
-      "name": "BNB",
-      "symbol": "BNB",
+      "name": "Wrapped BNB",
+      "symbol": "wbnb",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1620,7 +1620,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Fantom Token",
+      "name": "FTM",
       "symbol": "FTM",
       "logoURI": "",
       "chainId": 250,
@@ -1901,7 +1901,7 @@
     {
       "address": "0xdc301622e621166BD8E82f2cA0A26c13Ad0BE355",
       "name": "Frax",
-      "symbol": "FRAX",
+      "symbol": "frax",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -2036,8 +2036,8 @@
     },
     {
       "address": "0xfB98B335551a418cD0737375a2ea0ded62Ea213b",
-      "name": "miMATIC",
-      "symbol": "miMATIC",
+      "name": "MAI",
+      "symbol": "mimatic",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
