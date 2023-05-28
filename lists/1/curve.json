@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "25/05/2023 10:18:30",
+  "timestamp": "28/05/2023 00:37:30",
   "version": {
     "major": 5,
-    "minor": 14,
+    "minor": 15,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -85,7 +85,7 @@
     {
       "address": "0x0100546F2cD4C9D97f798fFC9755E47865FF7Ee6",
       "name": "Alchemix ETH",
-      "symbol": "aleth",
+      "symbol": "alETH",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -172,8 +172,8 @@
     },
     {
       "address": "0x02d341CcB60fAaf662bC0554d13778015d1b285C",
-      "name": "Curve.fi aDAI/aSUSD",
-      "symbol": "saCRV",
+      "name": "Curve sAave Pool",
+      "symbol": "crvSAAVE",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -188,8 +188,8 @@
     },
     {
       "address": "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e",
-      "name": "Aave WETH",
-      "symbol": "aweth",
+      "name": "Aave interest bearing WETH",
+      "symbol": "aWETH",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -397,7 +397,7 @@
     {
       "address": "0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3",
       "name": "Curve.fi renBTC/wBTC/sBTC",
-      "symbol": "crvRenWSBTC",
+      "symbol": "crvrenwsbtc",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -540,8 +540,8 @@
     },
     {
       "address": "0x0C10bF8FcB7Bf5412187A595ab97a3609160b5c6",
-      "name": "USDD",
-      "symbol": "usdd",
+      "name": "Decentralized USD",
+      "symbol": "USDD",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -580,8 +580,8 @@
     },
     {
       "address": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
-      "name": "Decentraland",
-      "symbol": "mana",
+      "name": "Mana",
+      "symbol": "MANA",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -765,7 +765,7 @@
     {
       "address": "0x1456688345527bE1f37E9e627DA0837D6f08C925",
       "name": "USDP Stablecoin",
-      "symbol": "USDP",
+      "symbol": "USDP_2",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -803,6 +803,14 @@
       "decimals": 18
     },
     {
+      "address": "0x15f74458aE0bFdAA1a96CA1aa779D715Cc1Eefe4",
+      "name": "Grai",
+      "symbol": "grai",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x166BDDEA59c13179796653B8afF13eeA1bd81a97",
       "name": "Curve.fi Factory USD Metapool: EastGate Pharmaceuticals",
       "symbol": "EGP3CRV-f",
@@ -820,8 +828,8 @@
     },
     {
       "address": "0x16de59092dAE5CcF4A1E6439D611fd0653f0Bd01",
-      "name": "iearn DAI",
-      "symbol": "yDAI",
+      "name": "iearn DAIv2",
+      "symbol": "yDAIv2",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -836,7 +844,7 @@
     },
     {
       "address": "0x18084fbA666a33d37592fA2633fD49a74DD93a88",
-      "name": "TBTC",
+      "name": "tBTC v2",
       "symbol": "tBTC",
       "logoURI": "",
       "chainId": 1,
@@ -1020,8 +1028,8 @@
     },
     {
       "address": "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C",
-      "name": "Bancor Network",
-      "symbol": "bnt",
+      "name": "Bancor",
+      "symbol": "BNT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -1069,7 +1077,7 @@
     {
       "address": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8",
       "name": "agEUR",
-      "symbol": "ageur",
+      "symbol": "agEUR",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -1077,7 +1085,7 @@
     {
       "address": "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c",
       "name": "Euro Coin",
-      "symbol": "euroc",
+      "symbol": "EUROC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -1316,8 +1324,8 @@
     },
     {
       "address": "0x26EA744E5B887E5205727f55dFBE8685e3b21951",
-      "name": "iearn USDC",
-      "symbol": "yUSDC",
+      "name": "iearn USDC v3",
+      "symbol": "yUSDCv3",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -1437,7 +1445,7 @@
     {
       "address": "0x2A8e1E676Ec238d8A992307B495b45B3fEAa5e86",
       "name": "Origin Dollar",
-      "symbol": "ousd",
+      "symbol": "OUSD",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -1445,7 +1453,7 @@
     {
       "address": "0x2C537E5624e4af88A7ae4060C022609376C8D0EB",
       "name": "BiLira",
-      "symbol": "tryb",
+      "symbol": "TRYB",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -1605,7 +1613,7 @@
     {
       "address": "0x31429d1856aD1377A8A0079410B297e1a9e214c2",
       "name": "ANGLE",
-      "symbol": "angle",
+      "symbol": "ANGLE",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -1613,7 +1621,15 @@
     {
       "address": "0x3175Df0976dFA876431C2E9eE6Bc45b65d3473CC",
       "name": "Curve.fi FRAX/USDC",
-      "symbol": "crvFRAX",
+      "symbol": "crvfrax",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x3175f54A354C83e8ADe950c14FA3e32fc794c0Dc",
+      "name": "Curve.fi Factory USD Metapool: GRAIFRAXBP",
+      "symbol": "GRAIFRAXBP3CRV-f",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -1629,7 +1645,7 @@
     {
       "address": "0x320623b8E4fF03373931769A31Fc52A4E78B5d70",
       "name": "Reserve Rights",
-      "symbol": "rsr",
+      "symbol": "RSR",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -1740,7 +1756,7 @@
     },
     {
       "address": "0x3660BD168494d61ffDac21E403d0F6356cF90fD7",
-      "name": "Curve.fi Factory Crypto Pool: OHM/ETH",
+      "name": "Curve OHM-ETH Pool",
       "symbol": "OHMETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -1964,8 +1980,8 @@
     },
     {
       "address": "0x3a3A65aAb0dd2A17E3F1947bA16138cd37d08c04",
-      "name": "Aave ETH v1",
-      "symbol": "aeth",
+      "name": "Aave Interest bearing ETH",
+      "symbol": "aETHv1",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2100,16 +2116,16 @@
     },
     {
       "address": "0x408e41876cCCDC0F92210600ef50372656052a38",
-      "name": "REN",
-      "symbol": "ren",
+      "name": "Republic",
+      "symbol": "REN",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x4104b135DBC9609Fc1A9490E61369036497660c8",
-      "name": "APWine",
-      "symbol": "apw",
+      "name": "APWine Token",
+      "symbol": "APW",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2140,8 +2156,8 @@
     },
     {
       "address": "0x41D5D79431A913C4aE7d69a668ecdfE5fF9DFB68",
-      "name": "Inverse Finance",
-      "symbol": "inv",
+      "name": "Inverse DAO",
+      "symbol": "INV",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2253,7 +2269,7 @@
     {
       "address": "0x465a5a630482f3abD6d3b84B39B29b07214d19e5",
       "name": "Flux USDC",
-      "symbol": "fUSDC",
+      "symbol": "fusdc",
       "logoURI": "",
       "chainId": 1,
       "decimals": 8
@@ -2332,7 +2348,7 @@
     },
     {
       "address": "0x48fF31bBbD8Ab553Ebe7cBD84e1eA3dBa8f54957",
-      "name": "Curve.fi Factory Plain Pool: sdANGLE",
+      "name": "Curve sdAG-AG Pool",
       "symbol": "sdAGAG-f",
       "logoURI": "",
       "chainId": 1,
@@ -2364,8 +2380,8 @@
     },
     {
       "address": "0x49849C98ae39Fff122806C06791Fa73784FB3675",
-      "name": "Curve.fi renBTC/wBTC",
-      "symbol": "crvRenWBTC",
+      "name": "LP renBTC Curve",
+      "symbol": "renbtccurve",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2396,8 +2412,8 @@
     },
     {
       "address": "0x4C19596f5aAfF459fA38B0f7eD92F11AE6543784",
-      "name": "TrueFi",
-      "symbol": "tru",
+      "name": "TrustToken",
+      "symbol": "TRU",
       "logoURI": "",
       "chainId": 1,
       "decimals": 8
@@ -2436,7 +2452,7 @@
     },
     {
       "address": "0x4aCc1BF7D6a591016641325aA6664A1Cd178F002",
-      "name": "Curve DYDX-ETH Pool",
+      "name": "Curve.fi Factory Crypto Pool: DYDX/ETH",
       "symbol": "DYDXETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -2445,7 +2461,7 @@
     {
       "address": "0x4b13006980aCB09645131b91D259eaA111eaF5Ba",
       "name": "Mycelium",
-      "symbol": "myc",
+      "symbol": "MYC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2580,7 +2596,7 @@
     },
     {
       "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
-      "name": "ChainLink Token",
+      "name": "Chain Link",
       "symbol": "LINK",
       "logoURI": "",
       "chainId": 1,
@@ -2620,7 +2636,7 @@
     },
     {
       "address": "0x5271045F7B73c17825A7A7aee6917eE46b0B7520",
-      "name": "Curve OHM-FRAXBP Pool",
+      "name": "Curve.fi Factory Crypto Pool: OHM/FRAXBP",
       "symbol": "OHMFRAXBP-f",
       "logoURI": "",
       "chainId": 1,
@@ -2652,8 +2668,8 @@
     },
     {
       "address": "0x530824DA86689C9C17CdC2871Ff29B058345b44a",
-      "name": "Short-term T-Bill Token",
-      "symbol": "stbt",
+      "name": "Short-term Treasury Bill Token",
+      "symbol": "STBT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2772,8 +2788,8 @@
     },
     {
       "address": "0x5A56Da75c50aA2733F5Fa9A2442AaEfcBc60B2e6",
-      "name": "CortexDAO",
-      "symbol": "cxd",
+      "name": "Cortex DAO Token",
+      "symbol": "CXD",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2893,7 +2909,7 @@
     {
       "address": "0x5E8422345238F34275888049021821E8E08CAa1f",
       "name": "Frax Ether",
-      "symbol": "frxeth",
+      "symbol": "frxETH",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -3069,7 +3085,7 @@
     {
       "address": "0x62B9c7356A2Dc64a1969e19C23e4f579F9810Aa7",
       "name": "Convex CRV",
-      "symbol": "cvxcrv",
+      "symbol": "cvxCRV",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -3101,7 +3117,7 @@
     {
       "address": "0x6368e1E18c4C419DDFC608A0BEd1ccb87b9250fc",
       "name": "Tap",
-      "symbol": "xtp",
+      "symbol": "XTP",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -3236,7 +3252,7 @@
     },
     {
       "address": "0x674C6Ad92Fd080e4004b2312b45f796a192D27a0",
-      "name": "Neutrino USD",
+      "name": "Neutrino",
       "symbol": "USDN",
       "logoURI": "",
       "chainId": 1,
@@ -3284,8 +3300,8 @@
     },
     {
       "address": "0x68037790A0229e9Ce6EaA8A99ea92964106C4703",
-      "name": "Parallel",
-      "symbol": "par",
+      "name": "PAR Stablecoin",
+      "symbol": "PAR",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -3317,7 +3333,7 @@
     {
       "address": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
       "name": "Tether Gold",
-      "symbol": "xaut",
+      "symbol": "XAUt",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -3356,8 +3372,8 @@
     },
     {
       "address": "0x69e8b9528CABDA89fe846C67675B5D73d463a916",
-      "name": "OPEN Governance",
-      "symbol": "open",
+      "name": "BBB",
+      "symbol": "OPEN",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -3420,15 +3436,15 @@
     },
     {
       "address": "0x6BeA7CFEF803D1e3d5f7C0103f7ded065644e197",
-      "name": "Gamma Strategies",
-      "symbol": "gamma",
+      "name": "Gamma",
+      "symbol": "GAMMA",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x6C280dB098dB673d30d5B34eC04B6387185D3620",
-      "name": "Curve CLEV-ETH Pool",
+      "name": "Curve.fi Factory Crypto Pool: CLEV/ETH",
       "symbol": "CLEVETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -3613,7 +3629,7 @@
     {
       "address": "0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96",
       "name": "XSGD",
-      "symbol": "xsgd",
+      "symbol": "XSGD",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -3676,8 +3692,8 @@
     },
     {
       "address": "0x73968b9a57c6E53d41345FD57a6E6ae27d6CDB2F",
-      "name": "Stake DAO",
-      "symbol": "sdt",
+      "name": "Stake DAO Token",
+      "symbol": "SDT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -3701,14 +3717,14 @@
     {
       "address": "0x744d70FDBE2Ba4CF95131626614a1763DF805B9E",
       "name": "Status",
-      "symbol": "snt",
+      "symbol": "SNT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x7483Dd57f6488b0e194A151C57Df6Ec85C00aCE9",
-      "name": "Curve BTRFLY-ETH Pool",
+      "name": "Curve.fi Factory Crypto Pool: BTRFLY/ETH",
       "symbol": "BTRFLYETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -3964,7 +3980,7 @@
     },
     {
       "address": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
-      "name": "Wrapped liquid staked Ether 2.0 (wstETH)",
+      "name": "Wrapped liquid staked Ether 2.0",
       "symbol": "wstETH",
       "logoURI": "",
       "chainId": 1,
@@ -3997,7 +4013,7 @@
     {
       "address": "0x808507121B80c02388fAd14726482e061B8da827",
       "name": "Pendle",
-      "symbol": "pendle",
+      "symbol": "PENDLE",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4140,8 +4156,8 @@
     },
     {
       "address": "0x83f798e925BcD4017Eb265844FDDAbb448f1707D",
-      "name": "iearn USDT",
-      "symbol": "yUSDT",
+      "name": "iearn USDT v2",
+      "symbol": "yUSDTv2",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -4164,8 +4180,8 @@
     },
     {
       "address": "0x8461A004b50d321CB22B7d034969cE6803911899",
-      "name": "Curve.fi Factory Plain Pool: ibKRW/sKRW",
-      "symbol": "ibKRW+sKRW-f",
+      "name": "Curve ibKRW Pool",
+      "symbol": "crvIBKRW",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4269,7 +4285,7 @@
     {
       "address": "0x86B4dBE5D203e634a12364C0e428fa242A3FbA98",
       "name": "poundtoken",
-      "symbol": "gbpt",
+      "symbol": "GBPT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4308,8 +4324,8 @@
     },
     {
       "address": "0x8818a9bb44Fbf33502bE7c15c500d0C783B73067",
-      "name": "Curve.fi Factory Plain Pool: ibJPY/sJPY",
-      "symbol": "ibJPY+sJPY-f",
+      "name": "Curve ibJPY Pool",
+      "symbol": "crvIBJPY",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4556,7 +4572,7 @@
     },
     {
       "address": "0x90244F43D548a4f8dFecfAD91a193465B1fad6F7",
-      "name": "Curve FXS-ETH Pool",
+      "name": "Curve.fi Factory Crypto Pool: FXS/ETH",
       "symbol": "FXSETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -4581,7 +4597,7 @@
     {
       "address": "0x92D6C1e31e14520e676a687F0a93788B716BEff5",
       "name": "dYdX",
-      "symbol": "dydx",
+      "symbol": "DYDX",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4597,7 +4613,7 @@
     {
       "address": "0x92E187a03B6CD19CB6AF293ba17F2745Fd2357D5",
       "name": "Unit Protocol",
-      "symbol": "duck",
+      "symbol": "DUCK_UNIT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4860,7 +4876,7 @@
     },
     {
       "address": "0x9848482da3Ee3076165ce6497eDA906E66bB85C5",
-      "name": "Curve pETH-ETH Pool",
+      "name": "Curve.fi Factory Pool: pETH",
       "symbol": "pETH-ETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -5004,16 +5020,16 @@
     },
     {
       "address": "0x9aE380F0272E2162340a5bB646c354271c0F5cFC",
-      "name": "Conic",
-      "symbol": "cnc",
+      "name": "Conic Finance Token",
+      "symbol": "CNC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x9c2C8910F113181783c249d8F6Aa41b51Cde0f0c",
-      "name": "Curve.fi Factory Plain Pool: ibCHF/sCHF",
-      "symbol": "ibCHF+sCHF-f",
+      "name": "Curve ibCHF Pool",
+      "symbol": "crvIBCHF",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5021,7 +5037,7 @@
     {
       "address": "0x9c354503C38481a7A7a51629142963F98eCC12D0",
       "name": "Origin Dollar Governance",
-      "symbol": "ogv",
+      "symbol": "OGV",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5045,14 +5061,14 @@
     {
       "address": "0x9d409a0A012CFbA9B15F6D4B36Ac57A46966Ab9a",
       "name": "Yearn Compounding veCRV yVault",
-      "symbol": "yvBOOST",
+      "symbol": "yvboost",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x9de1c3D446237ab9BaFF74127eb4F303802a2683",
-      "name": "Curve STG-FRAXBP Pool",
+      "name": "Curve.fi Factory Crypto Pool: STG/FRAX-USDC",
       "symbol": "STG/FRAXBP-f",
       "logoURI": "",
       "chainId": 1,
@@ -5085,7 +5101,7 @@
     {
       "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
       "name": "Maker",
-      "symbol": "mkr",
+      "symbol": "MKR",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5316,8 +5332,8 @@
     },
     {
       "address": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
-      "name": "Stargate Finance",
-      "symbol": "stg",
+      "name": "StargateToken",
+      "symbol": "STG",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5372,8 +5388,8 @@
     },
     {
       "address": "0xB620Be8a1949AA9532e6a3510132864EF9Bc3F82",
-      "name": "Lend Flare Dao",
-      "symbol": "lft",
+      "name": "LendFlare DAO Token",
+      "symbol": "LFT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5436,8 +5452,8 @@
     },
     {
       "address": "0xB9D7DdDca9a4AC480991865EfEf82E01273F79C3",
-      "name": "Boosted LUSD",
-      "symbol": "blusd",
+      "name": "bLUSD",
+      "symbol": "bLUSD",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5477,7 +5493,7 @@
     {
       "address": "0xBEA0000029AD1c77D3d5D23Ba2D8893dB9d1Efab",
       "name": "Bean",
-      "symbol": "bean",
+      "symbol": "BEAN",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -5493,7 +5509,7 @@
     {
       "address": "0xBa3335588D9403515223F109EdC4eB7269a9Ab5D",
       "name": "Gearbox",
-      "symbol": "gear",
+      "symbol": "GEAR",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5572,8 +5588,8 @@
     },
     {
       "address": "0xC08512927D12348F6620a698105e1BAac6EcD911",
-      "name": "GYEN",
-      "symbol": "gyen",
+      "name": "GMO JPY",
+      "symbol": "GYEN",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -5612,8 +5628,8 @@
     },
     {
       "address": "0xC25a3A3b969415c80451098fa907EC722572917F",
-      "name": "Curve.fi DAI/USDC/USDT/sUSD",
-      "symbol": "crvPlain3andSUSD",
+      "name": "LP-sCurve",
+      "symbol": "scurve",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5644,8 +5660,8 @@
     },
     {
       "address": "0xC2cB1040220768554cf699b0d863A3cd4324ce32",
-      "name": "iearn DAI",
-      "symbol": "yDAI",
+      "name": "iearn DAI v3",
+      "symbol": "yDAIv3",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5701,7 +5717,7 @@
     {
       "address": "0xC669928185DbCE49d2230CC9B0979BE6DC797957",
       "name": "BitTorrent",
-      "symbol": "btt",
+      "symbol": "BTT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5916,16 +5932,16 @@
     },
     {
       "address": "0xD6Ac1CB9019137a896343Da59dDE6d097F710538",
-      "name": "Curve.fi Factory Plain Pool: ibGBP/sGBP",
-      "symbol": "ibGBP+sGBP-f",
+      "name": "Curve ibGBP Pool",
+      "symbol": "crvIBGBP",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0xD71eCFF9342A5Ced620049e616c5035F1dB98620",
-      "name": "Synth sEUR",
-      "symbol": "sEUR",
+      "name": "sEUR",
+      "symbol": "seur",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5956,7 +5972,7 @@
     },
     {
       "address": "0xD8eb58D76aF99547333cfEeb6a0f9bd1A63b6492",
-      "name": "Curve MATIC-ETH Pool",
+      "name": "Curve.fi Factory Crypto Pool: PAIR_ETH_MATIC",
       "symbol": "ETH MATIC-f",
       "logoURI": "",
       "chainId": 1,
@@ -6116,8 +6132,8 @@
     },
     {
       "address": "0xE6354ed5bC4b393a5Aad09f21c46E101e692d447",
-      "name": "iearn USDT",
-      "symbol": "yUSDT",
+      "name": "iearn USDT v3",
+      "symbol": "yUSDTv3",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -6148,8 +6164,8 @@
     },
     {
       "address": "0xE80C0cd204D654CEbe8dd64A4857cAb6Be8345a3",
-      "name": "JPEG'd",
-      "symbol": "jpeg",
+      "name": "JPEG’d Governance Token",
+      "symbol": "JPEG",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6165,7 +6181,7 @@
     {
       "address": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
       "name": "Ankr Staked ETH",
-      "symbol": "ankrETH",
+      "symbol": "ANKRETH",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6260,8 +6276,8 @@
     },
     {
       "address": "0xEd279fDD11cA84bEef15AF5D39BB4d4bEE23F0cA",
-      "name": "Curve.fi Factory USD Metapool: Liquity",
-      "symbol": "LUSD3CRV-f",
+      "name": "LUSD3CRV-f",
+      "symbol": "lusd3crv",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6292,7 +6308,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Ethereum",
+      "name": "Ether",
       "symbol": "ETH",
       "logoURI": "",
       "chainId": 1,
@@ -6419,8 +6435,16 @@
       "decimals": 18
     },
     {
+      "address": "0xF915110898d9a455Ad2DA51BF49520b41655Ccea",
+      "name": "TAI reflex index",
+      "symbol": "TAI",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xF95AAa7EBB1620e46221B73588502960Ef63dBa0",
-      "name": "Curve tBTC Pool",
+      "name": "Curve.fi Factory USD Metapool: tBTC/wBTC/sBTC",
       "symbol": "TBTCSBTC23CRV-f",
       "logoURI": "",
       "chainId": 1,
@@ -6461,7 +6485,7 @@
     {
       "address": "0xFCc5c47bE19d06BF83eB04298b026F81069ff65b",
       "name": "Yearn CRV",
-      "symbol": "yCRV",
+      "symbol": "ycrv",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6524,8 +6548,8 @@
     },
     {
       "address": "0xFe2e637202056d30016725477c5da089Ab0A043A",
-      "name": "sETH2",
-      "symbol": "seth2",
+      "name": "StakeWise Staked ETH2",
+      "symbol": "sETH2",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6604,8 +6628,8 @@
     },
     {
       "address": "0xa693B19d2931d498c5B318dF961919BB4aee87a5",
-      "name": "TerraUSD (Wormhole)",
-      "symbol": "ust",
+      "name": "UST (Wormhole)",
+      "symbol": "UST_1",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -6709,14 +6733,14 @@
     {
       "address": "0xae78736Cd615f374D3085123A210448E74Fc6393",
       "name": "Rocket Pool ETH",
-      "symbol": "reth",
+      "symbol": "rETH_2",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
-      "name": "Liquid staked Ether 2.0",
+      "name": "stETH",
       "symbol": "stETH",
       "logoURI": "",
       "chainId": 1,
@@ -6764,8 +6788,8 @@
     },
     {
       "address": "0xb26C4B3Ca601136Daf98593feAeff9E0CA702a8D",
-      "name": "Aladdin DAO",
-      "symbol": "ald",
+      "name": "Aladdin Token",
+      "symbol": "ALD",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6836,7 +6860,7 @@
     },
     {
       "address": "0xb79565c01b7Ae53618d9B847b9443aAf4f9011e7",
-      "name": "Curve.fi Factory Crypto Pool: LDO/ETH",
+      "name": "Curve LDO-ETH Pool",
       "symbol": "LDOETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -7068,7 +7092,7 @@
     },
     {
       "address": "0xc3b19502F8c02be75F3f77fd673503520DEB51dD",
-      "name": "Curve msUSD-FRAXBP Pool",
+      "name": "Curve.fi Factory USD Metapool: msUSD/FRAXBP",
       "symbol": "msUSDFRAX3CRV-f",
       "logoURI": "",
       "chainId": 1,
@@ -7100,7 +7124,7 @@
     },
     {
       "address": "0xc55126051B22eBb829D00368f4B12Bde432de5Da",
-      "name": "Redacted Protocol",
+      "name": "BTRFLY",
       "symbol": "BTRFLY",
       "logoURI": "",
       "chainId": 1,
@@ -7140,8 +7164,8 @@
     },
     {
       "address": "0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d",
-      "name": "ShapeShift FOX",
-      "symbol": "fox",
+      "name": "FOX",
+      "symbol": "FOX",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -7182,6 +7206,14 @@
       "address": "0xc8a7C1c4B748970F57cA59326BcD49F5c9dc43E3",
       "name": "Curve.fi Factory Plain Pool: OPEN MATIC",
       "symbol": "OPEN MATIC-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xc98876d4A7e3E586727bfc4370aAb4314131D27c",
+      "name": "Curve.fi Factory Crypto Pool: TAI/RAI",
+      "symbol": "TAIRAI-f",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -7229,7 +7261,7 @@
     {
       "address": "0xcaDC0acd4B445166f12d2C07EAc6E2544FbE2Eef",
       "name": "CAD Coin",
-      "symbol": "cadc",
+      "symbol": "CADC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -7356,8 +7388,8 @@
     },
     {
       "address": "0xd6aD7a6750A7593E092a9B218d66C0A814a3436e",
-      "name": "iearn USDC",
-      "symbol": "yUSDC",
+      "name": "iearn USDC v2",
+      "symbol": "yUSDCv2",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -7412,7 +7444,7 @@
     },
     {
       "address": "0xdB25f211AB05b1c97D595516F45794528a807ad8",
-      "name": "STASIS EURS Token",
+      "name": "STASIS EURS",
       "symbol": "EURS",
       "logoURI": "",
       "chainId": 1,
@@ -7460,8 +7492,8 @@
     },
     {
       "address": "0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8",
-      "name": "Curve.fi yDAI/yUSDC/yUSDT/yTUSD",
-      "symbol": "yDAI+yUSDC+yUSDT+yTUSD",
+      "name": "Curve.fi iearn pool token",
+      "symbol": "yCurve",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -7541,7 +7573,7 @@
     {
       "address": "0xe2bA8693cE7474900A045757fe0efCa900F6530b",
       "name": "Flux DAI",
-      "symbol": "fDAI",
+      "symbol": "fdai",
       "logoURI": "",
       "chainId": 1,
       "decimals": 8
@@ -7909,7 +7941,7 @@
     {
       "address": "0xfF709449528B6fB6b88f557F7d93dEce33bca78D",
       "name": "ApeUSD",
-      "symbol": "APEUSD",
+      "symbol": "ApeUSD",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18

@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "25/05/2023 10:18:30",
+  "timestamp": "28/05/2023 00:37:30",
   "version": {
     "major": 5,
-    "minor": 14,
+    "minor": 15,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -60,7 +60,7 @@
     },
     {
       "address": "0x061b87122Ed14b9526A813209C8a59a633257bAb",
-      "name": "Curve.fi Factory USD Metapool: sUSD Synthetix",
+      "name": "Curve sUSD Pool",
       "symbol": "sUSD3CRV-f",
       "logoURI": "",
       "chainId": 10,
@@ -100,8 +100,8 @@
     },
     {
       "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
-      "name": "Wrapped stETH",
-      "symbol": "wsteth",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -165,7 +165,7 @@
     {
       "address": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
       "name": "Chainlink",
-      "symbol": "link",
+      "symbol": "LINK",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -213,7 +213,7 @@
     {
       "address": "0x4200000000000000000000000000000000000042",
       "name": "Optimism",
-      "symbol": "op",
+      "symbol": "OP",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -299,6 +299,14 @@
       "decimals": 18
     },
     {
+      "address": "0x61D83f85cF78EeFE1Aafeb74f48e202367184f1f",
+      "name": "Curve.fi Factory Plain Pool: pool",
+      "symbol": "pool-f",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
       "name": "Aave USDC",
       "symbol": "ausdc",
@@ -332,7 +340,7 @@
     },
     {
       "address": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
-      "name": "Wrapped BTC",
+      "name": "Wrapped Bitcoin",
       "symbol": "WBTC",
       "logoURI": "",
       "chainId": 10,
@@ -419,6 +427,14 @@
       "decimals": 6
     },
     {
+      "address": "0x7e32ACaE2f0e928376C61d389555658c55Bf9b00",
+      "name": "Curve.fi Factory Plain Pool: y",
+      "symbol": "y-f",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x7fE67173E14aA3349b8F24533084379e1066E19c",
       "name": "Optimium Dollar",
       "symbol": "OD",
@@ -492,8 +508,8 @@
     },
     {
       "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
-      "name": "Tether",
-      "symbol": "usdt",
+      "name": "Tether USD",
+      "symbol": "USDT",
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
@@ -518,6 +534,14 @@
       "address": "0x9F2fE3500B1a7E285FDc337acacE94c480e00130",
       "name": "Curve.fi Factory Plain Pool: sBTC/wbtc",
       "symbol": "sbtc-f",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xA35540C0e0Fe990C70d40fC258d2d12ea40497D8",
+      "name": "Curve.fi Factory Plain Pool: y",
+      "symbol": "y-f",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -555,6 +579,14 @@
       "decimals": 18
     },
     {
+      "address": "0xBBaf6181FBf0C624699c7E56Ba109a53ECa846F2",
+      "name": "Curve.fi Factory Plain Pool: amapool",
+      "symbol": "AMP-f",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xBdf1166484c162601d3FD9C90e394137dfF2bc14",
       "name": "Bridge the Gap",
       "symbol": "Gap",
@@ -572,7 +604,7 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai Stablecoin",
+      "name": "Dai stable coin",
       "symbol": "DAI",
       "logoURI": "",
       "chainId": 10,
@@ -587,9 +619,17 @@
       "decimals": 18
     },
     {
+      "address": "0xE1Ee22790EDC2632b27111cA5fF2CC156d59e35a",
+      "name": "Curve.fi Factory Plain Pool: y",
+      "symbol": "y-f",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49",
-      "name": "sETH",
-      "symbol": "seth",
+      "name": "Synth sETH",
+      "symbol": "sETH",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -612,7 +652,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "ETH",
+      "name": "Ethereum",
       "symbol": "ETH",
       "logoURI": "",
       "chainId": 10,
