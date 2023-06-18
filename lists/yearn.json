@@ -1,10 +1,10 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "11/06/2023 00:47:02",
+  "timestamp": "18/06/2023 00:43:07",
   "version": {
     "major": 5,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -95,6 +95,14 @@
       "name": "Curve stETH Pool",
       "symbol": "crvSTETH",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x06325440D014e39736583c165C2963BA99fAf14E/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x0CD6f267b2086bea681E922E19D40512511BE538",
+      "name": "Curve.fi Factory Plain Pool: crvUSD/Frax",
+      "symbol": "crvUSDFRAX-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0CD6f267b2086bea681E922E19D40512511BE538/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -236,8 +244,8 @@
     },
     {
       "address": "0x241AdD131B9aaa7527132b752252b99420937ADc",
-      "name": "Curve crvUSDUSDT-f Factory yVault",
-      "symbol": "yvCurve-crvUSDUSDT-f",
+      "name": "Curve USDT-crvUSD Factory yVault",
+      "symbol": "yvCurve-USDT-crvUSD-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x241AdD131B9aaa7527132b752252b99420937ADc/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -820,8 +828,8 @@
     },
     {
       "address": "0x6a7A0481e476827857704B87bdeE7922D058cbE4",
-      "name": "Curve hyUSDeUSD-f Factory yVault",
-      "symbol": "yvCurve-hyUSDeUSD-f",
+      "name": "Curve hyUSD-eUSD Factory yVault",
+      "symbol": "yvCurve-hyUSD-eUSD-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x6a7A0481e476827857704B87bdeE7922D058cbE4/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -907,9 +915,17 @@
       "decimals": 18
     },
     {
+      "address": "0x77e829FFF18C14AD9bb88963acB0010A0506de88",
+      "name": "Curve StaFi rETH Factory yVault",
+      "symbol": "yvCurve-StaFi-rETH-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x77e829FFF18C14AD9bb88963acB0010A0506de88/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x7845Ebf66c9575Fc5f5A0dBb9a34a706Ad997a3f",
-      "name": "Curve crvUSDTWBTCWETH Factory yVault",
-      "symbol": "yvCurve-crvUSDTWBTCWETH-f",
+      "name": "Curve TriCryptoUSDT Factory yVault",
+      "symbol": "yvCurve-3CryptoUSDT-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x7845Ebf66c9575Fc5f5A0dBb9a34a706Ad997a3f/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -972,8 +988,8 @@
     },
     {
       "address": "0x7cA00559B978CFde81297849be6151d3ccB408A9",
-      "name": "Curve crvUSDUSDC-f Factory yVault",
-      "symbol": "yvCurve-crvUSDUSDC-f",
+      "name": "Curve USDC-crvUSD Factory yVault",
+      "symbol": "yvCurve-USDC-crvUSD-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x7cA00559B978CFde81297849be6151d3ccB408A9/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -996,7 +1012,7 @@
     },
     {
       "address": "0x8072B1d66389a1AA039e21Aac35A92464005baF5",
-      "name": "Curve StaFi rETH-frxETH Factory yVault",
+      "name": "Curve rETH-frxETH Factory yVault",
       "symbol": "yvCurve-rETH-frxETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x8072B1d66389a1AA039e21Aac35A92464005baF5/logo-128.png",
       "chainId": 1,
@@ -1007,6 +1023,14 @@
       "name": "Curve 3Crypto",
       "symbol": "yvCurve-3Crypto-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x8078198Fc424986ae89Ce4a910Fc109587b6aBF3/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8176b059BD8f63aeB7e20282b12D243b4626E2AE",
+      "name": "Curve FRAX-crvUSD Factory yVault",
+      "symbol": "yvCurve-FRAX-crvUSD-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x8176b059BD8f63aeB7e20282b12D243b4626E2AE/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1036,8 +1060,8 @@
     },
     {
       "address": "0x849dC56ceCa7Cf55AbF5ec87910DA21c5C7dA581",
-      "name": "Curve ETH+ETH-f Factory yVault",
-      "symbol": "yvCurve-ETH+ETH-f",
+      "name": "Curve ETH+ Factory yVault",
+      "symbol": "yvCurve-ETH+-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x849dC56ceCa7Cf55AbF5ec87910DA21c5C7dA581/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1083,9 +1107,17 @@
       "decimals": 18
     },
     {
+      "address": "0x892D701d94a43bDBCB5eA28891DaCA2Fa22A690b",
+      "name": "Curve.fi Factory USD Metapool: STBT/3CRV",
+      "symbol": "STBT3CRV-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x892D701d94a43bDBCB5eA28891DaCA2Fa22A690b/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x8Aa95B71D8e0e1C7949bd84223E0C7911D85171C",
-      "name": "Curve RSRcrvFRAX-f Factory yVault",
-      "symbol": "yvCurve-RSRcrvFRAX-f",
+      "name": "Curve RSR-FRAXBP Factory yVault",
+      "symbol": "yvCurve-RSR-FRAXBP-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x8Aa95B71D8e0e1C7949bd84223E0C7911D85171C/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1548,8 +1580,8 @@
     },
     {
       "address": "0xF56fB6cc29F0666BDD1662FEaAE2A3C935ee3469",
-      "name": "Curve crvUSDUSDP-f Factory yVault",
-      "symbol": "yvCurve-crvUSDUSDP-f",
+      "name": "Curve USDP-crvUSD Factory yVault",
+      "symbol": "yvCurve-USDP-crvUSD-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xF56fB6cc29F0666BDD1662FEaAE2A3C935ee3469/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1684,8 +1716,8 @@
     },
     {
       "address": "0xaA379c2aA72529d5ec0da8A41e2F41ED7Fe4b48C",
-      "name": "Curve crvUSDCWBTCWETH Factory yVault",
-      "symbol": "yvCurve-crvUSDCWBTCWETH-f",
+      "name": "Curve TriCryptoUSDC Factory yVault",
+      "symbol": "yvCurve-3CryptoUSDC-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xaA379c2aA72529d5ec0da8A41e2F41ED7Fe4b48C/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1959,6 +1991,14 @@
       "name": "Curve.fi Factory Crypto Pool: ETH+/ETH",
       "symbol": "ETH+ETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xe8a5677171c87fCB65b76957f2852515B404C7b1/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xe8b96C38a0b370eAfb11D9b8Df4131415423577a",
+      "name": "Curve STBT Factory yVault",
+      "symbol": "yvCurve-STBT-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xe8b96C38a0b370eAfb11D9b8Df4131415423577a/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
