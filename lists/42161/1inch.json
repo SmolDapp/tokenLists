@@ -1,10 +1,10 @@
 {
   "name": "1inch Token List",
   "description": "",
-  "timestamp": "28/05/2023 00:41:18",
+  "timestamp": "27/06/2023 10:42:18",
   "version": {
-    "major": 7,
-    "minor": 1,
+    "major": 8,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://app.1inch.io/assets/images/logo.png",
@@ -15,6 +15,14 @@
       "name": "Balancer",
       "symbol": "BAL",
       "logoURI": "https://tokens.1inch.io/0xba100000625a3754423978a60c9317c58a424e3d.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x079504b86d38119F859c4194765029F692b7B7aa",
+      "name": "Lyra Token",
+      "symbol": "LYRA",
+      "logoURI": "https://tokens.1inch.io/0x079504b86d38119f859c4194765029f692b7b7aa.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -83,14 +91,6 @@
       "decimals": 6
     },
     {
-      "address": "0x23A941036Ae778Ac51Ab04CEa08Ed6e2FE103614",
-      "name": "Graph Token",
-      "symbol": "GRT",
-      "logoURI": "https://tokens.1inch.io/0xc944e90c64b2c07662a292be6244bdf05cda44a7.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x2e9a6Df78E42a30712c10a9Dc4b1C8656f8F2879",
       "name": "Maker",
       "symbol": "MKR",
@@ -105,6 +105,22 @@
       "logoURI": "https://tokens.1inch.io/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png",
       "chainId": 42161,
       "decimals": 8
+    },
+    {
+      "address": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
+      "name": "Radiant",
+      "symbol": "RDNT",
+      "logoURI": "https://tokens.1inch.io/0x3082cc23568ea640225c2467653db90e9250aaa0.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x32Eb7902D4134bf98A28b963D26de779AF92A212",
+      "name": "Dopex Rebate Token",
+      "symbol": "RDPX",
+      "logoURI": "https://tokens.1inch.io/0x32eb7902d4134bf98a28b963d26de779af92a212.png",
+      "chainId": 42161,
+      "decimals": 18
     },
     {
       "address": "0x354A6dA3fcde098F8389cad84b0182725c6C91dE",
@@ -267,6 +283,30 @@
       "decimals": 18
     },
     {
+      "address": "0x9623063377AD1B27544C965cCd7342f7EA7e88C7",
+      "name": "Graph Token",
+      "symbol": "GRT",
+      "logoURI": "https://tokens.1inch.io/0xc944e90c64b2c07662a292be6244bdf05cda44a7.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x965F298E4ade51C0b0bB24e3369deB6C7D5b3951",
+      "name": "AutoDCA",
+      "symbol": "DCA",
+      "logoURI": "https://tokens.1inch.io/0x965f298e4ade51c0b0bb24e3369deb6c7d5b3951.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE",
+      "name": "beefy.finance",
+      "symbol": "BIFI",
+      "logoURI": "https://tokens.1inch.io/0x99c409e5f62e4bd2ac142f17cafb6810b8f0baae.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x99F40b01BA9C469193B360f72740E416B17Ac332",
       "name": "MATH Token",
       "symbol": "MATH",
@@ -289,6 +329,14 @@
       "logoURI": "https://tokens.1inch.io/0x9ed7e4b1bff939ad473da5e7a218c771d1569456.png",
       "chainId": 42161,
       "decimals": 6
+    },
+    {
+      "address": "0xB64E280e9D1B5DbEc4AcceDb2257A87b400DB149",
+      "name": "Level Token",
+      "symbol": "LVL",
+      "logoURI": "https://tokens.1inch.io/0xb64e280e9d1b5dbec4accedb2257a87b400db149.png",
+      "chainId": 42161,
+      "decimals": 18
     },
     {
       "address": "0xBfa641051Ba0a0Ad1b0AcF549a89536A0D76472E",
@@ -348,7 +396,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Ethereum",
+      "name": "Ether",
       "symbol": "ETH",
       "logoURI": "https://tokens.1inch.io/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
       "chainId": 42161,
@@ -373,7 +421,7 @@
     {
       "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
       "name": "USD Coin (Arb1)",
-      "symbol": "USDC",
+      "symbol": "USDC.e",
       "logoURI": "https://tokens.1inch.io/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png",
       "chainId": 42161,
       "decimals": 6
@@ -401,6 +449,14 @@
       "logoURI": "https://tokens.1inch.io/0x6810e776880c02933d47db1b9fc05908e5386b96.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://tokens.1inch.io/0xaf88d065e77c8cc2239327c5edb3a432268e5831.png",
+      "chainId": 42161,
+      "decimals": 6
     },
     {
       "address": "0xc5102fE9359FD9a28f877a67E36B0F050d81a3CC",
@@ -471,6 +527,14 @@
       "name": "Elk",
       "symbol": "ELK",
       "logoURI": "https://tokens.1inch.io/0xeeeeeb57642040be42185f49c52f7e9b38f8eeee.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xeb8E93A0c7504Bffd8A8fFa56CD754c63aAeBFe8",
+      "name": "DAI+",
+      "symbol": "DAI+",
+      "logoURI": "https://tokens.1inch.io/0xeb8e93a0c7504bffd8a8ffa56cd754c63aaebfe8.png",
       "chainId": 42161,
       "decimals": 18
     },
