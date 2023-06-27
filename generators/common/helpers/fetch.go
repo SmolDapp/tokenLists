@@ -13,9 +13,11 @@ func FetchJSON[T any](uri string) (data T) {
 	var resp *http.Response
 	var err error
 
-	if strings.Contains(uri, `api.portals.fi`) || strings.Contains(uri, `api.1inch.io`) || strings.Contains(uri, `api.joinwido.com`) {
+	if strings.Contains(uri, `api.portals.fi`) ||
+		strings.Contains(uri, `api.1inch.io`) ||
+		strings.Contains(uri, `api.joinwido.com`) {
 		req, _ := http.NewRequest("GET", uri, nil)
-		req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36")
+		req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36")
 		resp, err = http.DefaultClient.Do(req)
 	} else {
 		resp, err = http.Get(uri)
