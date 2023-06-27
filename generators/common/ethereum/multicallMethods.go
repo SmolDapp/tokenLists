@@ -116,7 +116,7 @@ func FetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 	** Then we can proceed the responses.
 	**********************************************************************************************/
 	tokenList := make(map[string]*TERC20)
-	response := caller.ExecuteByBatch(chainID, calls, maxBatch, nil)
+	response := caller.ExecuteByBatch(calls, maxBatch, nil)
 	for _, token := range tokens {
 		rawName := response[token.String()+`name`]
 		rawSymbol := response[token.String()+`symbol`]
@@ -159,7 +159,7 @@ func FetchNames(chainID uint64, tokens []common.Address) map[string]string {
 	** Then we can proceed the responses.
 	**********************************************************************************************/
 	nameList := make(map[string]string)
-	response := caller.ExecuteByBatch(chainID, calls, maxBatch, nil)
+	response := caller.ExecuteByBatch(calls, maxBatch, nil)
 	for _, token := range tokens {
 		rawName := response[token.String()+`name`]
 		nameList[token.Hex()] = decodeString(rawName)
@@ -186,14 +186,14 @@ func FetchDecimals(chainID uint64, tokens []common.Address) map[string]uint64 {
 	**********************************************************************************************/
 	maxBatch := 420
 	if chainID == 250 || chainID == 56 || chainID == 137 {
-		maxBatch = 420
+		maxBatch = 42
 	}
 
 	/**********************************************************************************************
 	** Then we can proceed the responses.
 	**********************************************************************************************/
 	decimalsList := make(map[string]uint64)
-	response := caller.ExecuteByBatch(chainID, calls, maxBatch, nil)
+	response := caller.ExecuteByBatch(calls, maxBatch, nil)
 	for _, token := range tokens {
 		rawDecimals := response[token.String()+`decimals`]
 		decimalsList[token.Hex()] = decodeUint64(rawDecimals)
