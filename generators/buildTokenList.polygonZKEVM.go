@@ -51,10 +51,10 @@ func fetchPolygonZKEVMTokenList() []TokenListToken {
 }
 
 func buildPolygonZKEVMTokenList() {
-	tokenList := loadTokenListFromJsonFile(`polygonZKEVM.json`)
+	tokenList := loadTokenListFromJsonFile(`polygon-zkevm.json`)
 	tokenList.Name = `Polygon ZKEVM`
 	tokenList.LogoURI = `https://raw.githubusercontent.com/maticnetwork/zkevm-docs/main/static/img/polygon-zkevm-logo.svg`
 	tokenList.Keywords = []string{`polygon`, `zkevm`}
 	tokens := fetchPolygonZKEVMTokenList()
-	saveTokenListInJsonFile(tokenList, tokens, `polygonZKEVM.json`, Standard)
+	saveTokenListInJsonFile(tokenList, tokens, `polygon-zkevm.json`, Standard)
 }
