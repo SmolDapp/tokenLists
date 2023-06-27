@@ -92,6 +92,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`polygon-zkevm`: {
+		Exec:             buildPolygonZKEVMTokenList,
+		Name:             `Polygon (ZK-EVM)`,
+		Description:      `A list of tokens available on the Polygon zkEVM, the first EVM zero-knowledge scaling solution.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`portals`: {
 		Exec:             buildPortalsTokenList,
 		Name:             `Portals`,

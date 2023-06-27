@@ -259,6 +259,9 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 	erc20FromChain := ethereum.FetchBasicInformations(chainID, missingAddresses)
 	for k, v := range erc20FromChain {
 		erc20Map[k] = v
+		if _, ok := ALL_EXISTING_TOKENS[chainID]; !ok {
+			ALL_EXISTING_TOKENS[chainID] = make(map[string]TokenListToken)
+		}
 		ALL_EXISTING_TOKENS[chainID][k] = TokenListToken{
 			Address:  v.Address.Hex(),
 			Name:     v.Name,

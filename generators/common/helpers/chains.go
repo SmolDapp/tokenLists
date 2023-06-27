@@ -7,6 +7,7 @@ var SUPPORTED_CHAIN_IDS = map[uint64]bool{
 	100:   true, // xDai/Gnosis
 	137:   true, // Polygon
 	250:   true, // Fantom
+	1101:  true, // Polygon ZKEVM
 	42161: true, // Arbitrum
 	43114: true, // Avalanche
 }
