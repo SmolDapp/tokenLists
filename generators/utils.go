@@ -24,7 +24,7 @@ const (
 	Append   JSONSaveTokensMethods = "Append"
 )
 
-// loadTokenListFromJsonFile loads a token list from a json file
+// loadTokenListFromJsonFile loads a token list from a json file.
 func loadTokenListFromJsonFile(filePath string) TokenListData {
 	var tokenList TokenListData
 	content, err := ioutil.ReadFile(helpers.BASE_PATH + `/lists/` + filePath)
