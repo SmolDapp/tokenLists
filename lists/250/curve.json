@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "09/07/2023 00:50:41",
+  "timestamp": "16/07/2023 00:50:04",
   "version": {
     "major": 5,
-    "minor": 24,
+    "minor": 25,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -52,8 +52,8 @@
     },
     {
       "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
-      "name": "Tether",
-      "symbol": "USDT",
+      "name": "Frapped USDT",
+      "symbol": "fUSDT",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -180,7 +180,7 @@
     },
     {
       "address": "0x13082681E8CE9bd0aF505912d306403592490Fc7",
-      "name": "Parallel",
+      "name": "PAR Stablecoin",
       "symbol": "PAR",
       "logoURI": "",
       "chainId": 250,
@@ -299,6 +299,14 @@
       "decimals": 18
     },
     {
+      "address": "0x1eE5629fb624412354Caec457C8B4E67F7027A2F",
+      "name": "Curve.fi Factory Plain Pool: PEAR/axlUSDC",
+      "symbol": "PEAR-f-f",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x20eD8cAa61BA7147a2545dc7f09e241329799d6E",
       "name": "Curve.fi Factory USD Metapool: L3USD - 2pool",
       "symbol": "L3USD2POOL3CRV-f",
@@ -318,6 +326,14 @@
       "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
       "name": "Wrapped Fantom",
       "symbol": "WFTM",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x23d5916BA743354aEb066359E322d31279FB6018",
+      "name": "Curve.fi Factory Plain Pool: STAR/axlUSDC",
+      "symbol": "STAR-f",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -468,8 +484,8 @@
     },
     {
       "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
-      "name": "Wrapped Bitcoin",
-      "symbol": "WBTC",
+      "name": "Bitcoin",
+      "symbol": "BTC",
       "logoURI": "",
       "chainId": 250,
       "decimals": 8
@@ -708,8 +724,8 @@
     },
     {
       "address": "0x511D35c52a3C244E7b8bd92c0C297755FbD89212",
-      "name": "Wrapped AVAX",
-      "symbol": "WAVAX",
+      "name": "Avalanche",
+      "symbol": "AVAX",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -804,7 +820,7 @@
     },
     {
       "address": "0x5Cc61A78F164885776AA610fb0FE1257df78E59B",
-      "name": "SpiritSwap",
+      "name": "SpiritSwap Token",
       "symbol": "SPIRIT",
       "logoURI": "",
       "chainId": 250,
@@ -916,7 +932,7 @@
     },
     {
       "address": "0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7",
-      "name": "Tomb",
+      "name": "TOMB",
       "symbol": "TOMB",
       "logoURI": "",
       "chainId": 250,
@@ -980,8 +996,8 @@
     },
     {
       "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
-      "name": "WETH",
-      "symbol": "WETH",
+      "name": "Ethereum",
+      "symbol": "ETH",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1076,7 +1092,7 @@
     },
     {
       "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
-      "name": "Spookyswap",
+      "name": "SpookyToken",
       "symbol": "BOO",
       "logoURI": "",
       "chainId": 250,
@@ -1148,7 +1164,7 @@
     },
     {
       "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "",
       "chainId": 250,
@@ -1308,7 +1324,7 @@
     },
     {
       "address": "0x9879aBDea01a879644185341F7aF7d8343556B7a",
-      "name": "Bridged TrueUSD",
+      "name": "TrueUSD",
       "symbol": "TUSD",
       "logoURI": "",
       "chainId": 250,
@@ -1604,8 +1620,8 @@
     },
     {
       "address": "0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454",
-      "name": "Wrapped BNB",
-      "symbol": "WBNB",
+      "name": "BNB",
+      "symbol": "BNB",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -2196,8 +2212,8 @@
     },
     {
       "address": "0xfB98B335551a418cD0737375a2ea0ded62Ea213b",
-      "name": "MAI",
-      "symbol": "MIMATIC",
+      "name": "miMATIC",
+      "symbol": "miMATIC",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
