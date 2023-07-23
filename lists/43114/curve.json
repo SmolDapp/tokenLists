@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "16/07/2023 00:50:04",
+  "timestamp": "23/07/2023 00:42:59",
   "version": {
     "major": 5,
-    "minor": 25,
+    "minor": 26,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -133,7 +133,7 @@
     {
       "address": "0x0f577433Bf59560Ef2a79c124E9Ff99fCa258948",
       "name": "Moremoney USD",
-      "symbol": "MONEY",
+      "symbol": "money",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -141,7 +141,7 @@
     {
       "address": "0x111111111111ed1D73f860F57b2798b683f2d325",
       "name": "YUSD Stablecoin",
-      "symbol": "YUSD",
+      "symbol": "yusd",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -156,16 +156,16 @@
     },
     {
       "address": "0x1337BedC9D22ecbe766dF105c9623922A27963EC",
-      "name": "Curve.fi avDAI/avUSDC/avUSDT",
-      "symbol": "av3CRV",
+      "name": "LP 3pool Curve",
+      "symbol": "3crv",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
     },
     {
       "address": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
-      "name": "Bitcoin",
-      "symbol": "BTC.b",
+      "name": "Bitcoin Avalanche Bridged (BTC.b)",
+      "symbol": "btc.b",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 8
@@ -284,8 +284,8 @@
     },
     {
       "address": "0x264c1383EA520f73dd837F915ef3a732e204a493",
-      "name": "Binance",
-      "symbol": "BNB",
+      "name": "Wrapped BNB",
+      "symbol": "wbnb",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -389,15 +389,15 @@
     {
       "address": "0x321E7092a180BB43555132ec53AaA65a5bF84251",
       "name": "Governance OHM",
-      "symbol": "gOHM",
+      "symbol": "gohm",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
     },
     {
       "address": "0x346A59146b9b4a77100D369a3d18E8007A9F46a6",
-      "name": "AVAI",
-      "symbol": "AVAI",
+      "name": "Orca AVAI",
+      "symbol": "avai",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -420,8 +420,8 @@
     },
     {
       "address": "0x395908aeb53d33A9B8ac35e148E9805D34A555D3",
-      "name": "frozenwalrus.finance",
-      "symbol": "WLRS",
+      "name": "Walrus",
+      "symbol": "wlrs",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -540,8 +540,8 @@
     },
     {
       "address": "0x4fbf0429599460D327BD5F55625E30E4fC066095",
-      "name": "TSD Stablecoin",
-      "symbol": "TSD",
+      "name": "Teddy Dollar",
+      "symbol": "tsd",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -589,7 +589,7 @@
     {
       "address": "0x5541D83EFaD1f281571B343977648B75d95cdAC2",
       "name": "Grape Finance",
-      "symbol": "GRAPE",
+      "symbol": "grape",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -700,8 +700,8 @@
     },
     {
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
-      "name": "Aave Avalanche USDC",
-      "symbol": "aAvaUSDC",
+      "name": "Aave USDC",
+      "symbol": "ausdc",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -768,7 +768,7 @@
       "symbol": "avWBTC",
       "logoURI": "",
       "chainId": 43114,
-      "decimals": 8
+      "decimals": 6
     },
     {
       "address": "0x6BF6fc7EaF84174bb7e1610Efd865f0eBD2AA96D",
@@ -804,8 +804,8 @@
     },
     {
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
-      "name": "Aave Avalanche USDT",
-      "symbol": "aAvaUSDT",
+      "name": "Aave USDT",
+      "symbol": "ausdt",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -820,8 +820,8 @@
     },
     {
       "address": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
-      "name": "JoeToken",
-      "symbol": "JOE",
+      "name": "JOE",
+      "symbol": "joe",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -925,15 +925,15 @@
     {
       "address": "0x820802Fa8a99901F52e39acD21177b0BE6EE2974",
       "name": "EUROe Stablecoin",
-      "symbol": "EUROE",
+      "symbol": "euroe",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
     },
     {
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
-      "name": "Aave Avalanche DAI",
-      "symbol": "aAvaDAI",
+      "name": "Aave DAI",
+      "symbol": "adai",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1085,7 +1085,7 @@
     {
       "address": "0xA56F9A54880afBc30CF29bB66d2D9ADCdcaEaDD6",
       "name": "Qi Dao",
-      "symbol": "QI",
+      "symbol": "qi",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1100,8 +1100,8 @@
     },
     {
       "address": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
-      "name": "USD Coin",
-      "symbol": "USDC.e",
+      "name": "USD Coin Avalanche Bridged (USDC.e)",
+      "symbol": "usdc",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -1205,7 +1205,7 @@
     {
       "address": "0xC0C5AA69Dbe4d6DDdfBc89c0957686ec60F24389",
       "name": "XEN Crypto",
-      "symbol": "XEN",
+      "symbol": "xen",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1261,7 +1261,7 @@
     {
       "address": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD",
       "name": "Euro Coin",
-      "symbol": "EUROC",
+      "symbol": "euroc",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -1277,7 +1277,7 @@
     {
       "address": "0xD036414fa2BCBb802691491E323BFf1348C5F4Ba",
       "name": "Mu Coin",
-      "symbol": "MU",
+      "symbol": "mu",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1356,7 +1356,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Avalanche",
+      "name": "AVAX",
       "symbol": "AVAX",
       "logoURI": "",
       "chainId": 43114,
@@ -1373,7 +1373,7 @@
     {
       "address": "0xF14f4CE569cB3679E99d5059909E23B07bd2F387",
       "name": "NXUSD",
-      "symbol": "NXUSD",
+      "symbol": "nxusd",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1413,7 +1413,7 @@
     {
       "address": "0xaB05b04743E0aeAF9D2cA81E5D3b8385e4BF961e",
       "name": "SpiceUSD",
-      "symbol": "USDS",
+      "symbol": "usds",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1469,7 +1469,7 @@
     {
       "address": "0xb599c3590F42f8F995ECfa0f85D2980B76862fc1",
       "name": "TerraUSD (Wormhole)",
-      "symbol": "UST",
+      "symbol": "ust",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -1548,8 +1548,8 @@
     },
     {
       "address": "0xc7198437980c041c805A1EDcbA50c1Ce5db95118",
-      "name": "Tether USD",
-      "symbol": "USDT.e",
+      "name": "Tether Avalanche Bridged (USDT.e)",
+      "symbol": "usdte",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -1709,7 +1709,7 @@
     {
       "address": "0xfaB550568C688d5D8A52C7d794cb93Edc26eC0eC",
       "name": "Axelar USDC",
-      "symbol": "AXLUSDC",
+      "symbol": "axlusdc",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
