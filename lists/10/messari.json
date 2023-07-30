@@ -1,15 +1,31 @@
 {
   "name": "Messari Token List",
   "description": "",
-  "timestamp": "23/07/2023 00:45:41",
+  "timestamp": "30/07/2023 00:42:45",
   "version": {
-    "major": 33,
+    "major": 34,
     "minor": 0,
     "patch": 0
   },
   "logoURI": "https://messari.io/images/logo_tcr-check.svg",
   "keywords": [],
   "tokens": [
+    {
+      "address": "0x00F932F0FE257456b32dedA4758922E56A4F4b42",
+      "name": "Dope Wars Paper",
+      "symbol": "PAPER",
+      "logoURI": "https://asset-images.messari.io/images/3188282c-127d-4037-bcd3-12a3e7480e0d/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x00a35FD824c717879BF370E70AC6868b95870Dfb",
+      "name": "Iron Bank",
+      "symbol": "IB",
+      "logoURI": "https://asset-images.messari.io/images/b3f158a4-d977-4b46-ae4b-6cfce41bde87/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
     {
       "address": "0x078f358208685046a11C85e8ad32895DED33A249",
       "name": "Aave WBTC",
@@ -83,10 +99,26 @@
       "decimals": 18
     },
     {
+      "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
+      "name": "Wrapped stETH",
+      "symbol": "WSTETH",
+      "logoURI": "https://asset-images.messari.io/images/ee649f15-877b-437c-8cff-9833148e2aae/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x1e3c6c53F9f60BF8aAe0D7774C21Fa6b1afddC57",
       "name": "xShrap",
       "symbol": "xshrap",
       "logoURI": "https://asset-images.messari.io/images/39de7e69-e6a6-4448-8a37-845043584d1f/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x1e925De1c68ef83bD98eE3E130eF14a50309C01B",
+      "name": "EXA",
+      "symbol": "exa",
+      "logoURI": "https://asset-images.messari.io/images/abb3889e-bdf0-4f3d-8707-e8d183d08b76/128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -163,6 +195,22 @@
       "decimals": 18
     },
     {
+      "address": "0x39FdE572a18448F8139b7788099F0a0740f51205",
+      "name": "Oath",
+      "symbol": "OATH",
+      "logoURI": "https://asset-images.messari.io/images/fc384385-aca5-47c0-8aeb-e8da4a2efed5/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x3A18dcC9745eDcD1Ef33ecB93b0b6eBA5671e7Ca",
+      "name": "Kujira",
+      "symbol": "KUJI",
+      "logoURI": "https://asset-images.messari.io/images/20dcd2e2-b008-419d-ac46-e4f0923d63d6/128.png",
+      "chainId": 10,
+      "decimals": 6
+    },
+    {
       "address": "0x3E29D3A9316dAB217754d13b28646B76607c5f04",
       "name": "Alchemix ETH",
       "symbol": "ALETH",
@@ -175,14 +223,6 @@
       "name": "Qi Dao",
       "symbol": "QI",
       "logoURI": "https://asset-images.messari.io/images/30771a12-69f4-4d67-84f0-09ffb2658669/128.png",
-      "chainId": 10,
-      "decimals": 18
-    },
-    {
-      "address": "0x3c8B650257cFb5f272f799F5e2b4e65093a11a05",
-      "name": "Velodrome Finance",
-      "symbol": "velo",
-      "logoURI": "https://asset-images.messari.io/images/7b9d4946-38a8-4489-bf3d-03f55ccb4413/128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -219,10 +259,34 @@
       "decimals": 18
     },
     {
+      "address": "0x47536F17F4fF30e64A96a7555826b8f9e66ec468",
+      "name": "Mummy Finance",
+      "symbol": "mmy",
+      "logoURI": "https://asset-images.messari.io/images/2e50f8e8-132b-483a-8d88-3d93d62016e5/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x484c2D6e3cDd945a8B2DF735e079178C1036578c",
+      "name": "Staked Frax Ether",
+      "symbol": "sfrxeth",
+      "logoURI": "https://asset-images.messari.io/images/d5961ce8-6258-4335-8e7c-f4cb783e47cb/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x5029C236320b8f15eF0a657054B84d90bfBEDED3",
       "name": "BitANT",
       "symbol": "BITANT",
       "logoURI": "https://asset-images.messari.io/images/4db650e1-a490-4298-8ffd-95b17107cf6b/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x50Bce64397C75488465253c0A034b8097FeA6578",
+      "name": "HanChain",
+      "symbol": "han",
+      "logoURI": "https://asset-images.messari.io/images/6a526714-cc5f-4e4f-89ad-b5d7f2511236/128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -267,12 +331,44 @@
       "decimals": 6
     },
     {
+      "address": "0x66e8617d1Df7ab523a316a6c01D16Aa5beD93681",
+      "name": "Shack",
+      "symbol": "shack",
+      "logoURI": "https://asset-images.messari.io/images/5fa44a00-8dfd-468a-86b3-84a370bf44d8/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6806411765Af15Bddd26f8f544A34cC40cb9838B",
+      "name": "Frax Ether",
+      "symbol": "FRXETH",
+      "logoURI": "https://asset-images.messari.io/images/9b80095b-9f39-4e0a-acb1-fbf3e4482054/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
       "name": "Wrapped Bitcoin",
       "symbol": "WBTC",
       "logoURI": "https://asset-images.messari.io/images/81bbf507-29d5-4458-8d42-b81d7c197996/128.png",
       "chainId": 10,
       "decimals": 8
+    },
+    {
+      "address": "0x6F0fecBC276de8fC69257065fE47C5a03d986394",
+      "name": "Popcorn",
+      "symbol": "POP",
+      "logoURI": "https://asset-images.messari.io/images/bca6998c-2770-4b6c-9893-354313145388/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6F620EC89B8479e97A6985792d0c64F237566746",
+      "name": "WePiggy Coin",
+      "symbol": "WPC",
+      "logoURI": "https://asset-images.messari.io/images/58b7d769-9995-41ca-93d4-394288f80e06/128.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
@@ -295,6 +391,22 @@
       "name": "Uniswap",
       "symbol": "UNI",
       "logoURI": "https://asset-images.messari.io/images/1d51479d-68f6-4886-8644-2a55ea9007bf/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
+      "name": "USD+",
+      "symbol": "usd+",
+      "logoURI": "https://asset-images.messari.io/images/a171e115-268b-4b4a-b490-7862c3dcc63a/128.png",
+      "chainId": 10,
+      "decimals": 6
+    },
+    {
+      "address": "0x74ccbe53F77b08632ce0CB91D3A545bF6B8E0979",
+      "name": "fBOMB",
+      "symbol": "BOMB",
+      "logoURI": "https://asset-images.messari.io/images/b2342f82-b9af-41ae-bcc9-ed7430700d05/128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -379,6 +491,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
+      "name": "Dola USD Stablecoin",
+      "symbol": "DOLA",
+      "logoURI": "https://asset-images.messari.io/images/c642eebd-6e4e-4b22-b81a-42000746a1f9/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
       "name": "Synthetix USD",
       "symbol": "SUSD",
@@ -417,6 +537,14 @@
       "logoURI": "https://asset-images.messari.io/images/51f8ea5e-f426-4f40-939a-db7e05495374/128.png",
       "chainId": 10,
       "decimals": 6
+    },
+    {
+      "address": "0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db",
+      "name": "Velodrome Finance",
+      "symbol": "velo",
+      "logoURI": "https://asset-images.messari.io/images/7b9d4946-38a8-4489-bf3d-03f55ccb4413/128.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x95FFfb13856D2BE739a862f9b645573e5C838bdD",
@@ -467,6 +595,14 @@
       "decimals": 18
     },
     {
+      "address": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
+      "name": "Rocket Pool ETH",
+      "symbol": "RETH",
+      "logoURI": "https://asset-images.messari.io/images/fdc4a67b-a441-4de7-9728-8979782253a4/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x9C9e5fD8bbc25984B178FdCE6117Defa39d2db39",
       "name": "Binance USD",
       "symbol": "BUSD",
@@ -507,6 +643,22 @@
       "decimals": 18
     },
     {
+      "address": "0xB0B195aEFA3650A6908f15CdaC7D92F8a5791B0B",
+      "name": "BOB",
+      "symbol": "bob",
+      "logoURI": "https://asset-images.messari.io/images/ba456483-7897-40e9-8270-d0a3f7d0a7b3/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xB0ae108669CEB86E9E98e8fE9e40d98b867855fD",
+      "name": "OneRing",
+      "symbol": "RING",
+      "logoURI": "https://asset-images.messari.io/images/40c07139-8291-4ee1-9be5-1c20472aa66c/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xB153FB3d196A8eB25522705560ac152eeEc57901",
       "name": "Magic Internet Money",
       "symbol": "MIM",
@@ -521,6 +673,14 @@
       "logoURI": "https://asset-images.messari.io/images/3e3c6918-3165-4817-acaf-32060ce64510/128.png",
       "chainId": 10,
       "decimals": 9
+    },
+    {
+      "address": "0xC26921B5b9ee80773774d36C84328ccb22c3a819",
+      "name": "Wrapped OptiDoge",
+      "symbol": "woptidoge",
+      "logoURI": "https://asset-images.messari.io/images/05c2763b-3d2e-4cdc-83c8-f820bd48720f/128.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0xC27D9BC194a648fE3069955a5126699C4e49351C",
@@ -553,6 +713,14 @@
       "logoURI": "https://asset-images.messari.io/images/c07e4971-fd5f-4e5c-b8af-936487e570f8/128.png",
       "chainId": 10,
       "decimals": 18
+    },
+    {
+      "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+      "name": "axlUSDC",
+      "symbol": "axlusdc",
+      "logoURI": "https://asset-images.messari.io/images/4043940e-a8bc-4145-a3b8-78afd2844e67/128.png",
+      "chainId": 10,
+      "decimals": 6
     },
     {
       "address": "0xEc6adef5E1006bb305bB1975333e8fc4071295bf",
@@ -635,6 +803,14 @@
       "decimals": 18
     },
     {
+      "address": "0xadDb6A0412DE1BA0F936DCaeb8Aaa24578dcF3B2",
+      "name": "Coinbase Wrapped Staked ETH",
+      "symbol": "cbeth",
+      "logoURI": "https://asset-images.messari.io/images/da5a9c5f-1b13-4a38-be74-42550d999d02/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xaf8cA653Fa2772d58f4368B0a71980e9E3cEB888",
       "name": "Tellor",
       "symbol": "TRB",
@@ -655,6 +831,22 @@
       "name": "SOLUNAVAX Index",
       "symbol": "SOLUNAVAX",
       "logoURI": "https://asset-images.messari.io/images/3db227b3-f38c-4a33-a4a3-5f66735dbdbb/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xbfD291DA8A403DAAF7e5E9DC1ec0aCEaCd4848B9",
+      "name": "Token dForce USD",
+      "symbol": "USX",
+      "logoURI": "https://asset-images.messari.io/images/30a82aa5-8122-47de-81ae-319c51d492ef/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xc04Fb38f10AD352c5f16Bd4546F7456E7f1A2D9e",
+      "name": "Minato",
+      "symbol": "mnto",
+      "logoURI": "https://asset-images.messari.io/images/6e75a158-9874-4b2b-8135-eabbe67c7134/128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -739,10 +931,26 @@
       "decimals": 18
     },
     {
+      "address": "0xd52f94DF742a6F4B4C8b033369fE13A41782Bf44",
+      "name": "Layer2DAO",
+      "symbol": "L2DAO",
+      "logoURI": "https://asset-images.messari.io/images/d4d23829-d3a0-4358-b6e2-a0162c06366e/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xd652776dE7Ad802be5EC7beBfafdA37600222B48",
       "name": "SoliMax",
       "symbol": "slm",
       "logoURI": "https://asset-images.messari.io/images/8375589f-9466-4a50-923a-455aa6f9c68d/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xdC6fF44d5d932Cbd77B52E5612Ba0529DC6226F1",
+      "name": "Worldcoin",
+      "symbol": "WLD",
+      "logoURI": "https://asset-images.messari.io/images/d22cb290-a80a-4ee4-be8e-ea81e6e1b706/128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -783,6 +991,14 @@
       "name": "BlockV",
       "symbol": "VEE",
       "logoURI": "https://asset-images.messari.io/images/493890b6-8589-4f0b-8181-1f2bc1682886/128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xe4dE4B87345815C71aa843ea4841bCdc682637bb",
+      "name": "BUILD",
+      "symbol": "build",
+      "logoURI": "https://asset-images.messari.io/images/475888c9-5d36-4b6c-a92e-a82c89a5fa69/128.png",
       "chainId": 10,
       "decimals": 18
     },

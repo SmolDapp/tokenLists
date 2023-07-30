@@ -1,10 +1,10 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "23/07/2023 00:41:10",
+  "timestamp": "30/07/2023 00:45:17",
   "version": {
     "major": 8,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -31,6 +31,14 @@
       "name": "Curve XAI-FRAXBP",
       "symbol": "yvCurve-XAI-FRAXBP-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x00e8Eb340f8AF587EEA6200D2081E31dC87285ac/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x01B01C4A1F4C522aD341A9da5eaA48aF207ab3Ec",
+      "name": "Curve pUSDFRAXBP3CRV-f Factory yVault",
+      "symbol": "yvCurve-pUSDFRAXBP3CRV-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x01B01C4A1F4C522aD341A9da5eaA48aF207ab3Ec/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -475,6 +483,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3FA8C89704e5d07565444009e5d9e624B40Be813",
+      "name": "Balancer GHO/LUSD Stable Pool",
+      "symbol": "GHO/LUSD",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x3FA8C89704e5d07565444009e5d9e624B40Be813/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x3a51269E0707A3416044bad5066858A12198fCf5",
       "name": "Curve CLEV-ETH",
       "symbol": "yvCurve-CLEV-ETH-f",
@@ -509,7 +525,7 @@
     {
       "address": "0x3e720ba935Bf137d45a3c98938DB1f4C8517298E",
       "name": "Curve agEUR-VEUR",
-      "symbol": "yvCurve-agEUR-VEUR-f",
+      "symbol": "yvCurve-VEUR-agEUR-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x3e720ba935Bf137d45a3c98938DB1f4C8517298E/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -540,8 +556,8 @@
     },
     {
       "address": "0x445F62Ee351E57cACBF3161F66562Ff2B1261db4",
-      "name": "Curve crvUSDTUSD-f Factory yVault",
-      "symbol": "yvCurve-crvUSDTUSD-f",
+      "name": "Curve TUSD-crvUSD Factory yVault",
+      "symbol": "yvCurve-TUSD-crvUSD-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x445F62Ee351E57cACBF3161F66562Ff2B1261db4/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -599,6 +615,14 @@
       "name": "Curve DYDX-ETH Pool",
       "symbol": "DYDXETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x4aCc1BF7D6a591016641325aA6664A1Cd178F002/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x4cb5483D87028518c5F35a49c151612a062bfCD0",
+      "name": "Balancer GHO-bb-a-USD Factory yVault",
+      "symbol": "yvBal-GHO-bb-a-USD-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x4cb5483D87028518c5F35a49c151612a062bfCD0/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1404,8 +1428,8 @@
     },
     {
       "address": "0xB512D68A3194ba294A5b8146FA9beCd6a5Fea137",
-      "name": "Curve crvUSDSUSD-f Factory yVault",
-      "symbol": "yvCurve-crvUSDSUSD-f",
+      "name": "Curve sUSD-crvUSD Factory yVault",
+      "symbol": "yvCurve-sUSD-crvUSD-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xB512D68A3194ba294A5b8146FA9beCd6a5Fea137/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1573,7 +1597,7 @@
     {
       "address": "0xE2CaD35CFD1A9B5acD557558f44B096ef8340C1B",
       "name": "Curve TriCryptoLLAMA",
-      "symbol": "yvCurve-crvCRVUSDTBTCWSTETH-f",
+      "symbol": "yvCurve-TriCryptoLLAMA-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xE2CaD35CFD1A9B5acD557558f44B096ef8340C1B/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1591,6 +1615,14 @@
       "name": "Curve.fi Factory USD Metapool: DOLA/FRAXBP",
       "symbol": "DOLAFRAXBP3CRV-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xE57180685E3348589E9521aa53Af0BCD497E884d/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xE60986759872393a8360A4a7abEAb3A6e0BA7848",
+      "name": "Curve.fi Factory USD Metapool: pUSDFRAXBP-A100",
+      "symbol": "pUSDFRAXBP3CRV-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xE60986759872393a8360A4a7abEAb3A6e0BA7848/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1867,6 +1899,14 @@
       "decimals": 18
     },
     {
+      "address": "0xc2B021133D1b0cF07dba696fd5DD89338428225B",
+      "name": "Balancer GHO/bb-a-USD Stable Pool",
+      "symbol": "GHO/bb-a-USD",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xc2B021133D1b0cF07dba696fd5DD89338428225B/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xc325849908D482550b87f96ef60271B95f92C861",
       "name": "Balancer cbETH-wstETH",
       "symbol": "yvBal-cbETH-wstETH-f",
@@ -2083,11 +2123,35 @@
       "decimals": 18
     },
     {
+      "address": "0xfb9A680825f29972629b2295E050f74CB2f4992b",
+      "name": "Balancer GHO-LUSD Factory yVault",
+      "symbol": "yvBal-GHO-LUSD-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xfb9A680825f29972629b2295E050f74CB2f4992b/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xfeBb0bbf162E64fb9D0dfe186E517d84C395f016",
       "name": "Balancer Aave v3 Boosted StablePool",
       "symbol": "bb-a-USD",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xfeBb0bbf162E64fb9D0dfe186E517d84C395f016/logo-128.png",
       "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x00Cb8E36A9C40491A39e8bF2864Ed30C1B579860",
+      "name": "Velodrome v2 tBTC-WBTC Factory yVault",
+      "symbol": "yvVelo-tBTC-WBTC-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x00Cb8E36A9C40491A39e8bF2864Ed30C1B579860/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x00a2faF97CC2b985B29a0a0eAa6E0D8033Dc0eA1",
+      "name": "Velodrome v2 tBTC-WETH Factory yVault",
+      "symbol": "yvVelo-tBTC-WETH-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x00a2faF97CC2b985B29a0a0eAa6E0D8033Dc0eA1/logo-128.png",
+      "chainId": 10,
       "decimals": 18
     },
     {
@@ -2355,6 +2419,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4ed90ca704F4f6f3955169F202EA35365e41B424",
+      "name": "VolatileV2 AMM - USDC/PERP",
+      "symbol": "vAMMV2-USDC/PERP",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x4ed90ca704F4f6f3955169F202EA35365e41B424/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x50032bE2b2c7e8A6a6bc241e3aEbef21497A3cF0",
       "name": "Velodrome ERN-DOLA",
       "symbol": "yvVelo-ERN-DOLA-f",
@@ -2515,6 +2587,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6F4f01A02e6037AA98d22405fEA4DCAB98D2a8eE",
+      "name": "Velodrome v2 PERP-USDC Factory yVault",
+      "symbol": "yvVelo-PERP-USDC-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x6F4f01A02e6037AA98d22405fEA4DCAB98D2a8eE/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x6a44B0415a5c440D32E82965FDFAad54a72D477D",
       "name": "Velodrome sETH-WETH",
       "symbol": "yvVelo-sETH-WETH-f",
@@ -2543,6 +2623,14 @@
       "name": "Velodrome Volatile wstETH-WETH",
       "symbol": "vAMMV2-wstETH/WETH",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x6dA98Bde0068d10DDD11b468b197eA97D96F96Bc/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6e57B9E54ea043a829584B22182ad22bF446926C",
+      "name": "StableV2 AMM - WBTC/tBTC",
+      "symbol": "sAMMV2-WBTC/tBTC",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x6e57B9E54ea043a829584B22182ad22bF446926C/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -3051,6 +3139,14 @@
       "decimals": 18
     },
     {
+      "address": "0xadBB23Bcc3C1B9810491897cb0690Cf645B858b1",
+      "name": "VolatileV2 AMM - WETH/tBTC",
+      "symbol": "vAMMV2-WETH/tBTC",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0xadBB23Bcc3C1B9810491897cb0690Cf645B858b1/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xb4E4CFA9971C7e1069685771DaB61CA56e72e5C3",
       "name": "Curve sETH Pool",
       "symbol": "yvCurve-sETH",
@@ -3087,6 +3183,14 @@
       "name": "Velodrome sfrxETH-frxETH",
       "symbol": "yvVelo-sfrxETH-frxETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0xc2626aCEdc27cFfB418680d0307C9178955A4743/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xc3439Ba7db7566ed0deF55c179ED9b3bA273A67F",
+      "name": "Velodrome v2 EXA-WETH Factory yVault",
+      "symbol": "yvVelo-EXA-WETH-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0xc3439Ba7db7566ed0deF55c179ED9b3bA273A67F/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -3167,6 +3271,14 @@
       "name": "Velodrome Stable USDC-LUSD",
       "symbol": "sAMMV2-USDC/LUSD",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0xf04458f7B21265b80FC340dE7Ee598e24485c5bB/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xf3C45b45223Df6071a478851B9C17e0630fDf535",
+      "name": "VolatileV2 AMM - EXA/WETH",
+      "symbol": "vAMMV2-EXA/WETH",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0xf3C45b45223Df6071a478851B9C17e0630fDf535/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
