@@ -1,10 +1,10 @@
 {
   "name": "Uniswap Token Pairs",
   "description": "",
-  "timestamp": "24/07/2023 00:43:44",
+  "timestamp": "31/07/2023 00:45:37",
   "version": {
     "major": 0,
-    "minor": 5,
+    "minor": 6,
     "patch": 0
   },
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
@@ -1803,6 +1803,14 @@
       "decimals": 18
     },
     {
+      "address": "0x812A215dDe9270df0d937c1c2C294488d9985Cf6",
+      "name": "L2",
+      "symbol": "L2",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Arbitrum DAI",
       "symbol": "aArbDAI",
@@ -1812,7 +1820,7 @@
     },
     {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-      "name": "Wrapped Ether",
+      "name": "WETH",
       "symbol": "WETH",
       "logoURI": "",
       "chainId": 42161,
@@ -2812,8 +2820,8 @@
     },
     {
       "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-      "name": "USDCoin",
-      "symbol": "USDC",
+      "name": "USD Coin Ethereum Bridged",
+      "symbol": "USDC.E",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 6
@@ -2836,7 +2844,7 @@
     },
     {
       "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-      "name": "Tether USD",
+      "name": "Tether",
       "symbol": "USDT",
       "logoURI": "",
       "chainId": 42161,
@@ -3572,9 +3580,9 @@
     }
   ],
   "metadata": {
-    "lastBlockSyncFor_1": "17759461",
-    "lastBlockSyncFor_10": "107280322",
-    "lastBlockSyncFor_137": "45442586",
-    "lastBlockSyncFor_42161": "114296424"
+    "lastBlockSyncFor_1": "17809492",
+    "lastBlockSyncFor_10": "107582747",
+    "lastBlockSyncFor_137": "45720415",
+    "lastBlockSyncFor_42161": "116588805"
   }
 }
