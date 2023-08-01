@@ -53,7 +53,7 @@ func fetchEthereumTokenList(currentPage uint8) []TokenListToken {
 		logs.Error(e)
 	})
 
-	for currentPage < 10 {
+	for currentPage < 20 {
 		c.Visit(ETHEREUM_BASE_EXPLORER_URI + `/tokens?p=` + strconv.Itoa(int(currentPage)))
 		currentPage++
 	}

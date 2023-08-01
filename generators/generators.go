@@ -67,7 +67,7 @@ var GENERATORS = map[string]TGenerators{
 	`ethereum-etherscan`: {
 		Exec:             buildEthereumTokenList,
 		Name:             `Ethereum (Etherscan)`,
-		Description:      `The top 500 of tokens available on Ethereum blockchain, retrieved from Etherscan.`,
+		Description:      `The top 1000 of tokens available on Ethereum blockchain, retrieved from Etherscan.`,
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
