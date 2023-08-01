@@ -113,7 +113,7 @@ func buildCoingeckoTokenList() {
 	tokenList := loadTokenListFromJsonFile(`coingecko.json`)
 	tokenList.Name = "CoinGecko"
 	tokenList.Keywords = []string{"coingecko", "defi"}
-	tokenList.LogoURI = "https://www.coingecko.com/assets/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png"
+	tokenList.LogoURI = "https://static.coingecko.com/s/about/gecko-1b23cd303298d7474345b1938c21fdb20c71f4f399eefa8637ad243b8ac5dbf5.png"
 
 	tokens := fetchCoingeckoTokenList()
 	saveTokenListInJsonFile(tokenList, tokens, `coingecko.json`, Standard)
