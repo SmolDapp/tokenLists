@@ -7,7 +7,7 @@ import (
 )
 
 const POLYGON_ZKEVM_CHAIN_ID = 1101
-const BASE_EXPLORER_URI = `https://zkevm.polygonscan.com/`
+const POLYGON_ZKEVM_BASE_EXPLORER_URI = `https://zkevm.polygonscan.com/`
 
 func handlePolygonZKEVMTokenList(tokenAddresses []common.Address, imageURI []string) []TokenListToken {
 	tokenList := []TokenListToken{}
@@ -39,7 +39,7 @@ func fetchPolygonZKEVMTokenList() []TokenListToken {
 	c.OnHTML("div.media", func(e *colly.HTMLElement) {
 		e.ForEach("img.u-xs-avatar", func(i int, h *colly.HTMLElement) {
 			src := h.Attr("src")
-			imageURI = append(imageURI, BASE_EXPLORER_URI+src)
+			imageURI = append(imageURI, POLYGON_ZKEVM_BASE_EXPLORER_URI+src)
 		})
 		e.ForEach("a.text-primary", func(i int, h *colly.HTMLElement) {
 			tokenHref := h.Attr("href")
@@ -52,7 +52,7 @@ func fetchPolygonZKEVMTokenList() []TokenListToken {
 		logs.Error(e)
 	})
 
-	c.Visit(BASE_EXPLORER_URI + `tokens`)
+	c.Visit(POLYGON_ZKEVM_BASE_EXPLORER_URI + `tokens`)
 	return handlePolygonZKEVMTokenList(tokens, imageURI)
 }
 

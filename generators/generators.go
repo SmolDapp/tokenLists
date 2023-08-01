@@ -64,6 +64,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},
+	`ethereum-etherscan`: {
+		Exec:             buildEthereumTokenList,
+		Name:             `Ethereum (Etherscan)`,
+		Description:      `A list of tokens available on Ethereum blockchain, retrieved from Etherscan.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`ledger`: {
 		Exec:             buildLedgersTokenList,
 		Name:             `Ledger`,

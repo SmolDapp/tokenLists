@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"errors"
-	"io/ioutil"
+	"os"
 	"reflect"
 	"sort"
 	"strconv"
@@ -27,9 +27,12 @@ const (
 // loadTokenListFromJsonFile loads a token list from a json file.
 func loadTokenListFromJsonFile(filePath string) TokenListData {
 	var tokenList TokenListData
-	content, err := ioutil.ReadFile(helpers.BASE_PATH + `/lists/` + filePath)
+	content, err := os.ReadFile(helpers.BASE_PATH + `/lists/` + filePath)
 	if err != nil {
 		logs.Error(err)
+		if errors.Is(err, os.ErrNotExist) {
+			os.WriteFile(helpers.BASE_PATH+`/lists/`+filePath, []byte(`{}`), 0644)
+		}
 		return InitTokenList()
 	}
 	if err = json.Unmarshal(content, &tokenList); err != nil {
@@ -155,7 +158,7 @@ func saveTokenListInJsonFile(
 	if err != nil {
 		return err
 	}
-	if err = ioutil.WriteFile(helpers.BASE_PATH+`/lists/`+filePath, jsonData, 0644); err != nil {
+	if err = os.WriteFile(helpers.BASE_PATH+`/lists/`+filePath, jsonData, 0644); err != nil {
 		return err
 	}
 
@@ -170,7 +173,7 @@ func saveTokenListInJsonFile(
 			return err
 		}
 		helpers.CreateFile(helpers.BASE_PATH + `/lists/` + chainIDStr)
-		if err = ioutil.WriteFile(helpers.BASE_PATH+`/lists/`+chainIDStr+`/`+filePath, jsonData, 0644); err != nil {
+		if err = os.WriteFile(helpers.BASE_PATH+`/lists/`+chainIDStr+`/`+filePath, jsonData, 0644); err != nil {
 			logs.Error(err)
 			return err
 		}
