@@ -63,7 +63,7 @@ func fetchEthereumTokenList(currentPage uint8) []TokenListToken {
 func buildEthereumTokenList() {
 	tokenList := loadTokenListFromJsonFile(`ethereum-etherscan.json`)
 	tokenList.Name = `Ethereum via Etherscan`
-	tokenList.LogoURI = `https://2163491710-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-McrExXKKJBLJqymbFhO%2Fuploads%2Fgit-blob-29966808954100660b18274b582c1afb2fe45fed%2Fetherscan-logo-circle.png?alt=media`
+	tokenList.LogoURI = `https://etherscan.io/images/brandassets/etherscan-logo-circle.svg`
 	tokenList.Keywords = []string{`ethereum`, `etherscan`}
 	tokens := fetchEthereumTokenList(1)
 	saveTokenListInJsonFile(tokenList, tokens, `ethereum-etherscan.json`, Standard)
