@@ -1,11 +1,11 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "01/08/2023 10:05:39",
+  "timestamp": "01/08/2023 10:58:53",
   "version": {
     "major": 7,
     "minor": 2,
-    "patch": 0
+    "patch": 1
   },
   "logoURI": "https://classic.curve.fi/logo.png",
   "keywords": [],
@@ -124,8 +124,8 @@
     },
     {
       "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
-      "name": "Wrapped liquid staked Ether 2.0",
-      "symbol": "wstETH",
+      "name": "Wrapped stETH",
+      "symbol": "wsteth",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -156,8 +156,8 @@
     },
     {
       "address": "0x2E3D870790dC77A83DD1d18184Acc7439A53f475",
-      "name": "FRAX",
-      "symbol": "FRAX",
+      "name": "Frax",
+      "symbol": "frax",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -189,7 +189,7 @@
     {
       "address": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
       "name": "Chainlink",
-      "symbol": "LINK",
+      "symbol": "link",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -236,8 +236,8 @@
     },
     {
       "address": "0x4200000000000000000000000000000000000006",
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
+      "name": "WETH",
+      "symbol": "weth",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -245,7 +245,7 @@
     {
       "address": "0x4200000000000000000000000000000000000042",
       "name": "Optimism",
-      "symbol": "OP",
+      "symbol": "op",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -389,7 +389,7 @@
     {
       "address": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
       "name": "Wrapped Bitcoin",
-      "symbol": "WBTC",
+      "symbol": "wbtc",
       "logoURI": "",
       "chainId": 10,
       "decimals": 8
@@ -444,8 +444,8 @@
     },
     {
       "address": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
-      "name": "USD+",
-      "symbol": "USD+",
+      "name": "Overnight.fi USD+",
+      "symbol": "usd+",
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
@@ -493,7 +493,7 @@
     {
       "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
       "name": "USD Coin",
-      "symbol": "USDC",
+      "symbol": "usdc",
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
@@ -572,8 +572,8 @@
     },
     {
       "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
-      "name": "Synth sUSD",
-      "symbol": "sUSD",
+      "name": "sUSD",
+      "symbol": "susd",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -588,8 +588,8 @@
     },
     {
       "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
-      "name": "Tether USD",
-      "symbol": "USDT",
+      "name": "Tether",
+      "symbol": "usdt",
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
@@ -621,7 +621,7 @@
     {
       "address": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
       "name": "Rocket Pool ETH",
-      "symbol": "rETH",
+      "symbol": "reth",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -716,8 +716,8 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai stable coin",
-      "symbol": "DAI",
+      "name": "Dai",
+      "symbol": "dai",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -748,8 +748,8 @@
     },
     {
       "address": "0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49",
-      "name": "Synth sETH",
-      "symbol": "sETH",
+      "name": "sETH",
+      "symbol": "seth",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -876,8 +876,8 @@
     },
     {
       "address": "0xc40F949F8a4e094D1b49a23ea9241D289B7b2819",
-      "name": "LUSD Stablecoin",
-      "symbol": "LUSD",
+      "name": "Liquity USD",
+      "symbol": "lusd",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -900,8 +900,8 @@
     },
     {
       "address": "0xdFA46478F9e5EA86d57387849598dbFB2e964b02",
-      "name": "Mai Stablecoin",
-      "symbol": "MAI",
+      "name": "MAI",
+      "symbol": "mimatic",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
