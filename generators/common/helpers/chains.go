@@ -39,6 +39,7 @@ var IGNORED_CHAIN_IDS = map[uint64]bool{
 	1287:        true, // Moonbase
 	2222:        true, // Kava
 	4002:        true, // Fantom Testnet
+	8543:        true, // Some random testnet
 	42170:       true, // Arbitrum Nova
 	42220:       true, // Celo
 	43113:       true, // Avalanche Fuji
