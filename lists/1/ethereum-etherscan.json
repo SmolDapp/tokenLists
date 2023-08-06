@@ -1,9 +1,9 @@
 {
   "name": "Ethereum via Etherscan",
   "description": "",
-  "timestamp": "01/08/2023 10:58:43",
+  "timestamp": "06/08/2023 00:34:30",
   "version": {
-    "major": 1,
+    "major": 2,
     "minor": 0,
     "patch": 0
   },
@@ -26,6 +26,14 @@
       "name": "Tokenlon",
       "symbol": "lon",
       "logoURI": "https://etherscan.io/token/images/lon_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x001A8Ffcb0f03e99141652eBCdecDb0384E3bd6c",
+      "name": "Polker",
+      "symbol": "pkr",
+      "logoURI": "https://etherscan.io/token/images/polker_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -750,6 +758,14 @@
       "decimals": 18
     },
     {
+      "address": "0x14feE680690900BA0ccCfC76AD70Fd1b95D10e16",
+      "name": "PAAL AI",
+      "symbol": "paal",
+      "logoURI": "https://etherscan.io/token/images/paalai_32.png",
+      "chainId": 1,
+      "decimals": 9
+    },
+    {
       "address": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898",
       "name": "PancakeSwap",
       "symbol": "cake",
@@ -990,28 +1006,12 @@
       "decimals": 18
     },
     {
-      "address": "0x1F8A626883d7724DBd59eF51CBD4BF1Cf2016D13",
-      "name": "Jigstack",
-      "symbol": "stak",
-      "logoURI": "https://etherscan.io/token/images/jigstack_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x1Fd097B75679a2896c007da75F4C74598A46bB7E",
       "name": "BNC",
       "symbol": "xcBNC",
       "logoURI": "https://etherscan.io/token/images/bifrostxbnc_32.png",
       "chainId": 1,
       "decimals": 12
-    },
-    {
-      "address": "0x1a7a8BD9106F2B8D977E08582DC7d24c723ab0DB",
-      "name": "AppCoins",
-      "symbol": "appc",
-      "logoURI": "https://etherscan.io/token/images/appcoins_28.png",
-      "chainId": 1,
-      "decimals": 18
     },
     {
       "address": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8",
@@ -1558,14 +1558,6 @@
       "decimals": 18
     },
     {
-      "address": "0x32d74896f05204D1b6Ae7B0a3CEBd7FC0Cd8F9C7",
-      "name": "Kcash",
-      "symbol": "KCASH",
-      "logoURI": "https://etherscan.io/token/images/kcash_28.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x333000333b26eE30214B4af6419D9ab07a450400",
       "name": "MELD",
       "symbol": "meld",
@@ -1732,6 +1724,14 @@
       "logoURI": "https://etherscan.io/token/images/amologotoken_28.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x39AA39c021dfbaE8faC545936693aC917d5E7563",
+      "name": "cUSDC",
+      "symbol": "cusdc",
+      "logoURI": "https://etherscan.io/token/images/compound-usdc_28.png",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0x39Bb259F66E1C59d5ABEF88375979b4D20D98022",
@@ -1902,14 +1902,6 @@
       "decimals": 8
     },
     {
-      "address": "0x4057Db5bD9f67A566aA10E5587b1a964afFc6a16",
-      "name": "Truefeedback",
-      "symbol": "tfbx",
-      "logoURI": "https://etherscan.io/token/images/truefeedback_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x4092678e4E78230F46A1534C0fbc8fA39780892B",
       "name": "Odyssey",
       "symbol": "ocn",
@@ -1994,14 +1986,6 @@
       "name": "Inverse Finance",
       "symbol": "inv",
       "logoURI": "https://etherscan.io/token/images/inversedao_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x41dBECc1cdC5517C6f76f6a6E836aDbEe2754DE3",
-      "name": "Medicalchain",
-      "symbol": "mtn",
-      "logoURI": "https://etherscan.io/token/images/medicalchain_28.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2330,6 +2314,14 @@
       "name": "Xaurum",
       "symbol": "xaur",
       "logoURI": "https://etherscan.io/token/images/xaurum2_28.png",
+      "chainId": 1,
+      "decimals": 8
+    },
+    {
+      "address": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5",
+      "name": "cETH",
+      "symbol": "ceth",
+      "logoURI": "https://etherscan.io/token/images/compound-eth_28.png",
       "chainId": 1,
       "decimals": 8
     },
@@ -2910,6 +2902,14 @@
       "decimals": 18
     },
     {
+      "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
+      "name": "cDAI",
+      "symbol": "cdai",
+      "logoURI": "https://etherscan.io/token/images/compounddai_32.png",
+      "chainId": 1,
+      "decimals": 8
+    },
+    {
       "address": "0x5d48F293BaED247A2D0189058bA37aa238bD4725",
       "name": "NeuroChain Clausius",
       "symbol": "NCC",
@@ -3034,14 +3034,6 @@
       "name": "AIOZ Network",
       "symbol": "aioz",
       "logoURI": "https://etherscan.io/token/images/aioznetwork_32.png?v=6",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x62Dc4817588d53a056cBbD18231d91ffCcd34b2A",
-      "name": "DeHive",
-      "symbol": "dhv",
-      "logoURI": "https://etherscan.io/token/images/dehivefinance_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3262,6 +3254,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E",
+      "name": "cBAT",
+      "symbol": "cbat",
+      "logoURI": "https://etherscan.io/token/images/compound-bat_28.png",
+      "chainId": 1,
+      "decimals": 8
+    },
+    {
       "address": "0x6DEA81C8171D0bA574754EF6F8b412F2Ed88c54D",
       "name": "Liquity",
       "symbol": "lqty",
@@ -3314,6 +3314,14 @@
       "name": "Posscoin",
       "symbol": "POSS",
       "logoURI": "https://etherscan.io/token/images/posscoin_28.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x6b1a8f210Ec6b7B6643cea3583Fb0c079f367898",
+      "name": "Baanx",
+      "symbol": "bxx",
+      "logoURI": "https://etherscan.io/token/images/banxx_32.png?v=53",
       "chainId": 1,
       "decimals": 18
     },
@@ -3698,6 +3706,14 @@
       "name": "xToken",
       "symbol": "xtk",
       "logoURI": "https://etherscan.io/token/images/xtokenxtk_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+      "name": "Aave",
+      "symbol": "aave",
+      "logoURI": "https://etherscan.io/token/images/aave_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4114,14 +4130,6 @@
       "name": "SXP",
       "symbol": "sxp",
       "logoURI": "https://etherscan.io/token/images/swipe_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x8D5682941cE456900b12d47ac06a88b47C764CE1",
-      "name": "RightMesh Token",
-      "symbol": "RMESH",
-      "logoURI": "https://etherscan.io/token/images/rightmeshtoken_28.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4734,14 +4742,6 @@
       "decimals": 18
     },
     {
-      "address": "0xA2cd3D43c775978A96BdBf12d733D5A1ED94fb18",
-      "name": "Onyxcoin",
-      "symbol": "xcn",
-      "logoURI": "https://etherscan.io/token/images/onyxcoin_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xA35923162C49cF95e6BF26623385eb431ad920D3",
       "name": "Turbo",
       "symbol": "turbo",
@@ -4932,6 +4932,14 @@
       "logoURI": "https://etherscan.io/token/images/foreprotocol_32.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xB3319f5D18Bc0D84dD1b4825Dcde5d5f7266d407",
+      "name": "c0x",
+      "symbol": "czrx",
+      "logoURI": "https://etherscan.io/token/images/compound-zrx_28.png",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0xB4272071eCAdd69d933AdcD19cA99fe80664fc08",
@@ -6098,14 +6106,6 @@
       "name": "IOSToken",
       "symbol": "IOST",
       "logoURI": "https://etherscan.io/token/images/iost_28.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xFD957F21bd95E723645C07C48a2d8ACB8Ffb3794",
-      "name": "Ethereum Meta",
-      "symbol": "ethm",
-      "logoURI": "https://etherscan.io/token/images/ethereummeta_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7388,6 +7388,14 @@
       "logoURI": "https://etherscan.io/token/images/floordao_32.png",
       "chainId": 1,
       "decimals": 9
+    },
+    {
+      "address": "0xf650C3d88D12dB855b8bf7D11Be6C55A4e07dCC9",
+      "name": "cUSDT",
+      "symbol": "cusdt",
+      "logoURI": "https://etherscan.io/token/images/compoundcUSDT_32.png",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0xf680429328caaaCabee69b7A9FdB21a71419c063",
