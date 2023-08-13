@@ -1,9 +1,9 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "06/08/2023 00:35:09",
+  "timestamp": "13/08/2023 00:32:13",
   "version": {
-    "major": 43,
+    "major": 44,
     "minor": 0,
     "patch": 0
   },
@@ -252,7 +252,7 @@
     },
     {
       "address": "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4",
-      "name": "Axelar USDC",
+      "name": "Bridged USD Coin (Axelar)",
       "symbol": "axlusdc",
       "logoURI": "https://assets.coingecko.com/coins/images/26476/thumb/axlUSDC.png?1658207579",
       "chainId": 250,
@@ -383,14 +383,6 @@
       "name": "OnX Finance",
       "symbol": "onx",
       "logoURI": "https://assets.coingecko.com/coins/images/13445/thumb/onxlogo-1.png?1608629659",
-      "chainId": 250,
-      "decimals": 18
-    },
-    {
-      "address": "0x2787BEa3366335068bF8B4a253044d09eA4E1C96",
-      "name": "GinSpirit",
-      "symbol": "ginspirit",
-      "logoURI": "https://assets.coingecko.com/coins/images/19859/thumb/GinSpirit_big.png?1636074139",
       "chainId": 250,
       "decimals": 18
     },
@@ -815,14 +807,6 @@
       "name": "OneRing",
       "symbol": "ring",
       "logoURI": "https://assets.coingecko.com/coins/images/23273/thumb/ring.png?1648278585",
-      "chainId": 250,
-      "decimals": 18
-    },
-    {
-      "address": "0x59D07a115fe3FFe5db3D52029D43Cc0ef5e9ba08",
-      "name": "SUPA Foundation",
-      "symbol": "supa",
-      "logoURI": "https://assets.coingecko.com/coins/images/22522/thumb/KmzajETygnMWAKm05ljiI3pc7_JTIdu_H6hhOgaRc-ICj0M9geEpF83iceGbQ6U2PByY3A3jwkHFC0zLEycnplJpUcqb_cl0QV89fPI_h3XdflDh9Sroq22uFfvwQ8lCjl7EFiIKpr-fGbW2ArkJEdPkWL6UJu5DbE6YArcksukEcc_8cpryHjchAdd-imlOugScNPswFZzMqb.jpg?1641970344",
       "chainId": 250,
       "decimals": 18
     },
@@ -1387,6 +1371,14 @@
       "decimals": 8
     },
     {
+      "address": "0x90152f061F6697aB623e258aA6e8FbB177041371",
+      "name": "ZooCoin",
+      "symbol": "zoo",
+      "logoURI": "https://assets.coingecko.com/coins/images/31230/thumb/zooc.jpeg?1691636263",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x904f51a2E7eEaf76aaF0418cbAF0B71149686f4A",
       "name": "Fantom Maker",
       "symbol": "fame",
@@ -1687,14 +1679,6 @@
       "name": "Ankr Staked FTM",
       "symbol": "ankrftm",
       "logoURI": "https://assets.coingecko.com/coins/images/26031/thumb/a-ftm-c-54cdd766209f469501af5a25f86bb443.png?1655350183",
-      "chainId": 250,
-      "decimals": 18
-    },
-    {
-      "address": "0xD02a30d33153877BC20e5721ee53DeDEE0422B2F",
-      "name": "Curve.fi gDAI/gUSDC/gUSDT",
-      "symbol": "g3crv",
-      "logoURI": "https://assets.coingecko.com/coins/images/24284/thumb/Untitled_design_%282%29.png?1647243402",
       "chainId": 250,
       "decimals": 18
     },
@@ -2036,7 +2020,7 @@
     },
     {
       "address": "0xd226392C23fb3476274ED6759D4a478db3197d82",
-      "name": "Axelar USDT",
+      "name": "Bridged Tether (Axelar)",
       "symbol": "axlusdt",
       "logoURI": "https://assets.coingecko.com/coins/images/31002/thumb/uusdt_D_3x.png?1689648389",
       "chainId": 250,
@@ -2300,8 +2284,8 @@
     },
     {
       "address": "0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B",
-      "name": "axlWETH",
-      "symbol": "axlweth",
+      "name": "Axelar Wrapped Ether",
+      "symbol": "axleth",
       "logoURI": "https://assets.coingecko.com/coins/images/28171/thumb/axlweth.png?1668244532",
       "chainId": 250,
       "decimals": 18
