@@ -1,10 +1,10 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "06/08/2023 00:35:09",
+  "timestamp": "13/08/2023 09:26:02",
   "version": {
-    "major": 43,
-    "minor": 0,
+    "major": 44,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://wiki.defillama.com/w/resources/assets/wiki.png?88de1",
@@ -419,14 +419,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2b0B320B47D8e0DD0E4477cf90c307c7ed984Ad2",
-      "name": "Earniverse",
-      "symbol": "eiv",
-      "logoURI": "https://assets.coingecko.com/coins/images/23929/thumb/FlrPQkBM_400x400.jpg?1645692811",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
       "name": "BENQI Liquid Staked AVAX",
       "symbol": "savax",
@@ -804,7 +796,7 @@
     },
     {
       "address": "0x543672E9CBEC728CBBa9C3Ccd99ed80aC3607FA8",
-      "name": "USD Coin (PoS) (Wormhole)",
+      "name": "Bridged USD Coin (Wormhole POS)",
       "symbol": "usdcpo",
       "logoURI": "https://assets.coingecko.com/coins/images/22945/thumb/USDCpo_wh_small.png?1644223406",
       "chainId": 43114,
@@ -1732,7 +1724,7 @@
     },
     {
       "address": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
-      "name": "USD Coin Avalanche Bridged (USDC.e)",
+      "name": "Bridged USD Coin (Avalanche)",
       "symbol": "usdc",
       "logoURI": "https://assets.coingecko.com/coins/images/23263/thumb/3408.png?1643362756",
       "chainId": 43114,
@@ -1804,7 +1796,7 @@
     },
     {
       "address": "0xB24CA28D4e2742907115fECda335b40dbda07a4C",
-      "name": "USD Coin (Wormhole from Ethereum)",
+      "name": "Bridged USD Coin (Wormhole Ethereum)",
       "symbol": "usdcet",
       "logoURI": "https://assets.coingecko.com/coins/images/23019/thumb/USDCet_wh_small.png?1644223449",
       "chainId": 43114,
@@ -2092,7 +2084,7 @@
     },
     {
       "address": "0xF0FF231e3F1A50F83136717f287ADAB862f89431",
-      "name": "Tether USD (Wormhole)",
+      "name": "Bridged Tether (Wormhole)",
       "symbol": "usdtso",
       "logoURI": "https://assets.coingecko.com/coins/images/22881/thumb/USDTso_wh_small.png?1644223113",
       "chainId": 43114,
@@ -2396,7 +2388,7 @@
     },
     {
       "address": "0xc7198437980c041c805A1EDcbA50c1Ce5db95118",
-      "name": "Tether Avalanche Bridged (USDT.e)",
+      "name": "Bridged Tether (Avalanche)",
       "symbol": "usdte",
       "logoURI": "https://assets.coingecko.com/coins/images/24189/thumb/Usdt.e.png?1646819144",
       "chainId": 43114,
@@ -2563,6 +2555,14 @@
       "decimals": 18
     },
     {
+      "address": "0xe9d62A1dAfFaA10E4f239936972807955aD765B4",
+      "name": "Earniverse",
+      "symbol": "eiv",
+      "logoURI": "https://assets.coingecko.com/coins/images/23929/thumb/FlrPQkBM_400x400.jpg?1645692811",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0xeEeEEb57642040bE42185f49C52F7E9B38f8eeeE",
       "name": "Elk Finance",
       "symbol": "elk",
@@ -2676,7 +2676,7 @@
     },
     {
       "address": "0xfaB550568C688d5D8A52C7d794cb93Edc26eC0eC",
-      "name": "Axelar USDC",
+      "name": "Bridged USD Coin (Axelar)",
       "symbol": "axlusdc",
       "logoURI": "https://assets.coingecko.com/coins/images/26476/thumb/axlUSDC.png?1658207579",
       "chainId": 43114,

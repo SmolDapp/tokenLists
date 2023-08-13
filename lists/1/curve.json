@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "13/08/2023 00:32:06",
+  "timestamp": "13/08/2023 09:26:39",
   "version": {
     "major": 8,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -180,8 +180,8 @@
     },
     {
       "address": "0x02d341CcB60fAaf662bC0554d13778015d1b285C",
-      "name": "Curve.fi aDAI/aSUSD",
-      "symbol": "saCRV",
+      "name": "Curve sAave Pool",
+      "symbol": "crvSAAVE",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -1892,7 +1892,7 @@
     },
     {
       "address": "0x3660BD168494d61ffDac21E403d0F6356cF90fD7",
-      "name": "Curve.fi Factory Crypto Pool: OHM/ETH",
+      "name": "Curve OHM-ETH Pool",
       "symbol": "OHMETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -2132,7 +2132,7 @@
     },
     {
       "address": "0x3F436954afb722F5D14D868762a23faB6b0DAbF0",
-      "name": "Curve.fi Factory Crypto Pool: RSR+FRAX/USDC (FRAXBP)",
+      "name": "Curve RSR FRAXBP Pool",
       "symbol": "RSRcrvFRAX-f",
       "logoURI": "",
       "chainId": 1,
@@ -2228,7 +2228,7 @@
     },
     {
       "address": "0x3f0e7916681452D23Cd36B1281457DA721F2E5dF",
-      "name": "Curve.fi Factory Crypto Pool: Concentrator CTR/ETH",
+      "name": "Curve CTR-ETH Pool",
       "symbol": "CTRETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -2548,7 +2548,7 @@
     },
     {
       "address": "0x48fF31bBbD8Ab553Ebe7cBD84e1eA3dBa8f54957",
-      "name": "Curve.fi Factory Plain Pool: sdANGLE",
+      "name": "Curve sdAG-AG Pool",
       "symbol": "sdAGAG-f",
       "logoURI": "",
       "chainId": 1,
@@ -2708,7 +2708,7 @@
     },
     {
       "address": "0x4d9f9D15101EEC665F77210cB999639f760F831E",
-      "name": "Curve.fi Factory Plain Pool: stETH/frxETH",
+      "name": "Curve frxETH-stETH Pool",
       "symbol": "st-frxETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -2924,7 +2924,7 @@
     },
     {
       "address": "0x548E063CE6F3BaC31457E4f5b4e2345286274257",
-      "name": "Curve.fi Factory Crypto Pool: cbETH/frxETH",
+      "name": "Curve cbETH-frxETH-f",
       "symbol": "cbETHfrxET-f",
       "logoURI": "",
       "chainId": 1,
@@ -4604,8 +4604,8 @@
     },
     {
       "address": "0x8461A004b50d321CB22B7d034969cE6803911899",
-      "name": "Curve.fi Factory Plain Pool: ibKRW/sKRW",
-      "symbol": "ibKRW+sKRW-f",
+      "name": "Curve ibKRW Pool",
+      "symbol": "crvIBKRW",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4748,8 +4748,8 @@
     },
     {
       "address": "0x8818a9bb44Fbf33502bE7c15c500d0C783B73067",
-      "name": "Curve.fi Factory Plain Pool: ibJPY/sJPY",
-      "symbol": "ibJPY+sJPY-f",
+      "name": "Curve ibJPY Pool",
+      "symbol": "crvIBJPY",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4772,7 +4772,7 @@
     },
     {
       "address": "0x892D701d94a43bDBCB5eA28891DaCA2Fa22A690b",
-      "name": "Curve.fi Factory USD Metapool: STBT/3CRV",
+      "name": "Curve STBT-3CRV Pool",
       "symbol": "STBT3CRV-f",
       "logoURI": "",
       "chainId": 1,
@@ -4956,8 +4956,8 @@
     },
     {
       "address": "0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
-      "name": "tBTC",
-      "symbol": "tBTC",
+      "name": "tBTC (deprecated)",
+      "symbol": "tBTC v1",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5140,7 +5140,7 @@
     },
     {
       "address": "0x94B17476A93b3262d87B9a326965D1E91f9c13E7",
-      "name": "Curve.fi Factory Pool: OETH",
+      "name": "Curve oETH Pool",
       "symbol": "OETHCRV-f",
       "logoURI": "",
       "chainId": 1,
@@ -5244,7 +5244,7 @@
     },
     {
       "address": "0x971add32Ea87f10bD192671630be3BE8A11b8623",
-      "name": "Curve.fi Factory Plain Pool: cvxCrv/Crv",
+      "name": "Curve cvxCRV-CRV Pool",
       "symbol": "cvxcrv-crv-f",
       "logoURI": "",
       "chainId": 1,
@@ -5404,7 +5404,7 @@
     },
     {
       "address": "0x99f5aCc8EC2Da2BC0771c32814EFF52b712de1E5",
-      "name": "Curve.fi Factory Plain Pool: yCRV",
+      "name": "Curve yCRV v2 Pool",
       "symbol": "yCRV-f",
       "logoURI": "",
       "chainId": 1,
@@ -5540,8 +5540,8 @@
     },
     {
       "address": "0x9c2C8910F113181783c249d8F6Aa41b51Cde0f0c",
-      "name": "Curve.fi Factory Plain Pool: ibCHF/sCHF",
-      "symbol": "ibCHF+sCHF-f",
+      "name": "Curve ibCHF Pool",
+      "symbol": "crvIBCHF",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5900,7 +5900,7 @@
     },
     {
       "address": "0xB30dA2376F63De30b42dC055C93fa474F31330A5",
-      "name": "Curve.fi Factory USD Metapool: alUSDFRAXBP",
+      "name": "Curve alUSD-FRAXBP Pool",
       "symbol": "alUSDFRAXB3CRV-f",
       "logoURI": "",
       "chainId": 1,
@@ -5956,7 +5956,7 @@
     },
     {
       "address": "0xB657B895B265C38c53FFF00166cF7F6A3C70587d",
-      "name": "Curve.fi Factory Plain Pool: alETHfrxETH",
+      "name": "Curve frxETH-alETH Pool",
       "symbol": "alfrxETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -6548,8 +6548,8 @@
     },
     {
       "address": "0xD6Ac1CB9019137a896343Da59dDE6d097F710538",
-      "name": "Curve.fi Factory Plain Pool: ibGBP/sGBP",
-      "symbol": "ibGBP+sGBP-f",
+      "name": "Curve ibGBP Pool",
+      "symbol": "crvIBGBP",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6948,7 +6948,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Ethereum",
+      "name": "ETH",
       "symbol": "ETH",
       "logoURI": "",
       "chainId": 1,
@@ -6956,7 +6956,7 @@
     },
     {
       "address": "0xF05CFb8b4382c69f3B451C5FB55210B232E0edFA",
-      "name": "Curve.fi Factory Plain Pool: agEUR/VEUR",
+      "name": "Curve agEUR-VEUR Pool",
       "symbol": "agEUR-VEUR-f",
       "logoURI": "",
       "chainId": 1,
@@ -6996,7 +6996,7 @@
     },
     {
       "address": "0xF3A43307DcAFa93275993862Aae628fCB50dC768",
-      "name": "Curve.fi Factory Crypto Pool: cvxFxs/Fxs",
+      "name": "Curve cvxFXS-FXS Pool",
       "symbol": "cvxFXSFXS-f",
       "logoURI": "",
       "chainId": 1,
@@ -7308,7 +7308,7 @@
     },
     {
       "address": "0xa8e14F03124Ea156A4fc416537c82ff91a647D50",
-      "name": "Curve.fi Factory Crypto Pool:  ankrETH/frxETH",
+      "name": "Curve frxETH-ankrETH Pool",
       "symbol": "ankrfrxETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -7556,7 +7556,7 @@
     },
     {
       "address": "0xb79565c01b7Ae53618d9B847b9443aAf4f9011e7",
-      "name": "Curve.fi Factory Crypto Pool: LDO/ETH",
+      "name": "Curve LDO-ETH Pool",
       "symbol": "LDOETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -7620,7 +7620,7 @@
     },
     {
       "address": "0xbA6c373992AD8ec1f7520E5878E5540Eb36DeBf1",
-      "name": "Curve.fi Factory Crypto Pool: rETH/frxETH",
+      "name": "Curve rETH-frxETH Pool",
       "symbol": "rETHfrxETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -7660,7 +7660,7 @@
     },
     {
       "address": "0xbE4f3AD6C9458b901C81b734CB22D9eaE9Ad8b50",
-      "name": "Curve.fi Factory Crypto Pool: PAL/ETH",
+      "name": "Curve PAL-ETH Pool",
       "symbol": "PALETH-f",
       "logoURI": "",
       "chainId": 1,
@@ -7812,7 +7812,7 @@
     },
     {
       "address": "0xc3b19502F8c02be75F3f77fd673503520DEB51dD",
-      "name": "Curve msUSD-FRAXBP Pool",
+      "name": "Curve.fi Factory USD Metapool: msUSD/FRAXBP",
       "symbol": "msUSDFRAX3CRV-f",
       "logoURI": "",
       "chainId": 1,
@@ -7900,7 +7900,7 @@
     },
     {
       "address": "0xc794C6A95f30d0ebF7B3Bbe85e8a0A95C9e411c1",
-      "name": "Curve.fi Factory Crypto Pool: hyUSD/eUSD",
+      "name": "Curve hyUSD-eUSD Pool",
       "symbol": "hyUSDeUSD-f",
       "logoURI": "",
       "chainId": 1,
@@ -8316,8 +8316,8 @@
     },
     {
       "address": "0xe1406825186D63980fd6e2eC61888f7B91C4bAe4",
-      "name": "vBTC",
-      "symbol": "vBTC",
+      "name": "Strudel BTC",
+      "symbol": "VBTC",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -8612,7 +8612,7 @@
     },
     {
       "address": "0xf43211935C781D5ca1a41d2041F397B8A7366C7A",
-      "name": "Curve.fi ETH/frxETH",
+      "name": "Curve frxETH Pool",
       "symbol": "frxETHCRV",
       "logoURI": "",
       "chainId": 1,
