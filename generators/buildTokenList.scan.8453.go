@@ -8,6 +8,20 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
+func addEtherToken(chainId uint64, tokenList []TokenListToken) []TokenListToken {
+	if newToken, err := SetToken(
+		common.HexToAddress("0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"),
+		`Ethereum`,
+		`ETH`,
+		``,
+		chainId,
+		18,
+	); err == nil {
+		tokenList = append(tokenList, newToken)
+	}
+	return tokenList
+}
+
 func handleTokenListScan_8453(tokenAddresses []common.Address, imageURI []string) []TokenListToken {
 	tokenList := []TokenListToken{}
 
@@ -26,6 +40,7 @@ func handleTokenListScan_8453(tokenAddresses []common.Address, imageURI []string
 			}
 		}
 	}
+	tokenList = addEtherToken(8453, tokenList)
 
 	return tokenList
 }
