@@ -30,6 +30,7 @@ var RPC_ENDPOINTS = map[uint64]string{
 	137:   `https://polygon.llamarpc.com`,
 	250:   `https://rpc.ftm.tools`,
 	1101:  `https://zkevm-rpc.com`,
+	8453:  `https://mainnet.base.org/`,
 	42161: `https://arbitrum.public-rpc.com`,
 	43114: `https://1rpc.io/avax/c`,
 }
@@ -43,6 +44,7 @@ var DEFAULT_RPC_ENDPOINTS = map[uint64]string{
 	137:   `https://polygon.llamarpc.com`,
 	250:   `https://rpc.ftm.tools`,
 	1101:  `https://zkevm-rpc.com`,
+	8453:  `https://mainnet.base.org/`,
 	42161: `https://arbitrum.public-rpc.com`,
 	43114: `https://1rpc.io/avax/c`,
 }
@@ -57,6 +59,7 @@ var MULTICALL_ADDRESSES = map[uint64]common.Address{
 	250:   common.HexToAddress(`0x470ADB45f5a9ac3550bcFFaD9D990Bf7e2e941c9`),
 	1101:  common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 	42161: common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
+	8453:  common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 	43114: common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 }
 

@@ -8,6 +8,7 @@ var SUPPORTED_CHAIN_IDS = map[uint64]bool{
 	137:   true, // Polygon
 	250:   true, // Fantom
 	1101:  true, // Polygon ZKEVM
+	8453:  true, // Base
 	42161: true, // Arbitrum
 	43114: true, // Avalanche
 }

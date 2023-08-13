@@ -64,7 +64,7 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},
-	`ethereum-etherscan`: {
+	`ethereum-etherscan`: { // deprecated, use scan-1 instead
 		Exec:             buildEthereumTokenList,
 		Name:             `Ethereum (Etherscan)`,
 		Description:      `The top 1000 of tokens available on Ethereum blockchain, retrieved from Etherscan.`,
@@ -99,7 +99,7 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
-	`polygon-zkevm`: {
+	`polygon-zkevm`: { // deprecated, use scan-1101 instead
 		Exec:             buildPolygonZKEVMTokenList,
 		Name:             `Polygon (ZK-EVM)`,
 		Description:      `A list of tokens available on the Polygon zkEVM, the first EVM zero-knowledge scaling solution.`,
@@ -110,6 +110,27 @@ var GENERATORS = map[string]TGenerators{
 		Exec:             buildPortalsTokenList,
 		Name:             `Portals`,
 		Description:      `A list of tokens available for trading on Portals DEX.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
+	// `scan-1`: {
+	// 	Exec:             buildEthereumTokenList,
+	// 	Name:             `Ethereum (Etherscan)`,
+	// 	Description:      `The top 1000 of tokens available on Ethereum blockchain, retrieved from Etherscan.`,
+	// 	GenerationMethod: GenerationAPI,
+	// 	GeneratorType:    GeneratorToken,
+	// },
+	// `scan-1101`: {
+	// 	Exec:             buildPolygonZKEVMTokenList,
+	// 	Name:             `Polygon (ZK-EVM)`,
+	// 	Description:      `A list of tokens available on the Polygon zkEVM, the first EVM zero-knowledge scaling solution.`,
+	// 	GenerationMethod: GenerationAPI,
+	// 	GeneratorType:    GeneratorToken,
+	// },
+	`scan-8453`: {
+		Exec:             buildTokenListScan_8453,
+		Name:             `Base (Basescan)`,
+		Description:      `The top ERC20 tokens available on Base blockchain, retrieved from Basescan.`,
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
