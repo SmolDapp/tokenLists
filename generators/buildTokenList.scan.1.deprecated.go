@@ -8,13 +8,10 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
-const ETHEREUM_CHAIN_ID = 1
-const ETHEREUM_BASE_EXPLORER_URI = `https://etherscan.io`
-
 func handleEthereumTokenList(tokenAddresses []common.Address, imageURI []string) []TokenListToken {
 	tokenList := []TokenListToken{}
 
-	tokensInfo := retrieveBasicInformations(ETHEREUM_CHAIN_ID, tokenAddresses)
+	tokensInfo := retrieveBasicInformations(1, tokenAddresses)
 	for index, address := range tokenAddresses {
 		if token, ok := tokensInfo[address.Hex()]; ok {
 			if newToken, err := SetToken(
@@ -22,18 +19,18 @@ func handleEthereumTokenList(tokenAddresses []common.Address, imageURI []string)
 				token.Name,
 				token.Symbol,
 				imageURI[index],
-				ETHEREUM_CHAIN_ID,
+				1,
 				int(token.Decimals),
 			); err == nil {
 				tokenList = append(tokenList, newToken)
 			}
 		}
 	}
-
+	tokenList = addEtherToken(1, tokenList)
 	return tokenList
 }
 
-func fetchEthereumTokenList(currentPage uint8) []TokenListToken {
+func fetchScanTokenList_1(currentPage uint8) []TokenListToken {
 	imageURI := []string{}
 	tokens := []common.Address{}
 	c := colly.NewCollector(
@@ -43,7 +40,7 @@ func fetchEthereumTokenList(currentPage uint8) []TokenListToken {
 	c.OnHTML("a.d-flex.align-items-center.gap-1.link-dark", func(e *colly.HTMLElement) {
 		e.ForEach("img.rounded-circle", func(i int, h *colly.HTMLElement) {
 			src := h.Attr("src")
-			imageURI = append(imageURI, ETHEREUM_BASE_EXPLORER_URI+src)
+			imageURI = append(imageURI, `https://etherscan.io`+src)
 		})
 		tokenHref := e.Attr("href")
 		tokenAddress := tokenHref[7:]
@@ -54,17 +51,17 @@ func fetchEthereumTokenList(currentPage uint8) []TokenListToken {
 	})
 
 	for currentPage < 20 {
-		c.Visit(ETHEREUM_BASE_EXPLORER_URI + `/tokens?p=` + strconv.Itoa(int(currentPage)))
+		c.Visit(`https://etherscan.io` + `/tokens?p=` + strconv.Itoa(int(currentPage)))
 		currentPage++
 	}
 	return handleEthereumTokenList(tokens, imageURI)
 }
 
-func buildEthereumTokenList() {
+func buildScanTokenList_1() {
 	tokenList := loadTokenListFromJsonFile(`ethereum-etherscan.json`)
 	tokenList.Name = `Ethereum via Etherscan`
 	tokenList.LogoURI = `https://etherscan.io/images/brandassets/etherscan-logo-circle.svg`
 	tokenList.Keywords = []string{`ethereum`, `etherscan`}
-	tokens := fetchEthereumTokenList(1)
+	tokens := fetchScanTokenList_1(1)
 	saveTokenListInJsonFile(tokenList, tokens, `ethereum-etherscan.json`, Standard)
 }

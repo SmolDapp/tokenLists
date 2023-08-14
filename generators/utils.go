@@ -277,3 +277,17 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 	}
 	return erc20Map
 }
+
+func addEtherToken(chainId uint64, tokenList []TokenListToken) []TokenListToken {
+	if newToken, err := SetToken(
+		common.HexToAddress("0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"),
+		`Ethereum`,
+		`ETH`,
+		``,
+		chainId,
+		18,
+	); err == nil {
+		tokenList = append(tokenList, newToken)
+	}
+	return tokenList
+}

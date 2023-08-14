@@ -8,21 +8,7 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
-func addEtherToken(chainId uint64, tokenList []TokenListToken) []TokenListToken {
-	if newToken, err := SetToken(
-		common.HexToAddress("0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"),
-		`Ethereum`,
-		`ETH`,
-		``,
-		chainId,
-		18,
-	); err == nil {
-		tokenList = append(tokenList, newToken)
-	}
-	return tokenList
-}
-
-func handleTokenListScan_8453(tokenAddresses []common.Address, imageURI []string) []TokenListToken {
+func handleScanTokenList_8453(tokenAddresses []common.Address, imageURI []string) []TokenListToken {
 	tokenList := []TokenListToken{}
 
 	tokensInfo := retrieveBasicInformations(8453, tokenAddresses)
@@ -41,11 +27,10 @@ func handleTokenListScan_8453(tokenAddresses []common.Address, imageURI []string
 		}
 	}
 	tokenList = addEtherToken(8453, tokenList)
-
 	return tokenList
 }
 
-func fetchTokenListScan_8453(currentPage uint8) []TokenListToken {
+func fetchScanTokenList_8453(currentPage uint8) []TokenListToken {
 	imageURI := []string{}
 	tokens := []common.Address{}
 	c := colly.NewCollector(
@@ -67,18 +52,18 @@ func fetchTokenListScan_8453(currentPage uint8) []TokenListToken {
 		logs.Error(e)
 	})
 
-	for currentPage < 2 {
+	for currentPage < 20 {
 		c.Visit(`https://basescan.org` + `/tokens?p=` + strconv.Itoa(int(currentPage)))
 		currentPage++
 	}
-	return handleTokenListScan_8453(tokens, imageURI)
+	return handleScanTokenList_8453(tokens, imageURI)
 }
 
-func buildTokenListScan_8453() {
+func buildScanTokenList_8453() {
 	tokenList := loadTokenListFromJsonFile(`scan-8453.json`)
 	tokenList.Name = `Base via BaseScan`
 	tokenList.LogoURI = `https://etherscan.io/images/brandassets/etherscan-logo-circle.svg`
 	tokenList.Keywords = []string{`base`, `etherscan`, `basescan`}
-	tokens := fetchTokenListScan_8453(1)
+	tokens := fetchScanTokenList_8453(1)
 	saveTokenListInJsonFile(tokenList, tokens, `scan-8453.json`, Standard)
 }
