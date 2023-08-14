@@ -55,10 +55,20 @@ func loadTokenListFromJsonFile(filePath string) TokenListData {
 // saveTokenListInJsonFile saves a token list in a json file
 func saveTokenListInJsonFile(
 	tokenList TokenListData,
-	tokens []TokenListToken,
+	tokensMaybeDuplicates []TokenListToken,
 	filePath string,
 	method JSONSaveTokensMethods,
 ) error {
+	tokens := []TokenListToken{}
+	addresses := make(map[string]bool)
+	for _, token := range tokensMaybeDuplicates {
+		key := token.Address + strconv.FormatUint(token.ChainID, 10)
+		if _, ok := addresses[key]; !ok {
+			addresses[key] = true
+			tokens = append(tokens, token)
+		}
+	}
+
 	/**************************************************************************
 	** First part is transforming the token list into a map. This will allow
 	** us to detect the changes in the token list and to directly access a
