@@ -92,6 +92,7 @@ func handleScanTokenList(chainID uint64, tokenAddresses []common.Address, imageU
 		chainCoin = ETHER
 	}
 	chainCoin.ChainID = chainID
+	chainCoin.LogoURI = `https://assets.smold.app/api/token/` + strconv.FormatUint(chainID, 10) + `/` + chainCoin.Address + `/logo-128.png`
 	tokenList = append(tokenList, chainCoin)
 	return tokenList
 }
