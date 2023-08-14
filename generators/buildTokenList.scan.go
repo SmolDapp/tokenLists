@@ -19,16 +19,19 @@ const (
 type etherscanSASExplorers struct {
 	BaseURL string
 	Type    TExplorerType
+	Coin    TokenListToken
 }
 
 var BASE_EXPLORERS_URI = map[uint64]etherscanSASExplorers{
 	1: {
 		BaseURL: "https://etherscan.io",
 		Type:    L1,
+		Coin:    ETHER,
 	},
 	10: {
 		BaseURL: "https://optimistic.etherscan.io",
 		Type:    L2,
+		Coin:    ETHER,
 	},
 	56: {
 		BaseURL: "https://bscscan.com",
@@ -37,26 +40,32 @@ var BASE_EXPLORERS_URI = map[uint64]etherscanSASExplorers{
 	100: {
 		BaseURL: "https://gnosisscan.io",
 		Type:    L2,
+		Coin:    XDAI,
 	},
 	137: {
 		BaseURL: "https://polygonscan.com",
 		Type:    L2,
+		Coin:    MATIC,
 	},
 	1101: {
 		BaseURL: "https://zkevm.polygonscan.com",
 		Type:    L2,
+		Coin:    ETHER,
 	},
 	250: {
 		BaseURL: "https://ftmscan.com",
 		Type:    L2,
+		Coin:    FTM,
 	},
 	8453: {
 		BaseURL: "https://basescan.org",
 		Type:    L2,
+		Coin:    ETHER,
 	},
 	42161: {
 		BaseURL: "https://arbiscan.io",
 		Type:    L2,
+		Coin:    ETHER,
 	},
 }
 
@@ -78,7 +87,12 @@ func handleScanTokenList(chainID uint64, tokenAddresses []common.Address, imageU
 			}
 		}
 	}
-	tokenList = addEtherToken(chainID, tokenList)
+	chainCoin := BASE_EXPLORERS_URI[chainID].Coin
+	if chainCoin.Address == "" {
+		chainCoin = ETHER
+	}
+	chainCoin.ChainID = chainID
+	tokenList = append(tokenList, chainCoin)
 	return tokenList
 }
 

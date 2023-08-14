@@ -301,3 +301,39 @@ func addEtherToken(chainId uint64, tokenList []TokenListToken) []TokenListToken 
 	}
 	return tokenList
 }
+
+var ETHER = TokenListToken{
+	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
+	Name:     `Ethereum`,
+	Symbol:   `ETH`,
+	LogoURI:  ``,
+	Decimals: 18,
+}
+var FTM = TokenListToken{
+	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
+	Name:     `Fantom`,
+	Symbol:   `FTM`,
+	LogoURI:  ``,
+	Decimals: 18,
+}
+var BSC = TokenListToken{
+	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
+	Name:     `Binance Smart Chain`,
+	Symbol:   `BNB`,
+	LogoURI:  ``,
+	Decimals: 18,
+}
+var MATIC = TokenListToken{
+	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
+	Name:     `Polygon`,
+	Symbol:   `MATIC`,
+	LogoURI:  ``,
+	Decimals: 18,
+}
+var XDAI = TokenListToken{
+	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
+	Name:     `xDai`,
+	Symbol:   `xDAI`,
+	LogoURI:  ``,
+	Decimals: 18,
+}
