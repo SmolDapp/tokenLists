@@ -1,11 +1,11 @@
 {
   "name": "CoinGecko",
   "description": "",
-  "timestamp": "14/08/2023 09:18:25",
+  "timestamp": "14/08/2023 10:04:45",
   "version": {
     "major": 1252,
     "minor": 0,
-    "patch": 0
+    "patch": 1
   },
   "logoURI": "https://static.coingecko.com/s/about/gecko-1b23cd303298d7474345b1938c21fdb20c71f4f399eefa8637ad243b8ac5dbf5.png",
   "keywords": [
@@ -55,8 +55,8 @@
     },
     {
       "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
-      "name": "Tether",
-      "symbol": "USDT",
+      "name": "Frapped USDT",
+      "symbol": "fUSDT",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -392,7 +392,7 @@
     {
       "address": "0x27E611FD27b276ACbd5Ffd632E5eAEBEC9761E40",
       "name": "Curve.fi DAI/USDC",
-      "symbol": "DAI+USDC",
+      "symbol": "dai+usdc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -400,7 +400,7 @@
     {
       "address": "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf",
       "name": "Bridged USD Coin (LayerZero)",
-      "symbol": "LZUSDC",
+      "symbol": "lzusdc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -463,7 +463,7 @@
     },
     {
       "address": "0x3129662808bEC728a27Ab6a6b9AFd3cBacA8A43c",
-      "name": "DOLA",
+      "name": "Dola USD Stablecoin",
       "symbol": "DOLA",
       "logoURI": "",
       "chainId": 250,
@@ -479,8 +479,8 @@
     },
     {
       "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
-      "name": "Wrapped Bitcoin",
-      "symbol": "WBTC",
+      "name": "Bitcoin",
+      "symbol": "BTC",
       "logoURI": "",
       "chainId": 250,
       "decimals": 8
@@ -751,8 +751,8 @@
     },
     {
       "address": "0x511D35c52a3C244E7b8bd92c0C297755FbD89212",
-      "name": "Wrapped AVAX",
-      "symbol": "WAVAX",
+      "name": "Avalanche",
+      "symbol": "AVAX",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1135,8 +1135,8 @@
     },
     {
       "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
-      "name": "WETH",
-      "symbol": "WETH",
+      "name": "Ethereum",
+      "symbol": "ETH",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1247,7 +1247,7 @@
     },
     {
       "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
-      "name": "Spookyswap",
+      "name": "SpookyToken",
       "symbol": "BOO",
       "logoURI": "",
       "chainId": 250,
@@ -1327,7 +1327,7 @@
     },
     {
       "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "",
       "chainId": 250,
@@ -1424,7 +1424,7 @@
     {
       "address": "0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f",
       "name": "Bridged Dai Stablecoin (Stargate)",
-      "symbol": "DAI",
+      "symbol": "dai",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1583,7 +1583,7 @@
     },
     {
       "address": "0xB355f4F4CC84a9429a59d5c2B98d77016f7EC482",
-      "name": "Bitcoin BR",
+      "name": "BitcoinBR",
       "symbol": "BTCBR",
       "logoURI": "",
       "chainId": 250,
@@ -1911,7 +1911,7 @@
     },
     {
       "address": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8",
-      "name": "Chainlink",
+      "name": "ChainLink",
       "symbol": "LINK",
       "logoURI": "",
       "chainId": 250,
@@ -2008,7 +2008,7 @@
     {
       "address": "0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C",
       "name": "Bridged Tether (Stargate)",
-      "symbol": "USDT",
+      "symbol": "usdt",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -2111,8 +2111,8 @@
     },
     {
       "address": "0xe2D27f06F63d98b8e11b38b5b08A75D0c8dD62B9",
-      "name": "Wrapped USTC",
-      "symbol": "USTC",
+      "name": "Wrapped UST",
+      "symbol": "UST",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6

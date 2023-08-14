@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "14/08/2023 09:18:42",
+  "timestamp": "14/08/2023 10:04:58",
   "version": {
     "major": 9,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -60,11 +60,19 @@
     },
     {
       "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
-      "name": "Tether",
-      "symbol": "USDT",
+      "name": "Frapped USDT",
+      "symbol": "fUSDT",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
+    },
+    {
+      "address": "0x04c762a5dF2Fa02FE868F25359E0C259fB811CfE",
+      "name": "Iron Bank Dai Stablecoin",
+      "symbol": "iDAI",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 8
     },
     {
       "address": "0x0694bf58a4F48C5970454CD4874218eBa843Cf3e",
@@ -389,7 +397,7 @@
     {
       "address": "0x27E611FD27b276ACbd5Ffd632E5eAEBEC9761E40",
       "name": "Curve.fi DAI/USDC",
-      "symbol": "DAI+USDC",
+      "symbol": "dai+usdc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -413,7 +421,7 @@
     {
       "address": "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf",
       "name": "Bridged USD Coin (LayerZero)",
-      "symbol": "LZUSDC",
+      "symbol": "lzusdc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -444,15 +452,15 @@
     },
     {
       "address": "0x2dd7C9371965472E5A5fD28fbE165007c61439E1",
-      "name": "Curve MIM 3Pool",
-      "symbol": "crvMIM3Pool",
+      "name": "Curve.fi Factory Plain Pool: 3poolV2",
+      "symbol": "3poolV2-f",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
     },
     {
       "address": "0x3129662808bEC728a27Ab6a6b9AFd3cBacA8A43c",
-      "name": "DOLA",
+      "name": "Dola USD Stablecoin",
       "symbol": "DOLA",
       "logoURI": "",
       "chainId": 250,
@@ -492,8 +500,16 @@
     },
     {
       "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
-      "name": "Wrapped Bitcoin",
-      "symbol": "WBTC",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 8
+    },
+    {
+      "address": "0x328A7b4d538A2b3942653a9983fdA3C12c571141",
+      "name": "Iron Bank USD Coin",
+      "symbol": "iUSDC",
       "logoURI": "",
       "chainId": 250,
       "decimals": 8
@@ -724,8 +740,8 @@
     },
     {
       "address": "0x511D35c52a3C244E7b8bd92c0C297755FbD89212",
-      "name": "Wrapped AVAX",
-      "symbol": "WAVAX",
+      "name": "Avalanche",
+      "symbol": "AVAX",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -995,6 +1011,14 @@
       "decimals": 18
     },
     {
+      "address": "0x70faC71debfD67394D1278D98A29dea79DC6E57A",
+      "name": "Iron Bank Frapped USDT",
+      "symbol": "iFUSDT",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 8
+    },
+    {
       "address": "0x74E23dF9110Aa9eA0b6ff2fAEE01e740CA1c642e",
       "name": "TOR",
       "symbol": "TOR",
@@ -1004,8 +1028,8 @@
     },
     {
       "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
-      "name": "WETH",
-      "symbol": "WETH",
+      "name": "Ethereum",
+      "symbol": "ETH",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1100,7 +1124,7 @@
     },
     {
       "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
-      "name": "Spookyswap",
+      "name": "SpookyToken",
       "symbol": "BOO",
       "logoURI": "",
       "chainId": 250,
@@ -1172,7 +1196,7 @@
     },
     {
       "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "",
       "chainId": 250,
@@ -1237,7 +1261,7 @@
     {
       "address": "0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f",
       "name": "Bridged Dai Stablecoin (Stargate)",
-      "symbol": "DAI",
+      "symbol": "dai",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1246,6 +1270,14 @@
       "address": "0x924828a9Fb17d47D0eb64b57271D10706699Ff11",
       "name": "Spice",
       "symbol": "SFI",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x92D5ebF3593a92888C25C0AbEF126583d4b5312E",
+      "name": "Curve.fi fUSDT/DAI/USDC",
+      "symbol": "fUSDT+DAI+USDC",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1596,8 +1628,8 @@
     },
     {
       "address": "0xD02a30d33153877BC20e5721ee53DeDEE0422B2F",
-      "name": "Curve Geist Pool",
-      "symbol": "crvGEIST",
+      "name": "Curve.fi gDAI/gUSDC/gUSDT",
+      "symbol": "g3CRV",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1643,6 +1675,14 @@
       "decimals": 18
     },
     {
+      "address": "0xDBf31dF14B66535aF65AaC99C32e9eA844e14501",
+      "name": "renBTC",
+      "symbol": "renBTC",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 8
+    },
+    {
       "address": "0xDC371bB71dE3a8E50683E7eb596690Db9D0365Cc",
       "name": "Curve.fi Factory USD Metapool: HUGS-2pool",
       "symbol": "HUGS-2pool3CRV-f",
@@ -1670,6 +1710,14 @@
       "address": "0xDf156E97FE6E380dDc75950a030BF54960621ed0",
       "name": "MiM-FTM Spirit Crypt",
       "symbol": "rfMiMFTM",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0xDf38ec60c0eC001142a33eAa039e49E9b84E64ED",
+      "name": "Curve.fi cyDAI/cyUSDC/cyUSDT",
+      "symbol": "ib3CRV",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1724,8 +1772,8 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "FTM",
-      "symbol": "FTM",
+      "name": "Ethereum",
+      "symbol": "ETH",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1997,7 +2045,7 @@
     {
       "address": "0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C",
       "name": "Bridged Tether (Stargate)",
-      "symbol": "USDT",
+      "symbol": "usdt",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -2068,8 +2116,8 @@
     },
     {
       "address": "0xe2D27f06F63d98b8e11b38b5b08A75D0c8dD62B9",
-      "name": "Wrapped USTC",
-      "symbol": "USTC",
+      "name": "Wrapped UST",
+      "symbol": "UST",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
