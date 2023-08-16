@@ -1,11 +1,11 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "14/08/2023 10:12:40",
+  "timestamp": "16/08/2023 17:17:50",
   "version": {
     "major": 9,
-    "minor": 1,
-    "patch": 1
+    "minor": 2,
+    "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
   "keywords": [],
@@ -116,7 +116,7 @@
     },
     {
       "address": "0x01BA67AAC7f75f647D94220Cc98FB30FCc5105Bf",
-      "name": "Lyra Finance",
+      "name": "Lyra Token",
       "symbol": "LYRA",
       "logoURI": "",
       "chainId": 1,
@@ -196,8 +196,8 @@
     },
     {
       "address": "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e",
-      "name": "Aave WETH",
-      "symbol": "AWETH",
+      "name": "Aave interest bearing WETH",
+      "symbol": "aWETH",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -252,8 +252,8 @@
     },
     {
       "address": "0x045da4bFe02B320f4403674B3b7d121737727A36",
-      "name": "DeFi Franc",
-      "symbol": "dchf",
+      "name": "Defi Franc",
+      "symbol": "DCHF",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -741,7 +741,7 @@
     {
       "address": "0x11EBe21e9d7BF541A18e1E3aC94939018Ce88F0b",
       "name": "Pitch FXS",
-      "symbol": "pitchfxs",
+      "symbol": "pitchFXS",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -953,6 +953,14 @@
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x19b3bDe6F02Fc2C985947dcC1Dc2A4cDDfd43eE8",
+      "name": "Cream Tether USD",
+      "symbol": "crUSDT",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0x1AEa495539B514A5538878D3D3695c7AEDdC61F1",
@@ -1732,7 +1740,7 @@
     },
     {
       "address": "0x31429d1856aD1377A8A0079410B297e1a9e214c2",
-      "name": "Angle Protocol",
+      "name": "ANGLE",
       "symbol": "ANGLE",
       "logoURI": "",
       "chainId": 1,
@@ -2148,8 +2156,8 @@
     },
     {
       "address": "0x3a3A65aAb0dd2A17E3F1947bA16138cd37d08c04",
-      "name": "Aave ETH v1",
-      "symbol": "AETH",
+      "name": "Aave Interest bearing ETH",
+      "symbol": "aETHv1",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2307,6 +2315,14 @@
       "decimals": 18
     },
     {
+      "address": "0x40928E9af1Ff90093670daA60C1E34249D68A69B",
+      "name": "Curve.fi Factory Crypto Pool: crUSDC/FRAXBP",
+      "symbol": "crUSDCFRAX-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
       "name": "GHO",
       "symbol": "gho",
@@ -2316,7 +2332,7 @@
     },
     {
       "address": "0x4104b135DBC9609Fc1A9490E61369036497660c8",
-      "name": "APWine",
+      "name": "APWine Token",
       "symbol": "APW",
       "logoURI": "",
       "chainId": 1,
@@ -2358,6 +2374,14 @@
       "address": "0x428D03774F976F625380403E0C0AD38980943573",
       "name": "Curve.fi Factory Pool: frxETHt",
       "symbol": "frxETHt-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x42c22ad951827b8cf01B49B3d57F77A1267f9c0F",
+      "name": "Curve.fi Factory Crypto Pool: CrUSDT/FRAXBP",
+      "symbol": "CrUSDTFRAX-f",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2468,8 +2492,8 @@
     },
     {
       "address": "0x466a756E9A7401B5e2444a3fCB3c2C12FBEa0a54",
-      "name": "PUSd",
-      "symbol": "pusd",
+      "name": "Stablecoin",
+      "symbol": "PUSd",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2820,7 +2844,7 @@
     },
     {
       "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
-      "name": "Chain Link",
+      "name": "ChainLink Token",
       "symbol": "LINK",
       "logoURI": "",
       "chainId": 1,
@@ -2900,8 +2924,8 @@
     },
     {
       "address": "0x530824DA86689C9C17CdC2871Ff29B058345b44a",
-      "name": "Short-term T-Bill Token",
-      "symbol": "stbt",
+      "name": "Short-term Treasury Bill Token",
+      "symbol": "STBT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -2996,8 +3020,8 @@
     },
     {
       "address": "0x582d872A1B094FC48F5DE31D3B73F2D9bE47def1",
-      "name": "Toncoin",
-      "symbol": "TON",
+      "name": "Wrapped TON Coin",
+      "symbol": "TONCOIN",
       "logoURI": "",
       "chainId": 1,
       "decimals": 9
@@ -3027,9 +3051,17 @@
       "decimals": 18
     },
     {
+      "address": "0x59E256fbCFb261C805Bb0d6145d3395823EAEFfC",
+      "name": "Curve.fi Factory Crypto Pool: crDAI/FRAXBP",
+      "symbol": "crDAIFRAX-f",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x5A56Da75c50aA2733F5Fa9A2442AaEfcBc60B2e6",
-      "name": "CortexDAO",
-      "symbol": "cxd",
+      "name": "Cortex DAO Token",
+      "symbol": "CXD",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -3548,7 +3580,7 @@
     },
     {
       "address": "0x674C6Ad92Fd080e4004b2312b45f796a192D27a0",
-      "name": "Neutrino",
+      "name": "Neutrino USD",
       "symbol": "USDN",
       "logoURI": "",
       "chainId": 1,
@@ -3692,7 +3724,7 @@
     },
     {
       "address": "0x69e8b9528CABDA89fe846C67675B5D73d463a916",
-      "name": "OPEN Governance Token",
+      "name": "BBB",
       "symbol": "OPEN",
       "logoURI": "",
       "chainId": 1,
@@ -4126,6 +4158,14 @@
       "address": "0x752B4c6e92d96467fE9b9a2522EF07228E00F87c",
       "name": "Stake DAO ANGLE",
       "symbol": "sdANGLE",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x75aEa8E2b1546854214030AC38368609506Aa15A",
+      "name": "Curve.fi Factory Crypto Pool: crCrvUSD/FRAXBP",
+      "symbol": "crCrvUSDF-f",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4709,7 +4749,7 @@
     {
       "address": "0x86B4dBE5D203e634a12364C0e428fa242A3FbA98",
       "name": "poundtoken",
-      "symbol": "gbpt",
+      "symbol": "GBPT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -4915,6 +4955,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8ad5505BfE38692630A51f1a47EDe66a8d2E8b13",
+      "name": "Cream Curve.Fi USD Stablecoin",
+      "symbol": "crCrvUSD",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 8
+    },
+    {
       "address": "0x8b3138DF9aA1F60648C65C67D6Ff646BE305788B",
       "name": "Curve.fi Factory USD Metapool: xUSD1",
       "symbol": "xUSD13CRV-f",
@@ -5076,8 +5124,8 @@
     },
     {
       "address": "0x92E187a03B6CD19CB6AF293ba17F2745Fd2357D5",
-      "name": "Unit Protocol New",
-      "symbol": "DUCK",
+      "name": "Unit Protocol",
+      "symbol": "DUCK_UNIT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5105,6 +5153,14 @@
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x9435F39C4a1A51765DD4294fc84fE024F5aCE0D2",
+      "name": "Cream Dai Stablecoin",
+      "symbol": "crDAI",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0x943b7e761f34866DA12c9b84C99888Fe2Ef607c5",
@@ -5549,7 +5605,7 @@
     {
       "address": "0x9c354503C38481a7A7a51629142963F98eCC12D0",
       "name": "Origin Dollar Governance",
-      "symbol": "ogv",
+      "symbol": "OGV",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -5948,8 +6004,8 @@
     },
     {
       "address": "0xB620Be8a1949AA9532e6a3510132864EF9Bc3F82",
-      "name": "Lend Flare Dao Token",
-      "symbol": "lft",
+      "name": "LendFlare DAO Token",
+      "symbol": "LFT",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6249,6 +6305,14 @@
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xC42D8F3D791C107C458b2FeA025A36669B51fC5f",
+      "name": "Cream USD Coin",
+      "symbol": "crUSDC",
+      "logoURI": "",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0xC47EBd6c0f68fD5963005D28D0ba533750E5C11B",
@@ -6805,7 +6869,7 @@
     {
       "address": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
       "name": "Ankr Staked ETH",
-      "symbol": "ANKRETH",
+      "symbol": "ankrETH",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -6948,7 +7012,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "ETH",
+      "name": "Ethereum",
       "symbol": "ETH",
       "logoURI": "",
       "chainId": 1,
@@ -7260,8 +7324,8 @@
     },
     {
       "address": "0xa2E3356610840701BDf5611a53974510Ae27E2e1",
-      "name": "Wrapped Beacon ETH",
-      "symbol": "WBETH",
+      "name": "Wrapped Binance Beacon ETH",
+      "symbol": "wBETH",
       "logoURI": "",
       "chainId": 1,
       "decimals": 18
@@ -7293,7 +7357,7 @@
     {
       "address": "0xa693B19d2931d498c5B318dF961919BB4aee87a5",
       "name": "UST (Wormhole)",
-      "symbol": "UST",
+      "symbol": "UST_1",
       "logoURI": "",
       "chainId": 1,
       "decimals": 6
@@ -8196,7 +8260,7 @@
     },
     {
       "address": "0xdB25f211AB05b1c97D595516F45794528a807ad8",
-      "name": "STASIS EURS",
+      "name": "STASIS EURS Token",
       "symbol": "EURS",
       "logoURI": "",
       "chainId": 1,

@@ -1,10 +1,10 @@
 {
   "name": "Etherscan",
   "description": "",
-  "timestamp": "14/08/2023 10:13:14",
+  "timestamp": "16/08/2023 17:22:37",
   "version": {
-    "major": 4,
-    "minor": 1,
+    "major": 5,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://etherscan.io/images/brandassets/etherscan-logo-circle.svg",
@@ -26,6 +26,14 @@
       "name": "Tokenlon",
       "symbol": "LON",
       "logoURI": "https://etherscan.io/token/images/lon_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x001A8Ffcb0f03e99141652eBCdecDb0384E3bd6c",
+      "name": "Polker",
+      "symbol": "PKR",
+      "logoURI": "https://etherscan.io/token/images/polker_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -126,14 +134,6 @@
       "decimals": 18
     },
     {
-      "address": "0x035dF12E0F3ac6671126525f1015E47D79dFEDDF",
-      "name": "0xMonero",
-      "symbol": "0XMR",
-      "logoURI": "https://etherscan.io/token/images/oxmonero_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x037A54AaB062628C9Bbae1FDB1583c195585fe41",
       "name": "LCX",
       "symbol": "LCX",
@@ -143,7 +143,7 @@
     },
     {
       "address": "0x038a68FF68c393373eC894015816e33Ad41BD564",
-      "name": "Glitch Protocol",
+      "name": "Glitch",
       "symbol": "GLCH",
       "logoURI": "https://etherscan.io/token/images/glitch_32.png",
       "chainId": 1,
@@ -174,14 +174,6 @@
       "decimals": 18
     },
     {
-      "address": "0x048Fe49BE32adfC9ED68C37D32B5ec9Df17b3603",
-      "name": "Skrumble Network",
-      "symbol": "SKM",
-      "logoURI": "https://etherscan.io/token/images/skrumble_28.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828",
       "name": "UMA Voting Token v1",
       "symbol": "UMA",
@@ -199,7 +191,7 @@
     },
     {
       "address": "0x054D64b73d3D8A21Af3D764eFd76bCaA774f3Bb2",
-      "name": "Plasma Finance",
+      "name": "Plasma",
       "symbol": "PPAY",
       "logoURI": "https://etherscan.io/token/images/plasmafinance2_32.png",
       "chainId": 1,
@@ -239,8 +231,8 @@
     },
     {
       "address": "0x06A01a4d579479Dd5D884EBf61A31727A3d8D442",
-      "name": "Skey Network",
-      "symbol": "SKEY",
+      "name": "SmartKey",
+      "symbol": "Skey",
       "logoURI": "https://etherscan.io/token/images/skeynetwork_32.png",
       "chainId": 1,
       "decimals": 8
@@ -279,7 +271,7 @@
     },
     {
       "address": "0x08c32b0726C5684024ea6e141C50aDe9690bBdcc",
-      "name": "Stratos",
+      "name": "Stratos Token",
       "symbol": "STOS",
       "logoURI": "https://etherscan.io/token/images/thestratos_32.png",
       "chainId": 1,
@@ -335,7 +327,7 @@
     },
     {
       "address": "0x0Ae055097C6d159879521C384F1D2123D1f195e6",
-      "name": "xDai",
+      "name": "STAKE",
       "symbol": "STAKE",
       "logoURI": "https://etherscan.io/token/images/stake_32.png?v=2",
       "chainId": 1,
@@ -352,7 +344,7 @@
     {
       "address": "0x0B498ff89709d3838a063f1dFA463091F9801c2b",
       "name": "BTC 2x Flexible Leverage Index",
-      "symbol": "BTC2X-FLI",
+      "symbol": "BTC2x-FLI",
       "logoURI": "https://etherscan.io/token/images/BTC2x-FLI_32.png",
       "chainId": 1,
       "decimals": 18
@@ -375,7 +367,7 @@
     },
     {
       "address": "0x0CDF9acd87E940837ff21BB40c9fd55F68bba059",
-      "name": "MINT",
+      "name": "Public Mint",
       "symbol": "MINT",
       "logoURI": "https://etherscan.io/token/images/publicmint_32.png",
       "chainId": 1,
@@ -415,7 +407,7 @@
     },
     {
       "address": "0x0E29e5AbbB5FD88e28b2d355774e73BD47dE3bcd",
-      "name": "Hakka.Finance",
+      "name": "Hakka Finance",
       "symbol": "HAKKA",
       "logoURI": "https://etherscan.io/token/images/HakkaFinance_32.png",
       "chainId": 1,
@@ -455,7 +447,7 @@
     },
     {
       "address": "0x0adA190c81b814548ddC2F6AdC4a689ce7C1FE73",
-      "name": "yAxis",
+      "name": "yAxis V2",
       "symbol": "YAXIS",
       "logoURI": "https://etherscan.io/token/images/yaxisv2_32.png",
       "chainId": 1,
@@ -519,7 +511,7 @@
     },
     {
       "address": "0x0d02755a5700414B26FF040e1dE35D337DF56218",
-      "name": "BendDao",
+      "name": "Bend Token",
       "symbol": "BEND",
       "logoURI": "https://etherscan.io/token/images/benddao_32.png",
       "chainId": 1,
@@ -575,7 +567,7 @@
     },
     {
       "address": "0x0f71B8De197A1C84d31de0F1fA7926c365F052B3",
-      "name": "Arcona",
+      "name": "Arcona Distribution Contract",
       "symbol": "ARCONA",
       "logoURI": "https://etherscan.io/token/images/arconadistributioncontract_32.png",
       "chainId": 1,
@@ -615,7 +607,7 @@
     },
     {
       "address": "0x10633216E7E8281e33c86F02Bf8e565a635D9770",
-      "name": "Dvision Network",
+      "name": "Dvision",
       "symbol": "DVI",
       "logoURI": "https://etherscan.io/token/images/dvision_32.png?v=2",
       "chainId": 1,
@@ -639,7 +631,7 @@
     },
     {
       "address": "0x10Be9a8dAe441d276a5027936c3aADEd2d82bC15",
-      "name": "UMX",
+      "name": "unimex network",
       "symbol": "UMX",
       "logoURI": "https://etherscan.io/token/images/unimex_32.png?v=2",
       "chainId": 1,
@@ -663,7 +655,7 @@
     },
     {
       "address": "0x1117aC6Ad6Cdf1A3BC543baD3B133724620522d5",
-      "name": "MODA DAO",
+      "name": "moda",
       "symbol": "MODA",
       "logoURI": "https://etherscan.io/token/images/modadao_32.png",
       "chainId": 1,
@@ -687,7 +679,7 @@
     },
     {
       "address": "0x120a3879da835A5aF037bB2d1456beBd6B54d4bA",
-      "name": "Revest Finance",
+      "name": "Revest",
       "symbol": "RVST",
       "logoURI": "https://etherscan.io/token/images/revestfinance_32.png",
       "chainId": 1,
@@ -703,7 +695,7 @@
     },
     {
       "address": "0x12BB890508c125661E03b09EC06E404bc9289040",
-      "name": "Radio Caca",
+      "name": "Radio Caca V2",
       "symbol": "RACA",
       "logoURI": "https://etherscan.io/token/images/radiocaca_32.png",
       "chainId": 1,
@@ -727,8 +719,8 @@
     },
     {
       "address": "0x1337DEF16F9B486fAEd0293eb623Dc8395dFE46a",
-      "name": "EASE",
-      "symbol": "EASE",
+      "name": "Armor",
+      "symbol": "ARMOR",
       "logoURI": "https://etherscan.io/token/images/armor_32.png",
       "chainId": 1,
       "decimals": 18
@@ -775,7 +767,7 @@
     },
     {
       "address": "0x1559FA1b8F28238FD5D76D9f434ad86FD20D1559",
-      "name": "Eden Network",
+      "name": "Eden",
       "symbol": "EDEN",
       "logoURI": "https://etherscan.io/token/images/edeneth_32.png",
       "chainId": 1,
@@ -807,7 +799,7 @@
     },
     {
       "address": "0x1614F18Fc94f47967A3Fbe5FfcD46d4e7Da3D787",
-      "name": "PAID",
+      "name": "PAID Network",
       "symbol": "PAID",
       "logoURI": "https://etherscan.io/token/images/paidnetwork_32.png",
       "chainId": 1,
@@ -847,7 +839,7 @@
     },
     {
       "address": "0x1735Db6AB5BAa19eA55d0AdcEeD7bcDc008B3136",
-      "name": "UREEQA",
+      "name": "UREEQA Token",
       "symbol": "URQA",
       "logoURI": "https://etherscan.io/token/images/ureeqa_32.png",
       "chainId": 1,
@@ -879,7 +871,7 @@
     },
     {
       "address": "0x1796ae0b0fa4862485106a0de9b654eFE301D0b2",
-      "name": "Polychain Monsters",
+      "name": "Polkamon",
       "symbol": "PMON",
       "logoURI": "https://etherscan.io/token/images/polkamon_32.png?v=2",
       "chainId": 1,
@@ -935,7 +927,7 @@
     },
     {
       "address": "0x1C9922314ED1415c95b9FD453c3818fd41867d0B",
-      "name": "Tower",
+      "name": "TOWER",
       "symbol": "TOWER",
       "logoURI": "https://etherscan.io/token/images/tower_32.png",
       "chainId": 1,
@@ -1007,7 +999,7 @@
     },
     {
       "address": "0x1b40183EFB4Dd766f11bDa7A7c3AD8982e998421",
-      "name": "VSP",
+      "name": "VesperToken",
       "symbol": "VSP",
       "logoURI": "https://etherscan.io/token/images/vesperfinance_32.png",
       "chainId": 1,
@@ -1071,8 +1063,8 @@
     },
     {
       "address": "0x221657776846890989a759BA2973e427DfF5C9bB",
-      "name": "Augur",
-      "symbol": "REP",
+      "name": "Reputation V2",
+      "symbol": "REPv2",
       "logoURI": "https://etherscan.io/token/images/repv2_32.png",
       "chainId": 1,
       "decimals": 18
@@ -1223,7 +1215,7 @@
     },
     {
       "address": "0x29CbD0510EEc0327992CD6006e63F9Fa8E7f33B7",
-      "name": "Tidal Finance",
+      "name": "Tidal Token",
       "symbol": "TIDAL",
       "logoURI": "https://etherscan.io/token/images/tidaltoken_32.png",
       "chainId": 1,
@@ -1247,15 +1239,15 @@
     },
     {
       "address": "0x2Ab6Bb8408ca3199B8Fa6C92d5b455F820Af03c4",
-      "name": "TE-FOOD",
-      "symbol": "TFD",
+      "name": "TE-FOOD/TustChain",
+      "symbol": "TONE",
       "logoURI": "https://etherscan.io/token/images/tefoodtustchain_32.png?v=2",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x2BA8349123de45E931a8C8264c332E6e9CF593F9",
-      "name": "Blockchain Monster Hunt",
+      "name": "Blockchain Monster Coin",
       "symbol": "BCMC",
       "logoURI": "https://etherscan.io/token/images/bcmhunt3_32.png",
       "chainId": 1,
@@ -1295,7 +1287,7 @@
     },
     {
       "address": "0x2Ebd53d035150f328bd754D6DC66B99B0eDB89aa",
-      "name": "Metronome",
+      "name": "Metronome2",
       "symbol": "MET",
       "logoURI": "https://etherscan.io/token/images/metronomedao_32.png",
       "chainId": 1,
@@ -1303,7 +1295,7 @@
     },
     {
       "address": "0x2F109021aFe75B949429fe30523Ee7C0D5B27207",
-      "name": "OccamFi",
+      "name": "OCC",
       "symbol": "OCC",
       "logoURI": "https://etherscan.io/token/images/occ_32.png",
       "chainId": 1,
@@ -1319,7 +1311,7 @@
     },
     {
       "address": "0x2a3bFF78B79A009976EeA096a51A948a3dC00e34",
-      "name": "Wilder World",
+      "name": "Wilder",
       "symbol": "WILD",
       "logoURI": "https://etherscan.io/token/images/wilder_32.png",
       "chainId": 1,
@@ -1375,7 +1367,7 @@
     },
     {
       "address": "0x2e1E15C44Ffe4Df6a0cb7371CD00d5028e571d14",
-      "name": "MTLX",
+      "name": "Mettalex",
       "symbol": "MTLX",
       "logoURI": "https://etherscan.io/token/images/mettalex_32.png",
       "chainId": 1,
@@ -1440,7 +1432,7 @@
     {
       "address": "0x30dcBa0405004cF124045793E1933C798Af9E66a",
       "name": "Yieldification",
-      "symbol": "ydf",
+      "symbol": "YDF",
       "logoURI": "https://etherscan.io/token/images/yieldification_32.png",
       "chainId": 1,
       "decimals": 18
@@ -1471,7 +1463,7 @@
     },
     {
       "address": "0x31429d1856aD1377A8A0079410B297e1a9e214c2",
-      "name": "Angle Protocol",
+      "name": "ANGLE",
       "symbol": "ANGLE",
       "logoURI": "https://etherscan.io/token/images/angleprotocol_32.png",
       "chainId": 1,
@@ -1559,7 +1551,7 @@
     },
     {
       "address": "0x340D2bdE5Eb28c1eed91B2f790723E3B160613B7",
-      "name": "BlockV",
+      "name": "BLOCKv",
       "symbol": "VEE",
       "logoURI": "https://etherscan.io/token/images/blockv_32.png?v=2",
       "chainId": 1,
@@ -1591,7 +1583,7 @@
     },
     {
       "address": "0x3505F494c3f0fed0B594E01Fa41Dd3967645ca39",
-      "name": "Swarm Fund",
+      "name": "SWARM",
       "symbol": "SWM",
       "logoURI": "https://etherscan.io/token/images/swarm_32.png",
       "chainId": 1,
@@ -1608,7 +1600,7 @@
     {
       "address": "0x3593D125a4f7849a1B059E64F4517A86Dd60c95d",
       "name": "MANTRA DAO",
-      "symbol": "OM",
+      "symbol": "OMv2",
       "logoURI": "https://etherscan.io/token/images/mantradao_32.png?v=123",
       "chainId": 1,
       "decimals": 18
@@ -1631,7 +1623,7 @@
     },
     {
       "address": "0x374CB8C27130E2c9E04F44303f3c8351B9De61C1",
-      "name": "BAO token",
+      "name": "BaoToken",
       "symbol": "BAO",
       "logoURI": "https://etherscan.io/token/images/bao_32.png?=v1",
       "chainId": 1,
@@ -1847,7 +1839,7 @@
     },
     {
       "address": "0x3d6F0DEa3AC3C607B3998e6Ce14b6350721752d9",
-      "name": "Cardstarter",
+      "name": "CARD.STARTER",
       "symbol": "CARDS",
       "logoURI": "https://etherscan.io/token/images/cardstarter_32.png",
       "chainId": 1,
@@ -1874,6 +1866,14 @@
       "name": "Odyssey",
       "symbol": "OCN",
       "logoURI": "https://etherscan.io/token/images/odyssey_28.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+      "name": "GHO",
+      "symbol": "gho",
+      "logoURI": "https://etherscan.io/token/images/ghoaave_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1911,7 +1911,7 @@
     },
     {
       "address": "0x4156D3342D5c385a87D264F90653733592000581",
-      "name": "SALT",
+      "name": "Salt",
       "symbol": "SALT",
       "logoURI": "https://etherscan.io/token/images/salt_28.png",
       "chainId": 1,
@@ -1943,7 +1943,7 @@
     },
     {
       "address": "0x41A3Dba3D677E573636BA691a70ff2D606c29666",
-      "name": "Blank",
+      "name": "GoBlank Token",
       "symbol": "BLANK",
       "logoURI": "https://etherscan.io/token/images/blanktoken_32.png",
       "chainId": 1,
@@ -1954,14 +1954,6 @@
       "name": "Inverse DAO",
       "symbol": "INV",
       "logoURI": "https://etherscan.io/token/images/inversedao_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x41dBECc1cdC5517C6f76f6a6E836aDbEe2754DE3",
-      "name": "Medicalchain",
-      "symbol": "MTN",
-      "logoURI": "https://etherscan.io/token/images/medicalchain_28.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2031,8 +2023,8 @@
     },
     {
       "address": "0x44108f0223A3C3028F5Fe7AEC7f9bb2E66beF82F",
-      "name": "Across Protocol Token",
-      "symbol": "ACX",
+      "name": "Across Protocol",
+      "symbol": "acx",
       "logoURI": "https://etherscan.io/token/images/acrossprotocolacx2_32.png",
       "chainId": 1,
       "decimals": 18
@@ -2143,8 +2135,8 @@
     },
     {
       "address": "0x471Ea49dd8E60E697f4cac262b5fafCc307506e4",
-      "name": "RMRK",
-      "symbol": "RMRK",
+      "name": "xcRMRK",
+      "symbol": "xcRMRK",
       "logoURI": "https://etherscan.io/token/images/xcrmrkapp_32.png",
       "chainId": 1,
       "decimals": 10
@@ -2153,13 +2145,13 @@
       "address": "0x4730fB1463A6F1F44AEB45F6c5c422427f37F4D0",
       "name": "The 4th Pillar Token",
       "symbol": "FOUR",
-      "logoURI": "https://etherscan.io/token/images/4thpillartoken_32.png?=v1",
+      "logoURI": "https://etherscan.io/token/images/4thpillartoken_32.png?=v2",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x474021845C4643113458ea4414bdb7fB74A01A77",
-      "name": "Uno Re",
+      "name": "UnoRe",
       "symbol": "UNO",
       "logoURI": "https://etherscan.io/token/images/unore_32.png",
       "chainId": 1,
@@ -2207,7 +2199,7 @@
     },
     {
       "address": "0x4946Fcea7C692606e8908002e55A582af44AC121",
-      "name": "FOAM",
+      "name": "FOAM Token",
       "symbol": "FOAM",
       "logoURI": "https://etherscan.io/token/images/foam_28.png",
       "chainId": 1,
@@ -2224,7 +2216,7 @@
     {
       "address": "0x4B1E80cAC91e2216EEb63e29B957eB91Ae9C2Be8",
       "name": "Jupiter",
-      "symbol": "DAR",
+      "symbol": "JUP",
       "logoURI": "https://etherscan.io/token/images/jup_32.png",
       "chainId": 1,
       "decimals": 18
@@ -2247,7 +2239,7 @@
     },
     {
       "address": "0x4C2e59D098DF7b6cBaE0848d66DE2f8A4889b9C3",
-      "name": "Fodl Finance",
+      "name": "Fodl",
       "symbol": "FODL",
       "logoURI": "https://etherscan.io/token/images/fodl_32.png",
       "chainId": 1,
@@ -2255,7 +2247,7 @@
     },
     {
       "address": "0x4C6eC08CF3fc987c6C4BEB03184D335A2dFc4042",
-      "name": "MurAll",
+      "name": "Paint",
       "symbol": "PAINT",
       "logoURI": "https://etherscan.io/token/images/paint_32.png",
       "chainId": 1,
@@ -2376,7 +2368,7 @@
     {
       "address": "0x4b520c812E8430659FC9f12f6d0c39026C83588D",
       "name": "Decentral Games",
-      "symbol": "DG",
+      "symbol": "DG_2",
       "logoURI": "https://etherscan.io/token/images/decentralgame_32.png?v=3",
       "chainId": 1,
       "decimals": 18
@@ -2479,8 +2471,8 @@
     },
     {
       "address": "0x5026F006B85729a8b14553FAE6af249aD16c9aaB",
-      "name": "Wojak",
-      "symbol": "wojak",
+      "name": "Wojak Coin",
+      "symbol": "WOJAK",
       "logoURI": "https://etherscan.io/token/images/wojakcoin_32.png",
       "chainId": 1,
       "decimals": 18
@@ -2503,7 +2495,7 @@
     },
     {
       "address": "0x509A38b7a1cC0dcd83Aa9d06214663D9eC7c7F4a",
-      "name": "Blocksquare",
+      "name": "BlocksquareToken",
       "symbol": "BST",
       "logoURI": "https://etherscan.io/token/images/blocksquare2_32.png",
       "chainId": 1,
@@ -2511,7 +2503,7 @@
     },
     {
       "address": "0x50DE6856358Cc35f3A9a57eAAA34BD4cB707d2cd",
-      "name": "Razor Network",
+      "name": "RAZOR",
       "symbol": "RAZOR",
       "logoURI": "https://etherscan.io/token/images/razornetwork_32.png",
       "chainId": 1,
@@ -2535,7 +2527,7 @@
     },
     {
       "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
-      "name": "Chain Link",
+      "name": "ChainLink Token",
       "symbol": "LINK",
       "logoURI": "https://etherscan.io/token/images/chainlinktoken_32.png?v=6",
       "chainId": 1,
@@ -2559,8 +2551,8 @@
     },
     {
       "address": "0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6",
-      "name": "unFederalReserve",
-      "symbol": "ERSDL",
+      "name": "UnFederalReserveToken",
+      "symbol": "eRSDL",
       "logoURI": "https://etherscan.io/token/images/unfederalreserve_32.png",
       "chainId": 1,
       "decimals": 18
@@ -2568,7 +2560,7 @@
     {
       "address": "0x525eF76138Bf76118d786DbedeaE5F87aaBf4a81",
       "name": "Scalara NFT Index",
-      "symbol": "NFTI",
+      "symbol": "NFTI_2",
       "logoURI": "https://etherscan.io/token/images/scalaranftindex_32.png",
       "chainId": 1,
       "decimals": 18
@@ -2576,7 +2568,7 @@
     {
       "address": "0x5283D291DBCF85356A21bA090E6db59121208b44",
       "name": "Blur",
-      "symbol": "blur",
+      "symbol": "BLUR",
       "logoURI": "https://etherscan.io/token/images/blurio_32.png",
       "chainId": 1,
       "decimals": 18
@@ -2588,6 +2580,14 @@
       "logoURI": "https://etherscan.io/token/images/apex_32.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x539EfE69bCDd21a83eFD9122571a64CC25e0282b",
+      "name": "Blue Protocol",
+      "symbol": "BLUE",
+      "logoURI": "https://etherscan.io/token/images/etherblue_28.png",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0x53C8395465A84955c95159814461466053DedEDE",
@@ -2607,7 +2607,7 @@
     },
     {
       "address": "0x549020a9Cb845220D66d3E9c6D9F9eF61C981102",
-      "name": "Sidus",
+      "name": "SIDUS",
       "symbol": "SIDUS",
       "logoURI": "https://etherscan.io/token/images/sidus_32a.png",
       "chainId": 1,
@@ -2647,7 +2647,7 @@
     },
     {
       "address": "0x55aF5865807b196bD0197e0902746F31FBcCFa58",
-      "name": "Spookyswap",
+      "name": "SpookyToken",
       "symbol": "BOO",
       "logoURI": "https://etherscan.io/token/images/spookyswap-boo_32.png",
       "chainId": 1,
@@ -2719,8 +2719,8 @@
     },
     {
       "address": "0x582d872A1B094FC48F5DE31D3B73F2D9bE47def1",
-      "name": "Toncoin",
-      "symbol": "TON",
+      "name": "Wrapped TON Coin",
+      "symbol": "TONCOIN",
       "logoURI": "https://etherscan.io/token/images/theopennetwork_32.png",
       "chainId": 1,
       "decimals": 9
@@ -2839,7 +2839,7 @@
     },
     {
       "address": "0x5F0E628B693018f639D10e4A4F59BD4d8B2B6B44",
-      "name": "WHITE",
+      "name": "Whiteheart Token",
       "symbol": "WHITE",
       "logoURI": "https://etherscan.io/token/images/whitehearttoken_32.png",
       "chainId": 1,
@@ -2847,7 +2847,7 @@
     },
     {
       "address": "0x5a666c7d92E5fA7Edcb6390E4efD6d0CDd69cF37",
-      "name": "Unmarshal",
+      "name": "UnmarshalToken",
       "symbol": "MARSH",
       "logoURI": "https://etherscan.io/token/images/unmarshal_32.png",
       "chainId": 1,
@@ -2943,7 +2943,7 @@
     },
     {
       "address": "0x60bE1e1fE41c1370ADaF5d8e66f07Cf1C2Df2268",
-      "name": "Perion",
+      "name": "Perion Credits",
       "symbol": "PERC",
       "logoURI": "https://etherscan.io/token/images/perionperctoken_32.png?v=2",
       "chainId": 1,
@@ -2967,7 +2967,7 @@
     },
     {
       "address": "0x6149C26Cd2f7b5CCdb32029aF817123F6E37Df5B",
-      "name": "LPOOL",
+      "name": "Launchpool token",
       "symbol": "LPOOL",
       "logoURI": "https://etherscan.io/token/images/launchpooltoken_32.png",
       "chainId": 1,
@@ -3015,7 +3015,7 @@
     },
     {
       "address": "0x62Dc4817588d53a056cBbD18231d91ffCcd34b2A",
-      "name": "DeHive",
+      "name": "DeHive.finance",
       "symbol": "DHV",
       "logoURI": "https://etherscan.io/token/images/dehivefinance_32.png",
       "chainId": 1,
@@ -3047,8 +3047,8 @@
     },
     {
       "address": "0x644192291cc835A93d6330b24EA5f5FEdD0eEF9e",
-      "name": "AllianceBlock Nexera",
-      "symbol": "nxra",
+      "name": "AllianceBlock Nexera Token",
+      "symbol": "NXRA",
       "logoURI": "https://etherscan.io/token/images/allianceblock-nxra_32.png",
       "chainId": 1,
       "decimals": 18
@@ -3167,7 +3167,7 @@
     },
     {
       "address": "0x68d57c9a1C35f63E2c83eE8e49A64e9d70528D25",
-      "name": "SIRIN LABS",
+      "name": "Sirin Labs",
       "symbol": "SRN",
       "logoURI": "https://etherscan.io/token/images/sirin_28.png",
       "chainId": 1,
@@ -3192,7 +3192,7 @@
     {
       "address": "0x69af81e73A73B40adF4f3d4223Cd9b1ECE623074",
       "name": "Mask Network",
-      "symbol": "MASK",
+      "symbol": "MASK_NTWRK",
       "logoURI": "https://etherscan.io/token/images/mask_32.png",
       "chainId": 1,
       "decimals": 18
@@ -3231,7 +3231,7 @@
     },
     {
       "address": "0x6B9f031D718dDed0d681c20cB754F97b3BB81b78",
-      "name": "GEEQ",
+      "name": "Geeq",
       "symbol": "GEEQ",
       "logoURI": "https://etherscan.io/token/images/Geeq_32.png",
       "chainId": 1,
@@ -3351,7 +3351,7 @@
     },
     {
       "address": "0x6e9730EcFfBed43fD876A264C982e254ef05a0DE",
-      "name": "Nord Finance",
+      "name": "Nord Token",
       "symbol": "NORD",
       "logoURI": "https://etherscan.io/token/images/nordfinance_32.png",
       "chainId": 1,
@@ -3391,7 +3391,7 @@
     },
     {
       "address": "0x6fC13EACE26590B80cCCAB1ba5d51890577D83B2",
-      "name": "Umbrella Network",
+      "name": "Umbrella",
       "symbol": "UMB",
       "logoURI": "https://etherscan.io/token/images/umbrella_32.png",
       "chainId": 1,
@@ -3447,7 +3447,7 @@
     },
     {
       "address": "0x73374Ea518De7adDD4c2B624C0e8B113955ee041",
-      "name": "Juggernaut",
+      "name": "Juggernaut DeFi",
       "symbol": "JGN",
       "logoURI": "https://etherscan.io/token/images/juggernautdefi_32.png?v=2",
       "chainId": 1,
@@ -3455,7 +3455,7 @@
     },
     {
       "address": "0x738865301A9b7Dd80Dc3666dD48cF034ec42bdDa",
-      "name": "Agoras: Currency of Tau",
+      "name": "Agoras Token",
       "symbol": "AGRS",
       "logoURI": "https://etherscan.io/token/images/idni_32.png",
       "chainId": 1,
@@ -3471,7 +3471,7 @@
     },
     {
       "address": "0x73d7c860998CA3c01Ce8c808F5577d94d545d1b4",
-      "name": "IX Swap",
+      "name": "Ixs Token",
       "symbol": "IXS",
       "logoURI": "https://etherscan.io/token/images/ixsswap2_32.png",
       "chainId": 1,
@@ -3606,14 +3606,6 @@
       "decimals": 9
     },
     {
-      "address": "0x7995ab36bB307Afa6A683C24a25d90Dc1Ea83566",
-      "name": "HitChain",
-      "symbol": "HIT",
-      "logoURI": "https://etherscan.io/token/images/hitchain_28.png",
-      "chainId": 1,
-      "decimals": 6
-    },
-    {
       "address": "0x799a4202c12ca952cB311598a024C80eD371a41e",
       "name": "HarmonyOne",
       "symbol": "ONE",
@@ -3639,7 +3631,7 @@
     },
     {
       "address": "0x7BEF710a5759d197EC0Bf621c3Df802C2D60D848",
-      "name": "Splyt",
+      "name": "SPLYT SHOPX",
       "symbol": "SHOPX",
       "logoURI": "https://etherscan.io/token/images/shopx_32.png",
       "chainId": 1,
@@ -3655,7 +3647,7 @@
     },
     {
       "address": "0x7C5A0CE9267ED19B22F8cae653F198e3E8daf098",
-      "name": "Santiment Network Token",
+      "name": "Santiment",
       "symbol": "SAN",
       "logoURI": "https://etherscan.io/token/images/santiment_28_2.png?v=3",
       "chainId": 1,
@@ -3743,7 +3735,7 @@
     },
     {
       "address": "0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7",
-      "name": "Robonomics Network",
+      "name": "Robonomics",
       "symbol": "XRT",
       "logoURI": "https://etherscan.io/token/images/robonomics_28.png",
       "chainId": 1,
@@ -3792,7 +3784,7 @@
     {
       "address": "0x814e0908b12A99FeCf5BC101bB5d0b8B5cDf7d26",
       "name": "Measurable Data Token",
-      "symbol": "MDT",
+      "symbol": "MDT_1",
       "logoURI": "https://etherscan.io/token/images/mdt_28.png",
       "chainId": 1,
       "decimals": 18
@@ -3991,7 +3983,7 @@
     },
     {
       "address": "0x888888888889C00c67689029D7856AAC1065eC11",
-      "name": "Opium",
+      "name": "Opium Governance Token",
       "symbol": "OPIUM",
       "logoURI": "https://etherscan.io/token/images/opium_32.png",
       "chainId": 1,
@@ -4184,7 +4176,7 @@
     {
       "address": "0x8Fc8f8269ebca376D046Ce292dC7eaC40c8D358A",
       "name": "DeFiChain Token",
-      "symbol": "DFI",
+      "symbol": "DFI_2",
       "logoURI": "https://etherscan.io/token/images/defichain_32.png",
       "chainId": 1,
       "decimals": 8
@@ -4223,7 +4215,7 @@
     },
     {
       "address": "0x8dB1D28Ee0d822367aF8d220C0dc7cB6fe9DC442",
-      "name": "ETHPad",
+      "name": "ETHPAD.network",
       "symbol": "ETHPAD",
       "logoURI": "https://etherscan.io/token/images/ethpad_32.png",
       "chainId": 1,
@@ -4240,7 +4232,7 @@
     {
       "address": "0x8f693ca8D21b157107184d29D398A8D082b38b76",
       "name": "Streamr",
-      "symbol": "DATA",
+      "symbol": "DATA_1",
       "logoURI": "https://etherscan.io/token/images/streamr_32.png",
       "chainId": 1,
       "decimals": 18
@@ -4343,7 +4335,7 @@
     },
     {
       "address": "0x9469D013805bFfB7D3DEBe5E7839237e535ec483",
-      "name": "Darwinia Network",
+      "name": "Darwinia Network Native Token",
       "symbol": "RING",
       "logoURI": "https://etherscan.io/token/images/darwinia_32.png",
       "chainId": 1,
@@ -4415,7 +4407,7 @@
     },
     {
       "address": "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
-      "name": "Dypius",
+      "name": "DeFiYieldProtocol",
       "symbol": "DYP",
       "logoURI": "https://etherscan.io/token/images/dypius_32.png",
       "chainId": 1,
@@ -4423,8 +4415,8 @@
     },
     {
       "address": "0x9625cE7753ace1fa1865A47aAe2c5C2Ce4418569",
-      "name": "Kapital DAO",
-      "symbol": "kap",
+      "name": "Kapital DAO Token",
+      "symbol": "KAP",
       "logoURI": "https://etherscan.io/token/images/kapgameskap_32.png",
       "chainId": 1,
       "decimals": 18
@@ -4439,7 +4431,7 @@
     },
     {
       "address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
-      "name": "OceanToken",
+      "name": "Ocean Token",
       "symbol": "OCEAN",
       "logoURI": "https://etherscan.io/token/images/oceantoken_28.png?v=2",
       "chainId": 1,
@@ -4583,7 +4575,7 @@
     },
     {
       "address": "0x9B99CcA871Be05119B2012fd4474731dd653FEBe",
-      "name": "MATTER",
+      "name": "Antimatter.Finance Governance Token",
       "symbol": "MATTER",
       "logoURI": "https://etherscan.io/token/images/antimatter_32.png",
       "chainId": 1,
@@ -4639,7 +4631,7 @@
     },
     {
       "address": "0x9F52c8ecbEe10e00D9faaAc5Ee9Ba0fF6550F511",
-      "name": "Sipher",
+      "name": "Sipher Token",
       "symbol": "SIPHER",
       "logoURI": "https://etherscan.io/token/images/sipher_32.png",
       "chainId": 1,
@@ -4655,7 +4647,7 @@
     },
     {
       "address": "0x9F9c8ec3534c3cE16F928381372BfbFBFb9F4D24",
-      "name": "GLQ",
+      "name": "GraphLinq",
       "symbol": "GLQ",
       "logoURI": "https://etherscan.io/token/images/graphlinq_32.png",
       "chainId": 1,
@@ -4719,7 +4711,7 @@
     },
     {
       "address": "0xA0CF46eb152656C7090e769916eb44a138aaa406",
-      "name": "Spheroid Universe",
+      "name": "Spheroid",
       "symbol": "SPH",
       "logoURI": "https://etherscan.io/token/images/spheroiduniverse_32.png",
       "chainId": 1,
@@ -4775,7 +4767,7 @@
     },
     {
       "address": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
-      "name": "Deri Protocol",
+      "name": "Deri",
       "symbol": "DERI",
       "logoURI": "https://etherscan.io/token/images/deriprotocol2_32.png",
       "chainId": 1,
@@ -4903,7 +4895,7 @@
     },
     {
       "address": "0xAcfa209Fb73bF3Dd5bBfb1101B9Bc999C49062a5",
-      "name": "EvidenZ",
+      "name": "Blockchain Certified Data Token",
       "symbol": "BCDT",
       "logoURI": "https://etherscan.io/token/images/bcdtoken.png?v=4123",
       "chainId": 1,
@@ -5055,7 +5047,7 @@
     },
     {
       "address": "0xB9d99C33eA2d86EC5eC6b8A4dD816EBBA64404AF",
-      "name": "K21",
+      "name": "k21.kanon.art",
       "symbol": "K21",
       "logoURI": "https://etherscan.io/token/images/k21kanonart_32.png",
       "chainId": 1,
@@ -5112,7 +5104,7 @@
     {
       "address": "0xBC19712FEB3a26080eBf6f2F7849b417FdD792CA",
       "name": "BoringDAO",
-      "symbol": "BOR",
+      "symbol": "BORING",
       "logoURI": "https://etherscan.io/token/images/boringdao3_32.png",
       "chainId": 1,
       "decimals": 18
@@ -5198,8 +5190,16 @@
       "decimals": 6
     },
     {
+      "address": "0xC0Eb85285d83217CD7c891702bcbC0FC401E2D9D",
+      "name": "Hiveterminal token",
+      "symbol": "HVN",
+      "logoURI": "https://etherscan.io/token/images/hive_28.png",
+      "chainId": 1,
+      "decimals": 8
+    },
+    {
       "address": "0xC0F9bD5Fa5698B6505F643900FFA515Ea5dF54A9",
-      "name": "Donut",
+      "name": "DONUT",
       "symbol": "DONUT",
       "logoURI": "https://etherscan.io/token/images/donut_32.png",
       "chainId": 1,
@@ -5303,7 +5303,7 @@
     },
     {
       "address": "0xC82E3dB60A52CF7529253b4eC688f631aad9e7c2",
-      "name": "Arc",
+      "name": "ARC",
       "symbol": "ARC",
       "logoURI": "https://etherscan.io/token/images/arcv2_32.png",
       "chainId": 1,
@@ -5351,7 +5351,7 @@
     },
     {
       "address": "0xCF3C8Be2e2C42331Da80EF210e9B1b307C03d36A",
-      "name": "BEPRO Network",
+      "name": "BetProtocolToken",
       "symbol": "BEPRO",
       "logoURI": "https://etherscan.io/token/images/bepronetwork_32.png",
       "chainId": 1,
@@ -5359,7 +5359,7 @@
     },
     {
       "address": "0xCbfef8fdd706cde6F208460f2Bf39Aa9c785F05D",
-      "name": "KINE",
+      "name": "Kine Governance Token",
       "symbol": "KINE",
       "logoURI": "https://etherscan.io/token/images/kinetoken_32.png",
       "chainId": 1,
@@ -5367,7 +5367,7 @@
     },
     {
       "address": "0xCd2828fc4D8E8a0eDe91bB38CF64B1a81De65Bf6",
-      "name": "Oddz",
+      "name": "OddzToken",
       "symbol": "ODDZ",
       "logoURI": "https://etherscan.io/token/images/oddzfi2_32.png",
       "chainId": 1,
@@ -5455,7 +5455,7 @@
     },
     {
       "address": "0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de",
-      "name": "Siren",
+      "name": "SIREN",
       "symbol": "SI",
       "logoURI": "https://etherscan.io/token/images/sirenmarkets_32.png",
       "chainId": 1,
@@ -5639,7 +5639,7 @@
     },
     {
       "address": "0xDc5864eDe28BD4405aa04d93E05A0531797D9D59",
-      "name": "Falcon Project",
+      "name": "Falcon",
       "symbol": "FNT",
       "logoURI": "https://etherscan.io/token/images/falcon_32.png?v=4",
       "chainId": 1,
@@ -5671,7 +5671,7 @@
     },
     {
       "address": "0xDf801468a808a32656D2eD2D2d80B72A129739f4",
-      "name": "Somnium Space",
+      "name": "Somnium Space Cubes",
       "symbol": "CUBE",
       "logoURI": "https://etherscan.io/token/images/somniumspace_32.png",
       "chainId": 1,
@@ -5743,7 +5743,7 @@
     },
     {
       "address": "0xE4CFE9eAa8Cdb0942A80B7bC68fD8Ab0F6D44903",
-      "name": "Xend",
+      "name": "XEND",
       "symbol": "XEND",
       "logoURI": "https://etherscan.io/token/images/xendfinance_32.png?v=2",
       "chainId": 1,
@@ -5767,7 +5767,7 @@
     },
     {
       "address": "0xE5CAeF4Af8780E59Df925470b050Fb23C43CA68C",
-      "name": "Ferrum Network",
+      "name": "Ferrum Network Token",
       "symbol": "FRM",
       "logoURI": "https://etherscan.io/token/images/ferrumnetwork_32.png?=v454",
       "chainId": 1,
@@ -5840,14 +5840,14 @@
     {
       "address": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
       "name": "Ankr Staked ETH",
-      "symbol": "ANKRETH",
+      "symbol": "ankrETH",
       "logoURI": "https://etherscan.io/token/images/ankraetc_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0xE9A95d175a5f4C9369f3b74222402eB1b837693b",
-      "name": "NOW Token",
+      "name": "ChangeNOW",
       "symbol": "NOW",
       "logoURI": "https://etherscan.io/token/images/nowtoken_28.png",
       "chainId": 1,
@@ -5935,7 +5935,7 @@
     },
     {
       "address": "0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183",
-      "name": "Niftyx Protocol",
+      "name": "shroom.finance",
       "symbol": "SHROOM",
       "logoURI": "https://etherscan.io/token/images/shroomfinance_32.png?v=2",
       "chainId": 1,
@@ -5951,7 +5951,7 @@
     },
     {
       "address": "0xEe9801669C6138E84bD50dEB500827b776777d28",
-      "name": "O3 Swap",
+      "name": "O3 Swap Token",
       "symbol": "O3",
       "logoURI": "https://etherscan.io/token/images/o3swaptoken_32.png",
       "chainId": 1,
@@ -5983,7 +5983,7 @@
     },
     {
       "address": "0xF063fE1aB7a291c5d06a86e14730b00BF24cB589",
-      "name": "DxSale Network",
+      "name": "DxSale.Network",
       "symbol": "SALE",
       "logoURI": "https://etherscan.io/token/images/sale_32.png",
       "chainId": 1,
@@ -6031,7 +6031,7 @@
     },
     {
       "address": "0xF4d861575ecC9493420A3f5a14F85B13f0b50EB3",
-      "name": "Fractal",
+      "name": "Fractal Protocol Token",
       "symbol": "FCL",
       "logoURI": "https://etherscan.io/token/images/fractalprotocoltoken_32.png",
       "chainId": 1,
@@ -6103,7 +6103,7 @@
     },
     {
       "address": "0xF970b8E36e23F7fC3FD752EeA86f8Be8D83375A6",
-      "name": "Ripio Credit Network",
+      "name": "Ripio",
       "symbol": "RCN",
       "logoURI": "https://etherscan.io/token/images/ripio_28_2.png",
       "chainId": 1,
@@ -6159,7 +6159,7 @@
     },
     {
       "address": "0xFb782396c9b20E564A64896181c7AC8d8979d5F4",
-      "name": "Divergence Protocol",
+      "name": "DivergenceProtocol",
       "symbol": "DIVER",
       "logoURI": "https://etherscan.io/token/images/divergencefi_32.png",
       "chainId": 1,
@@ -6175,7 +6175,7 @@
     },
     {
       "address": "0xFc0d6Cf33e38bcE7CA7D89c0E292274031b7157A",
-      "name": "Netvrk",
+      "name": "NETVRK",
       "symbol": "NTVRK",
       "logoURI": "https://etherscan.io/token/images/netvrk_32.png",
       "chainId": 1,
@@ -6183,7 +6183,7 @@
     },
     {
       "address": "0xFc979087305A826c2B2a0056cFAbA50aad3E6439",
-      "name": "Dafi Protocol",
+      "name": "DAFI Token",
       "symbol": "DAFI",
       "logoURI": "https://etherscan.io/token/images/dafiprotocol_32.png",
       "chainId": 1,
@@ -6223,7 +6223,7 @@
     },
     {
       "address": "0xFeea0bDd3D07eb6FE305938878C0caDBFa169042",
-      "name": "8Pay",
+      "name": "8PAY Network",
       "symbol": "8PAY",
       "logoURI": "https://etherscan.io/token/images/8paynetwork_32.png",
       "chainId": 1,
@@ -6239,7 +6239,7 @@
     },
     {
       "address": "0xa02120696c7B8fE16C09C749E4598819b2B0E915",
-      "name": "Wirex",
+      "name": "Wirex Token",
       "symbol": "WXT",
       "logoURI": "https://etherscan.io/token/images/wirextoken_32.png",
       "chainId": 1,
@@ -6415,7 +6415,7 @@
     },
     {
       "address": "0xac3211a5025414Af2866FF09c23FC18bc97e79b1",
-      "name": "Dovu",
+      "name": "DOVU",
       "symbol": "DOV",
       "logoURI": "https://etherscan.io/token/images/dovu_32.png?v=2",
       "chainId": 1,
@@ -6424,14 +6424,14 @@
     {
       "address": "0xac3E018457B222d93114458476f3E3416Abbe38F",
       "name": "Staked Frax Ether",
-      "symbol": "sfrxETH",
+      "symbol": "sfrxeth",
       "logoURI": "https://etherscan.io/token/images/sfrxeth2_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0xad32A8e6220741182940c5aBF610bDE99E737b2D",
-      "name": "PieDAO",
+      "name": "PieDAO DOUGH v2",
       "symbol": "DOUGH",
       "logoURI": "https://etherscan.io/token/images/piedao_32.png",
       "chainId": 1,
@@ -6487,8 +6487,8 @@
     },
     {
       "address": "0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5",
-      "name": "RioDeFi",
-      "symbol": "RFUEL",
+      "name": "Rio Fuel Token",
+      "symbol": "RFuel",
       "logoURI": "https://etherscan.io/token/images/riofueltoken_32.png",
       "chainId": 1,
       "decimals": 18
@@ -6567,7 +6567,7 @@
     },
     {
       "address": "0xb753428af26E81097e7fD17f40c88aaA3E04902c",
-      "name": "Saffron",
+      "name": "Spice",
       "symbol": "SFI",
       "logoURI": "https://etherscan.io/token/images/SaffronFinanceRed_32.png",
       "chainId": 1,
@@ -6583,7 +6583,7 @@
     },
     {
       "address": "0xb9EF770B6A5e12E45983C5D80545258aA38F3B78",
-      "name": "0Chain",
+      "name": "0chain",
       "symbol": "ZCN",
       "logoURI": "https://etherscan.io/token/images/zus0chain_32.png",
       "chainId": 1,
@@ -6687,7 +6687,7 @@
     },
     {
       "address": "0xc5102fE9359FD9a28f877a67E36B0F050d81a3CC",
-      "name": "Hop Protocol",
+      "name": "Hop",
       "symbol": "HOP",
       "logoURI": "https://etherscan.io/token/images/hopv2_32.png",
       "chainId": 1,
@@ -6719,7 +6719,7 @@
     },
     {
       "address": "0xc690F7C7FcfFA6a82b79faB7508c466FEfdfc8c5",
-      "name": "Lympo",
+      "name": "Lympo tokens",
       "symbol": "LYM",
       "logoURI": "https://etherscan.io/token/images/lympo_28.png",
       "chainId": 1,
@@ -6727,7 +6727,7 @@
     },
     {
       "address": "0xc6DdDB5bc6E61e0841C54f3e723Ae1f3A807260b",
-      "name": "Urus Token",
+      "name": "Aurox Token",
       "symbol": "URUS",
       "logoURI": "https://etherscan.io/token/images/getaurox_32.png",
       "chainId": 1,
@@ -6815,7 +6815,7 @@
     },
     {
       "address": "0xcFEB09C3c5F0f78aD72166D55f9e6E9A60e96eEC",
-      "name": "vEmpire DDAO",
+      "name": "vEmpire Gamer Token",
       "symbol": "VEMP",
       "logoURI": "https://etherscan.io/token/images/vempiregamertoken_32.png?=v837",
       "chainId": 1,
@@ -6823,7 +6823,7 @@
     },
     {
       "address": "0xca1207647Ff814039530D7d35df0e1Dd2e91Fa84",
-      "name": "dHEDGE",
+      "name": "dHedge DAO Token",
       "symbol": "DHT",
       "logoURI": "https://etherscan.io/token/images/dHedge_32.png",
       "chainId": 1,
@@ -6959,7 +6959,7 @@
     },
     {
       "address": "0xd38BB40815d2B0c2d2c866e0c72c5728ffC76dd9",
-      "name": "Symbiosis Finance",
+      "name": "Symbiosis",
       "symbol": "SIS",
       "logoURI": "https://etherscan.io/token/images/symbiosis_32.png",
       "chainId": 1,
@@ -7039,7 +7039,7 @@
     },
     {
       "address": "0xdB25f211AB05b1c97D595516F45794528a807ad8",
-      "name": "STASIS EURS",
+      "name": "STASIS EURS Token",
       "symbol": "EURS",
       "logoURI": "https://etherscan.io/token/images/statiseuro_28.png",
       "chainId": 1,
@@ -7176,7 +7176,7 @@
     {
       "address": "0xe3818504c1B32bF1557b16C238B2E01Fd3149C17",
       "name": "Pillar",
-      "symbol": "plr",
+      "symbol": "PLR",
       "logoURI": "https://etherscan.io/token/images/pillar_32.png?v=4",
       "chainId": 1,
       "decimals": 18
@@ -7199,7 +7199,7 @@
     },
     {
       "address": "0xe5feeaC09D36B18b3FA757E5Cf3F8dA6B8e27F4C",
-      "name": "NFT Index",
+      "name": "NFT INDEX",
       "symbol": "NFTI",
       "logoURI": "https://etherscan.io/token/images/nftindex_32.png",
       "chainId": 1,
@@ -7238,16 +7238,8 @@
       "decimals": 18
     },
     {
-      "address": "0xeE1edD77f16b7867e026a4d32ef45DaC852DA61F",
-      "name": "LunaFi",
-      "symbol": "LFI",
-      "logoURI": "https://etherscan.io/token/images/lunafi_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xeEAA40B28A2d1b0B08f6f97bB1DD4B75316c6107",
-      "name": "Govi",
+      "name": "GOVI",
       "symbol": "GOVI",
       "logoURI": "https://etherscan.io/token/images/cvifinance_32.png",
       "chainId": 1,
@@ -7366,8 +7358,16 @@
       "decimals": 18
     },
     {
+      "address": "0xf3Db5Fa2C66B7aF3Eb0C0b782510816cbe4813b8",
+      "name": "Everex",
+      "symbol": "EVX",
+      "logoURI": "https://etherscan.io/token/images/everex_28.png",
+      "chainId": 1,
+      "decimals": 4
+    },
+    {
       "address": "0xf3dcbc6D72a4E1892f7917b7C43b74131Df8480e",
-      "name": "Big Data Protocol",
+      "name": "BDPToken",
       "symbol": "BDP",
       "logoURI": "https://etherscan.io/token/images/bdptoken_32.png",
       "chainId": 1,
@@ -7407,7 +7407,7 @@
     },
     {
       "address": "0xf680429328caaaCabee69b7A9FdB21a71419c063",
-      "name": "Butterfly Protocol",
+      "name": "Butterfly Protocol Governance Token",
       "symbol": "BFLY",
       "logoURI": "https://etherscan.io/token/images/butterflyprotocol_32.png",
       "chainId": 1,
@@ -7471,7 +7471,7 @@
     },
     {
       "address": "0xfAd45E47083e4607302aa43c65fB3106F1cd7607",
-      "name": "Hoge Finance",
+      "name": "hoge.finance",
       "symbol": "HOGE",
       "logoURI": "https://etherscan.io/token/images/hogefinance_32.png",
       "chainId": 1,
@@ -7543,7 +7543,7 @@
     },
     {
       "address": "0xfc05987bd2be489ACCF0f509E44B0145d68240f7",
-      "name": "Essentia",
+      "name": "ESSENTIA",
       "symbol": "ESS",
       "logoURI": "https://etherscan.io/token/images/essentia_28.png",
       "chainId": 1,
