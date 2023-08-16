@@ -36,6 +36,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`bebop`: {
+		Exec:             buildBebopTokenList,
+		Name:             `Bebop`,
+		Description:      `A list of tokens available on Bebop.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`coingecko`: {
 		Exec:             buildCoingeckoTokenList,
 		Name:             `CoinGecko`,
