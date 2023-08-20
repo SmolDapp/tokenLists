@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "16/08/2023 17:17:50",
+  "timestamp": "20/08/2023 00:38:25",
   "version": {
-    "major": 9,
-    "minor": 2,
+    "major": 10,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -107,6 +107,14 @@
       "decimals": 18
     },
     {
+      "address": "0x039746334922cdCF18ca1d96F16088214ba40A18",
+      "name": "Curve.fi Factory Plain Pool: asdCRV-poly",
+      "symbol": "asdCRVCRV-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x03A97594aA5ecE130E2E956fc0cEd2fea8ED8989",
       "name": "Ankr MATIC Reward Earning Bond",
       "symbol": "AMATICB",
@@ -140,8 +148,8 @@
     },
     {
       "address": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
-      "name": "Wrapped liquid staked Ether 2.0 (PoS)",
-      "symbol": "wstETH",
+      "name": "Wrapped stETH",
+      "symbol": "WSTETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -356,8 +364,8 @@
     },
     {
       "address": "0x104592a158490a9228070E0A8e5343B499e125D0",
-      "name": "Poly Frax",
-      "symbol": "polyFRAX",
+      "name": "Frax",
+      "symbol": "FRAX",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1676,7 +1684,7 @@
     },
     {
       "address": "0x482bc619eE7662759CDc0685B4E78f464Da39C73",
-      "name": "GMO JPY (PoS)",
+      "name": "GYEN",
       "symbol": "GYEN",
       "logoURI": "",
       "chainId": 137,
@@ -2675,6 +2683,14 @@
       "decimals": 6
     },
     {
+      "address": "0x75289388d50364c3013583d97bd70cED0e183e32",
+      "name": "Aladdin sdCRV",
+      "symbol": "asdCRV",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x767058F11800FBA6A682E73A6e79ec5eB74Fac8c",
       "name": "Jarvis Synthetic British Pound",
       "symbol": "JGBP",
@@ -2964,8 +2980,8 @@
     },
     {
       "address": "0x8096ac61db23291252574D49f036f0f9ed8ab390",
-      "name": "GRINGO",
-      "symbol": "GRINGO",
+      "name": "Curve USD-BTC-ETH",
+      "symbol": "crvUSDBTCETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3917,7 +3933,7 @@
     {
       "address": "0xAF0D9D65fC54de245cdA37af3d18cbEc860A4D4b",
       "name": "Wrapped USDR",
-      "symbol": "wUSDR",
+      "symbol": "wusdr",
       "logoURI": "",
       "chainId": 137,
       "decimals": 9
@@ -4637,7 +4653,7 @@
     {
       "address": "0xE7a24EF0C5e95Ffb0f6684b813A78F2a3AD7D171",
       "name": "Curve.fi amDAI/amUSDC/amUSDT",
-      "symbol": "am3CRV",
+      "symbol": "am3crv",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18

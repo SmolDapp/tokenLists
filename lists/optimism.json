@@ -1,10 +1,10 @@
 {
   "name": "Superchain Token List",
   "description": "",
-  "timestamp": "16/08/2023 17:22:37",
+  "timestamp": "20/08/2023 00:36:15",
   "version": {
     "major": 0,
-    "minor": 20,
+    "minor": 21,
     "patch": 0
   },
   "logoURI": "https://ethereum-optimism.github.io/optimism.svg",
@@ -14,6 +14,14 @@
     "infrastructure"
   ],
   "tokens": [
+    {
+      "address": "0x0000000000071821e8033345a7be174647be0706",
+      "name": "Scry Protocol",
+      "symbol": "SCRY",
+      "logoURI": "https://ethereum-optimism.github.io/data/SCRY/logo.svg",
+      "chainId": 1,
+      "decimals": 18
+    },
     {
       "address": "0x0000000000085d4780B73119b644AE5ecd22b376",
       "name": "TrueUSD",
@@ -403,6 +411,14 @@
       "name": "Lido DAO Token",
       "symbol": "LDO",
       "logoURI": "https://ethereum-optimism.github.io/data/LDO/logo.svg",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x5Ca135cB8527d76e932f34B5145575F9d8cbE08E",
+      "name": "Frax Price Index",
+      "symbol": "FPI",
+      "logoURI": "https://ethereum-optimism.github.io/data/FPI/logo.svg",
       "chainId": 1,
       "decimals": 18
     },
@@ -935,6 +951,14 @@
       "decimals": 18
     },
     {
+      "address": "0xac3E018457B222d93114458476f3E3416Abbe38F",
+      "name": "Staked Frax Ether",
+      "symbol": "sfrxETH",
+      "logoURI": "https://ethereum-optimism.github.io/data/sfrxETH/logo.svg",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xae78736cd615f374d3085123a210448e74fc6393",
       "name": "Rocket Pool ETH",
       "symbol": "rETH",
@@ -971,6 +995,14 @@
       "name": "Compound",
       "symbol": "COMP",
       "logoURI": "https://ethereum-optimism.github.io/data/COMP/logo.svg",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xc2544A32872A91F4A553b404C6950e89De901fdb",
+      "name": "Frax Price Index Share",
+      "symbol": "FPIS",
+      "logoURI": "https://ethereum-optimism.github.io/data/FPIS/logo.svg",
       "chainId": 1,
       "decimals": 18
     },
@@ -1059,6 +1091,14 @@
       "name": "DAOhaus Token",
       "symbol": "HAUS",
       "logoURI": "https://ethereum-optimism.github.io/data/HAUS/logo.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E",
+      "name": "Curve.Fi USD Stablecoin",
+      "symbol": "crvUSD",
+      "logoURI": "https://ethereum-optimism.github.io/data/crvUSD/logo.svg",
       "chainId": 1,
       "decimals": 18
     },
@@ -1287,6 +1327,14 @@
       "decimals": 18
     },
     {
+      "address": "0x484c2D6e3cDd945a8B2DF735e079178C1036578c",
+      "name": "Staked Frax Ether",
+      "symbol": "sfrxETH",
+      "logoURI": "https://ethereum-optimism.github.io/data/sfrxETH/logo.svg",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x5029C236320b8f15eF0a657054B84d90bfBEDED3",
       "name": "BitANT",
       "symbol": "BitANT",
@@ -1355,6 +1403,14 @@
       "name": "CryptoOracle Collective",
       "symbol": "COC",
       "logoURI": "https://ethereum-optimism.github.io/data/COC/logo.svg",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x64ba55a341ec586a4c5d58d6297cde5125ab55bc",
+      "name": "Scry Protocol",
+      "symbol": "SCRY",
+      "logoURI": "https://ethereum-optimism.github.io/data/SCRY/logo.svg",
       "chainId": 10,
       "decimals": 18
     },
@@ -1531,6 +1587,14 @@
       "name": "Equalizer",
       "symbol": "EQZ",
       "logoURI": "https://ethereum-optimism.github.io/data/EQZ/logo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x8368Dca5CE2a4Db530c0F6e535d90B6826428Dee",
+      "name": "Frax Price Index Share",
+      "symbol": "FPIS",
+      "logoURI": "https://ethereum-optimism.github.io/data/FPIS/logo.svg",
       "chainId": 10,
       "decimals": 18
     },
@@ -1751,12 +1815,28 @@
       "decimals": 18
     },
     {
+      "address": "0xC52D7F23a2e460248Db6eE192Cb23dD12bDDCbf6",
+      "name": "Curve.Fi USD Stablecoin",
+      "symbol": "crvUSD",
+      "logoURI": "https://ethereum-optimism.github.io/data/crvUSD/logo.svg",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xC5B3AC2DF8D8D7AC851F763a5b3Ff23B4A696d59",
       "name": "Aptos",
       "symbol": "APT",
       "logoURI": "https://ethereum-optimism.github.io/data/APT/logo.svg",
       "chainId": 10,
       "decimals": 8
+    },
+    {
+      "address": "0xc5d43a94e26fca47a9b21cf547ae4aa0268670e1",
+      "name": "Frax Price Index",
+      "symbol": "FPI",
+      "logoURI": "https://ethereum-optimism.github.io/data/FPI/logo.svg",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0xC81D1F0EB955B0c020E5d5b264E1FF72c14d1401",
@@ -2103,6 +2183,14 @@
       "decimals": 18
     },
     {
+      "address": "0x1f73EAf55d696BFFA9b0EA16fa987B93b0f4d302",
+      "name": "Rocket Pool Protocol",
+      "symbol": "RPL",
+      "logoURI": "https://ethereum-optimism.github.io/data/RPL/logo.svg",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x235226d2050C001FE78dED104364F9C2eB852E42",
       "name": "Infected",
       "symbol": "INFC",
@@ -2127,6 +2215,14 @@
       "decimals": 18
     },
     {
+      "address": "0x30136B90e532141FeD006c61105cff3668b5c774",
+      "name": "BlueSwap",
+      "symbol": "BLUE",
+      "logoURI": "https://ethereum-optimism.github.io/data/BLUE/logo.svg",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x3bB4445D30AC020a84c1b5A8A2C6248ebC9779D0",
       "name": "0x Protocol Token",
       "symbol": "ZRX",
@@ -2147,6 +2243,14 @@
       "name": "Balancer",
       "symbol": "BAL",
       "logoURI": "https://ethereum-optimism.github.io/data/BAL/logo.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x417Ac0e078398C154EdFadD9Ef675d30Be60Af93",
+      "name": "Curve.Fi USD Stablecoin",
+      "symbol": "crvUSD",
+      "logoURI": "https://ethereum-optimism.github.io/data/crvUSD/logo.svg",
       "chainId": 8453,
       "decimals": 18
     },
@@ -2247,6 +2351,14 @@
       "decimals": 18
     },
     {
+      "address": "0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c",
+      "name": "Rocket Pool ETH",
+      "symbol": "rETH",
+      "logoURI": "https://ethereum-optimism.github.io/data/rETH/logo.svg",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xD08a2917653d4E460893203471f0000826fb4034",
       "name": "FARM Reward Token",
       "symbol": "FARM",
@@ -2295,6 +2407,14 @@
       "decimals": 6
     },
     {
+      "address": "0xf34e0cff046e154CAfCae502C7541b9E5FD8C249",
+      "name": "Optimistic Thales Token",
+      "symbol": "THALES",
+      "logoURI": "https://ethereum-optimism.github.io/data/THALES/logo.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x0994206dfE8De6Ec6920FF4D779B0d950605Fb53",
       "name": "ETHPlus",
       "symbol": "ETH+",
@@ -2307,6 +2427,14 @@
       "name": "TOWER",
       "symbol": "TOWER",
       "logoURI": "https://ethereum-optimism.github.io/data/TOWER/logo.svg",
+      "chainId": 84531,
+      "decimals": 18
+    },
+    {
+      "address": "0x0c79e0E0284a631b72946b27d8F61EA6d9bF45c6",
+      "name": "Chain Games",
+      "symbol": "CHAIN",
+      "logoURI": "https://ethereum-optimism.github.io/data/CHAIN/logo.svg",
       "chainId": 84531,
       "decimals": 18
     },
@@ -2419,6 +2547,14 @@
       "name": "HanChain",
       "symbol": "HAN",
       "logoURI": "https://ethereum-optimism.github.io/data/HAN/logo.svg",
+      "chainId": 84531,
+      "decimals": 18
+    },
+    {
+      "address": "0xfe8b128ba8c78aabc59d4c64cee7ff28e9379921",
+      "name": "Noggles",
+      "symbol": "NOGS",
+      "logoURI": "https://ethereum-optimism.github.io/data/NOGS/logo.png",
       "chainId": 84531,
       "decimals": 18
     },
