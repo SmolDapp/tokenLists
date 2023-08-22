@@ -39,7 +39,7 @@ func coingeckoMapNetworkNameToChainID(network string) uint64 {
 
 func fetchCoingeckoLegacyListLogoURI() map[string]string {
 	logoURIList := make(map[string]string)
-	list := helpers.FetchJSON[TokenListData](`https://tokens.coingecko.com/uniswap/all.json`)
+	list := helpers.FetchJSON[TokenListData[TokenListToken]](`https://tokens.coingecko.com/uniswap/all.json`)
 	for _, v := range list.Tokens {
 		chainIDStr := strconv.FormatInt(int64(v.ChainID), 10)
 		logoURIList[chainIDStr+`_`+common.HexToAddress(v.Address).Hex()] = v.LogoURI

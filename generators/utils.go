@@ -25,8 +25,8 @@ const (
 )
 
 // loadTokenListFromJsonFile loads a token list from a json file.
-func loadTokenListFromJsonFile(filePath string) TokenListData {
-	var tokenList TokenListData
+func loadTokenListFromJsonFile(filePath string) TokenListData[TokenListToken] {
+	var tokenList TokenListData[TokenListToken]
 	content, err := os.ReadFile(helpers.BASE_PATH + `/lists/` + filePath)
 	if err != nil {
 		logs.Error(err)
@@ -54,7 +54,7 @@ func loadTokenListFromJsonFile(filePath string) TokenListData {
 
 // saveTokenListInJsonFile saves a token list in a json file
 func saveTokenListInJsonFile(
-	tokenList TokenListData,
+	tokenList TokenListData[TokenListToken],
 	tokensMaybeDuplicates []TokenListToken,
 	filePath string,
 	method JSONSaveTokensMethods,

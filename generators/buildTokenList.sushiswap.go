@@ -59,7 +59,7 @@ var SushiswapContractsPerChainID = map[uint64][]TSushiContracts{
 
 func buildSushiswapTokenList() {
 	tokenList := loadTokenListFromJsonFile(`sushiswap.json`)
-	originalTokenList := helpers.FetchJSON[TokenListData](`https://token-list.sushi.com/`)
+	originalTokenList := helpers.FetchJSON[TokenListData[TokenListToken]](`https://token-list.sushi.com/`)
 	tokenList.Name = originalTokenList.Name
 	tokenList.LogoURI = originalTokenList.LogoURI
 	tokenList.Keywords = originalTokenList.Keywords

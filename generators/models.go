@@ -9,19 +9,21 @@ import (
 
 // TokenListToken is the token struct used in the default token list
 type TokenListToken struct {
-	Address  string `json:"address"`
-	Name     string `json:"name"`
-	Symbol   string `json:"symbol"`
-	LogoURI  string `json:"logoURI"`
-	ChainID  uint64 `json:"chainId"`
-	Decimals int    `json:"decimals"`
+	Address  string                 `json:"address"`
+	Name     string                 `json:"name"`
+	Symbol   string                 `json:"symbol"`
+	LogoURI  string                 `json:"logoURI"`
+	ChainID  uint64                 `json:"chainId"`
+	Decimals int                    `json:"decimals"`
+	Metadata map[string]interface{} `json:"metadata,omitempty"`
 
 	// The following fields are optional and not exported
 	Count int `json:"-"` // Use for aggregation: number of time this token was found
 }
 
 // TokenListData is the token list struct used in the default token list
-type TokenListData struct {
+// [T any](uri string) (data T) {
+type TokenListData[T any] struct {
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	Timestamp   string `json:"timestamp"`
@@ -32,15 +34,15 @@ type TokenListData struct {
 	} `json:"version"`
 	LogoURI           string                    `json:"logoURI"`
 	Keywords          []string                  `json:"keywords"`
-	Tokens            []TokenListToken          `json:"tokens"`
+	Tokens            []T                       `json:"tokens"`
 	PreviousTokensMap map[string]TokenListToken `json:"-"`
 	NextTokensMap     map[string]TokenListToken `json:"-"`
 	Metadata          map[string]interface{}    `json:"metadata,omitempty"`
 }
 
 // InitTokenList initializes the token list
-func InitTokenList() TokenListData {
-	newTokenList := TokenListData{
+func InitTokenList() TokenListData[TokenListToken] {
+	newTokenList := TokenListData[TokenListToken]{
 		Name:      ``,
 		Timestamp: ``,
 		Keywords:  []string{},
@@ -87,7 +89,7 @@ func SetToken(
 }
 
 // Assign assigns the original token list to the current token list
-func (list TokenListData) Assign(originalTokenList []TokenListToken) TokenListData {
+func (list TokenListData[T]) Assign(originalTokenList []TokenListToken) TokenListData[T] {
 	for _, token := range originalTokenList {
 		if helpers.IsChainIDIgnored(token.ChainID) {
 			continue

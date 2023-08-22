@@ -6,7 +6,7 @@ import (
 
 func buildOptimismTokenList() {
 	tokenList := loadTokenListFromJsonFile(`optimism.json`)
-	originalTokenList := helpers.FetchJSON[TokenListData](`https://raw.githubusercontent.com/ethereum-optimism/ethereum-optimism.github.io/master/optimism.tokenlist.json`)
+	originalTokenList := helpers.FetchJSON[TokenListData[TokenListToken]](`https://raw.githubusercontent.com/ethereum-optimism/ethereum-optimism.github.io/master/optimism.tokenlist.json`)
 	tokenList.Name = helpers.SafeString(originalTokenList.Name, `Optimism Token List`)
 	tokenList.LogoURI = helpers.SafeString(originalTokenList.LogoURI, `https://ethereum-optimism.github.io/optimism.svg`)
 	tokenList.Keywords = originalTokenList.Keywords

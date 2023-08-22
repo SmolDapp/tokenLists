@@ -21,6 +21,23 @@ type TBebopList struct {
 	Tokens map[string]TBebopTokenData
 }
 
+type TBebopTokenListData struct {
+	Name        string `json:"name"`
+	Description string `json:"description"`
+	Timestamp   string `json:"timestamp"`
+	Version     struct {
+		Major int `json:"major"`
+		Minor int `json:"minor"`
+		Patch int `json:"patch"`
+	} `json:"version"`
+	LogoURI           string                    `json:"logoURI"`
+	Keywords          []string                  `json:"keywords"`
+	Tokens            []TokenListToken          `json:"tokens"`
+	PreviousTokensMap map[string]TokenListToken `json:"-"`
+	NextTokensMap     map[string]TokenListToken `json:"-"`
+	Metadata          map[string]interface{}    `json:"metadata,omitempty"`
+}
+
 func bebopMapNetworkChainIDToName(chainID uint64) string {
 	switch chainID {
 	case 1:
@@ -37,8 +54,17 @@ func fetchbebopTokenList() []TokenListToken {
 	supportedChainID := []uint64{1, 137, 42161}
 	tokens := []TokenListToken{}
 
-	tokenList := helpers.FetchJSON[TokenListData](`https://api.bebop.xyz/token_list`)
-	tokenMap := map[string]TokenListToken{}
+	type TBebopTokenListToken struct {
+		TokenListToken
+		Tags       []string `json:"tags"`
+		Extensions struct {
+			Color           string `json:"color"`
+			DisplayDecimals int    `json:"displayDecimals"`
+		} `json:"extensions"`
+	}
+
+	tokenList := helpers.FetchJSON[TokenListData[TBebopTokenListToken]](`https://api.bebop.xyz/token_list`)
+	tokenMap := map[string]TBebopTokenListToken{}
 	for _, token := range tokenList.Tokens {
 		tokenMap[token.Address] = token
 	}
@@ -65,6 +91,17 @@ func fetchbebopTokenList() []TokenListToken {
 				token.ChainID,
 				int(token.Decimals),
 			); err == nil {
+				if tokenFromList, ok := tokenMap[token.Address]; ok {
+					newToken.LogoURI = tokenFromList.LogoURI
+					newToken.Metadata = map[string]any{
+						`tags`:            tokenFromList.Tags,
+						`color`:           tokenFromList.Extensions.Color,
+						`displayDecimals`: tokenFromList.Extensions.DisplayDecimals,
+						`isAvailable`:     token.Availability.IsAvailable,
+						`canBuy`:          token.Availability.CanBuy,
+						`canSell`:         token.Availability.CanSell,
+					}
+				}
 				tokens = append(tokens, newToken)
 			}
 		}
