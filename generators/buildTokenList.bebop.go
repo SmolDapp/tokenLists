@@ -97,9 +97,6 @@ func fetchbebopTokenList() []TokenListToken {
 						`tags`:            tokenFromList.Tags,
 						`color`:           tokenFromList.Extensions.Color,
 						`displayDecimals`: tokenFromList.Extensions.DisplayDecimals,
-						`isAvailable`:     token.Availability.IsAvailable,
-						`canBuy`:          token.Availability.CanBuy,
-						`canSell`:         token.Availability.CanSell,
 					}
 				}
 				tokens = append(tokens, newToken)

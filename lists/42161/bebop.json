@@ -1,10 +1,10 @@
 {
   "name": "Bebop",
   "description": "",
-  "timestamp": "20/08/2023 00:37:43",
+  "timestamp": "22/08/2023 09:42:17",
   "version": {
     "major": 0,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
   "logoURI": "https://bebop-public-images.s3.eu-west-2.amazonaws.com/bebop-logo.png",
@@ -16,7 +16,14 @@
       "symbol": "WBTC",
       "logoURI": "https://bebop-public-images.s3.eu-west-2.amazonaws.com/wbtc.svg",
       "chainId": 42161,
-      "decimals": 8
+      "decimals": 8,
+      "metadata": {
+        "color": "#F09242",
+        "displayDecimals": 6,
+        "tags": [
+          "major"
+        ]
+      }
     },
     {
       "address": "0x539bdE0d7Dbd336b79148AA742883198BBF60342",
@@ -24,7 +31,14 @@
       "symbol": "MAGIC",
       "logoURI": "https://bebop-public-images.s3.eu-west-2.amazonaws.com/MAGIC.svg",
       "chainId": 42161,
-      "decimals": 18
+      "decimals": 18,
+      "metadata": {
+        "color": "#DC2626",
+        "displayDecimals": 1,
+        "tags": [
+          "alt"
+        ]
+      }
     },
     {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
@@ -32,7 +46,29 @@
       "symbol": "WETH",
       "logoURI": "https://bebop-public-images.s3.eu-west-2.amazonaws.com/weth.svg",
       "chainId": 42161,
-      "decimals": 18
+      "decimals": 18,
+      "metadata": {
+        "color": "#DA3A7A",
+        "displayDecimals": 5,
+        "tags": [
+          "alt"
+        ]
+      }
+    },
+    {
+      "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "logoURI": "https://bebop-public-images.s3.eu-west-2.amazonaws.com/arb.svg",
+      "chainId": 42161,
+      "decimals": 18,
+      "metadata": {
+        "color": "#96BEDC",
+        "displayDecimals": 2,
+        "tags": [
+          "alt"
+        ]
+      }
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
@@ -40,7 +76,14 @@
       "symbol": "DAI",
       "logoURI": "https://bebop-public-images.s3.eu-west-2.amazonaws.com/dai.svg",
       "chainId": 42161,
-      "decimals": 18
+      "decimals": 18,
+      "metadata": {
+        "color": "#F5AC37",
+        "displayDecimals": 2,
+        "tags": [
+          "stablecoin"
+        ]
+      }
     },
     {
       "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
@@ -56,7 +99,14 @@
       "symbol": "USDT",
       "logoURI": "https://bebop-public-images.s3.eu-west-2.amazonaws.com/usdt.svg",
       "chainId": 42161,
-      "decimals": 6
+      "decimals": 6,
+      "metadata": {
+        "color": "#009393",
+        "displayDecimals": 2,
+        "tags": [
+          "stablecoin"
+        ]
+      }
     },
     {
       "address": "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
@@ -64,7 +114,14 @@
       "symbol": "GMX",
       "logoURI": "https://bebop-public-images.s3.eu-west-2.amazonaws.com/GMX.svg",
       "chainId": 42161,
-      "decimals": 18
+      "decimals": 18,
+      "metadata": {
+        "color": "#04CFCE",
+        "displayDecimals": 3,
+        "tags": [
+          "alt"
+        ]
+      }
     }
   ]
 }
