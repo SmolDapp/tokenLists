@@ -1,9 +1,9 @@
 {
   "name": "Etherscan",
   "description": "",
-  "timestamp": "22/08/2023 09:50:27",
+  "timestamp": "27/08/2023 00:33:17",
   "version": {
-    "major": 7,
+    "major": 8,
     "minor": 0,
     "patch": 0
   },
@@ -26,6 +26,14 @@
       "name": "Tokenlon",
       "symbol": "LON",
       "logoURI": "https://etherscan.io/token/images/lon_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x001A8Ffcb0f03e99141652eBCdecDb0384E3bd6c",
+      "name": "Polker",
+      "symbol": "PKR",
+      "logoURI": "https://etherscan.io/token/images/polker_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -95,7 +103,7 @@
     },
     {
       "address": "0x0202Be363B8a4820f3F4DE7FaF5224fF05943AB1",
-      "name": "UniLend Finance",
+      "name": "UniLend Finance Token",
       "symbol": "UFT",
       "logoURI": "https://etherscan.io/token/images/unilend_32.png",
       "chainId": 1,
@@ -143,7 +151,7 @@
     },
     {
       "address": "0x0391D2021f89DC339F60Fff84546EA23E337750f",
-      "name": "BarnBridge",
+      "name": "BarnBridge Governance Token",
       "symbol": "BOND",
       "logoURI": "https://etherscan.io/token/images/barnbridge_32.png",
       "chainId": 1,
@@ -167,7 +175,7 @@
     },
     {
       "address": "0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828",
-      "name": "UMA",
+      "name": "UMA Voting Token v1",
       "symbol": "UMA",
       "logoURI": "https://etherscan.io/token/images/umavotingtokenv1_32.png?v=3",
       "chainId": 1,
@@ -183,7 +191,7 @@
     },
     {
       "address": "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
-      "name": "Gemini Dollar",
+      "name": "Gemini dollar",
       "symbol": "GUSD",
       "logoURI": "https://etherscan.io/token/images/gemini_28.png",
       "chainId": 1,
@@ -263,7 +271,7 @@
     },
     {
       "address": "0x08d967bb0134F2d07f7cfb6E246680c53927DD30",
-      "name": "MATH",
+      "name": "MATH Token",
       "symbol": "MATH",
       "logoURI": "https://etherscan.io/token/images/mathwallet_32.png",
       "chainId": 1,
@@ -279,7 +287,7 @@
     },
     {
       "address": "0x090185f2135308BaD17527004364eBcC2D37e5F6",
-      "name": "Spell",
+      "name": "Spell Token",
       "symbol": "SPELL",
       "logoURI": "https://etherscan.io/token/images/spelltoken_32.png",
       "chainId": 1,
@@ -311,7 +319,7 @@
     },
     {
       "address": "0x0Ae055097C6d159879521C384F1D2123D1f195e6",
-      "name": "STAKE",
+      "name": "xDAI",
       "symbol": "STAKE",
       "logoURI": "https://etherscan.io/token/images/stake_32.png?v=2",
       "chainId": 1,
@@ -328,7 +336,7 @@
     {
       "address": "0x0B498ff89709d3838a063f1dFA463091F9801c2b",
       "name": "BTC 2x Flexible Leverage Index",
-      "symbol": "BTC2X-FLI",
+      "symbol": "BTC2x-FLI",
       "logoURI": "https://etherscan.io/token/images/BTC2x-FLI_32.png",
       "chainId": 1,
       "decimals": 18
@@ -343,7 +351,7 @@
     },
     {
       "address": "0x0C10bF8FcB7Bf5412187A595ab97a3609160b5c6",
-      "name": "USDD",
+      "name": "Decentralized USD",
       "symbol": "USDD",
       "logoURI": "https://etherscan.io/token/images/usdd-tron_32.png",
       "chainId": 1,
@@ -375,7 +383,7 @@
     },
     {
       "address": "0x0De05F6447ab4D22c8827449EE4bA2D5C288379B",
-      "name": "Ooki",
+      "name": "OOKI",
       "symbol": "OOKI",
       "logoURI": "https://etherscan.io/token/images/ookitoken2_32.png?v=2",
       "chainId": 1,
@@ -415,7 +423,7 @@
     },
     {
       "address": "0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38",
-      "name": "Pundi X",
+      "name": "Pundi X Token",
       "symbol": "PUNDIX",
       "logoURI": "https://etherscan.io/token/images/pundix_32.png",
       "chainId": 1,
@@ -442,14 +450,6 @@
       "name": "API3",
       "symbol": "API3",
       "logoURI": "https://etherscan.io/token/images/api3_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x0b5326Da634f9270FB84481DD6F94d3dC2cA7096",
-      "name": "Etho Protocol",
-      "symbol": "ETHO",
-      "logoURI": "https://etherscan.io/token/images/wrappedetho_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -504,7 +504,7 @@
     {
       "address": "0x0d438F3b5175Bebc262bF23753C1E53d03432bDE",
       "name": "Wrapped NXM",
-      "symbol": "WNXM",
+      "symbol": "wNXM",
       "logoURI": "https://etherscan.io/token/images/nxm_32.png?v=2",
       "chainId": 1,
       "decimals": 18
@@ -527,7 +527,7 @@
     },
     {
       "address": "0x0eC9F76202a7061eB9b3a7D6B59D36215A7e37da",
-      "name": "BlackPool",
+      "name": "BlackPool Token",
       "symbol": "BPT",
       "logoURI": "https://etherscan.io/token/images/blackpool_32.png",
       "chainId": 1,
@@ -607,7 +607,7 @@
     },
     {
       "address": "0x108a850856Db3f85d0269a2693D896B394C80325",
-      "name": "THORWallet DEX",
+      "name": "THORWallet Governance Token",
       "symbol": "TGT",
       "logoURI": "https://etherscan.io/token/images/thorwallet_32.png",
       "chainId": 1,
@@ -623,7 +623,7 @@
     },
     {
       "address": "0x111111111117dC0aa78b770fA6A738034120C302",
-      "name": "1inch",
+      "name": "1inch Exchange",
       "symbol": "1INCH",
       "logoURI": "https://etherscan.io/token/images/1inch_32.png",
       "chainId": 1,
@@ -703,7 +703,7 @@
     },
     {
       "address": "0x1337DEF16F9B486fAEd0293eb623Dc8395dFE46a",
-      "name": "ARMOR",
+      "name": "Armor",
       "symbol": "ARMOR",
       "logoURI": "https://etherscan.io/token/images/armor_32.png",
       "chainId": 1,
@@ -751,7 +751,7 @@
     },
     {
       "address": "0x1559FA1b8F28238FD5D76D9f434ad86FD20D1559",
-      "name": "EDEN",
+      "name": "Eden",
       "symbol": "EDEN",
       "logoURI": "https://etherscan.io/token/images/edeneth_32.png",
       "chainId": 1,
@@ -775,7 +775,7 @@
     },
     {
       "address": "0x15b7c0c907e4C6b9AdaAaabC300C08991D6CEA05",
-      "name": "Gelato",
+      "name": "Gelato Network Token",
       "symbol": "GEL",
       "logoURI": "https://etherscan.io/token/images/gelatoeth_32.png?v=5",
       "chainId": 1,
@@ -855,7 +855,7 @@
     },
     {
       "address": "0x1796ae0b0fa4862485106a0de9b654eFE301D0b2",
-      "name": "Polychain Monsters",
+      "name": "Polkamon",
       "symbol": "PMON",
       "logoURI": "https://etherscan.io/token/images/polkamon_32.png?v=2",
       "chainId": 1,
@@ -911,7 +911,7 @@
     },
     {
       "address": "0x1C9922314ED1415c95b9FD453c3818fd41867d0B",
-      "name": "Tower",
+      "name": "TOWER",
       "symbol": "TOWER",
       "logoURI": "https://etherscan.io/token/images/tower_32.png",
       "chainId": 1,
@@ -943,7 +943,7 @@
     },
     {
       "address": "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C",
-      "name": "Bancor Network",
+      "name": "Bancor",
       "symbol": "BNT",
       "logoURI": "https://etherscan.io/token/images/bancor_32.png?v=2",
       "chainId": 1,
@@ -958,17 +958,9 @@
       "decimals": 12
     },
     {
-      "address": "0x1a7a8BD9106F2B8D977E08582DC7d24c723ab0DB",
-      "name": "AppCoins",
-      "symbol": "APPC",
-      "logoURI": "https://etherscan.io/token/images/appcoins_28.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8",
       "name": "agEUR",
-      "symbol": "AGEUR",
+      "symbol": "agEUR",
       "logoURI": "https://etherscan.io/token/images/ageur_32.png?=v982",
       "chainId": 1,
       "decimals": 18
@@ -983,7 +975,7 @@
     },
     {
       "address": "0x1b40183EFB4Dd766f11bDa7A7c3AD8982e998421",
-      "name": "Vesper Finance",
+      "name": "VesperToken",
       "symbol": "VSP",
       "logoURI": "https://etherscan.io/token/images/vesperfinance_32.png",
       "chainId": 1,
@@ -1039,7 +1031,7 @@
     },
     {
       "address": "0x21BfBDa47A0B4B5b1248c767Ee49F7caA9B23697",
-      "name": "Ovr",
+      "name": "OVR",
       "symbol": "OVR",
       "logoURI": "https://etherscan.io/token/images/ovr_32.png",
       "chainId": 1,
@@ -1047,8 +1039,8 @@
     },
     {
       "address": "0x221657776846890989a759BA2973e427DfF5C9bB",
-      "name": "Augur",
-      "symbol": "REP",
+      "name": "Reputation",
+      "symbol": "REPv2",
       "logoURI": "https://etherscan.io/token/images/repv2_32.png",
       "chainId": 1,
       "decimals": 18
@@ -1071,7 +1063,7 @@
     },
     {
       "address": "0x23B608675a2B2fB1890d3ABBd85c5775c51691d5",
-      "name": "Unisocks",
+      "name": "Unisocks Edition 0",
       "symbol": "SOCKS",
       "logoURI": "https://etherscan.io/token/images/unisocks_32.png",
       "chainId": 1,
@@ -1142,8 +1134,16 @@
       "decimals": 18
     },
     {
+      "address": "0x26E75307Fc0C021472fEb8F727839531F112f317",
+      "name": "Crypto20",
+      "symbol": "C20",
+      "logoURI": "https://etherscan.io/token/images/crypto20_28.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x26c8AFBBFE1EBaca03C2bB082E69D0476Bffe099",
-      "name": "Cellframe",
+      "name": "Cellframe Token",
       "symbol": "CELL",
       "logoURI": "https://etherscan.io/token/images/cerame_32.png",
       "chainId": 1,
@@ -1271,7 +1271,7 @@
     },
     {
       "address": "0x2Ebd53d035150f328bd754D6DC66B99B0eDB89aa",
-      "name": "Metronome",
+      "name": "Metronome2",
       "symbol": "MET",
       "logoURI": "https://etherscan.io/token/images/metronomedao_32.png",
       "chainId": 1,
@@ -1439,7 +1439,7 @@
     },
     {
       "address": "0x31429d1856aD1377A8A0079410B297e1a9e214c2",
-      "name": "ANGLE",
+      "name": "Angle",
       "symbol": "ANGLE",
       "logoURI": "https://etherscan.io/token/images/angleprotocol_32.png",
       "chainId": 1,
@@ -1471,7 +1471,7 @@
     },
     {
       "address": "0x321C2fE4446C7c963dc41Dd58879AF648838f98D",
-      "name": "Cryptex Finance",
+      "name": "Cryptex",
       "symbol": "CTX",
       "logoURI": "https://etherscan.io/token/images/cryptexfinance_32.png",
       "chainId": 1,
@@ -1482,14 +1482,6 @@
       "name": "Adventure Gold",
       "symbol": "AGLD",
       "logoURI": "https://etherscan.io/token/images/lootnft_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x327682779bAB2BF4d1337e8974ab9dE8275A7Ca8",
-      "name": "Blockport Token",
-      "symbol": "BPT",
-      "logoURI": "https://etherscan.io/token/images/blockport_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1567,7 +1559,7 @@
     },
     {
       "address": "0x3506424F91fD33084466F402d5D97f05F8e3b4AF",
-      "name": "Chiliz",
+      "name": "chiliZ",
       "symbol": "CHZ",
       "logoURI": "https://etherscan.io/token/images/chiliz_28.png",
       "chainId": 1,
@@ -1583,7 +1575,7 @@
     },
     {
       "address": "0x3597bfD533a99c9aa083587B074434E61Eb0A258",
-      "name": "Dent",
+      "name": "DENT",
       "symbol": "DENT",
       "logoURI": "https://etherscan.io/token/images/dentcoin.png",
       "chainId": 1,
@@ -1591,7 +1583,7 @@
     },
     {
       "address": "0x362bc847A3a9637d3af6624EeC853618a43ed7D2",
-      "name": "PARSIQ",
+      "name": "Parsiq Token",
       "symbol": "PRQ",
       "logoURI": "https://etherscan.io/token/images/parsiqtoken_32.png",
       "chainId": 1,
@@ -1632,14 +1624,14 @@
     {
       "address": "0x3832d2F059E55934220881F831bE501D180671A7",
       "name": "renDOGE",
-      "symbol": "RENDOGE",
+      "symbol": "renDOGE",
       "logoURI": "https://etherscan.io/token/images/rendoge_32.png?=v1",
       "chainId": 1,
       "decimals": 8
     },
     {
       "address": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0",
-      "name": "The Sandbox",
+      "name": "SAND",
       "symbol": "SAND",
       "logoURI": "https://etherscan.io/token/images/sand_32.png",
       "chainId": 1,
@@ -1719,8 +1711,8 @@
     },
     {
       "address": "0x3D658390460295FB963f54dC0899cfb1c30776Df",
-      "name": "Circuits of Value",
-      "symbol": "COVAL",
+      "name": "CircuitsOfValue",
+      "symbol": "Coval",
       "logoURI": "https://etherscan.io/token/images/circuitsofvalue_32.png?v=3",
       "chainId": 1,
       "decimals": 8
@@ -1735,7 +1727,7 @@
     },
     {
       "address": "0x3E9BC21C9b189C09dF3eF1B824798658d5011937",
-      "name": "Linear",
+      "name": "Linear Token",
       "symbol": "LINA",
       "logoURI": "https://etherscan.io/token/images/linear_32.png",
       "chainId": 1,
@@ -1743,7 +1735,7 @@
     },
     {
       "address": "0x3Ec8798B81485A254928B70CDA1cf0A2BB0B74D7",
-      "name": "Gro DAO",
+      "name": "Gro DAO Token",
       "symbol": "GRO",
       "logoURI": "https://etherscan.io/token/images/groprotocol_32.png",
       "chainId": 1,
@@ -1759,7 +1751,7 @@
     },
     {
       "address": "0x3a4f40631a4f906c2BaD353Ed06De7A5D3fCb430",
-      "name": "PlayDapp",
+      "name": "PlayDapp Token",
       "symbol": "PLA",
       "logoURI": "https://etherscan.io/token/images/playdapptoken_32.png?v=3",
       "chainId": 1,
@@ -1911,7 +1903,7 @@
     },
     {
       "address": "0x419D0d8BdD9aF5e606Ae2232ed285Aff190E711b",
-      "name": "FUNToken",
+      "name": "FunFair",
       "symbol": "FUN",
       "logoURI": "https://etherscan.io/token/images/funfair_32.png",
       "chainId": 1,
@@ -1935,9 +1927,17 @@
     },
     {
       "address": "0x41D5D79431A913C4aE7d69a668ecdfE5fF9DFB68",
-      "name": "Inverse Finance",
+      "name": "Inverse DAO",
       "symbol": "INV",
       "logoURI": "https://etherscan.io/token/images/inversedao_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x41dBECc1cdC5517C6f76f6a6E836aDbEe2754DE3",
+      "name": "Medicalchain",
+      "symbol": "MTN",
+      "logoURI": "https://etherscan.io/token/images/medicalchain_28.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1999,7 +1999,7 @@
     },
     {
       "address": "0x43Dfc4159D86F3A37A5A4B3D4580b888ad7d4DDd",
-      "name": "DODO",
+      "name": "DODO bird",
       "symbol": "DODO",
       "logoURI": "https://etherscan.io/token/images/dodo_32.png",
       "chainId": 1,
@@ -2007,7 +2007,7 @@
     },
     {
       "address": "0x44108f0223A3C3028F5Fe7AEC7f9bb2E66beF82F",
-      "name": "Across Protocol",
+      "name": "Across Protocol Token",
       "symbol": "ACX",
       "logoURI": "https://etherscan.io/token/images/acrossprotocolacx2_32.png",
       "chainId": 1,
@@ -2046,6 +2046,14 @@
       "decimals": 18
     },
     {
+      "address": "0x44f262622248027f8E2a8Fb1090c4Cf85072392C",
+      "name": "Planet Inverse",
+      "symbol": "XIV",
+      "logoURI": "https://etherscan.io/token/images/projectinverse_32.png?v=2",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x45448E05020576929fcDEabC228E35b420098840",
       "name": "Idavoll DAO",
       "symbol": "IDV",
@@ -2063,7 +2071,7 @@
     },
     {
       "address": "0x45804880De22913dAFE09f4980848ECE6EcbAf78",
-      "name": "PAX Gold",
+      "name": "Paxos Gold",
       "symbol": "PAXG",
       "logoURI": "https://etherscan.io/token/images/paxosgold_32.png",
       "chainId": 1,
@@ -2111,7 +2119,7 @@
     },
     {
       "address": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B",
-      "name": "WOO Network",
+      "name": "Wootrade Network",
       "symbol": "WOO",
       "logoURI": "https://etherscan.io/token/images/wootrade_32.png?=v2",
       "chainId": 1,
@@ -2119,8 +2127,8 @@
     },
     {
       "address": "0x471Ea49dd8E60E697f4cac262b5fafCc307506e4",
-      "name": "RMRK",
-      "symbol": "RMRK",
+      "name": "xcRMRK",
+      "symbol": "xcRMRK",
       "logoURI": "https://etherscan.io/token/images/xcrmrkapp_32.png",
       "chainId": 1,
       "decimals": 10
@@ -2167,7 +2175,7 @@
     },
     {
       "address": "0x491604c0FDF08347Dd1fa4Ee062a822A5DD06B5D",
-      "name": "Cartesi",
+      "name": "Cartesi Token",
       "symbol": "CTSI",
       "logoURI": "https://etherscan.io/token/images/cartesi_32.png",
       "chainId": 1,
@@ -2215,7 +2223,7 @@
     },
     {
       "address": "0x4C2e59D098DF7b6cBaE0848d66DE2f8A4889b9C3",
-      "name": "Fodl Finance",
+      "name": "Fodl",
       "symbol": "FODL",
       "logoURI": "https://etherscan.io/token/images/fodl_32.png",
       "chainId": 1,
@@ -2263,16 +2271,16 @@
     },
     {
       "address": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5",
-      "name": "cETH",
-      "symbol": "CETH",
+      "name": "Compound ETH",
+      "symbol": "cETH",
       "logoURI": "https://etherscan.io/token/images/compound-eth_28.png",
       "chainId": 1,
       "decimals": 8
     },
     {
       "address": "0x4E15361FD6b4BB609Fa63C81A2be19d873717870",
-      "name": "Wrapped Fantom",
-      "symbol": "WFTM",
+      "name": "Fantom Token",
+      "symbol": "FTM",
       "logoURI": "https://etherscan.io/token/images/fantomtoken_32.png",
       "chainId": 1,
       "decimals": 18
@@ -2311,7 +2319,7 @@
     },
     {
       "address": "0x4FbB350052Bca5417566f188eB2EBCE5b19BC964",
-      "name": "RigoBlock",
+      "name": "Rigo Token",
       "symbol": "GRG",
       "logoURI": "https://etherscan.io/token/images/rigotoken_28.png",
       "chainId": 1,
@@ -2335,7 +2343,7 @@
     },
     {
       "address": "0x4a615bB7166210CCe20E6642a6f8Fb5d4D044496",
-      "name": "NAOS Finance",
+      "name": "NaosToken",
       "symbol": "NAOS",
       "logoURI": "https://etherscan.io/token/images/naostoken_32.png?v=2",
       "chainId": 1,
@@ -2367,7 +2375,7 @@
     },
     {
       "address": "0x4c11249814f11b9346808179Cf06e71ac328c1b5",
-      "name": "Oraichain",
+      "name": "Oraichain Token",
       "symbol": "ORAI",
       "logoURI": "https://etherscan.io/token/images/oraichaintoken_32.png",
       "chainId": 1,
@@ -2399,7 +2407,7 @@
     },
     {
       "address": "0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42",
-      "name": "MUX Protocol",
+      "name": "MCDEX Token",
       "symbol": "MCB",
       "logoURI": "https://etherscan.io/token/images/mcdextoken_32.png",
       "chainId": 1,
@@ -2407,7 +2415,7 @@
     },
     {
       "address": "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
-      "name": "Convex Finance",
+      "name": "Convex Token",
       "symbol": "CVX",
       "logoURI": "https://etherscan.io/token/images/convex_32.png",
       "chainId": 1,
@@ -2455,8 +2463,8 @@
     },
     {
       "address": "0x50327c6c5a14DCaDE707ABad2E27eB517df87AB5",
-      "name": "Wrapped Tron",
-      "symbol": "WTRX",
+      "name": "TRON",
+      "symbol": "TRX",
       "logoURI": "https://etherscan.io/token/images/trontrx_32.png",
       "chainId": 1,
       "decimals": 6
@@ -2494,16 +2502,8 @@
       "decimals": 8
     },
     {
-      "address": "0x5136C98A80811C3f46bDda8B5c4555CFd9f812F0",
-      "name": "indaHash",
-      "symbol": "IDH",
-      "logoURI": "https://etherscan.io/token/images/indahash_28.png",
-      "chainId": 1,
-      "decimals": 6
-    },
-    {
       "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
-      "name": "Chainlink",
+      "name": "Chain Link",
       "symbol": "LINK",
       "logoURI": "https://etherscan.io/token/images/chainlinktoken_32.png?v=6",
       "chainId": 1,
@@ -2559,7 +2559,7 @@
     },
     {
       "address": "0x53C8395465A84955c95159814461466053DedEDE",
-      "name": "DeGate",
+      "name": "DeGate Token",
       "symbol": "DG",
       "logoURI": "https://etherscan.io/token/images/degate_32.png",
       "chainId": 1,
@@ -2583,7 +2583,7 @@
     },
     {
       "address": "0x55296f69f40Ea6d20E478533C15A6B08B654E758",
-      "name": "XYO Network",
+      "name": "XY Oracle",
       "symbol": "XYO",
       "logoURI": "https://etherscan.io/token/images/xyoracle_28_2.png",
       "chainId": 1,
@@ -2639,7 +2639,7 @@
     },
     {
       "address": "0x56d811088235F11C8920698a204A5010a788f4b3",
-      "name": "bZx Protocol",
+      "name": "bZx Protocol Token",
       "symbol": "BZRX",
       "logoURI": "https://etherscan.io/token/images/bzxprotocoltoken_32.png",
       "chainId": 1,
@@ -2655,7 +2655,7 @@
     },
     {
       "address": "0x579CEa1889991f68aCc35Ff5c3dd0621fF29b0C9",
-      "name": "IQ",
+      "name": "Everipedia IQ",
       "symbol": "IQ",
       "logoURI": "https://etherscan.io/token/images/everipedianew_32.png",
       "chainId": 1,
@@ -2663,15 +2663,15 @@
     },
     {
       "address": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
-      "name": "sUSD",
-      "symbol": "SUSD",
+      "name": "Synth sUSD",
+      "symbol": "sUSD",
       "logoURI": "https://etherscan.io/token/images/SynthetixsUSD_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x57B946008913B82E4dF85f501cbAeD910e58D26C",
-      "name": "Marlin",
+      "name": "Marlin POND",
       "symbol": "POND",
       "logoURI": "https://etherscan.io/token/images/marlinpond_32.png",
       "chainId": 1,
@@ -2719,7 +2719,7 @@
     },
     {
       "address": "0x58b6A8A3302369DAEc383334672404Ee733aB239",
-      "name": "Livepeer",
+      "name": "Livepeer Token",
       "symbol": "LPT",
       "logoURI": "https://etherscan.io/token/images/livepeer_28.png?v=8",
       "chainId": 1,
@@ -2751,7 +2751,7 @@
     },
     {
       "address": "0x5B7533812759B45C2B44C19e320ba2cD2681b542",
-      "name": "SingularityNET",
+      "name": "SingularityNET Token",
       "symbol": "AGIX",
       "logoURI": "https://etherscan.io/token/images/singularitynet_28.png",
       "chainId": 1,
@@ -2759,7 +2759,7 @@
     },
     {
       "address": "0x5CAc718A3AE330d361e39244BF9e67AB17514CE8",
-      "name": "Cosplay Token",
+      "name": "CosplayToken",
       "symbol": "COT",
       "logoURI": "https://etherscan.io/token/images/curecos-cot_32.png",
       "chainId": 1,
@@ -2792,7 +2792,7 @@
     {
       "address": "0x5E8422345238F34275888049021821E8E08CAa1f",
       "name": "Frax Ether",
-      "symbol": "FRXETH",
+      "symbol": "frxETH",
       "logoURI": "https://etherscan.io/token/images/fraxethcanonical2_32.png",
       "chainId": 1,
       "decimals": 18
@@ -2839,7 +2839,7 @@
     },
     {
       "address": "0x5d285F735998F36631F678FF41fb56A10A4d0429",
-      "name": "MixMarvel",
+      "name": "MixMarvel Token",
       "symbol": "MIX",
       "logoURI": "https://etherscan.io/token/images/mixmarvel_32.png",
       "chainId": 1,
@@ -2887,15 +2887,15 @@
     },
     {
       "address": "0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb",
-      "name": "sETH",
-      "symbol": "SETH",
+      "name": "Synth sETH",
+      "symbol": "sETH",
       "logoURI": "https://etherscan.io/token/images/SynthetixsETH_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x607F4C5BB672230e8672085532f7e901544a7375",
-      "name": "iExec RLC",
+      "name": "RLC",
       "symbol": "RLC",
       "logoURI": "https://etherscan.io/token/images/iexec_28.png",
       "chainId": 1,
@@ -2911,7 +2911,7 @@
     },
     {
       "address": "0x60bE1e1fE41c1370ADaF5d8e66f07Cf1C2Df2268",
-      "name": "Perion",
+      "name": "Perion Credits",
       "symbol": "PERC",
       "logoURI": "https://etherscan.io/token/images/perionperctoken_32.png?v=2",
       "chainId": 1,
@@ -2927,7 +2927,7 @@
     },
     {
       "address": "0x6123B0049F904d730dB3C36a31167D9d4121fA6B",
-      "name": "Ribbon Finance",
+      "name": "Ribbon",
       "symbol": "RBN",
       "logoURI": "https://etherscan.io/token/images/ribbon_32.png",
       "chainId": 1,
@@ -3023,8 +3023,8 @@
     },
     {
       "address": "0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414",
-      "name": "e-Radix",
-      "symbol": "EXRD",
+      "name": "E-RADIX",
+      "symbol": "eXRD",
       "logoURI": "https://etherscan.io/token/images/eradix_32.png?v=9876239786679842687243",
       "chainId": 1,
       "decimals": 18
@@ -3039,7 +3039,7 @@
     },
     {
       "address": "0x64aa3364F17a4D01c6f1751Fd97C2BD3D7e7f1D5",
-      "name": "Olympus",
+      "name": "Olympus v2 NEW",
       "symbol": "OHM",
       "logoURI": "https://etherscan.io/token/images/olympusdao2_32.png",
       "chainId": 1,
@@ -3055,7 +3055,7 @@
     },
     {
       "address": "0x656C00e1BcD96f256F224AD9112FF426Ef053733",
-      "name": "Efinity",
+      "name": "Efinity Token",
       "symbol": "EFI",
       "logoURI": "https://etherscan.io/token/images/efinitytoken_32.png",
       "chainId": 1,
@@ -3063,7 +3063,7 @@
     },
     {
       "address": "0x66a0f676479Cee1d7373f3DC2e2952778BfF5bd6",
-      "name": "Wise",
+      "name": "Wise Token",
       "symbol": "WISE",
       "logoURI": "https://etherscan.io/token/images/wisetoken_32.png",
       "chainId": 1,
@@ -3087,7 +3087,7 @@
     },
     {
       "address": "0x68037790A0229e9Ce6EaA8A99ea92964106C4703",
-      "name": "Parallel",
+      "name": "PAR Stablecoin",
       "symbol": "PAR",
       "logoURI": "https://etherscan.io/token/images/parstablecoin_32.png",
       "chainId": 1,
@@ -3120,7 +3120,7 @@
     {
       "address": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
       "name": "Tether Gold",
-      "symbol": "XAUT",
+      "symbol": "XAUt",
       "logoURI": "https://etherscan.io/token/images/tethergoldnew_32.png",
       "chainId": 1,
       "decimals": 6
@@ -3167,7 +3167,7 @@
     },
     {
       "address": "0x69fa0feE221AD11012BAb0FdB45d444D3D2Ce71c",
-      "name": "Thorstarter",
+      "name": "XRUNE Token",
       "symbol": "XRUNE",
       "logoURI": "https://etherscan.io/token/images/xrunetoken_32.png",
       "chainId": 1,
@@ -3183,7 +3183,7 @@
     },
     {
       "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://etherscan.io/token/images/MCDDai_32.png",
       "chainId": 1,
@@ -3191,7 +3191,7 @@
     },
     {
       "address": "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
-      "name": "Sushi",
+      "name": "SushiSwap",
       "symbol": "SUSHI",
       "logoURI": "https://etherscan.io/token/images/sushitoken_32.png",
       "chainId": 1,
@@ -3215,7 +3215,7 @@
     },
     {
       "address": "0x6DEA81C8171D0bA574754EF6F8b412F2Ed88c54D",
-      "name": "Liquity",
+      "name": "LQTY",
       "symbol": "LQTY",
       "logoURI": "https://etherscan.io/token/images/liquity_32.png",
       "chainId": 1,
@@ -3223,7 +3223,7 @@
     },
     {
       "address": "0x6De037ef9aD2725EB40118Bb1702EBb27e4Aeb24",
-      "name": "Render",
+      "name": "Render Token",
       "symbol": "RNDR",
       "logoURI": "https://etherscan.io/token/images/Render2_32.png",
       "chainId": 1,
@@ -3295,7 +3295,7 @@
     },
     {
       "address": "0x6c6EE5e31d828De241282B9606C8e98Ea48526E2",
-      "name": "Holo",
+      "name": "HoloToken",
       "symbol": "HOT",
       "logoURI": "https://etherscan.io/token/images/holo_28.png",
       "chainId": 1,
@@ -3327,7 +3327,7 @@
     },
     {
       "address": "0x6f259637dcD74C767781E37Bc6133cd6A68aa161",
-      "name": "Huobi",
+      "name": "HuobiToken",
       "symbol": "HT",
       "logoURI": "https://etherscan.io/token/images/huobi_28.png",
       "chainId": 1,
@@ -3343,15 +3343,15 @@
     },
     {
       "address": "0x6f80310CA7F2C654691D1383149Fa1A57d8AB1f8",
-      "name": "Silo Finance",
-      "symbol": "SILO",
+      "name": "Silo Governance Token",
+      "symbol": "Silo",
       "logoURI": "https://etherscan.io/token/images/silofinance_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x6fB3e0A217407EFFf7Ca062D46c26E5d60a14d69",
-      "name": "IoTeX",
+      "name": "IoTeX Network",
       "symbol": "IOTX",
       "logoURI": "https://etherscan.io/token/images/iotex_28.png",
       "chainId": 1,
@@ -3359,7 +3359,7 @@
     },
     {
       "address": "0x6fC13EACE26590B80cCCAB1ba5d51890577D83B2",
-      "name": "Umbrella Network",
+      "name": "Umbrella",
       "symbol": "UMB",
       "logoURI": "https://etherscan.io/token/images/umbrella_32.png",
       "chainId": 1,
@@ -3479,7 +3479,7 @@
     },
     {
       "address": "0x761D38e5ddf6ccf6Cf7c55759d5210750B5D60F3",
-      "name": "Dogelon Mars",
+      "name": "Dogelon",
       "symbol": "ELON",
       "logoURI": "https://etherscan.io/token/images/dogelon_32.png",
       "chainId": 1,
@@ -3511,7 +3511,7 @@
     },
     {
       "address": "0x77777FeDdddFfC19Ff86DB637967013e6C6A116C",
-      "name": "Tornado Cash",
+      "name": "TORN Token",
       "symbol": "TORN",
       "logoURI": "https://etherscan.io/token/images/torn_32.png",
       "chainId": 1,
@@ -3535,7 +3535,7 @@
     },
     {
       "address": "0x7815bDa662050D84718B988735218CFfd32f75ea",
-      "name": "Yel.Finance",
+      "name": "YEL Token",
       "symbol": "YEL",
       "logoURI": "https://etherscan.io/token/images/yelfinance_32.png",
       "chainId": 1,
@@ -3567,7 +3567,7 @@
     },
     {
       "address": "0x798D1bE841a82a273720CE31c822C61a67a601C3",
-      "name": "DIGG",
+      "name": "Digg",
       "symbol": "DIGG",
       "logoURI": "https://etherscan.io/token/images/badger-digg_32.png",
       "chainId": 1,
@@ -3616,7 +3616,7 @@
     {
       "address": "0x7C07F7aBe10CE8e33DC6C5aD68FE033085256A84",
       "name": "Interest Compounding ETH Index",
-      "symbol": "ICETH",
+      "symbol": "icETH",
       "logoURI": "https://etherscan.io/token/images/indexcoopiceth_32.png",
       "chainId": 1,
       "decimals": 18
@@ -3632,14 +3632,14 @@
     {
       "address": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
       "name": "Polygon",
-      "symbol": "MATIC",
+      "symbol": "WMATIC",
       "logoURI": "https://etherscan.io/token/images/polygonmatic_new_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x7D29A64504629172a429e64183D6673b9dAcbFCe",
-      "name": "Vectorspace AI",
+      "name": "VectorspaceAI",
       "symbol": "VXV",
       "logoURI": "https://etherscan.io/token/images/Vectorspace_32.png",
       "chainId": 1,
@@ -3759,7 +3759,7 @@
     },
     {
       "address": "0x80fB784B7eD66730e8b1DBd9820aFD29931aab03",
-      "name": "Aave [OLD]",
+      "name": "EthLend",
       "symbol": "LEND",
       "logoURI": "https://etherscan.io/token/images/ethlend_28.png",
       "chainId": 1,
@@ -3783,7 +3783,7 @@
     },
     {
       "address": "0x81f8f0bb1cB2A06649E51913A151F0E7Ef6FA321",
-      "name": "VitaDAO",
+      "name": "VitaDAO Token",
       "symbol": "VITA",
       "logoURI": "https://etherscan.io/token/images/vitadao_32.png?=v4",
       "chainId": 1,
@@ -3791,7 +3791,7 @@
     },
     {
       "address": "0x8207c1FfC5B6804F6024322CcF34F29c3541Ae26",
-      "name": "Origin Protocol",
+      "name": "OriginToken",
       "symbol": "OGN",
       "logoURI": "https://etherscan.io/token/images/origintoken_28.png",
       "chainId": 1,
@@ -3831,7 +3831,7 @@
     },
     {
       "address": "0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
-      "name": "Unibright",
+      "name": "UniBright",
       "symbol": "UBT",
       "logoURI": "https://etherscan.io/token/images/unibright_28.png",
       "chainId": 1,
@@ -3879,7 +3879,7 @@
     },
     {
       "address": "0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC",
-      "name": "Keep Network",
+      "name": "KEEP Token",
       "symbol": "KEEP",
       "logoURI": "https://etherscan.io/token/images/keepnetwork_32.png",
       "chainId": 1,
@@ -3927,8 +3927,8 @@
     },
     {
       "address": "0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272",
-      "name": "xSUSHI",
-      "symbol": "XSUSHI",
+      "name": "SushiBar",
+      "symbol": "xSUSHI",
       "logoURI": "https://etherscan.io/token/images/sushibar_32.png",
       "chainId": 1,
       "decimals": 18
@@ -3967,7 +3967,7 @@
     },
     {
       "address": "0x888888888889C00c67689029D7856AAC1065eC11",
-      "name": "Opium",
+      "name": "Opium Governance Token",
       "symbol": "OPIUM",
       "logoURI": "https://etherscan.io/token/images/opium_32.png",
       "chainId": 1,
@@ -3983,7 +3983,7 @@
     },
     {
       "address": "0x8947da500Eb47F82df21143D0C01A29862a8C3c5",
-      "name": "Thales",
+      "name": "Optimistic Thales Token",
       "symbol": "THALES",
       "logoURI": "https://etherscan.io/token/images/optimisticthalesmarket_32.png",
       "chainId": 1,
@@ -3999,7 +3999,7 @@
     },
     {
       "address": "0x89Ab32156e46F46D02ade3FEcbe5Fc4243B9AAeD",
-      "name": "pNetwork",
+      "name": "pNetwork Token",
       "symbol": "PNT",
       "logoURI": "https://etherscan.io/token/images/pnetworktoken_32.png",
       "chainId": 1,
@@ -4015,7 +4015,7 @@
     },
     {
       "address": "0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359",
-      "name": "Sai",
+      "name": "Sai Stablecoin",
       "symbol": "SAI",
       "logoURI": "https://etherscan.io/token/images/dai_stablecoin.png",
       "chainId": 1,
@@ -4047,7 +4047,7 @@
     },
     {
       "address": "0x8A9C67fee641579dEbA04928c4BC45F66e26343A",
-      "name": "Jarvis Reward",
+      "name": "Jarvis Reward Token",
       "symbol": "JRT",
       "logoURI": "https://etherscan.io/token/images/jarvis_28.png",
       "chainId": 1,
@@ -4071,7 +4071,7 @@
     },
     {
       "address": "0x8B39B70E39Aa811b69365398e0aACe9bee238AEb",
-      "name": "Red Kite",
+      "name": "PolkaFoundry",
       "symbol": "PKF",
       "logoURI": "https://etherscan.io/token/images/polkafoundry_32.png",
       "chainId": 1,
@@ -4079,7 +4079,7 @@
     },
     {
       "address": "0x8C543AED163909142695f2d2aCd0D55791a9Edb9",
-      "name": "Velas",
+      "name": "VLX",
       "symbol": "VLX",
       "logoURI": "https://etherscan.io/token/images/velas_32.png",
       "chainId": 1,
@@ -4095,7 +4095,7 @@
     },
     {
       "address": "0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
-      "name": "SXP",
+      "name": "Swipe",
       "symbol": "SXP",
       "logoURI": "https://etherscan.io/token/images/swipe_32.png",
       "chainId": 1,
@@ -4111,8 +4111,8 @@
     },
     {
       "address": "0x8D6CeBD76f18E1558D4DB88138e2DeFB3909fAD6",
-      "name": "MAI",
-      "symbol": "MIMATIC",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "logoURI": "https://etherscan.io/token/images/mai_32.png",
       "chainId": 1,
       "decimals": 18
@@ -4135,8 +4135,8 @@
     },
     {
       "address": "0x8E870D67F660D95d5be530380D0eC0bd388289E1",
-      "name": "Pax Dollar",
-      "symbol": "USDP",
+      "name": "Paxos Standard",
+      "symbol": "PAX",
       "logoURI": "https://etherscan.io/token/images/paxos-usdp_32.png",
       "chainId": 1,
       "decimals": 18
@@ -4159,7 +4159,7 @@
     },
     {
       "address": "0x8Fc8f8269ebca376D046Ce292dC7eaC40c8D358A",
-      "name": "DeFiChain",
+      "name": "DeFiChain Token",
       "symbol": "DFI",
       "logoURI": "https://etherscan.io/token/images/defichain_32.png",
       "chainId": 1,
@@ -4167,7 +4167,7 @@
     },
     {
       "address": "0x8a854288a5976036A725879164Ca3e91d30c6A1B",
-      "name": "GET Protocol",
+      "name": "Guaranteed Entrance Token",
       "symbol": "GET",
       "logoURI": "https://etherscan.io/token/images/gutstickets.png",
       "chainId": 1,
@@ -4215,7 +4215,7 @@
     },
     {
       "address": "0x8dBF9A4c99580fC7Fd4024ee08f3994420035727",
-      "name": "ECO",
+      "name": "Eco",
       "symbol": "ECO",
       "logoURI": "https://etherscan.io/token/images/ecoorg_32.png",
       "chainId": 1,
@@ -4224,7 +4224,7 @@
     {
       "address": "0x8f693ca8D21b157107184d29D398A8D082b38b76",
       "name": "Streamr",
-      "symbol": "DATA",
+      "symbol": "DATA/Streamr",
       "logoURI": "https://etherscan.io/token/images/streamr_32.png",
       "chainId": 1,
       "decimals": 18
@@ -4239,7 +4239,7 @@
     },
     {
       "address": "0x9040e237C3bF18347bb00957Dc22167D0f2b999d",
-      "name": "Standard Protocol",
+      "name": "Standard",
       "symbol": "STND",
       "logoURI": "https://etherscan.io/token/images/standard_32.png?v=3",
       "chainId": 1,
@@ -4311,7 +4311,7 @@
     },
     {
       "address": "0x93ED3FBe21207Ec2E8f2d3c3de6e058Cb73Bc04d",
-      "name": "Kleros",
+      "name": "Pinakion",
       "symbol": "PNK",
       "logoURI": "https://etherscan.io/token/images/kelros_28.png",
       "chainId": 1,
@@ -4319,7 +4319,7 @@
     },
     {
       "address": "0x940a2dB1B7008B6C776d4faaCa729d6d4A4AA551",
-      "name": "DUSK Network",
+      "name": "Dusk Network",
       "symbol": "DUSK",
       "logoURI": "https://etherscan.io/token/images/dusknetwork_28.png?v=2",
       "chainId": 1,
@@ -4383,7 +4383,7 @@
     },
     {
       "address": "0x956F47F50A910163D8BF957Cf5846D573E7f87CA",
-      "name": "Fei USD",
+      "name": "Fei",
       "symbol": "FEI",
       "logoURI": "https://etherscan.io/token/images/feiprotocol_32.png",
       "chainId": 1,
@@ -4391,7 +4391,7 @@
     },
     {
       "address": "0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE",
-      "name": "Shiba Inu",
+      "name": "SHIBA INU",
       "symbol": "SHIB",
       "logoURI": "https://etherscan.io/token/images/shibatoken_32.png",
       "chainId": 1,
@@ -4423,7 +4423,7 @@
     },
     {
       "address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
-      "name": "Ocean Protocol",
+      "name": "Ocean Token",
       "symbol": "OCEAN",
       "logoURI": "https://etherscan.io/token/images/oceantoken_28.png?v=2",
       "chainId": 1,
@@ -4448,14 +4448,14 @@
     {
       "address": "0x96E61422b6A9bA0e068B6c5ADd4fFaBC6a4aae27",
       "name": "Iron Bank EUR",
-      "symbol": "IBEUR",
+      "symbol": "ibEUR",
       "logoURI": "https://etherscan.io/token/images/ironbankeur_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0x970B9bB2C0444F5E81e9d0eFb84C8ccdcdcAf84d",
-      "name": "Fuse",
+      "name": "Fuse Token",
       "symbol": "FUSE",
       "logoURI": "https://etherscan.io/token/images/fusenetwork_32.png",
       "chainId": 1,
@@ -4487,7 +4487,7 @@
     },
     {
       "address": "0x993864E43Caa7F7F12953AD6fEb1d1Ca635B875F",
-      "name": "SingularityDAO",
+      "name": "Singularity Dao",
       "symbol": "SDAO",
       "logoURI": "https://etherscan.io/token/images/singularitydao_32.png?v=2",
       "chainId": 1,
@@ -4535,7 +4535,7 @@
     },
     {
       "address": "0x99fE3B1391503A1bC1788051347A1324bff41452",
-      "name": "SX Network",
+      "name": "SportX",
       "symbol": "SX",
       "logoURI": "https://etherscan.io/token/images/sportx_32.png?v=5",
       "chainId": 1,
@@ -4543,7 +4543,7 @@
     },
     {
       "address": "0x9AAb071B4129B083B01cB5A0Cb513Ce7ecA26fa5",
-      "name": "Hunt",
+      "name": "HuntToken",
       "symbol": "HUNT",
       "logoURI": "https://etherscan.io/token/images/hunttoken_32.png",
       "chainId": 1,
@@ -4583,7 +4583,7 @@
     },
     {
       "address": "0x9D65fF81a3c488d585bBfb0Bfe3c7707c7917f54",
-      "name": "SSV Network",
+      "name": "SSV Token",
       "symbol": "SSV",
       "logoURI": "https://etherscan.io/token/images/ssvnetwork_32.png",
       "chainId": 1,
@@ -4599,8 +4599,8 @@
     },
     {
       "address": "0x9E32b13ce7f2E80A01932B42553652E053D6ed8e",
-      "name": "Metis",
-      "symbol": "METIS",
+      "name": "Metis Token",
+      "symbol": "Metis",
       "logoURI": "https://etherscan.io/token/images/metisdao_32.png",
       "chainId": 1,
       "decimals": 18
@@ -4703,7 +4703,7 @@
     },
     {
       "address": "0x9fa69536d1cda4A04cFB50688294de75B505a9aE",
-      "name": "DeRace",
+      "name": "DeRace Token",
       "symbol": "DERC",
       "logoURI": "https://etherscan.io/token/images/derace2_32.png",
       "chainId": 1,
@@ -4719,7 +4719,7 @@
     },
     {
       "address": "0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b",
-      "name": "Cronos",
+      "name": "Crypto.com Coin",
       "symbol": "CRO",
       "logoURI": "https://etherscan.io/token/images/cro_32.png",
       "chainId": 1,
@@ -4767,7 +4767,7 @@
     },
     {
       "address": "0xA487bF43cF3b10dffc97A9A744cbB7036965d3b9",
-      "name": "Deri Protocol",
+      "name": "Deri Token",
       "symbol": "DERI",
       "logoURI": "https://etherscan.io/token/images/deriprotocol2_32.png",
       "chainId": 1,
@@ -4806,6 +4806,14 @@
       "decimals": 9
     },
     {
+      "address": "0xA823E6722006afe99E91c30FF5295052fe6b8E32",
+      "name": "Neumark",
+      "symbol": "NEU",
+      "logoURI": "https://etherscan.io/token/images/neufund28.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xA849EaaE994fb86Afa73382e9Bd88c2B6b18Dc71",
       "name": "MVL",
       "symbol": "MVL",
@@ -4815,7 +4823,7 @@
     },
     {
       "address": "0xA9B1Eb5908CfC3cdf91F9B8B3a74108598009096",
-      "name": "Bounce",
+      "name": "Bounce Token",
       "symbol": "AUCTION",
       "logoURI": "https://etherscan.io/token/images/bounce_32.png",
       "chainId": 1,
@@ -4839,7 +4847,7 @@
     },
     {
       "address": "0xAC51066d7bEC65Dc4589368da368b212745d63E8",
-      "name": "My Neighbor Alice",
+      "name": "ALICE",
       "symbol": "ALICE",
       "logoURI": "https://etherscan.io/token/images/alicetoken_32.png",
       "chainId": 1,
@@ -4887,7 +4895,7 @@
     },
     {
       "address": "0xAaEf88cEa01475125522e117BFe45cF32044E238",
-      "name": "GuildFi",
+      "name": "GuildFi Token",
       "symbol": "GF",
       "logoURI": "https://etherscan.io/token/images/guildfi_32.png",
       "chainId": 1,
@@ -4903,7 +4911,7 @@
     },
     {
       "address": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
-      "name": "Stargate Finance",
+      "name": "StargateToken",
       "symbol": "STG",
       "logoURI": "https://etherscan.io/token/images/stargate_32.png",
       "chainId": 1,
@@ -4983,7 +4991,7 @@
     },
     {
       "address": "0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
-      "name": "NEXO",
+      "name": "Nexo",
       "symbol": "NEXO",
       "logoURI": "https://etherscan.io/token/images/nexo_32_2.png",
       "chainId": 1,
@@ -5007,8 +5015,8 @@
     },
     {
       "address": "0xB6eD7644C69416d67B522e20bC294A9a9B405B31",
-      "name": "0xBitcoin",
-      "symbol": "0XBTC",
+      "name": "0xBitcoin Token",
+      "symbol": "0xBTC",
       "logoURI": "https://etherscan.io/token/images/0xbitcoin_28_1.png",
       "chainId": 1,
       "decimals": 8
@@ -5079,7 +5087,7 @@
     },
     {
       "address": "0xBA50933C268F567BDC86E1aC131BE072C6B0b71a",
-      "name": "ARPA",
+      "name": "ARPA Token",
       "symbol": "ARPA",
       "logoURI": "https://etherscan.io/token/images/arpa_32.png",
       "chainId": 1,
@@ -5095,7 +5103,7 @@
     },
     {
       "address": "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD",
-      "name": "Loopring",
+      "name": "LoopringCoin V2",
       "symbol": "LRC",
       "logoURI": "https://etherscan.io/token/images/lrc_32.png",
       "chainId": 1,
@@ -5103,7 +5111,7 @@
     },
     {
       "address": "0xBBc2AE13b23d715c30720F079fcd9B4a74093505",
-      "name": "Ethernity Chain",
+      "name": "@EthernityChain $ERN Token",
       "symbol": "ERN",
       "logoURI": "https://etherscan.io/token/images/ethernity_32.png?v=2",
       "chainId": 1,
@@ -5174,6 +5182,14 @@
       "decimals": 18
     },
     {
+      "address": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704",
+      "name": "Coinbase Wrapped Staked ETH",
+      "symbol": "cbETH",
+      "logoURI": "https://etherscan.io/token/images/cbeth_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xBeBdab6DA046Bc49ffBb61fbD7b33157Eb270D05",
       "name": "Shard Coin",
       "symbol": "SHARD",
@@ -5183,7 +5199,7 @@
     },
     {
       "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
-      "name": "Synthetix Network",
+      "name": "Synthetix Network Token",
       "symbol": "SNX",
       "logoURI": "https://etherscan.io/token/images/SynthetixSNX_32.png",
       "chainId": 1,
@@ -5191,19 +5207,11 @@
     },
     {
       "address": "0xC08512927D12348F6620a698105e1BAac6EcD911",
-      "name": "GYEN",
+      "name": "GMO JPY",
       "symbol": "GYEN",
       "logoURI": "https://etherscan.io/token/images/gmojpy_32.png",
       "chainId": 1,
       "decimals": 6
-    },
-    {
-      "address": "0xC0Eb85285d83217CD7c891702bcbC0FC401E2D9D",
-      "name": "Hiveterminal",
-      "symbol": "HVN",
-      "logoURI": "https://etherscan.io/token/images/hive_28.png",
-      "chainId": 1,
-      "decimals": 8
     },
     {
       "address": "0xC0F9bD5Fa5698B6505F643900FFA515Ea5dF54A9",
@@ -5215,7 +5223,7 @@
     },
     {
       "address": "0xC0c293ce456fF0ED870ADd98a0828Dd4d2903DBF",
-      "name": "Aura Finance",
+      "name": "Aura",
       "symbol": "AURA",
       "logoURI": "https://etherscan.io/token/images/aurafinance_32.png",
       "chainId": 1,
@@ -5255,7 +5263,7 @@
     },
     {
       "address": "0xC477D038d5420C6A9e0b031712f61c5120090de9",
-      "name": "Boson Protocol",
+      "name": "Boson Token",
       "symbol": "BOSON",
       "logoURI": "https://etherscan.io/token/images/bosonprotocol_32.png",
       "chainId": 1,
@@ -5351,7 +5359,7 @@
     },
     {
       "address": "0xCE3f08e664693ca792caCE4af1364D5e220827B2",
-      "name": "Saitama",
+      "name": "SAITAMA",
       "symbol": "SAITAMA",
       "logoURI": "https://etherscan.io/token/images/saitamainu2_32.png?=v1",
       "chainId": 1,
@@ -5439,7 +5447,7 @@
     },
     {
       "address": "0xD13c7342e1ef687C5ad21b27c2b65D772cAb5C8c",
-      "name": "Ultra",
+      "name": "Ultra Token",
       "symbol": "UOS",
       "logoURI": "https://etherscan.io/token/images/ultratoken_32.png",
       "chainId": 1,
@@ -5463,7 +5471,7 @@
     },
     {
       "address": "0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de",
-      "name": "Siren",
+      "name": "SIREN",
       "symbol": "SI",
       "logoURI": "https://etherscan.io/token/images/sirenmarkets_32.png",
       "chainId": 1,
@@ -5479,7 +5487,7 @@
     },
     {
       "address": "0xD291E7a03283640FDc51b121aC401383A46cC623",
-      "name": "Rari Governance",
+      "name": "Rari Governance Token",
       "symbol": "RGT",
       "logoURI": "https://etherscan.io/token/images/RariGovernanceToken_32.png?v=2",
       "chainId": 1,
@@ -5495,7 +5503,7 @@
     },
     {
       "address": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f",
-      "name": "Rocket Pool",
+      "name": "Rocket Pool Protocol",
       "symbol": "RPL",
       "logoURI": "https://etherscan.io/token/images/Rocketpool_32.png",
       "chainId": 1,
@@ -5503,9 +5511,17 @@
     },
     {
       "address": "0xD417144312DbF50465b1C641d016962017Ef6240",
-      "name": "Covalent",
+      "name": "Covalent Query Token",
       "symbol": "CQT",
       "logoURI": "https://etherscan.io/token/images/covalentquerytoken_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xD49ff13661451313cA1553fd6954BD1d9b6E02b9",
+      "name": "Electrify.Asia",
+      "symbol": "ELEC",
+      "logoURI": "https://etherscan.io/token/images/electrify_28.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5591,7 +5607,7 @@
     },
     {
       "address": "0xDDB3422497E61e13543BeA06989C0789117555c5",
-      "name": "COTI",
+      "name": "COTI Token",
       "symbol": "COTI",
       "logoURI": "https://etherscan.io/token/images/cotitoken_32.png",
       "chainId": 1,
@@ -5599,7 +5615,7 @@
     },
     {
       "address": "0xDDdddd4301A082e62E84e43F474f044423921918",
-      "name": "Rhino.fi",
+      "name": "DeversiFi Token",
       "symbol": "DVF",
       "logoURI": "https://etherscan.io/token/images/rhinofi_32.png",
       "chainId": 1,
@@ -5607,7 +5623,7 @@
     },
     {
       "address": "0xDE5ed76E7c05eC5e4572CfC88d1ACEA165109E44",
-      "name": "DEUS Finance",
+      "name": "DEUS",
       "symbol": "DEUS",
       "logoURI": "https://etherscan.io/token/images/deusfinance_new_32.png",
       "chainId": 1,
@@ -5615,7 +5631,7 @@
     },
     {
       "address": "0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB",
-      "name": "CoW Protocol",
+      "name": "CoW Protocol Token",
       "symbol": "COW",
       "logoURI": "https://etherscan.io/token/images/cowprotocoltoken_new_32.png",
       "chainId": 1,
@@ -5658,14 +5674,6 @@
       "name": "STP",
       "symbol": "STPT",
       "logoURI": "https://etherscan.io/token/images/stpt_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xDf49C9f599A0A9049D97CFF34D0C30E468987389",
-      "name": "SaTT",
-      "symbol": "SATT",
-      "logoURI": "https://etherscan.io/token/images/sattoken_28.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5815,7 +5823,7 @@
     },
     {
       "address": "0xE80C0cd204D654CEbe8dd64A4857cAb6Be8345a3",
-      "name": "JPEG'd",
+      "name": "JPEGd Governance Token",
       "symbol": "JPEG",
       "logoURI": "https://etherscan.io/token/images/jpeg_32.png",
       "chainId": 1,
@@ -5839,8 +5847,8 @@
     },
     {
       "address": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
-      "name": "Ankr Staked ETH",
-      "symbol": "ANKRETH",
+      "name": "ankrETH",
+      "symbol": "aETHc",
       "logoURI": "https://etherscan.io/token/images/ankraetc_32.png",
       "chainId": 1,
       "decimals": 18
@@ -5888,14 +5896,14 @@
     {
       "address": "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D",
       "name": "renBTC",
-      "symbol": "RENBTC",
+      "symbol": "renBTC",
       "logoURI": "https://etherscan.io/token/images/renbtc_32.png?=v1",
       "chainId": 1,
       "decimals": 8
     },
     {
       "address": "0xEBd9D99A3982d547C5Bb4DB7E3b1F9F14b67Eb83",
-      "name": "Everest",
+      "name": "Everest ID",
       "symbol": "ID",
       "logoURI": "https://etherscan.io/token/images/everest_32.png",
       "chainId": 1,
@@ -6007,7 +6015,7 @@
     },
     {
       "address": "0xF411903cbC70a74d22900a5DE66A2dda66507255",
-      "name": "Verasity",
+      "name": "VERA",
       "symbol": "VRA",
       "logoURI": "https://etherscan.io/token/images/verasity_32.png",
       "chainId": 1,
@@ -6023,7 +6031,7 @@
     },
     {
       "address": "0xF433089366899D83a9f26A773D59ec7eCF30355e",
-      "name": "Metal DAO",
+      "name": "Metal",
       "symbol": "MTL",
       "logoURI": "https://etherscan.io/token/images/metal_32.png",
       "chainId": 1,
@@ -6031,7 +6039,7 @@
     },
     {
       "address": "0xF4d861575ecC9493420A3f5a14F85B13f0b50EB3",
-      "name": "Fractal",
+      "name": "Fractal Protocol Token",
       "symbol": "FCL",
       "logoURI": "https://etherscan.io/token/images/fractalprotocoltoken_32.png",
       "chainId": 1,
@@ -6055,7 +6063,7 @@
     },
     {
       "address": "0xF5581dFeFD8Fb0e4aeC526bE659CFaB1f8c781dA",
-      "name": "HOPR",
+      "name": "HOPR Token",
       "symbol": "HOPR",
       "logoURI": "https://etherscan.io/token/images/hoprtoken_32.png",
       "chainId": 1,
@@ -6063,7 +6071,7 @@
     },
     {
       "address": "0xF57e7e7C23978C3cAEC3C3548E3D615c346e79fF",
-      "name": "ImmutableX",
+      "name": "Immutable X",
       "symbol": "IMX",
       "logoURI": "https://etherscan.io/token/images/immutable_32.png",
       "chainId": 1,
@@ -6071,7 +6079,7 @@
     },
     {
       "address": "0xF5cFBC74057C610c8EF151A439252680AC68c6DC",
-      "name": "Octopus Network",
+      "name": "Octopus Network Token",
       "symbol": "OCT",
       "logoURI": "https://etherscan.io/token/images/octopusnetwork_32.png",
       "chainId": 1,
@@ -6079,7 +6087,7 @@
     },
     {
       "address": "0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c",
-      "name": "Enjin Coin",
+      "name": "EnjinCoin",
       "symbol": "ENJ",
       "logoURI": "https://etherscan.io/token/images/enjin_28_2.png",
       "chainId": 1,
@@ -6143,9 +6151,17 @@
     },
     {
       "address": "0xFE3E6a25e6b192A42a44ecDDCd13796471735ACf",
-      "name": "Reef",
+      "name": "Reef.finance",
       "symbol": "REEF",
       "logoURI": "https://etherscan.io/token/images/reeffinance_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xFE76BE9cEC465ed3219a9972c21655D57d21aec6",
+      "name": "PalletOneToken",
+      "symbol": "PTN",
+      "logoURI": "https://etherscan.io/token/images/pallet_28.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6159,7 +6175,7 @@
     },
     {
       "address": "0xFb782396c9b20E564A64896181c7AC8d8979d5F4",
-      "name": "Divergence Protocol",
+      "name": "DivergenceProtocol",
       "symbol": "DIVER",
       "logoURI": "https://etherscan.io/token/images/divergencefi_32.png",
       "chainId": 1,
@@ -6215,8 +6231,8 @@
     },
     {
       "address": "0xFe2e637202056d30016725477c5da089Ab0A043A",
-      "name": "sETH2",
-      "symbol": "SETH2",
+      "name": "StakeWise Staked ETH2",
+      "symbol": "sETH2",
       "logoURI": "https://etherscan.io/token/images/stakewisestakedeth2_32.png",
       "chainId": 1,
       "decimals": 18
@@ -6255,7 +6271,7 @@
     },
     {
       "address": "0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
-      "name": "Stella",
+      "name": "Alpha Finance",
       "symbol": "ALPHA",
       "logoURI": "https://etherscan.io/token/images/alphatoken_32.png",
       "chainId": 1,
@@ -6279,7 +6295,7 @@
     },
     {
       "address": "0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2",
-      "name": "mStable Governance: Meta",
+      "name": "Meta",
       "symbol": "MTA",
       "logoURI": "https://etherscan.io/token/images/meta_32.png",
       "chainId": 1,
@@ -6290,14 +6306,6 @@
       "name": "Creditcoin",
       "symbol": "CTC",
       "logoURI": "https://etherscan.io/token/images/gluwacreditcoin2_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xa41161AF8D4Ee421ba5fED4328F2B12034796A21",
-      "name": "Artify",
-      "symbol": "AFY",
-      "logoURI": "https://etherscan.io/token/images/artify_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6327,7 +6335,7 @@
     },
     {
       "address": "0xa5f2211B9b8170F694421f2046281775E8468044",
-      "name": "THORSwap",
+      "name": "THORSwap Token",
       "symbol": "THOR",
       "logoURI": "https://etherscan.io/token/images/thorswap_32.png",
       "chainId": 1,
@@ -6351,7 +6359,7 @@
     },
     {
       "address": "0xaA7a9CA87d3694B5755f213B5D04094b8d0F0A6F",
-      "name": "OriginTrail",
+      "name": "Trace",
       "symbol": "TRAC",
       "logoURI": "https://etherscan.io/token/images/origintrail_28.png",
       "chainId": 1,
@@ -6383,7 +6391,7 @@
     },
     {
       "address": "0xaDB2437e6F65682B85F814fBc12FeC0508A7B1D0",
-      "name": "UNCX Network",
+      "name": "UniCrypt",
       "symbol": "UNCX",
       "logoURI": "https://etherscan.io/token/images/unicrypt2_32.png?v=40",
       "chainId": 1,
@@ -6399,7 +6407,7 @@
     },
     {
       "address": "0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d",
-      "name": "Celsius Network",
+      "name": "Celsius",
       "symbol": "CEL",
       "logoURI": "https://etherscan.io/token/images/celsiustoken1_28.png",
       "chainId": 1,
@@ -6416,14 +6424,14 @@
     {
       "address": "0xac3E018457B222d93114458476f3E3416Abbe38F",
       "name": "Staked Frax Ether",
-      "symbol": "SFRXETH",
+      "symbol": "sfrxETH",
       "logoURI": "https://etherscan.io/token/images/sfrxeth2_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0xad32A8e6220741182940c5aBF610bDE99E737b2D",
-      "name": "PieDAO DOUGH v2",
+      "name": "PieDAO",
       "symbol": "DOUGH",
       "logoURI": "https://etherscan.io/token/images/piedao_32.png",
       "chainId": 1,
@@ -6456,22 +6464,22 @@
     {
       "address": "0xae78736Cd615f374D3085123A210448E74Fc6393",
       "name": "Rocket Pool ETH",
-      "symbol": "RETH",
+      "symbol": "rETH",
       "logoURI": "https://etherscan.io/token/images/rocketpooleth_32.png?v=2",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
-      "name": "Lido Staked Ether",
-      "symbol": "STETH",
+      "name": "Liquid staked Ether 2.0",
+      "symbol": "stETH",
       "logoURI": "https://etherscan.io/token/images/lido-steth_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0xaea46A60368A7bD060eec7DF8CBa43b7EF41Ad85",
-      "name": "Fetch.ai",
+      "name": "Fetch",
       "symbol": "FET",
       "logoURI": "https://etherscan.io/token/images/fetch_32.png?v=2",
       "chainId": 1,
@@ -6487,7 +6495,7 @@
     },
     {
       "address": "0xb056c38f6b7Dc4064367403E26424CD2c60655e1",
-      "name": "CEEK Smart VR",
+      "name": "CEEK VR",
       "symbol": "CEEK",
       "logoURI": "https://etherscan.io/token/images/ceek_28.png",
       "chainId": 1,
@@ -6511,7 +6519,7 @@
     },
     {
       "address": "0xb26C4B3Ca601136Daf98593feAeff9E0CA702a8D",
-      "name": "Aladdin DAO",
+      "name": "Aladdin Token",
       "symbol": "ALD",
       "logoURI": "https://etherscan.io/token/images/aladdinclub_32.png",
       "chainId": 1,
@@ -6615,7 +6623,7 @@
     },
     {
       "address": "0xba9d4199faB4f26eFE3551D490E3821486f135Ba",
-      "name": "SwissBorg",
+      "name": "SwissBorg Token",
       "symbol": "CHSB",
       "logoURI": "https://etherscan.io/token/images/swissborg_28_3.png",
       "chainId": 1,
@@ -6631,7 +6639,7 @@
     },
     {
       "address": "0xbf2179859fc6D5BEE9Bf9158632Dc51678a4100e",
-      "name": "aelf",
+      "name": "Aelf",
       "symbol": "ELF",
       "logoURI": "https://etherscan.io/token/images/aelf_28.png",
       "chainId": 1,
@@ -6679,7 +6687,7 @@
     },
     {
       "address": "0xc5102fE9359FD9a28f877a67E36B0F050d81a3CC",
-      "name": "Hop Protocol",
+      "name": "Hop",
       "symbol": "HOP",
       "logoURI": "https://etherscan.io/token/images/hopv2_32.png",
       "chainId": 1,
@@ -6687,7 +6695,7 @@
     },
     {
       "address": "0xc55c2175E90A46602fD42e931f62B3Acc1A013Ca",
-      "name": "Mogul Productions",
+      "name": "Mogul Stars",
       "symbol": "STARS",
       "logoURI": "https://etherscan.io/token/images/mogulstars_32.png?=v1",
       "chainId": 1,
@@ -6696,7 +6704,7 @@
     {
       "address": "0xc5bDdf9843308380375a611c18B50Fb9341f502A",
       "name": "veCRV-DAO yVault",
-      "symbol": "YVE-CRVDAO",
+      "symbol": "yveCRV-DAO",
       "logoURI": "https://etherscan.io/token/images/vecrv_32.png",
       "chainId": 1,
       "decimals": 18
@@ -6735,7 +6743,7 @@
     },
     {
       "address": "0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d",
-      "name": "ShapeShift FOX",
+      "name": "FOX",
       "symbol": "FOX",
       "logoURI": "https://etherscan.io/token/images/fox_32.png",
       "chainId": 1,
@@ -6815,7 +6823,7 @@
     },
     {
       "address": "0xca1207647Ff814039530D7d35df0e1Dd2e91Fa84",
-      "name": "dHEDGE DAO",
+      "name": "dHEDGE DAO Token",
       "symbol": "DHT",
       "logoURI": "https://etherscan.io/token/images/dHedge_32.png",
       "chainId": 1,
@@ -6911,7 +6919,7 @@
     },
     {
       "address": "0xd084B83C305daFD76AE3E1b4E1F1fe2eCcCb3988",
-      "name": "The Virtua Kolect",
+      "name": "Terra Virtua Kolect",
       "symbol": "TVK",
       "logoURI": "https://etherscan.io/token/images/terravirtua_32.png",
       "chainId": 1,
@@ -6927,7 +6935,7 @@
     },
     {
       "address": "0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
-      "name": "OMG Network",
+      "name": "OmiseGO",
       "symbol": "OMG",
       "logoURI": "https://etherscan.io/token/images/OMGNetwork_32.png",
       "chainId": 1,
@@ -6967,7 +6975,7 @@
     },
     {
       "address": "0xd3E4Ba569045546D09CF021ECC5dFe42b1d7f6E4",
-      "name": "Morpheus Network",
+      "name": "Morpheus.Network",
       "symbol": "MNW",
       "logoURI": "https://etherscan.io/token/images/morpheus_32.png",
       "chainId": 1,
@@ -7031,7 +7039,7 @@
     },
     {
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "name": "Tether",
+      "name": "Tether USD",
       "symbol": "USDT",
       "logoURI": "https://etherscan.io/token/images/tethernew_32.png",
       "chainId": 1,
@@ -7039,7 +7047,7 @@
     },
     {
       "address": "0xdB25f211AB05b1c97D595516F45794528a807ad8",
-      "name": "STASIS EURO",
+      "name": "STASIS EURS",
       "symbol": "EURS",
       "logoURI": "https://etherscan.io/token/images/statiseuro_28.png",
       "chainId": 1,
@@ -7095,15 +7103,15 @@
     },
     {
       "address": "0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
-      "name": "Kyber Network Crystal Legacy",
-      "symbol": "KNCL",
+      "name": "KyberNetwork",
+      "symbol": "KNC",
       "logoURI": "https://etherscan.io/token/images/kyber-kncl_32.png",
       "chainId": 1,
       "decimals": 18
     },
     {
       "address": "0xde4EE8057785A7e8e800Db58F9784845A5C2Cbd6",
-      "name": "DeXe",
+      "name": "Dexe",
       "symbol": "DEXE",
       "logoURI": "https://etherscan.io/token/images/dexe_32.png",
       "chainId": 1,
@@ -7111,7 +7119,7 @@
     },
     {
       "address": "0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202",
-      "name": "Kyber Network Crystal",
+      "name": "Kyber Network Crystal v2",
       "symbol": "KNC",
       "logoURI": "https://etherscan.io/token/images/kybernetwork2_32.png",
       "chainId": 1,
@@ -7159,7 +7167,7 @@
     },
     {
       "address": "0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30",
-      "name": "Injective",
+      "name": "Injective Protocol",
       "symbol": "INJ",
       "logoURI": "https://etherscan.io/token/images/injective_32.png?v=3",
       "chainId": 1,
@@ -7168,7 +7176,7 @@
     {
       "address": "0xe2f2a5C287993345a840Db3B0845fbC70f5935a5",
       "name": "mStable USD",
-      "symbol": "MUSD",
+      "symbol": "mUSD",
       "logoURI": "https://etherscan.io/token/images/mstableusd_32.png",
       "chainId": 1,
       "decimals": 18
@@ -7207,7 +7215,7 @@
     },
     {
       "address": "0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D",
-      "name": "Railgun",
+      "name": "Rail",
       "symbol": "RAIL",
       "logoURI": "https://etherscan.io/token/images/railgun_32.png",
       "chainId": 1,
@@ -7271,7 +7279,7 @@
     },
     {
       "address": "0xec67005c4E498Ec7f55E092bd1d35cbC47C91892",
-      "name": "Enzyme",
+      "name": "Melon Token",
       "symbol": "MLN",
       "logoURI": "https://etherscan.io/token/images/melontoken_32.png?v=2",
       "chainId": 1,
@@ -7287,7 +7295,7 @@
     },
     {
       "address": "0xef3A930e1FfFFAcd2fc13434aC81bD278B0ecC8d",
-      "name": "Stafi",
+      "name": "StaFi",
       "symbol": "FIS",
       "logoURI": "https://etherscan.io/token/images/stafifis_32.png",
       "chainId": 1,
@@ -7327,7 +7335,7 @@
     },
     {
       "address": "0xf16e81dce15B08F326220742020379B855B87DF9",
-      "name": "Popsicle Finance",
+      "name": "IceToken",
       "symbol": "ICE",
       "logoURI": "https://etherscan.io/token/images/popsiclefinance_32.png",
       "chainId": 1,
@@ -7366,14 +7374,6 @@
       "decimals": 18
     },
     {
-      "address": "0xf3Db5Fa2C66B7aF3Eb0C0b782510816cbe4813b8",
-      "name": "Everex",
-      "symbol": "EVX",
-      "logoURI": "https://etherscan.io/token/images/everex_28.png",
-      "chainId": 1,
-      "decimals": 4
-    },
-    {
       "address": "0xf3dcbc6D72a4E1892f7917b7C43b74131Df8480e",
       "name": "Big Data Protocol",
       "symbol": "BDP",
@@ -7383,7 +7383,7 @@
     },
     {
       "address": "0xf418588522d5dd018b425E472991E52EBBeEEEEE",
-      "name": "Push Protocol",
+      "name": "Ethereum Push Notification Service",
       "symbol": "PUSH",
       "logoURI": "https://etherscan.io/token/images/pushprotocolepns_32.png",
       "chainId": 1,
@@ -7391,7 +7391,7 @@
     },
     {
       "address": "0xf4d2888d29D722226FafA5d9B24F9164c092421E",
-      "name": "LooksRare",
+      "name": "LooksRare Token",
       "symbol": "LOOKS",
       "logoURI": "https://etherscan.io/token/images/looksrare_32.png",
       "chainId": 1,
@@ -7503,7 +7503,7 @@
     },
     {
       "address": "0xfB7B4564402E5500dB5bB6d63Ae671302777C75a",
-      "name": "DexTools",
+      "name": "DEXTools",
       "symbol": "DEXT",
       "logoURI": "https://etherscan.io/token/images/dextools_32.png",
       "chainId": 1,
@@ -7519,8 +7519,8 @@
     },
     {
       "address": "0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6",
-      "name": "sBTC",
-      "symbol": "SBTC",
+      "name": "Synth sBTC",
+      "symbol": "sBTC",
       "logoURI": "https://etherscan.io/token/images/Synthetixsbtc_32.png",
       "chainId": 1,
       "decimals": 18
@@ -7559,7 +7559,7 @@
     },
     {
       "address": "0xfc82bb4ba86045Af6F327323a46E80412b91b27d",
-      "name": "Prom",
+      "name": "Token Prometeus Network",
       "symbol": "PROM",
       "logoURI": "https://etherscan.io/token/images/tokenprometeusnetwork_32.png",
       "chainId": 1,
@@ -7583,7 +7583,7 @@
     },
     {
       "address": "0x00a35FD824c717879BF370E70AC6868b95870Dfb",
-      "name": "Iron Bank",
+      "name": "IronBank",
       "symbol": "IB",
       "logoURI": "https://optimistic.etherscan.io/token/images/ironbanktoken_32.png",
       "chainId": 10,
@@ -7623,15 +7623,15 @@
     },
     {
       "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
-      "name": "Wrapped stETH",
-      "symbol": "WSTETH",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/wsteth_32.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x217D47011b23BB961eB6D93cA9945B7501a5BB11",
-      "name": "Thales",
+      "name": "Optimistic Thales Token",
       "symbol": "THALES",
       "logoURI": "https://optimistic.etherscan.io/token/images/thalesfin_32.png",
       "chainId": 10,
@@ -7687,7 +7687,7 @@
     },
     {
       "address": "0x4200000000000000000000000000000000000006",
-      "name": "WETH",
+      "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/weth_28.png",
       "chainId": 10,
@@ -7704,7 +7704,7 @@
     {
       "address": "0x484c2D6e3cDd945a8B2DF735e079178C1036578c",
       "name": "Staked Frax Ether",
-      "symbol": "SFRXETH",
+      "symbol": "sfrxETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/sfrxeth2_32.png",
       "chainId": 10,
       "decimals": 18
@@ -7727,7 +7727,7 @@
     },
     {
       "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "name": "Lyra Finance",
+      "name": "Lyra",
       "symbol": "LYRA",
       "logoURI": "https://optimistic.etherscan.io/token/images/lyra_32.png",
       "chainId": 10,
@@ -7744,14 +7744,14 @@
     {
       "address": "0x6806411765Af15Bddd26f8f544A34cC40cb9838B",
       "name": "Frax Ether",
-      "symbol": "FRXETH",
+      "symbol": "frxETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/fraxethcanonical2_32.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
-      "name": "Wrapped Bitcoin",
+      "name": "Wrapped BTC",
       "symbol": "WBTC",
       "logoURI": "https://optimistic.etherscan.io/token/images/wbtc_28.png?v=1",
       "chainId": 10,
@@ -7759,7 +7759,7 @@
     },
     {
       "address": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
-      "name": "Overnight.fi USD+",
+      "name": "USD+",
       "symbol": "USD+",
       "logoURI": "https://optimistic.etherscan.io/token/images/usdplus_32.png",
       "chainId": 10,
@@ -7799,7 +7799,7 @@
     },
     {
       "address": "0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4",
-      "name": "Synthetix Network",
+      "name": "Synthetix",
       "symbol": "SNX",
       "logoURI": "https://optimistic.etherscan.io/token/images/SynthetixSNX_32.png",
       "chainId": 10,
@@ -7815,7 +7815,7 @@
     },
     {
       "address": "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
-      "name": "DOLA",
+      "name": "Dola USD Stablecoin",
       "symbol": "DOLA",
       "logoURI": "https://optimistic.etherscan.io/token/images/dola_32.png",
       "chainId": 10,
@@ -7823,15 +7823,15 @@
     },
     {
       "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
-      "name": "sUSD",
-      "symbol": "SUSD",
+      "name": "Synth sUSD",
+      "symbol": "sUSD",
       "logoURI": "https://optimistic.etherscan.io/token/images/SynthetixsUSD_32.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
-      "name": "Tether",
+      "name": "Tether USD",
       "symbol": "USDT",
       "logoURI": "https://optimistic.etherscan.io/token/images/tether_32.png",
       "chainId": 10,
@@ -7911,7 +7911,7 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://optimistic.etherscan.io/token/images/MCDDai_32.png",
       "chainId": 10,
@@ -7919,8 +7919,8 @@
     },
     {
       "address": "0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49",
-      "name": "sETH",
-      "symbol": "SETH",
+      "name": "Synthetic Ether",
+      "symbol": "sETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/SynthetixsETH_32.png",
       "chainId": 10,
       "decimals": 18
@@ -7975,7 +7975,7 @@
     },
     {
       "address": "0xFdb794692724153d1488CcdBE0C56c252596735F",
-      "name": "Lido DAO",
+      "name": "Lido DAO Token",
       "symbol": "LDO",
       "logoURI": "https://optimistic.etherscan.io/token/images/lidodao_32.png",
       "chainId": 10,
@@ -7983,7 +7983,7 @@
     },
     {
       "address": "0xa00E3A3511aAC35cA78530c85007AFCd31753819",
-      "name": "Kyber Network Crystal",
+      "name": "Kyber Network Crystal v2",
       "symbol": "KNC",
       "logoURI": "https://optimistic.etherscan.io/token/images/kybernetworkknc_32.png",
       "chainId": 10,
@@ -7992,7 +7992,7 @@
     {
       "address": "0xadDb6A0412DE1BA0F936DCaeb8Aaa24578dcF3B2",
       "name": "Coinbase Wrapped Staked ETH",
-      "symbol": "CBETH",
+      "symbol": "cbETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/cbeth_32.png",
       "chainId": 10,
       "decimals": 18
@@ -8007,7 +8007,7 @@
     },
     {
       "address": "0xc5102fE9359FD9a28f877a67E36B0F050d81a3CC",
-      "name": "Hop Protocol",
+      "name": "HOP",
       "symbol": "HOP",
       "logoURI": "https://optimistic.etherscan.io/token/images/Hop_32.png",
       "chainId": 10,
@@ -8023,7 +8023,7 @@
     },
     {
       "address": "0xcB59a0A753fDB7491d5F3D794316F1adE197B21E",
-      "name": "Bridged TrueUSD",
+      "name": "TrueUSD",
       "symbol": "TUSD",
       "logoURI": "https://optimistic.etherscan.io/token/images/bridgedtrueusd_32.png",
       "chainId": 10,
@@ -8591,7 +8591,7 @@
     },
     {
       "address": "0x00e5646f60AC6Fb446f621d146B6E1886f002905",
-      "name": "Rai Reflex Index",
+      "name": "Rai Reflex Index (PoS)",
       "symbol": "RAI",
       "logoURI": "https://polygonscan.com/token/images/raireflexindex_32.png",
       "chainId": 137,
@@ -8663,7 +8663,7 @@
     },
     {
       "address": "0x05089C9EBFFa4F0AcA269e32056b1b36B37ED71b",
-      "name": "Polywhale",
+      "name": "Krill",
       "symbol": "KRILL",
       "logoURI": "https://polygonscan.com/token/images/krill_32.png",
       "chainId": 137,
@@ -8815,8 +8815,8 @@
     },
     {
       "address": "0x0E9b89007eEE9c958c0EDA24eF70723C2C93dD58",
-      "name": "Ankr Staked MATIC",
-      "symbol": "ANKRMATIC",
+      "name": "Ankr MATIC Reward Bearing Certif",
+      "symbol": "aMATICc",
       "logoURI": "https://polygonscan.com/token/images/ankramaticc_32.png",
       "chainId": 137,
       "decimals": 18
@@ -8839,7 +8839,7 @@
     },
     {
       "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
-      "name": "Sushi",
+      "name": "SushiToken",
       "symbol": "SUSHI",
       "logoURI": "https://polygonscan.com/token/images/sushiswap-sushi_32.png",
       "chainId": 137,
@@ -8895,7 +8895,7 @@
     },
     {
       "address": "0x101A023270368c0D50BFfb62780F4aFd4ea79C35",
-      "name": "Ankr Network",
+      "name": "Ankr (PoS)",
       "symbol": "ANKR",
       "logoURI": "https://polygonscan.com/token/images/ankr_new_32.png",
       "chainId": 137,
@@ -9039,7 +9039,7 @@
     },
     {
       "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-      "name": "Curve DAO",
+      "name": "Curve",
       "symbol": "CRV",
       "logoURI": "https://polygonscan.com/token/images/curvefi-crv_32.png",
       "chainId": 137,
@@ -9111,7 +9111,7 @@
     },
     {
       "address": "0x1B815d120B3eF02039Ee11dC2d33DE7aA4a8C603",
-      "name": "WOO Network",
+      "name": "Wootrade",
       "symbol": "WOO",
       "logoURI": "https://polygonscan.com/token/images/wootradepoly_32.png",
       "chainId": 137,
@@ -9127,7 +9127,7 @@
     },
     {
       "address": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
-      "name": "Wrapped Bitcoin",
+      "name": "Wrapped BTC",
       "symbol": "WBTC",
       "logoURI": "https://polygonscan.com/token/images/wBTC_32.png",
       "chainId": 137,
@@ -9143,7 +9143,7 @@
     },
     {
       "address": "0x1C954E8fe737F99f68Fa1CCda3e51ebDB291948C",
-      "name": "Kyber Network Crystal",
+      "name": "Kyber Network Crystal v2",
       "symbol": "KNC",
       "logoURI": "https://polygonscan.com/token/images/kybernetwork2_32.png",
       "chainId": 137,
@@ -9207,7 +9207,7 @@
     },
     {
       "address": "0x1d734A02eF1e1f5886e66b0673b71Af5B53ffA94",
-      "name": "Stader",
+      "name": "Stader (PoS)",
       "symbol": "SD",
       "logoURI": "https://polygonscan.com/token/images/staderlabs_32.png?v=2",
       "chainId": 137,
@@ -9271,7 +9271,7 @@
     },
     {
       "address": "0x236eeC6359fb44CCe8f97E99387aa7F8cd5cdE1f",
-      "name": "Overnight.fi USD+",
+      "name": "USD+",
       "symbol": "USD+",
       "logoURI": "https://polygonscan.com/token/images/usdplus_32.png",
       "chainId": 137,
@@ -9407,7 +9407,7 @@
     },
     {
       "address": "0x2B9E7ccDF0F4e5B24757c1E1a80e311E34Cb10c7",
-      "name": "Mask Network",
+      "name": "Mask Network (PoS)",
       "symbol": "MASK",
       "logoURI": "https://polygonscan.com/token/images/mask_32.png",
       "chainId": 137,
@@ -9423,8 +9423,8 @@
     },
     {
       "address": "0x2C89bbc92BD86F8075d1DEcc58C7F4E0107f286b",
-      "name": "Wrapped AVAX",
-      "symbol": "WAVAX",
+      "name": "Avalanche Token",
+      "symbol": "AVAX",
       "logoURI": "https://polygonscan.com/token/images/avaxbtt_32.png",
       "chainId": 137,
       "decimals": 18
@@ -9455,7 +9455,7 @@
     },
     {
       "address": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-      "name": "Stargate Finance",
+      "name": "StargateToken",
       "symbol": "STG",
       "logoURI": "https://polygonscan.com/token/images/stargate_32.png",
       "chainId": 137,
@@ -9503,7 +9503,7 @@
     },
     {
       "address": "0x2e1AD108fF1D8C782fcBbB89AAd783aC49586756",
-      "name": "Bridged TrueUSD",
+      "name": "TrueUSD",
       "symbol": "TUSD",
       "logoURI": "https://polygonscan.com/token/images/trueusd_32.png",
       "chainId": 137,
@@ -9631,7 +9631,7 @@
     },
     {
       "address": "0x361A5a4993493cE00f61C32d4EcCA5512b82CE90",
-      "name": "Stake DAO",
+      "name": "Stake DAO Token",
       "symbol": "SDT",
       "logoURI": "https://polygonscan.com/token/images/stakedaopoly_32.png",
       "chainId": 137,
@@ -9655,7 +9655,7 @@
     },
     {
       "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-      "name": "Aavegotchi",
+      "name": "Aavegotchi GHST Token",
       "symbol": "GHST",
       "logoURI": "https://polygonscan.com/token/images/aavegotchighst_32.png",
       "chainId": 137,
@@ -9687,15 +9687,15 @@
     },
     {
       "address": "0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4",
-      "name": "Lido Staked Matic",
-      "symbol": "STMATIC",
+      "name": "Staked MATIC (PoS)",
+      "symbol": "stMATIC",
       "logoURI": "https://polygonscan.com/token/images/lidostmatic_32.png",
       "chainId": 137,
       "decimals": 18
     },
     {
       "address": "0x3Ad707dA309f3845cd602059901E39C4dcd66473",
-      "name": "Index Coop - ETH 2x Flexible Leverage Index (Polygon)",
+      "name": "ETH 2x Flexible Leverage Index",
       "symbol": "ETH2X-FLI-P",
       "logoURI": "https://polygonscan.com/token/images/indexcoopeth2xflex_32.png",
       "chainId": 137,
@@ -9719,7 +9719,7 @@
     },
     {
       "address": "0x3Cef98bb43d732E2F285eE605a8158cDE967D219",
-      "name": "Basic Attention",
+      "name": "Basic Attention Token",
       "symbol": "BAT",
       "logoURI": "https://polygonscan.com/token/images/bat.png",
       "chainId": 137,
@@ -9743,7 +9743,7 @@
     },
     {
       "address": "0x3a3Df212b7AA91Aa0402B9035b098891d276572B",
-      "name": "Polycat Finance",
+      "name": "Fish",
       "symbol": "FISH",
       "logoURI": "https://polygonscan.com/token/images/polycat_32.png",
       "chainId": 137,
@@ -9927,7 +9927,7 @@
     },
     {
       "address": "0x46D502Fac9aEA7c5bC7B13C8Ec9D02378C33D36F",
-      "name": "WolfSafePoorPeople Polygon",
+      "name": "WolfSafePoorPeople",
       "symbol": "WSPP",
       "logoURI": "https://polygonscan.com/token/images/wolfsafepoorpeople_32.png",
       "chainId": 137,
@@ -10007,8 +10007,8 @@
     },
     {
       "address": "0x4C16f69302CcB511c5Fac682c7626B9eF0Dc126a",
-      "name": "Pancake Bunny Polygon",
-      "symbol": "POLYBUNNY",
+      "name": "Polygon Bunny Token",
+      "symbol": "polyBUNNY",
       "logoURI": "https://polygonscan.com/token/images/polygonbunnytoken_32.png",
       "chainId": 137,
       "decimals": 18
@@ -10079,7 +10079,7 @@
     },
     {
       "address": "0x4e1581f01046eFDd7a1a2CDB0F82cdd7F71F2E59",
-      "name": "Popsicle Finance",
+      "name": "IceToken",
       "symbol": "ICE",
       "logoURI": "https://polygonscan.com/token/images/popsiclefinance_32.png",
       "chainId": 137,
@@ -10096,7 +10096,7 @@
     {
       "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
       "name": "Jarvis Synthetic Euro",
-      "symbol": "JEUR",
+      "symbol": "jEUR",
       "logoURI": "https://polygonscan.com/token/images/jarvissyntheticeuro_32.png?v=3",
       "chainId": 137,
       "decimals": 18
@@ -10167,7 +10167,7 @@
     },
     {
       "address": "0x50B728D8D964fd00C2d0AAD81718b71311feF68a",
-      "name": "Synthetix Network",
+      "name": "Synthetix Network Token",
       "symbol": "SNX",
       "logoURI": "https://polygonscan.com/token/images/synthetix-snx_32.png",
       "chainId": 137,
@@ -10215,7 +10215,7 @@
     },
     {
       "address": "0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39",
-      "name": "Chainlink",
+      "name": "ChainLink Token",
       "symbol": "LINK",
       "logoURI": "https://polygonscan.com/token/images/chainlinktoken_32.png?v=6",
       "chainId": 137,
@@ -10312,7 +10312,7 @@
     {
       "address": "0x580A84C73811E1839F75d86d75d88cCa0c241fF4",
       "name": "Qi Dao",
-      "symbol": "QI",
+      "symbol": "Qi",
       "logoURI": "https://polygonscan.com/token/images/qidao_32.png",
       "chainId": 137,
       "decimals": 18
@@ -10327,7 +10327,7 @@
     },
     {
       "address": "0x596eBE76e2DB4470966ea395B0d063aC6197A8C5",
-      "name": "Jarvis Reward",
+      "name": "Jarvis Reward Token",
       "symbol": "JRT",
       "logoURI": "https://polygonscan.com/token/images/jarvis_28.png",
       "chainId": 137,
@@ -10335,7 +10335,7 @@
     },
     {
       "address": "0x598e49f01bEfeB1753737934a5b11fea9119C796",
-      "name": "Adshares",
+      "name": "Adshares (PoS)",
       "symbol": "ADS",
       "logoURI": "https://polygonscan.com/token/images/adshares2_32.png",
       "chainId": 137,
@@ -10343,7 +10343,7 @@
     },
     {
       "address": "0x5D066D022EDE10eFa2717eD3D79f22F949F8C175",
-      "name": "Stabl.fi CASH",
+      "name": "CASH",
       "symbol": "CASH",
       "logoURI": "https://polygonscan.com/token/images/stablficash_32.png",
       "chainId": 137,
@@ -10391,7 +10391,7 @@
     },
     {
       "address": "0x5a3064CbDCCF428ae907796cF6aD5a664CD7F3d8",
-      "name": "PolyQuity",
+      "name": "PYQ",
       "symbol": "PYQ",
       "logoURI": "https://polygonscan.com/token/images/polyquity-pyq_32.png",
       "chainId": 137,
@@ -10463,7 +10463,7 @@
     },
     {
       "address": "0x5fe2B58c013d7601147DcdD68C143A77499f5531",
-      "name": "The Graph",
+      "name": "Graph Token",
       "symbol": "GRT",
       "logoURI": "https://polygonscan.com/token/images/TheGraph_32.png",
       "chainId": 137,
@@ -10503,7 +10503,7 @@
     },
     {
       "address": "0x614389EaAE0A6821DC49062D56BDA3d9d45Fa2ff",
-      "name": "Orbs",
+      "name": "Orbs (PoS)",
       "symbol": "ORBS",
       "logoURI": "https://polygonscan.com/token/images/orbs_28.png",
       "chainId": 137,
@@ -10559,7 +10559,7 @@
     },
     {
       "address": "0x65A05DB8322701724c197AF82C9CaE41195B0aA8",
-      "name": "ShapeShift FOX",
+      "name": "ShapeShift FOX Token",
       "symbol": "FOX",
       "logoURI": "https://polygonscan.com/token/images/fox_32.png",
       "chainId": 137,
@@ -10623,8 +10623,8 @@
     },
     {
       "address": "0x67eB41A14C0fe5CD701FC9d5A3D6597A72F641a6",
-      "name": "Giddy",
-      "symbol": "GDDY",
+      "name": "Giddy Token",
+      "symbol": "GIDDY",
       "logoURI": "https://polygonscan.com/token/images/giddyco_32.png",
       "chainId": 137,
       "decimals": 18
@@ -10791,7 +10791,7 @@
     },
     {
       "address": "0x6bb45cEAC714c52342Ef73ec663479da35934bf7",
-      "name": "PolyPup Bone",
+      "name": "BONE Token",
       "symbol": "BONE",
       "logoURI": "https://polygonscan.com/token/images/polypup-bone_32.png",
       "chainId": 137,
@@ -11047,7 +11047,7 @@
     },
     {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-      "name": "Wrapped Ethereum",
+      "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "https://polygonscan.com/token/images/wETH_32.png",
       "chainId": 137,
@@ -11159,7 +11159,7 @@
     },
     {
       "address": "0x840195888Db4D6A99ED9F73FcD3B225Bb3cB1A79",
-      "name": "SX Network",
+      "name": "SportX",
       "symbol": "SX",
       "logoURI": "https://polygonscan.com/token/images/sportx_32.png?v=3",
       "chainId": 137,
@@ -11199,7 +11199,7 @@
     },
     {
       "address": "0x855D4248672a1fCE482165e8DBE1207b94b1968a",
-      "name": "WOWswap",
+      "name": "WOWSwap",
       "symbol": "WOW",
       "logoURI": "https://polygonscan.com/token/images/wowswap_32.png",
       "chainId": 137,
@@ -11207,7 +11207,7 @@
     },
     {
       "address": "0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369",
-      "name": "DeFi Pulse Index",
+      "name": "DefiPulse Index",
       "symbol": "DPI",
       "logoURI": "https://polygonscan.com/token/images/defipulseindexcoop_32.png",
       "chainId": 137,
@@ -11272,7 +11272,7 @@
     {
       "address": "0x8A953CfE442c5E8855cc6c61b1293FA648BAE472",
       "name": "PolyDoge",
-      "symbol": "POLYDOGE",
+      "symbol": "PolyDoge",
       "logoURI": "https://polygonscan.com/token/images/polydoge_32.png",
       "chainId": 137,
       "decimals": 18
@@ -11287,7 +11287,7 @@
     },
     {
       "address": "0x8C92e38eCA8210f4fcBf17F0951b198Dd7668292",
-      "name": "dHEDGE DAO",
+      "name": "dHedge DAO Token",
       "symbol": "DHT",
       "logoURI": "https://polygonscan.com/token/images/dHedge_32.png",
       "chainId": 137,
@@ -11375,7 +11375,7 @@
     },
     {
       "address": "0x8f18dC399594b451EdA8c5da02d0563c0b2d0f16",
-      "name": "moonwolf.io",
+      "name": "Moonwolf",
       "symbol": "WOLF",
       "logoURI": "https://polygonscan.com/token/images/moonwolf-wolf_32.png",
       "chainId": 137,
@@ -11391,7 +11391,7 @@
     },
     {
       "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://polygonscan.com/token/images/mcdDai_32.png",
       "chainId": 137,
@@ -11599,7 +11599,7 @@
     },
     {
       "address": "0x9C9e5fD8bbc25984B178FdCE6117Defa39d2db39",
-      "name": "Binance-Peg BUSD",
+      "name": "BUSD Token",
       "symbol": "BUSD",
       "logoURI": "https://polygonscan.com/token/images/busdnew_32.png",
       "chainId": 137,
@@ -11639,7 +11639,7 @@
     },
     {
       "address": "0x9aF3b7DC29D3C4B1A5731408B6A9656fA7aC3b72",
-      "name": "PUSD_Polyquity",
+      "name": "PUSD",
       "symbol": "PUSD",
       "logoURI": "https://polygonscan.com/token/images/polyquity-pusd_32.png",
       "chainId": 137,
@@ -11655,7 +11655,7 @@
     },
     {
       "address": "0x9c2C5fd7b07E95EE044DDeba0E97a665F142394f",
-      "name": "1inch",
+      "name": "1Inch (PoS)",
       "symbol": "1INCH",
       "logoURI": "https://polygonscan.com/token/images/1inch_32.png",
       "chainId": 137,
@@ -11695,7 +11695,7 @@
     },
     {
       "address": "0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4",
-      "name": "Decentraland",
+      "name": "Decentraland MANA",
       "symbol": "MANA",
       "logoURI": "https://polygonscan.com/token/images/decentraland_32.png",
       "chainId": 137,
@@ -11711,7 +11711,7 @@
     },
     {
       "address": "0xA486c6BC102f409180cCB8a94ba045D39f8fc7cB",
-      "name": "Nash",
+      "name": "Nash Exchange Token (PoS)",
       "symbol": "NEX",
       "logoURI": "https://polygonscan.com/token/images/nashexchangepoly2_32.png",
       "chainId": 137,
@@ -11775,7 +11775,7 @@
     },
     {
       "address": "0xAC63686230f64BDEAF086Fe6764085453ab3023F",
-      "name": "Atlas USV",
+      "name": "Universal Store of Value",
       "symbol": "USV",
       "logoURI": "https://polygonscan.com/token/images/atlasusv_32.png",
       "chainId": 137,
@@ -11831,7 +11831,7 @@
     },
     {
       "address": "0xB35fcBCF1fD489fCe02Ee146599e893FDCdC60e6",
-      "name": "DeRace",
+      "name": "DeRace Token",
       "symbol": "DERC",
       "logoURI": "https://polygonscan.com/token/images/derace_32.png",
       "chainId": 137,
@@ -11863,7 +11863,7 @@
     },
     {
       "address": "0xB5C064F955D8e7F38fE0460C556a72987494eE17",
-      "name": "Quickswap",
+      "name": "QuickSwap",
       "symbol": "QUICK",
       "logoURI": "https://polygonscan.com/token/images/quickswapnew_32.png",
       "chainId": 137,
@@ -11887,7 +11887,7 @@
     },
     {
       "address": "0xB7b31a6BC18e48888545CE79e83E06003bE70930",
-      "name": "ApeCoin",
+      "name": "ApeCoin (PoS)",
       "symbol": "APE",
       "logoURI": "https://polygonscan.com/token/images/apecoinpoly_32.png",
       "chainId": 137,
@@ -11911,7 +11911,7 @@
     },
     {
       "address": "0xB9638272aD6998708de56BBC0A290a1dE534a578",
-      "name": "IQ",
+      "name": "Everipedia IQ (PoS)",
       "symbol": "IQ",
       "logoURI": "https://polygonscan.com/token/images/everipedia_32.png?v=2",
       "chainId": 137,
@@ -11935,7 +11935,7 @@
     },
     {
       "address": "0xBFA35599c7AEbb0dAcE9b5aa3ca5f2a79624D8Eb",
-      "name": "Retro Finance",
+      "name": "RETRO",
       "symbol": "RETRO",
       "logoURI": "https://polygonscan.com/token/images/retrofinstabl_32.png",
       "chainId": 137,
@@ -11943,7 +11943,7 @@
     },
     {
       "address": "0xBbba073C31bF03b8ACf7c28EF0738DeCF3695683",
-      "name": "The Sandbox",
+      "name": "SAND",
       "symbol": "SAND",
       "logoURI": "https://polygonscan.com/token/images/sand_32.png",
       "chainId": 137,
@@ -12015,7 +12015,7 @@
     },
     {
       "address": "0xC3C7d422809852031b44ab29EEC9F1EfF2A58756",
-      "name": "Lido DAO",
+      "name": "Lido DAO Token (PoS)",
       "symbol": "LDO",
       "logoURI": "https://polygonscan.com/token/images/lidodao_32.png",
       "chainId": 137,
@@ -12023,7 +12023,7 @@
     },
     {
       "address": "0xC3Ec80343D2bae2F8E680FDADDe7C17E71E114ea",
-      "name": "MANTRA",
+      "name": "OM",
       "symbol": "OM",
       "logoURI": "https://polygonscan.com/token/images/mantradao_32.png?v=2",
       "chainId": 137,
@@ -12175,7 +12175,7 @@
     },
     {
       "address": "0xD3b71117E6C1558c1553305b44988cd944e97300",
-      "name": "Yel.Finance",
+      "name": "YEL Token",
       "symbol": "YEL",
       "logoURI": "https://polygonscan.com/token/images/yelfinance_32.png",
       "chainId": 137,
@@ -12199,7 +12199,7 @@
     },
     {
       "address": "0xD85d1e945766Fea5Eda9103F918Bd915FbCa63E6",
-      "name": "Celsius Network",
+      "name": "Celsius",
       "symbol": "CEL",
       "logoURI": "https://polygonscan.com/token/images/celsiustoken_32.png",
       "chainId": 137,
@@ -12207,7 +12207,7 @@
     },
     {
       "address": "0xD86b5923F3AD7b585eD81B448170ae026c65ae9a",
-      "name": "Iron",
+      "name": "IRON Stablecoin",
       "symbol": "IRON",
       "logoURI": "https://polygonscan.com/token/images/iron_32.png",
       "chainId": 137,
@@ -12231,7 +12231,7 @@
     },
     {
       "address": "0xDB7Cb471dd0b49b29CAB4a1C14d070f27216a0Ab",
-      "name": "Bankless DAO",
+      "name": "Bankless Token (PoS)",
       "symbol": "BANK",
       "logoURI": "https://polygonscan.com/token/images/banklesstoken_32.png",
       "chainId": 137,
@@ -12239,8 +12239,8 @@
     },
     {
       "address": "0xDBf31dF14B66535aF65AaC99C32e9eA844e14501",
-      "name": "renBTC",
-      "symbol": "RENBTC",
+      "name": "Ren BTC",
+      "symbol": "renBTC",
       "logoURI": "https://polygonscan.com/token/images/renbtcpoly_32.png",
       "chainId": 137,
       "decimals": 8
@@ -12287,7 +12287,7 @@
     },
     {
       "address": "0xE06Bd4F5aAc8D0aA337D13eC88dB6defC6eAEefE",
-      "name": "IX",
+      "name": "PlanetIX",
       "symbol": "IXT",
       "logoURI": "https://polygonscan.com/token/images/planetix_32.png",
       "chainId": 137,
@@ -12296,7 +12296,7 @@
     {
       "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
       "name": "agEUR",
-      "symbol": "AGEUR",
+      "symbol": "agEUR",
       "logoURI": "https://polygonscan.com/token/images/ageurpoly_32.png",
       "chainId": 137,
       "decimals": 18
@@ -12311,7 +12311,7 @@
     },
     {
       "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-      "name": "STASIS EURO",
+      "name": "STASIS EURS Token (PoS)",
       "symbol": "EURS",
       "logoURI": "https://polygonscan.com/token/images/statiseuro_28.png",
       "chainId": 137,
@@ -12432,7 +12432,7 @@
     {
       "address": "0xEe327F889d5947c1dc1934Bb208a1E792F953E96",
       "name": "Frax Ether",
-      "symbol": "FRXETH",
+      "symbol": "frxETH",
       "logoURI": "https://polygonscan.com/token/images/fraxethcanonical2_32.png",
       "chainId": 137,
       "decimals": 18
@@ -12447,7 +12447,7 @@
     },
     {
       "address": "0xEe9A352F6aAc4aF1A5B9f467F6a93E0ffBe9Dd35",
-      "name": "MASQ",
+      "name": "MASQ (PoS)",
       "symbol": "MASQ",
       "logoURI": "https://polygonscan.com/token/images/masqtoken_32.png",
       "chainId": 137,
@@ -12503,7 +12503,7 @@
     },
     {
       "address": "0xF4B0903774532AEe5ee567C02aaB681a81539e92",
-      "name": "Gaj Finance",
+      "name": "PolyGaj Token",
       "symbol": "GAJ",
       "logoURI": "https://polygonscan.com/token/images/polygaj_32.png",
       "chainId": 137,
@@ -12511,7 +12511,7 @@
     },
     {
       "address": "0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0",
-      "name": "mStable Governance: Meta",
+      "name": "mStable Governance Token",
       "symbol": "MTA",
       "logoURI": "https://polygonscan.com/token/images/meta_32.png",
       "chainId": 137,
@@ -12623,7 +12623,7 @@
     },
     {
       "address": "0xFbdd194376de19a88118e84E279b977f165d01b8",
-      "name": "Beefy",
+      "name": "Beefy.finance",
       "symbol": "BIFI",
       "logoURI": "https://polygonscan.com/token/images/beefy_32.png",
       "chainId": 137,
@@ -12672,7 +12672,7 @@
     {
       "address": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
       "name": "MAI",
-      "symbol": "MIMATIC",
+      "symbol": "miMatic",
       "logoURI": "https://polygonscan.com/token/images/miMatic_32.png",
       "chainId": 137,
       "decimals": 18
@@ -12848,7 +12848,7 @@
     {
       "address": "0xbD1463F02f61676d53fd183C2B19282BFF93D099",
       "name": "Jarvis Synthetic Swiss Franc",
-      "symbol": "JCHF",
+      "symbol": "jCHF",
       "logoURI": "https://polygonscan.com/token/images/jarvissyntheticswissfranc_32.png?v=2",
       "chainId": 137,
       "decimals": 18
@@ -12887,7 +12887,7 @@
     },
     {
       "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
-      "name": "Tether",
+      "name": "Tether USD",
       "symbol": "USDT",
       "logoURI": "https://polygonscan.com/token/images/tether_32.png",
       "chainId": 137,
@@ -12983,8 +12983,8 @@
     },
     {
       "address": "0xc6480Da81151B2277761024599E8Db2Ad4C388C8",
-      "name": "Decentral Games Governance",
-      "symbol": "XDG",
+      "name": "Decentral Games Governance (PoS)",
+      "symbol": "xDG",
       "logoURI": "https://polygonscan.com/token/images/decentralgamesgov_32.png?v=1",
       "chainId": 137,
       "decimals": 18
@@ -13039,8 +13039,8 @@
     },
     {
       "address": "0xcE829A89d4A55a63418bcC43F00145adef0eDB8E",
-      "name": "renDOGE",
-      "symbol": "RENDOGE",
+      "name": "Ren DOGE",
+      "symbol": "renDOGE",
       "logoURI": "https://polygonscan.com/token/images/rendogecoin_32.png",
       "chainId": 137,
       "decimals": 8
@@ -13087,7 +13087,7 @@
     },
     {
       "address": "0xd0258a3fD00f38aa8090dfee343f10A9D4d30D3F",
-      "name": "Voxies",
+      "name": "VOXEL Token",
       "symbol": "VOXEL",
       "logoURI": "https://polygonscan.com/token/images/voxies_32.png",
       "chainId": 137,
@@ -13175,8 +13175,8 @@
     },
     {
       "address": "0xd8cA34fd379d9ca3C6Ee3b3905678320F5b45195",
-      "name": "Governance OHM",
-      "symbol": "GOHM",
+      "name": "Governance Ohm",
+      "symbol": "gOHM",
       "logoURI": "https://polygonscan.com/token/images/ohmgovernance_32.png",
       "chainId": 137,
       "decimals": 18
@@ -13191,7 +13191,7 @@
     },
     {
       "address": "0xdAb529f40E671A1D4bF91361c21bf9f0C9712ab7",
-      "name": "Binance USD",
+      "name": "(PoS) Binance USD",
       "symbol": "BUSD",
       "logoURI": "https://polygonscan.com/token/images/binanceusd_32.png",
       "chainId": 137,
@@ -13239,7 +13239,7 @@
     },
     {
       "address": "0xdb725f82818De83e99F1dAc22A9b5B51d3d04DD4",
-      "name": "GET Protocol",
+      "name": "Guaranteed Entrance Token",
       "symbol": "GET",
       "logoURI": "https://polygonscan.com/token/images/gutstickets.png",
       "chainId": 137,
@@ -13247,7 +13247,7 @@
     },
     {
       "address": "0xdb95f9188479575F3F718a245EcA1B3BF74567EC",
-      "name": "Gitcoin",
+      "name": "Gitcoin (PoS)",
       "symbol": "GTC",
       "logoURI": "https://polygonscan.com/token/images/gitcoinGTC_32.png",
       "chainId": 137,
@@ -13279,8 +13279,8 @@
     },
     {
       "address": "0xe20B9e246db5a0d21BF9209E4858Bc9A3ff7A034",
-      "name": "Banano",
-      "symbol": "BAN",
+      "name": "Wrapped Banano",
+      "symbol": "wBAN",
       "logoURI": "https://polygonscan.com/token/images/wbananoccpoly_32.png",
       "chainId": 137,
       "decimals": 18
@@ -13295,7 +13295,7 @@
     },
     {
       "address": "0xe26cda27c13f4f87cFFc2F437C5900b27eBb5bbB",
-      "name": "Rebel Bots",
+      "name": "Rebel Bots Token",
       "symbol": "RBLS",
       "logoURI": "https://polygonscan.com/token/images/rebelbots_32.png",
       "chainId": 137,
@@ -13335,7 +13335,7 @@
     },
     {
       "address": "0xe8377A076adAbb3F9838afB77Bee96Eac101ffB1",
-      "name": "MetaSoccer",
+      "name": "MetaSoccer Universe",
       "symbol": "MSU",
       "logoURI": "https://polygonscan.com/token/images/metasocceruniverse_32.png",
       "chainId": 137,
@@ -13439,7 +13439,7 @@
     },
     {
       "address": "0xef938b6da8576a896f6E0321ef80996F4890f9c4",
-      "name": "Decentral Games",
+      "name": "Decentral Games (PoS)",
       "symbol": "DG",
       "logoURI": "https://polygonscan.com/token/images/decentralgame_32.png?v=5",
       "chainId": 137,
@@ -13567,8 +13567,8 @@
     },
     {
       "address": "0xfa68FB4628DFF1028CFEc22b4162FCcd0d45efb6",
-      "name": "Stader MaticX",
-      "symbol": "MATICX",
+      "name": "Liquid Staking Matic (PoS)",
+      "symbol": "MaticX",
       "logoURI": "https://polygonscan.com/token/images/stradermatic_32.png",
       "chainId": 137,
       "decimals": 18
@@ -13599,7 +13599,7 @@
     },
     {
       "address": "0x00a35FD824c717879BF370E70AC6868b95870Dfb",
-      "name": "Iron Bank",
+      "name": "IronBank",
       "symbol": "IB",
       "logoURI": "https://ftmscan.com/token/images/ironbanktoken_32.png",
       "chainId": 250,
@@ -13624,7 +13624,7 @@
     {
       "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
       "name": "Frapped USDT",
-      "symbol": "FUSDT",
+      "symbol": "fUSDT",
       "logoURI": "https://ftmscan.com/token/images/frappedusdt_32.png",
       "chainId": 250,
       "decimals": 6
@@ -13655,8 +13655,8 @@
     },
     {
       "address": "0x0E1694483eBB3b74d3054E383840C6cf011e518e",
-      "name": "sUSD",
-      "symbol": "SUSD",
+      "name": "Synth sUSD",
+      "symbol": "sUSD",
       "logoURI": "https://ftmscan.com/token/images/sUSD_32.png",
       "chainId": 250,
       "decimals": 18
@@ -13703,7 +13703,7 @@
     },
     {
       "address": "0x15b7c0c907e4C6b9AdaAaabC300C08991D6CEA05",
-      "name": "Gelato",
+      "name": "Gelato Network Token",
       "symbol": "GEL",
       "logoURI": "https://ftmscan.com/token/images/gelatoeth_32.png",
       "chainId": 250,
@@ -13823,7 +13823,7 @@
     },
     {
       "address": "0x2A5062D22adCFaAfbd5C541d4dA82E4B450d4212",
-      "name": "Keep3rV1",
+      "name": "Keep3r",
       "symbol": "KP3R",
       "logoURI": "https://ftmscan.com/token/images/kp3r_32.png",
       "chainId": 250,
@@ -13855,7 +13855,7 @@
     },
     {
       "address": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-      "name": "Stargate Finance",
+      "name": "StargateToken",
       "symbol": "STG",
       "logoURI": "https://ftmscan.com/token/images/stargate_32.png",
       "chainId": 250,
@@ -13887,7 +13887,7 @@
     },
     {
       "address": "0x3129662808bEC728a27Ab6a6b9AFd3cBacA8A43c",
-      "name": "DOLA",
+      "name": "Dola USD Stablecoin",
       "symbol": "DOLA",
       "logoURI": "https://ftmscan.com/token/images/dolausd_32.png",
       "chainId": 250,
@@ -14023,7 +14023,7 @@
     },
     {
       "address": "0x46E7628E8b4350b2716ab470eE0bA1fa9e76c6C5",
-      "name": "Band Protocol",
+      "name": "Band",
       "symbol": "BAND",
       "logoURI": "https://ftmscan.com/token/images/bandprotocol_32.png",
       "chainId": 250,
@@ -14063,8 +14063,8 @@
     },
     {
       "address": "0x511D35c52a3C244E7b8bd92c0C297755FbD89212",
-      "name": "Wrapped AVAX",
-      "symbol": "WAVAX",
+      "name": "Avalanche",
+      "symbol": "AVAX",
       "logoURI": "https://ftmscan.com/images/main/empty-token.png",
       "chainId": 250,
       "decimals": 18
@@ -14215,7 +14215,7 @@
     },
     {
       "address": "0x6626c47c00F1D87902fc13EECfaC3ed06D5E8D8a",
-      "name": "WOO Network",
+      "name": "Wootrade Network",
       "symbol": "WOO",
       "logoURI": "https://ftmscan.com/token/images/wootradenetwork_32.png",
       "chainId": 250,
@@ -14311,7 +14311,7 @@
     },
     {
       "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
-      "name": "WETH",
+      "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "https://ftmscan.com/token/images/wETH_32.png",
       "chainId": 250,
@@ -14391,7 +14391,7 @@
     },
     {
       "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
-      "name": "Spookyswap",
+      "name": "SpookyToken",
       "symbol": "BOO",
       "logoURI": "https://ftmscan.com/token/images/spookyswap-boo_32.png",
       "chainId": 250,
@@ -14455,7 +14455,7 @@
     },
     {
       "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://ftmscan.com/images/main/empty-token.png",
       "chainId": 250,
@@ -14551,7 +14551,7 @@
     },
     {
       "address": "0x9879aBDea01a879644185341F7aF7d8343556B7a",
-      "name": "Bridged TrueUSD",
+      "name": "TrueUSD",
       "symbol": "TUSD",
       "logoURI": "https://ftmscan.com/token/images/trueusd_32.png",
       "chainId": 250,
@@ -14584,14 +14584,14 @@
     {
       "address": "0xAd84341756Bf337f5a0164515b1f6F993D194E1f",
       "name": "Fantom USD",
-      "symbol": "FUSD",
+      "symbol": "fUSD",
       "logoURI": "https://ftmscan.com/token/images/fUSD_32.png",
       "chainId": 250,
       "decimals": 18
     },
     {
       "address": "0xB01E8419d842beebf1b70A7b5f7142abbaf7159D",
-      "name": "Cover Protocol",
+      "name": "Cover",
       "symbol": "COVER",
       "logoURI": "https://ftmscan.com/token/images/cover_32.png",
       "chainId": 250,
@@ -14608,7 +14608,7 @@
     {
       "address": "0xB67FA6deFCe4042070Eb1ae1511Dcd6dcc6a532E",
       "name": "Alchemix USD",
-      "symbol": "ALUSD",
+      "symbol": "alUSD",
       "logoURI": "https://ftmscan.com/token/images/alchemix_32.png",
       "chainId": 250,
       "decimals": 18
@@ -14671,7 +14671,7 @@
     },
     {
       "address": "0xD3b71117E6C1558c1553305b44988cd944e97300",
-      "name": "Yel.Finance",
+      "name": "YEL Token",
       "symbol": "YEL",
       "logoURI": "https://ftmscan.com/token/images/yelfinance2_32.png",
       "chainId": 250,
@@ -14807,7 +14807,7 @@
     },
     {
       "address": "0xaD996A45fd2373ed0B10Efa4A8eCB9de445A4302",
-      "name": "Alpaca Finance",
+      "name": "AlpacaToken",
       "symbol": "ALPACA",
       "logoURI": "https://ftmscan.com/token/images/alpacafinance2_32.png",
       "chainId": 250,
@@ -14831,7 +14831,7 @@
     },
     {
       "address": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8",
-      "name": "Chainlink",
+      "name": "ChainLink",
       "symbol": "LINK",
       "logoURI": "https://ftmscan.com/token/images/chainlink_32.png",
       "chainId": 250,
@@ -15095,7 +15095,7 @@
     },
     {
       "address": "0xf16e81dce15B08F326220742020379B855B87DF9",
-      "name": "Popsicle Finance",
+      "name": "IceToken",
       "symbol": "ICE",
       "logoURI": "https://ftmscan.com/images/main/empty-token.png",
       "chainId": 250,
@@ -15127,8 +15127,8 @@
     },
     {
       "address": "0xfB98B335551a418cD0737375a2ea0ded62Ea213b",
-      "name": "MAI",
-      "symbol": "MIMATIC",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "logoURI": "https://ftmscan.com/token/images/mimatic_32.png",
       "chainId": 250,
       "decimals": 18
@@ -15479,7 +15479,7 @@
     },
     {
       "address": "0x02150e97271fDC0D6E3A16d9094A0948266F07dD",
-      "name": "Hamachi Finance",
+      "name": "Hamachi",
       "symbol": "HAMI",
       "logoURI": "https://arbiscan.io/token/images/hamachifin_32.png",
       "chainId": 42161,
@@ -15551,7 +15551,7 @@
     },
     {
       "address": "0x07E49d5dE43DDA6162Fa28D24d5935C151875283",
-      "name": "CVI",
+      "name": "GOVI",
       "symbol": "GOVI",
       "logoURI": "https://arbiscan.io/token/images/cvifinance-govi_32.png",
       "chainId": 42161,
@@ -15567,7 +15567,7 @@
     },
     {
       "address": "0x088cd8f5eF3652623c22D48b1605DCfE860Cd704",
-      "name": "Vela Token",
+      "name": "VelaToken",
       "symbol": "VELA",
       "logoURI": "https://arbiscan.io/token/images/velaexchange_32.png",
       "chainId": 42161,
@@ -15671,7 +15671,7 @@
     },
     {
       "address": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978",
-      "name": "Curve DAO",
+      "name": "Curve DAO Token",
       "symbol": "CRV",
       "logoURI": "https://arbiscan.io/token/images/Curvefi_32.png",
       "chainId": 42161,
@@ -15703,7 +15703,7 @@
     },
     {
       "address": "0x13Ad51ed4F1B7e9Dc168d8a00cB3f4dDD85EfA60",
-      "name": "Lido DAO",
+      "name": "Lido DAO Token",
       "symbol": "LDO",
       "logoURI": "https://arbiscan.io/token/images/lidodao_32.png",
       "chainId": 42161,
@@ -15720,7 +15720,7 @@
     {
       "address": "0x155f0DD04424939368972f4e1838687d6a831151",
       "name": "ArbiDoge",
-      "symbol": "ADOGE",
+      "symbol": "ADoge",
       "logoURI": "https://arbiscan.io/token/images/arbidoge_32.png",
       "chainId": 42161,
       "decimals": 18
@@ -15903,7 +15903,7 @@
     },
     {
       "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
-      "name": "Wrapped Bitcoin",
+      "name": "Wrapped BTC",
       "symbol": "WBTC",
       "logoURI": "https://arbiscan.io/token/images/wbtc_28.png",
       "chainId": 42161,
@@ -15919,7 +15919,7 @@
     },
     {
       "address": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
-      "name": "Radiant Capital",
+      "name": "Radiant",
       "symbol": "RDNT",
       "logoURI": "https://arbiscan.io/token/images/radiantcapital_32.png",
       "chainId": 42161,
@@ -15943,7 +15943,7 @@
     },
     {
       "address": "0x326c33FD1113c1F29B35B4407F3d6312a8518431",
-      "name": "Strips Finance",
+      "name": "Strips Token",
       "symbol": "STRP",
       "logoURI": "https://arbiscan.io/token/images/strips_32.png",
       "chainId": 42161,
@@ -15951,7 +15951,7 @@
     },
     {
       "address": "0x32Eb7902D4134bf98A28b963D26de779AF92A212",
-      "name": "Dopex Rebate",
+      "name": "Dopex Rebate Token",
       "symbol": "RDPX",
       "logoURI": "https://arbiscan.io/token/images/dopex-rdpx_32.png",
       "chainId": 42161,
@@ -16031,7 +16031,7 @@
     },
     {
       "address": "0x3E6648C5a70A150A88bCE65F4aD4d506Fe15d2AF",
-      "name": "Spell",
+      "name": "Spell Token",
       "symbol": "SPELL",
       "logoURI": "https://arbiscan.io/token/images/spelltoken_32.png",
       "chainId": 42161,
@@ -16039,15 +16039,15 @@
     },
     {
       "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
-      "name": "MAI",
-      "symbol": "MIMATIC",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "logoURI": "https://arbiscan.io/token/images/mai_32.png",
       "chainId": 42161,
       "decimals": 18
     },
     {
       "address": "0x3a8B787f78D775AECFEEa15706D4221B40F345AB",
-      "name": "Celer Network",
+      "name": "CelerToken",
       "symbol": "CELR",
       "logoURI": "https://arbiscan.io/token/images/celer_28.png",
       "chainId": 42161,
@@ -16063,7 +16063,7 @@
     },
     {
       "address": "0x3d9907F9a368ad0a51Be60f7Da3b97cf940982D8",
-      "name": "Camelot Token",
+      "name": "Camelot token",
       "symbol": "GRAIL",
       "logoURI": "https://arbiscan.io/token/images/camelotexchange_32.png",
       "chainId": 42161,
@@ -16127,7 +16127,7 @@
     },
     {
       "address": "0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42",
-      "name": "MUX Protocol",
+      "name": "MCDEX Token",
       "symbol": "MCB",
       "logoURI": "https://arbiscan.io/token/images/mcdextoken_32.png",
       "chainId": 42161,
@@ -16143,7 +16143,7 @@
     },
     {
       "address": "0x51318B7D00db7ACc4026C88c3952B66278B6A67F",
-      "name": "PlutusDAO",
+      "name": "Plutus",
       "symbol": "PLS",
       "logoURI": "https://arbiscan.io/token/images/plutusdao2_32.png",
       "chainId": 42161,
@@ -16287,7 +16287,7 @@
     },
     {
       "address": "0x6694340fc020c5E6B96567843da2df01b2CE1eb6",
-      "name": "Stargate Finance",
+      "name": "StargateToken",
       "symbol": "STG",
       "logoURI": "https://arbiscan.io/token/images/stargate_32.png",
       "chainId": 42161,
@@ -16327,7 +16327,7 @@
     },
     {
       "address": "0x69Eb4FA4a2fbd498C257C57Ea8b7655a2559A581",
-      "name": "DODO",
+      "name": "DODO bird",
       "symbol": "DODO",
       "logoURI": "https://arbiscan.io/token/images/dodo_32.png",
       "chainId": 42161,
@@ -16351,7 +16351,7 @@
     },
     {
       "address": "0x6C2C06790b3E3E3c38e12Ee22F8183b37a13EE55",
-      "name": "Dopex",
+      "name": "Dopex Governance Token",
       "symbol": "DPX",
       "logoURI": "https://arbiscan.io/token/images/dopex-dpx_32.png",
       "chainId": 42161,
@@ -16503,7 +16503,7 @@
     },
     {
       "address": "0x7bA4a00d54A07461D9DB2aEF539e91409943AdC9",
-      "name": "Stake DAO",
+      "name": "Stake DAO Token",
       "symbol": "SDT",
       "logoURI": "https://arbiscan.io/token/images/stakedao_32.png",
       "chainId": 42161,
@@ -16543,7 +16543,7 @@
     },
     {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-      "name": "Wrapped Ethereum",
+      "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "https://arbiscan.io/token/images/weth_28.png",
       "chainId": 42161,
@@ -16632,7 +16632,7 @@
     {
       "address": "0x8D9bA570D6cb60C7e3e0F31343Efe75AB8E65FB1",
       "name": "Governance OHM",
-      "symbol": "GOHM",
+      "symbol": "gOHM",
       "logoURI": "https://arbiscan.io/token/images/ohmgovernance_32.png",
       "chainId": 42161,
       "decimals": 18
@@ -16703,7 +16703,7 @@
     },
     {
       "address": "0x965772e0E9c84b6f359c8597C891108DcF1c5B1A",
-      "name": "Pickle Finance",
+      "name": "PickleToken",
       "symbol": "PICKLE",
       "logoURI": "https://arbiscan.io/token/images/pickle_32.png",
       "chainId": 42161,
@@ -16735,7 +16735,7 @@
     },
     {
       "address": "0x99F40b01BA9C469193B360f72740E416B17Ac332",
-      "name": "MATH",
+      "name": "MATH Token",
       "symbol": "MATH",
       "logoURI": "https://arbiscan.io/token/images/mathwallet_32.png",
       "chainId": 42161,
@@ -16815,7 +16815,7 @@
     },
     {
       "address": "0xA7Aa2921618e3D63dA433829d448b58C9445A4c3",
-      "name": "Rhino.fi",
+      "name": "DeversiFi Token",
       "symbol": "DVF",
       "logoURI": "https://arbiscan.io/token/images/deversifi_32.png?=v86",
       "chainId": 42161,
@@ -16823,8 +16823,8 @@
     },
     {
       "address": "0xA970AF1a584579B618be4d69aD6F73459D112F95",
-      "name": "sUSD",
-      "symbol": "SUSD",
+      "name": "Synth sUSD",
+      "symbol": "sUSD",
       "logoURI": "https://arbiscan.io/token/images/SynthetixsUSD_32.png?v=1",
       "chainId": 42161,
       "decimals": 18
@@ -16983,7 +16983,7 @@
     },
     {
       "address": "0xBDeF0E9ef12E689F366fe494A7A7D0dad25D9286",
-      "name": "Fuse",
+      "name": "Fuse Token",
       "symbol": "FUSE",
       "logoURI": "https://arbiscan.io/token/images/fusetoken_32.png",
       "chainId": 42161,
@@ -16999,7 +16999,7 @@
     },
     {
       "address": "0xBfa641051Ba0a0Ad1b0AcF549a89536A0D76472E",
-      "name": "Badger DAO",
+      "name": "Badger",
       "symbol": "BADGER",
       "logoURI": "https://arbiscan.io/token/images/badger_32.png",
       "chainId": 42161,
@@ -17103,7 +17103,7 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai",
+      "name": "DAI Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://arbiscan.io/token/images/MCDDai_32.png",
       "chainId": 42161,
@@ -17127,7 +17127,7 @@
     },
     {
       "address": "0xDb298285FE4C5410B05390cA80e8Fbe9DE1F259B",
-      "name": "handle.fi",
+      "name": "handleFOREX",
       "symbol": "FOREX",
       "logoURI": "https://arbiscan.io/token/images/handlefi_32.png",
       "chainId": 42161,
@@ -17159,7 +17159,7 @@
     },
     {
       "address": "0xEe9801669C6138E84bD50dEB500827b776777d28",
-      "name": "O3 Swap",
+      "name": "O3 Swap Token",
       "symbol": "O3",
       "logoURI": "https://arbiscan.io/token/images/o3swap_32.png",
       "chainId": 42161,
@@ -17248,7 +17248,7 @@
     {
       "address": "0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7",
       "name": "agEUR",
-      "symbol": "AGEUR",
+      "symbol": "agEUR",
       "logoURI": "https://arbiscan.io/token/images/angleeurarbi_32.png",
       "chainId": 42161,
       "decimals": 18
@@ -17279,7 +17279,7 @@
     },
     {
       "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-      "name": "Tether",
+      "name": "Tether USD",
       "symbol": "USDT",
       "logoURI": "https://arbiscan.io/token/images/tether_32.png",
       "chainId": 42161,
@@ -17287,7 +17287,7 @@
     },
     {
       "address": "0xa0b862F60edEf4452F25B4160F177db44DeB6Cf1",
-      "name": "Gnosis",
+      "name": "Gnosis Token",
       "symbol": "GNO",
       "logoURI": "https://arbiscan.io/token/images/gnosans_32.png",
       "chainId": 42161,
@@ -17327,7 +17327,7 @@
     },
     {
       "address": "0xa684cd057951541187f288294a1e1C2646aA2d24",
-      "name": "Vesta Finance",
+      "name": "Vesta",
       "symbol": "VSTA",
       "logoURI": "https://arbiscan.io/token/images/vestafinance_32.png",
       "chainId": 42161,
@@ -17407,7 +17407,7 @@
     },
     {
       "address": "0xc136E6B376a9946B156db1ED3A34b08AFdAeD76d",
-      "name": "CreDA",
+      "name": "CreDA Protocol Token",
       "symbol": "CREDA",
       "logoURI": "https://arbiscan.io/token/images/creda_32.png",
       "chainId": 42161,
@@ -17439,7 +17439,7 @@
     },
     {
       "address": "0xcAFcD85D8ca7Ad1e1C6F82F651fA15E33AEfD07b",
-      "name": "WOO Network",
+      "name": "Wootrade Network",
       "symbol": "WOO",
       "logoURI": "https://arbiscan.io/token/images/wootrade_32.png",
       "chainId": 42161,
@@ -17487,7 +17487,7 @@
     },
     {
       "address": "0xd4d42F0b6DEF4CE0383636770eF773390d85c61A",
-      "name": "Sushi",
+      "name": "SushiToken",
       "symbol": "SUSHI",
       "logoURI": "https://arbiscan.io/token/images/sushitoken_32.png",
       "chainId": 42161,
@@ -17623,7 +17623,7 @@
     },
     {
       "address": "0xef888bcA6AB6B1d26dbeC977C455388ecd794794",
-      "name": "Rari Governance",
+      "name": "Rari Governance Token",
       "symbol": "RGT",
       "logoURI": "https://arbiscan.io/token/images/RariGovernanceToken_32.png",
       "chainId": 42161,
@@ -17655,7 +17655,7 @@
     },
     {
       "address": "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
-      "name": "Chainlink",
+      "name": "ChainLink Token",
       "symbol": "LINK",
       "logoURI": "https://arbiscan.io/token/images/chainlink_32.png?v=1",
       "chainId": 42161,

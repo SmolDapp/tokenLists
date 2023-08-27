@@ -1,9 +1,9 @@
 {
   "name": "Etherscan",
   "description": "",
-  "timestamp": "22/08/2023 09:50:27",
+  "timestamp": "27/08/2023 00:33:17",
   "version": {
-    "major": 7,
+    "major": 8,
     "minor": 0,
     "patch": 0
   },
@@ -15,7 +15,7 @@
   "tokens": [
     {
       "address": "0x00a35FD824c717879BF370E70AC6868b95870Dfb",
-      "name": "Iron Bank",
+      "name": "IronBank",
       "symbol": "IB",
       "logoURI": "https://optimistic.etherscan.io/token/images/ironbanktoken_32.png",
       "chainId": 10,
@@ -55,15 +55,15 @@
     },
     {
       "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
-      "name": "Wrapped stETH",
-      "symbol": "WSTETH",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/wsteth_32.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x217D47011b23BB961eB6D93cA9945B7501a5BB11",
-      "name": "Thales",
+      "name": "Optimistic Thales Token",
       "symbol": "THALES",
       "logoURI": "https://optimistic.etherscan.io/token/images/thalesfin_32.png",
       "chainId": 10,
@@ -119,7 +119,7 @@
     },
     {
       "address": "0x4200000000000000000000000000000000000006",
-      "name": "WETH",
+      "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/weth_28.png",
       "chainId": 10,
@@ -136,7 +136,7 @@
     {
       "address": "0x484c2D6e3cDd945a8B2DF735e079178C1036578c",
       "name": "Staked Frax Ether",
-      "symbol": "SFRXETH",
+      "symbol": "sfrxETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/sfrxeth2_32.png",
       "chainId": 10,
       "decimals": 18
@@ -159,7 +159,7 @@
     },
     {
       "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "name": "Lyra Finance",
+      "name": "Lyra",
       "symbol": "LYRA",
       "logoURI": "https://optimistic.etherscan.io/token/images/lyra_32.png",
       "chainId": 10,
@@ -176,14 +176,14 @@
     {
       "address": "0x6806411765Af15Bddd26f8f544A34cC40cb9838B",
       "name": "Frax Ether",
-      "symbol": "FRXETH",
+      "symbol": "frxETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/fraxethcanonical2_32.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
-      "name": "Wrapped Bitcoin",
+      "name": "Wrapped BTC",
       "symbol": "WBTC",
       "logoURI": "https://optimistic.etherscan.io/token/images/wbtc_28.png?v=1",
       "chainId": 10,
@@ -191,7 +191,7 @@
     },
     {
       "address": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
-      "name": "Overnight.fi USD+",
+      "name": "USD+",
       "symbol": "USD+",
       "logoURI": "https://optimistic.etherscan.io/token/images/usdplus_32.png",
       "chainId": 10,
@@ -231,7 +231,7 @@
     },
     {
       "address": "0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4",
-      "name": "Synthetix Network",
+      "name": "Synthetix",
       "symbol": "SNX",
       "logoURI": "https://optimistic.etherscan.io/token/images/SynthetixSNX_32.png",
       "chainId": 10,
@@ -247,7 +247,7 @@
     },
     {
       "address": "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
-      "name": "DOLA",
+      "name": "Dola USD Stablecoin",
       "symbol": "DOLA",
       "logoURI": "https://optimistic.etherscan.io/token/images/dola_32.png",
       "chainId": 10,
@@ -255,15 +255,15 @@
     },
     {
       "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
-      "name": "sUSD",
-      "symbol": "SUSD",
+      "name": "Synth sUSD",
+      "symbol": "sUSD",
       "logoURI": "https://optimistic.etherscan.io/token/images/SynthetixsUSD_32.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
-      "name": "Tether",
+      "name": "Tether USD",
       "symbol": "USDT",
       "logoURI": "https://optimistic.etherscan.io/token/images/tether_32.png",
       "chainId": 10,
@@ -343,7 +343,7 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://optimistic.etherscan.io/token/images/MCDDai_32.png",
       "chainId": 10,
@@ -351,8 +351,8 @@
     },
     {
       "address": "0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49",
-      "name": "sETH",
-      "symbol": "SETH",
+      "name": "Synthetic Ether",
+      "symbol": "sETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/SynthetixsETH_32.png",
       "chainId": 10,
       "decimals": 18
@@ -407,7 +407,7 @@
     },
     {
       "address": "0xFdb794692724153d1488CcdBE0C56c252596735F",
-      "name": "Lido DAO",
+      "name": "Lido DAO Token",
       "symbol": "LDO",
       "logoURI": "https://optimistic.etherscan.io/token/images/lidodao_32.png",
       "chainId": 10,
@@ -415,7 +415,7 @@
     },
     {
       "address": "0xa00E3A3511aAC35cA78530c85007AFCd31753819",
-      "name": "Kyber Network Crystal",
+      "name": "Kyber Network Crystal v2",
       "symbol": "KNC",
       "logoURI": "https://optimistic.etherscan.io/token/images/kybernetworkknc_32.png",
       "chainId": 10,
@@ -424,7 +424,7 @@
     {
       "address": "0xadDb6A0412DE1BA0F936DCaeb8Aaa24578dcF3B2",
       "name": "Coinbase Wrapped Staked ETH",
-      "symbol": "CBETH",
+      "symbol": "cbETH",
       "logoURI": "https://optimistic.etherscan.io/token/images/cbeth_32.png",
       "chainId": 10,
       "decimals": 18
@@ -439,7 +439,7 @@
     },
     {
       "address": "0xc5102fE9359FD9a28f877a67E36B0F050d81a3CC",
-      "name": "Hop Protocol",
+      "name": "HOP",
       "symbol": "HOP",
       "logoURI": "https://optimistic.etherscan.io/token/images/Hop_32.png",
       "chainId": 10,
@@ -455,7 +455,7 @@
     },
     {
       "address": "0xcB59a0A753fDB7491d5F3D794316F1adE197B21E",
-      "name": "Bridged TrueUSD",
+      "name": "TrueUSD",
       "symbol": "TUSD",
       "logoURI": "https://optimistic.etherscan.io/token/images/bridgedtrueusd_32.png",
       "chainId": 10,

@@ -1,10 +1,10 @@
 {
   "name": "Wido Token List",
   "description": "",
-  "timestamp": "22/08/2023 09:48:58",
+  "timestamp": "27/08/2023 00:38:09",
   "version": {
-    "major": 5,
-    "minor": 1,
+    "major": 6,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://uploads-ssl.webflow.com/61d5b57a99635946134f66aa/628b5dbbaed06b1b5b4d520a_logo-small.png",
@@ -32,6 +32,14 @@
       "address": "0x02203f2351E7aC6aB5051205172D3f772db7D814",
       "name": "awMATIC-WETH",
       "symbol": "awMATIC-WETH",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x023E85B8415b460C56377525ED159aF9935E3370",
+      "name": "miFARM_2eur (PAR)-f",
+      "symbol": "bf2eur (PAR)-f",
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
@@ -181,6 +189,14 @@
       "decimals": 18
     },
     {
+      "address": "0x0f110c55EfE62c16D553A3d3464B77e1853d0e97",
+      "name": "Curve.fi Factory Plain Pool: 2eur (PAR)",
+      "symbol": "2eur (PAR)-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x10f21C9bD8128a29Aa785Ab2dE0d044DCdd79436",
       "name": "Balancer 50 WETH 50 USDC",
       "symbol": "B-50WETH-50USDC",
@@ -293,14 +309,6 @@
       "decimals": 18
     },
     {
-      "address": "0x1a13F4Ca1d028320A707D99520AbFefca3998b7F",
-      "name": "Aave Matic Market USDC",
-      "symbol": "amUSDC",
-      "logoURI": "https://etherscan.io/images/main/empty-token.png",
-      "chainId": 137,
-      "decimals": 6
-    },
-    {
       "address": "0x1c5d12AD73875cDA81d1DD7B09b994ee3B31bFC5",
       "name": "Retro FRAX-FrxETH",
       "symbol": "Retro_FRAX-FrxETH",
@@ -381,14 +389,6 @@
       "decimals": 6
     },
     {
-      "address": "0x27F8D03b3a2196956ED754baDc28D73be8830A6e",
-      "name": "Aave Matic Market DAI",
-      "symbol": "amDAI",
-      "logoURI": "https://etherscan.io/images/main/empty-token.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x28552601cd3F786a40B110000e5Ac115aF415458",
       "name": "WMATIC-LUCHA",
       "symbol": "WMATIC-LUCHA",
@@ -445,14 +445,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2De733b3313890223a5D822488f6DD96cA4701C3",
-      "name": "miFARM_crvUSDBTCETH",
-      "symbol": "bfcrvUSDBTCETH",
-      "logoURI": "https://etherscan.io/images/main/empty-token.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x2EF46196d7d25B5111ca1FCbA206B248FEe32D8D",
       "name": "aWMATIC-GHST wide",
       "symbol": "aWMATIC-GHST wide",
@@ -488,14 +480,6 @@
       "address": "0x2Fee56e039AcCceFA3cB1f3051aD00fe550a472c",
       "name": "miFARM_DAI",
       "symbol": "bfDAI",
-      "logoURI": "https://etherscan.io/images/main/empty-token.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x2a60EC04577E0025D177A251d12D39AF593e95AE",
-      "name": "75mooCurveATriCrypto3-25fireFBX",
-      "symbol": "75mooCurveATriCrypto3-25fireFBX",
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
@@ -541,10 +525,26 @@
       "decimals": 18
     },
     {
+      "address": "0x2fFbCE9099cBed86984286A54e5932414aF4B717",
+      "name": "Curve.fi Factory Plain Pool: agEUR-jEUR",
+      "symbol": "agEURjEUR-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x328832C958703375b0EDa42F8bD0fCBb11879E40",
       "name": "Retro WMATIC-RETRO",
       "symbol": "Retro_WMATIC-RETRO",
       "logoURI": "https://storage.googleapis.com/wido_jsb/retro.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x32d14D697eaF6c254A08DDaC1aA5e6Ed89AB32b9",
+      "name": "Curve.fi Factory Plain Pool: CurveWMatic Better Settings",
+      "symbol": "crvmat200-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -709,6 +709,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3a85c1B914Fee13F0B29246D5FbE88538510f57e",
+      "name": "Curve.fi Factory Crypto Pool: Concentrator WMATIC/WMATICUSDT-f",
+      "symbol": "WMATICWMAT-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x3a9A81d576d83FF21f26f325066054540720fC34",
       "name": "Streamr",
       "symbol": "DATA",
@@ -736,6 +744,14 @@
       "address": "0x3d468AB2329F296e1b9d8476Bb54Dd77D8c2320f",
       "name": "20WETH-80BAL",
       "symbol": "20WETH-80BAL",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x3e1f3D078e9abb8A08De99958a69096B53DfA9b3",
+      "name": "Curve.fi Factory Plain Pool: ETH/USDC Test Pool",
+      "symbol": "TEST_POOL-f",
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
@@ -776,6 +792,22 @@
       "address": "0x431CD3C9AC9Fc73644BF68bF5691f4B83F9E104f",
       "name": "Rainbow Token",
       "symbol": "RBW",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x431D5dfF03120AFA4bDf332c61A6e1766eF37BDB",
+      "name": "JPY Coin",
+      "symbol": "JPYC",
+      "logoURI": "https://tokens.1inch.io/0x431d5dff03120afa4bdf332c61a6e1766ef37bdb.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x43910e07554312FC7A43e4B71D16A72dDCB5Ec5F",
+      "name": "Curve.fi Factory Plain Pool: CurveWmatic",
+      "symbol": "CWM-f",
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
@@ -840,6 +872,14 @@
       "address": "0x4B9e26a02121a1C541403a611b542965Bd4b68Ce",
       "name": "aWBTC-WETH narrow",
       "symbol": "aWBTC-WETH narrow",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x4D6bC60eFB4949D28c3F5536e1719dD7877E71B7",
+      "name": "Curve.fi Factory Crypto Pool: usdc",
+      "symbol": "crv-f",
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
@@ -1005,14 +1045,6 @@
       "decimals": 11
     },
     {
-      "address": "0x5A0801BAd20B6c62d86C566ca90688A6b9ea1d3f",
-      "name": "Moo Curve aTriCrypto3",
-      "symbol": "mooCurveATriCrypto3",
-      "logoURI": "https://polygonscan.com/images/main/empty-token.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x5A6aE1fd70d04bA4a279FC219dfAbC53825cb01D",
       "name": "20WETH-80BANK",
       "symbol": "20WETH-80BANK",
@@ -1101,14 +1133,6 @@
       "decimals": 18
     },
     {
-      "address": "0x60D55F02A771d515e077c9C2403a1ef324885CeC",
-      "name": "Aave Matic Market USDT",
-      "symbol": "amUSDT",
-      "logoURI": "https://etherscan.io/images/main/empty-token.png",
-      "chainId": 137,
-      "decimals": 6
-    },
-    {
       "address": "0x60E057A17be997a1631B7188e8AF42657F836077",
       "name": "miFARM_B-50WBTC-50WETH",
       "symbol": "bfB-50WBTC-50WETH",
@@ -1144,6 +1168,14 @@
       "address": "0x625bFdd5052c27C45C8482EFB26990AF66AeA94A",
       "name": "15WMATIC-15USDC-70MASQ",
       "symbol": "15WMATIC-15USDC-70MASQ",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x62619F1091CD0261b7C16199C6c58DA694248CFF",
+      "name": "Curve.fi Factory Plain Pool: 3EUR",
+      "symbol": "3EUR-f",
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
@@ -1269,6 +1301,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6c9578402A3ace046A12839f45F84Aa5448E9c30",
+      "name": "Curve.fi Factory Crypto Pool: MATIC/WBTC",
+      "symbol": "MATICWBTC-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x6f7C932e7684666C9fd1d44527765433e01fF61d",
       "name": "MAKER (PoS)",
       "symbol": "MKR",
@@ -1317,9 +1357,25 @@
       "decimals": 18
     },
     {
+      "address": "0x7789A141e8e1201De01671140f57e56dd6aF2654",
+      "name": "Curve.fi Factory Plain Pool: usdc/usdt",
+      "symbol": "usdcusdt-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x77f56cf9365955486B12C4816992388eE8606f0E",
       "name": "Coin98",
       "symbol": "C98",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x780D2bF755736eBEA8215669c0B44A5c44224683",
+      "name": "Curve.fi Factory Crypto Pool: grontye",
+      "symbol": "GRNT-f",
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
@@ -1417,14 +1473,6 @@
       "name": "Retro stMATIC-RETRO",
       "symbol": "Retro_stMATIC-RETRO",
       "logoURI": "https://storage.googleapis.com/wido_jsb/retro.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x82B5393Df3822921159C3e9513191299caAe05f9",
-      "name": "miFARM_crvUSDBTCETH",
-      "symbol": "bfcrvUSDBTCETH",
-      "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1613,14 +1661,6 @@
       "decimals": 18
     },
     {
-      "address": "0x960d43BE128585Ca45365CD74a7773B9d814dfBE",
-      "name": "FireVault FBX",
-      "symbol": "fireFBX",
-      "logoURI": "https://etherscan.io/images/main/empty-token.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x975b4bb277244af48493CdAF70b096Bbdb95411d",
       "name": "20USDC-80UNIM",
       "symbol": "20USDC-80UNIM",
@@ -1693,6 +1733,14 @@
       "decimals": 18
     },
     {
+      "address": "0x9ec22669C820b3b4303dcA33E7d790F2f5b5eE86",
+      "name": "Curve.fi Factory Plain Pool: PAR-jEUR",
+      "symbol": "PARjEUR-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4",
       "name": "Decentraland MANA",
       "symbol": "MANA",
@@ -1729,6 +1777,14 @@
       "name": "XCAD Token (PoS)",
       "symbol": "XCAD",
       "logoURI": "https://tokens.1inch.io/0xa55870278d6389ec5b524553d03c04f5677c061e.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xA691D34Abf93C0A77998e53B564bEcfaf46Dae27",
+      "name": "Curve.fi Factory Plain Pool: MAI FRAX Stablecoin Pool",
+      "symbol": "MAIFRAXLP-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1821,6 +1877,14 @@
       "decimals": 18
     },
     {
+      "address": "0xB6aC3E9F5B8Fc6cCA87CE221FF794f0253d4a4e7",
+      "name": "Curve.fi Factory Plain Pool: FRAX/USDC",
+      "symbol": "FRAXUSDC-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xB77e62709e39aD1cbeEBE77cF493745AeC0F453a",
       "name": "Wise Token",
       "symbol": "WISE",
@@ -1881,6 +1945,22 @@
       "name": "SAND",
       "symbol": "SAND",
       "logoURI": "https://tokens.1inch.io/0xbbba073c31bf03b8acf7c28ef0738decf3695683.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xBfd47BFc332Dda8F41dB4230c13b9f7243Adae2E",
+      "name": "Curve.fi Factory Crypto Pool: 2mscl L2",
+      "symbol": "crv2MSCL2-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xC007b1Ef592DdEC342f377234E0B7a78cb915Cc1",
+      "name": "Curve.fi Factory Plain Pool: triBalanced",
+      "symbol": "CJS-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2021,6 +2101,14 @@
       "decimals": 18
     },
     {
+      "address": "0xD5fAC46705cD3455eFCD71694258226c0e37038b",
+      "name": "Curve.fi Factory Crypto Pool: SDT/ETH",
+      "symbol": "SDTETH-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
       "name": "Aave",
       "symbol": "AAVE",
@@ -2067,6 +2155,14 @@
       "logoURI": "https://tokens.1inch.io/0xdc3326e71d45186f113a2f448984ca0e8d201995.png",
       "chainId": 137,
       "decimals": 6
+    },
+    {
+      "address": "0xDC703C6aA358E172e885099453df6B1A595518EC",
+      "name": "Curve.fi Factory Crypto Pool: Concentrator WMATIC/USDT",
+      "symbol": "WMATICUSDT-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
     },
     {
       "address": "0xDD0D1D0a02865e1CB7A01CE42E70F265Dc0a5775",
@@ -2152,6 +2248,14 @@
       "address": "0xE40a5aa22CBCcc8165aedd86f6d03fC5F551c3C6",
       "name": "aWBTC-USDC narrow",
       "symbol": "aWBTC-USDC narrow",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xE4E6055A7eB29F2Fa507ba7f8c4FAcc0C5ef9a2A",
+      "name": "miFARM_agEURjEUR-f",
+      "symbol": "bfagEURjEUR-f",
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
@@ -2357,18 +2461,18 @@
       "decimals": 18
     },
     {
-      "address": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
-      "name": "miMATIC",
-      "symbol": "miMATIC",
-      "logoURI": "https://tokens.1inch.io/0xa3fa99a148fa48d14ed51d610c367c61876997f1.png",
+      "address": "0xa1eE546E2a53e86EA7E1c5D017af3FEa1D1A9620",
+      "name": "Curve.fi Factory Plain Pool: 4rok",
+      "symbol": "crv4ROK-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
     },
     {
-      "address": "0xa411c9Aa00E020e4f88Bc19996d29c5B7ADB4ACf",
-      "name": "Xocolatl MXN Stablecoin",
-      "symbol": "XOC",
-      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "address": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
+      "name": "miMATIC",
+      "symbol": "miMATIC",
+      "logoURI": "https://tokens.1inch.io/0xa3fa99a148fa48d14ed51d610c367c61876997f1.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2384,6 +2488,14 @@
       "address": "0xa5422F737F24b10A0928D5E7f6cf404D077e1CD1",
       "name": "miFARM_awMATIC-USDC",
       "symbol": "bfawMATIC-USDC",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xaC974E619888342Dada8B50B3Ad02F0D04CEE6db",
+      "name": "Curve.fi Factory Plain Pool: MAI3pool",
+      "symbol": "MAI3pool-f",
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
@@ -2461,6 +2573,22 @@
       "decimals": 9
     },
     {
+      "address": "0xb731E7cEd547A636f7CD3eee3972EB32b0402893",
+      "name": "Curve.fi Factory Plain Pool: wBalanced",
+      "symbol": "wCJS-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xb78f2fE5Fde99727CD2388f8c4F682395F894c16",
+      "name": "Curve.fi Factory Crypto Pool: 2mscl L1",
+      "symbol": "crv2MSCL1-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xbD1463F02f61676d53fd183C2B19282BFF93D099",
       "name": "Jarvis Synthetic Swiss Franc",
       "symbol": "jCHF",
@@ -2517,10 +2645,26 @@
       "decimals": 18
     },
     {
+      "address": "0xc3f1c093eb30d268b287DE7b3f6f950DA0472E2F",
+      "name": "Curve.fi Factory Crypto Pool: xn456",
+      "symbol": "usdtcrv-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xc6480Da81151B2277761024599E8Db2Ad4C388C8",
       "name": "Decentral Games Governance (PoS)",
       "symbol": "xDG",
       "logoURI": "https://tokens.1inch.io/0xc6480da81151b2277761024599e8db2ad4c388c8.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xcA409F7c21E970411e9A5b163BbF82d21C175274",
+      "name": "Curve.fi Factory Pool: MaticX/WMATIC",
+      "symbol": "MaticXMat-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2581,6 +2725,14 @@
       "decimals": 18
     },
     {
+      "address": "0xd4F40Efc04dE53aEA9E373B0fb5297B6D9B510Ca",
+      "name": "Curve.fi Factory Crypto Pool: Crypto Crazy",
+      "symbol": "CC-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xd76BC58b95acAC968Fe0Cf9fa210Bf4bE95cd249",
       "name": "miFARM_awMATIC-USDC",
       "symbol": "bfawMATIC-USDC",
@@ -2595,14 +2747,6 @@
       "logoURI": "https://tokens.1inch.io/0xd93f7e271cb87c23aaa73edc008a79646d1f9912.png",
       "chainId": 137,
       "decimals": 9
-    },
-    {
-      "address": "0xdAD97F7713Ae9437fa9249920eC8507e5FbB23d3",
-      "name": "Curve USD-BTC-ETH",
-      "symbol": "crvUSDBTCETH",
-      "logoURI": "https://polygonscan.com/images/main/empty-token.png",
-      "chainId": 137,
-      "decimals": 18
     },
     {
       "address": "0xdAb529f40E671A1D4bF91361c21bf9f0C9712ab7",
@@ -2685,10 +2829,26 @@
       "decimals": 8
     },
     {
+      "address": "0xe2bBBFc3A5baD237774F89148011e0762aEb1Bac",
+      "name": "Curve.fi Factory Crypto Pool: CRV/MATIC",
+      "symbol": "CRVMATIC-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xe7806B5ba13d4B2Ab3EaB3061cB31d4a4F3390Aa",
       "name": "Retro WMATIC-WETH",
       "symbol": "Retro_WMATIC-WETH",
       "logoURI": "https://storage.googleapis.com/wido_jsb/retro.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xe7CEA2F6d7b120174BF3A9Bc98efaF1fF72C997d",
+      "name": "Curve.fi Factory Crypto Pool: stMATIC/WMATIC",
+      "symbol": "stMATIC-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2699,6 +2859,14 @@
       "logoURI": "https://etherscan.io/images/main/empty-token.png",
       "chainId": 137,
       "decimals": 6
+    },
+    {
+      "address": "0xe968dC04927E43fD3A93AAbfd4F385C4dCD367FF",
+      "name": "Curve.fi Factory Plain Pool: USDT/USDC",
+      "symbol": "USDTUSDC-f",
+      "logoURI": "https://etherscan.io/images/main/empty-token.png",
+      "chainId": 137,
+      "decimals": 18
     },
     {
       "address": "0xeA3e41A9F4EB139bA61bf8566Aa1bAAd195C5511",
