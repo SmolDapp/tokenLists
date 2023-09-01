@@ -1,9 +1,9 @@
 {
   "name": "CoinGecko",
   "description": "",
-  "timestamp": "27/08/2023 00:33:28",
+  "timestamp": "01/09/2023 11:06:42",
   "version": {
-    "major": 1256,
+    "major": 1257,
     "minor": 0,
     "patch": 0
   },
@@ -79,8 +79,8 @@
     },
     {
       "address": "0x078f358208685046a11C85e8ad32895DED33A249",
-      "name": "Aave WBTC",
-      "symbol": "awbtc",
+      "name": "Aave Avalanche WBTC",
+      "symbol": "aAvaWBTC",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 8
@@ -127,7 +127,7 @@
     },
     {
       "address": "0x0da67235dD5787D67955420C84ca1cEcd4E5Bb3b",
-      "name": "Wrapped Memo",
+      "name": "Wrapped MEMO",
       "symbol": "wMEMO",
       "logoURI": "",
       "chainId": 43114,
@@ -231,8 +231,8 @@
     },
     {
       "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
-      "name": "Aave LINK",
-      "symbol": "alink",
+      "name": "Aave Avalanche LINK",
+      "symbol": "aAvaLINK",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -712,7 +712,7 @@
     {
       "address": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
       "name": "Wrapped Ether",
-      "symbol": "WETH",
+      "symbol": "WETH.e",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -768,7 +768,7 @@
     {
       "address": "0x50b7545627a5162F82A992c33b87aDc75187B218",
       "name": "Wrapped BTC",
-      "symbol": "WBTC",
+      "symbol": "WBTC.e",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 8
@@ -871,8 +871,8 @@
     },
     {
       "address": "0x5947BB275c521040051D82396192181b413227A3",
-      "name": "ChainLink Token",
-      "symbol": "LINK",
+      "name": "Chainlink Token",
+      "symbol": "LINK.e",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -984,7 +984,7 @@
     {
       "address": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
       "name": "Aave Token",
-      "symbol": "AAVE",
+      "symbol": "AAVE.e",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1366,6 +1366,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8929e9DbD2785e3BA16175E596CDD61520feE0D1",
+      "name": "Altitude",
+      "symbol": "ALTD",
+      "logoURI": "",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0x8B1d98A91F853218ddbb066F20b8c63E782e2430",
       "name": "Orca DAO",
       "symbol": "orca",
@@ -1527,8 +1535,8 @@
     },
     {
       "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
-      "name": "Tether USD",
-      "symbol": "USDT",
+      "name": "TetherToken",
+      "symbol": "USDt",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -2456,7 +2464,7 @@
     {
       "address": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
       "name": "Dai Stablecoin",
-      "symbol": "DAI",
+      "symbol": "DAI.e",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -2519,8 +2527,8 @@
     },
     {
       "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
-      "name": "Aave WETH",
-      "symbol": "aweth",
+      "name": "Aave Avalanche WETH",
+      "symbol": "aAvaWETH",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18

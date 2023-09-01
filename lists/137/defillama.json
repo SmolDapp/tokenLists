@@ -1,9 +1,9 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "27/08/2023 00:33:52",
+  "timestamp": "01/09/2023 11:11:41",
   "version": {
-    "major": 48,
+    "major": 49,
     "minor": 0,
     "patch": 0
   },
@@ -135,6 +135,14 @@
       "name": "SpaceShipX SSX",
       "symbol": "ssx",
       "logoURI": "https://assets.coingecko.com/coins/images/28704/thumb/CRYTOLOGO.png?1673426191",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x0294D8eB7857D43FEb1210Db72456d41481f9Ede",
+      "name": "LiquidDriver",
+      "symbol": "lqdr",
+      "logoURI": "https://assets.coingecko.com/coins/images/15782/thumb/LQDR_Glowing_Icon.png?1631200053",
       "chainId": 137,
       "decimals": 18
     },
@@ -851,14 +859,6 @@
       "decimals": 18
     },
     {
-      "address": "0x1E42EDbe5376e717C1B22904C59e406426E8173F",
-      "name": "Surf.Finance",
-      "symbol": "surf",
-      "logoURI": "https://assets.coingecko.com/coins/images/12982/thumb/surf_200x200.png?1604050261",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x1FA2F83BA2DF61c3d370071d61B17Be01e224f3a",
       "name": "Hive.Investments HONEY",
       "symbol": "hny",
@@ -1099,14 +1099,6 @@
       "decimals": 18
     },
     {
-      "address": "0x236eeC6359fb44CCe8f97E99387aa7F8cd5cdE1f",
-      "name": "Overnight.fi USD+",
-      "symbol": "usd+",
-      "logoURI": "https://assets.coingecko.com/coins/images/25757/thumb/USD__logo.png?1653519267",
-      "chainId": 137,
-      "decimals": 6
-    },
-    {
       "address": "0x23D29D30e35C5e8D321e1dc9A8a61BFD846D4C5C",
       "name": "HEX",
       "symbol": "hex",
@@ -1223,6 +1215,14 @@
       "name": "Metavault Trade",
       "symbol": "mvx",
       "logoURI": "https://assets.coingecko.com/coins/images/25402/thumb/4rMREe8e_400x400.jpg?1651729385",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x27842334C55c01DDFE81Bf687425F906816c5141",
+      "name": "Veloce",
+      "symbol": "vext",
+      "logoURI": "https://assets.coingecko.com/coins/images/31214/thumb/VEXT_Logo.jpg?1691461995",
       "chainId": 137,
       "decimals": 18
     },
@@ -3531,14 +3531,6 @@
       "decimals": 18
     },
     {
-      "address": "0x6d5f5317308C6fE7D6CE16930353a8Dfd92Ba4D7",
-      "name": "Abachi [OLD]",
-      "symbol": "abi",
-      "logoURI": "https://assets.coingecko.com/coins/images/22331/thumb/abachi.PNG?1641514867",
-      "chainId": 137,
-      "decimals": 9
-    },
-    {
       "address": "0x6e4E624106Cb12E168E6533F8ec7c82263358940",
       "name": "Axelar",
       "symbol": "axl",
@@ -4163,6 +4155,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8929e9DbD2785e3BA16175E596CDD61520feE0D1",
+      "name": "Altitude",
+      "symbol": "altd",
+      "logoURI": "https://assets.coingecko.com/coins/images/30114/thumb/logo.png?1683102953",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x89C90E480A39fBE3886bB5bD53ba5B1Acc69D4Fb",
       "name": "Aladdin cvxCRV",
       "symbol": "acrv",
@@ -4755,14 +4755,6 @@
       "decimals": 18
     },
     {
-      "address": "0xA0E5c8b2B2e345C72f452880b2c164b944012907",
-      "name": "CUBIX",
-      "symbol": "cubix",
-      "logoURI": "https://assets.coingecko.com/coins/images/28327/thumb/cubix.png?1669451388",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xA0aF9f13e067562AaE8E52a5Fb6A74FebfCF7D41",
       "name": "EMG SuperApp",
       "symbol": "emgs",
@@ -5243,6 +5235,14 @@
       "decimals": 18
     },
     {
+      "address": "0xC3a9a54c043f348027fffAac0F2F996123A19bF4",
+      "name": "Ethos Reserve Note",
+      "symbol": "ern",
+      "logoURI": "https://assets.coingecko.com/coins/images/29744/thumb/ERN200x200.png?1681106290",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xC3f56d567E7663e8932E65d85ae4be7Eb5575cA7",
       "name": "Faith Tribe",
       "symbol": "ftrb",
@@ -5604,7 +5604,7 @@
     },
     {
       "address": "0xE06Bd4F5aAc8D0aA337D13eC88dB6defC6eAEefE",
-      "name": "IX",
+      "name": "Planet IX",
       "symbol": "ixt",
       "logoURI": "https://assets.coingecko.com/coins/images/20927/thumb/IXT_SYMBOL_SVG_RGB_BLACK.png?1637934555",
       "chainId": 137,
@@ -6964,7 +6964,7 @@
     },
     {
       "address": "0xdBb5Da27FFcFeBea8799a5832D4607714fc6aBa8",
-      "name": "Degen",
+      "name": "DGEN",
       "symbol": "dgen",
       "logoURI": "https://assets.coingecko.com/coins/images/31294/thumb/dgen-new-200-200.png?1692336350",
       "chainId": 137,
@@ -7191,14 +7191,6 @@
       "name": "TORG",
       "symbol": "torg",
       "logoURI": "https://assets.coingecko.com/coins/images/17596/thumb/TORG_Logo_200x200.png?1628586056",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xeBEb17fb71f05E34E57C41bF463CeF1aB75b9D49",
-      "name": "Stepwatch Land Token",
-      "symbol": "swld",
-      "logoURI": "https://assets.coingecko.com/coins/images/28574/thumb/swld.png?1671878945",
       "chainId": 137,
       "decimals": 18
     },
