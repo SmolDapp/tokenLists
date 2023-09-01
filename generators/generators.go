@@ -36,6 +36,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`aerodrome`: {
+		Exec:             buildAeroTokenList,
+		Name:             `Aerodrome`,
+		Description:      `A list of tokens available on Aerodrome.`,
+		GenerationMethod: GenerationExternalList,
+		GeneratorType:    GeneratorToken,
+	},
 	`bebop`: {
 		Exec:             buildBebopTokenList,
 		Name:             `Bebop`,
