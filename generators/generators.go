@@ -176,6 +176,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},
+	`velodrome`: {
+		Exec:             buildVeloTokenList,
+		Name:             `Velodrome`,
+		Description:      `A list of tokens available on Velodrome.`,
+		GenerationMethod: GenerationExternalList,
+		GeneratorType:    GeneratorToken,
+	},
 	`wido`: {
 		Exec:             buildWidoTokenList,
 		Name:             `Wido`,

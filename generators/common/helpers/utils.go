@@ -24,3 +24,13 @@ func SafeInt(value int, fallback int) int {
 func ToAddress(value string) string {
 	return common.HexToAddress(value).Hex()
 }
+
+// Includes returns true if the provided T is in the provided slice
+func Includes[T comparable](slice []T, value T) bool {
+	for _, item := range slice {
+		if item == value {
+			return true
+		}
+	}
+	return false
+}
