@@ -1,11 +1,11 @@
 {
   "name": "Ledger",
   "description": "",
-  "timestamp": "01/09/2023 11:06:50",
+  "timestamp": "01/09/2023 11:25:06",
   "version": {
     "major": 7,
     "minor": 21,
-    "patch": 1
+    "patch": 2
   },
   "logoURI": "https://www.ledger.com/wp-content/uploads/2021/11/Ledger_favicon.png",
   "keywords": [
@@ -46,8 +46,8 @@
     },
     {
       "address": "0x0169eC1f8f639B32Eec6D923e24C2A2ff45B9DD6",
-      "name": "SHOMONcash",
-      "symbol": "SCASH",
+      "name": "Algebra",
+      "symbol": "ALGB",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -62,8 +62,8 @@
     },
     {
       "address": "0x0297e37f1873D2DAb4487Aa67cD56B58E2F27875",
-      "name": "Balancer Polygon Base Pool",
-      "symbol": "B-POLYBASE",
+      "name": "BalancerV2 LP WMATIC/USDC/WETH/BAL",
+      "symbol": "WMATIC/USDC/WETH/BAL",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -86,8 +86,8 @@
     },
     {
       "address": "0x03cD191F589d12b0582a99808cf19851E468E6B5",
-      "name": "Balancer Polygon Tricrypto",
-      "symbol": "BPTC",
+      "name": "BalancerV2 LP WBTC/USDC/WETH",
+      "symbol": "WBTC/USDC/WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -182,16 +182,16 @@
     },
     {
       "address": "0x06Df3b2bbB68adc8B0e302443692037ED9f91b42",
-      "name": "Balancer Polygon Stable Pool",
-      "symbol": "BPSP",
+      "name": "BalancerV2 LP USDC/DAI/miMATIC/USDT",
+      "symbol": "USDC/DAI/miMATIC/USDT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
     },
     {
       "address": "0x071AC29d569a47EbfFB9e57517F855Cb577DCc4C",
-      "name": "Validator (PoS)",
-      "symbol": "VALX",
+      "name": "Galaxy Fight Club",
+      "symbol": "GCOIN",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -310,8 +310,8 @@
     },
     {
       "address": "0x0d34e5dD4D8f043557145598E4e2dC286B35FD4f",
-      "name": "Balancer TUSD Stablepool",
-      "symbol": "BPSP-TUSD",
+      "name": "BalancerV2 LP USDC/TUSD/DAI/USDT",
+      "symbol": "USDC/TUSD/DAI/USDT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -366,8 +366,8 @@
     },
     {
       "address": "0x10f21C9bD8128a29Aa785Ab2dE0d044DCdd79436",
-      "name": "Balancer 50 WETH 50 USDC",
-      "symbol": "B-50WETH-50USDC",
+      "name": "BalancerV2 LP USDC/WETH",
+      "symbol": "USDC/WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -422,7 +422,7 @@
     },
     {
       "address": "0x12a34A6759c871C4C1E8A0A42CFc97e4D7Aaf68d",
-      "name": "Tutellus Token",
+      "name": "Tutellus",
       "symbol": "TUT",
       "logoURI": "",
       "chainId": 137,
@@ -670,11 +670,11 @@
     },
     {
       "address": "0x229b1b6C23ff8953D663C4cBB519717e323a0a84",
-      "name": "MINO",
-      "symbol": "MINO",
+      "name": "Bloktopia",
+      "symbol": "BLOK",
       "logoURI": "",
       "chainId": 137,
-      "decimals": 9
+      "decimals": 18
     },
     {
       "address": "0x229c5D13452dc302499B5C113768A0db0c9D5c05",
@@ -758,7 +758,7 @@
     },
     {
       "address": "0x255707B70BF90aa112006E1b07B9AeA6De021424",
-      "name": "TETU Reward Token",
+      "name": "TETU",
       "symbol": "TETU",
       "logoURI": "",
       "chainId": 137,
@@ -806,8 +806,8 @@
     },
     {
       "address": "0x263026E7e53DBFDce5ae55Ade22493f828922965",
-      "name": "ZED RUN",
-      "symbol": "ZED",
+      "name": "Ricochet",
+      "symbol": "RIC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -926,8 +926,8 @@
     },
     {
       "address": "0x2a93172c8DCCbfBC60a39d56183B7279a2F647b4",
-      "name": "decentral.games (PoS)",
-      "symbol": "$DG",
+      "name": "Decentral Games (Old)",
+      "symbol": "DG",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -983,7 +983,7 @@
     {
       "address": "0x2e6978ceeA865948f4c5685e35AEC72652e3Cb88",
       "name": "tPLATINUM",
-      "symbol": "txpt",
+      "symbol": "TXPT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1062,8 +1062,8 @@
     },
     {
       "address": "0x34965ba0ac2451A34a0471F04CCa3F990b8dea27",
-      "name": "SushiSwap LP Token USD Coin (PoS) + Wrapped Ether",
-      "symbol": "SLP USDC + WETH",
+      "name": "SushiSwap LP WETH/maWETH",
+      "symbol": "WETH/maWETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1254,7 +1254,7 @@
     },
     {
       "address": "0x42d61D766B85431666B39B89C43011f24451bFf6",
-      "name": "ParaSwap (PoS)",
+      "name": "ParaSwap",
       "symbol": "PSP",
       "logoURI": "",
       "chainId": 137,
@@ -1614,7 +1614,7 @@
     },
     {
       "address": "0x5A0801BAd20B6c62d86C566ca90688A6b9ea1d3f",
-      "name": "Moo Curve aTriCrypto3",
+      "name": "Beefy Moo Curve aTriCrypto3",
       "symbol": "mooCurveATriCrypto3",
       "logoURI": "",
       "chainId": 137,
@@ -1622,8 +1622,8 @@
     },
     {
       "address": "0x5DEe84FfA2DC27419Ba7b3419d7146E53e4F7dEd",
-      "name": "frxETH-WETH",
-      "symbol": "frxETH-WETH",
+      "name": "BalancerV2 LP WETH/frxETH",
+      "symbol": "WETH/frxETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1758,7 +1758,7 @@
     },
     {
       "address": "0x6002410dDA2Fb88b4D0dc3c1D562F7761191eA80",
-      "name": "The Employment Commons Work Token",
+      "name": "The Employment Commons Work",
       "symbol": "WORK",
       "logoURI": "",
       "chainId": 137,
@@ -1934,7 +1934,7 @@
     },
     {
       "address": "0x6863BD30C9e313B264657B107352bA246F8Af8e0",
-      "name": "BlackPool Token (PoS)",
+      "name": "BlackPool",
       "symbol": "BPT",
       "logoURI": "",
       "chainId": 137,
@@ -2086,7 +2086,7 @@
     },
     {
       "address": "0x6d5f5317308C6fE7D6CE16930353a8Dfd92Ba4D7",
-      "name": "Abachi",
+      "name": "Abachi [OLD]",
       "symbol": "ABI",
       "logoURI": "",
       "chainId": 137,
@@ -2390,8 +2390,8 @@
     },
     {
       "address": "0x831753DD7087CaC61aB5644b308642cc1c33Dc13",
-      "name": "Quickswap",
-      "symbol": "QUICK(old)",
+      "name": "Quickswap [OLD]",
+      "symbol": "QUICK",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2406,8 +2406,8 @@
     },
     {
       "address": "0x84342e932797FC62814189f01F0Fb05F52519708",
-      "name": "TestDM",
-      "symbol": "dm",
+      "name": "Neighbourhoods",
+      "symbol": "NHT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2574,11 +2574,11 @@
     },
     {
       "address": "0x8f9E8e833A69Aa467E42c46cCA640da84DD4585f",
-      "name": "baby love (PoS)",
-      "symbol": "BABY",
+      "name": "NFT Champions",
+      "symbol": "CHAMP",
       "logoURI": "",
       "chainId": 137,
-      "decimals": 18
+      "decimals": 8
     },
     {
       "address": "0x9008D70A5282a936552593f410AbcBcE2F891A97",
@@ -2918,8 +2918,8 @@
     },
     {
       "address": "0xA936e1f747d14fC30d08272D065c8aeF4ab7f810",
-      "name": "YEL Token",
-      "symbol": "YEL",
+      "name": "wLitiDAO",
+      "symbol": "WLD",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3150,7 +3150,7 @@
     },
     {
       "address": "0xC25351811983818c9Fe6D8c580531819c8ADe90f",
-      "name": "Idle",
+      "name": "IDLE",
       "symbol": "IDLE",
       "logoURI": "",
       "chainId": 137,
@@ -3262,8 +3262,8 @@
     },
     {
       "address": "0xCF354603A9AEbD2Ff9f33E1B04246d8Ea204ae95",
-      "name": "Balancer 50 WBTC 50 WETH",
-      "symbol": "B-50WBTC-50WETH",
+      "name": "BalancerV2 LP WBTC/WETH",
+      "symbol": "WBTC/WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3358,11 +3358,11 @@
     },
     {
       "address": "0xDA6f726E2088F129D3Ecb2257206AdF7D8537Ba5",
-      "name": "TNodeGreen (PoS)",
-      "symbol": "TNG",
+      "name": "Neos Credits",
+      "symbol": "NCR",
       "logoURI": "",
       "chainId": 137,
-      "decimals": 8
+      "decimals": 18
     },
     {
       "address": "0xDC3326e71D45186F113a2F448984CA0e8D201995",
@@ -3510,7 +3510,7 @@
     },
     {
       "address": "0xE7804D91dfCDE7F776c90043E03eAa6Df87E6395",
-      "name": "DFX Token",
+      "name": "DFX Finance",
       "symbol": "DFX",
       "logoURI": "",
       "chainId": 137,
@@ -3774,8 +3774,8 @@
     },
     {
       "address": "0xFeadd389a5c427952D8fdb8057D6C8ba1156cC56",
-      "name": "Balancer Polygon WBTC-renBTC Stable Pool",
-      "symbol": "BP-BTC-SP",
+      "name": "BalancerV2 LP WBTC/renBTC",
+      "symbol": "WBTC/renBTC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3798,7 +3798,7 @@
     },
     {
       "address": "0xa1428174F516F527fafdD146b883bB4428682737",
-      "name": "SuperFarm (PoS)",
+      "name": "SuperVerse",
       "symbol": "SUPER",
       "logoURI": "",
       "chainId": 137,
@@ -3878,8 +3878,8 @@
     },
     {
       "address": "0xaAa5B9e6c589642f98a1cDA99B9D024B8407285A",
-      "name": "SHIBA INU (PoS)",
-      "symbol": "SHIB",
+      "name": "IRON Titanium",
+      "symbol": "TITAN",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4030,11 +4030,11 @@
     },
     {
       "address": "0xc1c93D475dc82Fe72DBC7074d55f5a734F8cEEAE",
-      "name": "MINO",
-      "symbol": "MINO",
+      "name": "Pegaxy Stone",
+      "symbol": "PGX",
       "logoURI": "",
       "chainId": 137,
-      "decimals": 9
+      "decimals": 18
     },
     {
       "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
@@ -4150,8 +4150,8 @@
     },
     {
       "address": "0xcE899f26928a2B21c6a2Fddd393EF37c61dbA918",
-      "name": "SOL",
-      "symbol": "SOL",
+      "name": "Museum of Crypto Art",
+      "symbol": "MOCA",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4182,7 +4182,7 @@
     },
     {
       "address": "0xcd7361ac3307D1C5a46b63086a90742Ff44c63B3",
-      "name": "Crypto Raider",
+      "name": "Crypto Raiders",
       "symbol": "RAIDER",
       "logoURI": "",
       "chainId": 137,
@@ -4310,7 +4310,7 @@
     },
     {
       "address": "0xd93f7E271cB87c23AaA73edC008A79646d1F9912",
-      "name": "Wrapped SOL",
+      "name": "SOL (Wormhole)",
       "symbol": "SOL",
       "logoURI": "",
       "chainId": 137,
@@ -4454,7 +4454,7 @@
     },
     {
       "address": "0xe6FC6C7CB6d2c31b359A49A33eF08aB87F4dE7CE",
-      "name": "IG Gold (PoS)",
+      "name": "IG Gold",
       "symbol": "IGG",
       "logoURI": "",
       "chainId": 137,
@@ -4598,8 +4598,8 @@
     },
     {
       "address": "0xf3312968c7D768C19107731100Ece7d4780b47B2",
-      "name": "20WMATIC-80SPHERE",
-      "symbol": "20WMATIC-80SPHERE",
+      "name": "BalancerV2 LP WMATIC/SPHERE",
+      "symbol": "WMATIC/SPHERE",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4702,8 +4702,8 @@
     },
     {
       "address": "0xff88434E29d1E2333aD6baa08D358b436196da6b",
-      "name": "Wrapped Matic",
-      "symbol": "WMATIC",
+      "name": "BoringDao",
+      "symbol": "BOR",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
