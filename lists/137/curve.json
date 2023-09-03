@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "03/09/2023 00:32:47",
+  "timestamp": "03/09/2023 11:46:42",
   "version": {
     "major": 10,
-    "minor": 4,
+    "minor": 5,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -76,8 +76,8 @@
     },
     {
       "address": "0x0266F4F08D82372CF0FcbCCc0Ff74309089c74d1",
-      "name": "Rocket Pool ETH",
-      "symbol": "RETH",
+      "name": "Rocket Pool ETH (PoS)",
+      "symbol": "rETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -148,8 +148,8 @@
     },
     {
       "address": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
-      "name": "Wrapped liquid staked Ether 2.0 (PoS)",
-      "symbol": "wstETH",
+      "name": "Wrapped stETH",
+      "symbol": "WSTETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -268,7 +268,7 @@
     },
     {
       "address": "0x0B220b82F3eA3B7F6d9A1D8ab58930C064A2b5Bf",
-      "name": "Golem",
+      "name": "Golem Network Token (PoS)",
       "symbol": "GLM",
       "logoURI": "",
       "chainId": 137,
@@ -324,7 +324,7 @@
     },
     {
       "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
-      "name": "SushiToken (PoS)",
+      "name": "SushiToken",
       "symbol": "SUSHI",
       "logoURI": "",
       "chainId": 137,
@@ -364,8 +364,8 @@
     },
     {
       "address": "0x104592a158490a9228070E0A8e5343B499e125D0",
-      "name": "Frax (PoS)",
-      "symbol": "FRAX",
+      "name": "Poly Frax",
+      "symbol": "polyFRAX",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -404,8 +404,8 @@
     },
     {
       "address": "0x11CD37bb86F65419713f30673A480EA33c826872",
-      "name": "Ethereum (Wormhole)",
-      "symbol": "ETH",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -548,7 +548,7 @@
     },
     {
       "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-      "name": "Curve DAO",
+      "name": "Curve",
       "symbol": "CRV",
       "logoURI": "",
       "chainId": 137,
@@ -972,7 +972,7 @@
     },
     {
       "address": "0x23D29D30e35C5e8D321e1dc9A8a61BFD846D4C5C",
-      "name": "HEX (PoS)",
+      "name": "HEX",
       "symbol": "HEX",
       "logoURI": "",
       "chainId": 137,
@@ -980,8 +980,8 @@
     },
     {
       "address": "0x24834BBEc7E39ef42f4a75EAF8E5B6486d3F0e57",
-      "name": "Wrapped Terra Classic",
-      "symbol": "LUNC",
+      "name": "Wrapped LUNA Token (PoS)",
+      "symbol": "LUNA",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1012,7 +1012,7 @@
     },
     {
       "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-      "name": "USD Coin",
+      "name": "USDCoin",
       "symbol": "USDC",
       "logoURI": "",
       "chainId": 137,
@@ -1372,8 +1372,8 @@
     },
     {
       "address": "0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4",
-      "name": "Staked MATIC (PoS)",
-      "symbol": "stMATIC",
+      "name": "Lido Staked Matic",
+      "symbol": "STMATIC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1700,7 +1700,7 @@
     },
     {
       "address": "0x482bc619eE7662759CDc0685B4E78f464Da39C73",
-      "name": "GYEN",
+      "name": "GMO JPY (PoS)",
       "symbol": "GYEN",
       "logoURI": "",
       "chainId": 137,
@@ -1861,7 +1861,7 @@
     {
       "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
       "name": "Jarvis Synthetic Euro",
-      "symbol": "jEUR",
+      "symbol": "JEUR",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1948,7 +1948,7 @@
     },
     {
       "address": "0x553d3D295e0f695B9228246232eDF400ed3560B5",
-      "name": "PAX Gold",
+      "name": "Paxos Gold (PoS)",
       "symbol": "PAXG",
       "logoURI": "",
       "chainId": 137,
@@ -1996,8 +1996,8 @@
     },
     {
       "address": "0x576Cf361711cd940CD9C397BB98C4C896cBd38De",
-      "name": "USD Coin (Wormhole)",
-      "symbol": "USDCSO",
+      "name": "USD Coin",
+      "symbol": "USDC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
@@ -2964,8 +2964,8 @@
     },
     {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-      "name": "Wrapped Ethereum",
-      "symbol": "WETH",
+      "name": "Darkcoin",
+      "symbol": "DARK",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3476,7 +3476,7 @@
     },
     {
       "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-      "name": "Dai",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "",
       "chainId": 137,
@@ -3532,7 +3532,7 @@
     },
     {
       "address": "0x9417669fBF23357D2774e9D421307bd5eA1006d2",
-      "name": "Bridged Tether (Wormhole Ethereum)",
+      "name": "Tether USD (Wormhole from Ethereum)",
       "symbol": "USDTET",
       "logoURI": "",
       "chainId": 137,
@@ -3588,8 +3588,8 @@
     },
     {
       "address": "0x9719d867A500Ef117cC201206B8ab51e794d3F82",
-      "name": "Matic Aave interest bearing USDC",
-      "symbol": "maUSDC",
+      "name": "UST",
+      "symbol": "UST",
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
@@ -3716,7 +3716,7 @@
     },
     {
       "address": "0x9Cb74C8032b007466865f060ad2c46145d45553D",
-      "name": "IDEX",
+      "name": "IDEX Token (PoS)",
       "symbol": "IDEX",
       "logoURI": "",
       "chainId": 137,
@@ -3796,8 +3796,8 @@
     },
     {
       "address": "0x9cd6746665D9557e1B9a775819625711d0693439",
-      "name": "Terra Classic (Wormhole)",
-      "symbol": "LUNC",
+      "name": "LUNA",
+      "symbol": "LUNA",
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
@@ -4084,7 +4084,7 @@
     },
     {
       "address": "0xB355f4F4CC84a9429a59d5c2B98d77016f7EC482",
-      "name": "Bitcoin BR",
+      "name": "BitcoinBR",
       "symbol": "BTCBR",
       "logoURI": "",
       "chainId": 137,
@@ -4268,8 +4268,8 @@
     },
     {
       "address": "0xC168E40227E4ebD8C1caE80F7a55a4F0e6D66C97",
-      "name": "DFYN Token (PoS)",
-      "symbol": "DFYN",
+      "name": "Grape-up Imperial",
+      "symbol": "GUIMP",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4508,8 +4508,8 @@
     },
     {
       "address": "0xDBf31dF14B66535aF65AaC99C32e9eA844e14501",
-      "name": "renBTC",
-      "symbol": "renBTC",
+      "name": "Museum of Crypto Art",
+      "symbol": "MOCA",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4605,7 +4605,7 @@
     {
       "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
       "name": "agEUR",
-      "symbol": "agEUR",
+      "symbol": "AGEUR",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4620,7 +4620,7 @@
     },
     {
       "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-      "name": "STASIS EURS Token (PoS)",
+      "name": "STASIS EURO",
       "symbol": "EURS",
       "logoURI": "",
       "chainId": 137,
@@ -4692,7 +4692,7 @@
     },
     {
       "address": "0xE6469Ba6D2fD6130788E0eA9C0a0515900563b59",
-      "name": "TerraUSD (Wormhole)",
+      "name": "UST",
       "symbol": "UST",
       "logoURI": "",
       "chainId": 137,
@@ -4780,7 +4780,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Polygon",
+      "name": "MATIC",
       "symbol": "MATIC",
       "logoURI": "",
       "chainId": 137,
@@ -5572,7 +5572,7 @@
     },
     {
       "address": "0xdAb529f40E671A1D4bF91361c21bf9f0C9712ab7",
-      "name": "(PoS) Binance USD",
+      "name": "Binance USD",
       "symbol": "BUSD",
       "logoURI": "",
       "chainId": 137,
@@ -6020,8 +6020,8 @@
     },
     {
       "address": "0xfa68FB4628DFF1028CFEc22b4162FCcd0d45efb6",
-      "name": "Liquid Staking Matic (PoS)",
-      "symbol": "MaticX",
+      "name": "Stader MaticX",
+      "symbol": "MATICX",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18

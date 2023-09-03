@@ -1,10 +1,10 @@
 {
   "name": "Messari Token List",
   "description": "",
-  "timestamp": "03/09/2023 00:38:11",
+  "timestamp": "03/09/2023 11:52:33",
   "version": {
-    "major": 52,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://messari.io/images/logo_tcr-check.svg",
@@ -143,6 +143,14 @@
       "name": "Scarface Finance",
       "symbol": "SCAR",
       "logoURI": "https://asset-images.messari.io/images/c8129c51-42e0-4873-8961-b063fb2fe5fe/128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x0DeF844ED26409C5C46dda124ec28fb064D90D27",
+      "name": "Coffin Dollar",
+      "symbol": "COUSD",
+      "logoURI": "https://asset-images.messari.io/images/3f1d8f48-1e71-4c2c-af51-a23aab6c3790/128.png",
       "chainId": 250,
       "decimals": 18
     },
@@ -668,7 +676,7 @@
     },
     {
       "address": "0x2C78f1b70Ccf63CDEe49F9233e9fAa99D43AA07e",
-      "name": "yearn.firk",
+      "name": "Celsius Network",
       "symbol": "CEL",
       "logoURI": "https://asset-images.messari.io/images/bbd3642f-0ea0-4add-b9e8-8308389632c8/128.png",
       "chainId": 250,
@@ -751,6 +759,14 @@
       "name": "DiversiFi",
       "symbol": "DFI",
       "logoURI": "https://asset-images.messari.io/images/9e53258a-19fe-4d05-b6c5-cf1916f56598/128.png",
+      "chainId": 250,
+      "decimals": 9
+    },
+    {
+      "address": "0x3264810174f577F82DDD4FD08818F368AC363505",
+      "name": "MiniPanther",
+      "symbol": "MP",
+      "logoURI": "https://asset-images.messari.io/images/fc9a1f5a-7892-4416-9adb-c88e7326c298/128.png",
       "chainId": 250,
       "decimals": 9
     },
@@ -895,6 +911,14 @@
       "name": "MyMine",
       "symbol": "MYMINE",
       "logoURI": "https://asset-images.messari.io/images/c4a0873d-0879-46a7-95e1-e74d55c5e59a/128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x3dc57B391262e3aAe37a08D91241f9bA9d58b570",
+      "name": "Yoshi.exchange",
+      "symbol": "YOSHI",
+      "logoURI": "https://asset-images.messari.io/images/fdd51cf9-fb47-42ea-a0c0-cf545aa28c68/128.png",
       "chainId": 250,
       "decimals": 18
     },
@@ -1587,6 +1611,14 @@
       "decimals": 18
     },
     {
+      "address": "0x695921034f0387eAc4e11620EE91b1b15A6A09fE",
+      "name": "Bridged Wrapped Ether (Stargate)",
+      "symbol": "weth",
+      "logoURI": "https://asset-images.messari.io/images/c9ce0cc9-4ea7-462d-b678-bc0caae59209/128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x69D17C151EF62421ec338a0c92ca1c1202A427EC",
       "name": "Supernova",
       "symbol": "SNT",
@@ -2083,14 +2115,6 @@
       "decimals": 18
     },
     {
-      "address": "0x8b8407c6184f1f0Fd1082e83d6A3b8349cAcEd12",
-      "name": "Circuits of Value",
-      "symbol": "COVAL",
-      "logoURI": "https://asset-images.messari.io/images/f256d231-e115-4cf4-9988-87e7754147b3/128.png",
-      "chainId": 250,
-      "decimals": 8
-    },
-    {
       "address": "0x8d05B42749428C26613deB12f8989Cb8D1f5c17f",
       "name": "Draco Force",
       "symbol": "DRC",
@@ -2135,6 +2159,14 @@
       "name": "Hyve",
       "symbol": "HYVE",
       "logoURI": "https://asset-images.messari.io/images/02218404-507c-45ac-9889-a80e8d22a626/128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x911d1FEaE99e112B5014cfa60038325d863352f1",
+      "name": "Wolf Ventures",
+      "symbol": "$wv",
+      "logoURI": "https://asset-images.messari.io/images/c9c6913f-e265-47c7-a30d-40d87f390b29/128.png",
       "chainId": 250,
       "decimals": 18
     },
@@ -3131,6 +3163,14 @@
       "decimals": 18
     },
     {
+      "address": "0xba36266B6565C96BD77815fa898f403Cc06F64cf",
+      "name": "Knights of Fantom",
+      "symbol": "KNIGHTS",
+      "logoURI": "https://asset-images.messari.io/images/fcb757a8-deec-425e-9327-9112e287fcee/128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0xbb4f92034927d4cE195b7D8f0acD4b3f661c5c45",
       "name": "RichCity Cash",
       "symbol": "cash",
@@ -3227,12 +3267,28 @@
       "decimals": 9
     },
     {
+      "address": "0xce1E3cc1950D2aAEb47dE04DE2dec2Dc86380E0A",
+      "name": "Ethos Reserve Note",
+      "symbol": "ern",
+      "logoURI": "https://asset-images.messari.io/images/fd14fded-8924-4465-a6ef-5fd5f04c3e9a/128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0xcef2b88d5599d578c8d92E7a6e6235FBfaD01eF4",
       "name": "Bastille De La Bouje",
       "symbol": "BASTILLE",
       "logoURI": "https://asset-images.messari.io/images/72d2d811-c609-4908-9c2a-cf2af26969be/128.png",
       "chainId": 250,
       "decimals": 18
+    },
+    {
+      "address": "0xd226392C23fb3476274ED6759D4a478db3197d82",
+      "name": "Axelar USDT",
+      "symbol": "axlusdt",
+      "logoURI": "https://asset-images.messari.io/images/8f87d617-4920-4ad6-b227-edddd834dea2/128.png",
+      "chainId": 250,
+      "decimals": 6
     },
     {
       "address": "0xd2f38621c3C65300ECabA7020c05d1350f9C265c",
@@ -3511,6 +3567,14 @@
       "name": "Waka Finance",
       "symbol": "WAKA",
       "logoURI": "https://asset-images.messari.io/images/1381bd91-3386-4f35-8d18-1704112df4f1/128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0xf8a363Cf116b6B633faEDF66848ED52895CE703b",
+      "name": "Levolution",
+      "symbol": "LEVL",
+      "logoURI": "https://asset-images.messari.io/images/fd84051b-83e6-48a2-9058-2077b79fc708/128.png",
       "chainId": 250,
       "decimals": 18
     },
