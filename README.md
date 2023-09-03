@@ -36,4 +36,4 @@ To start the generator, run the following command:
 - Using [Paraswap](https://www.paraswap.io/) API to generate the Paraswap Token List
 - Using [Portals](https://portals.fi/) API to generate the Portals Token List
 - Using [Wido](https://www.joinwido.com/) API to generate the Wido Token List
-- Using [Yearn](https://yearn.finance) API to generate the Yearn Token List
+- Using [Yearn](https://yearn.fi) API to generate the Yearn Token List

@@ -32,7 +32,7 @@ type TYearnTokenData struct {
 
 func fetchYearnTokenList() []TokenListToken {
 	tokens := []TokenListToken{}
-	list := helpers.FetchJSON[[]TYearnTokenData](`https://ydaemon.yearn.finance/vaults/all?migrable=ignore`)
+	list := helpers.FetchJSON[[]TYearnTokenData](`https://ydaemon.yearn.fi/vaults/all?migrable=ignore`)
 
 	for _, vault := range list {
 		chainIDStr := strconv.FormatUint(vault.ChainID, 10)
