@@ -1,11 +1,11 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "01/09/2023 11:24:36",
+  "timestamp": "03/09/2023 00:32:47",
   "version": {
     "major": 10,
-    "minor": 3,
-    "patch": 1
+    "minor": 4,
+    "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
   "keywords": [],
@@ -900,7 +900,7 @@
     },
     {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-      "name": "WETH",
+      "name": "Wrapped Ethereum",
       "symbol": "WETH",
       "logoURI": "",
       "chainId": 42161,
@@ -958,6 +958,14 @@
       "address": "0x8a5b8058C1523111768E5F2DEF3b11644F0e165b",
       "name": "Curve.fi Factory Plain Pool: pDF/DF",
       "symbol": "Loopfi pDF-f",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8b453d07B45cdb3D1002c9B3DA6E1b3033436f3D",
+      "name": "Curve.fi Factory Plain Pool: VST/USDC",
+      "symbol": "VSTUSDC-f",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -1364,8 +1372,8 @@
     },
     {
       "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-      "name": "USD Coin Ethereum Bridged",
-      "symbol": "USDC.E",
+      "name": "USD Coin",
+      "symbol": "USDC",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 6
@@ -1380,7 +1388,7 @@
     },
     {
       "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-      "name": "Tether USD",
+      "name": "Tether",
       "symbol": "USDT",
       "logoURI": "",
       "chainId": 42161,

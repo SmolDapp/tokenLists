@@ -1,11 +1,11 @@
 {
   "name": "Velodrome",
   "description": "",
-  "timestamp": "01/09/2023 11:23:43",
+  "timestamp": "03/09/2023 00:32:28",
   "version": {
     "major": 1,
-    "minor": 0,
-    "patch": 2
+    "minor": 1,
+    "patch": 0
   },
   "logoURI": "https://velodrome.finance/velodrome.svg",
   "keywords": [
@@ -562,6 +562,14 @@
       "name": "Velodrome Stable FRAX-DOLA",
       "symbol": "sAMMV2-FRAX/DOLA",
       "logoURI": "https://assets.smold.app/api/token/10/0x1f8b46abe1EAbF5A60CbBB5Fb2e4a6A46fA0b6e6/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x1fFc5F9Afd2EBf41cf1208c7e99d88267Ac0D23c",
+      "name": "LuckyDip",
+      "symbol": "LDIP",
+      "logoURI": "https://assets.smold.app/api/token/10/0x1fFc5F9Afd2EBf41cf1208c7e99d88267Ac0D23c/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1926,6 +1934,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6D689d8094C96bB7c4D8E6C6Ee2040a6CA6B237b",
+      "name": "VolatileV2 AMM - LDIP/WETH",
+      "symbol": "vAMMV2-LDIP/WETH",
+      "logoURI": "https://assets.smold.app/api/token/10/0x6D689d8094C96bB7c4D8E6C6Ee2040a6CA6B237b/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x6E966F72ecb1e256e11135a2140b0083Ee08B43D",
       "name": "VolatileV2 AMM - WETH/FRIENDS",
       "symbol": "vAMMV2-WETH/FRIENDS",
@@ -2455,7 +2471,7 @@
     },
     {
       "address": "0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4",
-      "name": "Synthetix",
+      "name": "Synthetix Network Token",
       "symbol": "SNX",
       "logoURI": "https://assets.smold.app/api/token/10/0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4/logo-128.png",
       "chainId": 10,
@@ -3583,7 +3599,7 @@
     },
     {
       "address": "0xF1a0DA3367BC7aa04F8D94BA57B862ff37CeD174",
-      "name": "ShapeShift FOX",
+      "name": "ShapeShift FOX Token",
       "symbol": "FOX",
       "logoURI": "https://assets.smold.app/api/token/10/0xF1a0DA3367BC7aa04F8D94BA57B862ff37CeD174/logo-128.png",
       "chainId": 10,
@@ -3711,7 +3727,7 @@
     },
     {
       "address": "0xFdb794692724153d1488CcdBE0C56c252596735F",
-      "name": "Lido DAO Token",
+      "name": "Lido DAO",
       "symbol": "LDO",
       "logoURI": "https://assets.smold.app/api/token/10/0xFdb794692724153d1488CcdBE0C56c252596735F/logo-128.png",
       "chainId": 10,
