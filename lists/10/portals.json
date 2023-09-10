@@ -1,10 +1,10 @@
 {
   "name": "Portals Token List",
   "description": "",
-  "timestamp": "03/09/2023 11:47:51",
+  "timestamp": "10/09/2023 00:32:57",
   "version": {
-    "major": 0,
-    "minor": 1,
+    "major": 1,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://portals-assets-bucket.s3.amazonaws.com/logo.png",
@@ -39,6 +39,30 @@
       "name": "Balancer BPT-RESERVE Gauge Deposit",
       "symbol": "BPT-RESERVE-gauge",
       "logoURI": "https://assets.coingecko.com/coins/images/25942/large/logo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x0333888eD5e01D0D8Bb9c8286Ae46D536aC50F08",
+      "name": "Velodrome V2 VolatileV2 AMM - KUJI/OP",
+      "symbol": "vAMMV2-KUJI/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x04730579f1468C06530ae3a84B7D5c233f3a130D",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/DOLA",
+      "symbol": "vAMMV2-USDC/DOLA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x0493Bf8b6DBB159Ce2Db2E0E8403E753Abd1235b",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/USDC",
+      "symbol": "vAMMV2-WETH/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -99,6 +123,14 @@
       "decimals": 18
     },
     {
+      "address": "0x0680A285dbB887EfCE41c1fdE31002BD4fBd6378",
+      "name": "Velodrome V2 VolatileV2 AMM - OATH/ERN",
+      "symbol": "vAMMV2-OATH/ERN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x078f358208685046a11C85e8ad32895DED33A249",
       "name": "Aave Optimism WBTC",
       "symbol": "aOptWBTC",
@@ -131,12 +163,84 @@
       "decimals": 18
     },
     {
+      "address": "0x0C3A7AA27A6E14b7a92e09456B0970aB71cc0598",
+      "name": "Velodrome V2 StableV2 AMM - OP/USDC",
+      "symbol": "sAMMV2-OP/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x0D0F65C63E379263f7CE2713dd012180681D0dc5",
+      "name": "Velodrome V2 StableV2 AMM - LUSD/DAI",
+      "symbol": "sAMMV2-LUSD/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x0a2f234Ad2e5e9047067904A9D37D0Cd02b80D12",
       "name": "Yearn yvWBTC 0.4.4",
       "symbol": "yvWBTC",
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
       "chainId": 10,
       "decimals": 8
+    },
+    {
+      "address": "0x0af32614EEa68B8D2232B9592FbdB6512ab6DA73",
+      "name": "Velodrome V2 VolatileV2 AMM - fBOMB/VELO",
+      "symbol": "vAMMV2-fBOMB/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x0b28C2e41058EDc7D66c516c617b664Ea86eeC5d",
+      "name": "Velodrome V2 StableV2 AMM - USD+/DOLA",
+      "symbol": "sAMMV2-USD+/DOLA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 6
+    },
+    {
+      "address": "0x0df083de449F75691fc5A36477a6f3284C269108",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/USDC",
+      "symbol": "vAMMV2-OP/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x0e88a5bfF34d39DA66bdD32B82dC89a32D7Bb6c9",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/HOP",
+      "symbol": "vAMMV2-WETH/HOP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x0f0509443b7fca172f5428580468A403b2924504",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/sUSD",
+      "symbol": "vAMMV2-OP/sUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x0fB402252441082646D7dF18550e4036b8F20d7e",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/mooVeloV2USDC-MTA",
+      "symbol": "vAMMV2-USDC/mooVeloV2USDC-MTA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x10010078a54396F62c96dF8532dc2B4847d47ED3",
@@ -163,6 +267,22 @@
       "decimals": 18
     },
     {
+      "address": "0x10df8a154C806f74C589466214b1C831c2315173",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/wOptiDoge",
+      "symbol": "vAMMV2-WETH/wOptiDoge",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x11FE68d9f9D951E2ae8758D8A5134A2ff6258397",
+      "name": "Velodrome V2 VolatileV2 AMM - OATH/USDC",
+      "symbol": "vAMMV2-OATH/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x11f0b5CCA01B0F0A9Fe6265aD6E8ee3419c68440",
       "name": "BeethovenX LP WETH/PSP",
       "symbol": "WETH/PSP",
@@ -179,10 +299,34 @@
       "decimals": 18
     },
     {
+      "address": "0x13C195588ff5026bFcBaE69256e2D83f865F310A",
+      "name": "Velodrome V2 VolatileV2 AMM - STG/WETH",
+      "symbol": "vAMMV2-STG/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x13e41D76BDDcbA5Ee3dD812127C6Ba6BDb0A32a0",
+      "name": "Velodrome V2 VolatileV2 AMM - SONNE/WETH",
+      "symbol": "vAMMV2-SONNE/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x14778860E937f509e651192a90589dE711Fb88a9",
       "name": "CyberConnect",
       "symbol": "CYBER",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x1581Ae620A6717222Fa2ced0350754E43949f4F6",
+      "name": "Velodrome V2 VolatileV2 AMM - sUSD/USDT",
+      "symbol": "vAMMV2-sUSD/USDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -195,20 +339,20 @@
       "decimals": 18
     },
     {
-      "address": "0x165137624F1f692e69659f944BF69DE02874ee27",
-      "name": "Stargate Dai Stablecoin-LP",
-      "symbol": "S*DAI",
-      "logoURI": "https://assets.coingecko.com/coins/images/24413/large/STG_LOGO.png",
-      "chainId": 10,
-      "decimals": 6
-    },
-    {
       "address": "0x17533a1bDe957979E3977EbbFBC31E6deeb25C7d",
       "name": "Iron Bank Wrapped Ether",
       "symbol": "iWETH",
       "logoURI": "https://assets.coingecko.com/coins/images/22902/large/ironbank.png",
       "chainId": 10,
       "decimals": 8
+    },
+    {
+      "address": "0x17547215D96696de1E1C8a9791D6dA18F92045AF",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/WBTC",
+      "symbol": "vAMMV2-WETH/WBTC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x18D2b18Af9A1f379025f46b8aeB4aF75f6642c9F",
@@ -239,6 +383,54 @@
       "name": "Vesper vaOP Pool",
       "symbol": "vaOP",
       "logoURI": "https://assets.coingecko.com/coins/images/13527/large/vesper_logo.jpg",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x19715771E30c93915A5bbDa134d782b81A820076",
+      "name": "Velodrome V2 StableV2 AMM - USDC/DAI",
+      "symbol": "sAMMV2-USDC/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x19803da985D2E0039bF8a950f625FBAFDe0Ee9c9",
+      "name": "Velodrome V2 VolatileV2 AMM - SNX/LUSD",
+      "symbol": "vAMMV2-SNX/LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x1AD06Ca54de04DBe9e2817F4C13eCB406DCbeAf0",
+      "name": "Velodrome V2 StableV2 AMM - alETH/frxETH",
+      "symbol": "sAMMV2-alETH/frxETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x1BAfB8120f6faaa72465f828BA536A828a89475d",
+      "name": "Velodrome V2 VolatileV2 AMM - USDT/DAI",
+      "symbol": "vAMMV2-USDT/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x1Bf31A0932A0035c532A7b1DCB94ffe0b35aed14",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/SNX",
+      "symbol": "vAMMV2-WETH/SNX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x1C5d8126B50D9b42D6568Bb33869066D94367cF3",
+      "name": "Velodrome V2 VolatileV2 AMM - sfrxETH/frxETH",
+      "symbol": "vAMMV2-sfrxETH/frxETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -275,6 +467,14 @@
       "decimals": 18
     },
     {
+      "address": "0x1c8d7fc2eAa85af18188f7619b99f939Db34836d",
+      "name": "Velodrome V2 VolatileV2 AMM - QI/USDC",
+      "symbol": "vAMMV2-QI/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x1cc3E990B23a09Fc9715Aaf7CCf21c212a9cbC16",
       "name": "BeethovenX LP OATH/WETH/USDC/GRAIN",
       "symbol": "OATH/WETH/USDC/GRAIN",
@@ -307,10 +507,34 @@
       "decimals": 18
     },
     {
+      "address": "0x1f8b46abe1EAbF5A60CbBB5Fb2e4a6A46fA0b6e6",
+      "name": "Velodrome V2 StableV2 AMM - FRAX/DOLA",
+      "symbol": "sAMMV2-FRAX/DOLA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x20A068f6940b28338363E8B01B07C21c1D5f197B",
+      "name": "Velodrome V2 VolatileV2 AMM - wstETH/FOX",
+      "symbol": "vAMMV2-wstETH/FOX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x217D47011b23BB961eB6D93cA9945B7501a5BB11",
       "name": "Thales",
       "symbol": "THALES",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x21f75B66Fe2e3A18ebCd6D7524733e9C70362373",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/wOptiDoge",
+      "symbol": "vAMMV2-USDC/wOptiDoge",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -329,6 +553,30 @@
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
+    },
+    {
+      "address": "0x25638DdDA5AD255308accD17d5f225837A36B9aB",
+      "name": "Velodrome V2 VolatileV2 AMM - USD+/USDC",
+      "symbol": "vAMMV2-USD+/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x258509CF4985026B63fbF4530876DAF623771aa0",
+      "name": "Velodrome V2 VolatileV2 AMM - DOLA/ERN",
+      "symbol": "vAMMV2-DOLA/ERN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x26AaB17f27CD1c8d06a0Ad8E4a1Af8B1032171d5",
+      "name": "Sonne Wrapped liquid staked Ether 2.0",
+      "symbol": "sowstETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
     },
     {
       "address": "0x276cf9e7a43d1B9422dEcd1f1d2608f3D588CAad",
@@ -355,6 +603,14 @@
       "decimals": 18
     },
     {
+      "address": "0x296182104612Ba8303326e1204A57F3407308242",
+      "name": "Velodrome V2 VolatileV2 AMM - USDT/LUSD",
+      "symbol": "vAMMV2-USDT/LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x296F55F8Fb28E498B858d0BcDA06D955B2Cb3f97",
       "name": "Stargate Finance",
       "symbol": "STG",
@@ -375,6 +631,38 @@
       "name": "Bankless DAO",
       "symbol": "BANK",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x2Ab2683a9eEa7D62309F25b7E8bB6566cBfd2CFe",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/wOptiDoge",
+      "symbol": "vAMMV2-OP/wOptiDoge",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x2B47C794c3789f499D8A54Ec12f949EeCCE8bA16",
+      "name": "Velodrome V2 StableV2 AMM - USDC/USDT",
+      "symbol": "sAMMV2-USDC/USDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x2B6c15b11022c245ED1a0D38A9821aAd94dB7B64",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/MIM",
+      "symbol": "vAMMV2-OP/MIM",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x2Cd32FB367431fD6F499328EDf34934fDbBC6b26",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/ACX",
+      "symbol": "vAMMV2-WETH/ACX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -411,6 +699,14 @@
       "decimals": 18
     },
     {
+      "address": "0x2fE304b407c7fAb2a3c10962F14dB751468a4f5b",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/frxETH",
+      "symbol": "vAMMV2-OP/frxETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x30091e843deb234EBb45c7E1Da4bBC4C33B3f0B4",
       "name": "Granary OP",
       "symbol": "grainOP",
@@ -419,10 +715,66 @@
       "decimals": 18
     },
     {
+      "address": "0x3108c6e5B2C8527cb6d29accF70451a47e2871F4",
+      "name": "Velodrome V2 VolatileV2 AMM - VELO/GRAIN",
+      "symbol": "vAMMV2-VELO/GRAIN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x3133CeFb57BaFBff2826fD09d4792a2b3f6Ac00E",
+      "name": "Velodrome V2 VolatileV2 AMM - LYRA/sUSD",
+      "symbol": "vAMMV2-LYRA/sUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x31a56BC24B24F5E570a9a01b315A31fd43cb9c4A",
+      "name": "Velodrome V2 VolatileV2 AMM - USD+/HOP",
+      "symbol": "vAMMV2-USD+/HOP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x32F0DC9E2D890BAC95106a65eB82db70Bc58BaDB",
       "name": "BeethovenX LP OP/BEETS",
       "symbol": "OP/BEETS",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x331d19Cd079C78BC4c9E8730106D42ecC04757A5",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/MTA",
+      "symbol": "vAMMV2-OP/MTA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x336563C501ceb3c1E1443e36fee061E0791a5d84",
+      "name": "Velodrome V2 VolatileV2 AMM - THALES/OP",
+      "symbol": "vAMMV2-THALES/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x33865E09A572d4F1CC4d75Afc9ABcc5D3d4d867D",
+      "name": "Sonne Wrapped Bitcoin",
+      "symbol": "soWBTC",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
+    },
+    {
+      "address": "0x34A32B75dc1691bC46eb96D50dbbEb103c903871",
+      "name": "Velodrome V2 VolatileV2 AMM - AELIN/USDC",
+      "symbol": "vAMMV2-AELIN/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -449,6 +801,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/24413/large/STG_LOGO.png",
       "chainId": 10,
       "decimals": 6
+    },
+    {
+      "address": "0x3627B41B977Df29417A46f2e1fF67A29dCa99f2c",
+      "name": "Velodrome V2 VolatileV2 AMM - QI/MAI",
+      "symbol": "vAMMV2-QI/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x368605D9C6243A80903b9e326f1Cddde088B8924",
@@ -483,10 +843,34 @@
       "decimals": 18
     },
     {
+      "address": "0x376DADcec30287C6841C4D0D1e61D88E84630752",
+      "name": "Velodrome V2 StableV2 AMM - USDT/MAI",
+      "symbol": "sAMMV2-USDT/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x37e7D30CC180A750C83D68ED0C2511dA10694d63",
+      "name": "Velodrome V2 StableV2 AMM - USD+/LUSD",
+      "symbol": "sAMMV2-USD+/LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x39965c9dAb5448482Cf7e002F583c812Ceb53046",
       "name": "BeethovenX LP WETH/OP/USDC",
       "symbol": "WETH/OP/USDC",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x39FBeef6f094e366DE326B5de87829DEeF57ddd6",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/L2DAO",
+      "symbol": "vAMMV2-WETH/L2DAO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -505,6 +889,22 @@
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
+    },
+    {
+      "address": "0x3B375bA61920551217f5944F4F5d8a63989A438e",
+      "name": "Velodrome V2 StableV2 AMM - sUSD/LUSD",
+      "symbol": "sAMMV2-sUSD/LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x3D4319f633b7d5A90e5B542fEeb3f6888eC790FA",
+      "name": "Velodrome V2 VolatileV2 AMM - sUSD/LUSD",
+      "symbol": "vAMMV2-sUSD/LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x3DD36E64784FDAEe7BD202c78322a0d8EB1BB32b",
@@ -539,10 +939,26 @@
       "decimals": 18
     },
     {
+      "address": "0x3F2Bc76760b5C36aae121C0D632c60eD04853BAf",
+      "name": "Velodrome V2 StableV2 AMM - OP/yvOP",
+      "symbol": "sAMMV2-OP/yvOP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
       "name": "Qi Dao",
       "symbol": "QI",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x3F95E57C7ce7cA478d7A4f0eE6072F39120E3689",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/DAI",
+      "symbol": "vAMMV2-OP/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -571,6 +987,22 @@
       "decimals": 18
     },
     {
+      "address": "0x3eE6107d9C93955acBb3f39871D32B02F82B78AB",
+      "name": "Staked Ethos Reserve Note",
+      "symbol": "STERN",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x3f42Dc59DC4dF5cD607163bC620168f7FF7aB970",
+      "name": "Velodrome V2 StableV2 AMM - WETH/frxETH",
+      "symbol": "sAMMV2-WETH/frxETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x40dBe796EAE37e371Cf0217A6dbB946CDAF9F1b7",
       "name": "BeethovenX LP QI/WETH/OP/USDC",
       "symbol": "QI/WETH/OP/USDC",
@@ -595,6 +1027,38 @@
       "decimals": 18
     },
     {
+      "address": "0x4207c31CCdfdB595DdC4Ff795156931E9702088E",
+      "name": "Velodrome V2 VolatileV2 AMM - IB/OP",
+      "symbol": "vAMMV2-IB/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x427e7E54d828EafC019B044dACd17C591A8F0803",
+      "name": "Velodrome V2 StableV2 AMM - DOLA/VELO",
+      "symbol": "sAMMV2-DOLA/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x439c8a3704bDF52fec25bc271D67BaA2Bd204104",
+      "name": "Velodrome V2 VolatileV2 AMM - EXTRA/VELO",
+      "symbol": "vAMMV2-EXTRA/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x45922aE4B90297A2d8655ba1Ed354aDBC489dC94",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/BOB",
+      "symbol": "vAMMV2-WETH/BOB",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x4645e0952678E9566FB529D9313f5730E4e1C412",
       "name": "Iron Bank Optimism",
       "symbol": "iOP",
@@ -603,10 +1067,34 @@
       "decimals": 8
     },
     {
+      "address": "0x4706e50fDe911525e4B904c240056c4Ea0884AA6",
+      "name": "Velodrome V2 VolatileV2 AMM - stERN/ERN",
+      "symbol": "vAMMV2-stERN/ERN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x47536F17F4fF30e64A96a7555826b8f9e66ec468",
       "name": "Mummy Finance",
       "symbol": "MMY",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x475C92F613dBE3bD5D1A4F5fcafa0725cAd57256",
+      "name": "Velodrome V2 VolatileV2 AMM - QI/rETH",
+      "symbol": "vAMMV2-QI/rETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x477Fa18B063B7728409570D274f7a055e3da0D6E",
+      "name": "Velodrome V2 VolatileV2 AMM - EXTRA/USDC",
+      "symbol": "vAMMV2-EXTRA/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -635,6 +1123,30 @@
       "decimals": 18
     },
     {
+      "address": "0x4D8b739114309E4dae98362c447099B671d12ecA",
+      "name": "Velodrome V2 StableV2 AMM - OP/USDT",
+      "symbol": "sAMMV2-OP/USDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x4E60495550071693bc8bDfFC40033d278157EAC7",
+      "name": "Velodrome V2 VolatileV2 AMM - SONNE/USDC",
+      "symbol": "vAMMV2-SONNE/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x4FC3ee048aeDDcEF1b48a80dB63D883686153d40",
+      "name": "Velodrome V2 VolatileV2 AMM - STG/wOptiDoge",
+      "symbol": "vAMMV2-STG/wOptiDoge",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x4Fd63966879300caFafBB35D157dC5229278Ed23",
       "name": "BeethovenX LP WETH/rETH",
       "symbol": "WETH/rETH",
@@ -651,12 +1163,44 @@
       "decimals": 18
     },
     {
+      "address": "0x4d7959d17B9710BE87e3657e69d946914221BB88",
+      "name": "Velodrome V2 StableV2 AMM - USDC/alUSD",
+      "symbol": "sAMMV2-USDC/alUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x4e7849f846f8cdDAF37c72065b65Ec22cecEE109",
       "name": "Granary USDT",
       "symbol": "grainUSDT",
       "logoURI": "https://granary.finance/static/media/GranaryLogo.6842f821.png",
       "chainId": 10,
       "decimals": 6
+    },
+    {
+      "address": "0x4ed90ca704F4f6f3955169F202EA35365e41B424",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/PERP",
+      "symbol": "vAMMV2-USDC/PERP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x4ffCFbF4c01746DAfc3fe0719Ab3A83814130f22",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/LDO",
+      "symbol": "vAMMV2-WETH/LDO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x501c43f2C1e32b8E6F3785Ed978C44b83E38684A",
+      "name": "Velodrome V2 VolatileV2 AMM - DOLA/VELO",
+      "symbol": "vAMMV2-DOLA/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x5028497af0c9a54ea8C6D42a054c0341B9fc6168",
@@ -699,10 +1243,42 @@
       "decimals": 18
     },
     {
+      "address": "0x51e2b9b62B6B58a8843ab19b6dC07c6912b5C6F8",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/LDO",
+      "symbol": "vAMMV2-OP/LDO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x533b22a3015E60944799c2c46d6C08e7535686aB",
+      "name": "Velodrome V2 StableV2 AMM - sUSD/USDT",
+      "symbol": "sAMMV2-sUSD/USDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x537cB4D4fE1a9dF1E295872f2B82c1da9df7500f",
+      "name": "Velodrome V2 StableV2 AMM - LUSD/MAI",
+      "symbol": "sAMMV2-LUSD/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x539505Dde2B9771dEBE0898a84441c5E7fDF6BC0",
       "name": "Vesper vaUSDC Pool",
       "symbol": "vaUSDC",
       "logoURI": "https://assets.coingecko.com/coins/images/13527/large/vesper_logo.jpg",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x5404c61F5337D5a06522ca686dc388e0Fc50Fd32",
+      "name": "Velodrome V2 StableV2 AMM - WETH/OP",
+      "symbol": "sAMMV2-WETH/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -731,10 +1307,66 @@
       "decimals": 18
     },
     {
+      "address": "0x5569b83de187375d43FBd747598bfe64fC8f6436",
+      "name": "Sonne DAI",
+      "symbol": "soDAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
+    },
+    {
+      "address": "0x55DAB45389b93E549ABe1DE75552c082747D53AA",
+      "name": "Velodrome V2 VolatileV2 AMM - alETH/frxETH",
+      "symbol": "vAMMV2-alETH/frxETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x56770b94279539416855fe29Ef14b26438B5e421",
+      "name": "Velodrome V2 VolatileV2 AMM - STG/USDC",
+      "symbol": "vAMMV2-STG/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x568EC5002dCCb2A99F5013078746C1aF02Ca514c",
+      "name": "Velodrome V2 VolatileV2 AMM - VELO/L2DAO",
+      "symbol": "vAMMV2-VELO/L2DAO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x579e50e381a3129893EBcf979cF0D9EDc3D46dC9",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/RING",
+      "symbol": "vAMMV2-WETH/RING",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x58910d5bd045a20A37dE147f8ACEa75B2d881f61",
       "name": "BeethovenX LP USDC/USDT",
       "symbol": "USDC/USDT",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x58b9cB810A68a7f3e1E4f8Cb45D1B9B3c79705E8",
+      "name": "Connext",
+      "symbol": "NEXT",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x58e6433A6903886E440Ddf519eCC573c4046a6b2",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/VELO",
+      "symbol": "vAMMV2-WETH/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -763,10 +1395,26 @@
       "decimals": 18
     },
     {
+      "address": "0x5A9926bd992F143ae4108A09142632A79c4F09Ce",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/DUSD",
+      "symbol": "vAMMV2-USDC/DUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x5B977577Eb8a480f63e11FC615D6753adB8652Ae",
       "name": "Yearn yvWETH 0.4.5",
       "symbol": "yvWETH",
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x5DA5e8a46D435D619A12086620Bc77bF7fB043E5",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/AELIN",
+      "symbol": "vAMMV2-WETH/AELIN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -779,10 +1427,58 @@
       "decimals": 18
     },
     {
+      "address": "0x5F47E90fE20f02Ad61cb047626410AcA6A637151",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/sUSD",
+      "symbol": "vAMMV2-WETH/sUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x5FC073E9c763AF7CB02f403130AcC62F9f034DbC",
       "name": "BeethovenX LP USDC/BEETS",
       "symbol": "USDC/BEETS",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x5Ff29E4470799b982408130EFAaBdeeAE7f66a10",
+      "name": "Sonne USDT",
+      "symbol": "soUSDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
+    },
+    {
+      "address": "0x5d3150ca6fF66a77Ee77eA110424037440b3Ef44",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/sETH",
+      "symbol": "vAMMV2-WETH/sETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x5e4A183Fa83C52B1c55b11f2682f6a8421206633",
+      "name": "Velodrome V2 StableV2 AMM - USDC/ERN",
+      "symbol": "sAMMV2-USDC/ERN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x5e5A37445FadeB71f23514Ae7d675Ffc644e5E5A",
+      "name": "Velodrome V2 StableV2 AMM - WETH/sETH",
+      "symbol": "sAMMV2-WETH/sETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x5e6E17F745fF620E87324b7c6ec672B5743BD0B4",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/wTBT",
+      "symbol": "vAMMV2-USDC/wTBT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -795,10 +1491,34 @@
       "decimals": 18
     },
     {
+      "address": "0x60BE3FB22DDF30C17604b86eC005F6173B1170Aa",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/alUSD",
+      "symbol": "vAMMV2-OP/alUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x61B5EFa18C9c73Fe708F01e2Fc558c35E23DA885",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/MMY",
+      "symbol": "vAMMV2-WETH/MMY",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x61BAADcF22d2565B0F471b291C475db5555e0b76",
       "name": "Aelin",
       "symbol": "AELIN",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x62270F70C750D66Cf10Bc8cBe12390B120498097",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/USDT",
+      "symbol": "vAMMV2-WETH/USDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -819,6 +1539,38 @@
       "decimals": 6
     },
     {
+      "address": "0x6387765fFA609aB9A1dA1B16C455548Bfed7CbEA",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/LUSD",
+      "symbol": "vAMMV2-WETH/LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x642b016C4A269d6665368898E88FbF4573F10C34",
+      "name": "Velodrome V2 StableV2 AMM - EXA/WETH",
+      "symbol": "sAMMV2-EXA/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6443907dF3EB515dcb53f157C078C8Ec7263a7F4",
+      "name": "Velodrome V2 VolatileV2 AMM - VELO/OpenX",
+      "symbol": "vAMMV2-VELO/OpenX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6450a23DC646d65AFf8cF7120A421d394F4E136b",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/yvVelo-IB-WETH-f",
+      "symbol": "vAMMV2-WETH/yvVelo-IB-WETH-f",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x65343F414FFD6c97b0f6add33d16F6845Ac22BAc",
       "name": "Yearn yvDAI 0.4.5",
       "symbol": "yvDAI",
@@ -831,6 +1583,22 @@
       "name": "Curve.fi Factory USD Metapool: Mai Stablecoin",
       "symbol": "MAI+3Pool3CRV-f",
       "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x667002F9DC61ebcBA8Ee1Cbeb2ad04060388f223",
+      "name": "Velodrome V2 StableV2 AMM - USD+/DAI+",
+      "symbol": "sAMMV2-USD+/DAI+",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x66782dD989896004b7862D8f1839C52a569f4346",
+      "name": "Velodrome V2 StableV2 AMM - OP/DAI",
+      "symbol": "sAMMV2-OP/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -867,6 +1635,46 @@
       "decimals": 8
     },
     {
+      "address": "0x69A911e34142f3887e5ecb327f98eEFC136A8399",
+      "name": "Velodrome V2 VolatileV2 AMM - STG/OP",
+      "symbol": "vAMMV2-STG/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6B95147a8d2c7f480C0CF7288FCf268400CE9970",
+      "name": "Velodrome V2 VolatileV2 AMM - HND/USDC",
+      "symbol": "vAMMV2-HND/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6C23fA7EC9eEa627261C4a0978664eA592ca0E19",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/USDT",
+      "symbol": "vAMMV2-USDC/USDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6EFb9E4951Adeb112aBCF9900BC8A43A170A1DDd",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/MAI",
+      "symbol": "vAMMV2-WETH/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6Ea71D6ef05aFF4B503A924F2C5d76DFe5B85225",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/MAI",
+      "symbol": "vAMMV2-OP/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x6F0fecBC276de8fC69257065fE47C5a03d986394",
       "name": "Popcorn",
       "symbol": "POP",
@@ -891,10 +1699,50 @@
       "decimals": 6
     },
     {
+      "address": "0x6d1A334eF70b65a2d39cE04C3F916DF93b3a2952",
+      "name": "Velodrome V2 StableV2 AMM - FRAX/sUSD",
+      "symbol": "sAMMV2-FRAX/sUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6d27db16175741717543135ae1f27308D2909Be8",
+      "name": "Velodrome V2 VolatileV2 AMM - STG/USDT",
+      "symbol": "vAMMV2-STG/USDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6d5BA400640226e24b50214d2bBb3D4Db8e6e15a",
+      "name": "Velodrome V2 StableV2 AMM - USDC/sUSD",
+      "symbol": "sAMMV2-USDC/sUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
       "name": "Aave Optimism SUSD",
       "symbol": "aOptSUSD",
       "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6dA98Bde0068d10DDD11b468b197eA97D96F96Bc",
+      "name": "Velodrome V2 VolatileV2 AMM - wstETH/WETH",
+      "symbol": "vAMMV2-wstETH/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6e74fD411e7c3E858678e5385B922f0a2E288fe5",
+      "name": "Velodrome V2 VolatileV2 AMM - sUSD/VELO",
+      "symbol": "vAMMV2-sUSD/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -907,10 +1755,42 @@
       "decimals": 18
     },
     {
+      "address": "0x70Afb28f6499982f7aA0a52B191665c7f84BCaC2",
+      "name": "Velodrome V2 VolatileV2 AMM - USDT/MIM",
+      "symbol": "vAMMV2-USDT/MIM",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x7178F61694ba9109205B8d6F686282307625e62D",
+      "name": "Velodrome V2 VolatileV2 AMM - wstETH/OP",
+      "symbol": "vAMMV2-wstETH/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x71d53B5B7141E1ec9A3Fc9Cc48b4766102d14A4A",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/SNX",
+      "symbol": "vAMMV2-USDC/SNX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x724dc807b04555b71ed48a6896b6F41593b8C637",
       "name": "Aave Optimism rETH",
       "symbol": "aOptrETH",
       "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x72d0B31906c77C127CED7099e230Ddec3aB341b9",
+      "name": "Velodrome V2 StableV2 AMM - USDC/PERP",
+      "symbol": "sAMMV2-USDC/PERP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -947,10 +1827,34 @@
       "decimals": 18
     },
     {
+      "address": "0x7719cAD77E2d37Bc2a8bc891Aa6363f1D50e316D",
+      "name": "Velodrome V2 VolatileV2 AMM - EXTRA/OP",
+      "symbol": "vAMMV2-EXTRA/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x785F08fB77ec934c01736E30546f87B4daccBe50",
       "name": "BeethovenX LP IB/rETH",
       "symbol": "IB/rETH",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x78D379273F81edC164d4C36F89883e992A074673",
+      "name": "Velodrome V2 StableV2 AMM - USDC/axlUSDC",
+      "symbol": "sAMMV2-USDC/axlUSDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x7959EB3Ad41dDAaF114e0BE9833E9B4f79db3081",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/sUSD",
+      "symbol": "vAMMV2-USDC/sUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1028,11 +1932,19 @@
     },
     {
       "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
-      "name": "USD Coin",
-      "symbol": "USDC",
+      "name": "Bridged USD Coin (Optimism)",
+      "symbol": "USDC.E",
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
+    },
+    {
+      "address": "0x7F5ff1492596Fb219C844A298F69BB9d2700AAc7",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/MAI",
+      "symbol": "vAMMV2-USDC/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x7FB688CCf682d58f86D7e38e03f9D22e7705448B",
@@ -1055,6 +1967,38 @@
       "name": "Erica Social Token",
       "symbol": "EST",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x7bAaf752baA99332e9B04332A5214E84D08c6A75",
+      "name": "Velodrome V2 VolatileV2 AMM - ERN/GRAIN",
+      "symbol": "vAMMV2-ERN/GRAIN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x7c9a7243F6A359781996822A141A28DC48AA258b",
+      "name": "Velodrome V2 VolatileV2 AMM - wstETH/PENDLE",
+      "symbol": "vAMMV2-wstETH/PENDLE",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x7e0F65FAB1524dA9E2E5711D160541cf1199912E",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/rETH",
+      "symbol": "vAMMV2-WETH/rETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x7e1357fa56C0eCfE69dAF22E08489aE8De56d86C",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/DHT",
+      "symbol": "vAMMV2-OP/DHT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1091,6 +2035,30 @@
       "decimals": 18
     },
     {
+      "address": "0x8134A2fDC127549480865fB8E5A9E8A8a95a54c5",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/VELO",
+      "symbol": "vAMMV2-USDC/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x814e2d6E8f7477329BB6C196111A08464ABE11DD",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/fBOMB",
+      "symbol": "vAMMV2-WETH/fBOMB",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x815357CaC24319a269304E45a5a56E6c2AbB0Cc8",
+      "name": "Velodrome V2 StableV2 AMM - OP/VELO",
+      "symbol": "sAMMV2-OP/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x81aB7E0D570b01411fcC4afd3D50eC8C241cb74b",
       "name": "Equalizer",
       "symbol": "EQZ",
@@ -1099,10 +2067,66 @@
       "decimals": 18
     },
     {
+      "address": "0x825e291af3555685554A13971E731145393dC8A7",
+      "name": "Velodrome V2 StableV2 AMM - WETH/USDC",
+      "symbol": "sAMMV2-WETH/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Optimism DAI",
       "symbol": "aOptDAI",
       "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x832a6141710Fcda30F4e88305d20fE1603C61cab",
+      "name": "Velodrome V2 StableV2 AMM - OATH/VELO",
+      "symbol": "sAMMV2-OATH/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x83FC89bda2914b740D389F0549c60Bd808541c99",
+      "name": "Velodrome V2 VolatileV2 AMM - USDT/VELO",
+      "symbol": "vAMMV2-USDT/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x83e782c52CC0b834464c4a560C82610150f0850E",
+      "name": "Velodrome V2 VolatileV2 AMM - xOpenX/OpenX",
+      "symbol": "vAMMV2-xOpenX/OpenX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x8453cc52F2108fF9D1636B6A108dB06Ac137B72F",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/MTA",
+      "symbol": "vAMMV2-USDC/MTA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x8542DD4744edEa38b8a9306268b08F4D26d38581",
+      "name": "Velodrome V2 StableV2 AMM - FRAX/USDC",
+      "symbol": "sAMMV2-FRAX/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x85f096EbA10FC87769d042E37df3DCD1B51cf8c7",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/ERN",
+      "symbol": "vAMMV2-USDC/ERN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1129,6 +2153,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/22902/large/ironbank.png",
       "chainId": 10,
       "decimals": 8
+    },
+    {
+      "address": "0x88391365c225973032275DB256b9D15F845D2C72",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/OpenX",
+      "symbol": "vAMMV2-WETH/OpenX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x883feb1B9862e0c8559D26F53bf19264C5E0839F",
@@ -1171,10 +2203,26 @@
       "decimals": 18
     },
     {
+      "address": "0x8E17f3D8DCeCe9E5f0aF7daaAcf5D2e637144A4E",
+      "name": "Velodrome V2 VolatileV2 AMM - wstETH/wUSDR",
+      "symbol": "vAMMV2-wstETH/wUSDR",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x8Eb270e296023E9D92081fdF967dDd7878724424",
       "name": "Aave Optimism LUSD",
       "symbol": "aOptLUSD",
       "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x8F47041aDbeF5BF321c9F63A0660326614ab6B60",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/KWENTA",
+      "symbol": "vAMMV2-WETH/KWENTA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1203,6 +2251,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8cD6b19A07d754bF36AdEEE79EDF4F2134a8F571",
+      "name": "Sonne OP",
+      "symbol": "soOP",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
+    },
+    {
       "address": "0x8e2cDf8c6477439B7C989e86B917D80871B92339",
       "name": "Beefy Moo Aave Op WBTC",
       "symbol": "mooAaveOpWBTC",
@@ -1219,10 +2275,34 @@
       "decimals": 18
     },
     {
+      "address": "0x8e8D635E28BB8774FD23107cC1D9b6D30AD5D0B9",
+      "name": "Yearn yvVelo-IB-WETH-f 0.4.6",
+      "symbol": "yvVelo-IB-WETH-f",
+      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
       "name": "Aave Optimism MAI",
       "symbol": "aOptMAI",
       "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x9005c76474948AF6aCa879A112B2E0FFd333128e",
+      "name": "Velodrome V2 StableV2 AMM - USDC/BOB",
+      "symbol": "sAMMV2-USDC/BOB",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x91b7C2627F974c0448D795C53bBc67ab4F480216",
+      "name": "Velodrome V2 VolatileV2 AMM - alUSD/MAI",
+      "symbol": "vAMMV2-alUSD/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1251,6 +2331,14 @@
       "decimals": 18
     },
     {
+      "address": "0x9269F5199B01B7B7Dd38321B85c3F34EE3f28F7F",
+      "name": "Velodrome V2 VolatileV2 AMM - UNIDX/WETH",
+      "symbol": "vAMMV2-UNIDX/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x929B939f8524c3Be977af57A4A0aD3fb1E374b50",
       "name": "mStable Governance: Meta",
       "symbol": "MTA",
@@ -1263,6 +2351,14 @@
       "name": "Balancer BPT-ROAD Gauge Deposit",
       "symbol": "BPT-ROAD-gauge",
       "logoURI": "https://assets.coingecko.com/coins/images/25942/large/logo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x92FB369363498d8bFEFc4EB705d8c91a51d22C45",
+      "name": "Velodrome V2 VolatileV2 AMM - VELO/wOptiDoge",
+      "symbol": "vAMMV2-VELO/wOptiDoge",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1291,6 +2387,22 @@
       "decimals": 18
     },
     {
+      "address": "0x95a05D06Decf8e1Eb93aE09B612FbD342F2F9E2E",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/wUSDR",
+      "symbol": "vAMMV2-USDC/wUSDR",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x966E6059a8Ec0bDb03eB2BD21F34F7CeF75A63FC",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/MIM",
+      "symbol": "vAMMV2-USDC/MIM",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x96D17e1301b31556e5e263389583A9331e6749E9",
       "name": "RillaFi",
       "symbol": "RILLA",
@@ -1311,6 +2423,22 @@
       "name": "Beethoven X",
       "symbol": "BEETS",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x990eBBd8fe9bB547986DB6e6658C3746aDd474A9",
+      "name": "Velodrome V2 VolatileV2 AMM - alETH/WETH",
+      "symbol": "vAMMV2-alETH/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x9A166C75587f30D2b9207b53960E9Dc6B37E1235",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/SLM",
+      "symbol": "vAMMV2-WETH/SLM",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1347,6 +2475,38 @@
       "decimals": 18
     },
     {
+      "address": "0x9bbE04f4b57119F6Fb2892d91692BE177d8D8043",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/frxETH",
+      "symbol": "vAMMV2-WETH/frxETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x9c1c3a677BE1A0692dceEF89933c477F05Ba3ed1",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/USD+",
+      "symbol": "vAMMV2-OP/USD+",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x9c78dA24F2843CCDD02085bDEc2484106554ca48",
+      "name": "Velodrome V2 VolatileV2 AMM - TAROTv1/USDC",
+      "symbol": "vAMMV2-TAROTv1/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x9db95DE2EEEebe8f9e3F7F89ab0ad688EfF5267c",
+      "name": "Velodrome V2 VolatileV2 AMM - AELIN/KWENTA",
+      "symbol": "vAMMV2-AELIN/KWENTA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x9e1028F5F1D5eDE59748FFceE5532509976840E0",
       "name": "Perpetual Protocol",
       "symbol": "PERP",
@@ -1363,10 +2523,26 @@
       "decimals": 6
     },
     {
+      "address": "0x9f95AF94518694c212394977CACaf43313981835",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/DAI",
+      "symbol": "vAMMV2-USDC/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xA30992B40a0cb4B2Da081ddBd843f9CcE25c2fe3",
       "name": "Balancer BPT-WSTETH-WETH Gauge Deposit",
       "symbol": "BPT-WSTETH-WETH-gauge",
       "logoURI": "https://assets.coingecko.com/coins/images/25942/large/logo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xA5EDb0EF932f7c2f37B8FC75CB01948F6258a4f8",
+      "name": "Velodrome V2 VolatileV2 AMM - alETH/OP",
+      "symbol": "vAMMV2-alETH/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1379,10 +2555,50 @@
       "decimals": 18
     },
     {
+      "address": "0xA8C507dDF3ebEDBF251F6F643a7D891532745467",
+      "name": "Velodrome V2 StableV2 AMM - USDC/DUSD",
+      "symbol": "sAMMV2-USDC/DUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xA925CB537584f2407984C8F903D20BF7A32A2076",
+      "name": "Velodrome V2 StableV2 AMM - OP/sUSD",
+      "symbol": "sAMMV2-OP/sUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xA96a0545460D2f550D58A10E14D82073c55a8B67",
       "name": "BeethovenX LP USDC/BEETS",
       "symbol": "USDC/BEETS",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xACfE9b4782910A853b68abbA60f3FD8049Ffe638",
+      "name": "Sonata for Two: DOLA \u0026 USDC",
+      "symbol": "bpt-dolausdc",
+      "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xAD424066e8Ff66F899B1802CF2bF94B55943D55F",
+      "name": "Velodrome V2 VolatileV2 AMM - THALES/VELO",
+      "symbol": "vAMMV2-THALES/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xAD89AC66Cd0cCf3FE93b4490C62eC20Ba447f984",
+      "name": "Velodrome V2 VolatileV2 AMM - HND/WETH",
+      "symbol": "vAMMV2-HND/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1393,6 +2609,14 @@
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
+    },
+    {
+      "address": "0xAFdf91f120DEC93c65fd63DBD5ec372e5dcA5f82",
+      "name": "Sonne Liquity USD",
+      "symbol": "soLUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
     },
     {
       "address": "0xB0B195aEFA3650A6908f15CdaC7D92F8a5791B0B",
@@ -1435,6 +2659,54 @@
       "decimals": 9
     },
     {
+      "address": "0xB2791477DA69DDe9cd2986349F8855B8E2dA7245",
+      "name": "Velodrome V2 StableV2 AMM - USDC/MIM",
+      "symbol": "sAMMV2-USDC/MIM",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xB52b8cfbCf5c177feB99870D3E2dD02933553933",
+      "name": "Velodrome V2 VolatileV2 AMM - JRT/WETH",
+      "symbol": "vAMMV2-JRT/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xB545592E38b603F4A904a5260A6ffC538BfcB424",
+      "name": "Velodrome V2 VolatileV2 AMM - IB/WETH",
+      "symbol": "vAMMV2-IB/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xB720FBC32d60BB6dcc955Be86b98D8fD3c4bA645",
+      "name": "Velodrome V2 StableV2 AMM - USDC/DOLA",
+      "symbol": "sAMMV2-USDC/DOLA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xB762Df5893A137D730D588F05aCe1166974e0429",
+      "name": "Velodrome V2 VolatileV2 AMM - USD+/DOLA",
+      "symbol": "vAMMV2-USD+/DOLA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xB7eA7259B6Cb6D267Baa9588EB349734313510E2",
+      "name": "Velodrome V2 VolatileV2 AMM - VELO/ACX",
+      "symbol": "vAMMV2-VELO/ACX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xB8ECe82fCfB948b1aF937E2819EB2D72Bb3D98d2",
       "name": "BeethovenX LP QI/WETH",
       "symbol": "QI/WETH",
@@ -1451,6 +2723,46 @@
       "decimals": 18
     },
     {
+      "address": "0xBBb67D7BbC64c625D973CdF8f3567809FfcC1df2",
+      "name": "Velodrome V2 VolatileV2 AMM - MAI/LDO",
+      "symbol": "vAMMV2-MAI/LDO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xBC7B1Ff1c6989f006a1185318eD4E7b5796e66E1",
+      "name": "Pendle",
+      "symbol": "PENDLE",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xBD29257Ca8D0F2153141c4E21bc1dA187cE6287e",
+      "name": "Velodrome V2 VolatileV2 AMM - FRAX/DOLA",
+      "symbol": "vAMMV2-FRAX/DOLA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xBE418771bC91F75C4d2BcE1d5E2b7286F50992da",
+      "name": "Velodrome V2 StableV2 AMM - DOLA/MAI",
+      "symbol": "sAMMV2-DOLA/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xBF7b6236A68F63F75765517cedCdF45f0CD0470C",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/USD+",
+      "symbol": "vAMMV2-WETH/USD+",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xBad8de88FEBc2d9364254e108Fe5a547A7b6B4C0",
       "name": "BeethovenX LP WETH/LDO",
       "symbol": "WETH/LDO",
@@ -1459,10 +2771,34 @@
       "decimals": 18
     },
     {
+      "address": "0xBbFBF2Fbe80A28bf6919716BDaFBf56eAF7Bf886",
+      "name": "Velodrome V2 VolatileV2 AMM - SONNE/OP",
+      "symbol": "vAMMV2-SONNE/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xBe0eB1af5d47b118fC24987EA85a20dFa3a98303",
       "name": "Beefy Moo Exactly Supply OP",
       "symbol": "mooExactlySupplyOP",
       "logoURI": "https://assets.coingecko.com/coins/images/12704/large/token.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xBe96502c9bAa5Aec7E4C810c13D80F75e2D669E0",
+      "name": "Velodrome V2 VolatileV2 AMM - USDT/AST",
+      "symbol": "vAMMV2-USDT/AST",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xC035eb8b5a5EC5bc43f65441077801e0Fa89E9d8",
+      "name": "Velodrome V2 VolatileV2 AMM - DOLA/MAI",
+      "symbol": "vAMMV2-DOLA/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1499,6 +2835,22 @@
       "decimals": 18
     },
     {
+      "address": "0xC4270d957C218d263e7FAE5a3bEEDC1E98B6012D",
+      "name": "Velodrome V2 VolatileV2 AMM - SONNE/VELO",
+      "symbol": "vAMMV2-SONNE/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xC5c247580A4A6E4d3811c0DA6215057aaC480bAc",
+      "name": "Velodrome V2 VolatileV2 AMM - wstETH/LDO",
+      "symbol": "vAMMV2-wstETH/LDO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xC7Deff444145093f1B2054DBd3E68B2878D86552",
       "name": "Beefy Moo Stargate DAI",
       "symbol": "mooStargateDAI",
@@ -1531,6 +2883,22 @@
       "decimals": 18
     },
     {
+      "address": "0xCEcc5dacc7B09D35e19B1c5C47a65bc822A9c559",
+      "name": "Velodrome V2 VolatileV2 AMM - KUJI/rETH",
+      "symbol": "vAMMV2-KUJI/rETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xCac4A6C1BBBf766843D6fdCd95950e6f27F98E9b",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/SNX",
+      "symbol": "vAMMV2-OP/SNX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xCcF3d1AcF799bAe67F6e354d685295557cf64761",
       "name": "Vesper vaETH Pool",
       "symbol": "vaETH",
@@ -1547,12 +2915,44 @@
       "decimals": 18
     },
     {
+      "address": "0xD330841EF9527E3Bd0abc28a230C7cA8dec9423B",
+      "name": "Velodrome V2 StableV2 AMM - FRAX/USD+",
+      "symbol": "sAMMV2-FRAX/USD+",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xD41b3d02A61701E096d402d58eD0eab0dF31Da24",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/PENDLE",
+      "symbol": "vAMMV2-WETH/PENDLE",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xD4929A10a10eA11B768BfAc92541FE5A26c794ce",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/sETH",
+      "symbol": "vAMMV2-USDC/sETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xD74E7D1BDFa2f79eA893542D864d2ee245476b69",
       "name": "BeethovenX LP USDC/BEETS",
       "symbol": "USDC/BEETS",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
       "chainId": 10,
       "decimals": 18
+    },
+    {
+      "address": "0xD7dAabd899D1fAbbC3A9ac162568939CEc0393Cc",
+      "name": "Sonne Synthetix Network Token",
+      "symbol": "soSNX",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
     },
     {
       "address": "0xD9C57025b3da04e5Bd078C22B69222E92dDb62f6",
@@ -1571,6 +2971,22 @@
       "decimals": 18
     },
     {
+      "address": "0xDAe6D2e3472d780c6E6A3Dbf053514451BDacc2D",
+      "name": "Velodrome V2 StableV2 AMM - FRAX/MIM",
+      "symbol": "sAMMV2-FRAX/MIM",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xDB61f9B480f0a8B817811cFAA89A1c219c355224",
+      "name": "Velodrome V2 VolatileV2 AMM - LYRA/USDC",
+      "symbol": "vAMMV2-LYRA/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xDCd803c0Ad8778662C0A53b4dAED81aB9EF06834",
       "name": "BeethovenX LP WETH/DAI",
       "symbol": "WETH/DAI",
@@ -1579,10 +2995,26 @@
       "decimals": 18
     },
     {
+      "address": "0xDFF90E4A6c229565f25337B1DB9fA12f6d8cB118",
+      "name": "Velodrome V2 VolatileV2 AMM - THALES/WETH",
+      "symbol": "vAMMV2-THALES/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xDc125D09891C5b6b66061e3170E9A1E1c5cF9bE4",
       "name": "BeethovenX LP IB/rETH",
       "symbol": "IB/rETH",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xDeFCaC75247C6a3e09f1A72fdCa311DC883F7573",
+      "name": "Velodrome V2 VolatileV2 AMM - wstETH/USDC",
+      "symbol": "vAMMV2-wstETH/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1611,10 +3043,34 @@
       "decimals": 18
     },
     {
+      "address": "0xE54e4020d1C3afDB312095D90054103E68fe34B0",
+      "name": "Velodrome V2 StableV2 AMM - USDC/MAI",
+      "symbol": "sAMMV2-USDC/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xE5F28Fc43Bb40CDF7202ebe406793815b6f07FbD",
+      "name": "Velodrome V2 VolatileV2 AMM - THALES/USDC",
+      "symbol": "vAMMV2-THALES/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xE724FfA5D30782499086682C8362CB3673bF69ae",
       "name": "Iron Bank Synthetix Network Token",
       "symbol": "iSNX",
       "logoURI": "https://assets.coingecko.com/coins/images/22902/large/ironbank.png",
+      "chainId": 10,
+      "decimals": 8
+    },
+    {
+      "address": "0xE7De932d50EfC9ea0a7a409Fc015B4f71443528e",
+      "name": "Sonne miMatic",
+      "symbol": "soMAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
       "chainId": 10,
       "decimals": 8
     },
@@ -1633,6 +3089,14 @@
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
+    },
+    {
+      "address": "0xEC8FEa79026FfEd168cCf5C627c7f486D77b765F",
+      "name": "Sonne USDC",
+      "symbol": "soUSDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
     },
     {
       "address": "0xECE874b7A9051154866Ce79154d653481B0B8759",
@@ -1659,10 +3123,26 @@
       "decimals": 18
     },
     {
+      "address": "0xEea82dCab12C855E3736558d80500ED52c8598cd",
+      "name": "Velodrome V2 StableV2 AMM - DOLA/ERN",
+      "symbol": "sAMMV2-DOLA/ERN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xEfDE221f306152971D8e9f181bFe998447975810",
       "name": "Curve.fi ETH/wstETH",
       "symbol": "wstETHCRV",
       "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xEfa74728DbDA583B16622E17937F4577E2846c0f",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/USDT",
+      "symbol": "vAMMV2-OP/USDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1683,10 +3163,34 @@
       "decimals": 18
     },
     {
+      "address": "0xF31cbe21Bbbb8056b75d6ca21e8fFd2CD38bD5C5",
+      "name": "Velodrome V2 StableV2 AMM - LUSD/ERN",
+      "symbol": "sAMMV2-LUSD/ERN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xF5d8dF0a84F44bc70Eba8079d5815f0d81f8EC74",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/ACX",
+      "symbol": "vAMMV2-USDC/ACX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xF98dCd95217E15E05d8638da4c91125E59590B07",
       "name": "Kromatika",
       "symbol": "KROM",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xF9Ad452A52EeEDcc29a26fD6380b76c49E837d42",
+      "name": "Velodrome V2 VolatileV2 AMM - STG/sUSD",
+      "symbol": "vAMMV2-STG/sUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1707,12 +3211,28 @@
       "decimals": 18
     },
     {
+      "address": "0xFF5318f81Dd791e92d51b8A54fA3538832D2890D",
+      "name": "Velodrome V2 StableV2 AMM - sfrxETH/frxETH",
+      "symbol": "sAMMV2-sfrxETH/frxETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xFaee21D0f0Af88EE72BB6d68E54a90E6EC2616de",
       "name": "Yearn yvUSDT 0.4.5",
       "symbol": "yvUSDT",
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
       "chainId": 10,
       "decimals": 6
+    },
+    {
+      "address": "0xFc233aD094C8c9C245BDEA891DfEe2d7F9e632c4",
+      "name": "Velodrome V2 VolatileV2 AMM - UNIDX/DAI",
+      "symbol": "vAMMV2-UNIDX/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0xFdb794692724153d1488CcdBE0C56c252596735F",
@@ -1739,6 +3259,22 @@
       "decimals": 18
     },
     {
+      "address": "0xa1055762336F92b4B8d2eDC032A0Ce45ead6280a",
+      "name": "Velodrome V2 StableV2 AMM - alETH/WETH",
+      "symbol": "sAMMV2-alETH/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xa3031D9FD5010496a2bAF8AFCE27Ef6f3849FB10",
+      "name": "Velodrome V2 StableV2 AMM - wstETH/WETH",
+      "symbol": "sAMMV2-wstETH/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xa73b7C26eF3221BF9eA7E5981840519427f7dCaF",
       "name": "Granary SNX",
       "symbol": "grainSNX",
@@ -1753,6 +3289,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
       "chainId": 10,
       "decimals": 6
+    },
+    {
+      "address": "0xaF03f51DE7a0E62BF061F6Fc3931cF79166B0a29",
+      "name": "Velodrome V2 StableV2 AMM - FRAX/alUSD",
+      "symbol": "sAMMV2-FRAX/alUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0xadDb6A0412DE1BA0F936DCaeb8Aaa24578dcF3B2",
@@ -1779,6 +3323,14 @@
       "decimals": 18
     },
     {
+      "address": "0xb379AB37f2e7d4A0d2479c09d637bD6B20E1354d",
+      "name": "Beefy Moo VeloV2 USDC-MTA",
+      "symbol": "mooVeloV2USDC-MTA",
+      "logoURI": "https://assets.coingecko.com/coins/images/12704/large/token.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xb396b31599333739A97951b74652c117BE86eE1D",
       "name": "Davos Protocol",
       "symbol": "DUSD",
@@ -1795,6 +3347,14 @@
       "decimals": 18
     },
     {
+      "address": "0xb55246717c0e49d608eC6B2B790152c84702Ce89",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/LYRA",
+      "symbol": "vAMMV2-WETH/LYRA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xb829b68f57CC546dA7E5806A929e53bE32a4625D",
       "name": "Axelar Wrapped Ether",
       "symbol": "AXLETH",
@@ -1803,10 +3363,34 @@
       "decimals": 18
     },
     {
+      "address": "0xb90Da30758B00e5f08e6C0b71BFF122712D830CB",
+      "name": "Velodrome V2 VolatileV2 AMM - EXA/OP",
+      "symbol": "vAMMV2-EXA/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xbB65192Fc43Cff2e2823BAe211EBE367f81f2f26",
       "name": "BeethovenX LP CRV/STG/QI/WETH/WBTC/BEETS/DAI",
       "symbol": "CRV/STG/QI/WETH/WBTC/BEETS/DAI",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xbCdaba81FB44Cc5B175d96e83890eBb04423d3D8",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/PERP",
+      "symbol": "vAMMV2-WETH/PERP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xbb23011D84628eED352614fd71Cc5325Ba8d9878",
+      "name": "Velodrome V2 VolatileV2 AMM - VELO/DAI",
+      "symbol": "vAMMV2-VELO/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1843,10 +3427,42 @@
       "decimals": 18
     },
     {
+      "address": "0xc158dAFdF2cA1Bd1200a5B199157D0b42C8448e2",
+      "name": "Velodrome V2 StableV2 AMM - USDT/DAI",
+      "symbol": "sAMMV2-USDT/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xc37a0a37664aeB3848f98C5dD5d7AE286A1E9Ebd",
+      "name": "Velodrome V2 StableV2 AMM - FRAX/MAI",
+      "symbol": "sAMMV2-FRAX/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xc3864f98f2a61A7cAeb95b039D031b4E2f55e0e9",
       "name": "OpenXSwap",
       "symbol": "OPENX",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xc3Dd967fA78Cdc6d373AbEF1053Cb6Eafc37C36C",
+      "name": "Velodrome V2 VolatileV2 AMM - VELO/MIM",
+      "symbol": "vAMMV2-VELO/MIM",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xc3F773FD67C2dDF1bd2FfBB8746E3B8340DF286c",
+      "name": "Velodrome V2 VolatileV2 AMM - USD+/LUSD",
+      "symbol": "vAMMV2-USD+/LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1899,10 +3515,26 @@
       "decimals": 18
     },
     {
+      "address": "0xc7C3Cbd80171211Cc89F8D9B277AE8958D4611D0",
+      "name": "Velodrome V2 StableV2 AMM - STG/sUSD",
+      "symbol": "sAMMV2-STG/sUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xc86cc7C6b6E0Fd4d6aE24649521296Fe56dF8C28",
       "name": "Beefy Moo Stargate FRAX",
       "symbol": "mooStargateFRAX",
       "logoURI": "https://assets.coingecko.com/coins/images/12704/large/token.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xc90a168ebF95d9eDEEa9213A28711614597d891a",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/TEM",
+      "symbol": "vAMMV2-USDC/TEM",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1947,10 +3579,42 @@
       "decimals": 8
     },
     {
+      "address": "0xcdcb46332b974238cBb81Fb65a91989aC816f1b0",
+      "name": "Velodrome V2 StableV2 AMM - VELO/DAI",
+      "symbol": "sAMMV2-VELO/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xcf803EA54642aed9bFBc3Aa324C3657BCAD20c61",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/LYRA",
+      "symbol": "vAMMV2-OP/LYRA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xd14451E0Fa44B18f08aeB1E4a4d092B823CaCa68",
+      "name": "Sonne SUSD",
+      "symbol": "soSUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
+    },
+    {
       "address": "0xd20f6F1D8a675cDCa155Cb07b5dC9042c467153f",
       "name": "BeethovenX LP OATH/WETH",
       "symbol": "OATH/WETH",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xd25711EdfBf747efCE181442Cc1D8F5F8fc8a0D3",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/OP",
+      "symbol": "vAMMV2-WETH/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1967,6 +3631,14 @@
       "name": "Okcash",
       "symbol": "OK",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xd52FB3366c5eecf1115784659CE464b08fbF34C0",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/USX",
+      "symbol": "vAMMV2-USDC/USX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1995,10 +3667,34 @@
       "decimals": 18
     },
     {
+      "address": "0xd6ac2264A19812632F942E4dAa9b1F95eC69de38",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/FIRE",
+      "symbol": "vAMMV2-USDC/FIRE",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xd95E98fc33670dC033424E7Aa0578D742D00f9C7",
+      "name": "Velodrome V2 StableV2 AMM - USD+/USDC",
+      "symbol": "sAMMV2-USD+/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xdC6fF44d5d932Cbd77B52E5612Ba0529DC6226F1",
       "name": "Worldcoin",
       "symbol": "WLD",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xdCAD52616E2689A5f14861300a5db91813a6c0e5",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/DAI",
+      "symbol": "vAMMV2-WETH/DAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -2019,10 +3715,26 @@
       "decimals": 18
     },
     {
+      "address": "0xda0253a7cDcCc4b4DEfBbEf863dbA1294bF5e3B1",
+      "name": "Velodrome V2 VolatileV2 AMM - TAROTv1/OP",
+      "symbol": "vAMMV2-TAROTv1/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xdb4eA87fF83eB1c80b8976FC47731Da6a31D35e5",
       "name": "wTBT",
       "symbol": "WTBT",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xdc2B136A9C1FD2a0b9497bB8b11823c2FBf47Ac4",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/GRAIN",
+      "symbol": "vAMMV2-WETH/GRAIN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -2041,6 +3753,14 @@
       "logoURI": "",
       "chainId": 10,
       "decimals": 8
+    },
+    {
+      "address": "0xe188C32a2aa8e65f9AB141f5E96F8FA96b1b7757",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/WLD",
+      "symbol": "vAMMV2-WETH/WLD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0xe3C332a5DcE0e1d9bC2cC72A68437790570C28a4",
@@ -2075,10 +3795,66 @@
       "decimals": 18
     },
     {
+      "address": "0xe89fba6B17456A3AA60e39a93c8eEbDf3EE9c790",
+      "name": "Velodrome V2 VolatileV2 AMM - EXA/USDC",
+      "symbol": "vAMMV2-EXA/USDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xe8B8bfF1E415258eb3d5FA8DeeE9C38406e609cd",
+      "name": "Velodrome V2 StableV2 AMM - USDT/LUSD",
+      "symbol": "sAMMV2-USDT/LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xe9581d0F1A628B038fC8B2a7F5A7d904f0e2f937",
+      "name": "Velodrome V2 VolatileV2 AMM - OP/VELO",
+      "symbol": "vAMMV2-OP/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xe9b168fa9409EaFFa07679196c7568317baf80eD",
+      "name": "Velodrome V2 VolatileV2 AMM - FRAX/OP",
+      "symbol": "vAMMV2-FRAX/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xeA3Ac9a53F9092517Daa43572C7F2caeE0b50Ca3",
+      "name": "Velodrome V2 VolatileV2 AMM - USDC/rETH",
+      "symbol": "vAMMV2-USDC/rETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xeD47E3ce6D9C05F562C469AB1bf1244cc697aa73",
+      "name": "Velodrome V2 StableV2 AMM - USDC/USX",
+      "symbol": "sAMMV2-USDC/USX",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xeFb0D9F51EFd52d7589A9083A6d0CA4de416c249",
       "name": "BeethovenX LP IB/WETH",
       "symbol": "IB/WETH",
       "logoURI": "https://assets.coingecko.com/coins/images/19158/large/beets-icon-large.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xf04458f7B21265b80FC340dE7Ee598e24485c5bB",
+      "name": "Velodrome V2 StableV2 AMM - USDC/LUSD",
+      "symbol": "sAMMV2-USDC/LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -2107,10 +3883,82 @@
       "decimals": 18
     },
     {
+      "address": "0xf3C45b45223Df6071a478851B9C17e0630fDf535",
+      "name": "Velodrome V2 VolatileV2 AMM - EXA/WETH",
+      "symbol": "vAMMV2-EXA/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xf547a913Aac6Acc722a66beF3B72C256360A3D09",
+      "name": "Velodrome V2 VolatileV2 AMM - JRT/VELO",
+      "symbol": "vAMMV2-JRT/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xf7B5965f5C117Eb1B5450187c9DcFccc3C317e8E",
+      "name": "Sonne Wrapped Ether",
+      "symbol": "soWETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/27540/large/Token1.png",
+      "chainId": 10,
+      "decimals": 8
+    },
+    {
+      "address": "0xf7a73e1995030B0198f8d6e528a1c42ACEf90a4c",
+      "name": "Velodrome V2 StableV2 AMM - USDC/VELO",
+      "symbol": "sAMMV2-USDC/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xf899e3909B4492859d44260E1de41A9E663e70F5",
       "name": "RadioShack",
       "symbol": "RADIO",
       "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xf8f910528be40202d9AbF9d1FE5F58eb33f0817d",
+      "name": "Velodrome V2 StableV2 AMM - WETH/rETH",
+      "symbol": "sAMMV2-WETH/rETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xf984d3e3420784a38c1884c3D63e373CF2d2de1c",
+      "name": "Velodrome V2 VolatileV2 AMM - VELO/RING",
+      "symbol": "vAMMV2-VELO/RING",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xfA09479d72E2b3f8B6dF63399772237Ad6658D76",
+      "name": "Velodrome V2 StableV2 AMM - alUSD/MAI",
+      "symbol": "sAMMV2-alUSD/MAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xfB313C3068ee73d987589D5De1490A21699E797d",
+      "name": "Velodrome V2 StableV2 AMM - USDC/wUSDR",
+      "symbol": "sAMMV2-USDC/wUSDR",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xfC42f9D40C5aF1b5206aCa3ceF7Dd22A49F697e1",
+      "name": "Velodrome V2 VolatileV2 AMM - EXTRA/WETH",
+      "symbol": "vAMMV2-EXTRA/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -2135,6 +3983,22 @@
       "name": "Yearn yvDAI 0.4.4",
       "symbol": "yvDAI",
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xfe95120AF843EBC758e1974C3cAB556257A9f333",
+      "name": "Velodrome V2 VolatileV2 AMM - LUSD/ERN",
+      "symbol": "vAMMV2-LUSD/ERN",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xfeA18C039f4FD4E4AFA95851750A1310Ce9fF34A",
+      "name": "Velodrome V2 VolatileV2 AMM - frxETH/VELO",
+      "symbol": "vAMMV2-frxETH/VELO",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     }

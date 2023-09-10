@@ -1,10 +1,10 @@
 {
   "name": "Ledger",
   "description": "",
-  "timestamp": "03/09/2023 11:47:04",
+  "timestamp": "10/09/2023 00:33:09",
   "version": {
     "major": 0,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
   "logoURI": "https://www.ledger.com/wp-content/uploads/2021/11/Ledger_favicon.png",
@@ -70,16 +70,24 @@
     },
     {
       "address": "0x034293F21F1cCE5908BC605CE5850dF2b1059aC0",
-      "name": "ApeSwapFinance LPs",
-      "symbol": "APE-LP",
+      "name": "ApeSwap LP WMATIC/BANANA",
+      "symbol": "WMATIC/BANANA",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
     },
     {
       "address": "0x0359001070cF696D5993E0697335157a6f7dB289",
-      "name": "ApeSwapFinance LPs",
-      "symbol": "APE-LP",
+      "name": "ApeSwap LP WMATIC/BNB",
+      "symbol": "WMATIC/BNB",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
+      "name": "Wrapped stETH",
+      "symbol": "WSTETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -358,7 +366,7 @@
     },
     {
       "address": "0x10635bF5c17F5E4c0Ed9012aEf7C12f96a57a4Dd",
-      "name": "Tapmydata (PoS)",
+      "name": "Tapmydata",
       "symbol": "TAP",
       "logoURI": "",
       "chainId": 137,
@@ -582,7 +590,7 @@
     },
     {
       "address": "0x1D607Faa0A51518a7728580C238d912747e71F7a",
-      "name": "DATA Economy Index",
+      "name": "Data Economy Index",
       "symbol": "DATA",
       "logoURI": "",
       "chainId": 137,
@@ -616,6 +624,14 @@
       "address": "0x1b396CF90504686b7edE2760eebb053d30d1f389",
       "name": "RealityToken",
       "symbol": "RLTM",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x1bE9425AB42897F0C14759ee36493Fd7Db895c22",
+      "name": "PLEX",
+      "symbol": "PLEX",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -774,8 +790,8 @@
     },
     {
       "address": "0x2594C5B25EdAb3eBe937e27650c02922D9A62BF2",
-      "name": "JamonSwapV2",
-      "symbol": "JAMON",
+      "name": "JamonSwap",
+      "symbol": "jamon",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -783,7 +799,7 @@
     {
       "address": "0x2596A8B90D39EB89d5668ca5B6deE54E9ae3d4C0",
       "name": "TattooMoney",
-      "symbol": "TAT2",
+      "symbol": "tat2",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -816,6 +832,14 @@
       "address": "0x2760E46d9BB43dafCbEcaad1F64b93207f9f0eD7",
       "name": "Metavault Trade",
       "symbol": "MVX",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x27842334C55c01DDFE81Bf687425F906816c5141",
+      "name": "Veloce",
+      "symbol": "VEXT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -998,7 +1022,7 @@
     },
     {
       "address": "0x3066818837c5e6eD6601bd5a91B0762877A6B731",
-      "name": "UMA Voting Token",
+      "name": "UMA Voting Token v1 (PoS)",
       "symbol": "UMA",
       "logoURI": "",
       "chainId": 137,
@@ -1670,8 +1694,8 @@
     },
     {
       "address": "0x5b13B583D4317aB15186Ed660A1E4C65C10da659",
-      "name": "ApeSwapFinance LPs",
-      "symbol": "APE-LP",
+      "name": "ApeSwap LP USDC/DAI",
+      "symbol": "USDC/DAI",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1774,8 +1798,8 @@
     },
     {
       "address": "0x604229c960e5CACF2aaEAc8Be68Ac07BA9dF81c3",
-      "name": "Uniswap V2",
-      "symbol": "UNI-V2",
+      "name": "QuickSwap LP WMATIC/USDT",
+      "symbol": "WMATIC/USDT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1870,8 +1894,8 @@
     },
     {
       "address": "0x65D43B64E3B31965Cd5EA367D4c2b94c03084797",
-      "name": "ApeSwapFinance LPs",
-      "symbol": "APE-LP",
+      "name": "ApeSwap LP WMATIC/USDT",
+      "symbol": "WMATIC/USDT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1894,7 +1918,7 @@
     },
     {
       "address": "0x66C59Dded4EF01a3412a8B019B6e41D4a8C49A35",
-      "name": "SafeDollar.Fi Dollar 2.0",
+      "name": "SafeDollar",
       "symbol": "SDO",
       "logoURI": "",
       "chainId": 137,
@@ -1990,8 +2014,8 @@
     },
     {
       "address": "0x6Cf8654e85AB489cA7e70189046D507ebA233613",
-      "name": "ApeSwapFinance LPs",
-      "symbol": "APE-LP",
+      "name": "ApeSwap LP WMATIC/WETH",
+      "symbol": "WMATIC/WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2102,8 +2126,8 @@
     },
     {
       "address": "0x6e7a5FAFcec6BB1e78bAE2A1F0B612012BF14827",
-      "name": "Uniswap V2",
-      "symbol": "UNI-V2",
+      "name": "QuickSwap LP WMATIC/USDC",
+      "symbol": "WMATIC/USDC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2223,7 +2247,7 @@
     {
       "address": "0x767058F11800FBA6A682E73A6e79ec5eB74Fac8c",
       "name": "Jarvis Synthetic British Pound",
-      "symbol": "jGBP",
+      "symbol": "JGBP",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2254,7 +2278,7 @@
     },
     {
       "address": "0x7FB27EE135dB455de5Ab1CcEC66a24cBC82E712D",
-      "name": "Bankless DeFi Innovation Index (PoS)",
+      "name": "Bankless DeFi Innovation Index",
       "symbol": "GMI",
       "logoURI": "",
       "chainId": 137,
@@ -2389,6 +2413,14 @@
       "decimals": 18
     },
     {
+      "address": "0x820802Fa8a99901F52e39acD21177b0BE6EE2974",
+      "name": "EUROe Stablecoin",
+      "symbol": "EUROE",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
       "address": "0x831753DD7087CaC61aB5644b308642cc1c33Dc13",
       "name": "WrappedConceal",
       "symbol": "wCCX",
@@ -2430,8 +2462,8 @@
     },
     {
       "address": "0x853Ee4b2A13f8a742d64C8F088bE7bA2131f670d",
-      "name": "Uniswap V2",
-      "symbol": "UNI-V2",
+      "name": "QuickSwap LP USDC/WETH",
+      "symbol": "USDC/WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2527,7 +2559,7 @@
     {
       "address": "0x8ca194A3b22077359b5732DE53373D4afC11DeE3",
       "name": "Jarvis Synthetic Canadian Dollar",
-      "symbol": "jCAD",
+      "symbol": "JCAD",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2623,7 +2655,7 @@
     {
       "address": "0x93FEe753b548b4Cf93C41AdA062F80DE12710dB8",
       "name": "StableFund USD",
-      "symbol": "SFUSD",
+      "symbol": "sfusd",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2742,8 +2774,8 @@
     },
     {
       "address": "0x9E25126EBCD57C8eb6eb6c2ffC67810d365CFC3E",
-      "name": "Optimus V2",
-      "symbol": "OPT2",
+      "name": "Optimus OPT2",
+      "symbol": "opt2",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2942,7 +2974,7 @@
     },
     {
       "address": "0xAB72EE159Ff70b64beEcBbB0FbBE58b372391C54",
-      "name": "SafeDollar.Fi Share 2.0",
+      "name": "SafeDollar Shares",
       "symbol": "SDS",
       "logoURI": "",
       "chainId": 137,
@@ -3070,8 +3102,8 @@
     },
     {
       "address": "0xB797AdfB7b268faeaA90CAdBfEd464C76ee599Cd",
-      "name": "tetuBal-BPT-80BAL-20WETH Stable Pool",
-      "symbol": "tetuBAL-BALWETH",
+      "name": "BalancerV2 LP 20WETH-80BAL/tetuBAL",
+      "symbol": "20WETH-80BAL/tetuBAL",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3270,8 +3302,8 @@
     },
     {
       "address": "0xCf630283E8Ff2e30C29093bC8aa58CADD8613039",
-      "name": "Optimus V3",
-      "symbol": "OPT3",
+      "name": "Optimus OPT3",
+      "symbol": "opt3",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3406,7 +3438,7 @@
     },
     {
       "address": "0xE0570ddFca69E5E90d83Ea04bb33824D3BbE6a85",
-      "name": "Moo Curve stMATIC-MATIC",
+      "name": "Beefy Moo Curve stMATIC-MATIC",
       "symbol": "mooCurvestMATIC-MATIC",
       "logoURI": "",
       "chainId": 137,
@@ -3526,7 +3558,7 @@
     },
     {
       "address": "0xE840B73E5287865EEc17d250bFb1536704B43B21",
-      "name": "mUSD",
+      "name": "mStable USD",
       "symbol": "mUSD",
       "logoURI": "",
       "chainId": 137,
@@ -3806,7 +3838,7 @@
     },
     {
       "address": "0xa353dEb6Fb81dF3844D8bd614D33d040fDBb8188",
-      "name": "MagicStone",
+      "name": "Idle Mystic",
       "symbol": "MST",
       "logoURI": "",
       "chainId": 137,
@@ -3910,15 +3942,15 @@
     },
     {
       "address": "0xadbF1854e5883eB8aa7BAf50705338739e558E5b",
-      "name": "Uniswap V2",
-      "symbol": "UNI-V2",
+      "name": "QuickSwap LP WMATIC/WETH",
+      "symbol": "WMATIC/WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
     },
     {
       "address": "0xaeE24d5296444c007a532696aaDa9dE5cE6caFD0",
-      "name": "SW DAO [via ChainPort.io]",
+      "name": "SW DAO",
       "symbol": "SWD",
       "logoURI": "",
       "chainId": 137,
@@ -3958,7 +3990,7 @@
     },
     {
       "address": "0xb82A20B4522680951F11c94c54B8800c1C237693",
-      "name": "HONOR",
+      "name": "Honor Token",
       "symbol": "HONOR",
       "logoURI": "",
       "chainId": 137,
@@ -4174,7 +4206,7 @@
     },
     {
       "address": "0xccBe9B810d6574701d324fD6DbE0A1b68f9d5bf7",
-      "name": "Stacker Ventures Token (PoS)",
+      "name": "Stacker Ventures",
       "symbol": "STACK",
       "logoURI": "",
       "chainId": 137,
@@ -4214,16 +4246,16 @@
     },
     {
       "address": "0xcf74Ae52ae2c848387e6cD0048e1eC5a93ee2c66",
-      "name": "CBomber Token",
-      "symbol": "CBOMBER",
+      "name": "CBOMBER",
+      "symbol": "cbomber",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
     },
     {
       "address": "0xcfB4C7f9b5F363AE162015479345CB2f0C76F3a9",
-      "name": "Kalima Token",
-      "symbol": "KLX",
+      "name": "Kalima Blockchain",
+      "symbol": "klx",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4286,8 +4318,8 @@
     },
     {
       "address": "0xd32f3139A214034A0f9777c87eE0a064c1FF6AE2",
-      "name": "ApeSwapFinance LPs",
-      "symbol": "APE-LP",
+      "name": "ApeSwap LP WMATIC/DAI",
+      "symbol": "WMATIC/DAI",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4374,7 +4406,7 @@
     },
     {
       "address": "0xdb95f9188479575F3F718a245EcA1B3BF74567EC",
-      "name": "Gitcoin",
+      "name": "Gitcoin (PoS)",
       "symbol": "GTC",
       "logoURI": "",
       "chainId": 137,
@@ -4407,15 +4439,15 @@
     {
       "address": "0xe0cCa86B254005889aC3a81e737f56a14f4A38F5",
       "name": "Alta Finance",
-      "symbol": "ALTA",
+      "symbol": "alta",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
     },
     {
       "address": "0xe1240e13FDA129845d17b73eaE548Cd690e8DEC8",
-      "name": "KOLO Music (PoS)",
-      "symbol": "KOLO",
+      "name": "Kolo.Market",
+      "symbol": "kolo",
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
@@ -4470,8 +4502,8 @@
     },
     {
       "address": "0xe82635a105c520fd58e597181cBf754961d51E3e",
-      "name": "ApeSwapFinance LPs",
-      "symbol": "APE-LP",
+      "name": "ApeSwap LP WMATIC/WBTC",
+      "symbol": "WMATIC/WBTC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4526,7 +4558,7 @@
     },
     {
       "address": "0xebe0c8d842AA5A57D7BEf8e524dEabA676F91cD1",
-      "name": "Moo Mai USDC-miMATIC",
+      "name": "Beefy Moo Mai USDC-miMATIC",
       "symbol": "mooMaiUSDC-miMATIC",
       "logoURI": "",
       "chainId": 137,

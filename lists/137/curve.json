@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "03/09/2023 11:46:42",
+  "timestamp": "10/09/2023 00:33:22",
   "version": {
     "major": 10,
-    "minor": 5,
+    "minor": 6,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -364,8 +364,8 @@
     },
     {
       "address": "0x104592a158490a9228070E0A8e5343B499e125D0",
-      "name": "Poly Frax",
-      "symbol": "polyFRAX",
+      "name": "Frax (PoS)",
+      "symbol": "FRAX",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -629,7 +629,7 @@
     {
       "address": "0x197E5d6CcfF265AC3E303a34Db360ee1429f5d1A",
       "name": "Jarvis Synthetic Swedish Krona",
-      "symbol": "jSEK",
+      "symbol": "JSEK",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -884,8 +884,8 @@
     },
     {
       "address": "0x20D3922b4a1A8560E1aC99FBA4faDe0c849e2142",
-      "name": "Matic Aave interest bearing WETH",
-      "symbol": "maWETH",
+      "name": "Matic Aave Interest Bearing WETH",
+      "symbol": "MAWETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1236,7 +1236,7 @@
     },
     {
       "address": "0x3066818837c5e6eD6601bd5a91B0762877A6B731",
-      "name": "UMA Voting Token",
+      "name": "UMA Voting Token v1 (PoS)",
       "symbol": "UMA",
       "logoURI": "",
       "chainId": 137,
@@ -1875,6 +1875,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4eD141110F6EeeAbA9A1df36d8c26f684d2475Dc",
+      "name": "BRZ Token",
+      "symbol": "BRZ",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x4f427D27029965C165daBAB3bE25037C44C5d045",
       "name": "Curve.fi Factory Plain Pool: EXIT",
       "symbol": "EXIT-f",
@@ -1996,8 +2004,8 @@
     },
     {
       "address": "0x576Cf361711cd940CD9C397BB98C4C896cBd38De",
-      "name": "USD Coin",
-      "symbol": "USDC",
+      "name": "USD Coin (Wormhole)",
+      "symbol": "USDCSO",
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
@@ -2235,6 +2243,14 @@
       "decimals": 6
     },
     {
+      "address": "0x60De39F69Cc6D4e3c74d4DB011f3aFf504A222f6",
+      "name": "Curve.fi Factory Plain Pool: BRLA/BRZ",
+      "symbol": "BRLABRZ-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x6141871F875a93F8195baA059C14f95508aeae65",
       "name": "Curve.fi Factory Plain Pool: usdc/dai",
       "symbol": "udDai-f",
@@ -2358,6 +2374,14 @@
       "address": "0x6728b653F042f00E434C62c43f779c014d883CB2",
       "name": "LUK",
       "symbol": "LUK",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x67FEe70c32097c53B5aeAaCdbee7544eaE2194f8",
+      "name": "Moo Pearl wUSDR-USDRv3",
+      "symbol": "mooPearlwUSDR-USDRv3",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2733,7 +2757,7 @@
     {
       "address": "0x767058F11800FBA6A682E73A6e79ec5eB74Fac8c",
       "name": "Jarvis Synthetic British Pound",
-      "symbol": "jGBP",
+      "symbol": "JGBP",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3429,7 +3453,7 @@
     {
       "address": "0x8ca194A3b22077359b5732DE53373D4afC11DeE3",
       "name": "Jarvis Synthetic Canadian Dollar",
-      "symbol": "jCAD",
+      "symbol": "JCAD",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3470,6 +3494,14 @@
       "address": "0x8e2191b22198b7861e4635c92D924836D0681171",
       "name": "Curve.fi Factory USD Metapool: derwunderfizz",
       "symbol": "FIZZ3CRV-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x8f1549718B9Ad2632Dc426EcC89305A83c1F03c8",
+      "name": "Star Dollar",
+      "symbol": "STARD",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3801,6 +3833,14 @@
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
+    },
+    {
+      "address": "0x9d3f4d8913a0006ba0222c0ea3D23F2BCB63761a",
+      "name": "Curve.fi Factory Plain Pool: StarSeeds Protocol STAR Dollars",
+      "symbol": "STARDMwUSD-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
     },
     {
       "address": "0x9d9F8a6A6aD70D5670B7b5Ca2042c7E106E2fB78",
@@ -4357,7 +4397,7 @@
     {
       "address": "0xCB7F1Ef7246D1497b985f7FC45A1A31F04346133",
       "name": "Jarvis Synthetic Australian Dollar",
-      "symbol": "jAUD",
+      "symbol": "JAUD",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4707,6 +4747,14 @@
       "decimals": 18
     },
     {
+      "address": "0xE6A537a407488807F0bbeb0038B79004f19DDDFb",
+      "name": "BRLA Token",
+      "symbol": "BRLA",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xE7a24EF0C5e95Ffb0f6684b813A78F2a3AD7D171",
       "name": "Curve.fi amDAI/amUSDC/amUSDT",
       "symbol": "am3CRV",
@@ -4745,6 +4793,14 @@
       "logoURI": "",
       "chainId": 137,
       "decimals": 8
+    },
+    {
+      "address": "0xEC29bf9838A87c8E348902B816040307293f0EBF",
+      "name": "Curve.fi Factory Plain Pool: StarSeeds Protocol STARDMoowUSDR",
+      "symbol": "STARD-MWU-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
     },
     {
       "address": "0xEC836dC7562d97fDfb414C7D73A2c9C71C5b89E4",
@@ -4989,7 +5045,15 @@
     {
       "address": "0xa926db7a4CC0cb1736D5ac60495ca8Eb7214B503",
       "name": "Jarvis Synthetic Singapore Dollar",
-      "symbol": "jSGD",
+      "symbol": "JSGD",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xa9C36EB9534FE50C2F38c8F10403C18031bD655f",
+      "name": "Curve.fi Factory Plain Pool: SBC/USDC/USDT",
+      "symbol": "CRSBC-f",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -6054,6 +6118,14 @@
       "address": "0xfd5BB985A536Fb0242224c5F4dF52b54fe5FCF9C",
       "name": "Curve.fi Factory USD Metapool: TRUEHN/USDT",
       "symbol": "EUftUSA 3CRV-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798",
+      "name": "Stable Coin",
+      "symbol": "SBC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18

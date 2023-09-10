@@ -1,10 +1,10 @@
 {
   "name": "Portals Token List",
   "description": "",
-  "timestamp": "03/09/2023 11:47:51",
+  "timestamp": "10/09/2023 00:32:57",
   "version": {
-    "major": 0,
-    "minor": 1,
+    "major": 1,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://portals-assets-bucket.s3.amazonaws.com/logo.png",
@@ -47,14 +47,6 @@
       "name": "BalancerV2 LP HEGIC/USDT",
       "symbol": "HEGIC/USDT",
       "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x00Cf731fbcC836849d4CB163eEac3B1D44545A17",
-      "name": "Arbitrum Exchange LP USDC/ARX",
-      "symbol": "USDC/ARX",
-      "logoURI": "https://assets.coingecko.com/coins/images/29506/large/tokenlogo.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -303,14 +295,6 @@
       "name": "BalancerV2 LP MAI/USDT/USDC",
       "symbol": "MAI/USDT/USDC",
       "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x052E3e2cf1c5fd85d9B6Eed0a7Ea12E5440c13F7",
-      "name": "SushiSwap LP GSWIFT/USDC",
-      "symbol": "GSWIFT/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -1331,14 +1315,6 @@
       "decimals": 18
     },
     {
-      "address": "0x14F3cFe5F42dEdb3A13bA823981269240bd2D2d4",
-      "name": "Camelot V2 LP BAL/WETH",
-      "symbol": "BAL/WETH",
-      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x1514eF3DE81d111aB0Ec72d359fbE3BE65C794e3",
       "name": "SushiSwap LP WETH/S*USDC",
       "symbol": "WETH/S*USDC",
@@ -1391,14 +1367,6 @@
       "name": "BalancerV2 LP VST/LINK",
       "symbol": "VST/LINK",
       "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x156824b70c7C912Cd6544a4b3d2c296c2a152c80",
-      "name": "SushiSwap LP BAL/SPELL",
-      "symbol": "BAL/SPELL",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -2003,14 +1971,6 @@
       "decimals": 18
     },
     {
-      "address": "0x1d3607102e3cf8915551047bf2cbC6E3773EADee",
-      "name": "SushiSwap LP BAL/TCR",
-      "symbol": "BAL/TCR",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x1d51C9BB119191B0A14e41e56BE90750054F4625",
       "name": "SushiSwap LP RDPX/GMX",
       "symbol": "RDPX/GMX",
@@ -2175,14 +2135,6 @@
       "name": "Trader Joe LP WETH/BETS",
       "symbol": "WETH/BETS",
       "logoURI": "https://assets.coingecko.com/coins/images/17569/large/joe_200x200.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x21DccabE101a7b86Ec8849b1778181Fa20B7F6a0",
-      "name": "SushiSwap LP BAL/SUSHI",
-      "symbol": "BAL/SUSHI",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -2395,14 +2347,6 @@
       "decimals": 18
     },
     {
-      "address": "0x256641D5de7b7e1a4EFeCfDf3131601E35E52fBB",
-      "name": "SushiSwap LP BAL/CRV",
-      "symbol": "BAL/CRV",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x256BA319c286720DC74b53868821BA7eaF628900",
       "name": "Camelot V2 LP SECT/WETH",
       "symbol": "SECT/WETH",
@@ -2423,6 +2367,14 @@
       "name": "SushiSwap LP WETH/ODIN",
       "symbol": "WETH/ODIN",
       "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x260cbb867359a1084eC97de4157d06ca74e89415",
+      "name": "Balancer wstETH-WETH-BPT Gauge Deposit",
+      "symbol": "wstETH-WETH-BPT-gauge",
+      "logoURI": "https://assets.coingecko.com/coins/images/25942/large/logo.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3043,6 +2995,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3006E4Cc90440C7d011c20f36c841A269AE6601A",
+      "name": "Nuclear Waste Water",
+      "symbol": "NCWW",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x304B6AbE75Bf0e6f21a53dB041896109C91b0119",
       "name": "SushiSwap LP RDPX/DPX",
       "symbol": "RDPX/DPX",
@@ -3243,6 +3203,14 @@
       "decimals": 18
     },
     {
+      "address": "0x32e4d98d3010AC12d75019C484cAA78665B03986",
+      "name": "GBOT",
+      "symbol": "GBOT",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x3308f66989335715F230cF3C14B04B19C33BC96B",
       "name": "BalancerV2 LP VST/VSTA",
       "symbol": "VST/VSTA",
@@ -3383,14 +3351,6 @@
       "name": "Camelot V2 LP WETH/TND",
       "symbol": "WETH/TND",
       "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x359491ad6caA061E29ee7EF3d47019bAC972B503",
-      "name": "Arbitrum Exchange LP ARB/USDC",
-      "symbol": "ARB/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/29506/large/tokenlogo.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3627,6 +3587,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3AbEE54E6399279F6c20F7733eBEb6b2Eb6032A9",
+      "name": "SushiSwap LP PNP/WETH",
+      "symbol": "PNP/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x3B1AfeED07b49652dF107145feB493C251545619",
       "name": "SushiSwap LP WETH/FLUID",
       "symbol": "WETH/FLUID",
@@ -3670,14 +3638,6 @@
       "address": "0x3BFB1ac033ff0aE278Be0583FCCc900FBD9382c6",
       "name": "SushiSwap LP RDNT/WETH",
       "symbol": "RDNT/WETH",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x3C5d31Ebce55d67bBDBbF036A885663635a8cfB2",
-      "name": "SushiSwap LP BAL/MAGIC",
-      "symbol": "BAL/MAGIC",
       "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
@@ -3759,6 +3719,14 @@
       "name": "Balancer ankrETH/wstETH StablePool",
       "symbol": "ankrETH/wstETH-BPT",
       "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3FEC70f319A4145eba17765Ae0C64b2232fe5BAe",
+      "name": "SushiSwap LP WETH/FRM",
+      "symbol": "WETH/FRM",
+      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -4763,14 +4731,6 @@
       "decimals": 18
     },
     {
-      "address": "0x4b356181d29276Ff69a523D626713076f1B244c8",
-      "name": "Camelot V2 LP USDC/WINR",
-      "symbol": "USDC/WINR",
-      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x4bD82226469519cB9336303bA2dE3897d7eC2a15",
       "name": "Trader Joe LP JOE/WETH",
       "symbol": "JOE/WETH",
@@ -5235,14 +5195,6 @@
       "decimals": 18
     },
     {
-      "address": "0x54B26fAf3671677C19F70c4B879A6f7B898F732c",
-      "name": "Camelot V2 LP WETH/USDC",
-      "symbol": "WETH/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x54ef18896D283fbb189C0C1662B7a846885674fF",
       "name": "Trader Joe LP wstETH/USDC",
       "symbol": "wstETH/USDC",
@@ -5435,14 +5387,6 @@
       "decimals": 18
     },
     {
-      "address": "0x5714bD716889de8e80B46F5B556B3D6cEE591deF",
-      "name": "SushiSwap LP BAL/ADoge",
-      "symbol": "BAL/ADoge",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x57441e8874Bd7F3F0DfAf99165527610A37Ffe2b",
       "name": "Trader Joe LP UNIDX/WETH",
       "symbol": "UNIDX/WETH",
@@ -5471,14 +5415,6 @@
       "name": "Camelot V2 LP WETH/ZSP",
       "symbol": "WETH/ZSP",
       "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x57b85FEf094e10b5eeCDF350Af688299E9553378",
-      "name": "SushiSwap LP WETH/USDC",
-      "symbol": "WETH/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -5550,6 +5486,14 @@
       "address": "0x58E50e24d5160DEf294B6b6410d12C597054B79E",
       "name": "Fuzz Finance",
       "symbol": "FUZZ",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x58b9cB810A68a7f3e1E4f8Cb45D1B9B3c79705E8",
+      "name": "Connext",
+      "symbol": "NEXT",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -6171,6 +6115,14 @@
       "decimals": 18
     },
     {
+      "address": "0x646eCa7369C13Ef9136F6AFa15A7e8329A4c91f2",
+      "name": "BalancerV2 LP WETH/GMX",
+      "symbol": "WETH/GMX",
+      "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x6478931004Cd7b995957A4e1a5D06f9A8Db0FA04",
       "name": "SushiSwap LP MAGIC/USDC",
       "symbol": "MAGIC/USDC",
@@ -6295,14 +6247,6 @@
       "name": "Neutra Finance",
       "symbol": "NEU",
       "logoURI": "",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x6615efB7e60445CD9363238f86282203cdE2066c",
-      "name": "SushiSwap LP BAL/STG",
-      "symbol": "BAL/STG",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -7379,6 +7323,14 @@
       "decimals": 18
     },
     {
+      "address": "0x7706128aFAC8875981b2412faC6C4f3053EA705f",
+      "name": "TricryptoUSDC",
+      "symbol": "crvUSDCWBTCWETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x772598E9e62155D7fDFe65FdF01EB5a53a8465BE",
       "name": "Empyreal",
       "symbol": "EMP",
@@ -7406,6 +7358,14 @@
       "address": "0x780e91326Bb7EFf20a74a961E777a0Dc43976eAB",
       "name": "SushiSwap LP SYN/WETH",
       "symbol": "SYN/WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x789367CdBE75D8799E0b36c83925278c16D3b921",
+      "name": "SushiSwap LP GBOT/USDC",
+      "symbol": "GBOT/USDC",
       "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
@@ -8155,14 +8115,6 @@
       "decimals": 18
     },
     {
-      "address": "0x84a84cD6cE1787EFB6613a1ED2997816BE56542b",
-      "name": "Camelot V2 LP GRAIL/USDC",
-      "symbol": "GRAIL/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x8526B5CFabEfD5219A28644190493dF188DCE4dA",
       "name": "Camelot V2 LP AIDOGE/USDT",
       "symbol": "AIDOGE/USDT",
@@ -8579,14 +8531,6 @@
       "decimals": 18
     },
     {
-      "address": "0x8CebFB915F7aa8474ABcF0fff11d869a256EB887",
-      "name": "SushiSwap LP USDC/USDT",
-      "symbol": "USDC/USDT",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x8D54F8457948B811BDB8D967FFdc87064B99d20a",
       "name": "Arbitrum Exchange LP WBTC/USDT",
       "symbol": "WBTC/USDT",
@@ -8651,14 +8595,6 @@
       "decimals": 18
     },
     {
-      "address": "0x8F5943a0Fe04Efa4Ed2F5Ea94419Ee75f64f217A",
-      "name": "Trader Joe LP USDC/USDC",
-      "symbol": "USDC/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/17569/large/joe_200x200.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x8a0bAD9A5e839D85845BfC26531246DA7575227b",
       "name": "BalancerV2 LP WETH/USDC",
       "symbol": "WETH/USDC",
@@ -8691,6 +8627,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8b453d07B45cdb3D1002c9B3DA6E1b3033436f3D",
+      "name": "Curve.fi Factory Plain Pool: VST/USDC",
+      "symbol": "VSTUSDC-f",
+      "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x8b7E5D16ea7Fc0a130940fCdEc092BFa02A461c2",
       "name": "SushiSwap LP aEGGS/WETH",
       "symbol": "aEGGS/WETH",
@@ -8703,14 +8647,6 @@
       "name": "Balancer DOLA/USDC StablePool",
       "symbol": "DOLA/USDC BPT",
       "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x8c23A078d34814d394Ed212A3c66DF4Ed8997262",
-      "name": "Trader Joe LP USDC/LVL",
-      "symbol": "USDC/LVL",
-      "logoURI": "https://assets.coingecko.com/coins/images/17569/large/joe_200x200.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -8971,14 +8907,6 @@
       "decimals": 18
     },
     {
-      "address": "0x935763d7c14925690B89B14d738EcD8Bf37db39a",
-      "name": "Camelot V2 LP USDC/USDT",
-      "symbol": "USDC/USDT",
-      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x93729702Bf9E1687Ae2124e191B8fFbcC0C8A0B0",
       "name": "Curve.fi Factory Plain Pool: FRAXBP Convex Deposit",
       "symbol": "cvxFRAXBP-f",
@@ -9235,6 +9163,14 @@
       "decimals": 18
     },
     {
+      "address": "0x965d00aA7ABC62CA10132e641D08593435aC811d",
+      "name": "KAP Games",
+      "symbol": "KAP",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x96729025e23EAAaEd59e95594150E5D940c45e53",
       "name": "BalancerV2 LP VST/VSTA/LINK",
       "symbol": "VST/VSTA/LINK",
@@ -9422,14 +9358,6 @@
       "address": "0x99F40b01BA9C469193B360f72740E416B17Ac332",
       "name": "MATH",
       "symbol": "MATH",
-      "logoURI": "",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x99e6239C7D3cE04b9CFdFf44af726B47c9308707",
-      "name": "GBOT",
-      "symbol": "GBOT",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -9643,14 +9571,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9c1CCb589C9B9960D03B008da31EA2bb0d1338D9",
-      "name": "Arbitrum Exchange LP USDC/USDC",
-      "symbol": "USDC/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/29506/large/tokenlogo.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x9c5397dBCD8B039c5fc8b1Bc2602fA2767567149",
       "name": "SushiSwap LP EMAX/WETH",
       "symbol": "EMAX/WETH",
@@ -9755,14 +9675,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9e6827A406B9c87f5abA2521Ab14d1925FA7B1A1",
-      "name": "SushiSwap LP BAL/USDC",
-      "symbol": "BAL/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x9e724698051DA34994F281bD81C3E7372d1960AE",
       "name": "Ascension Protocol",
       "symbol": "ASCEND",
@@ -9835,6 +9747,14 @@
       "decimals": 18
     },
     {
+      "address": "0x9f6AbbF0Ba6B5bfa27f4deb6597CC6Ec20573FDA",
+      "name": "Ferrum Network",
+      "symbol": "FRM",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x9f768a1AfA69dca42FCD6a5745b3eC027889De0C",
       "name": "SushiSwap LP SPA/LINK",
       "symbol": "SPA/LINK",
@@ -9855,14 +9775,6 @@
       "name": "SushiSwap LP BARB/USDC",
       "symbol": "BARB/USDC",
       "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xA09e0a240b786CA813506C95fe64b10ba2fEaF42",
-      "name": "Trader Joe LP USDC/svUSD",
-      "symbol": "USDC/svUSD",
-      "logoURI": "https://assets.coingecko.com/coins/images/17569/large/joe_200x200.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -10595,25 +10507,9 @@
       "decimals": 18
     },
     {
-      "address": "0xBCD4787084eD6F9E97B165622c8AC62160B79b96",
-      "name": "SushiSwap LP BAL/SLP",
-      "symbol": "BAL/SLP",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xBD80923830B1B122dcE0C446b704621458329F1D",
       "name": "SushiSwap LP WETH/wBAN",
       "symbol": "WETH/wBAN",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xBDE34FA1527FC921e7e5546d5FF756cFaEeF3008",
-      "name": "SushiSwap LP BAL/DPX",
-      "symbol": "BAL/DPX",
       "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
@@ -11499,14 +11395,6 @@
       "decimals": 18
     },
     {
-      "address": "0xDCbB9534056621b3A1E19466ebbba5C64040498E",
-      "name": "Arbitrum Exchange LP WBTC/USDC",
-      "symbol": "WBTC/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/29506/large/tokenlogo.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xDD1eeCFd62Cabedf6EdD997f9e811F2D9AeDE1C3",
       "name": "SushiSwap LP LPT/MAGIC",
       "symbol": "LPT/MAGIC",
@@ -11639,14 +11527,6 @@
       "name": "BalancerV2 LP WETH/MYC/USDT",
       "symbol": "WETH/MYC/USDT",
       "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xE15a7F1D76a930c9F23197c40B4794bCd9084753",
-      "name": "SushiSwap LP GBOT/USDC",
-      "symbol": "GBOT/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -11855,6 +11735,14 @@
       "name": "Beefy Moo Sushi USDT-WETH",
       "symbol": "mooSushiUSDT-WETH",
       "logoURI": "https://assets.coingecko.com/coins/images/12704/large/token.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xE9A5aF50874c0ef2748b5DB70104B5ccb5557f6d",
+      "name": "GMBL COMPUTER CHiP",
+      "symbol": "GMBL",
+      "logoURI": "",
       "chainId": 42161,
       "decimals": 18
     },
@@ -12275,14 +12163,6 @@
       "decimals": 18
     },
     {
-      "address": "0xF88A64e7A6E8F6cE94010AE6Bf1551441Ff711cd",
-      "name": "Camelot V2 LP LUSD/USDC",
-      "symbol": "LUSD/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xF922b0B4a93bCA546ed69e3b5bb97585066503F2",
       "name": "BalancerV2 LP GMX/USDT",
       "symbol": "GMX/USDT",
@@ -12319,6 +12199,14 @@
       "name": "agEUR",
       "symbol": "AGEUR",
       "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xFAacD4E480Bcc7e2cd945540ECA18cF471E55702",
+      "name": "Camelot V2 LP DSQ/GMX",
+      "symbol": "DSQ/GMX",
+      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
       "chainId": 42161,
       "decimals": 18
     },
@@ -12390,14 +12278,6 @@
       "address": "0xFD65b386d4f45e8D429b4D87D1e1ae48F623FE8B",
       "name": "SushiSwap LP TCR/USDC",
       "symbol": "TCR/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xFDb952EfAFbc2f8886ddBA9EA6155f1879c7dE48",
-      "name": "SushiSwap LP BAL/USDT",
-      "symbol": "BAL/USDT",
       "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
       "chainId": 42161,
       "decimals": 18
@@ -12607,6 +12487,14 @@
       "name": "SushiSwap LP Chibi/USDC",
       "symbol": "Chibi/USDC",
       "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xa14453084318277b11d38FbE05D857A4f647442B",
+      "name": "Balancer 4POOL-BPT Gauge Deposit",
+      "symbol": "4POOL-BPT-gauge",
+      "logoURI": "https://assets.coingecko.com/coins/images/25942/large/logo.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -13251,14 +13139,6 @@
       "decimals": 18
     },
     {
-      "address": "0xb86c6eFE8Be69855e2Ab6859b3A73FC342dB97Df",
-      "name": "SushiSwap LP BAL/DAI",
-      "symbol": "BAL/DAI",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xb8761754D489244E0C5f0b8B2fe31585c1D86304",
       "name": "SushiSwap LP TCR/USDT",
       "symbol": "TCR/USDT",
@@ -13371,14 +13251,6 @@
       "decimals": 18
     },
     {
-      "address": "0xbb303C575aa4BdffDD22Ff0caC865d4534A662bd",
-      "name": "Camelot V2 LP AURY/USDC",
-      "symbol": "AURY/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xbc909Af85e1341cD0Ffac108aD97c8936a2689f6",
       "name": "Trader Joe LP ARB/USDC",
       "symbol": "ARB/USDC",
@@ -13451,14 +13323,6 @@
       "decimals": 18
     },
     {
-      "address": "0xc1ad239594c165bd4D8847D281232172a4520818",
-      "name": "Camelot V2 LP USDC/USDC",
-      "symbol": "USDC/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xc20b04534Ab809948549DAFc373fa2C684f9bfb6",
       "name": "BalancerV2 LP USDT/USDC",
       "symbol": "USDT/USDC",
@@ -13519,14 +13383,6 @@
       "name": "Adventurer Gold",
       "symbol": "GOLD",
       "logoURI": "",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xc4e56BFe61A5259CBd5Ad1B9C98c75A97C337B7B",
-      "name": "Arbitrum Exchange LP WETH/USDC",
-      "symbol": "WETH/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/29506/large/tokenlogo.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -13615,6 +13471,14 @@
       "name": "BalancerV2 LP BAL/GMX",
       "symbol": "BAL/GMX",
       "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xc8CCBd97b96834b976C995a67BF46e5754e2C48E",
+      "name": "Parallax",
+      "symbol": "PLX",
+      "logoURI": "",
       "chainId": 42161,
       "decimals": 18
     },
@@ -14299,6 +14163,14 @@
       "decimals": 18
     },
     {
+      "address": "0xdce765f021410B3266aA0053c93Cb4535F1e12e0",
+      "name": "peg-eUSD",
+      "symbol": "PEUSD",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xdd2bee9840280455cB1F4423d90AA7943D45D246",
       "name": "Camelot V2 LP JONES/BFR",
       "symbol": "JONES/BFR",
@@ -14339,26 +14211,10 @@
       "decimals": 18
     },
     {
-      "address": "0xe11fD71B13072CF388419e2623C5487103e08627",
-      "name": "SushiSwap LP BAL/WETH",
-      "symbol": "BAL/WETH",
-      "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xe20B9e246db5a0d21BF9209E4858Bc9A3ff7A034",
       "name": "Banano",
       "symbol": "BAN",
       "logoURI": "",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xe22831E8aC9fcac3Bb80C73b77Ee84f5501724d7",
-      "name": "Trader Joe LP WETH/USDC",
-      "symbol": "WETH/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/17569/large/joe_200x200.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -14583,6 +14439,14 @@
       "name": "Camelot V2 LP GRAIL/USDT",
       "symbol": "GRAIL/USDT",
       "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xeB4d25dB65dCeF52380C99bA7e1344c820eCb1fc",
+      "name": "X World Games",
+      "symbol": "XWG",
+      "logoURI": "",
       "chainId": 42161,
       "decimals": 18
     },
@@ -15095,14 +14959,6 @@
       "name": "Chainlink",
       "symbol": "LINK",
       "logoURI": "",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xf9976c787b6A5822e91dCC63383B2Bb16D28C05f",
-      "name": "Camelot V2 LP PNP/USDC",
-      "symbol": "PNP/USDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
       "chainId": 42161,
       "decimals": 18
     },

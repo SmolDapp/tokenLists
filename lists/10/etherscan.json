@@ -1,10 +1,10 @@
 {
   "name": "Etherscan",
   "description": "",
-  "timestamp": "03/09/2023 11:49:08",
+  "timestamp": "10/09/2023 00:33:41",
   "version": {
-    "major": 0,
-    "minor": 1,
+    "major": 1,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://etherscan.io/images/brandassets/etherscan-logo-circle.svg",
@@ -28,6 +28,14 @@
       "logoURI": "https://optimistic.etherscan.io/token/images/bolidefi_32.png",
       "chainId": 10,
       "decimals": 18
+    },
+    {
+      "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://optimistic.etherscan.io/token/images/usdc_32.png",
+      "chainId": 10,
+      "decimals": 6
     },
     {
       "address": "0x0c5b4c92c948691EEBf185C17eeB9c230DC019E9",
@@ -102,6 +110,14 @@
       "decimals": 18
     },
     {
+      "address": "0x395Ae52bB17aef68C2888d941736A71dC6d4e125",
+      "name": "PoolTogether",
+      "symbol": "POOL",
+      "logoURI": "https://optimistic.etherscan.io/token/images/pooltogether_32.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x3E5D9D8a63CC8a88748f229999CF59487e90721e",
       "name": "MetalSwap",
       "symbol": "XMT",
@@ -111,7 +127,7 @@
     },
     {
       "address": "0x3c8B650257cFb5f272f799F5e2b4e65093a11a05",
-      "name": "Velodrome Finance",
+      "name": "Velodrome",
       "symbol": "VELO",
       "logoURI": "https://optimistic.etherscan.io/token/images/velodrome_32.png",
       "chainId": 10,
@@ -447,8 +463,8 @@
     },
     {
       "address": "0xc5Db22719A06418028A40A9B5E9A7c02959D0d08",
-      "name": "Synthetic Chainlink",
-      "symbol": "sLINK",
+      "name": "sLINK",
+      "symbol": "SLINK",
       "logoURI": "https://optimistic.etherscan.io/token/images/Synthetix_sLINK_32.png",
       "chainId": 10,
       "decimals": 18

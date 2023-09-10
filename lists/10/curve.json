@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "03/09/2023 11:46:42",
+  "timestamp": "10/09/2023 00:33:22",
   "version": {
     "major": 10,
-    "minor": 5,
+    "minor": 6,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -60,7 +60,7 @@
     },
     {
       "address": "0x061b87122Ed14b9526A813209C8a59a633257bAb",
-      "name": "Curve.fi Factory USD Metapool: sUSD Synthetix",
+      "name": "Curve sUSD Pool",
       "symbol": "sUSD3CRV-f",
       "logoURI": "",
       "chainId": 10,
@@ -468,7 +468,7 @@
     },
     {
       "address": "0x7Bc5728BC2b59B45a58d9A576E2Ffc5f0505B35E",
-      "name": "Curve.fi Factory Pool: sETH/ETH",
+      "name": "Curve sETH Pool",
       "symbol": "seth-f",
       "logoURI": "",
       "chainId": 10,
@@ -545,6 +545,14 @@
       "logoURI": "",
       "chainId": 10,
       "decimals": 8
+    },
+    {
+      "address": "0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4",
+      "name": "Synthetix",
+      "symbol": "SNX",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x883feb1B9862e0c8559D26F53bf19264C5E0839F",
@@ -892,8 +900,8 @@
     },
     {
       "address": "0xc5Db22719A06418028A40A9B5E9A7c02959D0d08",
-      "name": "Synthetic Chainlink",
-      "symbol": "sLINK",
+      "name": "sLINK",
+      "symbol": "SLINK",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -926,6 +934,14 @@
       "address": "0xe74d004BbD80B32e37dbC004614f58fCf35CD270",
       "name": "Curve.fi Factory USD Metapool: Optimium Dollar",
       "symbol": "Op3CRV-f",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xf0C8713Eb11fd08c396b35cb3bEE79dfFFF09A6F",
+      "name": "Curve.fi Factory Plain Pool: sUSD/SNX",
+      "symbol": "sUSDSNX-f",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
