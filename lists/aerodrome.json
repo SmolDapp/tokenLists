@@ -1,10 +1,10 @@
 {
   "name": "Aerodrome",
   "description": "",
-  "timestamp": "10/09/2023 00:33:42",
+  "timestamp": "17/09/2023 00:33:10",
   "version": {
     "major": 0,
-    "minor": 4,
+    "minor": 5,
     "patch": 0
   },
   "logoURI": "https://aerodrome.finance/aerodrome.svg",
@@ -27,6 +27,14 @@
       "name": "Oath Token",
       "symbol": "OATH",
       "logoURI": "https://assets.smold.app/api/token/8453/0x00e1724885473B63bCE08a9f0a52F35b0979e35A/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x025f99977db78317a4EbA606998258B502Bb256F",
+      "name": "VeyronPepe",
+      "symbol": "VPPE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x025f99977db78317a4EbA606998258B502Bb256F/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -63,6 +71,14 @@
       "decimals": 18
     },
     {
+      "address": "0x08B935148AB10d3699Cb8d944519e8213abE6f1D",
+      "name": "Volatile AMM - WETH/USD+",
+      "symbol": "vAMM-WETH/USD+",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x08B935148AB10d3699Cb8d944519e8213abE6f1D/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x08cDD613fe9d0470c8fA6400d4DF3d1bA0940844",
       "name": "testqs01",
       "symbol": "testqs01",
@@ -80,7 +96,7 @@
     },
     {
       "address": "0x0B25c51637c43decd6CC1C1e3da4518D54ddb528",
-      "name": "Stable AMM - DOLA/USDbC",
+      "name": "Aerodrome Stable DOLA-USDbC",
       "symbol": "sAMM-DOLA/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x0B25c51637c43decd6CC1C1e3da4518D54ddb528/logo-128.png",
       "chainId": 8453,
@@ -135,6 +151,14 @@
       "decimals": 18
     },
     {
+      "address": "0x18c1075b8F0cDF93e01214e461e3f661C9B88631",
+      "name": "BasedAiDoge",
+      "symbol": "BDOGE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x18c1075b8F0cDF93e01214e461e3f661C9B88631/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x1Be197A85666Cd1e14c270780D9c6b04ff835122",
       "name": "Volatile AMM - WETH/GOLD",
       "symbol": "vAMM-WETH/GOLD",
@@ -151,6 +175,14 @@
       "decimals": 18
     },
     {
+      "address": "0x1D8F0ca616f363E1EE36782564Ddc6EdE81d4Cc6",
+      "name": "Volatile AMM - WETH/BaseDOGE",
+      "symbol": "vAMM-WETH/BaseDOGE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x1D8F0ca616f363E1EE36782564Ddc6EdE81d4Cc6/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x1F924Db207529d3035116Eb8F67a1B62A6Af8769",
       "name": "RA",
       "symbol": "RA",
@@ -160,7 +192,7 @@
     },
     {
       "address": "0x1b05e4e814b3431a48b8164c41eaC834d9cE2Da6",
-      "name": "Stable AMM - DAI+/USD+",
+      "name": "Aerodrome Stable DAI+-USD+",
       "symbol": "sAMM-DAI+/USD+",
       "logoURI": "https://assets.smold.app/api/token/8453/0x1b05e4e814b3431a48b8164c41eaC834d9cE2Da6/logo-128.png",
       "chainId": 8453,
@@ -171,6 +203,14 @@
       "name": "Stable AMM - USD+/stERN",
       "symbol": "sAMM-USD+/stERN",
       "logoURI": "https://assets.smold.app/api/token/8453/0x1be76d01d0b29f5E0B6B2fd6006131996e674afd/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x1c534f562933c16330114ad28b5D5ce9c6d47B34",
+      "name": "Volatile AMM - BDOGE/WETH",
+      "symbol": "vAMM-BDOGE/WETH",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x1c534f562933c16330114ad28b5D5ce9c6d47B34/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -216,7 +256,7 @@
     },
     {
       "address": "0x2223F9FE624F69Da4D8256A7bCc9104FBA7F8f75",
-      "name": "Volatile AMM - AERO/USDbC",
+      "name": "Aerodrome Volatile AERO-USDbC",
       "symbol": "vAMM-AERO/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x2223F9FE624F69Da4D8256A7bCc9104FBA7F8f75/logo-128.png",
       "chainId": 8453,
@@ -264,7 +304,7 @@
     },
     {
       "address": "0x2722C8f9B5E2aC72D1f225f8e8c990E449ba0078",
-      "name": "Volatile AMM - tBTC/WETH",
+      "name": "Aerodrome Volatile tBTC-WETH",
       "symbol": "vAMM-tBTC/WETH",
       "logoURI": "https://assets.smold.app/api/token/8453/0x2722C8f9B5E2aC72D1f225f8e8c990E449ba0078/logo-128.png",
       "chainId": 8453,
@@ -328,9 +368,17 @@
     },
     {
       "address": "0x2d25E0514f23c6367687dE89Bd5167dc754D4934",
-      "name": "Volatile AMM - WETH/TAROT",
-      "symbol": "vAMM-WETH/TAROT",
+      "name": "Aerodrome Volatile Tarot-WETH",
+      "symbol": "vAMM-Tarot/WETH",
       "logoURI": "https://assets.smold.app/api/token/8453/0x2d25E0514f23c6367687dE89Bd5167dc754D4934/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x2d6d32d343423Dc3057Aa8571a072a40FfBE126d",
+      "name": "Volatile AMM - DAI/AERO",
+      "symbol": "vAMM-DAI/AERO",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x2d6d32d343423Dc3057Aa8571a072a40FfBE126d/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -375,8 +423,16 @@
       "decimals": 18
     },
     {
+      "address": "0x3FF5bfE3ff5e1877664Fe25862871554e632b9C9",
+      "name": "Stable AMM - USD+/MAI",
+      "symbol": "sAMM-USD+/MAI",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x3FF5bfE3ff5e1877664Fe25862871554e632b9C9/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x3Fc28BFac25fC8e93B5b2fc15EfBBD5a8aA44eFe",
-      "name": "Volatile AMM - wUSDR/USDbC",
+      "name": "Aerodrome Volatile wUSDR-USDbC",
       "symbol": "vAMM-wUSDR/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x3Fc28BFac25fC8e93B5b2fc15EfBBD5a8aA44eFe/logo-128.png",
       "chainId": 8453,
@@ -432,7 +488,7 @@
     },
     {
       "address": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
-      "name": "Volatile AMM - cbETH/WETH",
+      "name": "Aerodrome Volatile cbETH-WETH",
       "symbol": "vAMM-cbETH/WETH",
       "logoURI": "https://assets.smold.app/api/token/8453/0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91/logo-128.png",
       "chainId": 8453,
@@ -451,6 +507,14 @@
       "name": "Stable AMM - WETH/USDbC",
       "symbol": "sAMM-WETH/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x44d7Dd237001AeF7fC7D8CB13ab4452f65CE5E40/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x4559002C75FED909A83232d068828bf020bF9a05",
+      "name": "Volatile AMM - WETH/TEST",
+      "symbol": "vAMM-WETH/TEST",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x4559002C75FED909A83232d068828bf020bF9a05/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -512,7 +576,7 @@
     },
     {
       "address": "0x4a3636608d7Bc5776CB19Eb72cAa36EbB9Ea683B",
-      "name": "Stable AMM - USD+/USDbC",
+      "name": "Aerodrome Stable USD+-USDbC",
       "symbol": "sAMM-USD+/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x4a3636608d7Bc5776CB19Eb72cAa36EbB9Ea683B/logo-128.png",
       "chainId": 8453,
@@ -531,6 +595,22 @@
       "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://assets.smold.app/api/token/8453/0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x52DE6AD4672e02254323a0aD79d5E02159f4a8c1",
+      "name": "Volatile AMM - UU/USDbC",
+      "symbol": "vAMM-UU/USDbC",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x52DE6AD4672e02254323a0aD79d5E02159f4a8c1/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x532aDFFFE815064daFcDd0ECe2022E47524f3000",
+      "name": "Stable AMM - DAI/CHI",
+      "symbol": "sAMM-DAI/CHI",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x532aDFFFE815064daFcDd0ECe2022E47524f3000/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -711,6 +791,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6689a0582BAfcC286A81dc38D76e0470AcD17275",
+      "name": "Volatile AMM - WETH/AAG",
+      "symbol": "vAMM-WETH/AAG",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x6689a0582BAfcC286A81dc38D76e0470AcD17275/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x669A0dFa8aB0bc8E1199D08258769Cc39C0Bc3C5",
       "name": "Volatile AMM - BALD/WETH",
       "symbol": "vAMM-BALD/WETH",
@@ -776,7 +864,7 @@
     },
     {
       "address": "0x6EAB8c1B93f5799daDf2C687a30230a540DbD636",
-      "name": "Stable AMM - DAI/USDbC",
+      "name": "Aerodrome Stable DAI-USDbC",
       "symbol": "sAMM-DAI/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x6EAB8c1B93f5799daDf2C687a30230a540DbD636/logo-128.png",
       "chainId": 8453,
@@ -816,7 +904,7 @@
     },
     {
       "address": "0x723AEf6543aecE026a15662Be4D3fb3424D502A9",
-      "name": "Volatile AMM - tBTC/USDbC",
+      "name": "Aerodrome Volatile tBTC-USDbC",
       "symbol": "vAMM-tBTC/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x723AEf6543aecE026a15662Be4D3fb3424D502A9/logo-128.png",
       "chainId": 8453,
@@ -827,6 +915,14 @@
       "name": "Volatile AMM - DAI/USD+",
       "symbol": "vAMM-DAI/USD+",
       "logoURI": "https://assets.smold.app/api/token/8453/0x72618657E7947BE9a3A6dA48B11f5C0B8E80DbE5/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x728cDA34D732a87fD6429129e23D4742d9Ff0064",
+      "name": "BaseDOGE",
+      "symbol": "BaseDOGE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x728cDA34D732a87fD6429129e23D4742d9Ff0064/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -867,6 +963,14 @@
       "name": "Volatile AMM - MAI/USDbC",
       "symbol": "vAMM-MAI/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x7B48C97D097217F960C332F2790b344c4494Dc1D/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x7Ee9cf972BC8441ebc112c5F01a96Ce85b0a44Bd",
+      "name": "Dai",
+      "symbol": "DAI",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x7Ee9cf972BC8441ebc112c5F01a96Ce85b0a44Bd/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -927,6 +1031,14 @@
       "decimals": 18
     },
     {
+      "address": "0x88652ec79476F8E4832BE4432c850Cba31F8fE3A",
+      "name": "Volatile AMM - ATE/USDbC",
+      "symbol": "vAMM-ATE/USDbC",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x88652ec79476F8E4832BE4432c850Cba31F8fE3A/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x888092c9D44cD647a073f8f1eD11305A31e4fa66",
       "name": "Volatile AMM - gSIS/USD+",
       "symbol": "vAMM-gSIS/USD+",
@@ -947,6 +1059,14 @@
       "name": "Volatile AMM - WETH/BASED",
       "symbol": "vAMM-WETH/BASED",
       "logoURI": "https://assets.smold.app/api/token/8453/0x89dE19c640B03649206e9998481Ee9E8E23EBCAf/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x8BE49607832a299FA33eE837038418ad0223333e",
+      "name": "bSHARE Token",
+      "symbol": "bSHARE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x8BE49607832a299FA33eE837038418ad0223333e/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1023,6 +1143,14 @@
       "decimals": 18
     },
     {
+      "address": "0x96e890c6b2501a69cAD5Dba402BFB871a2A2874C",
+      "name": "AAG",
+      "symbol": "AAG",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x96e890c6b2501a69cAD5Dba402BFB871a2A2874C/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x982A169edFC1cf8Fd38dBeE76735547b23875BD1",
       "name": "Stable AMM - MIM/USDbC",
       "symbol": "sAMM-MIM/USDbC",
@@ -1051,6 +1179,14 @@
       "name": "Basic Dog Meme",
       "symbol": "DOG",
       "logoURI": "https://assets.smold.app/api/token/8453/0x9E53e88dCff56d3062510A745952DEC4cEFDff9E/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x9Fabf6Fca68Bd4E0d910b6464721832A098D8a5D",
+      "name": "UU",
+      "symbol": "UU",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x9Fabf6Fca68Bd4E0d910b6464721832A098D8a5D/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1088,7 +1224,7 @@
     },
     {
       "address": "0xA56bE957d432a5d0eDc040B27078d9726f54E7f6",
-      "name": "Volatile AMM - agEUR/USDbC",
+      "name": "Aerodrome Volatile agEUR-USDbC",
       "symbol": "vAMM-agEUR/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0xA56bE957d432a5d0eDc040B27078d9726f54E7f6/logo-128.png",
       "chainId": 8453,
@@ -1143,6 +1279,14 @@
       "decimals": 18
     },
     {
+      "address": "0xB2D45b8c6D99D939c7BF81174Bfdae6fF3f18a74",
+      "name": "Volatile AMM - WETH/ITX",
+      "symbol": "vAMM-WETH/ITX",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xB2D45b8c6D99D939c7BF81174Bfdae6fF3f18a74/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xB304b47e039E20AFAd75FA2ada6CD8D95a9eea41",
       "name": "Stable AMM - AERO/USDbC",
       "symbol": "sAMM-AERO/USDbC",
@@ -1152,7 +1296,7 @@
     },
     {
       "address": "0xB4885Bc63399BF5518b994c1d0C153334Ee579D0",
-      "name": "Volatile AMM - WETH/USDbC",
+      "name": "Aerodrome Volatile WETH-USDbC",
       "symbol": "vAMM-WETH/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0xB4885Bc63399BF5518b994c1d0C153334Ee579D0/logo-128.png",
       "chainId": 8453,
@@ -1179,6 +1323,14 @@
       "name": "Volatile AMM - WETH/FRIEND",
       "symbol": "vAMM-WETH/FRIEND",
       "logoURI": "https://assets.smold.app/api/token/8453/0xB8F01693DDE723cB9124f5d1160Fb0721068eA7f/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xBCBAe0DD948b404e2157Ff395caCB10ABFc2b52A",
+      "name": "Insane Technology Index",
+      "symbol": "ITX",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xBCBAe0DD948b404e2157Ff395caCB10ABFc2b52A/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1223,6 +1375,14 @@
       "decimals": 18
     },
     {
+      "address": "0xD0A96c9b21565a7B73d006C02E56E09438b51C1B",
+      "name": "bSHARE Token",
+      "symbol": "bSHARE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xD0A96c9b21565a7B73d006C02E56E09438b51C1B/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xD830162411497FaFF8734CE4200C547faf2FEAE2",
       "name": "TAX",
       "symbol": "TAX",
@@ -1251,6 +1411,14 @@
       "name": "Volatile AMM - WETH/ANDRE",
       "symbol": "vAMM-WETH/ANDRE",
       "logoURI": "https://assets.smold.app/api/token/8453/0xDd4dB4770918847057EA73805A428CB2E9d2c9Af/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xDe3820c24aF47B420E6699a2e22D9a1512182a70",
+      "name": "Volatile AMM - WETH/bSHARE",
+      "symbol": "vAMM-WETH/bSHARE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xDe3820c24aF47B420E6699a2e22D9a1512182a70/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1319,10 +1487,26 @@
       "decimals": 18
     },
     {
+      "address": "0xEf6b19D71B342EAE33773346b05EAD8F0966BD42",
+      "name": "TEST",
+      "symbol": "TEST",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xEf6b19D71B342EAE33773346b05EAD8F0966BD42/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xF37923311D71c986D701cddb3394777322294E3a",
       "name": "DOHCOIN",
       "symbol": "DOH",
       "logoURI": "https://assets.smold.app/api/token/8453/0xF37923311D71c986D701cddb3394777322294E3a/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xF4784435AAD798C86c5074E8481cbf5B99d9A089",
+      "name": "Volatile AMM - WETH/bSHARE",
+      "symbol": "vAMM-WETH/bSHARE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xF4784435AAD798C86c5074E8481cbf5B99d9A089/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1347,6 +1531,22 @@
       "name": "Tarot",
       "symbol": "TAROT",
       "logoURI": "https://assets.smold.app/api/token/8453/0xF544251D25f3d243A36B07e7E7962a678f952691/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xF5A5A87911a8260898916f61A965caEa507cCf24",
+      "name": "Volatile AMM - WETH/WETH",
+      "symbol": "vAMM-WETH/WETH",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xF5A5A87911a8260898916f61A965caEa507cCf24/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xF804A225371b7B8ebf1BcF054f8132C954dCc5e7",
+      "name": "Stable AMM - WETH/bSHARE",
+      "symbol": "sAMM-WETH/bSHARE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xF804A225371b7B8ebf1BcF054f8132C954dCc5e7/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1443,6 +1643,14 @@
       "name": "Volatile AMM - fBOMB/AERO",
       "symbol": "vAMM-fBOMB/AERO",
       "logoURI": "https://assets.smold.app/api/token/8453/0xbBf71AAD6E1F8D180D3B1D898528654c1d18b2fF/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xbE23ce31C665225E27521D3d7DB9Bb7E5A76aeb8",
+      "name": "Volatile AMM - WETH/bSHARE",
+      "symbol": "vAMM-WETH/bSHARE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xbE23ce31C665225E27521D3d7DB9Bb7E5A76aeb8/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1567,10 +1775,26 @@
       "decimals": 18
     },
     {
+      "address": "0xd0ad69bE7C2dD8125023e5271b63735D6b7A6B06",
+      "name": "Volatile AMM - VPPE/WETH",
+      "symbol": "vAMM-VPPE/WETH",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xd0ad69bE7C2dD8125023e5271b63735D6b7A6B06/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xd359D5440C5b68D43076b6475A5f18a3fef8fbd3",
       "name": "AAA2",
       "symbol": "AAA2",
       "logoURI": "https://assets.smold.app/api/token/8453/0xd359D5440C5b68D43076b6475A5f18a3fef8fbd3/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xd5DA32Ad4C7510457C0e46Fa4332F75f6C4C4dC0",
+      "name": "AutoEarn Token",
+      "symbol": "ATE",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xd5DA32Ad4C7510457C0e46Fa4332F75f6C4C4dC0/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1656,7 +1880,7 @@
     },
     {
       "address": "0xf6Aec4F97623E691a9426a69BaF5501509fCa05D",
-      "name": "Stable AMM - MAI/USDbC",
+      "name": "Aerodrome Stable MAI-USDbC",
       "symbol": "sAMM-MAI/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0xf6Aec4F97623E691a9426a69BaF5501509fCa05D/logo-128.png",
       "chainId": 8453,
@@ -1667,6 +1891,14 @@
       "name": "Staked ERN Vault",
       "symbol": "stERN",
       "logoURI": "https://assets.smold.app/api/token/8453/0xf7A0dd3317535eC4f4d29ADF9d620B3d8D5D5069/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xfF07fc776206BDdd9d285A5E571dcDF98131120B",
+      "name": "Chi USD",
+      "symbol": "CHI",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xfF07fc776206BDdd9d285A5E571dcDF98131120B/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },

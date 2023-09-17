@@ -1,10 +1,10 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "10/09/2023 00:32:37",
+  "timestamp": "17/09/2023 00:37:56",
   "version": {
     "major": 11,
-    "minor": 3,
+    "minor": 4,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -311,6 +311,14 @@
       "name": "Curve BUSD",
       "symbol": "yvCurve-BUSD-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x2a82DcdcBfB88e92021B8BcC3DA22703a2E4459c/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x30B801F933e676Cb25892D1838FDCC00A1dde4cf",
+      "name": "Curve JPEGpETH-f Factory yVault",
+      "symbol": "yvCurve-JPEGpETH-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x30B801F933e676Cb25892D1838FDCC00A1dde4cf/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1348,7 +1356,7 @@
     },
     {
       "address": "0xAD2f9A55518Dba12E8AB069502820923351667C5",
-      "name": "Curve msETHWETH-f Factory yVault",
+      "name": "Curve msETH",
       "symbol": "yvCurve-msETHWETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xAD2f9A55518Dba12E8AB069502820923351667C5/logo-128.png",
       "chainId": 1,
@@ -1428,7 +1436,7 @@
     },
     {
       "address": "0xBe426b0f37c112dd20d5866769c8034171567b31",
-      "name": "Curve.fi Factory Plain Pool: crvUSD/MIM",
+      "name": "Curve crvUSD-MIM Pool",
       "symbol": "crvUSDMIM-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xBe426b0f37c112dd20d5866769c8034171567b31/logo-128.png",
       "chainId": 1,
@@ -1436,7 +1444,7 @@
     },
     {
       "address": "0xBfAb6FA95E0091ed66058ad493189D2cB29385E6",
-      "name": "Curve.fi ETH/wBETH",
+      "name": "Curve wBETH Pool",
       "symbol": "ETHwBETHCRV",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xBfAb6FA95E0091ed66058ad493189D2cB29385E6/logo-128.png",
       "chainId": 1,
@@ -1468,7 +1476,7 @@
     },
     {
       "address": "0xC2ADaD1Bd59a1DA3D35bd86cDb555694372f488F",
-      "name": "Curve crvUSDMIM-f Factory yVault",
+      "name": "Curve crvUSD-MIM",
       "symbol": "yvCurve-crvUSDMIM-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xC2ADaD1Bd59a1DA3D35bd86cDb555694372f488F/logo-128.png",
       "chainId": 1,
@@ -1587,6 +1595,14 @@
       "decimals": 18
     },
     {
+      "address": "0xDA68f66fC0f10Ee61048E70106Df4BDB26bAF595",
+      "name": "Curve.fi Factory Crypto Pool: JPEG/pETH",
+      "symbol": "JPEGpETH-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xDA68f66fC0f10Ee61048E70106Df4BDB26bAF595/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xDb26d8815EdA864Dfa43306766f2F8CA50C03F9E",
       "name": "Curve msUSD-FRAXBP",
       "symbol": "yvCurve-msUSD-FRAXBP-f",
@@ -1683,6 +1699,14 @@
       "decimals": 18
     },
     {
+      "address": "0xF5f33812c93C5f2Ae2F28c041eEb393212439502",
+      "name": "Curve crvUSDGUSD-f Factory yVault",
+      "symbol": "yvCurve-crvUSDGUSD-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xF5f33812c93C5f2Ae2F28c041eEb393212439502/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xF614d3864EF53510909a94c618a5EC1Ff75103BF",
       "name": "Curve cbETH",
       "symbol": "yvCurve-cbETH-f",
@@ -1764,7 +1788,7 @@
     },
     {
       "address": "0xa4c567c662349BeC3D0fB94C4e7f85bA95E208e4",
-      "name": "Curve.fi Factory Plain Pool: msETH/WETH",
+      "name": "Curve msETH-WETH Pool",
       "symbol": "msETHWETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xa4c567c662349BeC3D0fB94C4e7f85bA95E208e4/logo-128.png",
       "chainId": 1,
@@ -2004,7 +2028,7 @@
     },
     {
       "address": "0xd6627F7dE81eB517A32F0F81537Ea2636B27B8CC",
-      "name": "Curve ETHwBETHCRV Factory yVault",
+      "name": "Curve wBETH",
       "symbol": "yvCurve-ETHwBETHCRV-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xd6627F7dE81eB517A32F0F81537Ea2636B27B8CC/logo-128.png",
       "chainId": 1,
@@ -2127,6 +2151,14 @@
       "name": "Curve STBT",
       "symbol": "yvCurve-STBT-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xe8b96C38a0b370eAfb11D9b8Df4131415423577a/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xeCDd0cE505da71cd9dE855CD6804BA1e8C7bdB07",
+      "name": "Curve.fi Factory Plain Pool: crvUSD/GUSD",
+      "symbol": "crvUSDGUSD-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xeCDd0cE505da71cd9dE855CD6804BA1e8C7bdB07/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2300,7 +2332,7 @@
     },
     {
       "address": "0x2E931De1fcB2681Dc98601e0b513308DA9C5cEae",
-      "name": "VolatileV2 AMM - TAROT/USDC",
+      "name": "Velodrome Volatile TAROT-USDC",
       "symbol": "vAMMV2-TAROT/USDC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x2E931De1fcB2681Dc98601e0b513308DA9C5cEae/logo-128.png",
       "chainId": 10,
@@ -2356,7 +2388,7 @@
     },
     {
       "address": "0x3BDe2aB72AfE70286fc944C07D98883E383DF239",
-      "name": "Velodrome v2 TAROT-OP Factory yVault",
+      "name": "Velodrome TAROT-OP",
       "symbol": "yvVelo-TAROT-OP-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x3BDe2aB72AfE70286fc944C07D98883E383DF239/logo-128.png",
       "chainId": 10,
@@ -2428,7 +2460,7 @@
     },
     {
       "address": "0x4706e50fDe911525e4B904c240056c4Ea0884AA6",
-      "name": "VolatileV2 AMM - stERN/ERN",
+      "name": "Velodrome Volatile stERN-ERN",
       "symbol": "vAMMV2-stERN/ERN",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0x4706e50fDe911525e4B904c240056c4Ea0884AA6/logo-128.png",
       "chainId": 10,
@@ -2996,7 +3028,7 @@
     },
     {
       "address": "0xC3566662862c26FF56e3E709dc021902cC68BecD",
-      "name": "Velodrome v2 TAROT-USDC Factory yVault",
+      "name": "Velodrome TAROT-USDC",
       "symbol": "yvVelo-TAROT-USDC-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0xC3566662862c26FF56e3E709dc021902cC68BecD/logo-128.png",
       "chainId": 10,
@@ -3116,8 +3148,8 @@
     },
     {
       "address": "0xF2D42c46528116362Aca448837A0236459B53C63",
-      "name": "VolatileV2 AMM - TAROT/OP",
-      "symbol": "vAMMV2-TAROT/OP",
+      "name": "Velodrome Volatile OP-TAROT",
+      "symbol": "vAMMV2-OP/TAROT",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0xF2D42c46528116362Aca448837A0236459B53C63/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -3172,7 +3204,7 @@
     },
     {
       "address": "0xa7B550B3A80361d8e47E07616dC42f04c655881b",
-      "name": "Velodrome v2 stERN-ERN Factory yVault",
+      "name": "Velodrome stERN-ERN",
       "symbol": "yvVelo-stERN-ERN-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/10/0xa7B550B3A80361d8e47E07616dC42f04c655881b/logo-128.png",
       "chainId": 10,
@@ -3604,7 +3636,7 @@
     },
     {
       "address": "0x12e3187D6B7a0BA98A427ef9EF287Bd9960764D1",
-      "name": "Aerodrome DEUS-WETH Factory yVault",
+      "name": "Aerodrome DEUS-WETH",
       "symbol": "yvAero-DEUS-WETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x12e3187D6B7a0BA98A427ef9EF287Bd9960764D1/logo-128.png",
       "chainId": 8453,
@@ -3628,7 +3660,7 @@
     },
     {
       "address": "0x218F511431194B2C756D67a137DE536beA74E498",
-      "name": "Volatile AMM - ERN/stERN",
+      "name": "Aerodrome Volatile ERN-stERN",
       "symbol": "vAMM-ERN/stERN",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x218F511431194B2C756D67a137DE536beA74E498/logo-128.png",
       "chainId": 8453,
@@ -3651,8 +3683,16 @@
       "decimals": 18
     },
     {
+      "address": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
+      "name": "Stable AMM - USDC/USDbC",
+      "symbol": "sAMM-USDC/USDbC",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x2B7704f1cb9324cD8586B33C6c540CbD64E58237",
-      "name": "Volatile AMM - EXTRA/USDbC",
+      "name": "Aerodrome Volatile EXTRA-USDbC",
       "symbol": "vAMM-EXTRA/USDbC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x2B7704f1cb9324cD8586B33C6c540CbD64E58237/logo-128.png",
       "chainId": 8453,
@@ -3668,15 +3708,23 @@
     },
     {
       "address": "0x37A74970f80adAa8215598e95A17Cbed2C39030D",
-      "name": "Aerodrome SONNE-USDbC Factory yVault",
+      "name": "Aerodrome SONNE-USDbC",
       "symbol": "yvAero-SONNE-USDbC-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x37A74970f80adAa8215598e95A17Cbed2C39030D/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
     {
+      "address": "0x37fDacD764AA64F4e453842D8056853e5550c09b",
+      "name": "Aerodrome USDC-USDbC Factory yVault",
+      "symbol": "yvAero-USDC-USDbC-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x37fDacD764AA64F4e453842D8056853e5550c09b/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x391E5dc227CDcf3cCA012E5278798121236b1861",
-      "name": "Aerodrome WELL-WETH Factory yVault",
+      "name": "Aerodrome WELL-WETH",
       "symbol": "yvAero-WELL-WETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x391E5dc227CDcf3cCA012E5278798121236b1861/logo-128.png",
       "chainId": 8453,
@@ -3715,6 +3763,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4DCC2EcafF01525fBcAB3ED18823270F912a380A",
+      "name": "Aerodrome MAI-DOLA Factory yVault",
+      "symbol": "yvAero-MAI-DOLA-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x4DCC2EcafF01525fBcAB3ED18823270F912a380A/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x4a3636608d7Bc5776CB19Eb72cAa36EbB9Ea683B",
       "name": "Aerodrome Stable USD+-USDbC",
       "symbol": "sAMM-USD+/USDbC",
@@ -3724,7 +3780,7 @@
     },
     {
       "address": "0x554EcA2a48136724294CE47fb7bfE9AADfceE3c6",
-      "name": "Volatile AMM - SONNE/USDbC",
+      "name": "Aerodrome Volatile SONNE-USDbC",
       "symbol": "vAMM-SONNE/USDbC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x554EcA2a48136724294CE47fb7bfE9AADfceE3c6/logo-128.png",
       "chainId": 8453,
@@ -3740,7 +3796,7 @@
     },
     {
       "address": "0x5B9b4F9B704faAe29f600C04b12aF92FB518604f",
-      "name": "Aerodrome EXTRA-USDbC Factory yVault",
+      "name": "Aerodrome EXTRA-USDbC",
       "symbol": "yvAero-EXTRA-USDbC-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x5B9b4F9B704faAe29f600C04b12aF92FB518604f/logo-128.png",
       "chainId": 8453,
@@ -3756,7 +3812,7 @@
     },
     {
       "address": "0x607363389331f4B2D1b955d009506A67c565D75E",
-      "name": "Volatile AMM - USD+/stERN",
+      "name": "Aerodrome Volatile USD+-stERN",
       "symbol": "vAMM-USD+/stERN",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x607363389331f4B2D1b955d009506A67c565D75E/logo-128.png",
       "chainId": 8453,
@@ -3796,7 +3852,7 @@
     },
     {
       "address": "0x7cbdf03CA2B633CA9FA613945ab4b19A46b3d671",
-      "name": "Aerodrome UNIDX-WETH Factory yVault",
+      "name": "Aerodrome UNIDX-WETH",
       "symbol": "yvAero-UNIDX-WETH-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x7cbdf03CA2B633CA9FA613945ab4b19A46b3d671/logo-128.png",
       "chainId": 8453,
@@ -3819,16 +3875,32 @@
       "decimals": 18
     },
     {
+      "address": "0x8b432C54d6e8E1B8D1802753514AB53044Af1861",
+      "name": "Stable AMM - DOLA/MAI",
+      "symbol": "sAMM-DOLA/MAI",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x8b432C54d6e8E1B8D1802753514AB53044Af1861/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x8f22D62434d5E52AF442F69F43eb27BA20768692",
-      "name": "Aerodrome stERN-USD+ Factory yVault",
+      "name": "Aerodrome stERN-USD+",
       "symbol": "yvAero-stERN-USD+-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x8f22D62434d5E52AF442F69F43eb27BA20768692/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
     {
+      "address": "0x9287C921f5d920cEeE0d07d7c58d476E46aCC640",
+      "name": "Volatile AMM - WETH/DAI",
+      "symbol": "vAMM-WETH/DAI",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x9287C921f5d920cEeE0d07d7c58d476E46aCC640/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x9e4CB8b916289864321661CE02cf66aa5BA63C94",
-      "name": "Volatile AMM - WETH/DEUS",
+      "name": "Aerodrome Volatile WETH-DEUS",
       "symbol": "vAMM-WETH/DEUS",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0x9e4CB8b916289864321661CE02cf66aa5BA63C94/logo-128.png",
       "chainId": 8453,
@@ -3860,7 +3932,7 @@
     },
     {
       "address": "0xA819Af1CC8AbE618eA8abaDeb464960F7451CEAB",
-      "name": "Volatile AMM - WETH/UNIDX",
+      "name": "Aerodrome Volatile WETH-UNIDX",
       "symbol": "vAMM-WETH/UNIDX",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0xA819Af1CC8AbE618eA8abaDeb464960F7451CEAB/logo-128.png",
       "chainId": 8453,
@@ -3871,6 +3943,14 @@
       "name": "Aerodrome Volatile WETH-USDbC",
       "symbol": "vAMM-WETH/USDbC",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0xB4885Bc63399BF5518b994c1d0C153334Ee579D0/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xEcFc1e5BDa4d4191c9Cab053ec704347Db87Be5d",
+      "name": "Aerodrome WETH-DAI Factory yVault",
+      "symbol": "yvAero-WETH-DAI-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0xEcFc1e5BDa4d4191c9Cab053ec704347Db87Be5d/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -3892,7 +3972,7 @@
     },
     {
       "address": "0xaCcB6Fa47E2dA8F937f6E33BC25B68328b370D2e",
-      "name": "Aerodrome stERN-ERN Factory yVault",
+      "name": "Aerodrome stERN-ERN",
       "symbol": "yvAero-stERN-ERN-f",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0xaCcB6Fa47E2dA8F937f6E33BC25B68328b370D2e/logo-128.png",
       "chainId": 8453,
@@ -3908,7 +3988,7 @@
     },
     {
       "address": "0xffA3F8737C39e36dec4300B162c2153c67c8352f",
-      "name": "Volatile AMM - WETH/WELL",
+      "name": "Aerodrome Volatile WETH-WELL",
       "symbol": "vAMM-WETH/WELL",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/8453/0xffA3F8737C39e36dec4300B162c2153c67c8352f/logo-128.png",
       "chainId": 8453,
