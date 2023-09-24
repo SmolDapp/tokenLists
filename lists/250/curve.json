@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "17/09/2023 00:33:20",
+  "timestamp": "24/09/2023 00:33:30",
   "version": {
     "major": 10,
-    "minor": 7,
+    "minor": 8,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -91,6 +91,14 @@
       "decimals": 18
     },
     {
+      "address": "0x07745443c1355540433FafB638130e324AAad830",
+      "name": "Curve.fi Factory Plain Pool: crvussd",
+      "symbol": "crvussd-f",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x079D2298A05974CE556c2592Dd5c7D20B2364d2d",
       "name": "Curve.fi Factory Plain Pool: FINAL TEST",
       "symbol": "DAI/STB-f",
@@ -100,8 +108,8 @@
     },
     {
       "address": "0x07E6332dD090D287d3489245038daF987955DCFB",
-      "name": "Geist DAI",
-      "symbol": "gDAI",
+      "name": "Geist Dai",
+      "symbol": "gdai",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -188,8 +196,8 @@
     },
     {
       "address": "0x13082681E8CE9bd0aF505912d306403592490Fc7",
-      "name": "PAR Stablecoin",
-      "symbol": "PAR",
+      "name": "Parallel",
+      "symbol": "par",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -237,7 +245,7 @@
     {
       "address": "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4",
       "name": "Bridged USD Coin (Axelar)",
-      "symbol": "AXLUSDC",
+      "symbol": "axlusdc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -397,7 +405,7 @@
     {
       "address": "0x27E611FD27b276ACbd5Ffd632E5eAEBEC9761E40",
       "name": "Curve.fi DAI/USDC",
-      "symbol": "DAI+USDC",
+      "symbol": "dai+usdc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -420,8 +428,8 @@
     },
     {
       "address": "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf",
-      "name": "USD Coin",
-      "symbol": "USDC",
+      "name": "Bridged USD Coin (LayerZero)",
+      "symbol": "lzusdc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -460,8 +468,8 @@
     },
     {
       "address": "0x3129662808bEC728a27Ab6a6b9AFd3cBacA8A43c",
-      "name": "Dola USD Stablecoin",
-      "symbol": "DOLA",
+      "name": "DOLA",
+      "symbol": "dola",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -500,8 +508,8 @@
     },
     {
       "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
-      "name": "Bitcoin",
-      "symbol": "BTC",
+      "name": "Wrapped Bitcoin",
+      "symbol": "WBTC",
       "logoURI": "",
       "chainId": 250,
       "decimals": 8
@@ -549,7 +557,7 @@
     {
       "address": "0x38aCa5484B8603373Acc6961Ecd57a6a594510A3",
       "name": "Geist WBTC",
-      "symbol": "gWBTC",
+      "symbol": "gwbtc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 8
@@ -677,7 +685,7 @@
     {
       "address": "0x44F7237df00E386af8e79B817D05ED9f6FE0f296",
       "name": "Wrapped Solana",
-      "symbol": "SOL",
+      "symbol": "sol",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -740,8 +748,8 @@
     },
     {
       "address": "0x511D35c52a3C244E7b8bd92c0C297755FbD89212",
-      "name": "Avalanche",
-      "symbol": "AVAX",
+      "name": "Wrapped AVAX",
+      "symbol": "wavax",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -836,8 +844,8 @@
     },
     {
       "address": "0x5Cc61A78F164885776AA610fb0FE1257df78E59B",
-      "name": "SpiritSwap Token",
-      "symbol": "SPIRIT",
+      "name": "SpiritSwap",
+      "symbol": "spirit",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -964,8 +972,8 @@
     },
     {
       "address": "0x6c021Ae822BEa943b2E66552bDe1D2696a53fbB7",
-      "name": "TOMB",
-      "symbol": "TOMB",
+      "name": "Tomb",
+      "symbol": "tomb",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1021,15 +1029,15 @@
     {
       "address": "0x74E23dF9110Aa9eA0b6ff2fAEE01e740CA1c642e",
       "name": "TOR",
-      "symbol": "TOR",
+      "symbol": "tor",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
     },
     {
       "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
-      "name": "Ethereum",
-      "symbol": "ETH",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1124,8 +1132,8 @@
     },
     {
       "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
-      "name": "SpookyToken",
-      "symbol": "BOO",
+      "name": "Spookyswap",
+      "symbol": "boo",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1133,7 +1141,7 @@
     {
       "address": "0x846e4D51d7E2043C1a87E0Ab7490B93FB940357b",
       "name": "TerraUSD (Wormhole)",
-      "symbol": "UST",
+      "symbol": "ust",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -1261,7 +1269,7 @@
     {
       "address": "0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f",
       "name": "Bridged Dai Stablecoin (Stargate)",
-      "symbol": "DAI",
+      "symbol": "dai",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1293,7 +1301,7 @@
     {
       "address": "0x940F41F0ec9ba1A34CF001cc03347ac092F5F6B5",
       "name": "Geist fUSDT",
-      "symbol": "gfUSDT",
+      "symbol": "gfusdt",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -1356,8 +1364,8 @@
     },
     {
       "address": "0x9879aBDea01a879644185341F7aF7d8343556B7a",
-      "name": "TrueUSD",
-      "symbol": "TUSD",
+      "name": "Bridged TrueUSD",
+      "symbol": "tusd",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1475,9 +1483,17 @@
       "decimals": 18
     },
     {
+      "address": "0xAc5816ADDc26a1942c3f2F1c738169842Aba2729",
+      "name": "USSD",
+      "symbol": "USSD",
+      "logoURI": "",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0xAd84341756Bf337f5a0164515b1f6F993D194E1f",
       "name": "Fantom USD",
-      "symbol": "FUSD",
+      "symbol": "fUSD",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1652,8 +1668,8 @@
     },
     {
       "address": "0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454",
-      "name": "BNB",
-      "symbol": "BNB",
+      "name": "Wrapped BNB",
+      "symbol": "wbnb",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18
@@ -1772,7 +1788,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "FTM",
+      "name": "Fantom Token",
       "symbol": "FTM",
       "logoURI": "",
       "chainId": 250,
@@ -2045,7 +2061,7 @@
     {
       "address": "0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C",
       "name": "Bridged Tether (Stargate)",
-      "symbol": "USDT",
+      "symbol": "usdt",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -2117,7 +2133,7 @@
     {
       "address": "0xe2D27f06F63d98b8e11b38b5b08A75D0c8dD62B9",
       "name": "Wrapped USTC",
-      "symbol": "USTC",
+      "symbol": "ustc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -2133,7 +2149,7 @@
     {
       "address": "0xe578C856933D8e1082740bf7661e379Aa2A30b26",
       "name": "Geist USDC",
-      "symbol": "gUSDC",
+      "symbol": "gusdc",
       "logoURI": "",
       "chainId": 250,
       "decimals": 6
@@ -2252,8 +2268,8 @@
     },
     {
       "address": "0xfB98B335551a418cD0737375a2ea0ded62Ea213b",
-      "name": "miMATIC",
-      "symbol": "miMATIC",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "logoURI": "",
       "chainId": 250,
       "decimals": 18

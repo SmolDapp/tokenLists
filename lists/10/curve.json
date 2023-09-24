@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "17/09/2023 00:33:20",
+  "timestamp": "24/09/2023 00:33:30",
   "version": {
     "major": 10,
-    "minor": 7,
+    "minor": 8,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -156,7 +156,7 @@
     },
     {
       "address": "0x2E3D870790dC77A83DD1d18184Acc7439A53f475",
-      "name": "FRAX",
+      "name": "Frax",
       "symbol": "FRAX",
       "logoURI": "",
       "chainId": 10,
@@ -195,6 +195,14 @@
       "decimals": 6
     },
     {
+      "address": "0x34075efe920CaaA6F3a4e7755243244B24A722cd",
+      "name": "Curve.fi Factory Plain Pool: sUSD/SNX",
+      "symbol": "sUSDS-f",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
       "name": "Chainlink",
       "symbol": "LINK",
@@ -222,6 +230,14 @@
       "address": "0x386852c8ee3A6A98ee5151Db539b878D1327C7b9",
       "name": "Optimium Dollar",
       "symbol": "OD",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x3B9a1C52D25B705eb31dC99E73A1311eF500Eea1",
+      "name": "Curve.fi Factory Plain Pool: sUSD",
+      "symbol": "SNX-f",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -420,8 +436,8 @@
     },
     {
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
-      "name": "Aave Optimism USDT",
-      "symbol": "aOptUSDT",
+      "name": "Aave USDT",
+      "symbol": "ausdt",
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
@@ -436,8 +452,8 @@
     },
     {
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
-      "name": "Aave Optimism SUSD",
-      "symbol": "aOptSUSD",
+      "name": "Aave SUSD",
+      "symbol": "asusd",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -465,6 +481,14 @@
       "logoURI": "",
       "chainId": 10,
       "decimals": 6
+    },
+    {
+      "address": "0x73e97F52177d8893edD76769fC60Fe603A97067d",
+      "name": "Curve.fi Factory USD Metapool: susd",
+      "symbol": "sUSD3crv3CRV-f",
+      "logoURI": "",
+      "chainId": 10,
+      "decimals": 18
     },
     {
       "address": "0x75B2F45C1c8A23C6A4Ee9449aBc92899aa2e2889",
@@ -540,8 +564,8 @@
     },
     {
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
-      "name": "Aave Optimism DAI",
-      "symbol": "aOptDAI",
+      "name": "Aave DAI",
+      "symbol": "adai",
       "logoURI": "",
       "chainId": 10,
       "decimals": 18
@@ -596,7 +620,7 @@
     },
     {
       "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
-      "name": "Synthetix USD",
+      "name": "Synth sUSD",
       "symbol": "sUSD",
       "logoURI": "",
       "chainId": 10,
@@ -820,7 +844,7 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "ETH",
+      "name": "Ethereum",
       "symbol": "ETH",
       "logoURI": "",
       "chainId": 10,

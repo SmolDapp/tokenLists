@@ -1,9 +1,9 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "17/09/2023 00:33:34",
+  "timestamp": "24/09/2023 00:37:55",
   "version": {
-    "major": 2,
+    "major": 3,
     "minor": 0,
     "patch": 0
   },
@@ -44,7 +44,7 @@
     },
     {
       "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
-      "name": "USD Coin",
+      "name": "USDC",
       "symbol": "usdc",
       "logoURI": "https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png?1547042389",
       "chainId": 250,
@@ -583,6 +583,14 @@
       "name": "Metti Inu",
       "symbol": "metti",
       "logoURI": "https://assets.coingecko.com/coins/images/19561/thumb/alLjUap.png?1635407725",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x43a8cab15D06d3a5fE5854D714C37E7E9246F170",
+      "name": "Orbs",
+      "symbol": "orbs",
+      "logoURI": "https://assets.coingecko.com/coins/images/4630/thumb/Orbs.jpg?1547039896",
       "chainId": 250,
       "decimals": 18
     },
@@ -1211,14 +1219,6 @@
       "decimals": 18
     },
     {
-      "address": "0x80F2B8CdbC470c4DB4452Cc7e4a62F5277Db7061",
-      "name": "VOID",
-      "symbol": "void",
-      "logoURI": "https://assets.coingecko.com/coins/images/27400/thumb/VOID200x200.png?1663830373",
-      "chainId": 250,
-      "decimals": 18
-    },
-    {
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave DAI",
       "symbol": "adai",
@@ -1287,14 +1287,6 @@
       "name": "ULTRON",
       "symbol": "ulx",
       "logoURI": "https://assets.coingecko.com/coins/images/26977/thumb/ULX.png?1661168951",
-      "chainId": 250,
-      "decimals": 18
-    },
-    {
-      "address": "0x888EF71766ca594DED1F0FA3AE64eD2941740A20",
-      "name": "Solidly v1",
-      "symbol": "solid",
-      "logoURI": "https://assets.coingecko.com/coins/images/23961/thumb/Solidly-O.png?1645797138",
       "chainId": 250,
       "decimals": 18
     },
@@ -1447,6 +1439,14 @@
       "name": "Wrapped HEC",
       "symbol": "wshec",
       "logoURI": "https://assets.coingecko.com/coins/images/21550/thumb/_WSHEC_new_Logo_200x200.png?1643191320",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x953E94CaF91a1E32337d0548B9274f337920eDFA",
+      "name": "USDV",
+      "symbol": "usdv",
+      "logoURI": "https://assets.coingecko.com/coins/images/31806/thumb/200x200.png?1695173608",
       "chainId": 250,
       "decimals": 18
     },
@@ -1612,7 +1612,7 @@
     },
     {
       "address": "0xC5e2B037D30a390e62180970B3aa4E91868764cD",
-      "name": "Tarot",
+      "name": "Tarot V1",
       "symbol": "tarot",
       "logoURI": "https://assets.coingecko.com/coins/images/17881/thumb/tarot-200px.png?1629704943",
       "chainId": 250,
@@ -1623,14 +1623,6 @@
       "name": "Bridged Curve DAO Token (Stargate)",
       "symbol": "crv",
       "logoURI": "https://assets.coingecko.com/coins/images/31182/thumb/CurveFi_32.png?1691122756",
-      "chainId": 250,
-      "decimals": 18
-    },
-    {
-      "address": "0xC8Ca9026Ad0882133Ef126824F6852567c571A4E",
-      "name": "MShare",
-      "symbol": "mshare",
-      "logoURI": "https://assets.coingecko.com/coins/images/23400/thumb/mshare.png?1644137282",
       "chainId": 250,
       "decimals": 18
     },
@@ -1875,6 +1867,14 @@
       "decimals": 18
     },
     {
+      "address": "0xb1F795776cB9DdAC6E7e162f31C7419Dd3d48297",
+      "name": "Wagmi",
+      "symbol": "wagmi",
+      "logoURI": "https://assets.coingecko.com/coins/images/31887/thumb/wagmi_token_logo.png?1695372579",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8",
       "name": "Chainlink",
       "symbol": "link",
@@ -1887,6 +1887,14 @@
       "name": "ShibaPoconk",
       "symbol": "conk",
       "logoURI": "https://assets.coingecko.com/coins/images/29080/thumb/conk.png?1676440614",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0xb7C2ddB1EBAc1056231ef22c1b0A13988537a274",
+      "name": "Tarot",
+      "symbol": "tarot",
+      "logoURI": "https://assets.coingecko.com/coins/images/31800/thumb/TAROT.jpg?1695096221",
       "chainId": 250,
       "decimals": 18
     },
@@ -1999,14 +2007,6 @@
       "name": "Stader sFTMX",
       "symbol": "sftmx",
       "logoURI": "https://assets.coingecko.com/coins/images/26586/thumb/Fantom_Light.png.png?1658900076",
-      "chainId": 250,
-      "decimals": 18
-    },
-    {
-      "address": "0xd8321AA83Fb0a4ECd6348D4577431310A6E0814d",
-      "name": "Geist Finance",
-      "symbol": "geist",
-      "logoURI": "https://assets.coingecko.com/coins/images/18832/thumb/GEIST-token.png?1633560935",
       "chainId": 250,
       "decimals": 18
     },
