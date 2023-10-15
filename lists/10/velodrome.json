@@ -1,10 +1,10 @@
 {
   "name": "Velodrome",
   "description": "",
-  "timestamp": "08/10/2023 01:28:58",
+  "timestamp": "15/10/2023 02:12:08",
   "version": {
     "major": 1,
-    "minor": 7,
+    "minor": 8,
     "patch": 0
   },
   "logoURI": "https://velodrome.finance/velodrome.svg",
@@ -23,7 +23,7 @@
     },
     {
       "address": "0x00a35FD824c717879BF370E70AC6868b95870Dfb",
-      "name": "IronBank",
+      "name": "Iron Bank",
       "symbol": "IB",
       "logoURI": "https://assets.smold.app/api/token/10/0x00a35FD824c717879BF370E70AC6868b95870Dfb/logo-128.png",
       "chainId": 10,
@@ -166,10 +166,26 @@
       "decimals": 18
     },
     {
+      "address": "0x05cc7Ed70F745D20Ef399f6eCa2358562a5cCbaF",
+      "name": "VolatileV2 AMM - USDT/TT",
+      "symbol": "vAMMV2-USDT/TT",
+      "logoURI": "https://assets.smold.app/api/token/10/0x05cc7Ed70F745D20Ef399f6eCa2358562a5cCbaF/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x0680A285dbB887EfCE41c1fdE31002BD4fBd6378",
       "name": "Velodrome V2 VolatileV2 AMM - OATH/ERN",
       "symbol": "vAMMV2-OATH/ERN",
       "logoURI": "https://assets.smold.app/api/token/10/0x0680A285dbB887EfCE41c1fdE31002BD4fBd6378/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x070AdAfA91B41063a42ca39aC1F68c7f188c4a67",
+      "name": "DragonballZBleachOnepieceNaruto",
+      "symbol": "ZORA",
+      "logoURI": "https://assets.smold.app/api/token/10/0x070AdAfA91B41063a42ca39aC1F68c7f188c4a67/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -271,7 +287,7 @@
     },
     {
       "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
-      "name": "USD Coin",
+      "name": "USDC",
       "symbol": "USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85/logo-128.png",
       "chainId": 10,
@@ -576,7 +592,7 @@
     {
       "address": "0x1DB2466d9F5e10D7090E7152B68d62703a2245F0",
       "name": "Sonne Finance",
-      "symbol": "SONNE",
+      "symbol": "sonne",
       "logoURI": "https://assets.smold.app/api/token/10/0x1DB2466d9F5e10D7090E7152B68d62703a2245F0/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -703,7 +719,7 @@
     },
     {
       "address": "0x217D47011b23BB961eB6D93cA9945B7501a5BB11",
-      "name": "Thales DAO Token",
+      "name": "Thales",
       "symbol": "THALES",
       "logoURI": "https://assets.smold.app/api/token/10/0x217D47011b23BB961eB6D93cA9945B7501a5BB11/logo-128.png",
       "chainId": 10,
@@ -798,6 +814,14 @@
       "decimals": 18
     },
     {
+      "address": "0x28A3834ABf994CFA8F3D4Ca096373af5e0eD0B9e",
+      "name": "VolatileV2 AMM - USDT/wUSDR",
+      "symbol": "vAMMV2-USDT/wUSDR",
+      "logoURI": "https://assets.smold.app/api/token/10/0x28A3834ABf994CFA8F3D4Ca096373af5e0eD0B9e/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x28b42698Caf46B4B012CF38b6C75867E0762186D",
       "name": "UniDex",
       "symbol": "UNIDX",
@@ -887,7 +911,7 @@
     },
     {
       "address": "0x2E3D870790dC77A83DD1d18184Acc7439A53f475",
-      "name": "Frax",
+      "name": "FRAX",
       "symbol": "FRAX",
       "logoURI": "https://assets.smold.app/api/token/10/0x2E3D870790dC77A83DD1d18184Acc7439A53f475/logo-128.png",
       "chainId": 10,
@@ -998,6 +1022,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3078a8738C20a19B52d11834Bee7fD46E0208fE9",
+      "name": "VolatileV2 AMM - ZORA/WETH",
+      "symbol": "vAMMV2-ZORA/WETH",
+      "logoURI": "https://assets.smold.app/api/token/10/0x3078a8738C20a19B52d11834Bee7fD46E0208fE9/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x30aE58c12C56010273501bf6C6605c3C9398Ec0f",
       "name": "VolatileV2 AMM - sUSD/wOptiDoge",
       "symbol": "vAMMV2-sUSD/wOptiDoge",
@@ -1088,7 +1120,7 @@
     {
       "address": "0x340fE1D898ECCAad394e2ba0fC1F93d27c7b717A",
       "name": "Wrapped USDR",
-      "symbol": "wUSDR",
+      "symbol": "wusdr",
       "logoURI": "https://assets.smold.app/api/token/10/0x340fE1D898ECCAad394e2ba0fC1F93d27c7b717A/logo-128.png",
       "chainId": 10,
       "decimals": 9
@@ -1239,7 +1271,7 @@
     },
     {
       "address": "0x39FdE572a18448F8139b7788099F0a0740f51205",
-      "name": "OATH",
+      "name": "Oath",
       "symbol": "OATH",
       "logoURI": "https://assets.smold.app/api/token/10/0x39FdE572a18448F8139b7788099F0a0740f51205/logo-128.png",
       "chainId": 10,
@@ -1326,6 +1358,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3F0f761a0E328222C07e0d20ef9be5f34c5FD9CD",
+      "name": "VolatileV2 AMM - WETH/TT",
+      "symbol": "vAMMV2-WETH/TT",
+      "logoURI": "https://assets.smold.app/api/token/10/0x3F0f761a0E328222C07e0d20ef9be5f34c5FD9CD/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x3F2Bc76760b5C36aae121C0D632c60eD04853BAf",
       "name": "Velodrome V2 StableV2 AMM - OP/yvOP",
       "symbol": "sAMMV2-OP/yvOP",
@@ -1335,7 +1375,7 @@
     },
     {
       "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
-      "name": "QiDao",
+      "name": "Qi Dao",
       "symbol": "QI",
       "logoURI": "https://assets.smold.app/api/token/10/0x3F56e0c36d275367b8C502090EDF38289b3dEa0d/logo-128.png",
       "chainId": 10,
@@ -1584,7 +1624,7 @@
     {
       "address": "0x47536F17F4fF30e64A96a7555826b8f9e66ec468",
       "name": "Mummy Finance",
-      "symbol": "MMY",
+      "symbol": "mmy",
       "logoURI": "https://assets.smold.app/api/token/10/0x47536F17F4fF30e64A96a7555826b8f9e66ec468/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -1616,7 +1656,7 @@
     {
       "address": "0x484c2D6e3cDd945a8B2DF735e079178C1036578c",
       "name": "Staked Frax Ether",
-      "symbol": "sfrxETH",
+      "symbol": "sfrxeth",
       "logoURI": "https://assets.smold.app/api/token/10/0x484c2D6e3cDd945a8B2DF735e079178C1036578c/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -1766,6 +1806,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4d289A5a5038e644C8fCbf5dfc76Db5A1a7D9Cb4",
+      "name": "Pessimism",
+      "symbol": "PP",
+      "logoURI": "https://assets.smold.app/api/token/10/0x4d289A5a5038e644C8fCbf5dfc76Db5A1a7D9Cb4/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x4d7959d17B9710BE87e3657e69d946914221BB88",
       "name": "StableV2 AMM - USDC/alUSD",
       "symbol": "sAMMV2-USDC/alUSD",
@@ -1823,7 +1871,7 @@
     },
     {
       "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
-      "name": "Lyra Token",
+      "name": "Lyra Finance",
       "symbol": "LYRA",
       "logoURI": "https://assets.smold.app/api/token/10/0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb/logo-128.png",
       "chainId": 10,
@@ -1878,6 +1926,14 @@
       "decimals": 18
     },
     {
+      "address": "0x539505Dde2B9771dEBE0898a84441c5E7fDF6BC0",
+      "name": "Vesper vaUSDC Pool",
+      "symbol": "vaUSDC",
+      "logoURI": "https://assets.smold.app/api/token/10/0x539505Dde2B9771dEBE0898a84441c5E7fDF6BC0/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x5404c61F5337D5a06522ca686dc388e0Fc50Fd32",
       "name": "Velodrome V2 StableV2 AMM - WETH/OP",
       "symbol": "sAMMV2-WETH/OP",
@@ -1906,6 +1962,14 @@
       "name": "Velodrome V2 VolatileV2 AMM - alETH/frxETH",
       "symbol": "vAMMV2-alETH/frxETH",
       "logoURI": "https://assets.smold.app/api/token/10/0x55DAB45389b93E549ABe1DE75552c082747D53AA/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x5620Ca01b547A33334C80baCe3607CE445784eC9",
+      "name": "VolatileV2 AMM - WETH/PP",
+      "symbol": "vAMMV2-WETH/PP",
+      "logoURI": "https://assets.smold.app/api/token/10/0x5620Ca01b547A33334C80baCe3607CE445784eC9/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1954,6 +2018,14 @@
       "name": "VolatileV2 AMM - WETH/UNDEED",
       "symbol": "vAMMV2-WETH/UNDEED",
       "logoURI": "https://assets.smold.app/api/token/10/0x581ae147d48A05d45833F3d3011d98Cc497Ab500/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x5821daeA7B1a0e0BD3AB9805fEF7083CdA5dcf9C",
+      "name": "VolatileV2 AMM - OP/vaUSDC",
+      "symbol": "vAMMV2-OP/vaUSDC",
+      "logoURI": "https://assets.smold.app/api/token/10/0x5821daeA7B1a0e0BD3AB9805fEF7083CdA5dcf9C/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -2183,7 +2255,7 @@
     },
     {
       "address": "0x61BAADcF22d2565B0F471b291C475db5555e0b76",
-      "name": "Aelin Token",
+      "name": "Aelin",
       "symbol": "AELIN",
       "logoURI": "https://assets.smold.app/api/token/10/0x61BAADcF22d2565B0F471b291C475db5555e0b76/logo-128.png",
       "chainId": 10,
@@ -2234,6 +2306,14 @@
       "name": "VolatileV2 AMM - WETH/LUSD",
       "symbol": "vAMMV2-WETH/LUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0x6387765fFA609aB9A1dA1B16C455548Bfed7CbEA/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x641113145d9c636042168869464022bd21D56A4e",
+      "name": "VolatileV2 AMM - OP/TT",
+      "symbol": "vAMMV2-OP/TT",
+      "logoURI": "https://assets.smold.app/api/token/10/0x641113145d9c636042168869464022bd21D56A4e/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -2359,7 +2439,7 @@
     },
     {
       "address": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
-      "name": "Wrapped BTC",
+      "name": "Wrapped Bitcoin",
       "symbol": "WBTC",
       "logoURI": "https://assets.smold.app/api/token/10/0x68f180fcCe6836688e9084f035309E29Bf0A2095/logo-128.png",
       "chainId": 10,
@@ -2704,7 +2784,7 @@
     {
       "address": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
       "name": "USD+",
-      "symbol": "USD+",
+      "symbol": "usd+",
       "logoURI": "https://assets.smold.app/api/token/10/0x73cb180bf0521828d8849bc8CF2B920918e23032/logo-128.png",
       "chainId": 10,
       "decimals": 6
@@ -2778,6 +2858,14 @@
       "name": "VolatileV2 AMM - msUSD/LUSD",
       "symbol": "vAMMV2-msUSD/LUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0x77ce3e963DAF97d1819423099E2b81FcfC3dd344/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x780bA022A610E25b6Da34234B338018Db6270094",
+      "name": "VolatileV2 AMM - WBTC/TT",
+      "symbol": "vAMMV2-WBTC/TT",
+      "logoURI": "https://assets.smold.app/api/token/10/0x780bA022A610E25b6Da34234B338018Db6270094/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -2879,8 +2967,8 @@
     },
     {
       "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
-      "name": "USD Coin",
-      "symbol": "USDC",
+      "name": "Bridged USD Coin (Optimism)",
+      "symbol": "usdc.e",
       "logoURI": "https://assets.smold.app/api/token/10/0x7F5c764cBc14f9669B88837ca1490cCa17c31607/logo-128.png",
       "chainId": 10,
       "decimals": 6
@@ -3143,7 +3231,7 @@
     },
     {
       "address": "0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4",
-      "name": "Synthetix Network",
+      "name": "Synthetix",
       "symbol": "SNX",
       "logoURI": "https://assets.smold.app/api/token/10/0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4/logo-128.png",
       "chainId": 10,
@@ -3239,7 +3327,7 @@
     },
     {
       "address": "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
-      "name": "DOLA",
+      "name": "Dola USD Stablecoin",
       "symbol": "DOLA",
       "logoURI": "https://assets.smold.app/api/token/10/0x8aE125E8653821E851F12A49F7765db9a9ce7384/logo-128.png",
       "chainId": 10,
@@ -3255,8 +3343,8 @@
     },
     {
       "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
-      "name": "Synth sUSD",
-      "symbol": "sUSD",
+      "name": "Synthetix USD",
+      "symbol": "SUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -3344,7 +3432,7 @@
     {
       "address": "0x920Cf626a271321C151D027030D5d08aF699456b",
       "name": "Kwenta",
-      "symbol": "KWENTA",
+      "symbol": "kwenta",
       "logoURI": "https://assets.smold.app/api/token/10/0x920Cf626a271321C151D027030D5d08aF699456b/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -3359,7 +3447,7 @@
     },
     {
       "address": "0x929B939f8524c3Be977af57A4A0aD3fb1E374b50",
-      "name": "Meta",
+      "name": "mStable Governance Token: Meta",
       "symbol": "MTA",
       "logoURI": "https://assets.smold.app/api/token/10/0x929B939f8524c3Be977af57A4A0aD3fb1E374b50/logo-128.png",
       "chainId": 10,
@@ -3407,8 +3495,8 @@
     },
     {
       "address": "0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db",
-      "name": "VelodromeV2",
-      "symbol": "VELO",
+      "name": "Velodrome Finance",
+      "symbol": "velo",
       "logoURI": "https://assets.smold.app/api/token/10/0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -3455,8 +3543,8 @@
     },
     {
       "address": "0x970D50d09F3a656b43E11B0D45241a84e3a6e011",
-      "name": "DAI+",
-      "symbol": "DAI+",
+      "name": "Overnight DAI+",
+      "symbol": "dai+",
       "logoURI": "https://assets.smold.app/api/token/10/0x970D50d09F3a656b43E11B0D45241a84e3a6e011/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -3482,6 +3570,14 @@
       "name": "Test",
       "symbol": "TEST3",
       "logoURI": "https://assets.smold.app/api/token/10/0x98550E01f6c4F2eBC017F134950d2A24ccF43Bc0/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x9855c344B9302bf6F862f0f9Bc19E3C82E03A90c",
+      "name": "VolatileV2 AMM - USDC/TT",
+      "symbol": "vAMMV2-USDC/TT",
+      "logoURI": "https://assets.smold.app/api/token/10/0x9855c344B9302bf6F862f0f9Bc19E3C82E03A90c/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -3742,6 +3838,14 @@
       "decimals": 18
     },
     {
+      "address": "0xAE6c9B2A2777D0396cbE7E13Fc9ACEAC0D052e00",
+      "name": "VolatileV2 AMM - OPP/opxVELO",
+      "symbol": "vAMMV2-OPP/opxVELO",
+      "logoURI": "https://assets.smold.app/api/token/10/0xAE6c9B2A2777D0396cbE7E13Fc9ACEAC0D052e00/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xAF9fE3B5cCDAe78188B1F8b9a49Da7ae9510F151",
       "name": "dHEDGE",
       "symbol": "DHT",
@@ -3800,7 +3904,7 @@
     {
       "address": "0xB0B195aEFA3650A6908f15CdaC7D92F8a5791B0B",
       "name": "BOB",
-      "symbol": "BOB",
+      "symbol": "bob",
       "logoURI": "https://assets.smold.app/api/token/10/0xB0B195aEFA3650A6908f15CdaC7D92F8a5791B0B/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -3978,6 +4082,14 @@
       "name": "Velodrome V2 VolatileV2 AMM - WETH/USD+",
       "symbol": "vAMMV2-WETH/USD+",
       "logoURI": "https://assets.smold.app/api/token/10/0xBF7b6236A68F63F75765517cedCdF45f0CD0470C/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xBb82aAc888926B6B2b81b99C7927470e36fDecF4",
+      "name": "VolatileV2 AMM - alUSD/ALCX",
+      "symbol": "vAMMV2-alUSD/ALCX",
+      "logoURI": "https://assets.smold.app/api/token/10/0xBb82aAc888926B6B2b81b99C7927470e36fDecF4/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -4287,7 +4399,7 @@
     },
     {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "name": "Dai Stablecoin",
+      "name": "Dai",
       "symbol": "DAI",
       "logoURI": "https://assets.smold.app/api/token/10/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1/logo-128.png",
       "chainId": 10,
@@ -4391,8 +4503,8 @@
     },
     {
       "address": "0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49",
-      "name": "Synth sETH",
-      "symbol": "sETH",
+      "name": "sETH",
+      "symbol": "SETH",
       "logoURI": "https://assets.smold.app/api/token/10/0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -4430,6 +4542,14 @@
       "decimals": 18
     },
     {
+      "address": "0xE5c8953fFb85C0aa99cB80cc96Cf0D41b391D8F5",
+      "name": "VolatileV2 AMM - FRAX/opxVELO",
+      "symbol": "vAMMV2-FRAX/opxVELO",
+      "logoURI": "https://assets.smold.app/api/token/10/0xE5c8953fFb85C0aa99cB80cc96Cf0D41b391D8F5/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xE627871E4c5e15398276cB664d31389B67744Dd8",
       "name": "VolatileV2 AMM - WETH/GNode",
       "symbol": "vAMMV2-WETH/GNode",
@@ -4462,6 +4582,14 @@
       "decimals": 18
     },
     {
+      "address": "0xE974B9b31dBFf4369b94a1bAB5e228f35ed44125",
+      "name": "Alchemix",
+      "symbol": "ALCX",
+      "logoURI": "https://assets.smold.app/api/token/10/0xE974B9b31dBFf4369b94a1bAB5e228f35ed44125/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xEA3A5f56014b146A39D026Fc459304378C2Ea24F",
       "name": "StableV2 AMM - WETH/pETHo",
       "symbol": "sAMMV2-WETH/pETHo",
@@ -4482,6 +4610,14 @@
       "name": "VolatileV2 AMM - EXA/DINERO",
       "symbol": "vAMMV2-EXA/DINERO",
       "logoURI": "https://assets.smold.app/api/token/10/0xEa1a91cfB21EbA60d2a1a0EE5E23BD89653eCa27/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xEe356E3b6b5E8F4eB6B5A7A5FCe04DcF79b6FB41",
+      "name": "VolatileV2 AMM - T/DAI",
+      "symbol": "vAMMV2-T/DAI",
+      "logoURI": "https://assets.smold.app/api/token/10/0xEe356E3b6b5E8F4eB6B5A7A5FCe04DcF79b6FB41/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -4671,7 +4807,7 @@
     },
     {
       "address": "0xFdb794692724153d1488CcdBE0C56c252596735F",
-      "name": "Lido DAO Token",
+      "name": "Lido DAO",
       "symbol": "LDO",
       "logoURI": "https://assets.smold.app/api/token/10/0xFdb794692724153d1488CcdBE0C56c252596735F/logo-128.png",
       "chainId": 10,
@@ -4910,6 +5046,14 @@
       "decimals": 18
     },
     {
+      "address": "0xb23e4aDf35cf024FC694D3Aa9f6bc7b824b51547",
+      "name": "VolatileV2 AMM - TT/DAI",
+      "symbol": "vAMMV2-TT/DAI",
+      "logoURI": "https://assets.smold.app/api/token/10/0xb23e4aDf35cf024FC694D3Aa9f6bc7b824b51547/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0xb379AB37f2e7d4A0d2479c09d637bD6B20E1354d",
       "name": "Beefy Moo VeloV2 USDC-MTA",
       "symbol": "mooVeloV2USDC-MTA",
@@ -4966,6 +5110,14 @@
       "decimals": 18
     },
     {
+      "address": "0xba082500478cc29f23fFb16b85E3c06B28497Af5",
+      "name": "Test Token",
+      "symbol": "TT",
+      "logoURI": "https://assets.smold.app/api/token/10/0xba082500478cc29f23fFb16b85E3c06B28497Af5/logo-128.png",
+      "chainId": 10,
+      "decimals": 16
+    },
+    {
       "address": "0xbb23011D84628eED352614fd71Cc5325Ba8d9878",
       "name": "Velodrome V2 VolatileV2 AMM - VELO/DAI",
       "symbol": "vAMMV2-VELO/DAI",
@@ -4999,7 +5151,7 @@
     },
     {
       "address": "0xbfD291DA8A403DAAF7e5E9DC1ec0aCEaCd4848B9",
-      "name": "dForce USD",
+      "name": "Token dForce USD",
       "symbol": "USX",
       "logoURI": "https://assets.smold.app/api/token/10/0xbfD291DA8A403DAAF7e5E9DC1ec0aCEaCd4848B9/logo-128.png",
       "chainId": 10,
@@ -5031,7 +5183,7 @@
     },
     {
       "address": "0xc37a0a37664aeB3848f98C5dD5d7AE286A1E9Ebd",
-      "name": "StableV2 AMM - FRAX/MAI",
+      "name": "Velodrome Stable FRAX-MAI",
       "symbol": "sAMMV2-FRAX/MAI",
       "logoURI": "https://assets.smold.app/api/token/10/0xc37a0a37664aeB3848f98C5dD5d7AE286A1E9Ebd/logo-128.png",
       "chainId": 10,
@@ -5096,7 +5248,7 @@
     {
       "address": "0xc5b001DC33727F8F26880B184090D3E252470D45",
       "name": "Ethos Reserve Note",
-      "symbol": "ERN",
+      "symbol": "ern",
       "logoURI": "https://assets.smold.app/api/token/10/0xc5b001DC33727F8F26880B184090D3E252470D45/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -5359,8 +5511,8 @@
     },
     {
       "address": "0xdFA46478F9e5EA86d57387849598dbFB2e964b02",
-      "name": "Mai Stablecoin",
-      "symbol": "MAI",
+      "name": "MAI",
+      "symbol": "MIMATIC",
       "logoURI": "https://assets.smold.app/api/token/10/0xdFA46478F9e5EA86d57387849598dbFB2e964b02/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -5383,8 +5535,8 @@
     },
     {
       "address": "0xdb4eA87fF83eB1c80b8976FC47731Da6a31D35e5",
-      "name": "wTBT(Bridge Token)",
-      "symbol": "wTBT",
+      "name": "wTBT",
+      "symbol": "wtbt",
       "logoURI": "https://assets.smold.app/api/token/10/0xdb4eA87fF83eB1c80b8976FC47731Da6a31D35e5/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -5394,6 +5546,14 @@
       "name": "Velodrome V2 VolatileV2 AMM - WETH/GRAIN",
       "symbol": "vAMMV2-WETH/GRAIN",
       "logoURI": "https://assets.smold.app/api/token/10/0xdc2B136A9C1FD2a0b9497bB8b11823c2FBf47Ac4/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xdeA077Dc60298D98C3f7fD97b40C637e0FBFD4f2",
+      "name": "VolatileV2 AMM - USDC/TT",
+      "symbol": "vAMMV2-USDC/TT",
+      "logoURI": "https://assets.smold.app/api/token/10/0xdeA077Dc60298D98C3f7fD97b40C637e0FBFD4f2/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },

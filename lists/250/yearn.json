@@ -1,9 +1,9 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "08/10/2023 00:34:24",
+  "timestamp": "15/10/2023 01:58:12",
   "version": {
-    "major": 12,
+    "major": 13,
     "minor": 0,
     "patch": 0
   },
@@ -19,10 +19,26 @@
   ],
   "tokens": [
     {
+      "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/logo-128.png",
+      "chainId": 250,
+      "decimals": 6
+    },
+    {
       "address": "0x0A0b23D9786963DE69CB2447dC125c49929419d8",
       "name": "MIM",
       "symbol": "yvMIM",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x0A0b23D9786963DE69CB2447dC125c49929419d8/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x0DEC85e74A92c52b7F708c4B10207D9560CEFaf0",
+      "name": "WFTM",
+      "symbol": "yvWFTM",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x0DEC85e74A92c52b7F708c4B10207D9560CEFaf0/logo-128.png",
       "chainId": 250,
       "decimals": 18
     },
@@ -39,6 +55,54 @@
       "name": "fBEETS",
       "symbol": "yvfBEETS",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x1e2fe8074a5ce1Bb7394856B0C618E75D823B93b/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+      "name": "Wrapped Fantom",
+      "symbol": "WFTM",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x29b0Da86e484E1C0029B56e817912d778aC0EC69",
+      "name": "yearn.fi",
+      "symbol": "YFI",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x29b0Da86e484E1C0029B56e817912d778aC0EC69/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x2C850cceD00ce2b14AA9D658b7Cad5dF659493Db",
+      "name": "YFI",
+      "symbol": "yvYFI",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x2C850cceD00ce2b14AA9D658b7Cad5dF659493Db/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x321162Cd933E2Be498Cd2267a90534A804051b11/logo-128.png",
+      "chainId": 250,
+      "decimals": 8
+    },
+    {
+      "address": "0x58e57cA18B7A47112b877E31929798Cd3D703b0f",
+      "name": "Curve triCrypto Pool",
+      "symbol": "crvTricrypto",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x58e57cA18B7A47112b877E31929798Cd3D703b0f/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0x637eC617c86D24E421328e6CAEa1d92114892439",
+      "name": "DAI",
+      "symbol": "yvDAI",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x637eC617c86D24E421328e6CAEa1d92114892439/logo-128.png",
       "chainId": 250,
       "decimals": 18
     },
@@ -67,6 +131,22 @@
       "decimals": 18
     },
     {
+      "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0xCbCaF8cB8cbeAFA927ECEE0c5C56560F83E9B7D9",
+      "name": "Curve Tricrypto",
+      "symbol": "yvCurve-Tricrypto",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0xCbCaF8cB8cbeAFA927ECEE0c5C56560F83E9B7D9/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0xCe2Fc0bDc18BD6a4d9A725791A3DEe33F3a23BB7",
       "name": "WETH",
       "symbol": "yvWETH",
@@ -83,10 +163,42 @@
       "decimals": 18
     },
     {
+      "address": "0xEF0210eB96c7EB36AF8ed1c20306462764935607",
+      "name": "USDC",
+      "symbol": "yvUSDC",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0xEF0210eB96c7EB36AF8ed1c20306462764935607/logo-128.png",
+      "chainId": 250,
+      "decimals": 6
+    },
+    {
       "address": "0xF137D22d7B23eeB1950B3e19d1f578c053ed9715",
       "name": "Curve Geist",
       "symbol": "yvCurve-Geist",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0xF137D22d7B23eeB1950B3e19d1f578c053ed9715/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8",
+      "name": "ChainLink",
+      "symbol": "LINK",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0xd817A100AB8A29fE3DBd925c2EB489D67F758DA9",
+      "name": "WBTC",
+      "symbol": "yvWBTC",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0xd817A100AB8A29fE3DBd925c2EB489D67F758DA9/logo-128.png",
+      "chainId": 250,
+      "decimals": 8
+    },
+    {
+      "address": "0xf2d323621785A066E64282d2B407eAc79cC04966",
+      "name": "LINK",
+      "symbol": "yvLINK",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/250/0xf2d323621785A066E64282d2B407eAc79cC04966/logo-128.png",
       "chainId": 250,
       "decimals": 18
     },
