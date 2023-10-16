@@ -67,7 +67,7 @@ func buildTokenListooorList() {
 	allTokensPlain := []TokenListToken{}
 
 	for name, generatorData := range GENERATORS {
-		shouldByPassCount := name == `yearn` || name == `polygon-zkevm`
+		shouldByPassCount := name == `yearn` || name == `polygon-zkevm` || name == `zksync`
 		if generatorData.GeneratorType == GeneratorPool {
 			continue
 		}

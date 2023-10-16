@@ -211,4 +211,11 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`zksync`: {
+		Exec:             buildZkSyncTokenList,
+		Name:             `ZKSync`,
+		Description:      `A list of zkSync: The future-proof zkEVM.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 }
