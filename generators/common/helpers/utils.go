@@ -34,3 +34,13 @@ func Includes[T comparable](slice []T, value T) bool {
 	}
 	return false
 }
+
+// Contains returns true if value exists in arr
+func Contains[T comparable](arr []T, value T) bool {
+	for _, v := range arr {
+		if v == value {
+			return true
+		}
+	}
+	return false
+}

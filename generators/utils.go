@@ -199,15 +199,15 @@ func getKey(chainID uint64, address common.Address) string {
 	return chainIDStr + `_` + address.Hex()
 }
 
-func initSyncMap[T any](chainIDs map[uint64]T) sync.Map {
+func initSyncMap[T any](chainIDs map[uint64]T) *sync.Map {
 	tokensForChainIDSyncMap := sync.Map{}
 	for chainID := range chainIDs {
 		tokensForChainIDSyncMap.Store(chainID, []TokenListToken{})
 	}
-	return tokensForChainIDSyncMap
+	return &tokensForChainIDSyncMap
 }
 
-func extractSyncMap(mapper sync.Map) []TokenListToken {
+func extractSyncMap(mapper *sync.Map) []TokenListToken {
 	tokenList := []TokenListToken{}
 	mapper.Range(func(chainID, syncMapRaw interface{}) bool {
 		syncMap, _ := syncMapRaw.([]TokenListToken)
@@ -227,23 +227,23 @@ func loadAllTokens() map[uint64]map[string]TokenListToken {
 			}
 			if existingToken, ok := allTokens[token.ChainID][helpers.ToAddress(token.Address)]; ok {
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
-					Address:  existingToken.Address,
-					Name:     helpers.SafeString(existingToken.Name, token.Name),
-					Symbol:   helpers.SafeString(existingToken.Symbol, token.Symbol),
-					LogoURI:  helpers.SafeString(existingToken.LogoURI, token.LogoURI),
-					Decimals: helpers.SafeInt(existingToken.Decimals, token.Decimals),
-					ChainID:  token.ChainID,
-					Count:    existingToken.Count + 1,
+					Address:    existingToken.Address,
+					Name:       helpers.SafeString(existingToken.Name, token.Name),
+					Symbol:     helpers.SafeString(existingToken.Symbol, token.Symbol),
+					LogoURI:    helpers.SafeString(existingToken.LogoURI, token.LogoURI),
+					Decimals:   helpers.SafeInt(existingToken.Decimals, token.Decimals),
+					ChainID:    token.ChainID,
+					Occurrence: existingToken.Occurrence + 1,
 				}
 			} else {
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
-					Address:  helpers.ToAddress(token.Address),
-					Name:     helpers.SafeString(token.Name, ``),
-					Symbol:   helpers.SafeString(token.Symbol, ``),
-					LogoURI:  helpers.SafeString(token.LogoURI, ``),
-					Decimals: helpers.SafeInt(token.Decimals, 18),
-					ChainID:  token.ChainID,
-					Count:    1,
+					Address:    helpers.ToAddress(token.Address),
+					Name:       helpers.SafeString(token.Name, ``),
+					Symbol:     helpers.SafeString(token.Symbol, ``),
+					LogoURI:    helpers.SafeString(token.LogoURI, ``),
+					Decimals:   helpers.SafeInt(token.Decimals, 18),
+					ChainID:    token.ChainID,
+					Occurrence: 1,
 				}
 			}
 		}
@@ -276,13 +276,13 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 			ALL_EXISTING_TOKENS[chainID] = make(map[string]TokenListToken)
 		}
 		ALL_EXISTING_TOKENS[chainID][k] = TokenListToken{
-			Address:  v.Address.Hex(),
-			Name:     v.Name,
-			Symbol:   v.Symbol,
-			LogoURI:  ``,
-			Decimals: int(v.Decimals),
-			ChainID:  chainID,
-			Count:    1,
+			Address:    v.Address.Hex(),
+			Name:       v.Name,
+			Symbol:     v.Symbol,
+			LogoURI:    ``,
+			Decimals:   int(v.Decimals),
+			ChainID:    chainID,
+			Occurrence: 1,
 		}
 	}
 	return erc20Map

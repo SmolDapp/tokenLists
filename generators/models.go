@@ -18,7 +18,7 @@ type TokenListToken struct {
 	Metadata map[string]interface{} `json:"metadata,omitempty"`
 
 	// The following fields are optional and not exported
-	Count int `json:"-"` // Use for aggregation: number of time this token was found
+	Occurrence int `json:"-"` // Use for aggregation: number of time this token was found
 }
 
 // TokenListData is the token list struct used in the default token list

@@ -1,6 +1,8 @@
 package main
 
 import (
+	"math"
+
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -61,53 +63,74 @@ func buildTokenListooorList() {
 
 	/**************************************************************************
 	** Create a map of all tokens from all lists and only add the missing ones
-	** in it. Map are WAY faster than arrays.
+	** in it. Map are WAY faster than arrays fir our use case
 	**************************************************************************/
 	allTokens := make(map[uint64]map[string]TokenListToken)
 	allTokensPlain := []TokenListToken{}
+	listsPerChain := make(map[uint64][]string)
 
+	/**************************************************************************
+	** We want to know which tokens to add to the aggregated tokenlistooor list
+	** and to do that we need to know in how many lists they are present.
+	** This is chain sensitive: we need a token to be available in at least
+	** 50% of the lists for a given chain to be added to the aggregated list.
+	**************************************************************************/
 	for name, generatorData := range GENERATORS {
-		shouldByPassCount := name == `yearn` || name == `polygon-zkevm` || name == `zksync`
+		if name == `tokenlistooor` {
+			continue
+		}
+		shouldByPassCount := name == `yearn`
 		if generatorData.GeneratorType == GeneratorPool {
 			continue
 		}
 
 		initialCount := 1
 		if shouldByPassCount {
-			initialCount = 5
+			initialCount = math.MaxInt64
 		}
 		tokenList := loadTokenListFromJsonFile(name + `.json`)
 		for _, token := range tokenList.Tokens {
+			if _, ok := listsPerChain[token.ChainID]; !ok {
+				listsPerChain[token.ChainID] = []string{}
+			}
+			if !helpers.Includes(listsPerChain[token.ChainID], name) {
+				listsPerChain[token.ChainID] = append(listsPerChain[token.ChainID], name)
+			}
+
 			if _, ok := allTokens[token.ChainID]; !ok {
 				allTokens[token.ChainID] = make(map[string]TokenListToken)
 			}
 			if existingToken, ok := allTokens[token.ChainID][helpers.ToAddress(token.Address)]; ok {
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
-					Address:  existingToken.Address,
-					Name:     helpers.SafeString(existingToken.Name, token.Name),
-					Symbol:   helpers.SafeString(existingToken.Symbol, token.Symbol),
-					LogoURI:  helpers.SafeString(existingToken.LogoURI, token.LogoURI),
-					Decimals: helpers.SafeInt(existingToken.Decimals, token.Decimals),
-					ChainID:  token.ChainID,
-					Count:    existingToken.Count + 1,
+					Address:    existingToken.Address,
+					Name:       helpers.SafeString(existingToken.Name, token.Name),
+					Symbol:     helpers.SafeString(existingToken.Symbol, token.Symbol),
+					LogoURI:    helpers.SafeString(existingToken.LogoURI, token.LogoURI),
+					Decimals:   helpers.SafeInt(existingToken.Decimals, token.Decimals),
+					ChainID:    token.ChainID,
+					Occurrence: existingToken.Occurrence + 1,
 				}
 			} else {
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
-					Address:  helpers.ToAddress(token.Address),
-					Name:     helpers.SafeString(token.Name, ``),
-					Symbol:   helpers.SafeString(token.Symbol, ``),
-					LogoURI:  helpers.SafeString(token.LogoURI, ``),
-					Decimals: helpers.SafeInt(token.Decimals, 18),
-					ChainID:  token.ChainID,
-					Count:    initialCount,
+					Address:    helpers.ToAddress(token.Address),
+					Name:       helpers.SafeString(token.Name, ``),
+					Symbol:     helpers.SafeString(token.Symbol, ``),
+					LogoURI:    helpers.SafeString(token.LogoURI, ``),
+					Decimals:   helpers.SafeInt(token.Decimals, 18),
+					ChainID:    token.ChainID,
+					Occurrence: initialCount,
 				}
 			}
 		}
 	}
 
-	for _, tokens := range allTokens {
+	for chainID, tokens := range allTokens {
 		for _, token := range tokens {
-			if token.Count >= 5 {
+			if _, ok := listsPerChain[chainID]; !ok {
+				continue
+			}
+			chainCount := len(listsPerChain[uint64(chainID)])
+			if token.Occurrence >= int(math.Ceil(float64(chainCount)*0.5)) {
 				allTokensPlain = append(allTokensPlain, token)
 			}
 		}
