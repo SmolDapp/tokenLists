@@ -1,11 +1,11 @@
 {
   "name": "Ledger",
   "description": "",
-  "timestamp": "17/10/2023 09:16:37",
+  "timestamp": "22/10/2023 00:47:49",
   "version": {
     "major": 0,
     "minor": 3,
-    "patch": 4
+    "patch": 5
   },
   "logoURI": "https://www.ledger.com/wp-content/uploads/2021/11/Ledger_favicon.png",
   "keywords": [
@@ -15,7 +15,7 @@
     {
       "address": "0x0000000000000000000000000000000000001010",
       "name": "Polygon",
-      "symbol": "matic",
+      "symbol": "MATIC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -62,8 +62,8 @@
     },
     {
       "address": "0x0297e37f1873D2DAb4487Aa67cD56B58E2F27875",
-      "name": "Balancer Polygon Base Pool",
-      "symbol": "B-POLYBASE",
+      "name": "BalancerV2 LP WMATIC/USDC/WETH/BAL",
+      "symbol": "WMATIC/USDC/WETH/BAL",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -94,8 +94,8 @@
     },
     {
       "address": "0x03cD191F589d12b0582a99808cf19851E468E6B5",
-      "name": "Balancer Polygon Tricrypto",
-      "symbol": "BPTC",
+      "name": "BalancerV2 LP WBTC/USDC/WETH",
+      "symbol": "WBTC/USDC/WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -158,7 +158,7 @@
     },
     {
       "address": "0x0621d647cecbFb64b79E44302c1933cB4f27054d",
-      "name": "Amp Token (PoS)",
+      "name": "Amp",
       "symbol": "AMP",
       "logoURI": "",
       "chainId": 137,
@@ -190,8 +190,8 @@
     },
     {
       "address": "0x06Df3b2bbB68adc8B0e302443692037ED9f91b42",
-      "name": "Balancer Polygon Stable Pool",
-      "symbol": "BPSP",
+      "name": "BalancerV2 LP USDC/DAI/miMATIC/USDT",
+      "symbol": "USDC/DAI/miMATIC/USDT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -246,7 +246,7 @@
     },
     {
       "address": "0x0B220b82F3eA3B7F6d9A1D8ab58930C064A2b5Bf",
-      "name": "Golem Network Token (PoS)",
+      "name": "Golem",
       "symbol": "GLM",
       "logoURI": "",
       "chainId": 137,
@@ -295,7 +295,7 @@
     {
       "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
       "name": "Sushi",
-      "symbol": "sushi",
+      "symbol": "SUSHI",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -318,8 +318,8 @@
     },
     {
       "address": "0x0d34e5dD4D8f043557145598E4e2dC286B35FD4f",
-      "name": "Balancer TUSD Stablepool",
-      "symbol": "BPSP-TUSD",
+      "name": "BalancerV2 LP USDC/TUSD/DAI/USDT",
+      "symbol": "USDC/TUSD/DAI/USDT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -327,7 +327,7 @@
     {
       "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       "name": "Wrapped Matic",
-      "symbol": "wmatic",
+      "symbol": "WMATIC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -374,8 +374,8 @@
     },
     {
       "address": "0x10f21C9bD8128a29Aa785Ab2dE0d044DCdd79436",
-      "name": "Balancer 50 WETH 50 USDC",
-      "symbol": "B-50WETH-50USDC",
+      "name": "BalancerV2 LP USDC/WETH",
+      "symbol": "USDC/WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -494,8 +494,8 @@
     },
     {
       "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-      "name": "Curve DAO",
-      "symbol": "crv",
+      "name": "Curve DAO Token",
+      "symbol": "CRV",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -559,7 +559,7 @@
     {
       "address": "0x1B815d120B3eF02039Ee11dC2d33DE7aA4a8C603",
       "name": "WOO Network",
-      "symbol": "woo",
+      "symbol": "WOO",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -574,8 +574,8 @@
     },
     {
       "address": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
-      "name": "Wrapped Bitcoin",
-      "symbol": "wbtc",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 8
@@ -590,7 +590,7 @@
     },
     {
       "address": "0x1D607Faa0A51518a7728580C238d912747e71F7a",
-      "name": "DATA Economy Index (PoS)",
+      "name": "DATA Economy Index",
       "symbol": "DATA",
       "logoURI": "",
       "chainId": 137,
@@ -846,8 +846,8 @@
     },
     {
       "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-      "name": "USDC",
-      "symbol": "usdc",
+      "name": "USDCoin",
+      "symbol": "USDC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
@@ -871,7 +871,7 @@
     {
       "address": "0x282d8efCe846A88B159800bd4130ad77443Fa1A1",
       "name": "Ocean Protocol",
-      "symbol": "ocean",
+      "symbol": "OCEAN",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -911,7 +911,7 @@
     {
       "address": "0x2B9E7ccDF0F4e5B24757c1E1a80e311E34Cb10c7",
       "name": "Mask Network",
-      "symbol": "mask",
+      "symbol": "MASK",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1022,7 +1022,7 @@
     },
     {
       "address": "0x3066818837c5e6eD6601bd5a91B0762877A6B731",
-      "name": "UMA Voting Token v1 (PoS)",
+      "name": "UMA Voting Token v1",
       "symbol": "UMA",
       "logoURI": "",
       "chainId": 137,
@@ -1086,8 +1086,8 @@
     },
     {
       "address": "0x34965ba0ac2451A34a0471F04CCa3F990b8dea27",
-      "name": "SushiSwap LP USDC/WETH",
-      "symbol": "USDC/WETH",
+      "name": "SushiSwap LP Token USD Coin (PoS) + Wrapped Ether",
+      "symbol": "SLP USDC + WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1190,8 +1190,8 @@
     },
     {
       "address": "0x3Cef98bb43d732E2F285eE605a8158cDE967D219",
-      "name": "Basic Attention",
-      "symbol": "bat",
+      "name": "Basic Attention Token",
+      "symbol": "BAT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1470,8 +1470,8 @@
     },
     {
       "address": "0x4c4BF319237D98a30A929A96112EfFa8DA3510EB",
-      "name": "ERCCRO",
-      "symbol": "ERCCRO",
+      "name": "WaultSwap Polygon",
+      "symbol": "WEXpoly",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1526,8 +1526,8 @@
     },
     {
       "address": "0x50B728D8D964fd00C2d0AAD81718b71311feF68a",
-      "name": "Synthetix Network",
-      "symbol": "snx",
+      "name": "Synthetix Network Token",
+      "symbol": "SNX",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1550,8 +1550,8 @@
     },
     {
       "address": "0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39",
-      "name": "Chainlink",
-      "symbol": "link",
+      "name": "ChainLink Token",
+      "symbol": "LINK",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1574,7 +1574,7 @@
     },
     {
       "address": "0x553d3D295e0f695B9228246232eDF400ed3560B5",
-      "name": "Paxos Gold (PoS)",
+      "name": "PAX Gold",
       "symbol": "PAXG",
       "logoURI": "",
       "chainId": 137,
@@ -1638,7 +1638,7 @@
     },
     {
       "address": "0x5A0801BAd20B6c62d86C566ca90688A6b9ea1d3f",
-      "name": "Moo Curve aTriCrypto3",
+      "name": "Beefy Moo Curve aTriCrypto3",
       "symbol": "mooCurveATriCrypto3",
       "logoURI": "",
       "chainId": 137,
@@ -1646,8 +1646,8 @@
     },
     {
       "address": "0x5DEe84FfA2DC27419Ba7b3419d7146E53e4F7dEd",
-      "name": "frxETH-WETH",
-      "symbol": "frxETH-WETH",
+      "name": "BalancerV2 LP WETH/frxETH",
+      "symbol": "WETH/frxETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1775,7 +1775,7 @@
     {
       "address": "0x5fe2B58c013d7601147DcdD68C143A77499f5531",
       "name": "The Graph",
-      "symbol": "grt",
+      "symbol": "GRT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1838,8 +1838,8 @@
     },
     {
       "address": "0x61299774020dA444Af134c82fa83E3810b309991",
-      "name": "Render",
-      "symbol": "rndr",
+      "name": "Render Token",
+      "symbol": "RNDR",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -1886,8 +1886,8 @@
     },
     {
       "address": "0x65A05DB8322701724c197AF82C9CaE41195B0aA8",
-      "name": "ShapeShift FOX",
-      "symbol": "fox",
+      "name": "ShapeShift FOX Token",
+      "symbol": "FOX",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2135,14 +2135,14 @@
     {
       "address": "0x6f7C932e7684666C9fd1d44527765433e01fF61d",
       "name": "Maker",
-      "symbol": "mkr",
+      "symbol": "MKR",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
     },
     {
       "address": "0x6f8a06447Ff6FcF75d803135a7de15CE88C1d4ec",
-      "name": "SHIBA INU (PoS)",
+      "name": "Shiba Inu",
       "symbol": "SHIB",
       "logoURI": "",
       "chainId": 137,
@@ -2183,7 +2183,7 @@
     {
       "address": "0x70c006878a5A50Ed185ac4C87d837633923De296",
       "name": "REVV",
-      "symbol": "revv",
+      "symbol": "REVV",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2310,8 +2310,8 @@
     },
     {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-      "name": "WETH",
-      "symbol": "weth",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2422,8 +2422,8 @@
     },
     {
       "address": "0x831753DD7087CaC61aB5644b308642cc1c33Dc13",
-      "name": "Quickswap [OLD]",
-      "symbol": "quick",
+      "name": "Quickswap",
+      "symbol": "QUICK",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2455,7 +2455,7 @@
     {
       "address": "0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c",
       "name": "Compound",
-      "symbol": "comp",
+      "symbol": "COMP",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2471,7 +2471,7 @@
     {
       "address": "0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369",
       "name": "DeFi Pulse Index",
-      "symbol": "dpi",
+      "symbol": "DPI",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2598,8 +2598,8 @@
     },
     {
       "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-      "name": "Dai",
-      "symbol": "dai",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2799,7 +2799,7 @@
     {
       "address": "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3",
       "name": "Balancer",
-      "symbol": "bal",
+      "symbol": "BAL",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2823,7 +2823,7 @@
     {
       "address": "0x9c2C5fd7b07E95EE044DDeba0E97a665F142394f",
       "name": "1inch",
-      "symbol": "1inch",
+      "symbol": "1INCH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2887,7 +2887,7 @@
     {
       "address": "0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4",
       "name": "Decentraland",
-      "symbol": "mana",
+      "symbol": "MANA",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -2942,7 +2942,7 @@
     },
     {
       "address": "0xA8b1E0764f85f53dfe21760e8AfE5446D82606ac",
-      "name": "BandToken (PoS)",
+      "name": "Band Protocol",
       "symbol": "BAND",
       "logoURI": "",
       "chainId": 137,
@@ -3119,7 +3119,7 @@
     {
       "address": "0xBbba073C31bF03b8ACf7c28EF0738DeCF3695683",
       "name": "The Sandbox",
-      "symbol": "sand",
+      "symbol": "SAND",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3191,7 +3191,7 @@
     {
       "address": "0xC3C7d422809852031b44ab29EEC9F1EfF2A58756",
       "name": "Lido DAO",
-      "symbol": "ldo",
+      "symbol": "LDO",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3246,7 +3246,7 @@
     },
     {
       "address": "0xC8A94a3d3D2dabC3C1CaffFFDcA6A7543c3e3e65",
-      "name": "Gemini dollar (PoS)",
+      "name": "Gemini Dollar",
       "symbol": "GUSD",
       "logoURI": "",
       "chainId": 137,
@@ -3254,7 +3254,7 @@
     },
     {
       "address": "0xC9c1c1c20B3658F8787CC2FD702267791f224Ce1",
-      "name": "Fantom Token (PoS)",
+      "name": "Fantom",
       "symbol": "FTM",
       "logoURI": "",
       "chainId": 137,
@@ -3294,8 +3294,8 @@
     },
     {
       "address": "0xCF354603A9AEbD2Ff9f33E1B04246d8Ea204ae95",
-      "name": "Balancer 50 WBTC 50 WETH",
-      "symbol": "B-50WBTC-50WETH",
+      "name": "BalancerV2 LP WBTC/WETH",
+      "symbol": "WBTC/WETH",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3351,7 +3351,7 @@
     {
       "address": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
       "name": "Aave",
-      "symbol": "aave",
+      "symbol": "AAVE",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3382,8 +3382,8 @@
     },
     {
       "address": "0xDA537104D6A5edd53c6fBba9A898708E465260b6",
-      "name": "yearn.finance",
-      "symbol": "yfi",
+      "name": "yearn finance",
+      "symbol": "YFI",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3399,7 +3399,7 @@
     {
       "address": "0xDC3326e71D45186F113a2F448984CA0e8D201995",
       "name": "XSGD",
-      "symbol": "xsgd",
+      "symbol": "XSGD",
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
@@ -3431,7 +3431,7 @@
     {
       "address": "0xE0339c80fFDE91F3e20494Df88d4206D86024cdF",
       "name": "Dogelon Mars",
-      "symbol": "elon",
+      "symbol": "ELON",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3454,8 +3454,8 @@
     },
     {
       "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
-      "name": "agEUR",
-      "symbol": "ageur",
+      "name": "agEur",
+      "symbol": "agEUR",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3502,8 +3502,8 @@
     },
     {
       "address": "0xE3322702BEdaaEd36CdDAb233360B939775ae5f1",
-      "name": "Tellor Tributes",
-      "symbol": "trb",
+      "name": "Tellor",
+      "symbol": "TRB",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3558,7 +3558,7 @@
     },
     {
       "address": "0xE840B73E5287865EEc17d250bFb1536704B43B21",
-      "name": "mStable USD",
+      "name": "mUSD",
       "symbol": "mUSD",
       "logoURI": "",
       "chainId": 137,
@@ -3806,8 +3806,8 @@
     },
     {
       "address": "0xFeadd389a5c427952D8fdb8057D6C8ba1156cC56",
-      "name": "Balancer Polygon WBTC-renBTC Stable Pool",
-      "symbol": "BP-BTC-SP",
+      "name": "BalancerV2 LP WBTC/renBTC",
+      "symbol": "WBTC/renBTC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3830,8 +3830,8 @@
     },
     {
       "address": "0xa1428174F516F527fafdD146b883bB4428682737",
-      "name": "SuperVerse",
-      "symbol": "super",
+      "name": "SuperFarm",
+      "symbol": "SUPER",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3975,7 +3975,7 @@
     {
       "address": "0xb33EaAd8d922B1083446DC23f610c2567fB5180f",
       "name": "Uniswap",
-      "symbol": "uni",
+      "symbol": "UNI",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4070,15 +4070,15 @@
     },
     {
       "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
-      "name": "Tether",
-      "symbol": "usdt",
+      "name": "Tether USD",
+      "symbol": "USDT",
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
     },
     {
       "address": "0xc26D47d5c33aC71AC5CF9F776D63Ba292a4F7842",
-      "name": "Bancor Network Token (PoS)",
+      "name": "Bancor Network Token",
       "symbol": "BNT",
       "logoURI": "",
       "chainId": 137,
@@ -4102,7 +4102,7 @@
     },
     {
       "address": "0xc3cFFDAf8F3fdF07da6D5e3A89B8723D5E385ff8",
-      "name": "Rubic (PoS)",
+      "name": "Rubic",
       "symbol": "RBC",
       "logoURI": "",
       "chainId": 137,
@@ -4263,7 +4263,7 @@
     {
       "address": "0xd0258a3fD00f38aa8090dfee343f10A9D4d30D3F",
       "name": "Voxies",
-      "symbol": "voxel",
+      "symbol": "VOXEL",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4366,8 +4366,8 @@
     },
     {
       "address": "0xdAb529f40E671A1D4bF91361c21bf9f0C9712ab7",
-      "name": "BUSD",
-      "symbol": "busd",
+      "name": "Binance USD",
+      "symbol": "BUSD",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4406,7 +4406,7 @@
     },
     {
       "address": "0xdb95f9188479575F3F718a245EcA1B3BF74567EC",
-      "name": "Gitcoin (PoS)",
+      "name": "Gitcoin",
       "symbol": "GTC",
       "logoURI": "",
       "chainId": 137,
@@ -4598,7 +4598,7 @@
     },
     {
       "address": "0xf1938Ce12400f9a761084E7A80d37e732a4dA056",
-      "name": "CHZ (PoS)",
+      "name": "Chiliz",
       "symbol": "CHZ",
       "logoURI": "",
       "chainId": 137,
@@ -4630,8 +4630,8 @@
     },
     {
       "address": "0xf3312968c7D768C19107731100Ece7d4780b47B2",
-      "name": "20WMATIC-80SPHERE",
-      "symbol": "20WMATIC-80SPHERE",
+      "name": "BalancerV2 LP WMATIC/SPHERE",
+      "symbol": "WMATIC/SPHERE",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4662,7 +4662,7 @@
     },
     {
       "address": "0xf6372cDb9c1d3674E83842e3800F2A62aC9F3C66",
-      "name": "IoTeX Network (PoS)",
+      "name": "IoTeX",
       "symbol": "IOTX",
       "logoURI": "",
       "chainId": 137,

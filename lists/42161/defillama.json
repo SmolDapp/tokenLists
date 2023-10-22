@@ -1,9 +1,9 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "17/10/2023 07:51:52",
+  "timestamp": "22/10/2023 01:58:29",
   "version": {
-    "major": 8,
+    "major": 9,
     "minor": 0,
     "patch": 0
   },
@@ -287,6 +287,14 @@
       "name": "pTokens BTC",
       "symbol": "pbtc",
       "logoURI": "https://assets.coingecko.com/coins/images/25861/thumb/wMTpRljt_400x400.png?1654228097",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x11BbF12363dC8375b78D2719395d505f52a02F68",
+      "name": "Router Protocol",
+      "symbol": "route",
+      "logoURI": "https://assets.coingecko.com/coins/images/13709/thumb/route_token_200x200-19.png?1611057698",
       "chainId": 42161,
       "decimals": 18
     },
@@ -1047,14 +1055,6 @@
       "name": "MAI",
       "symbol": "mimatic",
       "logoURI": "https://assets.coingecko.com/coins/images/15264/thumb/mimatic-red.png?1620281018",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x3a0A3f724094407aC332F98dDB405A11aFe609D2",
-      "name": "PufDAO",
-      "symbol": "puf",
-      "logoURI": "https://assets.coingecko.com/coins/images/29868/thumb/A3A24BB6-7087-408B-A889-C44ECE47FB0B.jpeg?1681892046",
       "chainId": 42161,
       "decimals": 18
     },
@@ -2499,14 +2499,6 @@
       "decimals": 18
     },
     {
-      "address": "0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE",
-      "name": "Beefy",
-      "symbol": "bifi",
-      "logoURI": "https://assets.coingecko.com/coins/images/12704/thumb/token.png?1601876182",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x99F40b01BA9C469193B360f72740E416B17Ac332",
       "name": "MATH",
       "symbol": "math",
@@ -3051,14 +3043,6 @@
       "decimals": 18
     },
     {
-      "address": "0xD5A56b510247DB33695b0bEa29992AC6670081ea",
-      "name": "Goons of Balatroon",
-      "symbol": "gob",
-      "logoURI": "https://assets.coingecko.com/coins/images/27104/thumb/q1_hZykF_400x400.jpeg?1662006909",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xD67A097dCE9d4474737e6871684aE3c05460F571",
       "name": "GND Protocol",
       "symbol": "gnd",
@@ -3439,6 +3423,14 @@
       "name": "Kewl",
       "symbol": "kewl",
       "logoURI": "https://assets.coingecko.com/coins/images/30534/thumb/Group_599.png?1684892398",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xa2F9ECf83a48b86265ff5fD36cDBAAa1F349916C",
+      "name": "Goons of Balatroon",
+      "symbol": "gob",
+      "logoURI": "https://assets.coingecko.com/coins/images/27104/thumb/q1_hZykF_400x400.jpeg?1662006909",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3860,7 +3852,7 @@
     },
     {
       "address": "0xd978F8489e1245568704407a479a71FcCe2aFE8F",
-      "name": "ApeBond",
+      "name": "ApeSwap",
       "symbol": "banana",
       "logoURI": "https://assets.coingecko.com/coins/images/14870/thumb/banana.png?1648887183",
       "chainId": 42161,
