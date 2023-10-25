@@ -40,9 +40,11 @@ func main() {
 		}
 	} else {
 		for _, arg := range os.Args[1:] {
-			logs.Info(`Running generator:`, strings.ToTitle(arg))
-			GENERATORS[arg].Exec()
-			logs.Success(`Done!`)
+			if _, ok := GENERATORS[arg]; ok {
+				logs.Info(`Running generator:`, strings.ToTitle(arg))
+				GENERATORS[arg].Exec()
+				logs.Success(`Done!`)
+			}
 		}
 	}
 
