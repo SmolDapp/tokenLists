@@ -47,7 +47,7 @@ func buildTokenListooorList() {
 		}
 
 		initialCount := 1
-		shouldByPassCount := name == `yearn`
+		shouldByPassCount := name == `yearn` || name == `smolAssets`
 		if shouldByPassCount {
 			initialCount = math.MaxInt32
 		}

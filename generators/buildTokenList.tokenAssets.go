@@ -47,6 +47,7 @@ func fetchSmolAssetsTokenList(chainID uint64) []TokenListToken {
 func buildSmolAssetsTokenList() {
 	tokenList := loadTokenListFromJsonFile(`smolAssets.json`)
 	tokenList.Name = `SmolAssets`
+	tokenList.Description = `A list of tokens supported by Smoldapp Token Assets repository`
 	tokenList.LogoURI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg`
 	tokenList.Keywords = []string{`smol`, `tokenAssets`}
 	tokens := []TokenListToken{}
