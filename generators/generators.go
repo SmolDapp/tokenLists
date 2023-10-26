@@ -134,13 +134,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
-	// `scan-8453`: {
-	// 	Exec:             buildScanTokenList_8453,
-	// 	Name:             `Base (Basescan)`,
-	// 	Description:      `The top ERC20 tokens available on Base blockchain, retrieved from Basescan.`,
-	// 	GenerationMethod: GenerationAPI,
-	// 	GeneratorType:    GeneratorToken,
-	// },
+	`smolAssets`: {
+		Exec:             buildSmolAssetsTokenList,
+		Name:             `SmolAssets`,
+		Description:      `A list of tokens supported by Smoldapp Token Assets repository`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`sushiswap-pairs`: {
 		Exec:             buildSushiswapPairsTokenList,
 		Name:             `SushiSwap (token pairs)`,
