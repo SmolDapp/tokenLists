@@ -4,6 +4,7 @@ import (
 	"math"
 	"strconv"
 
+	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -41,14 +42,14 @@ func buildTokenListooorList() {
 		if name == `tokenlistooor` {
 			continue
 		}
-		shouldByPassCount := name == `yearn`
 		if generatorData.GeneratorType == GeneratorPool {
 			continue
 		}
 
 		initialCount := 1
+		shouldByPassCount := name == `yearn`
 		if shouldByPassCount {
-			initialCount = math.MaxInt64
+			initialCount = math.MaxInt32
 		}
 		tokenList := loadTokenListFromJsonFile(name + `.json`)
 		for _, token := range tokenList.Tokens {
@@ -81,6 +82,10 @@ func buildTokenListooorList() {
 				if smoldAssetsPerChain[token.ChainID] != nil && helpers.Includes(smoldAssetsPerChain[token.ChainID], token.Address) {
 					logoToUse = `https://assets.smold.app/api/token/` + strconv.FormatUint(token.ChainID, 10) + `/` + token.Address + `/logo-128.png`
 				}
+				tokenInitialOccurence := initialCount
+				if common.HexToAddress(token.Address) == common.HexToAddress(`0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079`) { //Ajna
+					tokenInitialOccurence = math.MaxInt32
+				}
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
 					Address:    helpers.ToAddress(token.Address),
 					Name:       helpers.SafeString(token.Name, ``),
@@ -88,7 +93,7 @@ func buildTokenListooorList() {
 					LogoURI:    logoToUse,
 					Decimals:   helpers.SafeInt(token.Decimals, 18),
 					ChainID:    token.ChainID,
-					Occurrence: initialCount,
+					Occurrence: tokenInitialOccurence,
 				}
 			}
 		}
