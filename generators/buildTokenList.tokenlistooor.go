@@ -7,6 +7,15 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
+type TSmolAssetsList struct {
+	Version struct {
+		Major int `json:"major"`
+		Minor int `json:"minor"`
+		Patch int `json:"patch"`
+	}
+	Tokens []string `json:"tokens"`
+}
+
 func buildTokenListooorList() {
 	tokenList := loadTokenListFromJsonFile(`tokenlistooor.json`)
 	tokenList.Name = `Tokenlistooor Token List`
@@ -47,7 +56,7 @@ func buildTokenListooorList() {
 				listsPerChain[token.ChainID] = []string{}
 			}
 			if _, ok := smoldAssetsPerChain[token.ChainID]; !ok {
-				smoldAssetsPerChain[token.ChainID] = helpers.FetchJSON[[]string](`https://assets.smold.app/tokens/1/list.json`)
+				smoldAssetsPerChain[token.ChainID] = helpers.FetchJSON[TSmolAssetsList](`https://assets.smold.app/tokens/` + strconv.FormatUint(token.ChainID, 10) + `/list.json`).Tokens
 			}
 			if !helpers.Includes(listsPerChain[token.ChainID], name) {
 				listsPerChain[token.ChainID] = append(listsPerChain[token.ChainID], name)
