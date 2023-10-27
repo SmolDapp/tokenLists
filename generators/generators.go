@@ -43,6 +43,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},
+	`ajna`: {
+		Exec:             buildAjnaTokenList,
+		Name:             `Ajna`,
+		Description:      `A list of non-rebased tokens available on Ajna.`,
+		GenerationMethod: GenerationExternalList,
+		GeneratorType:    GeneratorToken,
+	},
 	`bebop`: {
 		Exec:             buildBebopTokenList,
 		Name:             `Bebop`,

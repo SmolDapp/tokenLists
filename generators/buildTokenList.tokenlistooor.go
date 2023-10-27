@@ -3,6 +3,7 @@ package main
 import (
 	"math"
 	"strconv"
+	"strings"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
@@ -82,6 +83,7 @@ func buildTokenListooorList() {
 				if smoldAssetsPerChain[token.ChainID] != nil && helpers.Includes(smoldAssetsPerChain[token.ChainID], token.Address) {
 					logoToUse = `https://assets.smold.app/api/token/` + strconv.FormatUint(token.ChainID, 10) + `/` + token.Address + `/logo-128.png`
 				}
+				logoToUse = strings.Replace(logoToUse, `/thumb/`, `/large/`, 1)
 				tokenInitialOccurence := initialCount
 				if common.HexToAddress(token.Address) == common.HexToAddress(`0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079`) { //Ajna
 					tokenInitialOccurence = math.MaxInt32

@@ -24,6 +24,7 @@ var MulticallClientForChainID = make(map[uint64]TEthMultiCaller)
 // RPC_ENDPOINTS contains the node endpoints to connect the blockchains
 var RPC_ENDPOINTS = map[uint64]string{
 	1:     `https://eth.public-rpc.com`,
+	5:     `https://goerli.optimism.io`,
 	10:    `https://mainnet.optimism.io`,
 	56:    `https://1rpc.io/bnb`,
 	100:   `https://rpc.gnosis.gateway.fm`,
@@ -39,6 +40,7 @@ var RPC_ENDPOINTS = map[uint64]string{
 // DEFAULT_RPC_ENDPOINTS contains the node endpoints to connect the blockchains
 var DEFAULT_RPC_ENDPOINTS = map[uint64]string{
 	1:     `https://eth.public-rpc.com`,
+	5:     `https://goerli.optimism.io`,
 	10:    `https://mainnet.optimism.io`,
 	56:    `https://1rpc.io/bnb`,
 	100:   `https://rpc.gnosis.gateway.fm`,
@@ -54,6 +56,7 @@ var DEFAULT_RPC_ENDPOINTS = map[uint64]string{
 // MULTICALL_ADDRESSES contains the address of the multicall2 contract for a specific chainID
 var MULTICALL_ADDRESSES = map[uint64]common.Address{
 	1:     common.HexToAddress(`0x5ba1e12693dc8f9c48aad8770482f4739beed696`),
+	5:     common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 	10:    common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 	56:    common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 	100:   common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),

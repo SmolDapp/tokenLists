@@ -2,6 +2,7 @@ package helpers
 
 var SUPPORTED_CHAIN_IDS = map[uint64]bool{
 	1:     true, // Ethereum
+	5:     true, // Goerli
 	10:    true, // Optimism
 	56:    true, // Binance Smart Chain
 	100:   true, // xDai/Gnosis
@@ -22,7 +23,6 @@ func IsChainIDSupported(chainID uint64) bool {
 var IGNORED_CHAIN_IDS = map[uint64]bool{
 	3:           true, // Ropsten
 	4:           true, // Rinkeby
-	5:           true, // Goerli
 	40:          true, // Telos
 	42:          true, // Kovan
 	65:          true, // OKExChain
