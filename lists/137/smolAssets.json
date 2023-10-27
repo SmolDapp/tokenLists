@@ -1,11 +1,11 @@
 {
   "name": "SmolAssets",
   "description": "A list of tokens supported by Smoldapp Token Assets repository",
-  "timestamp": "26/10/2023 14:51:48",
+  "timestamp": "27/10/2023 16:50:56",
   "version": {
     "major": 0,
-    "minor": 1,
-    "patch": 3
+    "minor": 2,
+    "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg",
   "keywords": [
@@ -15,7 +15,7 @@
   "tokens": [
     {
       "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-      "name": "USDC",
+      "name": "USD Coin (PoS)",
       "symbol": "USDC",
       "logoURI": "https://assets.smold.app/api/token/137/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174/logo-128.png",
       "chainId": 137,
@@ -36,6 +36,14 @@
       "logoURI": "https://assets.smold.app/api/token/137/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
       "chainId": 137,
       "decimals": 18
+    },
+    {
+      "address": "0xcAA17796bB3d4a71005CeBd817CFEebF85D581b7",
+      "name": "USDC yVault",
+      "symbol": "yvUSDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0xcAA17796bB3d4a71005CeBd817CFEebF85D581b7/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
     }
   ]
 }
