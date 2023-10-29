@@ -1,11 +1,11 @@
 {
   "name": "Ajna",
   "description": "",
-  "timestamp": "27/10/2023 16:51:08",
+  "timestamp": "29/10/2023 00:41:42",
   "version": {
     "major": 1,
-    "minor": 1,
-    "patch": 1
+    "minor": 2,
+    "patch": 0
   },
   "logoURI": "https://www.ajna.finance/static/tokens/ajna.png",
   "keywords": [
@@ -30,7 +30,7 @@
     },
     {
       "address": "0x00e5646f60AC6Fb446f621d146B6E1886f002905",
-      "name": "Rai Reflex Index (PoS)",
+      "name": "Rai Reflex Index",
       "symbol": "RAI",
       "logoURI": "https://assets.coingecko.com/coins/images/14004/large/RAI-logo-coin.png?1613592334",
       "chainId": 137,
@@ -70,7 +70,7 @@
     },
     {
       "address": "0x034b2090b579228482520c589dbD397c53Fc51cC",
-      "name": "Vision Token",
+      "name": "Vision Token (PoS)",
       "symbol": "VISION",
       "logoURI": "https://assets.coingecko.com/coins/images/13288/large/apyvisionlogo200circle.png?1607059042",
       "chainId": 137,
@@ -78,8 +78,8 @@
     },
     {
       "address": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
-      "name": "Wrapped stETH",
-      "symbol": "WSTETH",
+      "name": "Wrapped liquid staked Ether 2.0 (PoS)",
+      "symbol": "wstETH",
       "logoURI": "https://assets.coingecko.com/coins/images/18834/large/wstETH.png?1633565443",
       "chainId": 137,
       "decimals": 18
@@ -326,7 +326,7 @@
     },
     {
       "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
-      "name": "SushiToken",
+      "name": "Sushi",
       "symbol": "SUSHI",
       "logoURI": "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png?1606986688",
       "chainId": 137,
@@ -374,7 +374,7 @@
     },
     {
       "address": "0x0df0f72EE0e5c9B7ca761ECec42754992B2Da5BF",
-      "name": "Automata Network",
+      "name": "Automata",
       "symbol": "ATA",
       "logoURI": "https://assets.coingecko.com/coins/images/15985/large/ATA.jpg?1622535745",
       "chainId": 137,
@@ -406,7 +406,7 @@
     },
     {
       "address": "0x101A023270368c0D50BFfb62780F4aFd4ea79C35",
-      "name": "Ankr Network",
+      "name": "Ankr",
       "symbol": "ANKR",
       "logoURI": "https://assets.coingecko.com/coins/images/4324/large/U85xTl2.png?1608111978",
       "chainId": 137,
@@ -414,7 +414,7 @@
     },
     {
       "address": "0x104592a158490a9228070E0A8e5343B499e125D0",
-      "name": "Frax (PoS)",
+      "name": "Frax",
       "symbol": "FRAX",
       "logoURI": "https://assets.coingecko.com/coins/images/13422/large/frax_logo.png?1608476506",
       "chainId": 137,
@@ -542,7 +542,7 @@
     },
     {
       "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-      "name": "CRV",
+      "name": "Curve DAO Token",
       "symbol": "CRV",
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD533a949740bb3306d119CC777fa900bA034cd52/logo.png",
       "chainId": 137,
@@ -606,7 +606,7 @@
     },
     {
       "address": "0x1B815d120B3eF02039Ee11dC2d33DE7aA4a8C603",
-      "name": "Wootrade Network",
+      "name": "WOO Network",
       "symbol": "WOO",
       "logoURI": "https://assets.coingecko.com/coins/images/12921/large/w2UiemF__400x400.jpg?1603670367",
       "chainId": 137,
@@ -766,7 +766,7 @@
     },
     {
       "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-      "name": "USD Coin (PoS)",
+      "name": "USDCoin",
       "symbol": "USDC",
       "logoURI": "https://assets.smold.app/api/token/137/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174/logo-128.png",
       "chainId": 137,
@@ -790,8 +790,8 @@
     },
     {
       "address": "0x282d8efCe846A88B159800bd4130ad77443Fa1A1",
-      "name": "Ocean Token",
-      "symbol": "mOCEAN",
+      "name": "Ocean Protocol",
+      "symbol": "OCEAN",
       "logoURI": "https://assets.coingecko.com/coins/images/3687/large/ocean-protocol-logo.jpg?1547038686",
       "chainId": 137,
       "decimals": 18
@@ -830,7 +830,7 @@
     },
     {
       "address": "0x2B9E7ccDF0F4e5B24757c1E1a80e311E34Cb10c7",
-      "name": "Mask Network (PoS)",
+      "name": "Mask Network",
       "symbol": "MASK",
       "logoURI": "https://assets.coingecko.com/coins/images/14051/large/Mask_Network.jpg?1614050316",
       "chainId": 137,
@@ -1006,7 +1006,7 @@
     },
     {
       "address": "0x3066818837c5e6eD6601bd5a91B0762877A6B731",
-      "name": "UMA Voting Token",
+      "name": "UMA Voting Token v1",
       "symbol": "UMA",
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828/logo.png",
       "chainId": 137,
@@ -1134,7 +1134,7 @@
     },
     {
       "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-      "name": "Aavegotchi GHST Token",
+      "name": "Aavegotchi",
       "symbol": "GHST",
       "logoURI": "https://assets.coingecko.com/coins/images/12467/large/ghst_200.png?1600750321",
       "chainId": 137,
@@ -1246,7 +1246,7 @@
     },
     {
       "address": "0x3e121107F6F22DA4911079845a470757aF4e1A1b",
-      "name": "Frax Share (PoS)",
+      "name": "Frax Share",
       "symbol": "FXS",
       "logoURI": "https://assets.coingecko.com/coins/images/13423/large/frax_share.png?1608478989",
       "chainId": 137,
@@ -1518,7 +1518,7 @@
     },
     {
       "address": "0x50B728D8D964fd00C2d0AAD81718b71311feF68a",
-      "name": "Synthetix Network Token (PoS)",
+      "name": "Synthetix Network Token",
       "symbol": "SNX",
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F/logo.png",
       "chainId": 137,
@@ -1662,7 +1662,7 @@
     },
     {
       "address": "0x596eBE76e2DB4470966ea395B0d063aC6197A8C5",
-      "name": "Jarvis Network",
+      "name": "Jarvis Reward Token (PoS)",
       "symbol": "JRT",
       "logoURI": "https://assets.coingecko.com/coins/images/10390/large/cfeii0y.png?1578868949",
       "chainId": 137,
@@ -1774,7 +1774,7 @@
     },
     {
       "address": "0x5fe2B58c013d7601147DcdD68C143A77499f5531",
-      "name": "Graph Token (PoS)",
+      "name": "The Graph",
       "symbol": "GRT",
       "logoURI": "https://assets.coingecko.com/coins/images/13397/large/Graph_Token.png?1608145566",
       "chainId": 137,
@@ -1798,7 +1798,7 @@
     },
     {
       "address": "0x61299774020dA444Af134c82fa83E3810b309991",
-      "name": "Render",
+      "name": "Render Token",
       "symbol": "RNDR",
       "logoURI": "https://assets.coingecko.com/coins/images/11636/large/rndr.png?1638840934",
       "chainId": 137,
@@ -1886,7 +1886,7 @@
     },
     {
       "address": "0x65A05DB8322701724c197AF82C9CaE41195B0aA8",
-      "name": "FOX (PoS)",
+      "name": "ShapeShift FOX Token",
       "symbol": "FOX",
       "logoURI": "https://assets.coingecko.com/coins/images/9988/large/FOX.png?1574330622",
       "chainId": 137,
@@ -2334,8 +2334,8 @@
     },
     {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-      "name": "Ether",
-      "symbol": "ETH",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
       "chainId": 137,
       "decimals": 18
@@ -2414,7 +2414,7 @@
     },
     {
       "address": "0x831753DD7087CaC61aB5644b308642cc1c33Dc13",
-      "name": "QuickSwap",
+      "name": "Quickswap",
       "symbol": "QUICK",
       "logoURI": "https://assets.coingecko.com/coins/images/13970/large/1_pOU6pBMEmiL-ZJVb0CYRjQ.png?1613386659",
       "chainId": 137,
@@ -2486,7 +2486,7 @@
     },
     {
       "address": "0x8765f05ADce126d70bcdF1b0a48Db573316662eB",
-      "name": "PlayDapp Token (PoS)",
+      "name": "PlayDapp",
       "symbol": "PLA",
       "logoURI": "https://assets.coingecko.com/coins/images/14316/large/54023228.png?1615366911",
       "chainId": 137,
@@ -2630,7 +2630,7 @@
     },
     {
       "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-      "name": "(PoS) Dai Stablecoin",
+      "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
       "chainId": 137,
@@ -2934,7 +2934,7 @@
     },
     {
       "address": "0xA041544fe2BE56CCe31Ebb69102B965E06aacE80",
-      "name": "BarnBridge Governance Token",
+      "name": "BarnBridge",
       "symbol": "BOND",
       "logoURI": "https://assets.coingecko.com/coins/images/12811/large/barnbridge.jpg?1602728853",
       "chainId": 137,
@@ -2942,7 +2942,7 @@
     },
     {
       "address": "0xA1c57f48F0Deb89f569dFbE6E2B7f46D33606fD4",
-      "name": "Decentraland MANA",
+      "name": "Decentraland",
       "symbol": "MANA",
       "logoURI": "https://assets.coingecko.com/coins/images/878/large/decentraland-mana.png?1550108745",
       "chainId": 137,
@@ -2966,7 +2966,7 @@
     },
     {
       "address": "0xA3c322Ad15218fBFAEd26bA7f616249f7705D945",
-      "name": "Metaverse (PoS)",
+      "name": "GensoKishi Metaverse",
       "symbol": "MV",
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/17704.png",
       "chainId": 137,
@@ -3054,7 +3054,7 @@
     },
     {
       "address": "0xAa7DbD1598251f856C12f63557A4C4397c253Cea",
-      "name": "Moss Carbon Credit (PoS)",
+      "name": "Moss Carbon Credit",
       "symbol": "MCO2",
       "logoURI": "https://assets.coingecko.com/coins/images/14414/large/ENtxnThA_400x400.jpg?1615948522",
       "chainId": 137,
@@ -3158,7 +3158,7 @@
     },
     {
       "address": "0xBbba073C31bF03b8ACf7c28EF0738DeCF3695683",
-      "name": "SAND",
+      "name": "The Sandbox",
       "symbol": "SAND",
       "logoURI": "https://assets.coingecko.com/coins/images/12129/large/sandbox_logo.jpg?1597397942",
       "chainId": 137,
@@ -3206,7 +3206,7 @@
     },
     {
       "address": "0xC3C7d422809852031b44ab29EEC9F1EfF2A58756",
-      "name": "Lido DAO Token (PoS)",
+      "name": "Lido DAO",
       "symbol": "LDO",
       "logoURI": "https://assets.coingecko.com/coins/images/13573/large/Lido_DAO.png?1609873644",
       "chainId": 137,
@@ -3382,7 +3382,7 @@
     },
     {
       "address": "0xDA537104D6A5edd53c6fBba9A898708E465260b6",
-      "name": "yearn.finance",
+      "name": "yearn finance",
       "symbol": "YFI",
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png?1598325330",
       "chainId": 137,
@@ -3422,7 +3422,7 @@
     },
     {
       "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
-      "name": "agEUR",
+      "name": "agEur",
       "symbol": "agEUR",
       "logoURI": "https://assets.coingecko.com/coins/images/19479/large/agEUR.png?1635283566",
       "chainId": 137,
@@ -3590,7 +3590,7 @@
     },
     {
       "address": "0xF501dd45a1198C2E1b5aEF5314A68B9006D842E0",
-      "name": "mStable Governance Token: Meta",
+      "name": "Meta (PoS)",
       "symbol": "MTA",
       "logoURI": "https://assets.coingecko.com/coins/images/11846/large/mStable.png?1594950533",
       "chainId": 137,
@@ -3942,8 +3942,8 @@
     },
     {
       "address": "0xb8cb8a7F4C2885C03e57E973C74827909Fdc2032",
-      "name": "yearn.fi",
-      "symbol": "YFI",
+      "name": "DFI money",
+      "symbol": "YFII",
       "logoURI": "https://assets.coingecko.com/coins/images/11902/large/YFII-logo.78631676.png?1598677348",
       "chainId": 137,
       "decimals": 18
@@ -3998,7 +3998,7 @@
     },
     {
       "address": "0xbFc70507384047Aa74c29Cdc8c5Cb88D0f7213AC",
-      "name": "Artificial Liquid Intelligence",
+      "name": "Alethea Artificial Liquid Intelligence",
       "symbol": "ALI",
       "logoURI": "https://assets.coingecko.com/coins/images/22062/large/alethea-logo-transparent-colored.png?1642748848",
       "chainId": 137,
@@ -4158,7 +4158,7 @@
     },
     {
       "address": "0xd0258a3fD00f38aa8090dfee343f10A9D4d30D3F",
-      "name": "VOXEL Token",
+      "name": "Voxies",
       "symbol": "VOXEL",
       "logoURI": "https://assets.coingecko.com/coins/images/21260/large/voxies.png",
       "chainId": 137,
@@ -4246,7 +4246,7 @@
     },
     {
       "address": "0xdDa7b23D2D72746663E7939743f929a3d85FC975",
-      "name": "Adex",
+      "name": "Ambire AdEx",
       "symbol": "ADX",
       "logoURI": "https://assets.coingecko.com/coins/images/847/large/Ambire_AdEx_Symbol_color.png?1655432540",
       "chainId": 137,
@@ -4286,7 +4286,7 @@
     },
     {
       "address": "0xdb95f9188479575F3F718a245EcA1B3BF74567EC",
-      "name": "Gitcoin (PoS)",
+      "name": "Gitcoin",
       "symbol": "GTC",
       "logoURI": "https://assets.coingecko.com/coins/images/15810/large/gitcoin.png?1621992929",
       "chainId": 137,

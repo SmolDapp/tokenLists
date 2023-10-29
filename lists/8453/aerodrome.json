@@ -1,10 +1,10 @@
 {
   "name": "Aerodrome",
   "description": "",
-  "timestamp": "27/10/2023 16:51:37",
+  "timestamp": "29/10/2023 00:40:04",
   "version": {
     "major": 0,
-    "minor": 12,
+    "minor": 13,
     "patch": 0
   },
   "logoURI": "https://aerodrome.finance/aerodrome.svg",
@@ -520,7 +520,7 @@
     },
     {
       "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
-      "name": "Base tBTC v2",
+      "name": "tBTC",
       "symbol": "tBTC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b/logo-128.png",
       "chainId": 8453,
@@ -584,7 +584,7 @@
     },
     {
       "address": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
-      "name": "Stable AMM - USDC/USDbC",
+      "name": "Aerodrome Stable USDC-USDbC",
       "symbol": "sAMM-USDC/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD/logo-128.png",
       "chainId": 8453,
@@ -1872,7 +1872,7 @@
     },
     {
       "address": "0x8b432C54d6e8E1B8D1802753514AB53044Af1861",
-      "name": "Stable AMM - DOLA/MAI",
+      "name": "Aerodrome Stable DOLA-MAI",
       "symbol": "sAMM-DOLA/MAI",
       "logoURI": "https://assets.smold.app/api/token/8453/0x8b432C54d6e8E1B8D1802753514AB53044Af1861/logo-128.png",
       "chainId": 8453,
@@ -1904,8 +1904,8 @@
     },
     {
       "address": "0x9287C921f5d920cEeE0d07d7c58d476E46aCC640",
-      "name": "Volatile AMM - WETH/DAI",
-      "symbol": "vAMM-WETH/DAI",
+      "name": "Aerodrome Volatile DAI-WETH",
+      "symbol": "vAMM-DAI/WETH",
       "logoURI": "https://assets.smold.app/api/token/8453/0x9287C921f5d920cEeE0d07d7c58d476E46aCC640/logo-128.png",
       "chainId": 8453,
       "decimals": 18
@@ -2671,6 +2671,14 @@
       "decimals": 18
     },
     {
+      "address": "0xFF55A4A606bA9937C3d9DCa201fca5EA3437A53b",
+      "name": "Volatile AMM - AERO/agEUR",
+      "symbol": "vAMM-AERO/agEUR",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xFF55A4A606bA9937C3d9DCa201fca5EA3437A53b/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xFF8adeC2221f9f4D8dfbAFa6B9a297d17603493D",
       "name": "WELL",
       "symbol": "WELL",
@@ -3328,7 +3336,7 @@
     },
     {
       "address": "0xffA3F8737C39e36dec4300B162c2153c67c8352f",
-      "name": "Aerodrome Volatile WETH-WELL",
+      "name": "Volatile AMM - WETH/WELL",
       "symbol": "vAMM-WETH/WELL",
       "logoURI": "https://assets.smold.app/api/token/8453/0xffA3F8737C39e36dec4300B162c2153c67c8352f/logo-128.png",
       "chainId": 8453,
