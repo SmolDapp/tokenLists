@@ -2,8 +2,6 @@ package main
 
 import (
 	"math"
-	"strconv"
-	"strings"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
@@ -31,7 +29,6 @@ func buildTokenListooorList() {
 	allTokens := make(map[uint64]map[string]TokenListToken)
 	allTokensPlain := []TokenListToken{}
 	listsPerChain := make(map[uint64][]string)
-	smoldAssetsPerChain := make(map[uint64][]string)
 
 	/**************************************************************************
 	** We want to know which tokens to add to the aggregated tokenlistooor list
@@ -57,9 +54,7 @@ func buildTokenListooorList() {
 			if _, ok := listsPerChain[token.ChainID]; !ok {
 				listsPerChain[token.ChainID] = []string{}
 			}
-			if _, ok := smoldAssetsPerChain[token.ChainID]; !ok {
-				smoldAssetsPerChain[token.ChainID] = helpers.FetchJSON[TSmolAssetsList](`https://assets.smold.app/tokens/` + strconv.FormatUint(token.ChainID, 10) + `/list.json`).Tokens
-			}
+
 			if !helpers.Includes(listsPerChain[token.ChainID], name) {
 				listsPerChain[token.ChainID] = append(listsPerChain[token.ChainID], name)
 			}
@@ -79,11 +74,6 @@ func buildTokenListooorList() {
 					Occurrence: existingToken.Occurrence + 1,
 				}
 			} else {
-				logoToUse := helpers.SafeString(token.LogoURI, ``)
-				if smoldAssetsPerChain[token.ChainID] != nil && helpers.Includes(smoldAssetsPerChain[token.ChainID], token.Address) {
-					logoToUse = `https://assets.smold.app/api/token/` + strconv.FormatUint(token.ChainID, 10) + `/` + token.Address + `/logo-128.png`
-				}
-				logoToUse = strings.Replace(logoToUse, `/thumb/`, `/large/`, 1)
 				tokenInitialOccurence := initialCount
 				if common.HexToAddress(token.Address) == common.HexToAddress(`0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079`) { //Ajna
 					tokenInitialOccurence = math.MaxInt32
@@ -92,7 +82,7 @@ func buildTokenListooorList() {
 					Address:    helpers.ToAddress(token.Address),
 					Name:       helpers.SafeString(token.Name, ``),
 					Symbol:     helpers.SafeString(token.Symbol, ``),
-					LogoURI:    logoToUse,
+					LogoURI:    helpers.SafeString(token.LogoURI, ``),
 					Decimals:   helpers.SafeInt(token.Decimals, 18),
 					ChainID:    token.ChainID,
 					Occurrence: tokenInitialOccurence,

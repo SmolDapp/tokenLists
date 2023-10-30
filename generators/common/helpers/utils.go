@@ -25,6 +25,15 @@ func ToAddress(value string) string {
 	return common.HexToAddress(value).Hex()
 }
 
+func IncludesAddress(slice []string, value common.Address) bool {
+	for _, item := range slice {
+		if common.HexToAddress(item) == value {
+			return true
+		}
+	}
+	return false
+}
+
 // Includes returns true if the provided T is in the provided slice
 func Includes[T comparable](slice []T, value T) bool {
 	for _, item := range slice {

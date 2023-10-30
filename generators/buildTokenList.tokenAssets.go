@@ -36,9 +36,9 @@ func handleSmolAssetsTokenList(chainID uint64, tokenAddresses []common.Address) 
 }
 
 func fetchSmolAssetsTokenList(chainID uint64) []TokenListToken {
-	tokens := helpers.FetchJSON[TSmolAssetsList](`https://assets.smold.app/tokens/` + strconv.FormatUint(chainID, 10) + `/list.json`).Tokens
+	smolAssets := helpers.GetSmolAssetsPerChain(chainID)
 	allTokensToAdd := []common.Address{}
-	for _, token := range tokens {
+	for _, token := range smolAssets {
 		allTokensToAdd = append(allTokensToAdd, common.HexToAddress(token))
 	}
 	return handleSmolAssetsTokenList(chainID, allTokensToAdd)
