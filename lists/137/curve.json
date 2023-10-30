@@ -1,11 +1,11 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "29/10/2023 00:41:50",
+  "timestamp": "30/10/2023 11:33:34",
   "version": {
     "major": 10,
-    "minor": 16,
-    "patch": 1
+    "minor": 17,
+    "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
   "keywords": [],
@@ -364,7 +364,7 @@
     },
     {
       "address": "0x104592a158490a9228070E0A8e5343B499e125D0",
-      "name": "Frax",
+      "name": "Frax (PoS)",
       "symbol": "FRAX",
       "logoURI": "",
       "chainId": 137,
@@ -1014,7 +1014,7 @@
       "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
       "name": "USDCoin",
       "symbol": "USDC",
-      "logoURI": "",
+      "logoURI": "https://assets.smold.app/api/token/137/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174/logo-128.png",
       "chainId": 137,
       "decimals": 6
     },
@@ -1475,6 +1475,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3d468AB2329F296e1b9d8476Bb54Dd77D8c2320f",
+      "name": "20WETH-80BAL",
+      "symbol": "20WETH-80BAL",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x3dE21CCA8F4e5fedCE156f8bD4ED6E74fE85ab2f",
       "name": "Curve.fi Factory Plain Pool: sUSDR/DAI",
       "symbol": "sUSDRDAI-f",
@@ -1700,7 +1708,7 @@
     },
     {
       "address": "0x482bc619eE7662759CDc0685B4E78f464Da39C73",
-      "name": "GYEN",
+      "name": "GMO JPY (PoS)",
       "symbol": "GYEN",
       "logoURI": "",
       "chainId": 137,
@@ -1979,6 +1987,14 @@
       "decimals": 18
     },
     {
+      "address": "0x55DDb761FdDea2bD4eb8dF92018271d5C48F99c0",
+      "name": "Curve.fi Factory Plain Pool: TETUBAL",
+      "symbol": "TETUBAL-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x56223D41bb919c9BE6b3764cB302E426DDaB890C",
       "name": "Curve.fi Factory USD Metapool: 4usd",
       "symbol": "4usd3CRV-f",
@@ -2012,8 +2028,8 @@
     },
     {
       "address": "0x576Cf361711cd940CD9C397BB98C4C896cBd38De",
-      "name": "USD Coin (Wormhole)",
-      "symbol": "USDCSO",
+      "name": "USD Coin",
+      "symbol": "USDC",
       "logoURI": "",
       "chainId": 137,
       "decimals": 6
@@ -3059,6 +3075,14 @@
       "decimals": 18
     },
     {
+      "address": "0x7fC9E0Aa043787BFad28e29632AdA302C790Ce33",
+      "name": "tetuBAL",
+      "symbol": "tetubal",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x80487b4f8f70e793A81a42367c225ee0B94315DF",
       "name": "Stabl.fi",
       "symbol": "cash",
@@ -3076,8 +3100,8 @@
     },
     {
       "address": "0x8096ac61db23291252574D49f036f0f9ed8ab390",
-      "name": "Curve USD-BTC-ETH",
-      "symbol": "crvUSDBTCETH",
+      "name": "GRINGO",
+      "symbol": "GRINGO",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -3468,7 +3492,7 @@
     },
     {
       "address": "0x8a037dbcA8134FFc72C362e394e35E0Cad618F85",
-      "name": "Euro Coin",
+      "name": "Euro Coin (PoS)",
       "symbol": "EUROC",
       "logoURI": "",
       "chainId": 137,
@@ -3606,6 +3630,14 @@
       "address": "0x92d7bF7aAB0B8CeA18Ab23D4BF12639957CfDDd6",
       "name": "Curve.fi Factory Plain Pool: jAUD+fxAUD",
       "symbol": "2aud-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x9356ea517d822a7D1fDDeEb15b9150530572a98E",
+      "name": "Curve.fi Factory Plain Pool: BRIC",
+      "symbol": "BRIC-f",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
@@ -4515,6 +4547,14 @@
       "decimals": 9
     },
     {
+      "address": "0xCE400d027b3486634Ff20f383A26aa01B96A79f4",
+      "name": "Curve.fi Factory Plain Pool: 2080BAL/TETUBAL",
+      "symbol": "TetuBAL-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xCEFc3669B7Af16E19579D76a2a8379B69A70141a",
       "name": "Curve.fi Factory Plain Pool: agEUR/EURT",
       "symbol": "agEUREURT-f",
@@ -4926,7 +4966,7 @@
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       "name": "MATIC",
       "symbol": "MATIC",
-      "logoURI": "",
+      "logoURI": "https://assets.smold.app/api/token/137/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -4982,6 +5022,14 @@
       "address": "0xFEAbC07d1269aeD8FEd05B2D0609c8590563B220",
       "name": "Curve.fi Factory USD Metapool: GMONEY/POLYGON",
       "symbol": "SGPOLY3CRV-f",
+      "logoURI": "",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xFa435fB0848Bf848BCa03A8BbE1FA910806c78b2",
+      "name": "Curve.fi Factory Plain Pool: 2080BAL/TETUBAL",
+      "symbol": "TETUBAL-f",
       "logoURI": "",
       "chainId": 137,
       "decimals": 18
