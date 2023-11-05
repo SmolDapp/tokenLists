@@ -1,10 +1,10 @@
 {
   "name": "Portals Token List",
   "description": "",
-  "timestamp": "30/10/2023 11:39:30",
+  "timestamp": "05/11/2023 00:45:01",
   "version": {
-    "major": 11,
-    "minor": 2,
+    "major": 12,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://portals-assets-bucket.s3.amazonaws.com/logo.png",
@@ -286,14 +286,6 @@
       "address": "0x0f0509443b7fca172f5428580468A403b2924504",
       "name": "Velodrome V2 VolatileV2 AMM - OP/sUSD",
       "symbol": "vAMMV2-OP/sUSD",
-      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
-      "chainId": 10,
-      "decimals": 18
-    },
-    {
-      "address": "0x0fB402252441082646D7dF18550e4036b8F20d7e",
-      "name": "Velodrome V2 VolatileV2 AMM - USDC/mooVeloV2USDC-MTA",
-      "symbol": "vAMMV2-USDC/mooVeloV2USDC-MTA",
       "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
@@ -879,6 +871,14 @@
       "name": "Velodrome V2 VolatileV2 AMM - TAROT/USDC",
       "symbol": "vAMMV2-TAROT/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x2E931De1fcB2681Dc98601e0b513308DA9C5cEae/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x2Ef789080933cabBEB8ce364CE877Fc54A6add06",
+      "name": "PoolTogether V5 Prize Thales-ETH LP Beefy Velodrome",
+      "symbol": "pThalesETHBeefyVelo",
+      "logoURI": "https://assets.coingecko.com/coins/images/14003/large/PoolTogether.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1595,14 +1595,6 @@
       "decimals": 18
     },
     {
-      "address": "0x518D6ae98818C971B3fa1e4186CC573F1E3ebE68",
-      "name": "Curve.fi Factory USD Metapool: Overnight",
-      "symbol": "OVERNIGHT3CRV-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
-      "chainId": 10,
-      "decimals": 18
-    },
-    {
       "address": "0x51e2b9b62B6B58a8843ab19b6dC07c6912b5C6F8",
       "name": "Velodrome V2 VolatileV2 AMM - OP/LDO",
       "symbol": "vAMMV2-OP/LDO",
@@ -1719,6 +1711,14 @@
       "name": "Velodrome V2 VolatileV2 AMM - WETH/RING",
       "symbol": "vAMMV2-WETH/RING",
       "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x57d00d036485B5fEE6A58c8763Bdc358906E6D19",
+      "name": "Beefy Moo VeloV2 mooBIFI-ETH",
+      "symbol": "mooVeloV2mooBIFI-ETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/12704/large/token.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1875,14 +1875,6 @@
       "decimals": 18
     },
     {
-      "address": "0x5e70E0EdE43373bD9CF4Bc85199d424AcF0241EF",
-      "name": "Yearn Curve sUSD Pool yVault",
-      "symbol": "yvCurve-sUSD",
-      "logoURI": "https://assets.smold.app/api/token/10/0x5e70E0EdE43373bD9CF4Bc85199d424AcF0241EF/logo-128.png",
-      "chainId": 10,
-      "decimals": 18
-    },
-    {
       "address": "0x600e9d1b98FACD709a18dA5a61da96BcDEE608b7",
       "name": "Beefy Moo VeloV2 sETH-ETH",
       "symbol": "mooVeloV2sETH-ETH",
@@ -1983,14 +1975,6 @@
       "name": "Beefy Moo VeloV2 wstETH-OP",
       "symbol": "mooVeloV2wstETH-OP",
       "logoURI": "https://assets.coingecko.com/coins/images/12704/large/token.png",
-      "chainId": 10,
-      "decimals": 18
-    },
-    {
-      "address": "0x662B2bCC89cbb704f92C7eAda4c2F1abE2B71b64",
-      "name": "Curve.fi Factory Plain Pool: SUSD/USDT",
-      "symbol": "SUSDT-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -2151,6 +2135,14 @@
       "name": "Yearn Velodrome v2 wstETH-WETH Factory yVault",
       "symbol": "yvVelo-wstETH-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x6Ec9d003f0e5184Ee54c1d899B414322a0f0Dc07/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x6Ed6Df1C23C51cb7Cc67a348cC8d9E6108EA3BFE",
+      "name": "Velodrome V2 VolatileV2 AMM - WETH/mooBIFI",
+      "symbol": "vAMMV2-WETH/mooBIFI",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -3515,18 +3507,18 @@
       "decimals": 18
     },
     {
-      "address": "0xB9A14C5C760023801f8c731b4621C99F8ac211D9",
-      "name": "Yearn Velodrome v2 SONNE-USDC.e Factory yVault",
-      "symbol": "yvVelo-SONNE-USDC.e-f",
-      "logoURI": "https://assets.smold.app/api/token/10/0xB9A14C5C760023801f8c731b4621C99F8ac211D9/logo-128.png",
+      "address": "0xB9655427238E8DeC61fBF6bd8Cc1aD9a26b5A8A4",
+      "name": "Velodrome V2 StableV2 AMM - USDC/MIM",
+      "symbol": "sAMMV2-USDC/MIM",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
     },
     {
-      "address": "0xBBaf6181FBf0C624699c7E56Ba109a53ECa846F2",
-      "name": "Curve.fi Factory Plain Pool: amapool",
-      "symbol": "AMP-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+      "address": "0xB9A14C5C760023801f8c731b4621C99F8ac211D9",
+      "name": "Yearn Velodrome v2 SONNE-USDC.e Factory yVault",
+      "symbol": "yvVelo-SONNE-USDC.e-f",
+      "logoURI": "https://assets.smold.app/api/token/10/0xB9A14C5C760023801f8c731b4621C99F8ac211D9/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -4299,14 +4291,6 @@
       "decimals": 18
     },
     {
-      "address": "0xaC1DdC2395de635A5dA015d3808Be925e8f67bDe",
-      "name": "Beefy Moo VeloV2 BOB-ETH",
-      "symbol": "mooVeloV2BOB-ETH",
-      "logoURI": "https://assets.coingecko.com/coins/images/12704/large/token.png",
-      "chainId": 10,
-      "decimals": 18
-    },
-    {
       "address": "0xaD17A225074191d5c8a37B50FdA1AE278a2EE6A2",
       "name": "Yearn USDC.e yVault",
       "symbol": "yvUSDC.e",
@@ -4387,14 +4371,6 @@
       "decimals": 18
     },
     {
-      "address": "0xb4E4CFA9971C7e1069685771DaB61CA56e72e5C3",
-      "name": "Yearn Curve sETH Pool yVault",
-      "symbol": "yvCurve-sETH",
-      "logoURI": "https://assets.smold.app/api/token/10/0xb4E4CFA9971C7e1069685771DaB61CA56e72e5C3/logo-128.png",
-      "chainId": 10,
-      "decimals": 18
-    },
-    {
       "address": "0xb532178708814F0c174B29B991D2b355106Afbc3",
       "name": "Astrava",
       "symbol": "AST",
@@ -4422,6 +4398,14 @@
       "address": "0xb90Da30758B00e5f08e6C0b71BFF122712D830CB",
       "name": "Velodrome V2 VolatileV2 AMM - EXA/OP",
       "symbol": "vAMMV2-EXA/OP",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xbC26519f936A90E78fe2C9aA2A03CC208f041234",
+      "name": "Velodrome V2 StableV2 AMM - USDC/sUSD",
+      "symbol": "sAMMV2-USDC/sUSD",
       "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
@@ -4702,6 +4686,14 @@
       "address": "0xcf803EA54642aed9bFBc3Aa324C3657BCAD20c61",
       "name": "Velodrome V2 VolatileV2 AMM - OP/LYRA",
       "symbol": "vAMMV2-OP/LYRA",
+      "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0xd1141f9d00DC97BD1F4fD0F67D3F112bbc98324C",
+      "name": "Velodrome V2 StableV2 AMM - WETH/mooBIFI",
+      "symbol": "sAMMV2-WETH/mooBIFI",
       "logoURI": "https://assets.coingecko.com/coins/images/25783/large/velo.png",
       "chainId": 10,
       "decimals": 18
