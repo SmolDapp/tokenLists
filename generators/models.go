@@ -84,7 +84,7 @@ func SetToken(
 	token.Address = address.Hex()
 	token.Name = name
 	token.Symbol = symbol
-	token.LogoURI = helpers.UseIcon(token.ChainID, address, logoURI)
+	token.LogoURI = helpers.UseIcon(chainID, token.Name+` - `+token.Symbol, address, logoURI)
 	return token, nil
 }
 

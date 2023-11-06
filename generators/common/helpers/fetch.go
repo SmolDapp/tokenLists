@@ -34,7 +34,6 @@ func FetchJSON[T any](uri string) (data T) {
 	}
 
 	if (resp.StatusCode < 200) || (resp.StatusCode > 299) {
-		logs.Error(`failed to fetch: ` + uri)
 		return data
 	}
 
