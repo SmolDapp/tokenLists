@@ -48,7 +48,7 @@ func fetchYearnTokenList() []TokenListToken {
 			common.HexToAddress(vault.Address),
 			helpers.SafeString(vault.DisplayName, vault.Name),
 			helpers.SafeString(vault.DisplaySymbol, vault.Symbol),
-			`https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/`+chainIDStr+`/`+vault.Address+`/logo-128.png`,
+			`https://assets.smold.app/api/token/`+chainIDStr+`/`+vault.Address+`/logo-128.png`,
 			vault.ChainID,
 			int(vault.Decimals),
 		); err == nil {
@@ -59,20 +59,21 @@ func fetchYearnTokenList() []TokenListToken {
 			common.HexToAddress(vault.Token.Address),
 			helpers.SafeString(vault.Token.DisplayName, vault.Token.Name),
 			helpers.SafeString(vault.Token.DisplaySymbol, vault.Token.Symbol),
-			`https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/`+chainIDStr+`/`+vault.Token.Address+`/logo-128.png`,
+			`https://assets.smold.app/api/token/`+chainIDStr+`/`+vault.Token.Address+`/logo-128.png`,
 			vault.ChainID,
 			int(vault.Token.Decimals),
 		); err == nil {
 			tokens = append(tokens, newToken)
 		}
 	}
+
 	return tokens
 }
 
 func buildYearnTokenList() {
 	tokenList := loadTokenListFromJsonFile(`yearn.json`)
 	tokenList.Name = `Yearn Token List`
-	tokenList.LogoURI = `https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg`
+	tokenList.LogoURI = `https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg`
 	tokenList.Keywords = []string{`yearn`, `yfi`, `yvault`, `ytoken`, `ycurve`, `yprotocol`, `vaults`}
 	tokens := fetchYearnTokenList()
 
