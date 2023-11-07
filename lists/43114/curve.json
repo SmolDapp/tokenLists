@@ -1,10 +1,10 @@
 {
   "name": "Curve Token List",
   "description": "",
-  "timestamp": "06/11/2023 16:40:41",
+  "timestamp": "07/11/2023 15:31:14",
   "version": {
-    "major": 10,
-    "minor": 19,
+    "major": 11,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://classic.curve.fi/logo.png",
@@ -37,7 +37,7 @@
     {
       "address": "0x025AB35fF6AbccA56d57475249baaEae08419039",
       "name": "Arable USD",
-      "symbol": "arusd",
+      "symbol": "arUSD",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -164,8 +164,8 @@
     },
     {
       "address": "0x1337BedC9D22ecbe766dF105c9623922A27963EC",
-      "name": "LP 3pool Curve",
-      "symbol": "3CRV",
+      "name": "Curve.fi avDAI/avUSDC/avUSDT",
+      "symbol": "av3CRV",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -373,7 +373,7 @@
     {
       "address": "0x2dc3Bb328000553D1D64ec1BEF00572F62B5Ec7C",
       "name": "xWalrus",
-      "symbol": "xwlrs",
+      "symbol": "XWLRS",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -628,8 +628,8 @@
     },
     {
       "address": "0x5689AA012a0D1E4Cb3f3A70D8cC9FDD2bAbDcdE9",
-      "name": "Trader Joe LP WAVAX/aXEN",
-      "symbol": "WAVAX/aXEN",
+      "name": "Joe LP Token",
+      "symbol": "JLP",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -732,8 +732,8 @@
     },
     {
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
-      "name": "Aave USDC",
-      "symbol": "AUSDC",
+      "name": "Aave Avalanche USDC",
+      "symbol": "aAvaUSDC",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -748,7 +748,7 @@
     },
     {
       "address": "0x65069e550C5526c029DC9135eDD02F6683859Ac1",
-      "name": "Pole (North Pole)",
+      "name": "POLE",
       "symbol": "POLE",
       "logoURI": "",
       "chainId": 43114,
@@ -812,8 +812,8 @@
     },
     {
       "address": "0x6C6f910A79639dcC94b4feEF59Ff507c2E843929",
-      "name": "Ankr Avalanche Reward Earning Bond",
-      "symbol": "AAVAXB",
+      "name": "Ankr Reward Earning AVAX",
+      "symbol": "aAVAXb",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -836,8 +836,8 @@
     },
     {
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
-      "name": "Aave USDT",
-      "symbol": "AUSDT",
+      "name": "Aave Avalanche USDT",
+      "symbol": "aAvaUSDT",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -957,15 +957,15 @@
     {
       "address": "0x820802Fa8a99901F52e39acD21177b0BE6EE2974",
       "name": "EUROe Stablecoin",
-      "symbol": "euroe",
+      "symbol": "EUROe",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
     },
     {
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
-      "name": "Aave DAI",
-      "symbol": "ADAI",
+      "name": "Aave Avalanche DAI",
+      "symbol": "aAvaDAI",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1084,8 +1084,8 @@
     },
     {
       "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
-      "name": "Tether",
-      "symbol": "USDT",
+      "name": "TetherToken",
+      "symbol": "USDt",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6
@@ -1124,7 +1124,7 @@
     },
     {
       "address": "0xA56F9A54880afBc30CF29bB66d2D9ADCdcaEaDD6",
-      "name": "Qi Dao",
+      "name": "Qi Dao Protocol",
       "symbol": "QI",
       "logoURI": "",
       "chainId": 43114,
@@ -1245,7 +1245,7 @@
     {
       "address": "0xC0C5AA69Dbe4d6DDdfBc89c0957686ec60F24389",
       "name": "XEN Crypto",
-      "symbol": "xen",
+      "symbol": "aXEN",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1317,7 +1317,7 @@
     {
       "address": "0xD036414fa2BCBb802691491E323BFf1348C5F4Ba",
       "name": "Mu Coin",
-      "symbol": "mu",
+      "symbol": "MU",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1395,14 +1395,6 @@
       "decimals": 18
     },
     {
-      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Ethereum",
-      "symbol": "ETH",
-      "logoURI": "",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0xF0f89e16c2a86fB81675A0A39701A8B688025146",
       "name": "Curve.fi Factory Plain Pool: MU-Aave",
       "symbol": "mu-aave-f",
@@ -1452,8 +1444,8 @@
     },
     {
       "address": "0xaB05b04743E0aeAF9D2cA81E5D3b8385e4BF961e",
-      "name": "SpiceUSD",
-      "symbol": "usds",
+      "name": "Spice USD",
+      "symbol": "USDS",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1508,7 +1500,7 @@
     },
     {
       "address": "0xb599c3590F42f8F995ECfa0f85D2980B76862fc1",
-      "name": "TerraUSD (Wormhole)",
+      "name": "UST",
       "symbol": "UST",
       "logoURI": "",
       "chainId": 43114,
@@ -1620,8 +1612,8 @@
     },
     {
       "address": "0xd39016475200ab8957e9C772C949Ef54bDA69111",
-      "name": "deUSDC",
-      "symbol": "deusdc",
+      "name": "Curve.fi Factory USD Metapool: deBridge-USDC",
+      "symbol": "deUSDС-3CRV-f",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 18
@@ -1756,8 +1748,8 @@
     },
     {
       "address": "0xfaB550568C688d5D8A52C7d794cb93Edc26eC0eC",
-      "name": "axlUSDC",
-      "symbol": "axlusdc",
+      "name": "Axelar Wrapped USDC",
+      "symbol": "axlUSDC",
       "logoURI": "",
       "chainId": 43114,
       "decimals": 6

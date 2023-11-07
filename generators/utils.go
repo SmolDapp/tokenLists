@@ -256,8 +256,10 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 	missingAddresses := []common.Address{}
 
 	for _, v := range addresses {
-		//check in ALL_EXISTING_TOKENS[chainID][helpers.ToAddress(v)]
 		if token, ok := ALL_EXISTING_TOKENS[chainID][v.Hex()]; ok {
+			if token.Name == `` || token.Symbol == `` || token.Decimals == 0 {
+				logs.Warning(`Missing informations for token:`, token.Address)
+			}
 			erc20Map[v.Hex()] = &ethereum.TERC20{
 				Address:  v,
 				Name:     token.Name,
@@ -274,6 +276,9 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 		erc20Map[k] = v
 		if _, ok := ALL_EXISTING_TOKENS[chainID]; !ok {
 			ALL_EXISTING_TOKENS[chainID] = make(map[string]TokenListToken)
+		}
+		if v.Name == `` && v.Symbol == `` {
+			logs.Warning(`Missing informations for token:`, v.Address, `on chain:`, chainID)
 		}
 		ALL_EXISTING_TOKENS[chainID][k] = TokenListToken{
 			Address:    v.Address.Hex(),

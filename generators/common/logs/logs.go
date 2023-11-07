@@ -81,7 +81,7 @@ func Warning(warning ...interface{}) {
 	str1 := `[WARN]`
 	t := time.Now().Format("2006/01/02 15:04:05")
 
-	spew.Printf("%s %-17s %s %s %s\n", t, colorMagenta(str0), colorYellow(str1), colorYellow(warning))
+	spew.Printf("%s %-17s %s %s\n", t, colorMagenta(str0), colorYellow(str1), colorYellow(warning))
 }
 
 // Info function logs an info message

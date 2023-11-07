@@ -145,13 +145,15 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 			SIZE_ERROR := strings.Contains(strings.ToLower(err.Error()), "request entity too large")
 			OUT_OF_GAS_ERROR := strings.Contains(strings.ToLower(err.Error()), "out of gas")
 			isAssumingOutOfGas := false
+			chainID, _ := caller.Client.ChainID(context.Background())
 
+			// logs.Pretty(rawCallsGroup)
 			if LIMIT_ERROR {
-				logs.Warning("Multicall gas limit error, retrying with smaller batch size", "batchSize", batchSize)
+				logs.Warning("Multicall gas limit error, retrying with smaller batch size: " + strconv.Itoa(batchSize) + " on chain " + chainID.Text(10))
 			} else if SIZE_ERROR {
-				logs.Warning("Multicall size error, retrying with smaller batch size", "batchSize", batchSize)
+				logs.Warning("Multicall size error, retrying with smaller batch size: " + strconv.Itoa(batchSize) + " on chain " + chainID.Text(10))
 			} else if OUT_OF_GAS_ERROR {
-				logs.Warning("Multicall out of gas error, retrying with smaller batch size", "batchSize", batchSize)
+				logs.Warning("Multicall out of gas error, retrying with smaller batch size: " + strconv.Itoa(batchSize) + " on chain " + chainID.Text(10))
 			} else {
 				//assume it's out of gas for a few tries
 				isAssumingOutOfGas = true

@@ -55,7 +55,7 @@ var DEFAULT_RPC_ENDPOINTS = map[uint64]string{
 
 // MULTICALL_ADDRESSES contains the address of the multicall2 contract for a specific chainID
 var MULTICALL_ADDRESSES = map[uint64]common.Address{
-	1:     common.HexToAddress(`0x5ba1e12693dc8f9c48aad8770482f4739beed696`),
+	1:     common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 	5:     common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 	10:    common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 	56:    common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
