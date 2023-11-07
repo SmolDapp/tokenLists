@@ -385,7 +385,7 @@ var BSC = TokenListToken{
 }
 var MATIC = TokenListToken{
 	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
-	Name:     `Polygon`,
+	Name:     `Matic`,
 	Symbol:   `MATIC`,
 	LogoURI:  ``,
 	ChainID:  137,
