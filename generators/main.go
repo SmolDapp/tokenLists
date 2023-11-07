@@ -14,6 +14,7 @@ var ALL_EXISTING_TOKENS = map[uint64]map[string]TokenListToken{}
 func main() {
 	helpers.Init()
 	ethereum.Init()
+	loadAllTokenLogoURI()
 
 	if len(os.Args) < 2 {
 		for name, generator := range GENERATORS {

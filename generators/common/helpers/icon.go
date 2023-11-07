@@ -9,6 +9,11 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
+const DEFAULT_SMOL_NOT_FOUND = `https://assets.smold.app/not-found.png`
+const DEFAULT_PARASWAP_NOT_FOUND = `https://cdn.paraswap.io/token/token.png`
+const DEFAULT_ETHERSCAN_NOT_FOUND = `https://etherscan.io/images/main/empty-token.png`
+
+var ExistingTokenLogoURI = make(map[uint64]map[string]string)
 var smoldAssetsPerChain = make(map[uint64][]string)
 var shouldLogAssetError = false
 
@@ -46,14 +51,21 @@ func UseIcon(chainID uint64, tokenName string, tokenAddress common.Address, fall
 	if shouldLogAssetError {
 		logs.Info(`Missing icon for token ` + tokenName + ` (` + tokenAddress.Hex() + `) on chain ` + strconv.FormatUint(chainID, 10))
 	}
-	if strings.Contains(fallback, `https://cdn.paraswap.io/token/token.png`) {
-		return `https://assets.smold.app/not-found.png`
-	}
 	if strings.Contains(fallback, `assets.coingecko.com`) && strings.Contains(fallback, `/thumb/`) {
 		fallback = strings.Replace(fallback, `/thumb/`, `/large/`, 1)
 	}
 	if strings.Contains(fallback, `assets.coingecko.com`) && strings.Contains(fallback, `/small/`) {
 		fallback = strings.Replace(fallback, `/small/`, `/large/`, 1)
 	}
+
+	if _, ok := ExistingTokenLogoURI[chainID]; ok {
+		if existingLogo, ok := ExistingTokenLogoURI[chainID][tokenAddress.Hex()]; ok {
+			fallback = existingLogo
+		}
+	}
+	if strings.Contains(fallback, DEFAULT_PARASWAP_NOT_FOUND) || strings.Contains(fallback, DEFAULT_ETHERSCAN_NOT_FOUND) {
+		return DEFAULT_SMOL_NOT_FOUND
+	}
+
 	return fallback
 }
