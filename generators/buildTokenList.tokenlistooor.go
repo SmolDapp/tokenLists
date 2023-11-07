@@ -103,5 +103,10 @@ func buildTokenListooorList() {
 		}
 	}
 
+	allTokensPlain = append(allTokensPlain, ETHER)
+	allTokensPlain = append(allTokensPlain, FTM)
+	allTokensPlain = append(allTokensPlain, BSC)
+	allTokensPlain = append(allTokensPlain, MATIC)
+	allTokensPlain = append(allTokensPlain, XDAI)
 	saveTokenListInJsonFile(tokenList, allTokensPlain, `tokenlistooor.json`, Standard)
 }
