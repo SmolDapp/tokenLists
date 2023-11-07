@@ -364,6 +364,7 @@ var ETHER = TokenListToken{
 	Name:     `Ethereum`,
 	Symbol:   `ETH`,
 	LogoURI:  ``,
+	ChainID:  1,
 	Decimals: 18,
 }
 var FTM = TokenListToken{
@@ -371,6 +372,7 @@ var FTM = TokenListToken{
 	Name:     `Fantom`,
 	Symbol:   `FTM`,
 	LogoURI:  ``,
+	ChainID:  250,
 	Decimals: 18,
 }
 var BSC = TokenListToken{
@@ -378,6 +380,7 @@ var BSC = TokenListToken{
 	Name:     `Binance Smart Chain`,
 	Symbol:   `BNB`,
 	LogoURI:  ``,
+	ChainID:  56,
 	Decimals: 18,
 }
 var MATIC = TokenListToken{
@@ -385,6 +388,7 @@ var MATIC = TokenListToken{
 	Name:     `Polygon`,
 	Symbol:   `MATIC`,
 	LogoURI:  ``,
+	ChainID:  137,
 	Decimals: 18,
 }
 var XDAI = TokenListToken{
@@ -392,5 +396,6 @@ var XDAI = TokenListToken{
 	Name:     `xDai`,
 	Symbol:   `xDAI`,
 	LogoURI:  ``,
+	ChainID:  100,
 	Decimals: 18,
 }
