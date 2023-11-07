@@ -84,7 +84,18 @@ func saveTokenListInJsonFile(
 			if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(token.ChainID, common.HexToAddress(token.Address)) {
 				continue
 			}
-			tokenList.NextTokensMap[getKey(token.ChainID, common.HexToAddress(token.Address))] = token
+			newToken, err := SetToken(
+				common.HexToAddress(token.Address),
+				token.Name,
+				token.Symbol,
+				token.LogoURI,
+				token.ChainID,
+				token.Decimals,
+			)
+			if err != nil {
+				continue
+			}
+			tokenList.NextTokensMap[getKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
 		}
 	}
 
@@ -92,7 +103,19 @@ func saveTokenListInJsonFile(
 		if helpers.IsChainIDIgnored(token.ChainID) {
 			continue
 		}
-		tokenList.NextTokensMap[getKey(token.ChainID, common.HexToAddress(token.Address))] = token
+		newToken, err := SetToken(
+			common.HexToAddress(token.Address),
+			token.Name,
+			token.Symbol,
+			token.LogoURI,
+			token.ChainID,
+			token.Decimals,
+		)
+		if err != nil {
+			logs.Error(err)
+			continue
+		}
+		tokenList.NextTokensMap[getKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
 	}
 
 	if len(tokenList.NextTokensMap) == 0 {
@@ -178,11 +201,17 @@ func saveTokenListInJsonFile(
 		}
 		chainIDStr := strconv.FormatUint(chainID, 10)
 		tokenList.Tokens = tokens
+
 		jsonData, err := json.MarshalIndent(tokenList, "", "  ")
 		if err != nil {
+			logs.Error(err)
 			return err
 		}
-		helpers.CreateFile(helpers.BASE_PATH + `/lists/` + chainIDStr)
+		if err := helpers.CreateFile(helpers.BASE_PATH + `/lists/` + chainIDStr); err != nil {
+			logs.Error(err)
+			return err
+		}
+
 		if err = os.WriteFile(helpers.BASE_PATH+`/lists/`+chainIDStr+`/`+filePath, jsonData, 0644); err != nil {
 			logs.Error(err)
 			return err

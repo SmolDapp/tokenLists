@@ -47,6 +47,6 @@ func main() {
 		}
 	}
 
-	buildTokenListooorList()
+	// buildTokenListooorList()
 	buildSummary()
 }

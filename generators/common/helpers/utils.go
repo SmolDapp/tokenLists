@@ -27,7 +27,7 @@ func ToAddress(value string) string {
 
 func IncludesAddress(slice []string, value common.Address) bool {
 	for _, item := range slice {
-		if common.HexToAddress(item) == value {
+		if common.HexToAddress(item).Hex() == value.Hex() {
 			return true
 		}
 	}

@@ -70,7 +70,7 @@ func fetchbebopTokenList() []TokenListToken {
 	}
 
 	for _, chainID := range supportedChainID {
-		list := helpers.FetchJSON[TBebopList](`https://api.bebop.xyz/` + bebopMapNetworkChainIDToName(chainID) + `/v1/token-info`)
+		list := helpers.FetchJSON[TBebopList](`https://api.bebop.xyz/` + bebopMapNetworkChainIDToName(chainID) + `/v2/token-info`)
 		for _, token := range list.Tokens {
 			if !token.Availability.IsAvailable {
 				continue
@@ -92,7 +92,6 @@ func fetchbebopTokenList() []TokenListToken {
 				int(token.Decimals),
 			); err == nil {
 				if tokenFromList, ok := tokenMap[token.Address]; ok {
-					newToken.LogoURI = tokenFromList.LogoURI
 					newToken.Metadata = map[string]any{
 						`tags`:            tokenFromList.Tags,
 						`color`:           tokenFromList.Extensions.Color,
