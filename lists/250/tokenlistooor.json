@@ -1,9 +1,9 @@
 {
   "name": "Tokenlistooor Token List",
   "description": "A curated list of tokens from all the token lists on tokenlistooor.",
-  "timestamp": "06/11/2023 16:40:45",
+  "timestamp": "07/11/2023 14:46:41",
   "version": {
-    "major": 42,
+    "major": 45,
     "minor": 0,
     "patch": 0
   },
@@ -27,17 +27,33 @@
       "decimals": 18
     },
     {
+      "address": "0x03B82e4070cA32FF63A03F2EcfC16c0165689a9d",
+      "name": "Yearn yvAVAX 0.4.3",
+      "symbol": "yvAVAX",
+      "logoURI": "https://assets.smold.app/api/token/250/0x03B82e4070cA32FF63A03F2EcfC16c0165689a9d/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
-      "name": "USD Coin",
+      "name": "USDC",
       "symbol": "USDC",
       "logoURI": "https://assets.smold.app/api/token/250/0x04068DA6C83AFCFA0e13ba15A6696662335D5B75/logo-128.png",
       "chainId": 250,
       "decimals": 6
     },
     {
+      "address": "0x0446acaB3e0242fCf33Aa526f1c95a88068d5042",
+      "name": "Yearn yvCRV 0.4.3",
+      "symbol": "yvCRV",
+      "logoURI": "https://assets.smold.app/api/token/250/0x0446acaB3e0242fCf33Aa526f1c95a88068d5042/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
-      "name": "Frapped USDT",
-      "symbol": "fUSDT",
+      "name": "Tether",
+      "symbol": "USDT",
       "logoURI": "https://assets.smold.app/api/token/250/0x049d68029688eAbF473097a2fC38ef61633A3C7A/logo-128.png",
       "chainId": 250,
       "decimals": 6
@@ -155,6 +171,14 @@
       "decimals": 18
     },
     {
+      "address": "0x1b48641D8251c3E84ecbe3f2bD76B3701401906D",
+      "name": "Yearn yvDOLA 0.4.3",
+      "symbol": "yvDOLA",
+      "logoURI": "https://assets.smold.app/api/token/250/0x1b48641D8251c3E84ecbe3f2bD76B3701401906D/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0x1e2fe8074a5ce1Bb7394856B0C618E75D823B93b",
       "name": "fBEETS",
       "symbol": "yvfBEETS",
@@ -188,7 +212,7 @@
     },
     {
       "address": "0x29b0Da86e484E1C0029B56e817912d778aC0EC69",
-      "name": "yearn.fi",
+      "name": "yearn.finance",
       "symbol": "YFI",
       "logoURI": "https://assets.smold.app/api/token/250/0x29b0Da86e484E1C0029B56e817912d778aC0EC69/logo-128.png",
       "chainId": 250,
@@ -212,8 +236,8 @@
     },
     {
       "address": "0x2dd7C9371965472E5A5fD28fbE165007c61439E1",
-      "name": "Curve MIM 3Pool",
-      "symbol": "crvMIM3Pool",
+      "name": "Curve.fi Factory Plain Pool: 3poolV2",
+      "symbol": "3poolV2-f",
       "logoURI": "https://assets.smold.app/api/token/250/0x2dd7C9371965472E5A5fD28fbE165007c61439E1/logo-128.png",
       "chainId": 250,
       "decimals": 18
@@ -228,11 +252,19 @@
     },
     {
       "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
-      "name": "Bitcoin",
-      "symbol": "BTC",
+      "name": "Wrapped Bitcoin",
+      "symbol": "WBTC",
       "logoURI": "https://assets.smold.app/api/token/250/0x321162Cd933E2Be498Cd2267a90534A804051b11/logo-128.png",
       "chainId": 250,
       "decimals": 8
+    },
+    {
+      "address": "0x357ca46da26E1EefC195287ce9D838A6D5023ef3",
+      "name": "Yearn yvFRAX 0.4.3",
+      "symbol": "yvFRAX",
+      "logoURI": "https://assets.smold.app/api/token/250/0x357ca46da26E1EefC195287ce9D838A6D5023ef3/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
     },
     {
       "address": "0x38aCa5484B8603373Acc6961Ecd57a6a594510A3",
@@ -324,8 +356,8 @@
     },
     {
       "address": "0x58e57cA18B7A47112b877E31929798Cd3D703b0f",
-      "name": "Curve triCrypto Pool",
-      "symbol": "crvTricrypto",
+      "name": "Curve.fi USD-BTC-ETH",
+      "symbol": "crv3crypto",
       "logoURI": "https://assets.smold.app/api/token/250/0x58e57cA18B7A47112b877E31929798Cd3D703b0f/logo-128.png",
       "chainId": 250,
       "decimals": 18
@@ -428,8 +460,8 @@
     },
     {
       "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
-      "name": "Ethereum",
-      "symbol": "ETH",
+      "name": "WETH",
+      "symbol": "WETH",
       "logoURI": "https://assets.smold.app/api/token/250/0x74b23882a30290451A17c44f4F05243b6b58C76d/logo-128.png",
       "chainId": 250,
       "decimals": 18
@@ -468,7 +500,7 @@
     },
     {
       "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
-      "name": "SpookyToken",
+      "name": "Spookyswap",
       "symbol": "BOO",
       "logoURI": "https://assets.smold.app/api/token/250/0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE/logo-128.png",
       "chainId": 250,
@@ -492,7 +524,7 @@
     },
     {
       "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
-      "name": "Dai Stablecoin",
+      "name": "Dai",
       "symbol": "DAI",
       "logoURI": "https://assets.smold.app/api/token/250/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E/logo-128.png",
       "chainId": 250,
@@ -597,8 +629,8 @@
     {
       "address": "0xB67FA6deFCe4042070Eb1ae1511Dcd6dcc6a532E",
       "name": "Alchemix USD",
-      "symbol": "alusd",
-      "logoURI": "https://assets.coingecko.com/coins/images/14114/large/Alchemix_USD.png?1614410406",
+      "symbol": "ALUSD",
+      "logoURI": "https://tokens.1inch.io/0xb67fa6defce4042070eb1ae1511dcd6dcc6a532e.png",
       "chainId": 250,
       "decimals": 18
     },
@@ -636,8 +668,8 @@
     },
     {
       "address": "0xD02a30d33153877BC20e5721ee53DeDEE0422B2F",
-      "name": "Curve Geist Pool",
-      "symbol": "crvGEIST",
+      "name": "Curve.fi gDAI/gUSDC/gUSDT",
+      "symbol": "G3CRV",
       "logoURI": "https://assets.smold.app/api/token/250/0xD02a30d33153877BC20e5721ee53DeDEE0422B2F/logo-128.png",
       "chainId": 250,
       "decimals": 18
@@ -645,8 +677,16 @@
     {
       "address": "0xD3b71117E6C1558c1553305b44988cd944e97300",
       "name": "Yel.Finance",
-      "symbol": "yel",
-      "logoURI": "https://assets.coingecko.com/coins/images/17429/large/Logo200.png?1627613989",
+      "symbol": "YEL",
+      "logoURI": "https://tokens.1inch.io/0xd3b71117e6c1558c1553305b44988cd944e97300.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
+      "address": "0xD3c19eB022CAC706c898D60d756bf1535d605e1d",
+      "name": "Yearn yvSPELL 0.4.3",
+      "symbol": "yvSPELL",
+      "logoURI": "https://assets.smold.app/api/token/250/0xD3c19eB022CAC706c898D60d756bf1535d605e1d/logo-128.png",
       "chainId": 250,
       "decimals": 18
     },
@@ -691,6 +731,14 @@
       "decimals": 6
     },
     {
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "name": "FTM",
+      "symbol": "FTM",
+      "logoURI": "https://assets.smold.app/api/token/250/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
+      "chainId": 250,
+      "decimals": 18
+    },
+    {
       "address": "0xF137D22d7B23eeB1950B3e19d1f578c053ed9715",
       "name": "Curve Geist",
       "symbol": "yvCurve-Geist",
@@ -724,7 +772,7 @@
     },
     {
       "address": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8",
-      "name": "ChainLink",
+      "name": "Chainlink",
       "symbol": "LINK",
       "logoURI": "https://assets.smold.app/api/token/250/0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8/logo-128.png",
       "chainId": 250,
