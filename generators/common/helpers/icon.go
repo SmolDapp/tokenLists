@@ -46,7 +46,9 @@ func UseIcon(chainID uint64, tokenName string, tokenAddress common.Address, fall
 	if shouldLogAssetError {
 		logs.Info(`Missing icon for token ` + tokenName + ` (` + tokenAddress.Hex() + `) on chain ` + strconv.FormatUint(chainID, 10))
 	}
-
+	if strings.Contains(fallback, `https://cdn.paraswap.io/token/token.png?fallback=true`) {
+		return `https://assets.smold.app/not-found.png`
+	}
 	if strings.Contains(fallback, `assets.coingecko.com`) && strings.Contains(fallback, `/thumb/`) {
 		fallback = strings.Replace(fallback, `/thumb/`, `/large/`, 1)
 	}
