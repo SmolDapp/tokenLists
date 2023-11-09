@@ -95,7 +95,6 @@ func (caller *TEthMultiCaller) execute(
 			To:   &caller.ContractAddress,
 			Data: callData,
 			Gas:  0,
-			From: caller.Signer.From,
 		},
 		blockNumber,
 	)
@@ -114,6 +113,10 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 	batchSize int,
 	blockNumber *big.Int,
 ) map[string][]interface{} {
+	if caller.Client == nil {
+		logs.Error("No client provided.")
+		return nil
+	}
 	var responses []CallResponse
 	// Create mapping for results. Be aware that we sometimes get two empty results initially, unsure why
 	results := make(map[string][]interface{})

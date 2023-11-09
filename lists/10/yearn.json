@@ -1,11 +1,11 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "07/11/2023 17:41:04",
+  "timestamp": "09/11/2023 19:01:59",
   "version": {
     "major": 31,
-    "minor": 0,
-    "patch": 1
+    "minor": 1,
+    "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
   "keywords": [
@@ -20,7 +20,7 @@
   "tokens": [
     {
       "address": "0x00Cb8E36A9C40491A39e8bF2864Ed30C1B579860",
-      "name": "Velodrome tBTC-WBTC",
+      "name": "Velodrome v2 tBTC-WBTC Factory yVault",
       "symbol": "yvVelo-tBTC-WBTC-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x00Cb8E36A9C40491A39e8bF2864Ed30C1B579860/logo-128.png",
       "chainId": 10,
@@ -28,7 +28,7 @@
     },
     {
       "address": "0x00a2faF97CC2b985B29a0a0eAa6E0D8033Dc0eA1",
-      "name": "Velodrome tBTC-WETH",
+      "name": "Velodrome v2 tBTC-WETH Factory yVault",
       "symbol": "yvVelo-tBTC-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x00a2faF97CC2b985B29a0a0eAa6E0D8033Dc0eA1/logo-128.png",
       "chainId": 10,
@@ -36,7 +36,7 @@
     },
     {
       "address": "0x01c77E8a099e97B7b0Dca2F987d9bd1911CdDE50",
-      "name": "Velodrome SNX-USDC.e",
+      "name": "Velodrome v2 SNX-USDC.e Factory yVault",
       "symbol": "yvVelo-SNX-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x01c77E8a099e97B7b0Dca2F987d9bd1911CdDE50/logo-128.png",
       "chainId": 10,
@@ -44,7 +44,7 @@
     },
     {
       "address": "0x03894Ca9b0CABfC53dDE7C2DCfcC2A58D6192687",
-      "name": "Velodrome agEUR-USDC.e",
+      "name": "Velodrome v2 agEUR-USDC.e Factory yVault",
       "symbol": "yvVelo-agEUR-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x03894Ca9b0CABfC53dDE7C2DCfcC2A58D6192687/logo-128.png",
       "chainId": 10,
@@ -52,15 +52,15 @@
     },
     {
       "address": "0x0493Bf8b6DBB159Ce2Db2E0E8403E753Abd1235b",
-      "name": "Velodrome Volatile WETH-USDC.e",
-      "symbol": "vAMMV2-WETH/USDC.e",
+      "name": "VolatileV2 AMM - WETH/USDC",
+      "symbol": "vAMMV2-WETH/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x0493Bf8b6DBB159Ce2Db2E0E8403E753Abd1235b/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x05bBAF27429EB35cb3d51a979aCBA69f2F00E66A",
-      "name": "Velodrome wTBT-USDC.e",
+      "name": "Velodrome v2 wTBT-USDC.e Factory yVault",
       "symbol": "yvVelo-wTBT-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x05bBAF27429EB35cb3d51a979aCBA69f2F00E66A/logo-128.png",
       "chainId": 10,
@@ -68,7 +68,7 @@
     },
     {
       "address": "0x061b87122Ed14b9526A813209C8a59a633257bAb",
-      "name": "Curve sUSD Pool",
+      "name": "Curve.fi Factory USD Metapool: sUSD Synthetix",
       "symbol": "sUSD3CRV-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x061b87122Ed14b9526A813209C8a59a633257bAb/logo-128.png",
       "chainId": 10,
@@ -76,7 +76,7 @@
     },
     {
       "address": "0x0b28C2e41058EDc7D66c516c617b664Ea86eeC5d",
-      "name": "Velodrome Stable USD+-DOLA",
+      "name": "StableV2 AMM - USD+/DOLA",
       "symbol": "sAMMV2-USD+/DOLA",
       "logoURI": "https://assets.smold.app/api/token/10/0x0b28C2e41058EDc7D66c516c617b664Ea86eeC5d/logo-128.png",
       "chainId": 10,
@@ -84,23 +84,23 @@
     },
     {
       "address": "0x0df083de449F75691fc5A36477a6f3284C269108",
-      "name": "Velodrome Volatile OP-USDC.e",
-      "symbol": "vAMMV2-OP/USDC.e",
+      "name": "VolatileV2 AMM - OP/USDC",
+      "symbol": "vAMMV2-OP/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x0df083de449F75691fc5A36477a6f3284C269108/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x19715771E30c93915A5bbDa134d782b81A820076",
-      "name": "Velodrome Stable USDC.e-DAI",
-      "symbol": "sAMM-USDC.e/DAI",
+      "name": "StableV2 AMM - USDC/DAI",
+      "symbol": "sAMMV2-USDC/DAI",
       "logoURI": "https://assets.smold.app/api/token/10/0x19715771E30c93915A5bbDa134d782b81A820076/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x1AD06Ca54de04DBe9e2817F4C13eCB406DCbeAf0",
-      "name": "Velodrome Stable alETH-frxETH",
+      "name": "StableV2 AMM - alETH/frxETH",
       "symbol": "sAMMV2-alETH/frxETH",
       "logoURI": "https://assets.smold.app/api/token/10/0x1AD06Ca54de04DBe9e2817F4C13eCB406DCbeAf0/logo-128.png",
       "chainId": 10,
@@ -108,7 +108,7 @@
     },
     {
       "address": "0x1B1d2EfB6045851F8ccdE24369003e0fF157980b",
-      "name": "Velodrome sUSD-USDC.e",
+      "name": "Velodrome v2 sUSD-USDC.e Factory yVault",
       "symbol": "yvVelo-sUSD-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x1B1d2EfB6045851F8ccdE24369003e0fF157980b/logo-128.png",
       "chainId": 10,
@@ -116,15 +116,15 @@
     },
     {
       "address": "0x1c8d7fc2eAa85af18188f7619b99f939Db34836d",
-      "name": "Velodrome Volatile QI-USDC.e",
-      "symbol": "vAMMV2-QI/USDC.e",
+      "name": "VolatileV2 AMM - QI/USDC",
+      "symbol": "vAMMV2-QI/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x1c8d7fc2eAa85af18188f7619b99f939Db34836d/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x1d49ab5b03268E329fc7d2111E5364e63b36a3cE",
-      "name": "Velodrome MAI-USDC.e",
+      "name": "Velodrome v2 MAI-USDC.e Factory yVault",
       "symbol": "yvVelo-MAI-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x1d49ab5b03268E329fc7d2111E5364e63b36a3cE/logo-128.png",
       "chainId": 10,
@@ -132,7 +132,7 @@
     },
     {
       "address": "0x1f8b46abe1EAbF5A60CbBB5Fb2e4a6A46fA0b6e6",
-      "name": "Velodrome Stable FRAX-DOLA",
+      "name": "StableV2 AMM - FRAX/DOLA",
       "symbol": "sAMMV2-FRAX/DOLA",
       "logoURI": "https://assets.smold.app/api/token/10/0x1f8b46abe1EAbF5A60CbBB5Fb2e4a6A46fA0b6e6/logo-128.png",
       "chainId": 10,
@@ -140,23 +140,23 @@
     },
     {
       "address": "0x2B47C794c3789f499D8A54Ec12f949EeCCE8bA16",
-      "name": "Velodrome Stable USDC.e-USDT",
-      "symbol": "sAMMV2-USDC.e/USDT",
+      "name": "StableV2 AMM - USDC/USDT",
+      "symbol": "sAMMV2-USDC/USDT",
       "logoURI": "https://assets.smold.app/api/token/10/0x2B47C794c3789f499D8A54Ec12f949EeCCE8bA16/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x2E931De1fcB2681Dc98601e0b513308DA9C5cEae",
-      "name": "Velodrome Volatile TAROT-USDC.e",
-      "symbol": "vAMMV2-TAROT/USDC.e",
+      "name": "VolatileV2 AMM - TAROT/USDC",
+      "symbol": "vAMMV2-TAROT/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x2E931De1fcB2681Dc98601e0b513308DA9C5cEae/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x2a90F479002DAae9934c3a70EBB6e8DbeB46292b",
-      "name": "sUSD",
+      "name": "sUSD yVault",
       "symbol": "yvsUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0x2a90F479002DAae9934c3a70EBB6e8DbeB46292b/logo-128.png",
       "chainId": 10,
@@ -164,7 +164,7 @@
     },
     {
       "address": "0x36E4c18B2B43CC989085B4a7306915b115058abF",
-      "name": "Velodrome DAI-USDC.e",
+      "name": "Velodrome v2 DAI-USDC.e Factory yVault",
       "symbol": "yvVelo-DAI-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x36E4c18B2B43CC989085B4a7306915b115058abF/logo-128.png",
       "chainId": 10,
@@ -172,7 +172,7 @@
     },
     {
       "address": "0x39F60710a27a87332d10E3333c2eFF41EeC911Ee",
-      "name": "Velodrome DOLA-USDC.e",
+      "name": "Velodrome v2 DOLA-USDC.e Factory yVault",
       "symbol": "yvVelo-DOLA-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x39F60710a27a87332d10E3333c2eFF41EeC911Ee/logo-128.png",
       "chainId": 10,
@@ -180,7 +180,7 @@
     },
     {
       "address": "0x3AD9566b15AACDd26d8a220cA8635F925EA7a3f6",
-      "name": "Velodrome OP-USDC.e",
+      "name": "Velodrome v2 OP-USDC.e Factory yVault",
       "symbol": "yvVelo-OP-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x3AD9566b15AACDd26d8a220cA8635F925EA7a3f6/logo-128.png",
       "chainId": 10,
@@ -188,7 +188,7 @@
     },
     {
       "address": "0x3B141BD7d6E1d67e2101A08E4dd849a8408d91aa",
-      "name": "Velodrome alUSD-USDC.e",
+      "name": "Velodrome v2 alUSD-USDC.e Factory yVault",
       "symbol": "yvVelo-alUSD-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x3B141BD7d6E1d67e2101A08E4dd849a8408d91aa/logo-128.png",
       "chainId": 10,
@@ -196,7 +196,7 @@
     },
     {
       "address": "0x3BDe2aB72AfE70286fc944C07D98883E383DF239",
-      "name": "Velodrome TAROT-OP",
+      "name": "Velodrome v2 TAROT-OP Factory yVault",
       "symbol": "yvVelo-TAROT-OP-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x3BDe2aB72AfE70286fc944C07D98883E383DF239/logo-128.png",
       "chainId": 10,
@@ -204,7 +204,7 @@
     },
     {
       "address": "0x3f14Df340498F3EAA2894BFc19789dD592Dc062D",
-      "name": "Velodrome FRAX-DOLA",
+      "name": "Velodrome v2 FRAX-DOLA Factory yVault",
       "symbol": "yvVelo-FRAX-DOLA-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x3f14Df340498F3EAA2894BFc19789dD592Dc062D/logo-128.png",
       "chainId": 10,
@@ -212,7 +212,7 @@
     },
     {
       "address": "0x3f42Dc59DC4dF5cD607163bC620168f7FF7aB970",
-      "name": "Velodrome Stable WETH-frxETH",
+      "name": "StableV2 AMM - WETH/frxETH",
       "symbol": "sAMMV2-WETH/frxETH",
       "logoURI": "https://assets.smold.app/api/token/10/0x3f42Dc59DC4dF5cD607163bC620168f7FF7aB970/logo-128.png",
       "chainId": 10,
@@ -220,7 +220,7 @@
     },
     {
       "address": "0x3fb792Fa67cde50A41e20304E4afEf522CF711ee",
-      "name": "Velodrome USDT-USDC.e",
+      "name": "Velodrome v2 USDT-USDC.e Factory yVault",
       "symbol": "yvVelo-USDT-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x3fb792Fa67cde50A41e20304E4afEf522CF711ee/logo-128.png",
       "chainId": 10,
@@ -228,8 +228,8 @@
     },
     {
       "address": "0x41cC89B91D0abe260F2cB53C1ABDa07b321E71Df",
-      "name": "Velodrome Stable CHI-DAI",
-      "symbol": "sAMM-CHI/DAI",
+      "name": "StableV2 AMM - CHI/DAI",
+      "symbol": "sAMMV2-CHI/DAI",
       "logoURI": "https://assets.smold.app/api/token/10/0x41cC89B91D0abe260F2cB53C1ABDa07b321E71Df/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -252,7 +252,7 @@
     },
     {
       "address": "0x45b0a7Dc29B7856A1B5069DB4CfA2A984b69cC41",
-      "name": "Velodrome THALES-WETH",
+      "name": "Velodrome v2 THALES-WETH Factory yVault",
       "symbol": "yvVelo-THALES-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x45b0a7Dc29B7856A1B5069DB4CfA2A984b69cC41/logo-128.png",
       "chainId": 10,
@@ -260,7 +260,7 @@
     },
     {
       "address": "0x4706e50fDe911525e4B904c240056c4Ea0884AA6",
-      "name": "Velodrome Volatile stERN-ERN",
+      "name": "VolatileV2 AMM - stERN/ERN",
       "symbol": "vAMMV2-stERN/ERN",
       "logoURI": "https://assets.smold.app/api/token/10/0x4706e50fDe911525e4B904c240056c4Ea0884AA6/logo-128.png",
       "chainId": 10,
@@ -268,15 +268,15 @@
     },
     {
       "address": "0x4BE2CBE40521279b8fc561e65Bb842bf73ec3a80",
-      "name": "Velodrome Volatile USDC.e-agEUR",
-      "symbol": "vAMMV2-USDC.e/agEUR",
+      "name": "VolatileV2 AMM - USDC/agEUR",
+      "symbol": "vAMMV2-USDC/agEUR",
       "logoURI": "https://assets.smold.app/api/token/10/0x4BE2CBE40521279b8fc561e65Bb842bf73ec3a80/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x4E316557f63C2156eAFdfec08f31DF4957136203",
-      "name": "Velodrome Volatile RED-OP",
+      "name": "VolatileV2 AMM - RED/OP",
       "symbol": "vAMMV2-RED/OP",
       "logoURI": "https://assets.smold.app/api/token/10/0x4E316557f63C2156eAFdfec08f31DF4957136203/logo-128.png",
       "chainId": 10,
@@ -284,15 +284,15 @@
     },
     {
       "address": "0x4E60495550071693bc8bDfFC40033d278157EAC7",
-      "name": "Velodrome Volatile SONNE-USDC.e",
-      "symbol": "vAMMV2-SONNE/USDC.e",
+      "name": "VolatileV2 AMM - SONNE/USDC",
+      "symbol": "vAMMV2-SONNE/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x4E60495550071693bc8bDfFC40033d278157EAC7/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x4F1220f6375e95b43462465972cB2f478Ed34D0b",
-      "name": "Velodrome USD+-DOLA",
+      "name": "Velodrome v2 USD+-DOLA Factory yVault",
       "symbol": "yvVelo-USD+-DOLA-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x4F1220f6375e95b43462465972cB2f478Ed34D0b/logo-128.png",
       "chainId": 10,
@@ -300,15 +300,15 @@
     },
     {
       "address": "0x4d7959d17B9710BE87e3657e69d946914221BB88",
-      "name": "Velodrome Stable USDC.e-alUSD",
-      "symbol": "sAMMV2-USDC.e/alUSD",
+      "name": "StableV2 AMM - USDC/alUSD",
+      "symbol": "sAMMV2-USDC/alUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0x4d7959d17B9710BE87e3657e69d946914221BB88/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x4e9C59F9b1b13bA7E1Ac4c09B64Df7Fdeff41b03",
-      "name": "Velodrome USX-USDC.e",
+      "name": "Velodrome v2 USX-USDC.e Factory yVault",
       "symbol": "yvVelo-USX-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x4e9C59F9b1b13bA7E1Ac4c09B64Df7Fdeff41b03/logo-128.png",
       "chainId": 10,
@@ -316,15 +316,15 @@
     },
     {
       "address": "0x4ed90ca704F4f6f3955169F202EA35365e41B424",
-      "name": "Velodrome Volatile USDC.e-PERP",
-      "symbol": "vAMMV2-USDC.e/PERP",
+      "name": "VolatileV2 AMM - USDC/PERP",
+      "symbol": "vAMMV2-USDC/PERP",
       "logoURI": "https://assets.smold.app/api/token/10/0x4ed90ca704F4f6f3955169F202EA35365e41B424/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x50032bE2b2c7e8A6a6bc241e3aEbef21497A3cF0",
-      "name": "Velodrome ERN-DOLA",
+      "name": "Velodrome v2 ERN-DOLA Factory yVault",
       "symbol": "yvVelo-ERN-DOLA-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x50032bE2b2c7e8A6a6bc241e3aEbef21497A3cF0/logo-128.png",
       "chainId": 10,
@@ -332,7 +332,7 @@
     },
     {
       "address": "0x507343bAD3a1ee0B67C3B1712133290DED43980D",
-      "name": "Velodrome LDO-wstETH",
+      "name": "Velodrome v2 LDO-wstETH Factory yVault",
       "symbol": "yvVelo-LDO-wstETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x507343bAD3a1ee0B67C3B1712133290DED43980D/logo-128.png",
       "chainId": 10,
@@ -340,15 +340,15 @@
     },
     {
       "address": "0x56770b94279539416855fe29Ef14b26438B5e421",
-      "name": "Velodrome Volatile STG-USDC.e",
-      "symbol": "vAMMV2-STG/USDC.e",
+      "name": "VolatileV2 AMM - STG/USDC",
+      "symbol": "vAMMV2-STG/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x56770b94279539416855fe29Ef14b26438B5e421/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x56EeF8430dDdF95b2B92c58B21edf1AC7F77E6a6",
-      "name": "Velodrome USD+-USDC.e",
+      "name": "Velodrome v2 USD+-USDC.e Factory yVault",
       "symbol": "yvVelo-USD+-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x56EeF8430dDdF95b2B92c58B21edf1AC7F77E6a6/logo-128.png",
       "chainId": 10,
@@ -356,7 +356,7 @@
     },
     {
       "address": "0x5B977577Eb8a480f63e11FC615D6753adB8652Ae",
-      "name": "WETH",
+      "name": "WETH yVault",
       "symbol": "yvWETH",
       "logoURI": "https://assets.smold.app/api/token/10/0x5B977577Eb8a480f63e11FC615D6753adB8652Ae/logo-128.png",
       "chainId": 10,
@@ -364,15 +364,15 @@
     },
     {
       "address": "0x5e4A183Fa83C52B1c55b11f2682f6a8421206633",
-      "name": "Velodrome Stable USDC.e-ERN",
-      "symbol": "sAMMV2-USDC.e/ERN",
+      "name": "StableV2 AMM - USDC/ERN",
+      "symbol": "sAMMV2-USDC/ERN",
       "logoURI": "https://assets.smold.app/api/token/10/0x5e4A183Fa83C52B1c55b11f2682f6a8421206633/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x5e5A37445FadeB71f23514Ae7d675Ffc644e5E5A",
-      "name": "Velodrome Stable WETH-sETH",
+      "name": "StableV2 AMM - WETH/sETH",
       "symbol": "sAMMV2-WETH/sETH",
       "logoURI": "https://assets.smold.app/api/token/10/0x5e5A37445FadeB71f23514Ae7d675Ffc644e5E5A/logo-128.png",
       "chainId": 10,
@@ -380,15 +380,15 @@
     },
     {
       "address": "0x5e6E17F745fF620E87324b7c6ec672B5743BD0B4",
-      "name": "Velodrome Volatile USDC.e-wTBT",
-      "symbol": "vAMMV2-USDC.e/wTBT",
+      "name": "VolatileV2 AMM - USDC/wTBT",
+      "symbol": "vAMMV2-USDC/wTBT",
       "logoURI": "https://assets.smold.app/api/token/10/0x5e6E17F745fF620E87324b7c6ec672B5743BD0B4/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x5e70E0EdE43373bD9CF4Bc85199d424AcF0241EF",
-      "name": "Curve sUSD Pool",
+      "name": "Curve sUSD Pool yVault",
       "symbol": "yvCurve-sUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0x5e70E0EdE43373bD9CF4Bc85199d424AcF0241EF/logo-128.png",
       "chainId": 10,
@@ -396,8 +396,8 @@
     },
     {
       "address": "0x615B9dd61f1F9a80f5bcD33A53Eb79c37b20adDC",
-      "name": "Velodrome Volatile USDC.e-BLU",
-      "symbol": "vAMMV2-USDC.e/BLU",
+      "name": "VolatileV2 AMM - USDC/BLU",
+      "symbol": "vAMMV2-USDC/BLU",
       "logoURI": "https://assets.smold.app/api/token/10/0x615B9dd61f1F9a80f5bcD33A53Eb79c37b20adDC/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -412,7 +412,7 @@
     },
     {
       "address": "0x6387765fFA609aB9A1dA1B16C455548Bfed7CbEA",
-      "name": "Velodrome Volatile WETH-LUSD",
+      "name": "VolatileV2 AMM - WETH/LUSD",
       "symbol": "vAMMV2-WETH/LUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0x6387765fFA609aB9A1dA1B16C455548Bfed7CbEA/logo-128.png",
       "chainId": 10,
@@ -420,7 +420,7 @@
     },
     {
       "address": "0x65343F414FFD6c97b0f6add33d16F6845Ac22BAc",
-      "name": "DAI",
+      "name": "DAI yVault",
       "symbol": "yvDAI",
       "logoURI": "https://assets.smold.app/api/token/10/0x65343F414FFD6c97b0f6add33d16F6845Ac22BAc/logo-128.png",
       "chainId": 10,
@@ -428,7 +428,7 @@
     },
     {
       "address": "0x6657BdB994fC8678f6D709077F30aA0B3249b5c8",
-      "name": "Velodrome LYRA-USDC.e",
+      "name": "Velodrome v2 LYRA-USDC.e Factory yVault",
       "symbol": "yvVelo-LYRA-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x6657BdB994fC8678f6D709077F30aA0B3249b5c8/logo-128.png",
       "chainId": 10,
@@ -436,7 +436,7 @@
     },
     {
       "address": "0x667002F9DC61ebcBA8Ee1Cbeb2ad04060388f223",
-      "name": "Velodrome Stable USD+-DAI+",
+      "name": "StableV2 AMM - USD+/DAI+",
       "symbol": "sAMMV2-USD+/DAI+",
       "logoURI": "https://assets.smold.app/api/token/10/0x667002F9DC61ebcBA8Ee1Cbeb2ad04060388f223/logo-128.png",
       "chainId": 10,
@@ -444,7 +444,7 @@
     },
     {
       "address": "0x6759574667896a453304897993D61F00FdC7214d",
-      "name": "MAI",
+      "name": "MAI yVault",
       "symbol": "yvMAI",
       "logoURI": "https://assets.smold.app/api/token/10/0x6759574667896a453304897993D61F00FdC7214d/logo-128.png",
       "chainId": 10,
@@ -452,7 +452,7 @@
     },
     {
       "address": "0x686c125472024bDd3fA74eeb3720B3237541dCDC",
-      "name": "Velodrome KWENTA-WETH",
+      "name": "Velodrome v2 KWENTA-WETH Factory yVault",
       "symbol": "yvVelo-KWENTA-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x686c125472024bDd3fA74eeb3720B3237541dCDC/logo-128.png",
       "chainId": 10,
@@ -468,7 +468,7 @@
     },
     {
       "address": "0x68f2B1db2DA6204489279a8fC681f83728bB9622",
-      "name": "Velodrome MAI-DOLA",
+      "name": "Velodrome v2 MAI-DOLA Factory yVault",
       "symbol": "yvVelo-MAI-DOLA-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x68f2B1db2DA6204489279a8fC681f83728bB9622/logo-128.png",
       "chainId": 10,
@@ -476,7 +476,7 @@
     },
     {
       "address": "0x6Ec9d003f0e5184Ee54c1d899B414322a0f0Dc07",
-      "name": "Velodrome wstETH-WETH",
+      "name": "Velodrome v2 wstETH-WETH Factory yVault",
       "symbol": "yvVelo-wstETH-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x6Ec9d003f0e5184Ee54c1d899B414322a0f0Dc07/logo-128.png",
       "chainId": 10,
@@ -484,7 +484,7 @@
     },
     {
       "address": "0x6F4f01A02e6037AA98d22405fEA4DCAB98D2a8eE",
-      "name": "Velodrome PERP-USDC.e",
+      "name": "Velodrome v2 PERP-USDC.e Factory yVault",
       "symbol": "yvVelo-PERP-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x6F4f01A02e6037AA98d22405fEA4DCAB98D2a8eE/logo-128.png",
       "chainId": 10,
@@ -492,7 +492,7 @@
     },
     {
       "address": "0x6a44B0415a5c440D32E82965FDFAad54a72D477D",
-      "name": "Velodrome sETH-WETH",
+      "name": "Velodrome v2 sETH-WETH Factory yVault",
       "symbol": "yvVelo-sETH-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x6a44B0415a5c440D32E82965FDFAad54a72D477D/logo-128.png",
       "chainId": 10,
@@ -500,7 +500,7 @@
     },
     {
       "address": "0x6aFA09145245eAeDDdAb9333523af9984494FF34",
-      "name": "Velodrome LUSD-USDC.e",
+      "name": "Velodrome v2 LUSD-USDC.e Factory yVault",
       "symbol": "yvVelo-LUSD-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x6aFA09145245eAeDDdAb9333523af9984494FF34/logo-128.png",
       "chainId": 10,
@@ -508,15 +508,15 @@
     },
     {
       "address": "0x6d5BA400640226e24b50214d2bBb3D4Db8e6e15a",
-      "name": "Velodrome Stable USDC.e-sUSD",
-      "symbol": "sAMMV2-USDC.e/sUSD",
+      "name": "StableV2 AMM - USDC/sUSD",
+      "symbol": "sAMMV2-USDC/sUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0x6d5BA400640226e24b50214d2bBb3D4Db8e6e15a/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x6dA98Bde0068d10DDD11b468b197eA97D96F96Bc",
-      "name": "Velodrome Volatile wstETH-WETH",
+      "name": "VolatileV2 AMM - wstETH/WETH",
       "symbol": "vAMMV2-wstETH/WETH",
       "logoURI": "https://assets.smold.app/api/token/10/0x6dA98Bde0068d10DDD11b468b197eA97D96F96Bc/logo-128.png",
       "chainId": 10,
@@ -524,7 +524,7 @@
     },
     {
       "address": "0x6e57B9E54ea043a829584B22182ad22bF446926C",
-      "name": "Velodrome Stable WBTC-tBTC",
+      "name": "StableV2 AMM - WBTC/tBTC",
       "symbol": "sAMMV2-WBTC/tBTC",
       "logoURI": "https://assets.smold.app/api/token/10/0x6e57B9E54ea043a829584B22182ad22bF446926C/logo-128.png",
       "chainId": 10,
@@ -532,7 +532,7 @@
     },
     {
       "address": "0x6e6046E9b5E3D90eac2ABbA610bcA725834Ca5b3",
-      "name": "Velodrome Volatile UNLOCK-VELO",
+      "name": "VolatileV2 AMM - UNLOCK/VELO",
       "symbol": "vAMMV2-UNLOCK/VELO",
       "logoURI": "https://assets.smold.app/api/token/10/0x6e6046E9b5E3D90eac2ABbA610bcA725834Ca5b3/logo-128.png",
       "chainId": 10,
@@ -540,7 +540,7 @@
     },
     {
       "address": "0x71117Bcd8FE69177EEb8857538D625209756B745",
-      "name": "Velodrome rETH-WETH",
+      "name": "Velodrome v2 rETH-WETH Factory yVault",
       "symbol": "yvVelo-rETH-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x71117Bcd8FE69177EEb8857538D625209756B745/logo-128.png",
       "chainId": 10,
@@ -548,7 +548,7 @@
     },
     {
       "address": "0x7178F61694ba9109205B8d6F686282307625e62D",
-      "name": "Velodrome Volatile wstETH-OP",
+      "name": "VolatileV2 AMM - wstETH/OP",
       "symbol": "vAMMV2-wstETH/OP",
       "logoURI": "https://assets.smold.app/api/token/10/0x7178F61694ba9109205B8d6F686282307625e62D/logo-128.png",
       "chainId": 10,
@@ -556,15 +556,15 @@
     },
     {
       "address": "0x71d53B5B7141E1ec9A3Fc9Cc48b4766102d14A4A",
-      "name": "Velodrome Volatile USDC.e-SNX",
-      "symbol": "vAMMV2-USDC.e/SNX",
+      "name": "VolatileV2 AMM - USDC/SNX",
+      "symbol": "vAMMV2-USDC/SNX",
       "logoURI": "https://assets.smold.app/api/token/10/0x71d53B5B7141E1ec9A3Fc9Cc48b4766102d14A4A/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x78e20312105A85B7fe86dB119CfD5cD8de81FDaA",
-      "name": "Velodrome USD+-DAI+",
+      "name": "Velodrome v2 USD+-DAI+ Factory yVault",
       "symbol": "yvVelo-USD+-DAI+-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x78e20312105A85B7fe86dB119CfD5cD8de81FDaA/logo-128.png",
       "chainId": 10,
@@ -572,7 +572,7 @@
     },
     {
       "address": "0x7A7f1187c4710010DB17d0a9ad3fcE85e6ecD90a",
-      "name": "Velodrome Volatile RED-VELO",
+      "name": "VolatileV2 AMM - RED/VELO",
       "symbol": "vAMMV2-RED/VELO",
       "logoURI": "https://assets.smold.app/api/token/10/0x7A7f1187c4710010DB17d0a9ad3fcE85e6ecD90a/logo-128.png",
       "chainId": 10,
@@ -580,7 +580,7 @@
     },
     {
       "address": "0x7Bc5728BC2b59B45a58d9A576E2Ffc5f0505B35E",
-      "name": "Curve sETH Pool",
+      "name": "Curve.fi Factory Pool: sETH/ETH",
       "symbol": "seth-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x7Bc5728BC2b59B45a58d9A576E2Ffc5f0505B35E/logo-128.png",
       "chainId": 10,
@@ -588,7 +588,7 @@
     },
     {
       "address": "0x7D2382b1f8Af621229d33464340541Db362B4907",
-      "name": "OP",
+      "name": "OP yVault",
       "symbol": "yvOP",
       "logoURI": "https://assets.smold.app/api/token/10/0x7D2382b1f8Af621229d33464340541Db362B4907/logo-128.png",
       "chainId": 10,
@@ -596,7 +596,7 @@
     },
     {
       "address": "0x7Edf16076e56FA4c111055fbA1fF5556b8757cFB",
-      "name": "WBTC",
+      "name": "WBTC yVault",
       "symbol": "yvWBTC",
       "logoURI": "https://assets.smold.app/api/token/10/0x7Edf16076e56FA4c111055fbA1fF5556b8757cFB/logo-128.png",
       "chainId": 10,
@@ -605,14 +605,14 @@
     {
       "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
       "name": "USD Coin",
-      "symbol": "USDC.e",
+      "symbol": "USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x7F5c764cBc14f9669B88837ca1490cCa17c31607/logo-128.png",
       "chainId": 10,
       "decimals": 6
     },
     {
       "address": "0x7bDEA31F968089f93A548ddec8BB74036E8ac6e0",
-      "name": "Velodrome ERN-LUSD",
+      "name": "Velodrome v2 ERN-LUSD Factory yVault",
       "symbol": "yvVelo-ERN-LUSD-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x7bDEA31F968089f93A548ddec8BB74036E8ac6e0/logo-128.png",
       "chainId": 10,
@@ -620,7 +620,7 @@
     },
     {
       "address": "0x7e0F65FAB1524dA9E2E5711D160541cf1199912E",
-      "name": "Velodrome Volatile WETH-rETH",
+      "name": "VolatileV2 AMM - WETH/rETH",
       "symbol": "vAMMV2-WETH/rETH",
       "logoURI": "https://assets.smold.app/api/token/10/0x7e0F65FAB1524dA9E2E5711D160541cf1199912E/logo-128.png",
       "chainId": 10,
@@ -628,7 +628,7 @@
     },
     {
       "address": "0x7e1d451799af57EA5570D1015c342C12a918a30b",
-      "name": "Velodrome alETH-frxETH",
+      "name": "Velodrome v2 alETH-frxETH Factory yVault",
       "symbol": "yvVelo-alETH-frxETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x7e1d451799af57EA5570D1015c342C12a918a30b/logo-128.png",
       "chainId": 10,
@@ -636,15 +636,15 @@
     },
     {
       "address": "0x8134A2fDC127549480865fB8E5A9E8A8a95a54c5",
-      "name": "Velodrome Volatile USDC.e-VELO",
-      "symbol": "vAMMV2-USDC.e/VELO",
+      "name": "VolatileV2 AMM - USDC/VELO",
+      "symbol": "vAMMV2-USDC/VELO",
       "logoURI": "https://assets.smold.app/api/token/10/0x8134A2fDC127549480865fB8E5A9E8A8a95a54c5/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x830cB4AabF786b9349d9701dD8ee073215d95174",
-      "name": "Velodrome wstETH-OP",
+      "name": "Velodrome v2 wstETH-OP Factory yVault",
       "symbol": "yvVelo-wstETH-OP-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x830cB4AabF786b9349d9701dD8ee073215d95174/logo-128.png",
       "chainId": 10,
@@ -652,7 +652,7 @@
     },
     {
       "address": "0x83b8391B9efBc5B5A38777fB22A4968c622a405a",
-      "name": "Velodrome BLU-USDC.e",
+      "name": "Velodrome v2 BLU-USDC.e Factory yVault",
       "symbol": "yvVelo-BLU-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x83b8391B9efBc5B5A38777fB22A4968c622a405a/logo-128.png",
       "chainId": 10,
@@ -668,23 +668,23 @@
     },
     {
       "address": "0x8453cc52F2108fF9D1636B6A108dB06Ac137B72F",
-      "name": "Velodrome Volatile USDC.e-MTA",
-      "symbol": "vAMMV2-USDC.e/MTA",
+      "name": "VolatileV2 AMM - USDC/MTA",
+      "symbol": "vAMMV2-USDC/MTA",
       "logoURI": "https://assets.smold.app/api/token/10/0x8453cc52F2108fF9D1636B6A108dB06Ac137B72F/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x8542DD4744edEa38b8a9306268b08F4D26d38581",
-      "name": "Velodrome Stable FRAX-USDC.e",
-      "symbol": "sAMMV2-FRAX/USDC.e",
+      "name": "StableV2 AMM - FRAX/USDC",
+      "symbol": "sAMMV2-FRAX/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0x8542DD4744edEa38b8a9306268b08F4D26d38581/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0x87be630D279Bfd004775C1166F8A488b2ffFA500",
-      "name": "Velodrome MAI-FRAX",
+      "name": "Velodrome v2 MAI-FRAX Factory yVault",
       "symbol": "yvVelo-MAI-FRAX-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x87be630D279Bfd004775C1166F8A488b2ffFA500/logo-128.png",
       "chainId": 10,
@@ -692,7 +692,7 @@
     },
     {
       "address": "0x88B429359665B8685b7431f5A0f6e8C719Bf49Aa",
-      "name": "Velodrome VELO-USDC.e",
+      "name": "Velodrome v2 VELO-USDC.e Factory yVault",
       "symbol": "yvVelo-VELO-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x88B429359665B8685b7431f5A0f6e8C719Bf49Aa/logo-128.png",
       "chainId": 10,
@@ -700,7 +700,7 @@
     },
     {
       "address": "0x8F47041aDbeF5BF321c9F63A0660326614ab6B60",
-      "name": "Velodrome Volatile WETH-KWENTA",
+      "name": "VolatileV2 AMM - WETH/KWENTA",
       "symbol": "vAMMV2-WETH/KWENTA",
       "logoURI": "https://assets.smold.app/api/token/10/0x8F47041aDbeF5BF321c9F63A0660326614ab6B60/logo-128.png",
       "chainId": 10,
@@ -716,7 +716,7 @@
     },
     {
       "address": "0x8e8D635E28BB8774FD23107cC1D9b6D30AD5D0B9",
-      "name": "Velodrome IB-WETH",
+      "name": "Velodrome v2 IB-WETH Factory yVault",
       "symbol": "yvVelo-IB-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x8e8D635E28BB8774FD23107cC1D9b6D30AD5D0B9/logo-128.png",
       "chainId": 10,
@@ -724,7 +724,7 @@
     },
     {
       "address": "0x9056b19Fde674B5Ad8397e7Ed3E25a1BCCEf0C27",
-      "name": "Velodrome alUSD-FRAX",
+      "name": "Velodrome v2 alUSD-FRAX Factory yVault",
       "symbol": "yvVelo-alUSD-FRAX-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x9056b19Fde674B5Ad8397e7Ed3E25a1BCCEf0C27/logo-128.png",
       "chainId": 10,
@@ -732,7 +732,7 @@
     },
     {
       "address": "0x906122aC1b55B71248ABFA552fDc6ABd3356884A",
-      "name": "Velodrome MTA-USDC.e",
+      "name": "Velodrome v2 MTA-USDC.e Factory yVault",
       "symbol": "yvVelo-MTA-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x906122aC1b55B71248ABFA552fDc6ABd3356884A/logo-128.png",
       "chainId": 10,
@@ -740,7 +740,7 @@
     },
     {
       "address": "0x917AA69D539D6518440dd0BEA2eaAc142a8d5610",
-      "name": "Velodrome Stable msETH-WETH",
+      "name": "StableV2 AMM - msETH/WETH",
       "symbol": "sAMMV2-msETH/WETH",
       "logoURI": "https://assets.smold.app/api/token/10/0x917AA69D539D6518440dd0BEA2eaAc142a8d5610/logo-128.png",
       "chainId": 10,
@@ -756,7 +756,7 @@
     },
     {
       "address": "0x950f384f566b82CCA6380f75AE42E2BBE9B357B2",
-      "name": "Velodrome MIM-USDC.e",
+      "name": "Velodrome v2 MIM-USDC.e Factory yVault",
       "symbol": "yvVelo-MIM-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x950f384f566b82CCA6380f75AE42E2BBE9B357B2/logo-128.png",
       "chainId": 10,
@@ -764,7 +764,7 @@
     },
     {
       "address": "0x9E724b3f65b509326A4F5Ec90D4689BeE6b6C78e",
-      "name": "Velodrome ERN-USDC.e",
+      "name": "Velodrome v2 ERN-USDC.e Factory yVault",
       "symbol": "yvVelo-ERN-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0x9E724b3f65b509326A4F5Ec90D4689BeE6b6C78e/logo-128.png",
       "chainId": 10,
@@ -772,7 +772,7 @@
     },
     {
       "address": "0xAa07Ca79490B3CDA1A25B8fCC69b76C09C6e7A4f",
-      "name": "Velodrome CHI-DAI",
+      "name": "Velodrome v2 CHI-DAI Factory yVault",
       "symbol": "yvVelo-CHI-DAI-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xAa07Ca79490B3CDA1A25B8fCC69b76C09C6e7A4f/logo-128.png",
       "chainId": 10,
@@ -788,15 +788,15 @@
     },
     {
       "address": "0xB2791477DA69DDe9cd2986349F8855B8E2dA7245",
-      "name": "Velodrome Stable USDC.e-MIM",
-      "symbol": "sAMMV2-USDC.e/MIM",
+      "name": "StableV2 AMM - USDC/MIM",
+      "symbol": "sAMMV2-USDC/MIM",
       "logoURI": "https://assets.smold.app/api/token/10/0xB2791477DA69DDe9cd2986349F8855B8E2dA7245/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0xB3532518DACA20Fd14e539B0eD6C0De5C59Fd2DE",
-      "name": "Velodrome frxETH-WETH",
+      "name": "Velodrome v2 frxETH-WETH Factory yVault",
       "symbol": "yvVelo-frxETH-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xB3532518DACA20Fd14e539B0eD6C0De5C59Fd2DE/logo-128.png",
       "chainId": 10,
@@ -804,7 +804,7 @@
     },
     {
       "address": "0xB545592E38b603F4A904a5260A6ffC538BfcB424",
-      "name": "Velodrome Volatile IB-WETH",
+      "name": "VolatileV2 AMM - IB/WETH",
       "symbol": "vAMMV2-IB/WETH",
       "logoURI": "https://assets.smold.app/api/token/10/0xB545592E38b603F4A904a5260A6ffC538BfcB424/logo-128.png",
       "chainId": 10,
@@ -812,15 +812,15 @@
     },
     {
       "address": "0xB720FBC32d60BB6dcc955Be86b98D8fD3c4bA645",
-      "name": "Velodrome Stable USDC.e-DOLA",
-      "symbol": "sAMMV2-USDC.e/DOLA",
+      "name": "StableV2 AMM - USDC/DOLA",
+      "symbol": "sAMMV2-USDC/DOLA",
       "logoURI": "https://assets.smold.app/api/token/10/0xB720FBC32d60BB6dcc955Be86b98D8fD3c4bA645/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0xB9A14C5C760023801f8c731b4621C99F8ac211D9",
-      "name": "Velodrome SONNE-USDC.e",
+      "name": "Velodrome v2 SONNE-USDC.e Factory yVault",
       "symbol": "yvVelo-SONNE-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xB9A14C5C760023801f8c731b4621C99F8ac211D9/logo-128.png",
       "chainId": 10,
@@ -828,7 +828,7 @@
     },
     {
       "address": "0xBE418771bC91F75C4d2BcE1d5E2b7286F50992da",
-      "name": "Velodrome Stable DOLA-MAI",
+      "name": "StableV2 AMM - DOLA/MAI",
       "symbol": "sAMMV2-DOLA/MAI",
       "logoURI": "https://assets.smold.app/api/token/10/0xBE418771bC91F75C4d2BcE1d5E2b7286F50992da/logo-128.png",
       "chainId": 10,
@@ -836,7 +836,7 @@
     },
     {
       "address": "0xC3566662862c26FF56e3E709dc021902cC68BecD",
-      "name": "Velodrome TAROT-USDC.e",
+      "name": "Velodrome v2 TAROT-USDC.e Factory yVault",
       "symbol": "yvVelo-TAROT-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xC3566662862c26FF56e3E709dc021902cC68BecD/logo-128.png",
       "chainId": 10,
@@ -844,7 +844,7 @@
     },
     {
       "address": "0xC5c247580A4A6E4d3811c0DA6215057aaC480bAc",
-      "name": "Velodrome Volatile wstETH-LDO",
+      "name": "VolatileV2 AMM - wstETH/LDO",
       "symbol": "vAMMV2-wstETH/LDO",
       "logoURI": "https://assets.smold.app/api/token/10/0xC5c247580A4A6E4d3811c0DA6215057aaC480bAc/logo-128.png",
       "chainId": 10,
@@ -852,7 +852,7 @@
     },
     {
       "address": "0xC86B70e2C16C5fB5315e4663737E0E077ABFC395",
-      "name": "Velodrome OP-VELO",
+      "name": "Velodrome v2 OP-VELO Factory yVault",
       "symbol": "yvVelo-OP-VELO-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xC86B70e2C16C5fB5315e4663737E0E077ABFC395/logo-128.png",
       "chainId": 10,
@@ -860,7 +860,7 @@
     },
     {
       "address": "0xCF6beF33c49824226fB9dEFCdc3b1DE11F207Db7",
-      "name": "Velodrome FRAX-USDC.e",
+      "name": "Velodrome v2 FRAX-USDC.e Factory yVault",
       "symbol": "yvVelo-FRAX-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xCF6beF33c49824226fB9dEFCdc3b1DE11F207Db7/logo-128.png",
       "chainId": 10,
@@ -868,7 +868,7 @@
     },
     {
       "address": "0xD02Ce9E211279ab3f414ff7A661518f9173780CB",
-      "name": "Velodrome MAI-alUSD",
+      "name": "Velodrome v2 MAI-alUSD Factory yVault",
       "symbol": "yvVelo-MAI-alUSD-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xD02Ce9E211279ab3f414ff7A661518f9173780CB/logo-128.png",
       "chainId": 10,
@@ -876,7 +876,7 @@
     },
     {
       "address": "0xD330841EF9527E3Bd0abc28a230C7cA8dec9423B",
-      "name": "Velodrome Stable FRAX-USD+",
+      "name": "StableV2 AMM - FRAX/USD+",
       "symbol": "sAMMV2-FRAX/USD+",
       "logoURI": "https://assets.smold.app/api/token/10/0xD330841EF9527E3Bd0abc28a230C7cA8dec9423B/logo-128.png",
       "chainId": 10,
@@ -884,7 +884,7 @@
     },
     {
       "address": "0xD402F3c8A999BFE97F8644E80DbD57E2bA7704ae",
-      "name": "Velodrome QI-USDC.e",
+      "name": "Velodrome v2 QI-USDC.e Factory yVault",
       "symbol": "yvVelo-QI-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xD402F3c8A999BFE97F8644E80DbD57E2bA7704ae/logo-128.png",
       "chainId": 10,
@@ -892,7 +892,7 @@
     },
     {
       "address": "0xD7EE0E2d232BcBeFa74EF36A439d0De880c6ece5",
-      "name": "Velodrome RED-VELO",
+      "name": "Velodrome v2 RED-VELO Factory yVault",
       "symbol": "yvVelo-RED-VELO-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xD7EE0E2d232BcBeFa74EF36A439d0De880c6ece5/logo-128.png",
       "chainId": 10,
@@ -908,15 +908,15 @@
     },
     {
       "address": "0xDB61f9B480f0a8B817811cFAA89A1c219c355224",
-      "name": "Velodrome Volatile LYRA-USDC.e",
-      "symbol": "vAMMV2-LYRA/USDC.e",
+      "name": "VolatileV2 AMM - LYRA/USDC",
+      "symbol": "vAMMV2-LYRA/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0xDB61f9B480f0a8B817811cFAA89A1c219c355224/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0xDFF90E4A6c229565f25337B1DB9fA12f6d8cB118",
-      "name": "Velodrome Volatile THALES-WETH",
+      "name": "VolatileV2 AMM - THALES/WETH",
       "symbol": "vAMMV2-THALES/WETH",
       "logoURI": "https://assets.smold.app/api/token/10/0xDFF90E4A6c229565f25337B1DB9fA12f6d8cB118/logo-128.png",
       "chainId": 10,
@@ -924,7 +924,7 @@
     },
     {
       "address": "0xDdDCAeE873f2D9Df0E18a80709ef2B396d4a6EA5",
-      "name": "Velodrome OP-WETH",
+      "name": "Velodrome v2 OP-WETH Factory yVault",
       "symbol": "yvVelo-OP-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xDdDCAeE873f2D9Df0E18a80709ef2B396d4a6EA5/logo-128.png",
       "chainId": 10,
@@ -932,23 +932,23 @@
     },
     {
       "address": "0xE54e4020d1C3afDB312095D90054103E68fe34B0",
-      "name": "Velodrome Stable USDC.e-MAI",
-      "symbol": "sAMMV2-USDC.e/MAI",
+      "name": "StableV2 AMM - USDC/MAI",
+      "symbol": "sAMMV2-USDC/MAI",
       "logoURI": "https://assets.smold.app/api/token/10/0xE54e4020d1C3afDB312095D90054103E68fe34B0/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0xE5F28Fc43Bb40CDF7202ebe406793815b6f07FbD",
-      "name": "Velodrome Volatile THALES-USDC.e",
-      "symbol": "vAMMV2-THALES/USDC.e",
+      "name": "VolatileV2 AMM - THALES/USDC",
+      "symbol": "vAMMV2-THALES/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0xE5F28Fc43Bb40CDF7202ebe406793815b6f07FbD/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0xEea82dCab12C855E3736558d80500ED52c8598cd",
-      "name": "Velodrome Stable DOLA-ERN",
+      "name": "StableV2 AMM - DOLA/ERN",
       "symbol": "sAMMV2-DOLA/ERN",
       "logoURI": "https://assets.smold.app/api/token/10/0xEea82dCab12C855E3736558d80500ED52c8598cd/logo-128.png",
       "chainId": 10,
@@ -956,15 +956,15 @@
     },
     {
       "address": "0xF2D42c46528116362Aca448837A0236459B53C63",
-      "name": "Velodrome Volatile OP-TAROT",
-      "symbol": "vAMMV2-OP/TAROT",
+      "name": "VolatileV2 AMM - TAROT/OP",
+      "symbol": "vAMMV2-TAROT/OP",
       "logoURI": "https://assets.smold.app/api/token/10/0xF2D42c46528116362Aca448837A0236459B53C63/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0xF31cbe21Bbbb8056b75d6ca21e8fFd2CD38bD5C5",
-      "name": "Velodrome Stable LUSD-ERN",
+      "name": "StableV2 AMM - LUSD/ERN",
       "symbol": "sAMMV2-LUSD/ERN",
       "logoURI": "https://assets.smold.app/api/token/10/0xF31cbe21Bbbb8056b75d6ca21e8fFd2CD38bD5C5/logo-128.png",
       "chainId": 10,
@@ -972,7 +972,7 @@
     },
     {
       "address": "0xF89FdBBCE1A707061e9d59B8E4387f89798B4d10",
-      "name": "Velodrome USDC-WETH",
+      "name": "Velodrome v2 USDC.e-WETH Factory yVault",
       "symbol": "yvVelo-USDC.e-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xF89FdBBCE1A707061e9d59B8E4387f89798B4d10/logo-128.png",
       "chainId": 10,
@@ -980,7 +980,7 @@
     },
     {
       "address": "0xFF5318f81Dd791e92d51b8A54fA3538832D2890D",
-      "name": "Velodrome Stable sfrxETH-frxETH",
+      "name": "StableV2 AMM - sfrxETH/frxETH",
       "symbol": "sAMMV2-sfrxETH/frxETH",
       "logoURI": "https://assets.smold.app/api/token/10/0xFF5318f81Dd791e92d51b8A54fA3538832D2890D/logo-128.png",
       "chainId": 10,
@@ -996,7 +996,7 @@
     },
     {
       "address": "0xFaee21D0f0Af88EE72BB6d68E54a90E6EC2616de",
-      "name": "USDT",
+      "name": "USDT yVault",
       "symbol": "yvUSDT",
       "logoURI": "https://assets.smold.app/api/token/10/0xFaee21D0f0Af88EE72BB6d68E54a90E6EC2616de/logo-128.png",
       "chainId": 10,
@@ -1004,7 +1004,7 @@
     },
     {
       "address": "0xa1055762336F92b4B8d2eDC032A0Ce45ead6280a",
-      "name": "Velodrome Stable alETH-WETH",
+      "name": "StableV2 AMM - alETH/WETH",
       "symbol": "sAMMV2-alETH/WETH",
       "logoURI": "https://assets.smold.app/api/token/10/0xa1055762336F92b4B8d2eDC032A0Ce45ead6280a/logo-128.png",
       "chainId": 10,
@@ -1012,7 +1012,7 @@
     },
     {
       "address": "0xa31Ad8D355B5223Ad34FD4fD0bC854A68E7D9681",
-      "name": "Velodrome THALES-USDC.e",
+      "name": "Velodrome v2 THALES-USDC.e Factory yVault",
       "symbol": "yvVelo-THALES-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xa31Ad8D355B5223Ad34FD4fD0bC854A68E7D9681/logo-128.png",
       "chainId": 10,
@@ -1020,7 +1020,7 @@
     },
     {
       "address": "0xa7B550B3A80361d8e47E07616dC42f04c655881b",
-      "name": "Velodrome stERN-ERN",
+      "name": "Velodrome v2 stERN-ERN Factory yVault",
       "symbol": "yvVelo-stERN-ERN-f",
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
       "chainId": 10,
@@ -1028,7 +1028,7 @@
     },
     {
       "address": "0xaD17A225074191d5c8a37B50FdA1AE278a2EE6A2",
-      "name": "USDC.e",
+      "name": "USDC.e yVault",
       "symbol": "yvUSDC.e",
       "logoURI": "https://assets.smold.app/api/token/10/0xaD17A225074191d5c8a37B50FdA1AE278a2EE6A2/logo-128.png",
       "chainId": 10,
@@ -1036,7 +1036,7 @@
     },
     {
       "address": "0xaF03f51DE7a0E62BF061F6Fc3931cF79166B0a29",
-      "name": "Velodrome Stable FRAX-alUSD",
+      "name": "StableV2 AMM - FRAX/alUSD",
       "symbol": "sAMMV2-FRAX/alUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0xaF03f51DE7a0E62BF061F6Fc3931cF79166B0a29/logo-128.png",
       "chainId": 10,
@@ -1044,7 +1044,7 @@
     },
     {
       "address": "0xadBB23Bcc3C1B9810491897cb0690Cf645B858b1",
-      "name": "Velodrome Volatile WETH-tBTC",
+      "name": "VolatileV2 AMM - WETH/tBTC",
       "symbol": "vAMMV2-WETH/tBTC",
       "logoURI": "https://assets.smold.app/api/token/10/0xadBB23Bcc3C1B9810491897cb0690Cf645B858b1/logo-128.png",
       "chainId": 10,
@@ -1052,7 +1052,7 @@
     },
     {
       "address": "0xb4E4CFA9971C7e1069685771DaB61CA56e72e5C3",
-      "name": "Curve sETH Pool",
+      "name": "Curve sETH Pool yVault",
       "symbol": "yvCurve-sETH",
       "logoURI": "https://assets.smold.app/api/token/10/0xb4E4CFA9971C7e1069685771DaB61CA56e72e5C3/logo-128.png",
       "chainId": 10,
@@ -1060,7 +1060,7 @@
     },
     {
       "address": "0xb83DBAC6087592328909996A39D138e89E4B0AfE",
-      "name": "Velodrome USD+-FRAX",
+      "name": "Velodrome v2 USD+-FRAX Factory yVault",
       "symbol": "yvVelo-USD+-FRAX-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xb83DBAC6087592328909996A39D138e89E4B0AfE/logo-128.png",
       "chainId": 10,
@@ -1068,7 +1068,7 @@
     },
     {
       "address": "0xbC61B71562b01a3a4808D3B9291A3Bf743AB3361",
-      "name": "Velodrome LUSD-WETH",
+      "name": "Velodrome v2 LUSD-WETH Factory yVault",
       "symbol": "yvVelo-LUSD-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xbC61B71562b01a3a4808D3B9291A3Bf743AB3361/logo-128.png",
       "chainId": 10,
@@ -1076,7 +1076,7 @@
     },
     {
       "address": "0xc2626aCEdc27cFfB418680d0307C9178955A4743",
-      "name": "Velodrome sfrxETH-frxETH",
+      "name": "Velodrome v2 sfrxETH-frxETH Factory yVault",
       "symbol": "yvVelo-sfrxETH-frxETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xc2626aCEdc27cFfB418680d0307C9178955A4743/logo-128.png",
       "chainId": 10,
@@ -1084,7 +1084,7 @@
     },
     {
       "address": "0xc3439Ba7db7566ed0deF55c179ED9b3bA273A67F",
-      "name": "Velodrome EXA-WETH",
+      "name": "Velodrome v2 EXA-WETH Factory yVault",
       "symbol": "yvVelo-EXA-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xc3439Ba7db7566ed0deF55c179ED9b3bA273A67F/logo-128.png",
       "chainId": 10,
@@ -1092,7 +1092,7 @@
     },
     {
       "address": "0xc37a0a37664aeB3848f98C5dD5d7AE286A1E9Ebd",
-      "name": "Velodrome Stable FRAX-MAI",
+      "name": "StableV2 AMM - FRAX/MAI",
       "symbol": "sAMMV2-FRAX/MAI",
       "logoURI": "https://assets.smold.app/api/token/10/0xc37a0a37664aeB3848f98C5dD5d7AE286A1E9Ebd/logo-128.png",
       "chainId": 10,
@@ -1100,7 +1100,7 @@
     },
     {
       "address": "0xd0d2Ac44Cc842079e978bB11b094764f7D0dec6A",
-      "name": "Velodrome msETH-WETH",
+      "name": "Velodrome v2 msETH-WETH Factory yVault",
       "symbol": "yvVelo-msETH-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xd0d2Ac44Cc842079e978bB11b094764f7D0dec6A/logo-128.png",
       "chainId": 10,
@@ -1108,7 +1108,7 @@
     },
     {
       "address": "0xd25711EdfBf747efCE181442Cc1D8F5F8fc8a0D3",
-      "name": "Velodrome Volatile WETH-OP",
+      "name": "VolatileV2 AMM - WETH/OP",
       "symbol": "vAMMV2-WETH/OP",
       "logoURI": "https://assets.smold.app/api/token/10/0xd25711EdfBf747efCE181442Cc1D8F5F8fc8a0D3/logo-128.png",
       "chainId": 10,
@@ -1124,8 +1124,8 @@
     },
     {
       "address": "0xd95E98fc33670dC033424E7Aa0578D742D00f9C7",
-      "name": "Velodrome Stable USD+-USDC.e",
-      "symbol": "sAMMV2-USD+-USDC.e",
+      "name": "StableV2 AMM - USD+/USDC",
+      "symbol": "sAMMV2-USD+/USDC",
       "logoURI": "https://assets.smold.app/api/token/10/0xd95E98fc33670dC033424E7Aa0578D742D00f9C7/logo-128.png",
       "chainId": 10,
       "decimals": 18
@@ -1148,7 +1148,7 @@
     },
     {
       "address": "0xe9581d0F1A628B038fC8B2a7F5A7d904f0e2f937",
-      "name": "Velodrome Volatile OP-VELO",
+      "name": "VolatileV2 AMM - OP/VELO",
       "symbol": "vAMMV2-OP/VELO",
       "logoURI": "https://assets.smold.app/api/token/10/0xe9581d0F1A628B038fC8B2a7F5A7d904f0e2f937/logo-128.png",
       "chainId": 10,
@@ -1156,23 +1156,23 @@
     },
     {
       "address": "0xeD47E3ce6D9C05F562C469AB1bf1244cc697aa73",
-      "name": "Velodrome Stable USDC.e-USX",
-      "symbol": "sAMMV2-USDC.e/USX",
+      "name": "StableV2 AMM - USDC/USX",
+      "symbol": "sAMMV2-USDC/USX",
       "logoURI": "https://assets.smold.app/api/token/10/0xeD47E3ce6D9C05F562C469AB1bf1244cc697aa73/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0xf04458f7B21265b80FC340dE7Ee598e24485c5bB",
-      "name": "Velodrome Stable USDC.e-LUSD",
-      "symbol": "sAMMV2-USDC.e/LUSD",
+      "name": "StableV2 AMM - USDC/LUSD",
+      "symbol": "sAMMV2-USDC/LUSD",
       "logoURI": "https://assets.smold.app/api/token/10/0xf04458f7B21265b80FC340dE7Ee598e24485c5bB/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
     {
       "address": "0xf3C45b45223Df6071a478851B9C17e0630fDf535",
-      "name": "Velodrome Volatile EXA-WETH",
+      "name": "VolatileV2 AMM - EXA/WETH",
       "symbol": "vAMMV2-EXA/WETH",
       "logoURI": "https://assets.smold.app/api/token/10/0xf3C45b45223Df6071a478851B9C17e0630fDf535/logo-128.png",
       "chainId": 10,
@@ -1180,7 +1180,7 @@
     },
     {
       "address": "0xf5A8aF3C13C0f6c139F58aac8A549100484E0aaD",
-      "name": "Velodrome UNLOCK-VELO",
+      "name": "Velodrome v2 UNLOCK-VELO Factory yVault",
       "symbol": "yvVelo-UNLOCK-VELO-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xf5A8aF3C13C0f6c139F58aac8A549100484E0aaD/logo-128.png",
       "chainId": 10,
@@ -1188,7 +1188,7 @@
     },
     {
       "address": "0xf6B272134A193Df5b04332e73184E5b40b8EB810",
-      "name": "Velodrome STG-USDC.e",
+      "name": "Velodrome v2 STG-USDC.e Factory yVault",
       "symbol": "yvVelo-STG-USDC.e-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xf6B272134A193Df5b04332e73184E5b40b8EB810/logo-128.png",
       "chainId": 10,
@@ -1196,7 +1196,7 @@
     },
     {
       "address": "0xf7D66b41Cd4241eae450fd9D2d6995754634D9f3",
-      "name": "Velodrome alETH-WETH",
+      "name": "Velodrome v2 alETH-WETH Factory yVault",
       "symbol": "yvVelo-alETH-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xf7D66b41Cd4241eae450fd9D2d6995754634D9f3/logo-128.png",
       "chainId": 10,
@@ -1204,7 +1204,7 @@
     },
     {
       "address": "0xfA09479d72E2b3f8B6dF63399772237Ad6658D76",
-      "name": "Velodrome Stable alUSD-MAI",
+      "name": "StableV2 AMM - alUSD/MAI",
       "symbol": "sAMMV2-alUSD/MAI",
       "logoURI": "https://assets.smold.app/api/token/10/0xfA09479d72E2b3f8B6dF63399772237Ad6658D76/logo-128.png",
       "chainId": 10,
@@ -1212,7 +1212,7 @@
     },
     {
       "address": "0xfA3C6122906f2A2d644409dBB507DB1060D10b3A",
-      "name": "Velodrome RED-OP",
+      "name": "Velodrome v2 RED-OP Factory yVault",
       "symbol": "yvVelo-RED-OP-f",
       "logoURI": "https://assets.smold.app/api/token/10/0xfA3C6122906f2A2d644409dBB507DB1060D10b3A/logo-128.png",
       "chainId": 10,
