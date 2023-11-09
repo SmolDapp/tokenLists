@@ -345,57 +345,85 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 	return erc20Map
 }
 
-func addEtherToken(chainId uint64, tokenList []TokenListToken) []TokenListToken {
-	if newToken, err := SetToken(
-		common.HexToAddress("0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"),
-		`Ethereum`,
-		`ETH`,
-		``,
-		chainId,
-		18,
-	); err == nil {
-		tokenList = append(tokenList, newToken)
+func groupByChainID(tokens []TokenListToken) map[uint64][]common.Address {
+	tokensPerChainID := make(map[uint64][]common.Address)
+	for _, token := range tokens {
+		if helpers.IsChainIDIgnored(token.ChainID) {
+			continue
+		}
+		tokensPerChainID[token.ChainID] = append(tokensPerChainID[token.ChainID], common.HexToAddress(token.Address))
 	}
-	return tokenList
+	return tokensPerChainID
 }
 
-var ETHER = TokenListToken{
-	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
-	Name:     `Ethereum`,
-	Symbol:   `ETH`,
-	LogoURI:  ``,
-	ChainID:  1,
-	Decimals: 18,
+func getExistingLogo(chainID uint64, lookingFor common.Address, slice []TokenListToken) string {
+	for _, token := range slice {
+		if helpers.IsChainIDIgnored(token.ChainID) {
+			continue
+		}
+		if token.Address == lookingFor.Hex() && chainID == token.ChainID {
+			return token.LogoURI
+		}
+	}
+	return ``
 }
-var FTM = TokenListToken{
-	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
-	Name:     `Fantom`,
-	Symbol:   `FTM`,
-	LogoURI:  ``,
-	ChainID:  250,
-	Decimals: 18,
+
+func SetToken(
+	address common.Address,
+	name string, symbol string, logoURI string,
+	chainID uint64, decimals int,
+) (TokenListToken, error) {
+	token := TokenListToken{}
+	if name == `` {
+		return token, errors.New(`token name is empty`)
+	}
+	if symbol == `` {
+		return token, errors.New(`token symbol is empty`)
+	}
+	if decimals == 0 {
+		return token, errors.New(`token decimals is 0`)
+	}
+	if helpers.IsIgnoredToken(chainID, address) {
+		return token, errors.New(`token is ignored`)
+	}
+	if chainID == 0 || helpers.IsChainIDIgnored(chainID) {
+		return token, errors.New(`chainID is ignored`)
+	}
+
+	token.ChainID = chainID
+	token.Decimals = decimals
+	token.Address = address.Hex()
+	token.Name = name
+	token.Symbol = symbol
+	token.LogoURI = helpers.UseIcon(chainID, token.Name+` - `+token.Symbol, address, logoURI)
+	return token, nil
 }
-var BSC = TokenListToken{
-	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
-	Name:     `Binance Smart Chain`,
-	Symbol:   `BNB`,
-	LogoURI:  ``,
-	ChainID:  56,
-	Decimals: 18,
-}
-var MATIC = TokenListToken{
-	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
-	Name:     `Matic`,
-	Symbol:   `MATIC`,
-	LogoURI:  ``,
-	ChainID:  137,
-	Decimals: 18,
-}
-var XDAI = TokenListToken{
-	Address:  `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`,
-	Name:     `xDai`,
-	Symbol:   `xDAI`,
-	LogoURI:  ``,
-	ChainID:  100,
-	Decimals: 18,
+
+func fetchTokenList(tokensFromList []TokenListToken) []TokenListToken {
+	tokens := []TokenListToken{}
+	grouped := groupByChainID(tokensFromList)
+
+	for chainID, tokensForChain := range grouped {
+		if helpers.IsChainIDIgnored(chainID) {
+			continue
+		}
+
+		tokensInfo := retrieveBasicInformations(chainID, tokensForChain)
+		for _, existingToken := range tokensForChain {
+			if token, ok := tokensInfo[existingToken.Hex()]; ok {
+				if newToken, err := SetToken(
+					token.Address,
+					token.Name,
+					token.Symbol,
+					getExistingLogo(chainID, existingToken, tokensFromList),
+					chainID,
+					int(token.Decimals),
+				); err == nil {
+					tokens = append(tokens, newToken)
+				}
+			}
+		}
+	}
+
+	return tokens
 }

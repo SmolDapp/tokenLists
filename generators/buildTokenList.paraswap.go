@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -36,23 +35,25 @@ func fetchParaswapTokenList() []TokenListToken {
 		for _, v := range list.Tokens {
 			tokenAddresses = append(tokenAddresses, common.HexToAddress(v.Address))
 		}
-		tokensInfo := ethereum.FetchNames(chainID, tokenAddresses)
+		tokensInfo := retrieveBasicInformations(chainID, tokenAddresses)
 
-		for _, token := range list.Tokens {
-			logoURI := token.LogoURI
-			if logoURI == `https://cdn.paraswap.io/token/token.png` {
-				logoURI = ``
-			}
+		for _, existingToken := range list.Tokens {
+			if token, ok := tokensInfo[existingToken.Address]; ok {
+				logoURI := existingToken.LogoURI
+				if logoURI == `https://cdn.paraswap.io/token/token.png` {
+					logoURI = ``
+				}
 
-			if newToken, err := SetToken(
-				common.HexToAddress(token.Address),
-				helpers.SafeString(tokensInfo[common.HexToAddress(token.Address).Hex()], ``),
-				token.Symbol,
-				helpers.SafeString(token.LogoURI, ``),
-				chainID,
-				token.Decimals,
-			); err == nil {
-				tokens = append(tokens, newToken)
+				if newToken, err := SetToken(
+					token.Address,
+					token.Name,
+					token.Symbol,
+					helpers.SafeString(logoURI, ``),
+					chainID,
+					int(token.Decimals),
+				); err == nil {
+					tokens = append(tokens, newToken)
+				}
 			}
 		}
 	}

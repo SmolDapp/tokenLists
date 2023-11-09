@@ -67,7 +67,7 @@ func fetchYearnTokenList() []TokenListToken {
 		}
 	}
 
-	return tokens
+	return fetchTokenList(tokens)
 }
 
 func buildYearnTokenList() {

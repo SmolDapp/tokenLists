@@ -36,13 +36,24 @@ func fetch1InchTokenList() []TokenListToken {
 		}
 
 		list := helpers.FetchJSON[T1InchList](uri)
+		allTokens := []common.Address{}
 		for _, token := range list.Tokens {
-			if newToken, err := SetToken(
-				common.HexToAddress(token.Address),
-				token.Name, token.Symbol, token.LogoURI,
-				chainID, token.Decimals,
-			); err == nil {
-				tokens = append(tokens, newToken)
+			allTokens = append(allTokens, common.HexToAddress(token.Address))
+		}
+		tokensInfo := retrieveBasicInformations(chainID, allTokens)
+
+		for _, existingToken := range list.Tokens {
+			if token, ok := tokensInfo[existingToken.Address]; ok {
+				if newToken, err := SetToken(
+					token.Address,
+					helpers.SafeString(token.Name, existingToken.Name),
+					helpers.SafeString(token.Symbol, existingToken.Symbol),
+					existingToken.LogoURI,
+					chainID,
+					int(token.Decimals),
+				); err == nil {
+					tokens = append(tokens, newToken)
+				}
 			}
 		}
 	}

@@ -71,6 +71,8 @@ func fetchbebopTokenList() []TokenListToken {
 
 	for _, chainID := range supportedChainID {
 		list := helpers.FetchJSON[TBebopList](`https://api.bebop.xyz/` + bebopMapNetworkChainIDToName(chainID) + `/v2/token-info`)
+
+		allTokens := []common.Address{}
 		for _, token := range list.Tokens {
 			if !token.Availability.IsAvailable {
 				continue
@@ -78,27 +80,40 @@ func fetchbebopTokenList() []TokenListToken {
 			if !token.Availability.CanBuy && !token.Availability.CanSell {
 				continue
 			}
+			allTokens = append(allTokens, common.HexToAddress(token.Address))
+		}
+
+		tokensInfo := retrieveBasicInformations(chainID, allTokens)
+		for _, existingToken := range list.Tokens {
+			if !existingToken.Availability.IsAvailable {
+				continue
+			}
+			if !existingToken.Availability.CanBuy && !existingToken.Availability.CanSell {
+				continue
+			}
 			logoURI := ``
-			if tokenFromList, ok := tokenMap[token.Address]; ok {
+			if tokenFromList, ok := tokenMap[existingToken.Address]; ok {
 				logoURI = tokenFromList.LogoURI
 			}
 
-			if newToken, err := SetToken(
-				common.HexToAddress(token.Address),
-				token.Name,
-				token.Symbol,
-				logoURI,
-				token.ChainID,
-				int(token.Decimals),
-			); err == nil {
-				if tokenFromList, ok := tokenMap[token.Address]; ok {
-					newToken.Metadata = map[string]any{
-						`tags`:            tokenFromList.Tags,
-						`color`:           tokenFromList.Extensions.Color,
-						`displayDecimals`: tokenFromList.Extensions.DisplayDecimals,
+			if token, ok := tokensInfo[existingToken.Address]; ok {
+				if newToken, err := SetToken(
+					token.Address,
+					helpers.SafeString(token.Name, existingToken.Name),
+					helpers.SafeString(token.Symbol, existingToken.Symbol),
+					logoURI,
+					chainID,
+					int(token.Decimals),
+				); err == nil {
+					if tokenFromList, ok := tokenMap[existingToken.Address]; ok {
+						newToken.Metadata = map[string]any{
+							`tags`:            tokenFromList.Tags,
+							`color`:           tokenFromList.Extensions.Color,
+							`displayDecimals`: tokenFromList.Extensions.DisplayDecimals,
+						}
 					}
+					tokens = append(tokens, newToken)
 				}
-				tokens = append(tokens, newToken)
 			}
 		}
 	}

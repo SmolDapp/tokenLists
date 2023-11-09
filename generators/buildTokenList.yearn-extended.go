@@ -12,5 +12,6 @@ func buildYearnExtendedTokenList() {
 	tokenList.Keywords = []string{`yearn`, `yfi`, `yvault`, `ytoken`, `ycurve`, `yprotocol`, `vaults`}
 	tokenList = tokenList.Assign(originalTokenList.Tokens)
 
-	saveTokenListInJsonFile(tokenList, tokenList.Tokens, `yearn-extended.json`, Standard)
+	tokens := fetchTokenList(tokenList.Tokens)
+	saveTokenListInJsonFile(tokenList, tokens, `yearn-extended.json`, Standard)
 }

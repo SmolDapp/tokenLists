@@ -1,8 +1,6 @@
 package main
 
 import (
-	"errors"
-
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
@@ -55,37 +53,6 @@ func InitTokenList() TokenListData[TokenListToken] {
 	newTokenList.NextTokensMap = make(map[string]TokenListToken)
 
 	return newTokenList
-}
-
-func SetToken(
-	address common.Address,
-	name string, symbol string, logoURI string,
-	chainID uint64, decimals int,
-) (TokenListToken, error) {
-	token := TokenListToken{}
-	if name == `` {
-		return token, errors.New(`token name is empty`)
-	}
-	if symbol == `` {
-		return token, errors.New(`token symbol is empty`)
-	}
-	if decimals == 0 {
-		return token, errors.New(`token decimals is 0`)
-	}
-	if helpers.IsIgnoredToken(chainID, address) {
-		return token, errors.New(`token is ignored`)
-	}
-	if chainID == 0 || helpers.IsChainIDIgnored(chainID) {
-		return token, errors.New(`chainID is ignored`)
-	}
-
-	token.ChainID = chainID
-	token.Decimals = decimals
-	token.Address = address.Hex()
-	token.Name = name
-	token.Symbol = symbol
-	token.LogoURI = helpers.UseIcon(chainID, token.Name+` - `+token.Symbol, address, logoURI)
-	return token, nil
 }
 
 // Assign assigns the original token list to the current token list

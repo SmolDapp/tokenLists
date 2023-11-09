@@ -12,5 +12,6 @@ func buildCowswapTokenList() {
 	tokenList.Keywords = originalTokenList.Keywords
 	tokenList = tokenList.Assign(originalTokenList.Tokens)
 
-	saveTokenListInJsonFile(tokenList, tokenList.Tokens, `cowswap.json`, Standard)
+	tokens := fetchTokenList(tokenList.Tokens)
+	saveTokenListInJsonFile(tokenList, tokens, `cowswap.json`, Standard)
 }

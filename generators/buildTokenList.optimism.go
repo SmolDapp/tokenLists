@@ -12,5 +12,6 @@ func buildOptimismTokenList() {
 	tokenList.Keywords = originalTokenList.Keywords
 	tokenList = tokenList.Assign(originalTokenList.Tokens)
 
-	saveTokenListInJsonFile(tokenList, tokenList.Tokens, `optimism.json`, Standard)
+	tokens := fetchTokenList(tokenList.Tokens)
+	saveTokenListInJsonFile(tokenList, tokens, `optimism.json`, Standard)
 }

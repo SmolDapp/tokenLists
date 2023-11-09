@@ -81,7 +81,7 @@ func fetchPortalsTokenList() []TokenListToken {
 		}
 		page++
 	}
-	return tokens
+	return fetchTokenList(tokens)
 }
 
 func buildPortalsTokenList() {

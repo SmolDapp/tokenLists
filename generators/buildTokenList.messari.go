@@ -2,11 +2,9 @@ package main
 
 import (
 	"strconv"
-	"sync"
 	"time"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -46,53 +44,10 @@ func messariMapNetworkNameToChainID(network string) uint64 {
 	return 0
 }
 
-func handleMessariTokenList(tokensPerChainID map[uint64]map[string]TokenListToken) []TokenListToken {
-	tokensForChainIDSyncMap := initSyncMap(tokensPerChainID)
-
-	// Fetch the basic informations for all the tokens for all the chains
-	perChainWG := sync.WaitGroup{}
-	perChainWG.Add(len(tokensPerChainID))
-	for chainID, initialList := range tokensPerChainID {
-		listOfAddresses := []common.Address{}
-		for _, token := range initialList {
-			listOfAddresses = append(listOfAddresses, common.HexToAddress(token.Address))
-		}
-
-		go func(chainID uint64, list []common.Address, initialList map[string]TokenListToken) {
-			defer perChainWG.Done()
-			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
-			syncMap := syncMapRaw.([]TokenListToken)
-
-			tokensInfo := ethereum.FetchDecimals(chainID, list)
-			for _, address := range list {
-				if decimals, ok := tokensInfo[address.Hex()]; ok {
-					if initialToken, ok := initialList[address.Hex()]; ok {
-						if newToken, err := SetToken(
-							address,
-							initialToken.Name,
-							initialToken.Symbol,
-							initialToken.LogoURI,
-							initialToken.ChainID,
-							int(decimals),
-						); err == nil {
-							syncMap = append(syncMap, newToken)
-							tokensForChainIDSyncMap.Store(chainID, syncMap)
-						}
-					}
-				}
-			}
-		}(chainID, listOfAddresses, initialList)
-
-	}
-	perChainWG.Wait()
-
-	return extractSyncMap(tokensForChainIDSyncMap)
-}
-
 func fetchMessariTokenList() []TokenListToken {
 	limit := 500
 	page := 1
-	tokensPerChainID := make(map[uint64]map[string]TokenListToken)
+	allTokens := []TokenListToken{}
 
 	for {
 		uri := `https://data.messari.io/api/v2/assets?fields=name,symbol,contract_addresses,id&sort=id&limit=` + strconv.FormatInt(int64(limit), 10) + `&page=` + strconv.FormatInt(int64(page), 10)
@@ -111,10 +66,6 @@ func fetchMessariTokenList() []TokenListToken {
 				if helpers.IsIgnoredToken(chainID, common.HexToAddress(platformData.ContractAddress)) {
 					continue
 				}
-				if _, ok := tokensPerChainID[chainID]; !ok {
-					tokensPerChainID[chainID] = make(map[string]TokenListToken)
-				}
-
 				if newToken, err := SetToken(
 					common.HexToAddress(platformData.ContractAddress),
 					token.Name,
@@ -123,7 +74,7 @@ func fetchMessariTokenList() []TokenListToken {
 					chainID,
 					18,
 				); err == nil {
-					tokensPerChainID[chainID][helpers.ToAddress(platformData.ContractAddress)] = newToken
+					allTokens = append(allTokens, newToken)
 				}
 			}
 		}
@@ -132,7 +83,7 @@ func fetchMessariTokenList() []TokenListToken {
 		time.Sleep(3 * time.Second)
 	}
 
-	return handleMessariTokenList(tokensPerChainID)
+	return fetchTokenList(allTokens)
 }
 
 func buildMessariTokenList() {

@@ -65,5 +65,6 @@ func buildSushiswapTokenList() {
 	tokenList.Keywords = originalTokenList.Keywords
 	tokenList = tokenList.Assign(originalTokenList.Tokens)
 
-	saveTokenListInJsonFile(tokenList, tokenList.Tokens, `sushiswap.json`, Standard)
+	tokens := fetchTokenList(tokenList.Tokens)
+	saveTokenListInJsonFile(tokenList, tokens, `sushiswap.json`, Standard)
 }

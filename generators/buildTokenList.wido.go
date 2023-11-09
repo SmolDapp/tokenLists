@@ -33,7 +33,7 @@ func fetchWidoTokenList() []TokenListToken {
 			tokens = append(tokens, newToken)
 		}
 	}
-	return tokens
+	return fetchTokenList(tokens)
 }
 
 func buildWidoTokenList() {

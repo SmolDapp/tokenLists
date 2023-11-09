@@ -57,5 +57,6 @@ func buildUniswapTokenList() {
 	tokenList.Keywords = originalTokenList.Keywords
 	tokenList = tokenList.Assign(originalTokenList.Tokens)
 
-	saveTokenListInJsonFile(tokenList, tokenList.Tokens, `uniswap.json`, Standard)
+	tokens := fetchTokenList(tokenList.Tokens)
+	saveTokenListInJsonFile(tokenList, tokens, `uniswap.json`, Standard)
 }

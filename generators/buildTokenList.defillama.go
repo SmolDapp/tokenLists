@@ -1,10 +1,7 @@
 package main
 
 import (
-	"sync"
-
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -38,49 +35,9 @@ func defillamaMapNetworkNameToChainID(network string) uint64 {
 	return 0
 }
 
-func handleDefillamaTokenList(listPerChainID map[uint64][]TDefillamaList) []TokenListToken {
-	tokensForChainIDSyncMap := initSyncMap(listPerChainID)
-
-	// Fetch the basic informations for all the tokens for all the chains
-	perChainWG := sync.WaitGroup{}
-	perChainWG.Add(len(listPerChainID))
-	for chainID, list := range listPerChainID {
-		go func(chainID uint64, list []TDefillamaList) {
-			defer perChainWG.Done()
-			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
-			syncMap := syncMapRaw.([]TokenListToken)
-
-			listOfAddresses := []common.Address{}
-			for _, token := range list {
-				listOfAddresses = append(listOfAddresses, token.Address)
-			}
-
-			decimalsInfo := ethereum.FetchDecimals(chainID, listOfAddresses)
-			for _, token := range list {
-				if decimals, ok := decimalsInfo[token.Address.Hex()]; ok {
-					if newToken, err := SetToken(
-						token.Address,
-						token.Name,
-						token.Symbol,
-						token.LogoURI,
-						chainID,
-						int(decimals),
-					); err == nil {
-						syncMap = append(syncMap, newToken)
-						tokensForChainIDSyncMap.Store(chainID, syncMap)
-					}
-				}
-			}
-		}(chainID, list)
-	}
-	perChainWG.Wait()
-
-	return extractSyncMap(tokensForChainIDSyncMap)
-}
-
 func fetchDefillamaTokenList() []TokenListToken {
 	list := helpers.FetchJSON[[]TDefillamaList](`https://defillama-datasets.llama.fi/tokenlist/all.json`)
-	listPerChainID := make(map[uint64][]TDefillamaList)
+	listPerChainID := []TokenListToken{}
 	for _, v := range list {
 		if len(v.Platforms) == 0 {
 			continue
@@ -93,14 +50,16 @@ func fetchDefillamaTokenList() []TokenListToken {
 			if helpers.IsIgnoredToken(chainID, common.HexToAddress(addressOnPlatform)) {
 				continue
 			}
-			if _, ok := listPerChainID[chainID]; !ok {
-				listPerChainID[chainID] = []TDefillamaList{}
-			}
 			v.Address = common.HexToAddress(addressOnPlatform)
-			listPerChainID[chainID] = append(listPerChainID[chainID], v)
+			listPerChainID = append(listPerChainID, TokenListToken{
+				Address: addressOnPlatform,
+				Name:    v.Name,
+				Symbol:  v.Symbol,
+				LogoURI: v.LogoURI,
+			})
 		}
 	}
-	return handleDefillamaTokenList(listPerChainID)
+	return fetchTokenList(listPerChainID)
 }
 
 func buildDefillamaTokenList() {
