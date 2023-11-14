@@ -1,9 +1,9 @@
 {
   "name": "CoinGecko",
   "description": "",
-  "timestamp": "12/11/2023 00:38:16",
+  "timestamp": "14/11/2023 17:09:00",
   "version": {
-    "major": 19,
+    "major": 20,
     "minor": 0,
     "patch": 0
   },
@@ -198,18 +198,10 @@
       "decimals": 18
     },
     {
-      "address": "0x13E7bceFddE72492E656f3fa58baE6029708e673",
-      "name": "AGX Coin",
-      "symbol": "AGX",
-      "logoURI": "https://assets.coingecko.com/coins/images/28297/large/AGX-Coin_200.png?1669265558",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0x14Eb40fb7900185C01ADC6a5b8ac506d8a600e3c",
       "name": "EURO Token",
       "symbol": "EUROT",
-      "logoURI": "",
+      "logoURI": "https://asset-images.messari.io/images/5dd14f1a-306a-4165-822a-a612ea930758/128.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -433,7 +425,7 @@
       "address": "0x2F5DE51823E514De04475ba8Db1eEBA5B244ba84",
       "name": "USD Token",
       "symbol": "USDOT",
-      "logoURI": "",
+      "logoURI": "https://asset-images.messari.io/images/49d21a83-cd40-47f2-84f6-6e0c925c8fa9/128.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -492,6 +484,14 @@
       "logoURI": "https://tokens.1inch.io/0x321e7092a180bb43555132ec53aaa65a5bf84251.png",
       "chainId": 43114,
       "decimals": 18
+    },
+    {
+      "address": "0x323665443CEf804A3b5206103304BD4872EA4253",
+      "name": "USDV",
+      "symbol": "USDV",
+      "logoURI": "",
+      "chainId": 43114,
+      "decimals": 6
     },
     {
       "address": "0x32975907733f93305BE28E2bfd123666b7A9c863",
@@ -810,6 +810,14 @@
       "name": "Beta Token",
       "symbol": "BETA",
       "logoURI": "https://assets.coingecko.com/coins/images/18715/large/beta_finance.jpg?1633087053",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
+      "name": "Aave Avalanche SAVAX",
+      "symbol": "aAvaSAVAX",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -1134,6 +1142,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
+      "name": "Aave Avalanche WAVAX",
+      "symbol": "aAvaWAVAX",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0x6e7f5C0b9f4432716bDd0a77a3601291b9D9e985",
       "name": "Spore.Finance",
       "symbol": "SPORE",
@@ -1422,6 +1438,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8Eb270e296023E9D92081fdF967dDd7878724424",
+      "name": "Aave Avalanche MAI",
+      "symbol": "aAvaMAI",
+      "logoURI": "",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0x8F47416CaE600bccF9530E9F3aeaA06bdD1Caa79",
       "name": "THOR v2",
       "symbol": "THOR",
@@ -1460,6 +1484,14 @@
       "logoURI": "ipfs://QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg",
       "chainId": 43114,
       "decimals": 18
+    },
+    {
+      "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
+      "name": "Aave Avalanche BTC.b",
+      "symbol": "aAvaBTC.b",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 43114,
+      "decimals": 8
     },
     {
       "address": "0x916aBa115F5162960E48a2675Ad4d8cBD09CE8E4",
@@ -1545,7 +1577,7 @@
       "address": "0x95E376390F472fcaA21995169E11D523954b3bbb",
       "name": "LiraT",
       "symbol": "TRYT",
-      "logoURI": "",
+      "logoURI": "https://asset-images.messari.io/images/a720f5a9-09e1-4ab9-ad97-76aed0741021/128.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -1793,7 +1825,7 @@
       "address": "0xAde6057FcAfa57d6d51FFa341C64ce4814995995",
       "name": "Backed $ ZPR1 1-3 Month T-Bill",
       "symbol": "bZPR1",
-      "logoURI": "",
+      "logoURI": "https://asset-images.messari.io/images/aa512d2f-9564-47ff-a864-d4fc1df45b47/128.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -2050,14 +2082,6 @@
       "name": "DSLA",
       "symbol": "DSLA",
       "logoURI": "https://assets.coingecko.com/coins/images/6694/large/dsla_logo-squared_200x200.png?1569571063",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0xDBabd6c54D43361E457A06D677341049AC23EFac",
-      "name": "FLUUSToken",
-      "symbol": "FLUUS",
-      "logoURI": "https://assets.coingecko.com/coins/images/29554/large/fluus-token-logo.png?1679626137",
       "chainId": 43114,
       "decimals": 18
     },
@@ -2406,10 +2430,10 @@
       "decimals": 18
     },
     {
-      "address": "0xc3344870d52688874b06d844E0C36cc39FC727F6",
-      "name": "Ankr Staked AVAX",
-      "symbol": "ankrAVAX",
-      "logoURI": "https://tokens.1inch.io/0xc3344870d52688874b06d844e0c36cc39fc727f6.png",
+      "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
+      "name": "Aave Avalanche FRAX",
+      "symbol": "aAvaFRAX",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -2658,6 +2682,14 @@
       "name": "Kassandra",
       "symbol": "KACY",
       "logoURI": "https://assets.coingecko.com/coins/images/22918/large/kacy.png?1643459818",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
+      "name": "Aave Avalanche AAVE",
+      "symbol": "aAvaAAVE",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
       "chainId": 43114,
       "decimals": 18
     },

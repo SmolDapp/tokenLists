@@ -307,6 +307,10 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 	erc20Map := make(map[string]*ethereum.TERC20)
 	missingAddresses := []common.Address{}
 
+	if helpers.IsChainIDIgnored(chainID) {
+		return erc20Map
+	}
+
 	for _, v := range addresses {
 		if token, ok := ALL_EXISTING_TOKENS[chainID][v.Hex()]; ok {
 			if token.Name == `` || token.Symbol == `` || token.Decimals == 0 {

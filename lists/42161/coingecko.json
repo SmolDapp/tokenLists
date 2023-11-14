@@ -1,9 +1,9 @@
 {
   "name": "CoinGecko",
   "description": "",
-  "timestamp": "12/11/2023 00:38:16",
+  "timestamp": "14/11/2023 17:09:00",
   "version": {
-    "major": 19,
+    "major": 20,
     "minor": 0,
     "patch": 0
   },
@@ -591,8 +591,8 @@
     },
     {
       "address": "0x1ba13cD81B018e06d7a7EaD033D5131115fE6C82",
-      "name": "WisdomTree Floating Rate Treasury Fund - Dinari",
-      "symbol": "USFR.d",
+      "name": "DEPRECATED - WisdomTree Floating Rate Treasury Fund - Dinari",
+      "symbol": "USFR.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32402/large/token-icon.png?1698055558",
       "chainId": 42161,
       "decimals": 18
@@ -615,8 +615,8 @@
     },
     {
       "address": "0x20f11c1aBca831E235B15A4714b544Bb968f8CDF",
-      "name": "Microsoft Corporation - Dinari",
-      "symbol": "MSFT.d",
+      "name": "DEPRECATED - Microsoft Corporation - Dinari",
+      "symbol": "MSFT.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32427/large/token-icon.png?1698120021",
       "chainId": 42161,
       "decimals": 18
@@ -663,8 +663,8 @@
     },
     {
       "address": "0x2414faE77CF726cC2287B81cf174d9828adc6636",
-      "name": "Apple Inc. - Dinari",
-      "symbol": "AAPL.d",
+      "name": "DEPRECATED - Apple Inc. - Dinari",
+      "symbol": "AAPL.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32393/large/token-icon.png?1698053181",
       "chainId": 42161,
       "decimals": 18
@@ -711,8 +711,8 @@
     },
     {
       "address": "0x2888c0aC959484e53bBC6CdaBf2b8b39486225C6",
-      "name": "Tesla, Inc. - Dinari",
-      "symbol": "TSLA.d",
+      "name": "DEPRECATED - Tesla, Inc. - Dinari",
+      "symbol": "TSLA.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32536/large/token-icon.png?1698469155",
       "chainId": 42161,
       "decimals": 18
@@ -918,6 +918,14 @@
       "decimals": 18
     },
     {
+      "address": "0x323665443CEf804A3b5206103304BD4872EA4253",
+      "name": "USDV",
+      "symbol": "USDV",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
       "address": "0x326c33FD1113c1F29B35B4407F3d6312a8518431",
       "name": "Strips Token",
       "symbol": "STRP",
@@ -1018,6 +1026,14 @@
       "name": "Party Dice",
       "symbol": "DICE",
       "logoURI": "https://assets.coingecko.com/coins/images/29778/large/cgdice.png?1681277715",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5",
+      "name": "Aave Arbitrum FRAX",
+      "symbol": "aArbFRAX",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -1382,6 +1398,14 @@
       "decimals": 18
     },
     {
+      "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
+      "name": "Aave Arbitrum wstETH",
+      "symbol": "aArbwstETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x5190F06EaceFA2C552dc6BD5e763b81C73293293",
       "name": "Wombex Token",
       "symbol": "WMX",
@@ -1535,8 +1559,8 @@
     },
     {
       "address": "0x58A8eeC9b82CdF13090A2032235Beb9152e7eB3b",
-      "name": "SPDR S\u0026P 500 ETF Trust - Dinari",
-      "symbol": "SPY.d",
+      "name": "DEPRECATED - SPDR S\u0026P 500 ETF Trust - Dinari",
+      "symbol": "SPY.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32403/large/token-icon.png?1698055561",
       "chainId": 42161,
       "decimals": 18
@@ -1599,8 +1623,8 @@
     },
     {
       "address": "0x5a8A18673aDAA0Cd1101Eb4738C05cc6967b860f",
-      "name": "Amazon.com, Inc. - Dinari",
-      "symbol": "AMZN.d",
+      "name": "DEPRECATED - Amazon.com, Inc. - Dinari",
+      "symbol": "AMZN.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32529/large/token-icon.png?1698460876",
       "chainId": 42161,
       "decimals": 18
@@ -1636,6 +1660,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/25266/large/CxpMECpk_400x400_%281%29.png?1651067984",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+      "name": "Aave Arbitrum USDC",
+      "symbol": "aArbUSDC",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 6
     },
     {
       "address": "0x62CFfe9917790edD44fBC36a76Cb8E4920bD1268",
@@ -1682,6 +1714,14 @@
       "name": "The Standard EURO",
       "symbol": "EUROs",
       "logoURI": "https://assets.coingecko.com/coins/images/32231/large/EUROs-coingecko.png?1696936278",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x6533afac2E7BCCB20dca161449A13A32D391fb00",
+      "name": "Aave Arbitrum ARB",
+      "symbol": "aArbARB",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -1783,8 +1823,8 @@
     },
     {
       "address": "0x6AE848Cd367aC2559abC06BdbD33bEed6B2f49d5",
-      "name": "NVIDIA Corporation - Dinari",
-      "symbol": "NVDA.d",
+      "name": "DEPRECATED - NVIDIA Corporation - Dinari",
+      "symbol": "NVDA.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32401/large/token-icon.png?1698055556",
       "chainId": 42161,
       "decimals": 18
@@ -1886,6 +1926,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
+      "name": "Aave Arbitrum EURS",
+      "symbol": "aArbEURS",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 2
+    },
+    {
       "address": "0x6dD963C510c2D2f09d5eDdB48Ede45FeD063Eb36",
       "name": "Factor",
       "symbol": "FCTR",
@@ -1927,8 +1975,8 @@
     },
     {
       "address": "0x70732186F811f205c28C583096C8ae861B359CEf",
-      "name": "Pfizer, Inc. - Dinari",
-      "symbol": "PFE.d",
+      "name": "DEPRECATED - Pfizer, Inc. - Dinari",
+      "symbol": "PFE.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32537/large/token-icon.png?1698469161",
       "chainId": 42161,
       "decimals": 18
@@ -2438,6 +2486,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8Eb270e296023E9D92081fdF967dDd7878724424",
+      "name": "Aave Arbitrum rETH",
+      "symbol": "aArbrETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x8b5e4C9a188b1A187f2D1E80b1c2fB17fA2922e1",
       "name": "GoldenBoys",
       "symbol": "GOLD",
@@ -2450,6 +2506,14 @@
       "name": "LionDEX Token",
       "symbol": "LION",
       "logoURI": "https://assets.coingecko.com/coins/images/29685/large/Lion_Token.png?1680603415",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
+      "name": "Aave Arbitrum LUSD",
+      "symbol": "aArbLUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -2623,8 +2687,8 @@
     },
     {
       "address": "0x9F1f1B79163dABeDe8227429588289218A832359",
-      "name": "PayPal Holdings, Inc. - Dinari",
-      "symbol": "PYPL.d",
+      "name": "DEPRECATED - PayPal Holdings, Inc. - Dinari",
+      "symbol": "PYPL.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32426/large/token-icon.png?1698119995",
       "chainId": 42161,
       "decimals": 18
@@ -2655,8 +2719,8 @@
     },
     {
       "address": "0x9bd7A08cD17d10E02F596Aa760dfE397C57668b4",
-      "name": "Alphabet Inc. (Class A) - Dinari",
-      "symbol": "GOOGL.d",
+      "name": "DEPRECATED - Alphabet Inc. (Class A) - Dinari",
+      "symbol": "GOOGL.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32428/large/token-icon.png?1698120046",
       "chainId": 42161,
       "decimals": 18
@@ -3503,8 +3567,8 @@
     },
     {
       "address": "0xFdC642c9B59189710D0cac0528D2791968cf560a",
-      "name": "Netflix, Inc. - Dinari",
-      "symbol": "NFLX.d",
+      "name": "DEPRECATED - Netflix, Inc. - Dinari",
+      "symbol": "NFLX.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32425/large/token-icon.png?1698119029",
       "chainId": 42161,
       "decimals": 18
@@ -3551,8 +3615,8 @@
     },
     {
       "address": "0xa40c0975607BDbF7B868755E352570454b5B2e48",
-      "name": "Meta Platforms, Inc. - Dinari",
-      "symbol": "META.d",
+      "name": "DEPRECATED - Meta Platforms, Inc. - Dinari",
+      "symbol": "META.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32394/large/token-icon.png?1698053183",
       "chainId": 42161,
       "decimals": 18
@@ -4246,6 +4310,14 @@
       "decimals": 18
     },
     {
+      "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
+      "name": "Aave Arbitrum AAVE",
+      "symbol": "aArbAAVE",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xf3C091ed43de9c270593445163a41A876A0bb3dd",
       "name": "Orbs",
       "symbol": "ORBS",
@@ -4287,8 +4359,8 @@
     },
     {
       "address": "0xf67e6E9a4B62accd0Aa9DD113a7ef8a0653Bb9Cb",
-      "name": "Walt Disney Company - Dinari",
-      "symbol": "DIS.d",
+      "name": "DEPRECATED - Walt Disney Company - Dinari",
+      "symbol": "DIS.d.DEPRECATED",
       "logoURI": "https://assets.coingecko.com/coins/images/32538/large/token-icon.png?1698469167",
       "chainId": 42161,
       "decimals": 18
