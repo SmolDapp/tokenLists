@@ -3,7 +3,6 @@ package main
 import (
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 )
 
@@ -19,7 +18,7 @@ type TExternalERC20Token struct {
 	Icon                      string   `json:"icon"`
 	Decimals                  uint64   `json:"decimals"`
 }
-type TYearnTokenData struct {
+type TYearnVaultData struct {
 	Address       string              `json:"address"`
 	Name          string              `json:"name"`
 	Symbol        string              `json:"symbol"`
@@ -29,45 +28,73 @@ type TYearnTokenData struct {
 	Decimals      uint64              `json:"decimals"`
 	ChainID       uint64              `json:"chainID"`
 }
+type TTokenType string
+
+const (
+	TokenTypeStandardVault           TTokenType = "Yearn Vault"
+	TokenTypeLegagyStandardVault     TTokenType = "Standard"
+	TokenTypeExperimentalVault       TTokenType = "Experimental Yearn Vault"
+	TokenTypeLegacyExperimentalVault TTokenType = "Experimental"
+	TokenTypeAutomatedVault          TTokenType = "Automated Yearn Vault"
+	TokenTypeLegacyAutomatedVault    TTokenType = "Automated"
+	TokenTypeNative                  TTokenType = "Native"
+	TokenTypeCurveLP                 TTokenType = "Curve LP"
+	TokenTypeCompound                TTokenType = "Compound"
+	TokenTypeAaveV1                  TTokenType = "AAVE V1"
+	TokenTypeAaveV2                  TTokenType = "AAVE V2"
+)
+
+// TERC20Token contains the basic information of an ERC20 token
+type TYearnTokenData struct {
+	Address                   string     `json:"address"`
+	UnderlyingTokensAddresses []string   `json:"underlyingTokensAddresses"`
+	Type                      TTokenType `json:"type"`
+	Name                      string     `json:"name"`
+	Symbol                    string     `json:"symbol"`
+	DisplayName               string     `json:"displayName"`
+	DisplaySymbol             string     `json:"displaySymbol"`
+	Description               string     `json:"description"`
+	Category                  string     `json:"category"`
+	Icon                      string     `json:"icon"`
+	Decimals                  uint64     `json:"decimals"`
+}
 
 func fetchYearnTokenList() []TokenListToken {
-	tokens := []TokenListToken{}
-	list := helpers.FetchJSON[[]TYearnTokenData](`https://ydaemon.yearn.fi/vaults/all?limit=20000&migrable=ignore`)
+	list := helpers.FetchJSON[map[uint64]map[string]TYearnTokenData](`https://ydevmon.ycorpo.com/tokens/all`)
+	listPerChainID := []TokenListToken{}
 
-	for _, vault := range list {
-		chainIDStr := strconv.FormatUint(vault.ChainID, 10)
+	for chainID, listPerChain := range list {
+		for _, vault := range listPerChain {
+			chainIDStr := strconv.FormatUint(chainID, 10)
 
-		/**************************************************************************
-		** The API from Yearn returns a list of tokens for each chainID. For each
-		** token, we can use the IsVault flag to know if it's a vault or not.
-		** For each vault, we need to add the underlying tokens to the list of
-		** tokens to add to the token list. As the data is not directly available
-		** with the vault information, we can fetch the token details after.
-		**************************************************************************/
-		if newToken, err := SetToken(
-			common.HexToAddress(vault.Address),
-			helpers.SafeString(vault.DisplayName, vault.Name),
-			helpers.SafeString(vault.DisplaySymbol, vault.Symbol),
-			`https://assets.smold.app/api/token/`+chainIDStr+`/`+vault.Address+`/logo-128.png`,
-			vault.ChainID,
-			int(vault.Decimals),
-		); err == nil {
-			tokens = append(tokens, newToken)
-		}
+			if vault.Category != `yVault` {
+				continue
+			}
+			/**************************************************************************
+			** The API from Yearn returns a list of tokens for each chainID. For each
+			** token, we can use the IsVault flag to know if it's a vault or not.
+			** For each vault, we need to add the underlying tokens to the list of
+			** tokens to add to the token list. As the data is not directly available
+			** with the vault information, we can fetch the token details after.
+			**************************************************************************/
+			listPerChainID = append(listPerChainID, TokenListToken{
+				Address: vault.Address,
+				Name:    vault.Name,
+				Symbol:  vault.Symbol,
+				LogoURI: `https://assets.smold.app/api/token/` + chainIDStr + `/` + vault.Address + `/logo-128.png`,
+				ChainID: chainID,
+			})
 
-		if newToken, err := SetToken(
-			common.HexToAddress(vault.Token.Address),
-			helpers.SafeString(vault.Token.DisplayName, vault.Token.Name),
-			helpers.SafeString(vault.Token.DisplaySymbol, vault.Token.Symbol),
-			`https://assets.smold.app/api/token/`+chainIDStr+`/`+vault.Token.Address+`/logo-128.png`,
-			vault.ChainID,
-			int(vault.Token.Decimals),
-		); err == nil {
-			tokens = append(tokens, newToken)
+			for _, underlyingTokenAddress := range vault.UnderlyingTokensAddresses {
+				listPerChainID = append(listPerChainID, TokenListToken{
+					Address: underlyingTokenAddress,
+					ChainID: chainID,
+				})
+			}
 		}
 	}
 
-	return fetchTokenList(tokens)
+	return fetchTokenList(listPerChainID)
 }
 
 func buildYearnTokenList() {
