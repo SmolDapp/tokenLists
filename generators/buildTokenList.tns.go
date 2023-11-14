@@ -2,25 +2,30 @@ package main
 
 import (
 	"context"
+	"strconv"
 
 	graphql "github.com/hasura/go-graphql-client"
+	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 var chainIDToBIP44 = map[string]uint64{
-	`60`:   1,     // Ethereum
-	`614`:  10,    // Optimism
-	`714`:  56,    // Binance Smart Chain
-	`700`:  100,   // xDai/Gnosis
-	`966`:  137,   // Polygon
-	`1007`: 250,   // Fantom
-	`804`:  324,   // ZKSync
-	`9001`: 42161, // Arbitrum
-	`9000`: 43114, // Avalanche
+	`0x3c`:       1,     // Ethereum
+	`0x8000000a`: 10,    // Optimism
+	`0x80000038`: 56,    // Binance Smart Chain
+	`0x80000064`: 100,   // xDai/Gnosis
+	`0x80000089`: 137,   // Polygon
+	`0x800000fa`: 250,   // Fantom
+	`0x80000144`: 324,   // ZKSync
+	`0x8000A4B1`: 42161, // Arbitrum
+	`9000`:       43114, // Avalanche
 }
 
 func fetchTNSTokeList() []TokenListToken {
 	listPerChainID := []TokenListToken{}
-	client := graphql.NewClient("https://api.thegraph.com/subgraphs/name/mike-data-nexus/tkn-_sg", nil)
+	client := graphql.NewClient(
+		`https://api.thegraph.com/subgraphs/name/mike-data-nexus/tkn-_sg`,
+		nil,
+	)
 
 	var query struct {
 		Domains []struct {
@@ -35,12 +40,19 @@ func fetchTNSTokeList() []TokenListToken {
 	}
 	err := client.Query(context.Background(), &query, nil)
 	if err != nil {
+		logs.Error(err)
 		return listPerChainID
 	}
 
 	for _, domain := range query.Domains {
 		for _, address := range domain.Resolver.Addresses {
-			expectedChainID := chainIDToBIP44[address.CoinType]
+			coinTypeToInt, err := strconv.ParseInt(address.CoinType, 0, 64)
+			if err != nil {
+				logs.Error(err)
+				continue
+			}
+			coinTypeHex := strconv.FormatInt(coinTypeToInt, 16)
+			expectedChainID := chainIDToBIP44[`0x`+coinTypeHex]
 			if expectedChainID == 0 {
 				continue
 			}
