@@ -141,6 +141,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`tns`: {
+		Exec:             buildTNSTokenList,
+		Name:             `Token Name Service`,
+		Description:      `Token Name Service is a decentralized naming service for tokens on Ethereum.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`smolAssets`: {
 		Exec:             buildSmolAssetsTokenList,
 		Name:             `SmolAssets`,
