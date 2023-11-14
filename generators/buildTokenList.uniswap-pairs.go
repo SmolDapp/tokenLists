@@ -64,7 +64,7 @@ func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken,
 	** least 10 different pairs.
 	**************************************************************************/
 	for chainID, uniContract := range UniswapContractsPerChainID {
-		if helpers.IsChainIDIgnored(chainID) {
+		if !helpers.IsChainIDSupported(chainID) {
 			continue
 		}
 		tokensPerChainID[chainID] = []common.Address{}

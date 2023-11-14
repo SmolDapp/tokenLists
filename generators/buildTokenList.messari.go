@@ -60,7 +60,7 @@ func fetchMessariTokenList() []TokenListToken {
 			logoURI := `https://asset-images.messari.io/images/` + token.ID + `/128.png`
 			for _, platformData := range token.Addresses {
 				chainID := messariMapNetworkNameToChainID(platformData.Platform)
-				if chainID == 0 || helpers.IsChainIDIgnored(chainID) {
+				if chainID == 0 || !helpers.IsChainIDSupported(chainID) {
 					continue
 				}
 				if helpers.IsIgnoredToken(chainID, common.HexToAddress(platformData.ContractAddress)) {

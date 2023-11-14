@@ -26,7 +26,7 @@ func fetchParaswapTokenList() []TokenListToken {
 	tokens := []TokenListToken{}
 
 	for chainID, uri := range APIURIForParaswap {
-		if helpers.IsChainIDIgnored(chainID) {
+		if !helpers.IsChainIDSupported(chainID) {
 			continue
 		}
 

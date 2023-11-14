@@ -65,7 +65,7 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]TokenListToke
 	** least 10 different pairs.
 	**************************************************************************/
 	for chainID, sushiContract := range SushiswapContractsPerChainID {
-		if helpers.IsChainIDIgnored(chainID) {
+		if !helpers.IsChainIDSupported(chainID) {
 			continue
 		}
 		tokensPerChainID[chainID] = []common.Address{}

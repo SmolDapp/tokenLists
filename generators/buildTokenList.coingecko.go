@@ -94,7 +94,7 @@ func fetchCoingeckoTokenList() []TokenListToken {
 
 		for platformName, addressOnPlatform := range v.Platforms {
 			chainID := coingeckoMapNetworkNameToChainID(platformName)
-			if chainID == 0 || helpers.IsChainIDIgnored(chainID) {
+			if chainID == 0 || !helpers.IsChainIDSupported(chainID) {
 				continue
 			}
 			if helpers.IsIgnoredToken(chainID, common.HexToAddress(addressOnPlatform)) {

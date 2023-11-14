@@ -30,6 +30,16 @@ func buildTokenListooorList() {
 	allTokensPlain := []TokenListToken{}
 	listsPerChain := make(map[uint64][]string)
 
+	allTokensPlain = append(allTokensPlain, ETHER)
+	allTokensPlain = append(allTokensPlain, FTM)
+	allTokensPlain = append(allTokensPlain, BSC)
+	allTokensPlain = append(allTokensPlain, MATIC)
+	allTokensPlain = append(allTokensPlain, MATIC_ZKEVM)
+	allTokensPlain = append(allTokensPlain, XDAI)
+	allTokensPlain = append(allTokensPlain, addEtherLikeToken(10))
+	allTokensPlain = append(allTokensPlain, addEtherLikeToken(8453))
+	allTokensPlain = append(allTokensPlain, addEtherLikeToken(324))
+
 	/**************************************************************************
 	** We want to know which tokens to add to the aggregated tokenlistooor list
 	** and to do that we need to know in how many lists they are present.
@@ -51,6 +61,9 @@ func buildTokenListooorList() {
 		}
 		tokenList := loadTokenListFromJsonFile(name + `.json`)
 		for _, token := range tokenList.Tokens {
+			if !helpers.IsChainIDSupported(token.ChainID) {
+				continue
+			}
 			if _, ok := listsPerChain[token.ChainID]; !ok {
 				listsPerChain[token.ChainID] = []string{}
 			}
@@ -103,11 +116,6 @@ func buildTokenListooorList() {
 		}
 	}
 
-	allTokensPlain = append(allTokensPlain, ETHER)
-	allTokensPlain = append(allTokensPlain, FTM)
-	allTokensPlain = append(allTokensPlain, BSC)
-	allTokensPlain = append(allTokensPlain, MATIC)
-	allTokensPlain = append(allTokensPlain, XDAI)
 	tokens := fetchTokenList(allTokensPlain)
 	saveTokenListInJsonFile(tokenList, tokens, `tokenlistooor.json`, Standard)
 }

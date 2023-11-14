@@ -9,8 +9,6 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
-var ALL_EXISTING_TOKENS = map[uint64]map[string]TokenListToken{}
-
 func main() {
 	helpers.Init()
 	ethereum.Init()

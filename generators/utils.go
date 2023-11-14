@@ -42,7 +42,7 @@ func loadTokenListFromJsonFile(filePath string) TokenListData[TokenListToken] {
 
 	tokenList.PreviousTokensMap = make(map[string]TokenListToken)
 	for _, token := range tokenList.Tokens {
-		if helpers.IsChainIDIgnored(token.ChainID) {
+		if !helpers.IsChainIDSupported(token.ChainID) {
 			continue
 		}
 		key := getKey(token.ChainID, common.HexToAddress(token.Address))
@@ -78,7 +78,7 @@ func saveTokenListInJsonFile(
 	**************************************************************************/
 	if method == Append {
 		for _, token := range tokenList.PreviousTokensMap {
-			if helpers.IsChainIDIgnored(token.ChainID) {
+			if !helpers.IsChainIDSupported(token.ChainID) {
 				continue
 			}
 			if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(token.ChainID, common.HexToAddress(token.Address)) {
@@ -100,7 +100,7 @@ func saveTokenListInJsonFile(
 	}
 
 	for _, token := range tokens {
-		if helpers.IsChainIDIgnored(token.ChainID) {
+		if !helpers.IsChainIDSupported(token.ChainID) {
 			continue
 		}
 		newToken, err := SetToken(
@@ -196,7 +196,7 @@ func saveTokenListInJsonFile(
 	}
 
 	for chainID, tokens := range tokeListPerChainID {
-		if helpers.IsChainIDIgnored(chainID) {
+		if !helpers.IsChainIDSupported(chainID) {
 			continue
 		}
 		chainIDStr := strconv.FormatUint(chainID, 10)
@@ -307,7 +307,7 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 	erc20Map := make(map[string]*ethereum.TERC20)
 	missingAddresses := []common.Address{}
 
-	if helpers.IsChainIDIgnored(chainID) {
+	if !helpers.IsChainIDSupported(chainID) {
 		return erc20Map
 	}
 
@@ -336,7 +336,7 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 		if v.Name == `` && v.Symbol == `` {
 			logs.Warning(`Missing informations for token:`, v.Address, `on chain:`, chainID)
 		}
-		ALL_EXISTING_TOKENS[chainID][k] = TokenListToken{
+		ALL_EXISTING_TOKENS[chainID][v.Address.Hex()] = TokenListToken{
 			Address:    v.Address.Hex(),
 			Name:       v.Name,
 			Symbol:     v.Symbol,
@@ -352,7 +352,7 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 func groupByChainID(tokens []TokenListToken) map[uint64][]common.Address {
 	tokensPerChainID := make(map[uint64][]common.Address)
 	for _, token := range tokens {
-		if helpers.IsChainIDIgnored(token.ChainID) {
+		if !helpers.IsChainIDSupported(token.ChainID) {
 			continue
 		}
 		tokensPerChainID[token.ChainID] = append(tokensPerChainID[token.ChainID], common.HexToAddress(token.Address))
@@ -362,7 +362,7 @@ func groupByChainID(tokens []TokenListToken) map[uint64][]common.Address {
 
 func getExistingLogo(chainID uint64, lookingFor common.Address, slice []TokenListToken) string {
 	for _, token := range slice {
-		if helpers.IsChainIDIgnored(token.ChainID) {
+		if !helpers.IsChainIDSupported(token.ChainID) {
 			continue
 		}
 		if token.Address == lookingFor.Hex() && chainID == token.ChainID {
@@ -390,7 +390,7 @@ func SetToken(
 	if helpers.IsIgnoredToken(chainID, address) {
 		return token, errors.New(`token is ignored`)
 	}
-	if chainID == 0 || helpers.IsChainIDIgnored(chainID) {
+	if chainID == 0 || !helpers.IsChainIDSupported(chainID) {
 		return token, errors.New(`chainID is ignored`)
 	}
 
@@ -408,7 +408,7 @@ func fetchTokenList(tokensFromList []TokenListToken) []TokenListToken {
 	grouped := groupByChainID(tokensFromList)
 
 	for chainID, tokensForChain := range grouped {
-		if helpers.IsChainIDIgnored(chainID) {
+		if !helpers.IsChainIDSupported(chainID) {
 			continue
 		}
 

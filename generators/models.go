@@ -58,7 +58,7 @@ func InitTokenList() TokenListData[TokenListToken] {
 // Assign assigns the original token list to the current token list
 func (list TokenListData[T]) Assign(originalTokenList []TokenListToken) TokenListData[T] {
 	for _, token := range originalTokenList {
-		if helpers.IsChainIDIgnored(token.ChainID) {
+		if !helpers.IsChainIDSupported(token.ChainID) {
 			continue
 		}
 		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(token.ChainID, common.HexToAddress(token.Address)) {

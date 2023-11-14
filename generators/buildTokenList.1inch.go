@@ -31,7 +31,7 @@ func fetch1InchTokenList() []TokenListToken {
 	tokens := []TokenListToken{}
 
 	for chainID, uri := range APIURIFor1Inch {
-		if helpers.IsChainIDIgnored(chainID) {
+		if !helpers.IsChainIDSupported(chainID) {
 			continue
 		}
 

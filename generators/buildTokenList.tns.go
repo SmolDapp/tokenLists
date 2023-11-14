@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"strconv"
+	"strings"
 
 	graphql "github.com/hasura/go-graphql-client"
 	"github.com/migratooor/tokenLists/generators/common/logs"
@@ -16,8 +17,8 @@ var chainIDToBIP44 = map[string]uint64{
 	`0x80000089`: 137,   // Polygon
 	`0x800000fa`: 250,   // Fantom
 	`0x80000144`: 324,   // ZKSync
-	`0x8000A4B1`: 42161, // Arbitrum
-	`9000`:       43114, // Avalanche
+	`0x8000a4b1`: 42161, // Arbitrum
+	`0x8000a86a`: 43114, // Avalanche
 }
 
 func fetchTNSTokeList() []TokenListToken {
@@ -26,7 +27,6 @@ func fetchTNSTokeList() []TokenListToken {
 		`https://api.thegraph.com/subgraphs/name/mike-data-nexus/tkn-_sg`,
 		nil,
 	)
-
 	var query struct {
 		Domains []struct {
 			Resolver struct {
@@ -52,13 +52,14 @@ func fetchTNSTokeList() []TokenListToken {
 				continue
 			}
 			coinTypeHex := strconv.FormatInt(coinTypeToInt, 16)
-			expectedChainID := chainIDToBIP44[`0x`+coinTypeHex]
+			expectedChainID := chainIDToBIP44[strings.ToLower(`0x`+coinTypeHex)]
 			if expectedChainID == 0 {
 				continue
 			}
 			listPerChainID = append(listPerChainID, TokenListToken{
 				Address: address.Address,
 				ChainID: expectedChainID,
+				LogoURI: domain.Resolver.Avatar,
 			})
 		}
 	}

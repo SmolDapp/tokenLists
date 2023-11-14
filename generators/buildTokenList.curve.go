@@ -111,7 +111,7 @@ func fetchCurveTokenList() []TokenListToken {
 	listPerChainID := make(map[uint64][]TCurveTokenData)
 
 	for chainID, uris := range APIURIForCurve {
-		if helpers.IsChainIDIgnored(chainID) {
+		if !helpers.IsChainIDSupported(chainID) {
 			continue
 		}
 
