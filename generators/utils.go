@@ -310,7 +310,7 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 	for _, v := range addresses {
 		if token, ok := ALL_EXISTING_TOKENS[chainID][v.Hex()]; ok {
 			if token.Name == `` || token.Symbol == `` || token.Decimals == 0 {
-				logs.Warning(`Missing informations for token:`, token.Address)
+				logs.Warning(`Missing informations for token:`, token.Address, `on chain:`, chainID)
 			}
 			erc20Map[v.Hex()] = &ethereum.TERC20{
 				Address:  v,

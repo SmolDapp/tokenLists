@@ -56,6 +56,7 @@ func fetchDefillamaTokenList() []TokenListToken {
 				Name:    v.Name,
 				Symbol:  v.Symbol,
 				LogoURI: v.LogoURI,
+				ChainID: chainID,
 			})
 		}
 	}
