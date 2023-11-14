@@ -204,13 +204,6 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
-	`yearn-extended`: {
-		Exec:             buildYearnExtendedTokenList,
-		Name:             `Yearn Extended`,
-		Description:      `A list of tokens available for depositing in Yearn, the tokens that represent yVaults and any related tokens.`,
-		GenerationMethod: GenerationExternalList,
-		GeneratorType:    GeneratorToken,
-	},
 	`yearn`: {
 		Exec:             buildYearnTokenList,
 		Name:             `Yearn`,

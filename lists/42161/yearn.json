@@ -1,9 +1,9 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "14/11/2023 18:05:53",
+  "timestamp": "14/11/2023 18:19:30",
   "version": {
-    "major": 33,
+    "major": 34,
     "minor": 0,
     "patch": 0
   },
@@ -18,6 +18,22 @@
     "vaults"
   ],
   "tokens": [
+    {
+      "address": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978",
+      "name": "Curve DAO Token",
+      "symbol": "CRV",
+      "logoURI": "https://tokens.1inch.io/0xd533a949740bb3306d119cc777fa900ba034cd52.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+      "name": "Frax",
+      "symbol": "FRAX",
+      "logoURI": "https://tokens.1inch.io/0x17fc002b466eec40dae837fc4be5c67993ddbd6f.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
     {
       "address": "0x1dBa7641dc69188D6086a73B972aC4bda29Ec35d",
       "name": "Curve MIM Pool Vault",
@@ -35,10 +51,26 @@
       "decimals": 18
     },
     {
+      "address": "0x30dF229cefa463e991e29D42DB0bae2e122B2AC7",
+      "name": "Curve.fi Factory USD Metapool: MIM",
+      "symbol": "MIM3CRV-f",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x30dF229cefa463e991e29D42DB0bae2e122B2AC7/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x49448d2B94fb9C4e41a30aD8315D32f46004A34b",
       "name": "2CRV yVault",
       "symbol": "yv2CRV",
       "logoURI": "https://assets.smold.app/api/token/42161/0x49448d2B94fb9C4e41a30aD8315D32f46004A34b/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x59bF0545FCa0E5Ad48E13DA269faCD2E8C886Ba4",
+      "name": "Curve.fi Factory Plain Pool: VST+FRAX",
+      "symbol": "VSTFRAX-f",
+      "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -49,6 +81,62 @@
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/42161/0x630c9050E6b0014C6Fe4C214D4840909345aDB7D/logo-128.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x64343594Ab9b56e99087BfA6F2335Db24c2d1F17",
+      "name": "Vesta Stable",
+      "symbol": "VST",
+      "logoURI": "https://tokens.1inch.io/0x64343594ab9b56e99087bfa6f2335db24c2d1f17.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x7f90122BF0700F9E7e1F688fe926940E8839F353",
+      "name": "Curve.fi USDC/USDT",
+      "symbol": "2CRV",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x7f90122BF0700F9E7e1F688fe926940E8839F353/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x82e3A8F066a6989666b031d916c43672085b1582",
+      "name": "yearn.finance",
+      "symbol": "YFI",
+      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png?1598325330",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8e0B8c8BB9db49a46697F3a5Bb8A308e744821D2",
+      "name": "Curve.fi USD-BTC-ETH",
+      "symbol": "crv3crypto",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x8e0B8c8BB9db49a46697F3a5Bb8A308e744821D2/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A",
+      "name": "Magic Internet Money",
+      "symbol": "MIM",
+      "logoURI": "https://tokens.1inch.io/0xfea7a6a0b346362bf88a9e4a88416b77a57d6c2a.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+      "name": "USD Coin (Arb1)",
+      "symbol": "USDC",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
     }
   ]
 }

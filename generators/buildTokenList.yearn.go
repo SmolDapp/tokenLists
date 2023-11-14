@@ -67,9 +67,6 @@ func fetchYearnTokenList() []TokenListToken {
 		for _, vault := range listPerChain {
 			chainIDStr := strconv.FormatUint(chainID, 10)
 
-			if vault.Category != `yVault` {
-				continue
-			}
 			/**************************************************************************
 			** The API from Yearn returns a list of tokens for each chainID. For each
 			** token, we can use the IsVault flag to know if it's a vault or not.
