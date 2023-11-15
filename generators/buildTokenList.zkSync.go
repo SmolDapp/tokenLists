@@ -47,7 +47,7 @@ func fetchZkSyncTokenList() []TokenListToken {
 func buildZkSyncTokenList() {
 	tokenList := loadTokenListFromJsonFile(`zksync.json`)
 	tokenList.Name = `zkSync`
-	tokenList.LogoURI = ``
+	tokenList.LogoURI = `https://assets.smold.app/api/chain/324/logo-128.png`
 	tokenList.Keywords = []string{`zksync`}
 	tokens := []TokenListToken{}
 	tokens = append(tokens, fetchZkSyncTokenList()...)
