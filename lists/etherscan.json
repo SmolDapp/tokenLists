@@ -1,9 +1,9 @@
 {
   "name": "Etherscan",
   "description": "",
-  "timestamp": "19/11/2023 01:04:43",
+  "timestamp": "26/11/2023 01:06:34",
   "version": {
-    "major": 23,
+    "major": 24,
     "minor": 0,
     "patch": 0
   },
@@ -50,14 +50,6 @@
       "name": "BIXToken",
       "symbol": "BIX",
       "logoURI": "https://etherscan.io/token/images/bix_28.png?v=2",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x00AbA6fE5557De1a1d565658cBDdddf7C710a1eb",
-      "name": "EASY V2",
-      "symbol": "EZ",
-      "logoURI": "https://etherscan.io/token/images/easyfi_32.png?v=2",
       "chainId": 1,
       "decimals": 18
     },
@@ -122,6 +114,14 @@
       "name": "Huobi BTC",
       "symbol": "HBTC",
       "logoURI": "https://assets.smold.app/api/token/1/0x0316EB71485b0Ab14103307bf65a021042c6d380/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x035dF12E0F3ac6671126525f1015E47D79dFEDDF",
+      "name": "0xMonero",
+      "symbol": "0xMR",
+      "logoURI": "https://tokens.1inch.io/0x035df12e0f3ac6671126525f1015e47d79dfeddf.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -228,6 +228,14 @@
       "logoURI": "https://tokens.1inch.io/0x06a01a4d579479dd5d884ebf61a31727a3d8d442.png",
       "chainId": 1,
       "decimals": 8
+    },
+    {
+      "address": "0x06DDb3a8BC0aBc14f85e974CF1A93a6f8d4909d9",
+      "name": "8PAY Network v2",
+      "symbol": "8PAY v2",
+      "logoURI": "https://assets.coingecko.com/coins/images/14667/large/8pay.jpeg?1696514342",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x06F3C323f0238c72BF35011071f2b5B7F43A054c",
@@ -842,14 +850,6 @@
       "name": "Polkamon",
       "symbol": "PMON",
       "logoURI": "https://tokens.1inch.io/0x1796ae0b0fa4862485106a0de9b654efe301d0b2.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x183015a9bA6fF60230fdEaDc3F43b3D788b13e21",
-      "name": "R Stablecoin",
-      "symbol": "R",
-      "logoURI": "https://assets.smold.app/api/token/1/0x183015a9bA6fF60230fdEaDc3F43b3D788b13e21/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1814,14 +1814,6 @@
       "decimals": 18
     },
     {
-      "address": "0x4057Db5bD9f67A566aA10E5587b1a964afFc6a16",
-      "name": "Truefeedback",
-      "symbol": "TFBX",
-      "logoURI": "https://etherscan.io/token/images/truefeedback_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x4092678e4E78230F46A1534C0fbc8fA39780892B",
       "name": "OCoin",
       "symbol": "OCN",
@@ -2638,14 +2630,6 @@
       "decimals": 18
     },
     {
-      "address": "0x580c8520dEDA0a441522AEAe0f9F7A5f29629aFa",
-      "name": "Dawn",
-      "symbol": "DAWN",
-      "logoURI": "https://etherscan.io/token/images/dawn_32.png?v=2",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x582d872A1B094FC48F5DE31D3B73F2D9bE47def1",
       "name": "Wrapped TON Coin",
       "symbol": "TONCOIN",
@@ -2822,14 +2806,6 @@
       "decimals": 8
     },
     {
-      "address": "0x5d48F293BaED247A2D0189058bA37aa238bD4725",
-      "name": "NeuroChain Clausius",
-      "symbol": "NCC",
-      "logoURI": "https://assets.smold.app/not-found.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x5d65D971895Edc438f465c17DB6992698a52318D",
       "name": "Nebulas Token",
       "symbol": "NAS",
@@ -2926,6 +2902,14 @@
       "decimals": 6
     },
     {
+      "address": "0x61C6eBf443AD613c9648762585B3cFD3BA1F3fA8",
+      "name": "SIX Token",
+      "symbol": "SIX",
+      "logoURI": "https://etherscan.io/token/images/sixnetwork2_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x61E90A50137E1F645c9eF4a0d3A4f01477738406",
       "name": "League of Kingdoms Arena",
       "symbol": "LOKA",
@@ -2970,6 +2954,14 @@
       "name": "Beam",
       "symbol": "BEAM",
       "logoURI": "https://assets.coingecko.com/coins/images/32417/large/chain-logo.png?1698114384",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x62Dc4817588d53a056cBbD18231d91ffCcd34b2A",
+      "name": "DeHive.finance",
+      "symbol": "DHV",
+      "logoURI": "https://tokens.1inch.io/0x62dc4817588d53a056cbbd18231d91ffccd34b2a.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3086,6 +3078,14 @@
       "decimals": 18
     },
     {
+      "address": "0x67d85A291fcDC862A78812a3C26d55e28FFB2701",
+      "name": "Asymetrix Governance Token",
+      "symbol": "ASX",
+      "logoURI": "https://assets.coingecko.com/coins/images/29984/large/Asymetrix_Logo_Only_Square_w200.png?1696528909",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x68037790A0229e9Ce6EaA8A99ea92964106C4703",
       "name": "PAR Stablecoin",
       "symbol": "PAR",
@@ -3130,14 +3130,6 @@
       "name": "Mothership Token",
       "symbol": "MSP",
       "logoURI": "https://etherscan.io/token/images/mothership_28.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x68d57c9a1C35f63E2c83eE8e49A64e9d70528D25",
-      "name": "SIRIN",
-      "symbol": "SRN",
-      "logoURI": "https://tokens.1inch.io/0x68d57c9a1c35f63e2c83ee8e49a64e9d70528d25.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3206,6 +3198,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6Bba316c48b49BD1eAc44573c5c871ff02958469",
+      "name": "Gas DAO",
+      "symbol": "GAS",
+      "logoURI": "https://tokens.1inch.io/0x6bba316c48b49bd1eac44573c5c871ff02958469.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E",
       "name": "Compound Basic Attention Token",
       "symbol": "cBAT",
@@ -3244,14 +3244,6 @@
       "logoURI": "https://etherscan.io/token/images/arkhamintel_32.png",
       "chainId": 1,
       "decimals": 18
-    },
-    {
-      "address": "0x6EC8a24CaBdc339A06a172F8223ea557055aDAa5",
-      "name": "Genaro X",
-      "symbol": "GNX",
-      "logoURI": "https://etherscan.io/token/images/genarox_28_3.png",
-      "chainId": 1,
-      "decimals": 9
     },
     {
       "address": "0x6FF2241756549B5816A177659E766EAf14B34429",
@@ -3654,14 +3646,6 @@
       "decimals": 18
     },
     {
-      "address": "0x7DEE45dff03ec7137979586cA20a2F4917BAC9Fa",
-      "name": "DeFiWizard Token",
-      "symbol": "DWZ",
-      "logoURI": "https://asset-images.messari.io/images/b0b81e2c-be79-4229-9334-6743573a607a/128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x7Ddc52c4De30e94Be3A6A0A2b259b2850f421989",
       "name": "GoMining Token",
       "symbol": "GMT",
@@ -3806,6 +3790,14 @@
       "decimals": 6
     },
     {
+      "address": "0x826180541412D574cf1336d22c0C0a287822678A",
+      "name": "Chainflip",
+      "symbol": "FLIP",
+      "logoURI": "https://etherscan.io/token/images/chainflip1_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x8287C7b963b405b7B8D467DB9d79eEC40625b13A",
       "name": "SWINGBY token",
       "symbol": "SWINGBY",
@@ -3844,14 +3836,6 @@
       "logoURI": "https://tokens.1inch.io/0x8400d94a5cb0fa0d041a3788e395285d61c9ee5e.png",
       "chainId": 1,
       "decimals": 8
-    },
-    {
-      "address": "0x846C66cf71C43f80403B51fE3906B3599D63336f",
-      "name": "PumaPay",
-      "symbol": "PMA",
-      "logoURI": "https://etherscan.io/token/images/pumapay2_32.png",
-      "chainId": 1,
-      "decimals": 18
     },
     {
       "address": "0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
@@ -4414,6 +4398,14 @@
       "decimals": 18
     },
     {
+      "address": "0x96aDD417293a49E80f024734e96CFd8b355bCc14",
+      "name": "LiquidLayer Token",
+      "symbol": "LILA",
+      "logoURI": "https://assets.coingecko.com/coins/images/32547/large/photo_2023-10-08_12-09-02.jpg?1698474657",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x970B9bB2C0444F5E81e9d0eFb84C8ccdcdcAf84d",
       "name": "Fuse Token",
       "symbol": "FUSE",
@@ -4866,14 +4858,6 @@
       "name": "ZeroLiquid",
       "symbol": "ZERO",
       "logoURI": "https://etherscan.io/token/images/zero_32.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xB0e1fc65C1a741b4662B813eB787d369b8614Af1",
-      "name": "Impossible Finance",
-      "symbol": "IF",
-      "logoURI": "https://etherscan.io/token/images/impossiblefinance_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5386,6 +5370,14 @@
       "name": "Aurora DAO",
       "symbol": "AURA",
       "logoURI": "https://etherscan.io/token/images/auroradao_28.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xCdeee767beD58c5325f68500115d4B722b3724EE",
+      "name": "Carbon",
+      "symbol": "CRBN",
+      "logoURI": "https://assets.coingecko.com/coins/images/13262/large/carbon.png?1696513037",
       "chainId": 1,
       "decimals": 18
     },
@@ -6194,14 +6186,6 @@
       "name": "StakeWise Staked ETH2",
       "symbol": "sETH2",
       "logoURI": "https://tokens.1inch.io/0xfe2e637202056d30016725477c5da089ab0a043a.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xFeea0bDd3D07eb6FE305938878C0caDBFa169042",
-      "name": "8PAY Network",
-      "symbol": "8PAY",
-      "logoURI": "https://tokens.1inch.io/0xfeea0bdd3d07eb6fe305938878c0cadbfa169042.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7308,6 +7292,14 @@
       "logoURI": "https://etherscan.io/token/images/kucointoken_32.png",
       "chainId": 1,
       "decimals": 6
+    },
+    {
+      "address": "0xf34B1Db61ACa1a371fE97BAd2606c9f534fb9D7D",
+      "name": "Arbismart Token",
+      "symbol": "RBIS",
+      "logoURI": "https://assets.coingecko.com/coins/images/21906/large/imgonline-com-ua-Resize-cMjOYOwg12bLazt.png?1696521257",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0xf3dcbc6D72a4E1892f7917b7C43b74131Df8480e",
