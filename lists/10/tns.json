@@ -1,10 +1,10 @@
 {
   "name": "Token Name Service",
   "description": "Token Name Service is a decentralized naming service for tokens on Ethereum.",
-  "timestamp": "26/11/2023 01:19:50",
+  "timestamp": "01/12/2023 18:47:43",
   "version": {
     "major": 0,
-    "minor": 4,
+    "minor": 5,
     "patch": 0
   },
   "logoURI": "https://logo.assets.tkn.eth.limo/",
@@ -16,6 +16,14 @@
     "tkr"
   ],
   "tokens": [
+    {
+      "address": "0x01B8b6384298D4848E3BE63D4C9D17830EeE488A",
+      "name": "DAOhaus Token on Optimism",
+      "symbol": "HAUS",
+      "logoURI": "https://ethereum-optimism.github.io/data/HAUS/logo.png",
+      "chainId": 10,
+      "decimals": 18
+    },
     {
       "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
       "name": "Wrapped liquid staked Ether 2.0",
@@ -36,7 +44,7 @@
       "address": "0x3Eb398fEc5F7327C6b15099a9681d9568ded2e82",
       "name": "TokenDao",
       "symbol": "TKN",
-      "logoURI": "https://ethereum-optimism.github.io/data/TKN/logo.png",
+      "logoURI": "https://assets.smold.app/api/token/10/0x3Eb398fEc5F7327C6b15099a9681d9568ded2e82/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
