@@ -57,6 +57,7 @@ var IGNORED_TOKENS = map[uint64][]common.Address{
 		common.HexToAddress("0xd51e852630DeBC24E9e1041a03d80A0107F8Ef0C"),
 		common.HexToAddress("0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0"),
 		common.HexToAddress("0xec6432B90e7fD4d9f872cc5C781f05B617DB861E"),
+		common.HexToAddress(`0x0E69D0A2bbB30aBcB7e5CfEA0E4FDe19C00A8d47`),
 	},
 	56: {
 		common.HexToAddress("0xc00e94Cb662C3520282E6f5717214004A7f26888"),
