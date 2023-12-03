@@ -1,9 +1,9 @@
 {
   "name": "Etherscan",
   "description": "",
-  "timestamp": "01/12/2023 18:53:48",
+  "timestamp": "03/12/2023 00:37:53",
   "version": {
-    "major": 25,
+    "major": 26,
     "minor": 0,
     "patch": 0
   },
@@ -50,6 +50,14 @@
       "name": "BIXToken",
       "symbol": "BIX",
       "logoURI": "https://etherscan.io/token/images/bix_28.png?v=2",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x00AbA6fE5557De1a1d565658cBDdddf7C710a1eb",
+      "name": "EASY V2",
+      "symbol": "EZ",
+      "logoURI": "https://etherscan.io/token/images/easyfi_32.png?v=2",
       "chainId": 1,
       "decimals": 18
     },
@@ -114,14 +122,6 @@
       "name": "Huobi BTC",
       "symbol": "HBTC",
       "logoURI": "https://assets.smold.app/api/token/1/0x0316EB71485b0Ab14103307bf65a021042c6d380/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x035dF12E0F3ac6671126525f1015E47D79dFEDDF",
-      "name": "0xMonero",
-      "symbol": "0xMR",
-      "logoURI": "https://tokens.1inch.io/0x035df12e0f3ac6671126525f1015e47d79dfeddf.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -354,14 +354,6 @@
       "name": "Decentralized USD",
       "symbol": "USDD",
       "logoURI": "https://tokens.1inch.io/0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x0CDF9acd87E940837ff21BB40c9fd55F68bba059",
-      "name": "Public Mint",
-      "symbol": "MINT",
-      "logoURI": "https://tokens.1inch.io/0x0cdf9acd87e940837ff21bb40c9fd55f68bba059.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -954,14 +946,6 @@
       "name": "Bancor Network Token",
       "symbol": "BNT",
       "logoURI": "https://tokens.1inch.io/0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x1F8A626883d7724DBd59eF51CBD4BF1Cf2016D13",
-      "name": "Jigstack",
-      "symbol": "STAK",
-      "logoURI": "https://tokens.1inch.io/0x1f8a626883d7724dbd59ef51cbd4bf1cf2016d13.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1590,6 +1574,14 @@
       "decimals": 18
     },
     {
+      "address": "0x36905Fc93280f52362A1CBAB151F25DC46742Fb5",
+      "name": "BTOCoin",
+      "symbol": "BTO",
+      "logoURI": "https://assets.coingecko.com/coins/images/2048/large/bottos.png?1696503016",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x374CB8C27130E2c9E04F44303f3c8351B9De61C1",
       "name": "BaoToken",
       "symbol": "BAO",
@@ -1826,14 +1818,6 @@
       "name": "CARD.STARTER",
       "symbol": "CARDS",
       "logoURI": "https://tokens.1inch.io/0x3d6f0dea3ac3c607b3998e6ce14b6350721752d9.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x4057Db5bD9f67A566aA10E5587b1a964afFc6a16",
-      "name": "Truefeedback",
-      "symbol": "TFBX",
-      "logoURI": "https://etherscan.io/token/images/truefeedback_32.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3254,6 +3238,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6EC8a24CaBdc339A06a172F8223ea557055aDAa5",
+      "name": "Genaro X",
+      "symbol": "GNX",
+      "logoURI": "https://etherscan.io/token/images/genarox_28_3.png",
+      "chainId": 1,
+      "decimals": 9
+    },
+    {
       "address": "0x6FF2241756549B5816A177659E766EAf14B34429",
       "name": "AQTIS Token",
       "symbol": "AQTIS",
@@ -3494,14 +3486,6 @@
       "decimals": 18
     },
     {
-      "address": "0x765f0C16D1Ddc279295c1a7C24B0883F62d33F75",
-      "name": "DaTa eXchange Token",
-      "symbol": "DTX",
-      "logoURI": "https://etherscan.io/token/images/databroker_28.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x767FE9EDC9E0dF98E07454847909b5E959D7ca0E",
       "name": "Illuvium",
       "symbol": "ILV",
@@ -3572,6 +3556,14 @@
       "logoURI": "https://etherscan.io/token/images/ezooww_28.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x798D1bE841a82a273720CE31c822C61a67a601C3",
+      "name": "Digg",
+      "symbol": "DIGG",
+      "logoURI": "https://tokens.1inch.io/0x798d1be841a82a273720ce31c822c61a67a601c3.png",
+      "chainId": 1,
+      "decimals": 9
     },
     {
       "address": "0x7995ab36bB307Afa6A683C24a25d90Dc1Ea83566",
@@ -4738,14 +4730,6 @@
       "name": "Deri",
       "symbol": "DERI",
       "logoURI": "https://tokens.1inch.io/0xa487bf43cf3b10dffc97a9a744cbb7036965d3b9.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xA5Ef74068d04ba0809B7379dD76Af5Ce34Ab7C57",
-      "name": "LunaChow",
-      "symbol": "LUCHOW",
-      "logoURI": "https://etherscan.io/token/images/lunachow_32.png?v=3",
       "chainId": 1,
       "decimals": 18
     },
@@ -7246,6 +7230,14 @@
       "decimals": 18
     },
     {
+      "address": "0xf0Ee6b27b759C9893Ce4f094b49ad28fd15A23e4",
+      "name": "Enigma",
+      "symbol": "ENG",
+      "logoURI": "https://etherscan.io/token/images/enigma_28.png",
+      "chainId": 1,
+      "decimals": 8
+    },
+    {
       "address": "0xf0f9D895aCa5c8678f706FB8216fa22957685A13",
       "name": "Cult DAO",
       "symbol": "CULT",
@@ -7266,6 +7258,14 @@
       "name": "Rally",
       "symbol": "RLY",
       "logoURI": "https://tokens.1inch.io/0xf1f955016ecbcd7321c7266bccfb96c68ea5e49b.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xf278c1CA969095ffddDED020290cf8B5C424AcE2",
+      "name": "RUFF",
+      "symbol": "RUFF",
+      "logoURI": "https://etherscan.io/token/images/ruffchain_28.png",
       "chainId": 1,
       "decimals": 18
     },
