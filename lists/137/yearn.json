@@ -1,11 +1,11 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "03/12/2023 01:13:12",
+  "timestamp": "10/12/2023 01:04:23",
   "version": {
     "major": 34,
-    "minor": 4,
-    "patch": 1
+    "minor": 5,
+    "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
   "keywords": [
@@ -59,12 +59,28 @@
       "decimals": 18
     },
     {
+      "address": "0x2c5d0c3DB75D2f8A4957c74BE09194a9271Cf28D",
+      "name": "yearn-V3-Stargate-USDT",
+      "symbol": "ysUSDT",
+      "logoURI": "https://assets.smold.app/api/token/137/0x2c5d0c3DB75D2f8A4957c74BE09194a9271Cf28D/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
       "address": "0x305F25377d0a39091e99B975558b1bdfC3975654",
       "name": "WETH yVault-A",
       "symbol": "yvWETH-A",
       "logoURI": "https://assets.smold.app/api/token/137/0x305F25377d0a39091e99B975558b1bdfC3975654/logo-128.png",
       "chainId": 137,
       "decimals": 18
+    },
+    {
+      "address": "0x3bd8C987286D8Ad00c05fdb2Ae3E8C9a0f054734",
+      "name": "AaveV3 USDT Lender",
+      "symbol": "ysUSDT",
+      "logoURI": "https://assets.smold.app/api/token/137/0x3bd8C987286D8Ad00c05fdb2Ae3E8C9a0f054734/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
     },
     {
       "address": "0x5136c2F7aB13E202eD42bc1AE82Dd63475919653",
@@ -99,6 +115,22 @@
       "decimals": 18
     },
     {
+      "address": "0x8BBa7AFd0f9B1b664C161EC31d812a8Ec15f7e1a",
+      "name": "yearn-V3-Stargate-USDC",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x8BBa7AFd0f9B1b664C161EC31d812a8Ec15f7e1a/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "name": "(PoS) Dai Stablecoin",
+      "symbol": "DAI",
+      "logoURI": "https://assets.smold.app/api/token/137/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0",
       "name": "USDC yVault-A",
       "symbol": "yvUSDC-A",
@@ -115,10 +147,26 @@
       "decimals": 18
     },
     {
+      "address": "0xBb287E6017d3DEb0e2E65061e8684eab21060123",
+      "name": "USDT yVault-A",
+      "symbol": "yvUSDT-A",
+      "logoURI": "https://assets.smold.app/api/token/137/0xBb287E6017d3DEb0e2E65061e8684eab21060123/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
       "address": "0xb1403908F772E4374BB151F7C67E88761a0Eb4f1",
       "name": "Compound V3 USDC Lender",
       "symbol": "ysUSDC",
       "logoURI": "https://assets.smold.app/api/token/137/0xb1403908F772E4374BB151F7C67E88761a0Eb4f1/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "name": "(PoS) Tether USD",
+      "symbol": "USDT",
+      "logoURI": "https://assets.smold.app/api/token/137/0xc2132D05D31c914a87C6611C10748AEb04B58e8F/logo-128.png",
       "chainId": 137,
       "decimals": 6
     },
@@ -129,6 +177,14 @@
       "logoURI": "https://assets.smold.app/api/token/137/0xdB92B89Ca415c0dab40Dc96E99Fc411C08F20780/logo-128.png",
       "chainId": 137,
       "decimals": 6
+    },
+    {
+      "address": "0xf4F9d5697341B4C9B0Cc8151413e05A90f7dc24F",
+      "name": "AaveV3 DAI Lender",
+      "symbol": "ysDAI",
+      "logoURI": "https://assets.smold.app/api/token/137/0xf4F9d5697341B4C9B0Cc8151413e05A90f7dc24F/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
     }
   ]
 }
