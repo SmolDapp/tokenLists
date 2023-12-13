@@ -4,6 +4,7 @@ import "github.com/ethereum/go-ethereum/common"
 
 var IGNORED_TOKENS = map[uint64][]common.Address{
 	1: {
+		common.HexToAddress("0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8"),
 		common.HexToAddress("0x84119cb33E8F590D75c2D6Ea4e6B0741a7494EDA"),
 		common.HexToAddress("0x74C1E4b8caE59269ec1D85D3D4F324396048F4ac"),
 		common.HexToAddress("0xdd94De9cFE063577051A5eb7465D08317d8808B6"),
