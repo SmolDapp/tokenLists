@@ -393,6 +393,10 @@ func SetToken(
 	if chainID == 0 || !helpers.IsChainIDSupported(chainID) {
 		return token, errors.New(`chainID is ignored`)
 	}
+	if address.Hex() == common.HexToAddress(`0x2791bca1f2de4661ed88a30c99a7a9449aa84174`).Hex() && chainID == 137 {
+		name = `Bridged USD Coin (PoS)`
+		symbol = `USDC.e`
+	}
 
 	token.ChainID = chainID
 	token.Decimals = decimals
