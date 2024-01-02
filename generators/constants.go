@@ -23,8 +23,11 @@ func init() {
 		if _, ok := ALL_EXISTING_TOKENS[coin.ChainID]; !ok {
 			ALL_EXISTING_TOKENS[coin.ChainID] = make(map[string]TokenListToken)
 		}
-		if coin.Name == `` && coin.Symbol == `` {
-			logs.Warning(`Missing informations for token:`, coin.Address, `on chain:`, coin.ChainID)
+		if coin.Name == `` {
+			logs.Warning(`Missing name for token:`, coin.Address, `on chain:`, coin.ChainID)
+		}
+		if coin.Symbol == `` {
+			logs.Warning(`Missing symbol for token:`, coin.Address, `on chain:`, coin.ChainID)
 		}
 		ALL_EXISTING_TOKENS[coin.ChainID][coin.Address] = TokenListToken{
 			Address:    common.HexToAddress(coin.Address).Hex(),

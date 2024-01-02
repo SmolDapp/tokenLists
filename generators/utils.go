@@ -313,8 +313,20 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 
 	for _, v := range addresses {
 		if token, ok := ALL_EXISTING_TOKENS[chainID][v.Hex()]; ok {
-			if token.Name == `` || token.Symbol == `` || token.Decimals == 0 {
-				logs.Warning(`Missing informations for token:`, token.Address, `on chain:`, chainID)
+			if token.Name == `` && token.Symbol == `` && token.Decimals == 0 {
+				logs.Warning(`[ALL_EXISTING_TOKENS]: Missing name, symbol and decimals for token:`, token.Address, `on chain:`, chainID)
+			} else if token.Name == `` && token.Symbol == `` {
+				logs.Warning(`[ALL_EXISTING_TOKENS]: Missing name and symbol for token:`, token.Address, `on chain:`, chainID)
+			} else if token.Name == `` && token.Decimals == 0 {
+				logs.Warning(`[ALL_EXISTING_TOKENS]: Missing name and decimals for token:`, token.Address, `on chain:`, chainID)
+			} else if token.Symbol == `` && token.Decimals == 0 {
+				logs.Warning(`[ALL_EXISTING_TOKENS]: Missing symbol and decimals for token:`, token.Address, `on chain:`, chainID)
+			} else if token.Name == `` {
+				logs.Warning(`[ALL_EXISTING_TOKENS]: Missing name for token:`, token.Address, `on chain:`, chainID)
+			} else if token.Symbol == `` {
+				logs.Warning(`[ALL_EXISTING_TOKENS]: Missing symbol for token:`, token.Address, `on chain:`, chainID)
+			} else if token.Decimals == 0 {
+				logs.Warning(`[ALL_EXISTING_TOKENS]: Missing decimals for token:`, token.Address, `on chain:`, chainID)
 			}
 			erc20Map[v.Hex()] = &ethereum.TERC20{
 				Address:  v,
@@ -334,7 +346,11 @@ func retrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 			ALL_EXISTING_TOKENS[chainID] = make(map[string]TokenListToken)
 		}
 		if v.Name == `` && v.Symbol == `` {
-			logs.Warning(`Missing informations for token:`, v.Address, `on chain:`, chainID)
+			logs.Warning(`[FETCHED_TOKEN] - Missing name and symbol for token:`, v.Address, `on chain:`, chainID)
+		} else if v.Name == `` {
+			logs.Warning(`[FETCHED_TOKEN] - Missing name for token:`, v.Address, `on chain:`, chainID)
+		} else if v.Symbol == `` {
+			logs.Warning(`[FETCHED_TOKEN] - Missing symbol for token:`, v.Address, `on chain:`, chainID)
 		}
 		ALL_EXISTING_TOKENS[chainID][v.Address.Hex()] = TokenListToken{
 			Address:    v.Address.Hex(),

@@ -117,6 +117,7 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 		logs.Error("No client provided.")
 		return nil
 	}
+	var initialBatchSize = batchSize
 	var responses []CallResponse
 	// Create mapping for results. Be aware that we sometimes get two empty results initially, unsure why
 	results := make(map[string][]interface{})
@@ -129,11 +130,12 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 		rawCalls = append(rawCalls, call)
 	}
 
-	for i := 0; i < len(multiCalls); i += batchSize {
+	for i := 0; i < len(multiCalls); {
 		var group []contracts.Multicall3Call
 		var rawCallsGroup []Call
-
-		if i+batchSize >= len(multiCalls) {
+		if i >= len(multiCalls) {
+			break
+		} else if i+batchSize >= len(multiCalls) {
 			group = multiCalls[i:]
 			rawCallsGroup = rawCalls[i:]
 		} else {
@@ -150,7 +152,6 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 			isAssumingOutOfGas := false
 			chainID, _ := caller.Client.ChainID(context.Background())
 
-			// logs.Pretty(rawCallsGroup)
 			if LIMIT_ERROR {
 				logs.Warning("Multicall gas limit error, retrying with smaller batch size: " + strconv.Itoa(batchSize) + " on chain " + chainID.Text(10))
 			} else if SIZE_ERROR {
@@ -165,27 +166,29 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 			//check if error is a request entity too large
 			if LIMIT_ERROR || SIZE_ERROR || OUT_OF_GAS_ERROR || isAssumingOutOfGas {
 				if batchSize == math.MaxInt64 {
-					return caller.ExecuteByBatch(calls, 10000, blockNumber)
+					batchSize = 10_000
+					continue
 				}
 				chainID, _ := caller.Client.ChainID(context.Background())
 				chainIDStr := "unknown"
 				if chainID != nil {
 					chainIDStr = strconv.Itoa(int(chainID.Int64()))
 				}
-				if isAssumingOutOfGas && batchSize <= 1 {
-					logs.Error(`Multicall failed on chain ` + chainIDStr + `! See error: ` + err.Error())
-					return nil
-				}
 				if batchSize <= 1 {
 					logs.Error(`Multicall failed on chain ` + chainIDStr + `! See error: ` + err.Error())
 					return nil
 				}
-				return caller.ExecuteByBatch(calls, batchSize/2, blockNumber)
+				if isAssumingOutOfGas {
+					logs.Error(`Multicall failed on chain ` + chainIDStr + `! See error: ` + err.Error())
+				}
+				batchSize = batchSize / 2
+				continue
 			} else {
 				logs.Error(err)
 				//sleep a few ms and retry
 				time.Sleep(2000 * time.Millisecond)
-				return caller.ExecuteByBatch(calls, batchSize, blockNumber)
+				logs.Warning(`Retrying with initial batch size of ` + strconv.Itoa(initialBatchSize))
+				continue
 			}
 		}
 
@@ -210,6 +213,10 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 		}
 
 		responses = append(responses, tempResp...)
+		i += batchSize
+		if batchSize != initialBatchSize {
+			batchSize = initialBatchSize
+		}
 	}
 
 	for i, response := range responses {
