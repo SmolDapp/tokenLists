@@ -17,8 +17,11 @@ type TParaswapList struct {
 
 var APIURIForParaswap = map[uint64]string{
 	1:     `https://apiv5.paraswap.io/tokens/1`,
+	10:    `https://apiv5.paraswap.io/tokens/10`,
 	56:    `https://apiv5.paraswap.io/tokens/56`,
 	137:   `https://apiv5.paraswap.io/tokens/137`,
+	8453:  `https://apiv5.paraswap.io/tokens/8453`,
+	42161: `https://apiv5.paraswap.io/tokens/42161`,
 	43114: `https://apiv5.paraswap.io/tokens/43114`,
 }
 
