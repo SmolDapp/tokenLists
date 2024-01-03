@@ -41,7 +41,7 @@ func fetchParaswapTokenList() []TokenListToken {
 		tokensInfo := retrieveBasicInformations(chainID, tokenAddresses)
 
 		for _, existingToken := range list.Tokens {
-			if token, ok := tokensInfo[existingToken.Address]; ok {
+			if token, ok := tokensInfo[common.HexToAddress(existingToken.Address).Hex()]; ok {
 				logoURI := existingToken.LogoURI
 				if logoURI == `https://cdn.paraswap.io/token/token.png` {
 					logoURI = ``

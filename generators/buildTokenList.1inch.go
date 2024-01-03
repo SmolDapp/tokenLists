@@ -43,7 +43,7 @@ func fetch1InchTokenList() []TokenListToken {
 		tokensInfo := retrieveBasicInformations(chainID, allTokens)
 
 		for _, existingToken := range list.Tokens {
-			if token, ok := tokensInfo[existingToken.Address]; ok {
+			if token, ok := tokensInfo[common.HexToAddress(existingToken.Address).Hex()]; ok {
 				if newToken, err := SetToken(
 					token.Address,
 					helpers.SafeString(token.Name, existingToken.Name),

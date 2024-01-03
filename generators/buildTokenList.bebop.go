@@ -92,11 +92,11 @@ func fetchbebopTokenList() []TokenListToken {
 				continue
 			}
 			logoURI := ``
-			if tokenFromList, ok := tokenMap[existingToken.Address]; ok {
+			if tokenFromList, ok := tokenMap[common.HexToAddress(existingToken.Address).Hex()]; ok {
 				logoURI = tokenFromList.LogoURI
 			}
 
-			if token, ok := tokensInfo[existingToken.Address]; ok {
+			if token, ok := tokensInfo[common.HexToAddress(existingToken.Address).Hex()]; ok {
 				if newToken, err := SetToken(
 					token.Address,
 					helpers.SafeString(token.Name, existingToken.Name),
@@ -105,7 +105,7 @@ func fetchbebopTokenList() []TokenListToken {
 					chainID,
 					int(token.Decimals),
 				); err == nil {
-					if tokenFromList, ok := tokenMap[existingToken.Address]; ok {
+					if tokenFromList, ok := tokenMap[common.HexToAddress(existingToken.Address).Hex()]; ok {
 						newToken.Metadata = map[string]any{
 							`tags`:            tokenFromList.Tags,
 							`color`:           tokenFromList.Extensions.Color,
