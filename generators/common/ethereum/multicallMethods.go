@@ -107,7 +107,7 @@ func FetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 	** Regular fix for some RPC, which limit the number of calls in a multicall to a very low
 	** number.
 	**********************************************************************************************/
-	maxBatch := 420
+	maxBatch := uint64(420)
 	if chainID == 250 || chainID == 56 || chainID == 137 {
 		maxBatch = 420
 	}
@@ -150,7 +150,7 @@ func FetchNames(chainID uint64, tokens []common.Address) map[string]string {
 	** Regular fix for some RPC, which limit the number of calls in a multicall to a very low
 	** number.
 	**********************************************************************************************/
-	maxBatch := 420
+	maxBatch := uint64(420)
 	if chainID == 250 || chainID == 56 || chainID == 137 {
 		maxBatch = 420
 	}
@@ -184,7 +184,7 @@ func FetchDecimals(chainID uint64, tokens []common.Address) map[string]uint64 {
 	** Regular fix for some RPC, which limit the number of calls in a multicall to a very low
 	** number.
 	**********************************************************************************************/
-	maxBatch := 420
+	maxBatch := uint64(420)
 	if chainID == 250 || chainID == 56 || chainID == 137 {
 		maxBatch = 42
 	}
