@@ -204,13 +204,6 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},
-	`wido`: {
-		Exec:             buildWidoTokenList,
-		Name:             `Wido`,
-		Description:      `A list of tokens supported by the Wido Router`,
-		GenerationMethod: GenerationAPI,
-		GeneratorType:    GeneratorToken,
-	},
 	`yearn`: {
 		Exec:             buildYearnTokenList,
 		Name:             `Yearn`,

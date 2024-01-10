@@ -21,7 +21,7 @@ Tokenlistooor is a fork of the Uniswap project, with a focus on automation and s
 - **🔎 Per Network Lists for Smaller Files**: Need a list for a single network? No need to fetch all the rest - just access the one you want for the chain you need!
 - **♻️ Auto-Updates**: All lists are regenerated weekly or whenever a push is made, bumping the versions and grabbing the new elements - nothing else to do!
 - **🔗 Multichain Support**: Supports chains 1, 10, 56, 100, 137, 250, 42161, and 43114.
-- **🦄 Multiple A-Tier Protocols**: Generators are ready for multiple projects, including Coingecko, 1Inch, Paraswap, DefiLlama, Yearn, Curve, Cowswap, Uniswap, Sushiswap, Ledgers, Portals, Wido and more soon!
+- **🦄 Multiple A-Tier Protocols**: Generators are ready for multiple projects, including Coingecko, 1Inch, Paraswap, DefiLlama, Yearn, Curve, Cowswap, Uniswap, Sushiswap, Ledgers, Portals, Bebop and more soon!
 
 
 ### How to use the generator
@@ -35,5 +35,4 @@ To start the generator, run the following command:
 - Using [Messari](https://messari.io) API to generate the Messari Token List
 - Using [Paraswap](https://www.paraswap.io/) API to generate the Paraswap Token List
 - Using [Portals](https://portals.fi/) API to generate the Portals Token List
-- Using [Wido](https://www.joinwido.com/) API to generate the Wido Token List
 - Using [Yearn](https://yearn.fi) API to generate the Yearn Token List
