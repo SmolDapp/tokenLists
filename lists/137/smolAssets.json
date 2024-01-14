@@ -1,10 +1,10 @@
 {
   "name": "SmolAssets",
   "description": "A list of tokens supported by Smoldapp Token Assets repository",
-  "timestamp": "10/01/2024 10:39:07",
+  "timestamp": "14/01/2024 00:48:42",
   "version": {
     "major": 3,
-    "minor": 2,
+    "minor": 3,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg",
@@ -13,6 +13,14 @@
     "tokenAssets"
   ],
   "tokens": [
+    {
+      "address": "0x06eD7C67755344548FAFe1822bEE365C4208a57F",
+      "name": "yearn-V3-Stargate-DAI",
+      "symbol": "ysDAI",
+      "logoURI": "https://assets.smold.app/api/token/137/0x06eD7C67755344548FAFe1822bEE365C4208a57F/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
     {
       "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       "name": "Wrapped Matic",
@@ -130,6 +138,14 @@
       "name": "(PoS) Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://assets.smold.app/api/token/137/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B",
+      "name": "DAI yVault-A",
+      "symbol": "yvDAI-A",
+      "logoURI": "https://assets.smold.app/api/token/137/0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
