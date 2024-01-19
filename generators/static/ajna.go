@@ -1709,5 +1709,6 @@ var AJNA_STATIC_TOKENLIST = map[uint64][]TStaticElement{
 		{common.HexToAddress(`0x5559Edb74751A0edE9DeA4DC23aeE72cCA6bE3D5`), `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xE41d2489571d322189246DaFA5ebDe1F4699F498/logo.png`},
 		{common.HexToAddress(`0xd0258a3fD00f38aa8090dfee343f10A9D4d30D3F`), `https://assets.coingecko.com/coins/images/21260/large/voxies.png`},
 		{common.HexToAddress(`0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270`), `https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912`},
+		{common.HexToAddress(`0x583019fF0f430721aDa9cfb4fac8F06cA104d0B4`), `https://assets.coingecko.com/coins/images/32222/large/st-yETH-128px.png?1696914941`},
 	},
 }
