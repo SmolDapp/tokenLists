@@ -148,6 +148,13 @@ func saveTokenListInJsonFile(
 		shouldBumpMajor = true
 	}
 
+	/**************************************************************************
+	** If there are no changes, we will just return.
+	**************************************************************************/
+	if !shouldBumpMajor && !shouldBumpMinor && !shouldBumpPatch {
+		return nil
+	}
+
 	if shouldBumpMajor {
 		tokenList.Version.Major++
 		tokenList.Version.Minor = 0
