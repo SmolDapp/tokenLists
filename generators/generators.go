@@ -46,7 +46,14 @@ var GENERATORS = map[string]TGenerators{
 	`ajna`: {
 		Exec:             buildAjnaTokenList,
 		Name:             `Ajna`,
-		Description:      `A list of non-rebased tokens available on Ajna.`,
+		Description:      `A list of tokens available on Ajna.`,
+		GenerationMethod: GenerationExternalList,
+		GeneratorType:    GeneratorToken,
+	},
+	`ajna-static`: {
+		Exec:             buildAjnaStaticTokenList,
+		Name:             `Ajna (Static)`,
+		Description:      `A list of non-rebased tokens that could work on Ajna.`,
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},

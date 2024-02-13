@@ -11,6 +11,7 @@ import (
 **************************************************************************************************/
 
 var ERC20ABI, _ = contracts.ERC20MetaData.GetAbi()
+var ERC20ALTABI, _ = contracts.Erc20AltMetaData.GetAbi()
 
 func getName(name string, contractAddress common.Address) Call {
 	parsedData, err := ERC20ABI.Pack("name")
@@ -26,6 +27,25 @@ func getName(name string, contractAddress common.Address) Call {
 	return Call{
 		Target:   contractAddress,
 		Abi:      ERC20ABI,
+		Method:   `name`,
+		CallData: parsedData,
+		Name:     name,
+	}
+}
+func getBytes32Name(name string, contractAddress common.Address) Call {
+	parsedData, err := ERC20ALTABI.Pack("name")
+	if err != nil {
+		return Call{
+			Target:   contractAddress,
+			Abi:      ERC20ALTABI,
+			Method:   `name`,
+			CallData: nil,
+			Name:     name,
+		}
+	}
+	return Call{
+		Target:   contractAddress,
+		Abi:      ERC20ALTABI,
 		Method:   `name`,
 		CallData: parsedData,
 		Name:     name,
@@ -50,6 +70,26 @@ func getSymbol(name string, contractAddress common.Address) Call {
 		Name:     name,
 	}
 }
+func getBytes32Symbol(name string, contractAddress common.Address) Call {
+	parsedData, err := ERC20ALTABI.Pack("symbol")
+	if err != nil {
+		return Call{
+			Target:   contractAddress,
+			Abi:      ERC20ALTABI,
+			Method:   `symbol`,
+			CallData: nil,
+			Name:     name,
+		}
+	}
+	return Call{
+		Target:   contractAddress,
+		Abi:      ERC20ALTABI,
+		Method:   `symbol`,
+		CallData: parsedData,
+		Name:     name,
+	}
+}
+
 func getDecimals(name string, contractAddress common.Address) Call {
 	parsedData, err := ERC20ABI.Pack("decimals")
 	if err != nil {
@@ -99,7 +139,9 @@ func FetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 	calls := []Call{}
 	for _, token := range tokens {
 		calls = append(calls, getName(token.String(), token))
+		calls = append(calls, getBytes32Name(token.String()+`name_bytes_32`, token))
 		calls = append(calls, getSymbol(token.String(), token))
+		calls = append(calls, getBytes32Symbol(token.String()+`symbol_bytes_32`, token))
 		calls = append(calls, getDecimals(token.String(), token))
 	}
 
@@ -119,14 +161,16 @@ func FetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 	response := caller.ExecuteByBatch(calls, maxBatch, nil)
 	for _, token := range tokens {
 		rawName := response[token.String()+`name`]
+		rawBytes32Name := response[token.String()+`name_bytes_32`+`name`]
 		rawSymbol := response[token.String()+`symbol`]
+		rawBytes32Symbol := response[token.String()+`symbol_bytes_32`+`symbol`]
 		rawDecimals := response[token.String()+`decimals`]
 
 		newToken := &TERC20{
 			Address:  token,
-			Name:     decodeString(rawName),
-			Symbol:   decodeString(rawSymbol),
-			Decimals: decodeUint64(rawDecimals),
+			Name:     decodeString(rawName, decodeHex(rawBytes32Name, decodeHex(rawBytes32Symbol, ``))),
+			Symbol:   decodeString(rawSymbol, decodeHex(rawBytes32Symbol, ``)),
+			Decimals: decodeUint64(rawDecimals, 0),
 		}
 		tokenList[token.Hex()] = newToken
 	}
@@ -162,7 +206,7 @@ func FetchNames(chainID uint64, tokens []common.Address) map[string]string {
 	response := caller.ExecuteByBatch(calls, maxBatch, nil)
 	for _, token := range tokens {
 		rawName := response[token.String()+`name`]
-		nameList[token.Hex()] = decodeString(rawName)
+		nameList[token.Hex()] = decodeString(rawName, ``)
 	}
 
 	return nameList
@@ -196,7 +240,7 @@ func FetchDecimals(chainID uint64, tokens []common.Address) map[string]uint64 {
 	response := caller.ExecuteByBatch(calls, maxBatch, nil)
 	for _, token := range tokens {
 		rawDecimals := response[token.String()+`decimals`]
-		decimalsList[token.Hex()] = decodeUint64(rawDecimals)
+		decimalsList[token.Hex()] = decodeUint64(rawDecimals, 0)
 	}
 
 	return decimalsList
