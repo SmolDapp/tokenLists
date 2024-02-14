@@ -1,14 +1,17 @@
 {
-  "name": "",
+  "name": "SushiSwap Menu",
   "description": "",
-  "timestamp": "14/02/2024 14:58:05",
+  "timestamp": "14/02/2024 17:23:49",
   "version": {
     "major": 0,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
-  "logoURI": "",
-  "keywords": null,
+  "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+  "keywords": [
+    "sushiswap",
+    "default"
+  ],
   "tokens": [
     {
       "address": "0x57319d41F71E81F3c65F2a47CA4e001EbAFd4F33",
@@ -16,6 +19,14 @@
       "symbol": "xJOE",
       "logoURI": "https://snowtrace.io/token/images/xjoe_32.png",
       "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x5300000000000000000000000000000000000004",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/network/scroll/0x5300000000000000000000000000000000000004.jpg",
+      "chainId": 534352,
       "decimals": 18
     }
   ]

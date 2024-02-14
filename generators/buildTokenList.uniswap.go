@@ -58,7 +58,6 @@ func buildUniswapTokenList() {
 	tokenList.LogoURI = helpers.SafeString(originalTokenList.LogoURI, `ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir"`)
 	tokenList.Keywords = originalTokenList.Keywords
 
-	tokenList = models.TokenListData[models.TokenListToken]{}
 	for _, token := range originalTokenList.Tokens {
 		if !chains.IsChainIDSupported(token.ChainID) {
 			continue

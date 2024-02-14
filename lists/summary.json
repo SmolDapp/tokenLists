@@ -1,88 +1,8 @@
 {
   "name": "Tokenlistooor summary",
-  "timestamp": 1707930126,
+  "timestamp": 1707931620,
   "logoURI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg",
   "lists": [
-    {
-      "name": "",
-      "description": "A list of tokens available for trading on CoW Swap, a DEX focused on MEV protection.",
-      "timestamp": "14/02/2024 14:38:44",
-      "logoURI": "",
-      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/cowswap.json",
-      "keywords": null,
-      "tokenCount": 1,
-      "metadata": {
-        "supportedChains": [
-          100
-        ],
-        "generationMethod": "External"
-      },
-      "version": {
-        "major": 0,
-        "minor": 1,
-        "patch": 0
-      }
-    },
-    {
-      "name": "",
-      "description": "A list of tokens used as the source of truth for the Optimism Gateway.",
-      "timestamp": "14/02/2024 14:38:42",
-      "logoURI": "",
-      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/optimism.json",
-      "keywords": null,
-      "tokenCount": 1,
-      "metadata": {
-        "supportedChains": [
-          10
-        ],
-        "generationMethod": "External"
-      },
-      "version": {
-        "major": 0,
-        "minor": 1,
-        "patch": 0
-      }
-    },
-    {
-      "name": "",
-      "description": "A list of tokens available on SushiSwap DEX.",
-      "timestamp": "14/02/2024 14:58:05",
-      "logoURI": "",
-      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/sushiswap.json",
-      "keywords": null,
-      "tokenCount": 1,
-      "metadata": {
-        "supportedChains": [
-          43114
-        ],
-        "generationMethod": "External"
-      },
-      "version": {
-        "major": 0,
-        "minor": 1,
-        "patch": 0
-      }
-    },
-    {
-      "name": "",
-      "description": "A list of tokens available on UniSwap DEX.",
-      "timestamp": "14/02/2024 14:38:43",
-      "logoURI": "",
-      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/uniswap.json",
-      "keywords": null,
-      "tokenCount": 1,
-      "metadata": {
-        "supportedChains": [
-          43114
-        ],
-        "generationMethod": "External"
-      },
-      "version": {
-        "major": 0,
-        "minor": 1,
-        "patch": 0
-      }
-    },
     {
       "name": "1inch Token List",
       "description": "A list of tokens available in 1Inch DeFi / DEX aggregator",
@@ -239,6 +159,30 @@
         "major": 2,
         "minor": 1,
         "patch": 0
+      }
+    },
+    {
+      "name": "CoW Swap",
+      "description": "A list of tokens available for trading on CoW Swap, a DEX focused on MEV protection.",
+      "timestamp": "14/02/2024 17:18:33",
+      "logoURI": "https://raw.githubusercontent.com/cowprotocol/cowswap/c5974fb8a45d678029ecb013dab33722e152daaa/src/assets/cow-swap/cow_v2.svg",
+      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/cowswap.json",
+      "keywords": [
+        "default",
+        "list",
+        "cowswap"
+      ],
+      "tokenCount": 1,
+      "metadata": {
+        "supportedChains": [
+          100
+        ],
+        "generationMethod": "External"
+      },
+      "version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 1
       }
     },
     {
@@ -493,6 +437,57 @@
       }
     },
     {
+      "name": "Superchain Token List",
+      "description": "A list of tokens used as the source of truth for the Optimism Gateway.",
+      "timestamp": "14/02/2024 17:15:59",
+      "logoURI": "https://ethereum-optimism.github.io/optimism.svg",
+      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/optimism.json",
+      "keywords": [
+        "scaling",
+        "layer2",
+        "infrastructure"
+      ],
+      "tokenCount": 447,
+      "metadata": {
+        "supportedChains": [
+          1,
+          5,
+          10,
+          8453
+        ],
+        "generationMethod": "External"
+      },
+      "version": {
+        "major": 0,
+        "minor": 2,
+        "patch": 0
+      }
+    },
+    {
+      "name": "SushiSwap Menu",
+      "description": "A list of tokens available on SushiSwap DEX.",
+      "timestamp": "14/02/2024 17:23:49",
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/sushiswap.json",
+      "keywords": [
+        "sushiswap",
+        "default"
+      ],
+      "tokenCount": 2,
+      "metadata": {
+        "supportedChains": [
+          43114,
+          534352
+        ],
+        "generationMethod": "External"
+      },
+      "version": {
+        "major": 0,
+        "minor": 2,
+        "patch": 0
+      }
+    },
+    {
       "name": "SushiSwap Token Pairs",
       "description": "A list of token used in the SushiSwap Liquidity Pools.",
       "timestamp": "07/11/2023 15:54:48",
@@ -576,11 +571,11 @@
     {
       "name": "Tokenlistooor Token List",
       "description": "A curated list of tokens from all the token lists on tokenlistooor.",
-      "timestamp": "14/02/2024 17:02:06",
+      "timestamp": "14/02/2024 17:27:00",
       "logoURI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/tokenlistooor.json",
       "keywords": [],
-      "tokenCount": 6266,
+      "tokenCount": 5932,
       "metadata": {
         "supportedChains": [
           1,
@@ -604,9 +599,32 @@
         "generationMethod": "API"
       },
       "version": {
-        "major": 160,
-        "minor": 0,
+        "major": 163,
+        "minor": 1,
         "patch": 0
+      }
+    },
+    {
+      "name": "Uniswap Labs Default",
+      "description": "A list of tokens available on UniSwap DEX.",
+      "timestamp": "14/02/2024 17:21:04",
+      "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
+      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/uniswap.json",
+      "keywords": [
+        "uniswap",
+        "default"
+      ],
+      "tokenCount": 1,
+      "metadata": {
+        "supportedChains": [
+          43114
+        ],
+        "generationMethod": "External"
+      },
+      "version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 1
       }
     },
     {

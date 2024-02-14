@@ -16,7 +16,6 @@ func buildCowswapTokenList() {
 	tokenList.LogoURI = `https://raw.githubusercontent.com/cowprotocol/cowswap/c5974fb8a45d678029ecb013dab33722e152daaa/src/assets/cow-swap/cow_v2.svg`
 	tokenList.Keywords = originalTokenList.Keywords
 
-	tokenList = models.TokenListData[models.TokenListToken]{}
 	for _, token := range originalTokenList.Tokens {
 		if !chains.IsChainIDSupported(token.ChainID) {
 			continue

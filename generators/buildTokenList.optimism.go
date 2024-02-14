@@ -14,7 +14,6 @@ func buildOptimismTokenList() {
 	tokenList.LogoURI = helpers.SafeString(originalTokenList.LogoURI, `https://ethereum-optimism.github.io/optimism.svg`)
 	tokenList.Keywords = originalTokenList.Keywords
 
-	tokenList = models.TokenListData[models.TokenListToken]{}
 	for _, token := range originalTokenList.Tokens {
 		if !chains.IsChainIDSupported(token.ChainID) {
 			continue
@@ -23,9 +22,6 @@ func buildOptimismTokenList() {
 			continue
 		}
 		key := helpers.GetKey(token.ChainID, common.HexToAddress(token.Address))
-		if _, ok := tokenList.NextTokensMap[key]; !ok {
-			tokenList.NextTokensMap = make(map[string]models.TokenListToken)
-		}
 		tokenList.NextTokensMap[key] = token
 	}
 

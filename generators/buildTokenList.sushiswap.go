@@ -66,7 +66,6 @@ func buildSushiswapTokenList() {
 	tokenList.LogoURI = originalTokenList.LogoURI
 	tokenList.Keywords = originalTokenList.Keywords
 
-	tokenList = models.TokenListData[models.TokenListToken]{}
 	for _, token := range originalTokenList.Tokens {
 		if !chains.IsChainIDSupported(token.ChainID) {
 			continue
