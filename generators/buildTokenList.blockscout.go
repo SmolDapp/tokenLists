@@ -69,7 +69,7 @@ func fetchBlockScoutV6TokenList(chainID uint64) []models.TokenListToken {
 			ItemsCount          int    `json:"items_count"`
 			MarketCap           string `json:"market_cap"`
 			Name                string `json:"name"`
-		} `json:"next_page_path"`
+		} `json:"next_page_params"`
 	}
 
 	explorerBaseURI := BLOCKSCOUTV6_URI[chainID]
@@ -100,6 +100,5 @@ func buildBlockScoutTokenList() {
 	for chainID := range BLOCKSCOUTV6_URI {
 		tokens = append(tokens, fetchBlockScoutV6TokenList(chainID)...)
 	}
-
 	helpers.SaveTokenListInJsonFile(tokenList, tokens, `blockscout.json`, helpers.SavingMethodStandard)
 }

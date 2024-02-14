@@ -189,7 +189,7 @@ func SaveTokenListInJsonFile(
 	** To make it easy to work with the list, we will sort the token by their
 	** chainID in ascending order.
 	**************************************************************************/
-	tokeListPerChainID := make(map[uint64][]models.TokenListToken)
+	tokenListPerChainID := make(map[uint64][]models.TokenListToken)
 	keys := make([]string, 0, len(tokenList.NextTokensMap))
 	for k := range tokenList.NextTokensMap {
 		keys = append(keys, k)
@@ -197,8 +197,8 @@ func SaveTokenListInJsonFile(
 	sort.Strings(keys)
 	for i, k := range keys {
 		chainID, _ := strconv.ParseUint(strings.Split(k, `_`)[0], 10, 64)
-		if _, ok := tokeListPerChainID[chainID]; !ok {
-			tokeListPerChainID[chainID] = []models.TokenListToken{}
+		if _, ok := tokenListPerChainID[chainID]; !ok {
+			tokenListPerChainID[chainID] = []models.TokenListToken{}
 		}
 
 		token := tokenList.NextTokensMap[k]
@@ -206,7 +206,7 @@ func SaveTokenListInJsonFile(
 			continue
 		}
 		tokenList.Tokens[i] = tokenList.NextTokensMap[k]
-		tokeListPerChainID[chainID] = append(tokeListPerChainID[chainID], tokenList.NextTokensMap[k])
+		tokenListPerChainID[chainID] = append(tokenListPerChainID[chainID], tokenList.NextTokensMap[k])
 	}
 
 	/**************************************************************************
@@ -221,7 +221,7 @@ func SaveTokenListInJsonFile(
 		return err
 	}
 
-	for chainID, tokens := range tokeListPerChainID {
+	for chainID, tokens := range tokenListPerChainID {
 		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
