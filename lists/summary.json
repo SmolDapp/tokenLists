@@ -1,6 +1,6 @@
 {
   "name": "Tokenlistooor summary",
-  "timestamp": 1707924121,
+  "timestamp": 1707930126,
   "logoURI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg",
   "lists": [
     {
@@ -25,15 +25,15 @@
     },
     {
       "name": "",
-      "description": "A list of tokens available on UniSwap DEX.",
-      "timestamp": "14/02/2024 14:38:43",
+      "description": "A list of tokens used as the source of truth for the Optimism Gateway.",
+      "timestamp": "14/02/2024 14:38:42",
       "logoURI": "",
-      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/uniswap.json",
+      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/optimism.json",
       "keywords": null,
       "tokenCount": 1,
       "metadata": {
         "supportedChains": [
-          43114
+          10
         ],
         "generationMethod": "External"
       },
@@ -65,15 +65,15 @@
     },
     {
       "name": "",
-      "description": "A list of tokens used as the source of truth for the Optimism Gateway.",
-      "timestamp": "14/02/2024 14:38:42",
+      "description": "A list of tokens available on UniSwap DEX.",
+      "timestamp": "14/02/2024 14:38:43",
       "logoURI": "",
-      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/optimism.json",
+      "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/uniswap.json",
       "keywords": null,
       "tokenCount": 1,
       "metadata": {
         "supportedChains": [
-          10
+          43114
         ],
         "generationMethod": "External"
       },
@@ -211,30 +211,33 @@
     {
       "name": "Blockscout",
       "description": "A list of tokens available on Blockscout, an Open-Source Explorer",
-      "timestamp": "14/02/2024 15:21:24",
+      "timestamp": "14/02/2024 16:59:49",
       "logoURI": "https://2383309224-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Lq1XoWGmy8zggj_u2fM%2Ficon%2FyFkt6mPJJvjKiSBBOppe%2FBS_logo_slack.png?alt=media",
       "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/blockscout.json",
       "keywords": [
         "explorer",
         "blockscout"
       ],
-      "tokenCount": 2946,
+      "tokenCount": 3791,
       "metadata": {
         "supportedChains": [
           1,
-          5,
           10,
           100,
           137,
           1088,
           1101,
-          8453
+          5000,
+          8453,
+          42220,
+          59144,
+          534352
         ],
         "generationMethod": "API"
       },
       "version": {
-        "major": 1,
-        "minor": 3,
+        "major": 2,
+        "minor": 1,
         "patch": 0
       }
     },
@@ -573,11 +576,11 @@
     {
       "name": "Tokenlistooor Token List",
       "description": "A curated list of tokens from all the token lists on tokenlistooor.",
-      "timestamp": "14/02/2024 15:22:01",
+      "timestamp": "14/02/2024 17:02:06",
       "logoURI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/Migratooor/tokenLists/main/lists/tokenlistooor.json",
       "keywords": [],
-      "tokenCount": 5059,
+      "tokenCount": 6266,
       "metadata": {
         "supportedChains": [
           1,
@@ -590,14 +593,18 @@
           324,
           1088,
           1101,
+          5000,
           8453,
           42161,
-          43114
+          42220,
+          43114,
+          59144,
+          534352
         ],
         "generationMethod": "API"
       },
       "version": {
-        "major": 158,
+        "major": 160,
         "minor": 0,
         "patch": 0
       }
