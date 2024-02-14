@@ -7,7 +7,6 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
-	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
@@ -28,7 +27,6 @@ var BLOCKSCOUTV6_URI = map[uint64]string{
 func handleBlockScoutTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
-	logs.Info(`BlockScout token list for chainID ` + strconv.FormatUint(chainID, 10) + ` has ` + strconv.Itoa(len(tokenList)) + ` tokens`)
 	return tokenList
 }
 

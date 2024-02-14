@@ -67,6 +67,9 @@ func buildUniswapTokenList() {
 			continue
 		}
 		key := helpers.GetKey(token.ChainID, common.HexToAddress(token.Address))
+		if _, ok := tokenList.NextTokensMap[key]; !ok {
+			tokenList.NextTokensMap = make(map[string]models.TokenListToken)
+		}
 		tokenList.NextTokensMap[key] = token
 	}
 
