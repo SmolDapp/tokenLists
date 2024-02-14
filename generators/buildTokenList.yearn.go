@@ -4,6 +4,7 @@ import (
 	"strconv"
 
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TExternalERC20Token struct {
@@ -32,7 +33,7 @@ type TTokenType string
 
 const (
 	TokenTypeStandardVault           TTokenType = "Yearn Vault"
-	TokenTypeLegagyStandardVault     TTokenType = "Standard"
+	TokenTypeLegagyStandardVault     TTokenType = "helpers.SavingMethodStandard"
 	TokenTypeExperimentalVault       TTokenType = "Experimental Yearn Vault"
 	TokenTypeLegacyExperimentalVault TTokenType = "Experimental"
 	TokenTypeAutomatedVault          TTokenType = "Automated Yearn Vault"
@@ -59,9 +60,9 @@ type TYearnTokenData struct {
 	Decimals                  uint64     `json:"decimals"`
 }
 
-func fetchYearnTokenList() []TokenListToken {
+func fetchYearnTokenList() []models.TokenListToken {
 	list := helpers.FetchJSON[map[uint64]map[string]TYearnTokenData](`https://ydevmon.ycorpo.com/tokens/all`)
-	listPerChainID := []TokenListToken{}
+	listPerChainID := []models.TokenListToken{}
 
 	for chainID, listPerChain := range list {
 		for _, vault := range listPerChain {
@@ -74,7 +75,7 @@ func fetchYearnTokenList() []TokenListToken {
 			** tokens to add to the token list. As the data is not directly available
 			** with the vault information, we can fetch the token details after.
 			**************************************************************************/
-			listPerChainID = append(listPerChainID, TokenListToken{
+			listPerChainID = append(listPerChainID, models.TokenListToken{
 				Address: vault.Address,
 				Name:    vault.Name,
 				Symbol:  vault.Symbol,
@@ -83,7 +84,7 @@ func fetchYearnTokenList() []TokenListToken {
 			})
 
 			for _, underlyingTokenAddress := range vault.UnderlyingTokensAddresses {
-				listPerChainID = append(listPerChainID, TokenListToken{
+				listPerChainID = append(listPerChainID, models.TokenListToken{
 					Address: underlyingTokenAddress,
 					ChainID: chainID,
 				})
@@ -91,15 +92,15 @@ func fetchYearnTokenList() []TokenListToken {
 		}
 	}
 
-	return fetchTokenList(listPerChainID)
+	return helpers.GetTokensFromList(listPerChainID)
 }
 
 func buildYearnTokenList() {
-	tokenList := loadTokenListFromJsonFile(`yearn.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`yearn.json`)
 	tokenList.Name = `Yearn Token List`
 	tokenList.LogoURI = `https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg`
 	tokenList.Keywords = []string{`yearn`, `yfi`, `yvault`, `ytoken`, `ycurve`, `yprotocol`, `vaults`}
 	tokens := fetchYearnTokenList()
 
-	saveTokenListInJsonFile(tokenList, tokens, `yearn.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `yearn.json`, helpers.SavingMethodStandard)
 }

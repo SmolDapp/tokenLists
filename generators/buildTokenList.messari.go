@@ -5,7 +5,9 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TMessariContractAddresses struct {
@@ -44,10 +46,10 @@ func messariMapNetworkNameToChainID(network string) uint64 {
 	return 0
 }
 
-func fetchMessariTokenList() []TokenListToken {
+func fetchMessariTokenList() []models.TokenListToken {
 	limit := 500
 	page := 1
-	allTokens := []TokenListToken{}
+	allTokens := []models.TokenListToken{}
 
 	for {
 		uri := `https://data.messari.io/api/v2/assets?fields=name,symbol,contract_addresses,id&sort=id&limit=` + strconv.FormatInt(int64(limit), 10) + `&page=` + strconv.FormatInt(int64(page), 10)
@@ -60,13 +62,13 @@ func fetchMessariTokenList() []TokenListToken {
 			logoURI := `https://asset-images.messari.io/images/` + token.ID + `/128.png`
 			for _, platformData := range token.Addresses {
 				chainID := messariMapNetworkNameToChainID(platformData.Platform)
-				if chainID == 0 || !helpers.IsChainIDSupported(chainID) {
+				if !chains.IsChainIDSupported(chainID) {
 					continue
 				}
-				if helpers.IsIgnoredToken(chainID, common.HexToAddress(platformData.ContractAddress)) {
+				if chains.IsTokenIgnored(chainID, common.HexToAddress(platformData.ContractAddress)) {
 					continue
 				}
-				if newToken, err := SetToken(
+				if newToken, err := helpers.SetToken(
 					common.HexToAddress(platformData.ContractAddress),
 					token.Name,
 					token.Symbol,
@@ -83,14 +85,14 @@ func fetchMessariTokenList() []TokenListToken {
 		time.Sleep(3 * time.Second)
 	}
 
-	return fetchTokenList(allTokens)
+	return helpers.GetTokensFromList(allTokens)
 }
 
 func buildMessariTokenList() {
-	tokenList := loadTokenListFromJsonFile(`messari.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`messari.json`)
 	tokenList.Name = "Messari Token List"
 	tokenList.LogoURI = "https://messari.io/images/logo_tcr-check.svg"
 
 	tokens := fetchMessariTokenList()
-	saveTokenListInJsonFile(tokenList, tokens, `messari.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `messari.json`, helpers.SavingMethodStandard)
 }

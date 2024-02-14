@@ -6,6 +6,7 @@ import (
 	"strings"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
@@ -27,7 +28,7 @@ type TSmolAssetsList struct {
 }
 
 func init() {
-	for chainID := range SUPPORTED_CHAIN_IDS {
+	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
 		smoldAssetsPerChain[chainID] = FetchJSON[TSmolAssetsList](`https://assets.smold.app/tokens/` + strconv.FormatUint(chainID, 10) + `/list.json`).Tokens
 	}
 	cmdArgs := os.Args

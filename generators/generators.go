@@ -64,6 +64,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`blockscout`: {
+		Exec:             buildBlockScoutTokenList,
+		Name:             `Blockscout`,
+		Description:      `A list of tokens available on Blockscout, an Open-Source Explorer`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`coingecko`: {
 		Exec:             buildCoingeckoTokenList,
 		Name:             `CoinGecko`,

@@ -2,7 +2,9 @@ package main
 
 import (
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TDefillamaList struct {
@@ -35,23 +37,23 @@ func defillamaMapNetworkNameToChainID(network string) uint64 {
 	return 0
 }
 
-func fetchDefillamaTokenList() []TokenListToken {
+func fetchDefillamaTokenList() []models.TokenListToken {
 	list := helpers.FetchJSON[[]TDefillamaList](`https://defillama-datasets.llama.fi/tokenlist/all.json`)
-	listPerChainID := []TokenListToken{}
+	listPerChainID := []models.TokenListToken{}
 	for _, v := range list {
 		if len(v.Platforms) == 0 {
 			continue
 		}
 		for platformName, addressOnPlatform := range v.Platforms {
 			chainID := defillamaMapNetworkNameToChainID(platformName)
-			if chainID == 0 || !helpers.IsChainIDSupported(chainID) {
+			if !chains.IsChainIDSupported(chainID) {
 				continue
 			}
-			if helpers.IsIgnoredToken(chainID, common.HexToAddress(addressOnPlatform)) {
+			if chains.IsTokenIgnored(chainID, common.HexToAddress(addressOnPlatform)) {
 				continue
 			}
 			v.Address = common.HexToAddress(addressOnPlatform)
-			listPerChainID = append(listPerChainID, TokenListToken{
+			listPerChainID = append(listPerChainID, models.TokenListToken{
 				Address: addressOnPlatform,
 				Name:    v.Name,
 				Symbol:  v.Symbol,
@@ -60,14 +62,14 @@ func fetchDefillamaTokenList() []TokenListToken {
 			})
 		}
 	}
-	return fetchTokenList(listPerChainID)
+	return helpers.GetTokensFromList(listPerChainID)
 }
 
 func buildDefillamaTokenList() {
-	tokenList := loadTokenListFromJsonFile(`defillama.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`defillama.json`)
 	tokenList.Name = "DefiLlama"
 	tokenList.LogoURI = "https://wiki.defillama.com/w/resources/assets/wiki.png?88de1"
 
 	tokens := fetchDefillamaTokenList()
-	saveTokenListInJsonFile(tokenList, tokens, `defillama.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `defillama.json`, helpers.SavingMethodStandard)
 }

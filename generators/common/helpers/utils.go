@@ -1,8 +1,18 @@
 package helpers
 
 import (
+	"strconv"
+	"strings"
+
 	"github.com/ethereum/go-ethereum/common"
 )
+
+// GetKey returns the key of a token in a specific format to make it sortable
+func GetKey(chainID uint64, address common.Address) string {
+	chainIDStr := strconv.FormatUint(chainID, 10)
+	chainIDStr = strings.Repeat("0", 18-len(chainIDStr)) + chainIDStr
+	return chainIDStr + `_` + address.Hex()
+}
 
 // SafeString returns the provided variable or a fallback if it is empty
 func SafeString(value string, fallback string) string {

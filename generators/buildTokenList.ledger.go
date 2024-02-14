@@ -6,34 +6,23 @@ import (
 	"strings"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
-func handleLedgerTokenList(tokensPerChainID map[uint64][]common.Address) []TokenListToken {
-	tokenList := []TokenListToken{}
+func handleLedgerTokenList(tokensPerChainID map[uint64][]common.Address) []models.TokenListToken {
+	tokenList := []models.TokenListToken{}
 
 	for chainID, list := range tokensPerChainID {
-		tokensInfo := retrieveBasicInformations(chainID, list)
-		for _, address := range list {
-			if token, ok := tokensInfo[address.Hex()]; ok {
-				if newToken, err := SetToken(
-					token.Address,
-					token.Name,
-					token.Symbol,
-					``,
-					chainID,
-					int(token.Decimals),
-				); err == nil {
-					tokenList = append(tokenList, newToken)
-				}
-			}
-		}
+		tokenList := helpers.GetTokensFromAddresses(chainID, list)
+		tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	}
 
 	return tokenList
 }
 
-func fetchLedgerTokenList() []TokenListToken {
+func fetchLedgerTokenList() []models.TokenListToken {
 	tokensPerChainID := map[uint64][]common.Address{}
 	tokensPerChainID[1] = []common.Address{}
 	tokensPerChainID[56] = []common.Address{}
@@ -41,12 +30,12 @@ func fetchLedgerTokenList() []TokenListToken {
 
 	resp, err := http.Get(`https://raw.githubusercontent.com/LedgerHQ/ledger-live/develop/apps/ledger-live-desktop/cryptoassets.md`)
 	if err != nil {
-		return []TokenListToken{}
+		return []models.TokenListToken{}
 	}
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		return []TokenListToken{}
+		return []models.TokenListToken{}
 	}
 
 	lines := strings.Split(string(body), "\n")
@@ -64,21 +53,21 @@ func fetchLedgerTokenList() []TokenListToken {
 		if strings.HasPrefix(line, "| Ethereum |") {
 			address := strings.Split(line, "|")[3]
 			address = strings.TrimSpace(address)
-			if !helpers.IsIgnoredToken(1, common.HexToAddress(address)) {
+			if !chains.IsTokenIgnored(1, common.HexToAddress(address)) {
 				tokensPerChainID[1] = append(tokensPerChainID[1], common.HexToAddress(address))
 			}
 		}
 		if strings.HasPrefix(line, "| Binance Smart Chain |") {
 			address := strings.Split(line, "|")[3]
 			address = strings.TrimSpace(address)
-			if !helpers.IsIgnoredToken(56, common.HexToAddress(address)) {
+			if !chains.IsTokenIgnored(56, common.HexToAddress(address)) {
 				tokensPerChainID[56] = append(tokensPerChainID[56], common.HexToAddress(address))
 			}
 		}
 		if strings.HasPrefix(line, "| Polygon |") {
 			address := strings.Split(line, "|")[3]
 			address = strings.TrimSpace(address)
-			if !helpers.IsIgnoredToken(137, common.HexToAddress(address)) {
+			if !chains.IsTokenIgnored(137, common.HexToAddress(address)) {
 				tokensPerChainID[137] = append(tokensPerChainID[137], common.HexToAddress(address))
 			}
 		}
@@ -87,11 +76,11 @@ func fetchLedgerTokenList() []TokenListToken {
 }
 
 func buildLedgersTokenList() {
-	tokenList := loadTokenListFromJsonFile(`ledger.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`ledger.json`)
 	tokenList.Name = "Ledger"
 	tokenList.Keywords = []string{"Ledger"}
 	tokenList.LogoURI = "https://www.ledger.com/wp-content/uploads/2021/11/Ledger_favicon.png"
 
 	tokens := fetchLedgerTokenList()
-	saveTokenListInJsonFile(tokenList, tokens, `ledger.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `ledger.json`, helpers.SavingMethodStandard)
 }

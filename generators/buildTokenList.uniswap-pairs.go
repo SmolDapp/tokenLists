@@ -7,14 +7,16 @@ import (
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
-func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address) []TokenListToken {
-	tokensForChainIDSyncMap := initSyncMap(tokensPerChainID)
+func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address) []models.TokenListToken {
+	tokensForChainIDSyncMap := helpers.InitSyncMap(tokensPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
 	perChainWG := sync.WaitGroup{}
@@ -23,16 +25,16 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address) [
 		go func(chainID uint64, list []common.Address) {
 			defer perChainWG.Done()
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
-			syncMap := syncMapRaw.([]TokenListToken)
+			syncMap := syncMapRaw.([]models.TokenListToken)
 
-			tokensInfo := retrieveBasicInformations(chainID, list)
+			tokensInfo := helpers.RetrieveBasicInformations(chainID, list)
 			for _, address := range list {
 				if token, ok := tokensInfo[address.Hex()]; ok {
 					if token.Name == `` || token.Symbol == `` {
 						continue
 					}
 
-					if newToken, err := SetToken(
+					if newToken, err := helpers.SetToken(
 						token.Address,
 						token.Name,
 						token.Symbol,
@@ -49,10 +51,10 @@ func handleUniswapPairsTokenList(tokensPerChainID map[uint64][]common.Address) [
 	}
 	perChainWG.Wait()
 
-	return extractSyncMap(tokensForChainIDSyncMap)
+	return helpers.ExtractSyncMap(tokensForChainIDSyncMap)
 }
 
-func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken, map[uint64]string) {
+func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]models.TokenListToken, map[uint64]string) {
 	tokensPerChainID := make(map[uint64][]common.Address)
 	allTokens := make(map[string]int)
 	lastBlockSync := make(map[uint64]string)
@@ -64,7 +66,7 @@ func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken,
 	** least 10 different pairs.
 	**************************************************************************/
 	for chainID, uniContract := range UniswapContractsPerChainID {
-		if !helpers.IsChainIDSupported(chainID) {
+		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
 		tokensPerChainID[chainID] = []common.Address{}
@@ -161,7 +163,7 @@ func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken,
 		** function
 		**********************************************************************/
 		for address, count := range allTokens {
-			if helpers.IsIgnoredToken(chainID, common.HexToAddress(address)) {
+			if chains.IsTokenIgnored(chainID, common.HexToAddress(address)) {
 				continue
 			}
 			if count >= UNI_POOL_THRESHOLD_FOR_CHAINID[chainID] {
@@ -174,7 +176,7 @@ func fetchUniswapPairsTokenList(extra map[string]interface{}) ([]TokenListToken,
 }
 
 func buildUniswapPairsTokenList() {
-	tokenList := loadTokenListFromJsonFile(`uniswap-pairs.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`uniswap-pairs.json`)
 	tokenList.Name = "Uniswap Token Pairs"
 	tokenList.LogoURI = "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir"
 
@@ -187,5 +189,5 @@ func buildUniswapPairsTokenList() {
 		tokenList.Metadata[`lastBlockSyncFor_`+chainIDStr] = blockNumber
 	}
 
-	saveTokenListInJsonFile(tokenList, tokens, `uniswap-pairs.json`, Append)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `uniswap-pairs.json`, helpers.SavingMethodAppend)
 }

@@ -5,12 +5,10 @@ import (
 	"strings"
 
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
-	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 func main() {
-	helpers.Init()
 	ethereum.Init()
 	loadAllTokenLogoURI()
 

@@ -5,6 +5,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TPortalTokenData struct {
@@ -51,10 +52,10 @@ func portalsMapNetworkNameToChainID(network string) uint64 {
 	return 0
 }
 
-func fetchPortalsTokenList() []TokenListToken {
+func fetchPortalsTokenList() []models.TokenListToken {
 	limit := 250
 	page := 0
-	tokens := []TokenListToken{}
+	tokens := []models.TokenListToken{}
 
 	for {
 		uri := `https://api.portals.fi/v2/tokens?limit=` + strconv.FormatInt(int64(limit), 10) + `&page=` + strconv.FormatInt(int64(page), 10)
@@ -65,7 +66,7 @@ func fetchPortalsTokenList() []TokenListToken {
 			if len(token.Images) > 0 {
 				logoURI = token.Images[0]
 			}
-			if newToken, err := SetToken(
+			if newToken, err := helpers.SetToken(
 				common.HexToAddress(token.Address),
 				token.Name,
 				token.Symbol,
@@ -81,14 +82,14 @@ func fetchPortalsTokenList() []TokenListToken {
 		}
 		page++
 	}
-	return fetchTokenList(tokens)
+	return helpers.GetTokensFromList(tokens)
 }
 
 func buildPortalsTokenList() {
-	tokenList := loadTokenListFromJsonFile(`portals.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`portals.json`)
 	tokenList.Name = "Portals Token List"
 	tokenList.LogoURI = "https://portals-assets-bucket.s3.amazonaws.com/logo.png"
 
 	tokens := fetchPortalsTokenList()
-	saveTokenListInJsonFile(tokenList, tokens, `portals.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `portals.json`, helpers.SavingMethodStandard)
 }

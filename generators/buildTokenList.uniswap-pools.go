@@ -8,10 +8,12 @@ import (
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var UNI_POOL_THRESHOLD_FOR_CHAINID = map[uint64]int{
@@ -25,8 +27,8 @@ var UNI_POOL_THRESHOLD_FOR_CHAINID = map[uint64]int{
 	43114: 3,
 }
 
-func handleUniswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, allPoolsPerChainID map[uint64]map[string]string) []TokenListToken {
-	tokensForChainIDSyncMap := initSyncMap(tokensPerChainID)
+func handleUniswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, allPoolsPerChainID map[uint64]map[string]string) []models.TokenListToken {
+	tokensForChainIDSyncMap := helpers.InitSyncMap(tokensPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
 	perChainWG := sync.WaitGroup{}
@@ -35,14 +37,14 @@ func handleUniswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, a
 		go func(chainID uint64, list []common.Address) {
 			defer perChainWG.Done()
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
-			syncMap := syncMapRaw.([]TokenListToken)
+			syncMap := syncMapRaw.([]models.TokenListToken)
 
 			/**************************************************************************
 			** The pairs have no name or symbol to recognize them. We need to fetch the
 			** underlying tokens and use their name and symbol to build the pair name.
 			** The first step is to fetch the data for all the underlying tokens.
 			**************************************************************************/
-			underlyingTokenInfo := retrieveBasicInformations(chainID, list)
+			underlyingTokenInfo := helpers.RetrieveBasicInformations(chainID, list)
 
 			/**************************************************************************
 			** Once we have the data for all the underlying tokens, we can loop over
@@ -60,7 +62,7 @@ func handleUniswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, a
 					continue
 				}
 
-				if newToken, err := SetToken(
+				if newToken, err := helpers.SetToken(
 					common.HexToAddress(pool),
 					`Uniswap V2 `+token1.Name+` + `+token2.Name,
 					`UNI-V2 `+token1.Symbol+` + `+token2.Symbol,
@@ -76,10 +78,10 @@ func handleUniswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, a
 	}
 	perChainWG.Wait()
 
-	return extractSyncMap(tokensForChainIDSyncMap)
+	return helpers.ExtractSyncMap(tokensForChainIDSyncMap)
 }
 
-func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]TokenListToken, map[uint64]string) {
+func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]models.TokenListToken, map[uint64]string) {
 	tokensPerChainID := make(map[uint64][]common.Address)
 	poolsPerChainID := make(map[uint64]map[string]string)
 	allTokens := make(map[string]int)
@@ -93,7 +95,7 @@ func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]TokenListToken,
 	** least 3 different pairs.
 	**************************************************************************/
 	for chainID, uniContract := range UniswapContractsPerChainID {
-		if !helpers.IsChainIDSupported(chainID) {
+		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
 		tokensPerChainID[chainID] = []common.Address{}
@@ -168,7 +170,8 @@ func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]TokenListToken,
 		for pool, tokensInPool := range allPools {
 			tokens := strings.Split(tokensInPool, `_`)
 			if (allTokens[tokens[0]] >= chainThreshold) && (allTokens[tokens[1]] >= chainThreshold) {
-				if helpers.IsIgnoredToken(chainID, common.HexToAddress(tokens[0])) || helpers.IsIgnoredToken(chainID, common.HexToAddress(tokens[1])) {
+				if chains.IsTokenIgnored(chainID, common.HexToAddress(tokens[0])) ||
+					chains.IsTokenIgnored(chainID, common.HexToAddress(tokens[1])) {
 					continue
 				}
 				tokensPerChainID[chainID] = append(tokensPerChainID[chainID], common.HexToAddress(tokens[0]))
@@ -182,7 +185,7 @@ func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]TokenListToken,
 }
 
 func buildUniswapPoolsTokenList() {
-	tokenList := loadTokenListFromJsonFile(`uniswap-pools.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`uniswap-pools.json`)
 	tokenList.Name = "Uniswap Token Pools"
 	tokenList.LogoURI = "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir"
 
@@ -195,5 +198,5 @@ func buildUniswapPoolsTokenList() {
 		tokenList.Metadata[`lastBlockSyncFor_`+chainIDStr] = blockNumber
 	}
 
-	saveTokenListInJsonFile(tokenList, tokens, `uniswap-pools.json`, Append)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `uniswap-pools.json`, helpers.SavingMethodAppend)
 }

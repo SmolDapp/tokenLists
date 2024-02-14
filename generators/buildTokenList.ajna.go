@@ -1,44 +1,27 @@
 package main
 
 import (
-	"strconv"
-
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
+	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
-func handleAjnaTokenList(chainID uint64, tokenAddresses []common.Address) []TokenListToken {
-	tokenList := []TokenListToken{}
-
-	tokensInfo := retrieveBasicInformations(chainID, tokenAddresses)
-	for _, address := range tokenAddresses {
-		if token, ok := tokensInfo[address.Hex()]; ok {
-			if newToken, err := SetToken(
-				token.Address,
-				token.Name,
-				token.Symbol,
-				`https://assets.smold.app/api/token/`+strconv.FormatUint(chainID, 10)+`/`+token.Address.Hex()+`/logo-128.png`,
-				chainID,
-				int(token.Decimals),
-			); err == nil {
-				tokenList = append(tokenList, newToken)
-			}
-		}
-	}
-	chainCoin := ETHER
-	chainCoin.ChainID = chainID
-	tokenList = append(tokenList, chainCoin)
+func handleAjnaTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
+	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
+	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	return tokenList
 }
 
-func fetchAjnaTokenList(chainID uint64, sugarAddress common.Address) []TokenListToken {
+func fetchAjnaTokenList(chainID uint64, sugarAddress common.Address) []models.TokenListToken {
 	client := ethereum.GetRPC(chainID)
 	ajnaPoolFactory, err := contracts.NewAjnaPoolFactoryCaller(sugarAddress, client)
 	if err != nil {
 		logs.Error(err)
-		return []TokenListToken{}
+		return []models.TokenListToken{}
 	}
 	/**************************************************************************
 	** We first fetch all the pools deployed on Ajna. This will allow us to
@@ -48,7 +31,7 @@ func fetchAjnaTokenList(chainID uint64, sugarAddress common.Address) []TokenList
 	allPools, err := ajnaPoolFactory.GetDeployedPoolsList(nil)
 	if err != nil {
 		logs.Error(err)
-		return []TokenListToken{}
+		return []models.TokenListToken{}
 	}
 
 	/**************************************************************************
@@ -85,11 +68,11 @@ func fetchAjnaTokenList(chainID uint64, sugarAddress common.Address) []TokenList
 }
 
 func buildAjnaTokenList() {
-	tokenList := loadTokenListFromJsonFile(`ajna.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`ajna.json`)
 	tokenList.Name = `Ajna`
 	tokenList.LogoURI = `https://www.ajna.finance/static/tokens/ajna.png`
 	tokenList.Keywords = []string{`Ajna`}
-	tokens := []TokenListToken{}
+	tokens := []models.TokenListToken{}
 	tokens = append(tokens, fetchAjnaTokenList(1, common.HexToAddress(`0x6146DD43C5622bB6D12A5240ab9CF4de14eDC625`))...)
 	tokens = append(tokens, fetchAjnaTokenList(5, common.HexToAddress(`0xDB61f8aD0B3ed0c5522b8FE71b80023fe9188e9e`))...)
 	tokens = append(tokens, fetchAjnaTokenList(10, common.HexToAddress(`0x609C4e8804fafC07c96bE81A8a98d0AdCf2b7Dfa`))...)
@@ -98,5 +81,5 @@ func buildAjnaTokenList() {
 	tokens = append(tokens, fetchAjnaTokenList(8453, common.HexToAddress(`0x214f62B5836D83f3D6c4f71F174209097B1A779C`))...)
 	tokens = append(tokens, fetchAjnaTokenList(42161, common.HexToAddress(`0xA3A1e968Bd6C578205E11256c8e6929f21742aAF`))...)
 
-	saveTokenListInJsonFile(tokenList, tokens, `ajna.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `ajna.json`, helpers.SavingMethodStandard)
 }

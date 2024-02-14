@@ -4,7 +4,9 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TUniContracts struct {
@@ -50,13 +52,24 @@ var UniswapContractsPerChainID = map[uint64][]TUniContracts{
 }
 
 func buildUniswapTokenList() {
-	tokenList := loadTokenListFromJsonFile(`uniswap.json`)
-	originalTokenList := helpers.FetchJSON[TokenListData[TokenListToken]](`https://tokens.uniswap.org`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`uniswap.json`)
+	originalTokenList := helpers.FetchJSON[models.TokenListData[models.TokenListToken]](`https://tokens.uniswap.org`)
 	tokenList.Name = helpers.SafeString(originalTokenList.Name, `Uniswap Token List`)
 	tokenList.LogoURI = helpers.SafeString(originalTokenList.LogoURI, `ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir"`)
 	tokenList.Keywords = originalTokenList.Keywords
-	tokenList = tokenList.Assign(originalTokenList.Tokens)
 
-	tokens := fetchTokenList(tokenList.Tokens)
-	saveTokenListInJsonFile(tokenList, tokens, `uniswap.json`, Standard)
+	tokenList = models.TokenListData[models.TokenListToken]{}
+	for _, token := range originalTokenList.Tokens {
+		if !chains.IsChainIDSupported(token.ChainID) {
+			continue
+		}
+		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, common.HexToAddress(token.Address)) {
+			continue
+		}
+		key := helpers.GetKey(token.ChainID, common.HexToAddress(token.Address))
+		tokenList.NextTokensMap[key] = token
+	}
+
+	tokens := helpers.GetTokensFromList(tokenList.Tokens)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `uniswap.json`, helpers.SavingMethodStandard)
 }

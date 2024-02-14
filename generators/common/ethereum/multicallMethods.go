@@ -168,9 +168,9 @@ func FetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 
 		newToken := &TERC20{
 			Address:  token,
-			Name:     decodeString(rawName, decodeHex(rawBytes32Name, decodeHex(rawBytes32Symbol, ``))),
-			Symbol:   decodeString(rawSymbol, decodeHex(rawBytes32Symbol, ``)),
-			Decimals: decodeUint64(rawDecimals, 0),
+			Name:     DecodeString(rawName, DecodeHex(rawBytes32Name, DecodeHex(rawBytes32Symbol, ``))),
+			Symbol:   DecodeString(rawSymbol, DecodeHex(rawBytes32Symbol, ``)),
+			Decimals: DecodeUint64(rawDecimals, 0),
 		}
 		tokenList[token.Hex()] = newToken
 	}
@@ -206,7 +206,7 @@ func FetchNames(chainID uint64, tokens []common.Address) map[string]string {
 	response := caller.ExecuteByBatch(calls, maxBatch, nil)
 	for _, token := range tokens {
 		rawName := response[token.String()+`name`]
-		nameList[token.Hex()] = decodeString(rawName, ``)
+		nameList[token.Hex()] = DecodeString(rawName, ``)
 	}
 
 	return nameList
@@ -240,7 +240,7 @@ func FetchDecimals(chainID uint64, tokens []common.Address) map[string]uint64 {
 	response := caller.ExecuteByBatch(calls, maxBatch, nil)
 	for _, token := range tokens {
 		rawDecimals := response[token.String()+`decimals`]
-		decimalsList[token.Hex()] = decodeUint64(rawDecimals, 0)
+		decimalsList[token.Hex()] = DecodeUint64(rawDecimals, 0)
 	}
 
 	return decimalsList

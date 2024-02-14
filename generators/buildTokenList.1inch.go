@@ -2,7 +2,9 @@ package main
 
 import (
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type T1InchTokenData struct {
@@ -27,45 +29,31 @@ var APIURIFor1Inch = map[uint64]string{
 	43114: `https://api.1inch.io/v5.0/43114/tokens`,
 }
 
-func fetch1InchTokenList() []TokenListToken {
-	tokens := []TokenListToken{}
+func fetch1InchTokenList() []models.TokenListToken {
+	tokenList := []models.TokenListToken{}
 
 	for chainID, uri := range APIURIFor1Inch {
-		if !helpers.IsChainIDSupported(chainID) {
+		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
 
 		list := helpers.FetchJSON[T1InchList](uri)
-		allTokens := []common.Address{}
+		tokenAddresses := []common.Address{}
 		for _, token := range list.Tokens {
-			allTokens = append(allTokens, common.HexToAddress(token.Address))
+			tokenAddresses = append(tokenAddresses, common.HexToAddress(token.Address))
 		}
-		tokensInfo := retrieveBasicInformations(chainID, allTokens)
-
-		for _, existingToken := range list.Tokens {
-			if token, ok := tokensInfo[common.HexToAddress(existingToken.Address).Hex()]; ok {
-				if newToken, err := SetToken(
-					token.Address,
-					helpers.SafeString(token.Name, existingToken.Name),
-					helpers.SafeString(token.Symbol, existingToken.Symbol),
-					existingToken.LogoURI,
-					chainID,
-					int(token.Decimals),
-				); err == nil {
-					tokens = append(tokens, newToken)
-				}
-			}
-		}
+		tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
+		tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	}
 
-	return tokens
+	return tokenList
 }
 
 func build1InchTokenList() {
-	tokenList := loadTokenListFromJsonFile(`1inch.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`1inch.json`)
 	tokenList.Name = "1inch Token List"
 	tokenList.LogoURI = "https://app.1inch.io/assets/images/logo.png"
 
 	tokens := fetch1InchTokenList()
-	saveTokenListInJsonFile(tokenList, tokens, `1inch.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `1inch.json`, helpers.SavingMethodStandard)
 }

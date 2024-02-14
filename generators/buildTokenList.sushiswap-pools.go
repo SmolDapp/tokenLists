@@ -8,16 +8,18 @@ import (
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var SUSHI_POOL_THRESHOLD = 3
 
-func handleSushiswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, allPoolsPerChainID map[uint64]map[string]string) []TokenListToken {
-	tokensForChainIDSyncMap := initSyncMap(tokensPerChainID)
+func handleSushiswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, allPoolsPerChainID map[uint64]map[string]string) []models.TokenListToken {
+	tokensForChainIDSyncMap := helpers.InitSyncMap(tokensPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
 	perChainWG := sync.WaitGroup{}
@@ -26,14 +28,14 @@ func handleSushiswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address,
 		go func(chainID uint64, list []common.Address) {
 			defer perChainWG.Done()
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
-			syncMap := syncMapRaw.([]TokenListToken)
+			syncMap := syncMapRaw.([]models.TokenListToken)
 
 			/**************************************************************************
 			** The pairs have no name or symbol to recognize them. We need to fetch the
 			** underlying tokens and use their name and symbol to build the pair name.
 			** The first step is to fetch the data for all the underlying tokens.
 			**************************************************************************/
-			underlyingTokenInfo := retrieveBasicInformations(chainID, list)
+			underlyingTokenInfo := helpers.RetrieveBasicInformations(chainID, list)
 
 			/**************************************************************************
 			** Once we have the data for all the underlying tokens, we can loop over
@@ -51,7 +53,7 @@ func handleSushiswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address,
 					continue
 				}
 
-				if newToken, err := SetToken(
+				if newToken, err := helpers.SetToken(
 					common.HexToAddress(pool),
 					`SushiSwap LP Token `+token1.Name+` + `+token2.Name,
 					`SLP `+token1.Symbol+` + `+token2.Symbol,
@@ -67,10 +69,10 @@ func handleSushiswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address,
 	}
 	perChainWG.Wait()
 
-	return extractSyncMap(tokensForChainIDSyncMap)
+	return helpers.ExtractSyncMap(tokensForChainIDSyncMap)
 }
 
-func fetchSushiswapPoolsTokenList(extra map[string]interface{}) ([]TokenListToken, map[uint64]string) {
+func fetchSushiswapPoolsTokenList(extra map[string]interface{}) ([]models.TokenListToken, map[uint64]string) {
 	tokensPerChainID := make(map[uint64][]common.Address)
 	poolsPerChainID := make(map[uint64]map[string]string)
 	allTokens := make(map[string]int)
@@ -84,7 +86,7 @@ func fetchSushiswapPoolsTokenList(extra map[string]interface{}) ([]TokenListToke
 	** least 3 different pairs.
 	**************************************************************************/
 	for chainID, sushiContract := range SushiswapContractsPerChainID {
-		if !helpers.IsChainIDSupported(chainID) {
+		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
 		tokensPerChainID[chainID] = []common.Address{}
@@ -156,7 +158,8 @@ func fetchSushiswapPoolsTokenList(extra map[string]interface{}) ([]TokenListToke
 		for pool, tokensInPool := range allPools {
 			tokens := strings.Split(tokensInPool, `_`)
 			if (allTokens[tokens[0]] >= SUSHI_POOL_THRESHOLD) && (allTokens[tokens[1]] >= SUSHI_POOL_THRESHOLD) {
-				if helpers.IsIgnoredToken(chainID, common.HexToAddress(tokens[0])) || helpers.IsIgnoredToken(chainID, common.HexToAddress(tokens[1])) {
+				if chains.IsTokenIgnored(chainID, common.HexToAddress(tokens[0])) ||
+					chains.IsTokenIgnored(chainID, common.HexToAddress(tokens[1])) {
 					continue
 				}
 				tokensPerChainID[chainID] = append(tokensPerChainID[chainID], common.HexToAddress(tokens[0]))
@@ -170,7 +173,7 @@ func fetchSushiswapPoolsTokenList(extra map[string]interface{}) ([]TokenListToke
 }
 
 func buildSushiswapPoolsTokenList() {
-	tokenList := loadTokenListFromJsonFile(`sushiswap-pools.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`sushiswap-pools.json`)
 	tokenList.Name = "SushiSwap Token Pools"
 	tokenList.LogoURI = "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png"
 
@@ -183,5 +186,5 @@ func buildSushiswapPoolsTokenList() {
 		tokenList.Metadata[`lastBlockSyncFor_`+chainIDStr] = blockNumber
 	}
 
-	saveTokenListInJsonFile(tokenList, tokens, `sushiswap-pools.json`, Append)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `sushiswap-pools.json`, helpers.SavingMethodAppend)
 }

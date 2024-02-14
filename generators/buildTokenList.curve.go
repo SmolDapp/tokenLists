@@ -4,7 +4,9 @@ import (
 	"sync"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TCurveTokenData struct {
@@ -57,8 +59,8 @@ var APIURIForCurve = map[uint64][]string{
 	},
 }
 
-func handleCurveTokenList(listPerChainID map[uint64][]TCurveTokenData) []TokenListToken {
-	tokensForChainIDSyncMap := initSyncMap(listPerChainID)
+func handleCurveTokenList(listPerChainID map[uint64][]TCurveTokenData) []models.TokenListToken {
+	tokensForChainIDSyncMap := helpers.InitSyncMap(listPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
 	perChainWG := sync.WaitGroup{}
@@ -67,27 +69,27 @@ func handleCurveTokenList(listPerChainID map[uint64][]TCurveTokenData) []TokenLi
 		go func(chainID uint64, list []TCurveTokenData) {
 			defer perChainWG.Done()
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
-			syncMap := syncMapRaw.([]TokenListToken)
+			syncMap := syncMapRaw.([]models.TokenListToken)
 
 			listOfAddresses := []common.Address{}
 			for _, token := range list {
-				if !helpers.IsIgnoredToken(chainID, common.HexToAddress(token.Address)) {
+				if !chains.IsTokenIgnored(chainID, common.HexToAddress(token.Address)) {
 					listOfAddresses = append(listOfAddresses, common.HexToAddress(token.Address))
 				}
-				if !helpers.IsIgnoredToken(chainID, common.HexToAddress(token.LpTokenAddress)) {
+				if !chains.IsTokenIgnored(chainID, common.HexToAddress(token.LpTokenAddress)) {
 					listOfAddresses = append(listOfAddresses, common.HexToAddress(token.LpTokenAddress))
 				}
 				for _, coinAddress := range token.CoinsAddresses {
-					if !helpers.IsIgnoredToken(chainID, common.HexToAddress(coinAddress)) {
+					if !chains.IsTokenIgnored(chainID, common.HexToAddress(coinAddress)) {
 						listOfAddresses = append(listOfAddresses, common.HexToAddress(coinAddress))
 					}
 				}
 			}
 
-			tokensInfo := retrieveBasicInformations(chainID, listOfAddresses)
+			tokensInfo := helpers.RetrieveBasicInformations(chainID, listOfAddresses)
 			for _, address := range listOfAddresses {
 				if token, ok := tokensInfo[address.Hex()]; ok {
-					if newToken, err := SetToken(
+					if newToken, err := helpers.SetToken(
 						token.Address,
 						token.Name,
 						token.Symbol,
@@ -104,14 +106,14 @@ func handleCurveTokenList(listPerChainID map[uint64][]TCurveTokenData) []TokenLi
 	}
 	perChainWG.Wait()
 
-	return extractSyncMap(tokensForChainIDSyncMap)
+	return helpers.ExtractSyncMap(tokensForChainIDSyncMap)
 }
 
-func fetchCurveTokenList() []TokenListToken {
+func fetchCurveTokenList() []models.TokenListToken {
 	listPerChainID := make(map[uint64][]TCurveTokenData)
 
 	for chainID, uris := range APIURIForCurve {
-		if !helpers.IsChainIDSupported(chainID) {
+		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
 
@@ -125,10 +127,10 @@ func fetchCurveTokenList() []TokenListToken {
 }
 
 func buildCurveTokenList() {
-	tokenList := loadTokenListFromJsonFile(`curve.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`curve.json`)
 	tokenList.Name = "Curve Token List"
 	tokenList.LogoURI = "https://classic.curve.fi/logo.png"
 
 	tokens := fetchCurveTokenList()
-	saveTokenListInJsonFile(tokenList, tokens, `curve.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `curve.json`, helpers.SavingMethodStandard)
 }

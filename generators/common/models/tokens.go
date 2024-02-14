@@ -1,9 +1,4 @@
-package main
-
-import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/migratooor/tokenLists/generators/common/helpers"
-)
+package models
 
 // TokenListToken is the token struct used in the default token list
 type TokenListToken struct {
@@ -36,36 +31,4 @@ type TokenListData[T any] struct {
 	PreviousTokensMap map[string]TokenListToken `json:"-"`
 	NextTokensMap     map[string]TokenListToken `json:"-"`
 	Metadata          map[string]interface{}    `json:"metadata,omitempty"`
-}
-
-// InitTokenList initializes the token list
-func InitTokenList() TokenListData[TokenListToken] {
-	newTokenList := TokenListData[TokenListToken]{
-		Name:      ``,
-		Timestamp: ``,
-		Keywords:  []string{},
-		Tokens:    []TokenListToken{},
-	}
-	newTokenList.Version.Major = 0
-	newTokenList.Version.Minor = 0
-	newTokenList.Version.Patch = 0
-	newTokenList.PreviousTokensMap = make(map[string]TokenListToken)
-	newTokenList.NextTokensMap = make(map[string]TokenListToken)
-
-	return newTokenList
-}
-
-// Assign assigns the original token list to the current token list
-func (list TokenListData[T]) Assign(originalTokenList []TokenListToken) TokenListData[T] {
-	for _, token := range originalTokenList {
-		if !helpers.IsChainIDSupported(token.ChainID) {
-			continue
-		}
-		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || helpers.IsIgnoredToken(token.ChainID, common.HexToAddress(token.Address)) {
-			continue
-		}
-		key := getKey(token.ChainID, common.HexToAddress(token.Address))
-		list.NextTokensMap[key] = token
-	}
-	return list
 }

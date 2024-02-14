@@ -5,7 +5,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/gocolly/colly"
+	"github.com/migratooor/tokenLists/generators/common/chains"
+	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 // L1 and L2 use a different code
@@ -19,19 +22,16 @@ const (
 type etherscanSASExplorers struct {
 	BaseURL string
 	Type    TExplorerType
-	Coin    TokenListToken
 }
 
 var BASE_EXPLORERS_URI = map[uint64]etherscanSASExplorers{
 	1: {
 		BaseURL: "https://etherscan.io",
 		Type:    L1,
-		Coin:    ETHER,
 	},
 	10: {
 		BaseURL: "https://optimistic.etherscan.io",
 		Type:    L2,
-		Coin:    ETHER,
 	},
 	56: {
 		BaseURL: "https://bscscan.com",
@@ -40,64 +40,36 @@ var BASE_EXPLORERS_URI = map[uint64]etherscanSASExplorers{
 	100: {
 		BaseURL: "https://gnosisscan.io",
 		Type:    L2,
-		Coin:    XDAI,
 	},
 	137: {
 		BaseURL: "https://polygonscan.com",
 		Type:    L2,
-		Coin:    MATIC,
 	},
 	1101: {
 		BaseURL: "https://zkevm.polygonscan.com",
 		Type:    L2,
-		Coin:    ETHER,
 	},
 	250: {
 		BaseURL: "https://ftmscan.com",
 		Type:    L2,
-		Coin:    FTM,
 	},
 	8453: {
 		BaseURL: "https://basescan.org",
 		Type:    L2,
-		Coin:    ETHER,
 	},
 	42161: {
 		BaseURL: "https://arbiscan.io",
 		Type:    L2,
-		Coin:    ETHER,
 	},
 }
 
-func handleScanTokenList(chainID uint64, tokenAddresses []common.Address, imageURI []string) []TokenListToken {
-	tokenList := []TokenListToken{}
-
-	tokensInfo := retrieveBasicInformations(chainID, tokenAddresses)
-	for index, address := range tokenAddresses {
-		if token, ok := tokensInfo[address.Hex()]; ok {
-			if newToken, err := SetToken(
-				token.Address,
-				token.Name,
-				token.Symbol,
-				imageURI[index],
-				chainID,
-				int(token.Decimals),
-			); err == nil {
-				tokenList = append(tokenList, newToken)
-			}
-		}
-	}
-	chainCoin := BASE_EXPLORERS_URI[chainID].Coin
-	if chainCoin.Address == "" {
-		chainCoin = ETHER
-	}
-	chainCoin.ChainID = chainID
-	chainCoin.LogoURI = `https://assets.smold.app/api/token/` + strconv.FormatUint(chainID, 10) + `/` + chainCoin.Address + `/logo-128.png`
-	tokenList = append(tokenList, chainCoin)
+func handleScanTokenList(chainID uint64, tokenAddresses []common.Address, imageURI []string) []models.TokenListToken {
+	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
+	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	return tokenList
 }
 
-func fetchScanTokenListForL2(chainID uint64, currentPage uint8) []TokenListToken {
+func fetchScanTokenListForL2(chainID uint64, currentPage uint8) []models.TokenListToken {
 	explorerBaseUri := BASE_EXPLORERS_URI[chainID].BaseURL
 	imageURI := []string{}
 	tokens := []common.Address{}
@@ -127,7 +99,7 @@ func fetchScanTokenListForL2(chainID uint64, currentPage uint8) []TokenListToken
 	return handleScanTokenList(chainID, tokens, imageURI)
 }
 
-func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []TokenListToken {
+func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []models.TokenListToken {
 	explorerBaseUri := BASE_EXPLORERS_URI[chainID].BaseURL
 	imageURI := []string{}
 	tokens := []common.Address{}
@@ -155,7 +127,7 @@ func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []TokenListToken
 	return handleScanTokenList(chainID, tokens, imageURI)
 }
 
-func fetchScanTokenList(chainID uint64) []TokenListToken {
+func fetchScanTokenList(chainID uint64) []models.TokenListToken {
 	explorerBaseType := BASE_EXPLORERS_URI[chainID].Type
 	if explorerBaseType == L1 {
 		return fetchScanTokenListForL1(chainID, 1)
@@ -164,11 +136,11 @@ func fetchScanTokenList(chainID uint64) []TokenListToken {
 }
 
 func buildScanTokenList() {
-	tokenList := loadTokenListFromJsonFile(`etherscan.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`etherscan.json`)
 	tokenList.Name = `Etherscan`
 	tokenList.LogoURI = `https://etherscan.io/images/brandassets/etherscan-logo-circle.svg`
 	tokenList.Keywords = []string{`ethereum`, `etherscan`}
-	tokens := []TokenListToken{}
+	tokens := []models.TokenListToken{}
 	tokens = append(tokens, fetchScanTokenList(1)...)
 	tokens = append(tokens, fetchScanTokenList(10)...)
 	tokens = append(tokens, fetchScanTokenList(56)...)
@@ -178,5 +150,5 @@ func buildScanTokenList() {
 	tokens = append(tokens, fetchScanTokenList(1101)...)
 	tokens = append(tokens, fetchScanTokenList(8453)...)
 	tokens = append(tokens, fetchScanTokenList(42161)...)
-	saveTokenListInJsonFile(tokenList, tokens, `etherscan.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `etherscan.json`, helpers.SavingMethodStandard)
 }

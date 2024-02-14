@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TBebopTokenData struct {
@@ -30,12 +31,12 @@ type TBebopTokenListData struct {
 		Minor int `json:"minor"`
 		Patch int `json:"patch"`
 	} `json:"version"`
-	LogoURI           string                    `json:"logoURI"`
-	Keywords          []string                  `json:"keywords"`
-	Tokens            []TokenListToken          `json:"tokens"`
-	PreviousTokensMap map[string]TokenListToken `json:"-"`
-	NextTokensMap     map[string]TokenListToken `json:"-"`
-	Metadata          map[string]interface{}    `json:"metadata,omitempty"`
+	LogoURI           string                           `json:"logoURI"`
+	Keywords          []string                         `json:"keywords"`
+	Tokens            []models.TokenListToken          `json:"tokens"`
+	PreviousTokensMap map[string]models.TokenListToken `json:"-"`
+	NextTokensMap     map[string]models.TokenListToken `json:"-"`
+	Metadata          map[string]interface{}           `json:"metadata,omitempty"`
 }
 
 func bebopMapNetworkChainIDToName(chainID uint64) string {
@@ -50,12 +51,12 @@ func bebopMapNetworkChainIDToName(chainID uint64) string {
 	return `ethereum`
 }
 
-func fetchbebopTokenList() []TokenListToken {
+func fetchbebopTokenList() []models.TokenListToken {
 	supportedChainID := []uint64{1, 137, 42161}
-	tokens := []TokenListToken{}
+	tokens := []models.TokenListToken{}
 
 	type TBebopTokenListToken struct {
-		TokenListToken
+		models.TokenListToken
 		Tags       []string `json:"tags"`
 		Extensions struct {
 			Color           string `json:"color"`
@@ -63,7 +64,7 @@ func fetchbebopTokenList() []TokenListToken {
 		} `json:"extensions"`
 	}
 
-	tokenList := helpers.FetchJSON[TokenListData[TBebopTokenListToken]](`https://api.bebop.xyz/token_list`)
+	tokenList := helpers.FetchJSON[models.TokenListData[TBebopTokenListToken]](`https://api.bebop.xyz/token_list`)
 	tokenMap := map[string]TBebopTokenListToken{}
 	for _, token := range tokenList.Tokens {
 		tokenMap[token.Address] = token
@@ -72,7 +73,7 @@ func fetchbebopTokenList() []TokenListToken {
 	for _, chainID := range supportedChainID {
 		list := helpers.FetchJSON[TBebopList](`https://api.bebop.xyz/` + bebopMapNetworkChainIDToName(chainID) + `/v2/token-info`)
 
-		allTokens := []common.Address{}
+		tokenList := []common.Address{}
 		for _, token := range list.Tokens {
 			if !token.Availability.IsAvailable {
 				continue
@@ -80,10 +81,10 @@ func fetchbebopTokenList() []TokenListToken {
 			if !token.Availability.CanBuy && !token.Availability.CanSell {
 				continue
 			}
-			allTokens = append(allTokens, common.HexToAddress(token.Address))
+			tokenList = append(tokenList, common.HexToAddress(token.Address))
 		}
 
-		tokensInfo := retrieveBasicInformations(chainID, allTokens)
+		tokensInfo := helpers.RetrieveBasicInformations(chainID, tokenList)
 		for _, existingToken := range list.Tokens {
 			if !existingToken.Availability.IsAvailable {
 				continue
@@ -97,7 +98,7 @@ func fetchbebopTokenList() []TokenListToken {
 			}
 
 			if token, ok := tokensInfo[common.HexToAddress(existingToken.Address).Hex()]; ok {
-				if newToken, err := SetToken(
+				if newToken, err := helpers.SetToken(
 					token.Address,
 					helpers.SafeString(token.Name, existingToken.Name),
 					helpers.SafeString(token.Symbol, existingToken.Symbol),
@@ -121,10 +122,10 @@ func fetchbebopTokenList() []TokenListToken {
 }
 
 func buildBebopTokenList() {
-	tokenList := loadTokenListFromJsonFile(`bebop.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`bebop.json`)
 	tokenList.Name = "Bebop"
 	tokenList.LogoURI = "https://bebop-public-images.s3.eu-west-2.amazonaws.com/bebop-logo.png"
 
 	tokens := fetchbebopTokenList()
-	saveTokenListInJsonFile(tokenList, tokens, `bebop.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `bebop.json`, helpers.SavingMethodStandard)
 }

@@ -4,7 +4,9 @@ import (
 	"math"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TSmolAssetsList struct {
@@ -17,7 +19,7 @@ type TSmolAssetsList struct {
 }
 
 func buildTokenListooorList() {
-	tokenList := loadTokenListFromJsonFile(`tokenlistooor.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`tokenlistooor.json`)
 	tokenList.Name = `Tokenlistooor Token List`
 	tokenList.LogoURI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg`
 	tokenList.Description = `A curated list of tokens from all the token lists on tokenlistooor.`
@@ -26,19 +28,13 @@ func buildTokenListooorList() {
 	** Create a map of all tokens from all lists and only add the missing ones
 	** in it. Map are WAY faster than arrays fir our use case
 	**************************************************************************/
-	allTokens := make(map[uint64]map[string]TokenListToken)
-	allTokensPlain := []TokenListToken{}
+	allTokens := make(map[uint64]map[string]models.TokenListToken)
+	allTokensPlain := []models.TokenListToken{}
 	listsPerChain := make(map[uint64][]string)
 
-	allTokensPlain = append(allTokensPlain, ETHER)
-	allTokensPlain = append(allTokensPlain, FTM)
-	allTokensPlain = append(allTokensPlain, BSC)
-	allTokensPlain = append(allTokensPlain, MATIC)
-	allTokensPlain = append(allTokensPlain, MATIC_ZKEVM)
-	allTokensPlain = append(allTokensPlain, XDAI)
-	allTokensPlain = append(allTokensPlain, addEtherLikeToken(10))
-	allTokensPlain = append(allTokensPlain, addEtherLikeToken(8453))
-	allTokensPlain = append(allTokensPlain, addEtherLikeToken(324))
+	for _, chain := range chains.CHAINS {
+		allTokensPlain = append(allTokensPlain, chain.Coin)
+	}
 
 	/**************************************************************************
 	** We want to know which tokens to add to the aggregated tokenlistooor list
@@ -59,9 +55,9 @@ func buildTokenListooorList() {
 		if shouldByPassCount {
 			initialCount = math.MaxInt32
 		}
-		tokenList := loadTokenListFromJsonFile(name + `.json`)
+		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
 		for _, token := range tokenList.Tokens {
-			if !helpers.IsChainIDSupported(token.ChainID) {
+			if !chains.IsChainIDSupported(token.ChainID) {
 				continue
 			}
 			if _, ok := listsPerChain[token.ChainID]; !ok {
@@ -73,11 +69,11 @@ func buildTokenListooorList() {
 			}
 
 			if _, ok := allTokens[token.ChainID]; !ok {
-				allTokens[token.ChainID] = make(map[string]TokenListToken)
+				allTokens[token.ChainID] = make(map[string]models.TokenListToken)
 			}
 
 			if existingToken, ok := allTokens[token.ChainID][helpers.ToAddress(token.Address)]; ok {
-				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
+				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
 					Address:    existingToken.Address,
 					Name:       helpers.SafeString(existingToken.Name, token.Name),
 					Symbol:     helpers.SafeString(existingToken.Symbol, token.Symbol),
@@ -91,7 +87,7 @@ func buildTokenListooorList() {
 				if common.HexToAddress(token.Address) == common.HexToAddress(`0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079`) { //Ajna
 					tokenInitialOccurence = math.MaxInt32
 				}
-				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = TokenListToken{
+				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
 					Address:    helpers.ToAddress(token.Address),
 					Name:       helpers.SafeString(token.Name, ``),
 					Symbol:     helpers.SafeString(token.Symbol, ``),
@@ -116,6 +112,6 @@ func buildTokenListooorList() {
 		}
 	}
 
-	tokens := fetchTokenList(allTokensPlain)
-	saveTokenListInJsonFile(tokenList, tokens, `tokenlistooor.json`, Standard)
+	tokens := helpers.GetTokensFromList(allTokensPlain)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `tokenlistooor.json`, helpers.SavingMethodStandard)
 }

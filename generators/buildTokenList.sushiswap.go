@@ -4,7 +4,9 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TSushiContracts struct {
@@ -58,13 +60,24 @@ var SushiswapContractsPerChainID = map[uint64][]TSushiContracts{
 }
 
 func buildSushiswapTokenList() {
-	tokenList := loadTokenListFromJsonFile(`sushiswap.json`)
-	originalTokenList := helpers.FetchJSON[TokenListData[TokenListToken]](`https://token-list.sushi.com/`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`sushiswap.json`)
+	originalTokenList := helpers.FetchJSON[models.TokenListData[models.TokenListToken]](`https://token-list.sushi.com/`)
 	tokenList.Name = originalTokenList.Name
 	tokenList.LogoURI = originalTokenList.LogoURI
 	tokenList.Keywords = originalTokenList.Keywords
-	tokenList = tokenList.Assign(originalTokenList.Tokens)
 
-	tokens := fetchTokenList(tokenList.Tokens)
-	saveTokenListInJsonFile(tokenList, tokens, `sushiswap.json`, Standard)
+	tokenList = models.TokenListData[models.TokenListToken]{}
+	for _, token := range originalTokenList.Tokens {
+		if !chains.IsChainIDSupported(token.ChainID) {
+			continue
+		}
+		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, common.HexToAddress(token.Address)) {
+			continue
+		}
+		key := helpers.GetKey(token.ChainID, common.HexToAddress(token.Address))
+		tokenList.NextTokensMap[key] = token
+	}
+
+	tokens := helpers.GetTokensFromList(tokenList.Tokens)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `sushiswap.json`, helpers.SavingMethodStandard)
 }

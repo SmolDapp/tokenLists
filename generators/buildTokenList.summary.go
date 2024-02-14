@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 // TMinTokenListData is the minimal data of a token list for the tokenListooor project
@@ -39,7 +40,7 @@ type TTokenListSummary struct {
 
 var BASE_URI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/`
 
-func listSupportedChains(list []TokenListToken) []int {
+func listSupportedChains(list []models.TokenListToken) []int {
 	detectedChainsMap := map[int]bool{}
 	detectedChains := []int{}
 	for _, token := range list {
@@ -58,7 +59,7 @@ func buildSummary() {
 	tokenListSummary.LogoURI = BASE_URI + `.github/tokenlistooor.svg`
 	tokenListSummary.Timestamp = time.Now().UTC().Unix()
 	for name, data := range GENERATORS {
-		tokenList := loadTokenListFromJsonFile(name + `.json`)
+		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
 		listElement := TMinTokenListData{
 			Name:        tokenList.Name,
 			Timestamp:   tokenList.Timestamp,
@@ -76,7 +77,7 @@ func buildSummary() {
 
 	//Also add the tokenListooor list
 	{
-		tokenListooorList := loadTokenListFromJsonFile(`tokenlistooor.json`)
+		tokenListooorList := helpers.LoadTokenListFromJsonFile(`tokenlistooor.json`)
 		listElement := TMinTokenListData{
 			Name:        tokenListooorList.Name,
 			Timestamp:   tokenListooorList.Timestamp,

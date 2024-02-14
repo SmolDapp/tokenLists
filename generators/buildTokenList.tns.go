@@ -6,7 +6,9 @@ import (
 	"strings"
 
 	graphql "github.com/hasura/go-graphql-client"
+	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var chainIDToBIP44 = map[string]uint64{
@@ -21,8 +23,8 @@ var chainIDToBIP44 = map[string]uint64{
 	`0x8000a86a`: 43114, // Avalanche
 }
 
-func fetchTNSTokeList() []TokenListToken {
-	listPerChainID := []TokenListToken{}
+func fetchTNSTokeList() []models.TokenListToken {
+	listPerChainID := []models.TokenListToken{}
 	client := graphql.NewClient(
 		`https://api.thegraph.com/subgraphs/name/mike-data-nexus/tkn-_sg`,
 		nil,
@@ -56,7 +58,7 @@ func fetchTNSTokeList() []TokenListToken {
 			if expectedChainID == 0 {
 				continue
 			}
-			listPerChainID = append(listPerChainID, TokenListToken{
+			listPerChainID = append(listPerChainID, models.TokenListToken{
 				Address: address.Address,
 				ChainID: expectedChainID,
 				LogoURI: domain.Resolver.Avatar,
@@ -64,16 +66,16 @@ func fetchTNSTokeList() []TokenListToken {
 		}
 	}
 
-	return fetchTokenList(listPerChainID)
+	return helpers.GetTokensFromList(listPerChainID)
 }
 
 func buildTNSTokenList() {
-	tokenList := loadTokenListFromJsonFile(`tns.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`tns.json`)
 	tokenList.Name = `Token Name Service`
 	tokenList.LogoURI = `https://logo.assets.tkn.eth.limo/`
 	tokenList.Keywords = []string{`tns`, `token`, `tokendao`, `tkn`, `tkr`}
 	tokenList.Description = `Token Name Service is a decentralized naming service for tokens on Ethereum.`
 	tokens := fetchTNSTokeList()
 
-	saveTokenListInJsonFile(tokenList, tokens, `tns.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `tns.json`, helpers.SavingMethodStandard)
 }

@@ -2,7 +2,9 @@ package main
 
 import (
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 type TParaswapTokenData struct {
@@ -25,11 +27,11 @@ var APIURIForParaswap = map[uint64]string{
 	43114: `https://apiv5.paraswap.io/tokens/43114`,
 }
 
-func fetchParaswapTokenList() []TokenListToken {
-	tokens := []TokenListToken{}
+func fetchParaswapTokenList() []models.TokenListToken {
+	tokens := []models.TokenListToken{}
 
 	for chainID, uri := range APIURIForParaswap {
-		if !helpers.IsChainIDSupported(chainID) {
+		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
 
@@ -38,7 +40,7 @@ func fetchParaswapTokenList() []TokenListToken {
 		for _, v := range list.Tokens {
 			tokenAddresses = append(tokenAddresses, common.HexToAddress(v.Address))
 		}
-		tokensInfo := retrieveBasicInformations(chainID, tokenAddresses)
+		tokensInfo := helpers.RetrieveBasicInformations(chainID, tokenAddresses)
 
 		for _, existingToken := range list.Tokens {
 			if token, ok := tokensInfo[common.HexToAddress(existingToken.Address).Hex()]; ok {
@@ -47,7 +49,7 @@ func fetchParaswapTokenList() []TokenListToken {
 					logoURI = ``
 				}
 
-				if newToken, err := SetToken(
+				if newToken, err := helpers.SetToken(
 					token.Address,
 					token.Name,
 					token.Symbol,
@@ -65,10 +67,10 @@ func fetchParaswapTokenList() []TokenListToken {
 }
 
 func buildParaswapTokenList() {
-	tokenList := loadTokenListFromJsonFile(`paraswap.json`)
+	tokenList := helpers.LoadTokenListFromJsonFile(`paraswap.json`)
 	tokenList.Name = "Paraswap Token List"
 	tokenList.LogoURI = "https://app.paraswap.io/psp_logo.svg"
 
 	tokens := fetchParaswapTokenList()
-	saveTokenListInJsonFile(tokenList, tokens, `paraswap.json`, Standard)
+	helpers.SaveTokenListInJsonFile(tokenList, tokens, `paraswap.json`, helpers.SavingMethodStandard)
 }
