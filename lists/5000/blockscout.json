@@ -1,10 +1,10 @@
 {
   "name": "Blockscout",
   "description": "",
-  "timestamp": "14/02/2024 17:49:10",
+  "timestamp": "18/02/2024 01:08:18",
   "version": {
-    "major": 2,
-    "minor": 2,
+    "major": 3,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://2383309224-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Lq1XoWGmy8zggj_u2fM%2Ficon%2FyFkt6mPJJvjKiSBBOppe%2FBS_logo_slack.png?alt=media",
@@ -210,6 +210,14 @@
       "name": "REAX Polkadot (Crypto Pool)",
       "symbol": "cDOT",
       "logoURI": "https://assets.smold.app/api/token/5000/0x0f148bF7A48dc14Ee17bb4f81708c1AEF20b2397/logo-128.png",
+      "chainId": 5000,
+      "decimals": 18
+    },
+    {
+      "address": "0x1010a05759a0a7Daa665f12Ec677ff5034Ecd35F",
+      "name": "BabyWhale OFT",
+      "symbol": "BWHL",
+      "logoURI": "https://assets.smold.app/api/token/5000/0x1010a05759a0a7Daa665f12Ec677ff5034Ecd35F/logo-128.png",
       "chainId": 5000,
       "decimals": 18
     },
@@ -618,14 +626,6 @@
       "name": "T40isHere",
       "symbol": "T40isHere",
       "logoURI": "https://assets.smold.app/api/token/5000/0x303211BACD0FACaEF820679fB64B23a50Ce8A026/logo-128.png",
-      "chainId": 5000,
-      "decimals": 18
-    },
-    {
-      "address": "0x307c1EEE97fB24c4767dA378ce1Dd2b6cD18eE07",
-      "name": "Test MMM",
-      "symbol": "TMM",
-      "logoURI": "https://assets.smold.app/api/token/5000/0x307c1EEE97fB24c4767dA378ce1Dd2b6cD18eE07/logo-128.png",
       "chainId": 5000,
       "decimals": 18
     },
@@ -1102,6 +1102,14 @@
       "decimals": 18
     },
     {
+      "address": "0x532D8Bc19fd668267339F99DA9c8B7853aC68d2a",
+      "name": "Moe LP Token",
+      "symbol": "MoeLP",
+      "logoURI": "https://assets.smold.app/api/token/5000/0x532D8Bc19fd668267339F99DA9c8B7853aC68d2a/logo-128.png",
+      "chainId": 5000,
+      "decimals": 18
+    },
+    {
       "address": "0x53751403382B4d7dC18d745899Fc2687F0593070",
       "name": "DappGate by DappLabs",
       "symbol": "DLGATE",
@@ -1178,14 +1186,6 @@
       "name": "Staked + Bonus + Fee KTX",
       "symbol": "sbfKTX",
       "logoURI": "https://assets.smold.app/api/token/5000/0x57aCDFEF9D2D2C53E6316b3483CA9A14B481f7AB/logo-128.png",
-      "chainId": 5000,
-      "decimals": 18
-    },
-    {
-      "address": "0x584Eb876ef22eB1Dc1Ed1326927acad64aC0772E",
-      "name": "Test Mantle",
-      "symbol": "TMNT",
-      "logoURI": "https://assets.smold.app/api/token/5000/0x584Eb876ef22eB1Dc1Ed1326927acad64aC0772E/logo-128.png",
       "chainId": 5000,
       "decimals": 18
     },
@@ -2166,14 +2166,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9D448615Fd4899AED45D28FC0a19696dC975eD0d",
-      "name": "Twister",
-      "symbol": "TST",
-      "logoURI": "https://assets.smold.app/api/token/5000/0x9D448615Fd4899AED45D28FC0a19696dC975eD0d/logo-128.png",
-      "chainId": 5000,
-      "decimals": 18
-    },
-    {
       "address": "0x9Fe08255C161045bbd84AC867514E17B3F66d5e8",
       "name": "REAX Ripple (Crypto Pool)",
       "symbol": "cXRP",
@@ -2338,6 +2330,14 @@
       "name": "Polonia",
       "symbol": "POL",
       "logoURI": "https://assets.smold.app/api/token/5000/0xB8ca43E9874A2036AeAA4486FF6C71dE88Becf1f/logo-128.png",
+      "chainId": 5000,
+      "decimals": 18
+    },
+    {
+      "address": "0xBb406187C01cC1c9EAf9d4b5C924b7FA37aeCEFD",
+      "name": "Aurelius METH",
+      "symbol": "auMETH",
+      "logoURI": "https://assets.smold.app/api/token/5000/0xBb406187C01cC1c9EAf9d4b5C924b7FA37aeCEFD/logo-128.png",
       "chainId": 5000,
       "decimals": 18
     },
@@ -3018,14 +3018,6 @@
       "name": "DAI",
       "symbol": "DAI",
       "logoURI": "https://assets.smold.app/api/token/5000/0xbcab71b4a10A93Bcf680fe8a82d070c0C48543b7/logo-128.png",
-      "chainId": 5000,
-      "decimals": 18
-    },
-    {
-      "address": "0xbdC950638E53E2Ee6728E0A64b094AE4660918e2",
-      "name": "VolatileV1 AMM - WMNT/MVM",
-      "symbol": "vAMM-WMNT/MVM",
-      "logoURI": "https://assets.smold.app/api/token/5000/0xbdC950638E53E2Ee6728E0A64b094AE4660918e2/logo-128.png",
       "chainId": 5000,
       "decimals": 18
     },
