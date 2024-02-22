@@ -29,7 +29,5 @@ var ETHEREUM = TChain{
 	},
 	ExtraTokens: []common.Address{
 		common.HexToAddress(`0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079`), // Ajna
-		common.HexToAddress(`0xf1376bcef0f78459c0ed0ba5ddce976f1ddf51f4`), // uniETH
-		common.HexToAddress(`0xc55126051B22eBb829D00368f4B12Bde432de5Da`), // BTRFLY
 	},
 }
