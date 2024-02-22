@@ -66,17 +66,44 @@ func buildSushiswapTokenList() {
 	tokenList.LogoURI = originalTokenList.LogoURI
 	tokenList.Keywords = originalTokenList.Keywords
 
-	for _, token := range originalTokenList.Tokens {
-		if !chains.IsChainIDSupported(token.ChainID) {
+	/**************************************************************************
+	* Parse the original token list and create a new one with the same tokens
+	* with actual onchain data
+	**************************************************************************/
+	var newTokenList []models.TokenListToken
+	grouped := helpers.GroupByChainID(originalTokenList.Tokens)
+	for chainID, tokensForChain := range grouped {
+		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
+
+		tokensInfo := helpers.RetrieveBasicInformations(chainID, tokensForChain)
+		for _, existingToken := range tokensForChain {
+			if token, ok := tokensInfo[existingToken.Hex()]; ok {
+				if newToken, err := helpers.SetToken(
+					token.Address,
+					token.Name,
+					token.Symbol,
+					``,
+					chainID,
+					int(token.Decimals),
+				); err == nil {
+					newTokenList = append(newTokenList, newToken)
+				}
+			}
+		}
+	}
+
+	/**************************************************************************
+	* Ensure the data availability for the new token list is correct and
+	* save it in a json file
+	**************************************************************************/
+	for _, token := range newTokenList {
 		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, common.HexToAddress(token.Address)) {
 			continue
 		}
+
 		key := helpers.GetKey(token.ChainID, common.HexToAddress(token.Address))
-		if _, ok := tokenList.NextTokensMap[key]; !ok {
-			tokenList.NextTokensMap = make(map[string]models.TokenListToken)
-		}
 		tokenList.NextTokensMap[key] = token
 	}
 

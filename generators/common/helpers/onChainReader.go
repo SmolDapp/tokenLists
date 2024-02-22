@@ -80,7 +80,7 @@ func RetrieveBasicInformations(chainID uint64, addresses []common.Address) map[s
 /**************************************************************************************************
  * The groupByChainID function is a small helper function to group tokens by chainID
  *************************************************************************************************/
-func groupByChainID(tokens []models.TokenListToken) map[uint64][]common.Address {
+func GroupByChainID(tokens []models.TokenListToken) map[uint64][]common.Address {
 	tokensPerChainID := make(map[uint64][]common.Address)
 	for _, token := range tokens {
 		if !chains.IsChainIDSupported(token.ChainID) {
@@ -113,7 +113,7 @@ func getExistingLogo(chainID uint64, lookingFor common.Address, slice []models.T
  *************************************************************************************************/
 func GetTokensFromList(tokensFromList []models.TokenListToken) []models.TokenListToken {
 	tokens := []models.TokenListToken{}
-	grouped := groupByChainID(tokensFromList)
+	grouped := GroupByChainID(tokensFromList)
 
 	for chainID, tokensForChain := range grouped {
 		if !chains.IsChainIDSupported(chainID) {
