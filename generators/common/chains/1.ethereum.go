@@ -27,4 +27,8 @@ var ETHEREUM = TChain{
 	IgnoredTokens: []common.Address{
 		common.HexToAddress(`0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8`),
 	},
+	ExtraTokens: []common.Address{
+		common.HexToAddress(`0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079`),
+		common.HexToAddress(`0xf1376bcef0f78459c0ed0ba5ddce976f1ddf51f4`),
+	},
 }

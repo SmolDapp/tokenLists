@@ -84,9 +84,12 @@ func buildTokenListooorList() {
 				}
 			} else {
 				tokenInitialOccurence := initialCount
-				if common.HexToAddress(token.Address) == common.HexToAddress(`0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079`) { //Ajna
-					tokenInitialOccurence = math.MaxInt32
+				for _, extraToken := range chains.CHAINS[token.ChainID].ExtraTokens {
+					if common.HexToAddress(token.Address) == extraToken {
+						tokenInitialOccurence = math.MaxInt32
+					}
 				}
+
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
 					Address:    helpers.ToAddress(token.Address),
 					Name:       helpers.SafeString(token.Name, ``),
