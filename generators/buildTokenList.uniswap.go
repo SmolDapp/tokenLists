@@ -49,6 +49,13 @@ var UniswapContractsPerChainID = map[uint64][]TUniContracts{
 			Type:            3,
 		},
 	},
+	7777777: {
+		{
+			ContractAddress: common.HexToAddress(`0x7145F8aeef1f6510E92164038E1B6F8cB2c42Cbb`),
+			BlockNumber:     big.NewInt(10320368),
+			Type:            3,
+		},
+	},
 }
 
 func buildUniswapTokenList() {

@@ -19,13 +19,14 @@ var BLOCKSCOUTV5_URI = map[uint64]string{
 }
 
 var BLOCKSCOUTV6_URI = map[uint64]string{
-	1:    `https://eth.blockscout.com`,
-	5:    `https://eth-goerli.blockscout.com`,
-	10:   `https://optimism.blockscout.com`,
-	100:  `https://gnosis.blockscout.com`,
-	137:  `https://polygon.blockscout.com`,
-	1101: `https://zkevm.blockscout.com`,
-	8453: `https://base.blockscout.com`,
+	1:       `https://eth.blockscout.com`,
+	5:       `https://eth-goerli.blockscout.com`,
+	10:      `https://optimism.blockscout.com`,
+	100:     `https://gnosis.blockscout.com`,
+	137:     `https://polygon.blockscout.com`,
+	1101:    `https://zkevm.blockscout.com`,
+	8453:    `https://base.blockscout.com`,
+	7777777: `https://explorer.zora.energy/`,
 }
 
 func handleBlockScoutTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
@@ -62,6 +63,7 @@ func fetchBlockScoutV6TokenList(chainID uint64) []models.TokenListToken {
 		Items []struct {
 			Address string `json:"address"`
 			IconURI string `json:"icon_url"`
+			Type    string `json:"type"`
 		} `json:"items"`
 		NextPage struct {
 			ContractAddressHash string `json:"contract_address_hash"`
@@ -78,9 +80,12 @@ func fetchBlockScoutV6TokenList(chainID uint64) []models.TokenListToken {
 	nextPageURI := `/api/v2/tokens`
 	tokens := []common.Address{}
 
-	for i := 0; i < 20; i++ {
+	for i := 0; i < 40; i++ {
 		response := helpers.FetchJSON[TBlockScoutAPIResponse](explorerBaseURI + nextPageURI)
 		for _, token := range response.Items {
+			if token.Type == `ERC-721` || token.Type == `ERC-1155` {
+				continue
+			}
 			tokens = append(tokens, common.HexToAddress(token.Address))
 		}
 		nextPageURI = `/api/v2/tokens?contract_address_hash=` + response.NextPage.ContractAddressHash + `&fiat_value=` + response.NextPage.FiatValue + `&holder_count=` + strconv.Itoa(response.NextPage.HolderCount) + `&is_name_null=` + strconv.FormatBool(response.NextPage.IsNameNull) + `&items_count=` + strconv.Itoa(response.NextPage.ItemsCount) + `&market_cap=` + response.NextPage.MarketCap + `&name=` + response.NextPage.Name
