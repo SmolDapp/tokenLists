@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"sort"
+	"strconv"
 	"time"
 
 	"github.com/migratooor/tokenLists/generators/common/helpers"
@@ -20,8 +21,9 @@ type TMinTokenListData struct {
 	Keywords    []string `json:"keywords"`
 	TokenCount  int      `json:"tokenCount"`
 	Metadata    struct {
-		SupportedChains  []int  `json:"supportedChains"`
-		GenerationMethod string `json:"generationMethod"`
+		SupportedChains    []int          `json:"supportedChains"`
+		GenerationMethod   string         `json:"generationMethod"`
+		TokenCountPerChain map[string]int `json:"tokenCountPerChain"`
 	} `json:"metadata"`
 	Version struct {
 		Major int `json:"major"`
@@ -72,6 +74,14 @@ func buildSummary() {
 		}
 		listElement.Metadata.SupportedChains = listSupportedChains(tokenList.Tokens)
 		listElement.Metadata.GenerationMethod = string(data.GenerationMethod)
+		listElement.Metadata.TokenCountPerChain = make(map[string]int)
+		for _, token := range tokenList.Tokens {
+			chainStr := strconv.FormatUint(token.ChainID, 10)
+			if _, ok := listElement.Metadata.TokenCountPerChain[chainStr]; !ok {
+				listElement.Metadata.TokenCountPerChain[chainStr] = 0
+			}
+			listElement.Metadata.TokenCountPerChain[chainStr]++
+		}
 		tokenListSummary.Lists = append(tokenListSummary.Lists, listElement)
 	}
 
@@ -90,6 +100,14 @@ func buildSummary() {
 		}
 		listElement.Metadata.SupportedChains = listSupportedChains(tokenListooorList.Tokens)
 		listElement.Metadata.GenerationMethod = string(GenerationAPI)
+		listElement.Metadata.TokenCountPerChain = make(map[string]int)
+		for _, token := range tokenListooorList.Tokens {
+			chainStr := strconv.FormatUint(token.ChainID, 10)
+			if _, ok := listElement.Metadata.TokenCountPerChain[chainStr]; !ok {
+				listElement.Metadata.TokenCountPerChain[chainStr] = 0
+			}
+			listElement.Metadata.TokenCountPerChain[chainStr]++
+		}
 		tokenListSummary.Lists = append(tokenListSummary.Lists, listElement)
 	}
 
