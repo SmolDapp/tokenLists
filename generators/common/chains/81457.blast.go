@@ -25,4 +25,8 @@ var BLAST = TChain{
 		Decimals: 18,
 	},
 	IgnoredTokens: []common.Address{},
+	ExtraTokens: []common.Address{
+		common.HexToAddress(`0x6d5564584b70240691bd6ff7a834b9fab844e0d4`),
+		common.HexToAddress(`0x38aD23b0902D0d86c2F3949BC505194D70B762F5`),
+	},
 }

@@ -120,6 +120,7 @@ func GetTokensFromList(tokensFromList []models.TokenListToken) []models.TokenLis
 			continue
 		}
 
+		tokensForChain = append(tokensForChain, chains.CHAINS[chainID].ExtraTokens...)
 		tokensInfo := RetrieveBasicInformations(chainID, tokensForChain)
 		for _, existingToken := range tokensForChain {
 			if token, ok := tokensInfo[existingToken.Hex()]; ok {
@@ -147,6 +148,7 @@ func GetTokensFromList(tokensFromList []models.TokenListToken) []models.TokenLis
 *************************************************************************************************/
 func GetTokensFromAddresses(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
 	tokenList := []models.TokenListToken{}
+	tokenAddresses = append(tokenAddresses, chains.CHAINS[chainID].ExtraTokens...)
 	tokensInfo := RetrieveBasicInformations(chainID, tokenAddresses)
 	for _, address := range tokenAddresses {
 		if token, ok := tokensInfo[address.Hex()]; ok {
