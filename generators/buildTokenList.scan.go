@@ -145,15 +145,15 @@ func buildScanTokenList() {
 	tokenList.LogoURI = `https://etherscan.io/images/brandassets/etherscan-logo-circle.svg`
 	tokenList.Keywords = []string{`ethereum`, `etherscan`}
 	tokens := []models.TokenListToken{}
-	// tokens = append(tokens, fetchScanTokenList(1)...)
-	// tokens = append(tokens, fetchScanTokenList(10)...)
-	// tokens = append(tokens, fetchScanTokenList(56)...)
-	// tokens = append(tokens, fetchScanTokenList(100)...)
-	// tokens = append(tokens, fetchScanTokenList(137)...)
-	// tokens = append(tokens, fetchScanTokenList(250)...)
-	// tokens = append(tokens, fetchScanTokenList(1101)...)
-	// tokens = append(tokens, fetchScanTokenList(8453)...)
-	// tokens = append(tokens, fetchScanTokenList(42161)...)
+	tokens = append(tokens, fetchScanTokenList(1)...)
+	tokens = append(tokens, fetchScanTokenList(10)...)
+	tokens = append(tokens, fetchScanTokenList(56)...)
+	tokens = append(tokens, fetchScanTokenList(100)...)
+	tokens = append(tokens, fetchScanTokenList(137)...)
+	tokens = append(tokens, fetchScanTokenList(250)...)
+	tokens = append(tokens, fetchScanTokenList(1101)...)
+	tokens = append(tokens, fetchScanTokenList(8453)...)
+	tokens = append(tokens, fetchScanTokenList(42161)...)
 	tokens = append(tokens, fetchScanTokenList(81457)...)
 	helpers.SaveTokenListInJsonFile(tokenList, tokens, `etherscan.json`, helpers.SavingMethodStandard)
 }
