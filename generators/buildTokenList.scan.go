@@ -61,6 +61,10 @@ var BASE_EXPLORERS_URI = map[uint64]etherscanSASExplorers{
 		BaseURL: "https://arbiscan.io",
 		Type:    L2,
 	},
+	81457: {
+		BaseURL: "https://blastscan.io/tokens",
+		Type:    L2,
+	},
 }
 
 func handleScanTokenList(chainID uint64, tokenAddresses []common.Address, imageURI []string) []models.TokenListToken {
@@ -150,5 +154,6 @@ func buildScanTokenList() {
 	tokens = append(tokens, fetchScanTokenList(1101)...)
 	tokens = append(tokens, fetchScanTokenList(8453)...)
 	tokens = append(tokens, fetchScanTokenList(42161)...)
+	tokens = append(tokens, fetchScanTokenList(81457)...)
 	helpers.SaveTokenListInJsonFile(tokenList, tokens, `etherscan.json`, helpers.SavingMethodStandard)
 }
