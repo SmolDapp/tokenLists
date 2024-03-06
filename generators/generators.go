@@ -155,6 +155,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`routescan`: {
+		Exec:             buildRouteScanTokenList,
+		Name:             `Routescan`,
+		Description:      `Routescan is the first multichain ecosystem explorer, search, API, and analytics platform for all major EVM`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`tns`: {
 		Exec:             buildTNSTokenList,
 		Name:             `Token Name Service`,
