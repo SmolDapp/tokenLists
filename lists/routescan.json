@@ -1,10 +1,10 @@
 {
   "name": "RouteScan",
   "description": "",
-  "timestamp": "06/03/2024 16:12:24",
+  "timestamp": "10/03/2024 00:57:55",
   "version": {
-    "major": 1,
-    "minor": 1,
+    "major": 2,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://cms-cdn.avascan.com/cms2/routescan.432df9c80dd7.svg",
@@ -14,26 +14,26 @@
   ],
   "tokens": [
     {
-      "address": "0x025a38a4D5194B85aFb6e58786B73F904E693324",
-      "name": "Blood Crystal",
-      "symbol": "BC",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x025a38a4D5194B85aFb6e58786B73F904E693324/logo-128.png",
+      "address": "0x0000000000a1c217530F17948CBb487c743b9F63",
+      "name": "Ore",
+      "symbol": "ORE",
+      "logoURI": "https://assets.smold.app/api/token/81457/0x0000000000a1c217530F17948CBb487c743b9F63/logo-128.png",
       "chainId": 81457,
-      "decimals": 9
+      "decimals": 18
+    },
+    {
+      "address": "0x0000FfE89a178FA2140c2E9d045C187deD850000",
+      "name": "BlastMoon",
+      "symbol": "BMOON",
+      "logoURI": "https://assets.smold.app/api/token/81457/0x0000FfE89a178FA2140c2E9d045C187deD850000/logo-128.png",
+      "chainId": 81457,
+      "decimals": 18
     },
     {
       "address": "0x04beE2B151C4e829a28f838e43722112D537C9B2",
       "name": "Omega Debt Token",
       "symbol": "ODT",
       "logoURI": "https://assets.smold.app/api/token/81457/0x04beE2B151C4e829a28f838e43722112D537C9B2/logo-128.png",
-      "chainId": 81457,
-      "decimals": 18
-    },
-    {
-      "address": "0x08aFFe90078C7283B9Bf24935F1128c7F15137AF",
-      "name": "Shiba Inu",
-      "symbol": "SHIB",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x08aFFe90078C7283B9Bf24935F1128c7F15137AF/logo-128.png",
       "chainId": 81457,
       "decimals": 18
     },
@@ -46,12 +46,20 @@
       "decimals": 18
     },
     {
-      "address": "0x0Ecd76c73caF3Ef7995Cb236366F71FaE2e9D505",
-      "name": "Andy",
-      "symbol": "ANDY",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x0Ecd76c73caF3Ef7995Cb236366F71FaE2e9D505/logo-128.png",
+      "address": "0x0CA56aa647E83A8F0a5f7a81a2fdcA393bC68D78",
+      "name": "Juice Wasabi USDB Vault",
+      "symbol": "jwUSDB",
+      "logoURI": "https://assets.smold.app/api/token/81457/0x0CA56aa647E83A8F0a5f7a81a2fdcA393bC68D78/logo-128.png",
       "chainId": 81457,
-      "decimals": 9
+      "decimals": 18
+    },
+    {
+      "address": "0x0F8881FC1fCA1f5151FA4205D55922fFA15E707a",
+      "name": "Blast Disperse",
+      "symbol": "DISP",
+      "logoURI": "https://assets.smold.app/api/token/81457/0x0F8881FC1fCA1f5151FA4205D55922fFA15E707a/logo-128.png",
+      "chainId": 81457,
+      "decimals": 18
     },
     {
       "address": "0x0e914b7669E97fd0c2644Af60E90EA7ddb4F91d1",
@@ -78,26 +86,10 @@
       "decimals": 18
     },
     {
-      "address": "0x1c0298b03119b59FCC8D7ED46DEe3BBc1a09FeEe",
-      "name": "BlastBox",
-      "symbol": "BlastBox",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x1c0298b03119b59FCC8D7ED46DEe3BBc1a09FeEe/logo-128.png",
-      "chainId": 81457,
-      "decimals": 18
-    },
-    {
       "address": "0x20fE91f17ec9080E3caC2d688b4EcB48C5aC3a9C",
       "name": "YES",
       "symbol": "YES",
       "logoURI": "https://assets.smold.app/api/token/81457/0x20fE91f17ec9080E3caC2d688b4EcB48C5aC3a9C/logo-128.png",
-      "chainId": 81457,
-      "decimals": 18
-    },
-    {
-      "address": "0x215F4Cd7E4e21Ac125f3135A767b2FDd9bc0f163",
-      "name": "Beggar",
-      "symbol": "BEG",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x215F4Cd7E4e21Ac125f3135A767b2FDd9bc0f163/logo-128.png",
       "chainId": 81457,
       "decimals": 18
     },
@@ -134,14 +126,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2de3e0466D83E2257271baC31aa36Ca8458B7a9D",
-      "name": "PACMAN",
-      "symbol": "PMAN",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x2de3e0466D83E2257271baC31aa36Ca8458B7a9D/logo-128.png",
-      "chainId": 81457,
-      "decimals": 9
-    },
-    {
       "address": "0x325261d7bD4BDa7bAF38d08217793e94B19C8fC7",
       "name": "Aave Parallel Variable Debt USDB",
       "symbol": "variableDebtUSDB",
@@ -156,14 +140,6 @@
       "logoURI": "https://cms-cdn.avascan.com/cms2/binu.e032bd14433f.webp",
       "chainId": 81457,
       "decimals": 9
-    },
-    {
-      "address": "0x357962621dE9B3318ebc93bdE75E38b40a3D538c",
-      "name": "BlastBot",
-      "symbol": "BBOT",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x357962621dE9B3318ebc93bdE75E38b40a3D538c/logo-128.png",
-      "chainId": 81457,
-      "decimals": 18
     },
     {
       "address": "0x38aD23b0902D0d86c2F3949BC505194D70B762F5",
@@ -214,10 +190,10 @@
       "decimals": 18
     },
     {
-      "address": "0x44A2F2303933e71E5FA779cE463c7D71607e968a",
-      "name": "Astro",
-      "symbol": "ASTRO",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x44A2F2303933e71E5FA779cE463c7D71607e968a/logo-128.png",
+      "address": "0x4514F956af3B262f69d4edF4b8BCb3D3efc60782",
+      "name": "ClosedAI",
+      "symbol": "ClosedAI",
+      "logoURI": "https://assets.smold.app/api/token/81457/0x4514F956af3B262f69d4edF4b8BCb3D3efc60782/logo-128.png",
       "chainId": 81457,
       "decimals": 18
     },
@@ -226,6 +202,22 @@
       "name": "Juice Thruster V3 WETH Spot (0.3%) Strategy",
       "symbol": "jT-WETH",
       "logoURI": "https://assets.smold.app/api/token/81457/0x4A355D57fc1A5eEB33C0a19539744A2144220027/logo-128.png",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x4BeD2A922654cAcC2Be974689619768FaBF24855",
+      "name": "Wasabi USDB Vault",
+      "symbol": "wUSDB",
+      "logoURI": "https://assets.smold.app/api/token/81457/0x4BeD2A922654cAcC2Be974689619768FaBF24855/logo-128.png",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x52D04d5388776351DeCc82B68F2617217B1C7863",
+      "name": "Escrowed XDX",
+      "symbol": "esXDX",
+      "logoURI": "https://assets.smold.app/api/token/81457/0x52D04d5388776351DeCc82B68F2617217B1C7863/logo-128.png",
       "chainId": 81457,
       "decimals": 18
     },
@@ -274,14 +266,6 @@
       "name": "Aave Parallel WETH",
       "symbol": "aWETH",
       "logoURI": "https://assets.smold.app/api/token/81457/0x63749b03bdB4e86E5aAF7E5a723bF993DBf0c1c5/logo-128.png",
-      "chainId": 81457,
-      "decimals": 18
-    },
-    {
-      "address": "0x63D758C3AD4c1BDF3279A3f8fEA04471462952E1",
-      "name": "Boost Token",
-      "symbol": "BOOST",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x63D758C3AD4c1BDF3279A3f8fEA04471462952E1/logo-128.png",
       "chainId": 81457,
       "decimals": 18
     },
@@ -342,14 +326,6 @@
       "decimals": 18
     },
     {
-      "address": "0x7D8135C3039881880221BDCD7206453ef91A44fc",
-      "name": "friend.tech",
-      "symbol": "FRIEND",
-      "logoURI": "https://assets.smold.app/api/token/81457/0x7D8135C3039881880221BDCD7206453ef91A44fc/logo-128.png",
-      "chainId": 81457,
-      "decimals": 9
-    },
-    {
       "address": "0x7cB8a894b163848bccee03fD71b098693eE7a77D",
       "name": "Aave Parallel Variable Debt WETH",
       "symbol": "variableDebtWETH",
@@ -362,6 +338,14 @@
       "name": "Blast Dog",
       "symbol": "BDOG",
       "logoURI": "https://assets.smold.app/api/token/81457/0x83014C36C56308731A1b95BDE674ba9a83fD8d35/logo-128.png",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x8449FC4AB031aA7a13891E83F4Cd046D2d3ce484",
+      "name": "Pepe",
+      "symbol": "PEPE",
+      "logoURI": "https://assets.smold.app/api/token/81457/0x8449FC4AB031aA7a13891E83F4Cd046D2d3ce484/logo-128.png",
       "chainId": 81457,
       "decimals": 18
     },
@@ -446,10 +430,26 @@
       "decimals": 18
     },
     {
-      "address": "0xBb9f742592cEbf12D9854A01857FEe0B1231D2A0",
-      "name": "Bonk",
-      "symbol": "Bonk",
-      "logoURI": "https://assets.smold.app/api/token/81457/0xBb9f742592cEbf12D9854A01857FEe0B1231D2A0/logo-128.png",
+      "address": "0xB6f8343f5D9f1a8983f24907750Fc9a24F34DE1A",
+      "name": "Chatni",
+      "symbol": "CHATNI",
+      "logoURI": "https://assets.smold.app/api/token/81457/0xB6f8343f5D9f1a8983f24907750Fc9a24F34DE1A/logo-128.png",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0xD51b6c4956705976669341Dc0713081579A92Bc4",
+      "name": "BVM",
+      "symbol": "BVM",
+      "logoURI": "https://assets.smold.app/api/token/81457/0xD51b6c4956705976669341Dc0713081579A92Bc4/logo-128.png",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0xDd67f29F01Fd351A4b206CEb3fe0e7B9061d5Bc2",
+      "name": "Juice WETH Liquidity Token",
+      "symbol": "jltWETH",
+      "logoURI": "https://assets.smold.app/api/token/81457/0xDd67f29F01Fd351A4b206CEb3fe0e7B9061d5Bc2/logo-128.png",
       "chainId": 81457,
       "decimals": 18
     },
@@ -470,6 +470,14 @@
       "decimals": 18
     },
     {
+      "address": "0xa112CcD19D6a5E62746182c9208020E065760684",
+      "name": "Brett",
+      "symbol": "BRETT",
+      "logoURI": "https://assets.smold.app/api/token/81457/0xa112CcD19D6a5E62746182c9208020E065760684/logo-128.png",
+      "chainId": 81457,
+      "decimals": 9
+    },
+    {
       "address": "0xa43904BA981C92bC7100462F1D09FeD8F8e6F5a5",
       "name": "Mia The Maltese",
       "symbol": "MIA",
@@ -478,26 +486,10 @@
       "decimals": 9
     },
     {
-      "address": "0xb93b30e6e63d83892DA2c90F981Aad7A3d842122",
-      "name": "AEVO",
-      "symbol": "AEVO",
-      "logoURI": "https://assets.smold.app/api/token/81457/0xb93b30e6e63d83892DA2c90F981Aad7A3d842122/logo-128.png",
-      "chainId": 81457,
-      "decimals": 18
-    },
-    {
       "address": "0xb9dfCd4CF589bB8090569cb52FaC1b88Dbe4981F",
       "name": "Bag",
       "symbol": "BAG",
       "logoURI": "https://assets.smold.app/api/token/81457/0xb9dfCd4CF589bB8090569cb52FaC1b88Dbe4981F/logo-128.png",
-      "chainId": 81457,
-      "decimals": 18
-    },
-    {
-      "address": "0xbfA3062816BCA5FF047450b90E10fE6b10A697aD",
-      "name": "Blasty",
-      "symbol": "BLASTY",
-      "logoURI": "https://cms-cdn.avascan.com/cms2/blastymeme_32.aa75ec57c84b.png",
       "chainId": 81457,
       "decimals": 18
     },
