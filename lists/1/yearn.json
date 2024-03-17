@@ -1,10 +1,10 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "10/03/2024 00:58:55",
+  "timestamp": "17/03/2024 00:51:51",
   "version": {
     "major": 36,
-    "minor": 4,
+    "minor": 5,
     "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -87,6 +87,14 @@
       "name": "Aave interest bearing DAI",
       "symbol": "aDAI",
       "logoURI": "https://assets.smold.app/api/token/1/0x028171bCA77440897B824Ca71D1c56caC55b68A3/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x028eC7330ff87667b6dfb0D94b954c820195336c",
+      "name": "DAI-1 yVault",
+      "symbol": "yvDAI-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0x028eC7330ff87667b6dfb0D94b954c820195336c/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -804,8 +812,8 @@
     },
     {
       "address": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8",
-      "name": "agEUR",
-      "symbol": "agEUR",
+      "name": "EURA (previously agEUR)",
+      "symbol": "EURA",
       "logoURI": "https://tokens.1inch.io/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8.png",
       "chainId": 1,
       "decimals": 18
@@ -817,6 +825,14 @@
       "logoURI": "https://tokens.1inch.io/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c.png",
       "chainId": 1,
       "decimals": 6
+    },
+    {
+      "address": "0x1ab3D612EA7df26117554ddDD379764EBcE1A5Ad",
+      "name": "mkUSDUSDe",
+      "symbol": "mkUSDUSDe",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1ab3D612EA7df26117554ddDD379764EBcE1A5Ad/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x1b56860eaF38F27b99d2b0d8FFaC86B0f1173F1a",
@@ -887,6 +903,14 @@
       "name": "Uniswap",
       "symbol": "UNI",
       "logoURI": "https://assets.smold.app/api/token/1/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x1fd862499e9b9402DE6c599b6C391f83981180Ab",
+      "name": "Spark DAI Lender",
+      "symbol": "ysDAI",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1fd862499e9b9402DE6c599b6C391f83981180Ab/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -983,6 +1007,14 @@
       "name": "Curve.fi Factory Crypto Pool: JPEG/pETH",
       "symbol": "JPEGpETH-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x23E7817bC73645063FB2fa85c1d098EfFE84bE90/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x23eE3D14F09946A084350CC6A7153fc6eb918817",
+      "name": "Compound V3 WETH Lender",
+      "symbol": "ysWETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x23eE3D14F09946A084350CC6A7153fc6eb918817/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2307,6 +2339,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      "name": "USDe",
+      "symbol": "USDe",
+      "logoURI": "https://assets.coingecko.com/coins/images/33613/large/3466ef_3c088c66c7d941e8856339d0bddf33cc_mv2.png?1702514458",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x4cb5483D87028518c5F35a49c151612a062bfCD0",
       "name": "Balancer GHO-bb-a-USD Factory yVault",
       "symbol": "yvBal-GHO-bb-a-USD-f",
@@ -2875,12 +2915,28 @@
       "decimals": 18
     },
     {
+      "address": "0x5d10DFA44AdC63C41906Af61eEffB9454860e999",
+      "name": "Curve mkUSD-PayPool Factory yVault",
+      "symbol": "yvCurve-mkUSD-PayPool-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x5d10DFA44AdC63C41906Af61eEffB9454860e999/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
       "name": "Compound Dai",
       "symbol": "cDAI",
       "logoURI": "https://assets.smold.app/api/token/1/0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643/logo-128.png",
       "chainId": 1,
       "decimals": 8
+    },
+    {
+      "address": "0x5dc1BF6f1e983C0b21EfB003c105133736fA0743",
+      "name": "FRAXUSDe",
+      "symbol": "FRAXUSDe",
+      "logoURI": "https://assets.smold.app/api/token/1/0x5dc1BF6f1e983C0b21EfB003c105133736fA0743/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x5e69e8b51B71C8596817fD442849BD44219bb095",
@@ -3087,6 +3143,14 @@
       "name": "yvBOOST-yswap yVault",
       "symbol": "yvb-yswap",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x6601526470E7Bad2760FB63507Bf6965A0d4360b/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x66A7024fC367eBa201dF1381A9B6305d1e90919A",
+      "name": "Curve mkUSD-USDe Factory yVault",
+      "symbol": "yvCurve-mkUSD-USDe-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x66A7024fC367eBa201dF1381A9B6305d1e90919A/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3891,6 +3955,14 @@
       "decimals": 18
     },
     {
+      "address": "0x7eE351aA702C8fC735D77Fb229b7676AC15D7c79",
+      "name": "Compound V3 USD Lender",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0x7eE351aA702C8fC735D77Fb229b7676AC15D7c79/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
+    },
+    {
       "address": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
       "name": "Wrapped liquid staked Ether 2.0",
       "symbol": "wstETH",
@@ -4027,6 +4099,14 @@
       "decimals": 18
     },
     {
+      "address": "0x82e75Cf176C18DCCeF1b05B0F1d89a444a3A1005",
+      "name": "Curve USDe-FRAX Factory yVault",
+      "symbol": "yvCurve-USDe-FRAX-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x82e75Cf176C18DCCeF1b05B0F1d89a444a3A1005/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x836A808d4828586A69364065A1e064609F5078c7",
       "name": "JPEG’d ETH",
       "symbol": "pETH",
@@ -4143,6 +4223,14 @@
       "name": "Visor GRO-ETH Uni .3%",
       "symbol": "vGRO-ETH3",
       "logoURI": "https://assets.smold.app/api/token/1/0x85a5326F08c44eC673e4bFc666b737f7f3Dc6b37/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x864f78037639225b7CD0B6c632F8F187520b480B",
+      "name": "Curve USDe-crvUSD Factory yVault",
+      "symbol": "yvCurve-USDe-crvUSD-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x864f78037639225b7CD0B6c632F8F187520b480B/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4867,6 +4955,14 @@
       "decimals": 18
     },
     {
+      "address": "0x9e10f9Fb6F0D32B350CEe2618662243d4f24C64a",
+      "name": "mkUSD/Paypool",
+      "symbol": "mkUSDPay",
+      "logoURI": "https://assets.smold.app/api/token/1/0x9e10f9Fb6F0D32B350CEe2618662243d4f24C64a/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
       "name": "Maker",
       "symbol": "MKR",
@@ -5345,6 +5441,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xBe426b0f37c112dd20d5866769c8034171567b31/logo-128.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+      "name": "USDC-1 yVault",
+      "symbol": "yvUSDC-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
     },
     {
       "address": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704",
@@ -6019,6 +6123,14 @@
       "decimals": 18
     },
     {
+      "address": "0xEed00e00236cD7F36F2558D8b5fD05046449599D",
+      "name": "Aave V3 DAI Lender",
+      "symbol": "ysDAI",
+      "logoURI": "https://assets.smold.app/api/token/1/0xEed00e00236cD7F36F2558D8b5fD05046449599D/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       "name": "Ethereum",
       "symbol": "ETH",
@@ -6103,6 +6215,14 @@
       "name": "Babylon.Finance",
       "symbol": "BABL",
       "logoURI": "https://asset-images.messari.io/images/fa25bc19-8fc1-42b1-a31f-f9ec234a1124/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xF55B0f6F2Da5ffDDb104b58a60F2862745960442",
+      "name": "USDe-crvUSD",
+      "symbol": "USDecrvUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0xF55B0f6F2Da5ffDDb104b58a60F2862745960442/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6787,6 +6907,14 @@
       "decimals": 18
     },
     {
+      "address": "0xbDb97eC319c41c6FA383E94eCE6Bdf383dFC7BE4",
+      "name": "Aave V3 USDC Lender",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0xbDb97eC319c41c6FA383E94eCE6Bdf383dFC7BE4/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
+    },
+    {
       "address": "0xbE4afE6737CCf34cA21cdeF461E5C7547Adc8C77",
       "name": "Curve ibGBP Factory yVault",
       "symbol": "yvCurve-ibGBP-f",
@@ -6919,6 +7047,14 @@
       "name": "BTRFLY",
       "symbol": "BTRFLY",
       "logoURI": "https://tokens.1inch.io/0xc55126051b22ebb829d00368f4b12bde432de5da.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xc56413869c6CDf96496f2b1eF801fEDBdFA7dDB0",
+      "name": "WETH-1 yVault",
+      "symbol": "yvWETH-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0xc56413869c6CDf96496f2b1eF801fEDBdFA7dDB0/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7111,6 +7247,14 @@
       "name": "Manifold Finance",
       "symbol": "FOLD",
       "logoURI": "https://tokens.1inch.io/0xd084944d3c05cd115c09d072b9f44ba3e0e45921.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xd2eFB90C569eBD5b83D5cFB8632322edFAc203A5",
+      "name": "Aave V3 WETH Lender",
+      "symbol": "ysWETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xd2eFB90C569eBD5b83D5cFB8632322edFAc203A5/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },

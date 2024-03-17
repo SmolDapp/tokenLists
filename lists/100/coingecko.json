@@ -1,9 +1,9 @@
 {
   "name": "CoinGecko",
   "description": "",
-  "timestamp": "10/03/2024 01:00:02",
+  "timestamp": "17/03/2024 00:50:35",
   "version": {
-    "major": 53,
+    "major": 54,
     "minor": 0,
     "patch": 0
   },
@@ -15,15 +15,15 @@
   "tokens": [
     {
       "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
-      "name": "Angle USD",
-      "symbol": "agUSD",
+      "name": "USDA",
+      "symbol": "USDA",
       "logoURI": "",
       "chainId": 100,
       "decimals": 18
     },
     {
       "address": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
-      "name": "Staked agEUR",
+      "name": "Staked EURA",
       "symbol": "stEUR",
       "logoURI": "https://asset-images.messari.io/images/b582c7b3-cccb-4ce5-b593-4e40acb72980/128.png",
       "chainId": 100,
@@ -247,8 +247,8 @@
     },
     {
       "address": "0x4b1E2c2762667331Bc91648052F646d1b0d35984",
-      "name": "agEUR",
-      "symbol": "agEUR",
+      "name": "EURA (previously agEUR)",
+      "symbol": "EURA",
       "logoURI": "https://assets.coingecko.com/coins/images/19479/large/agEUR.png?1635283566",
       "chainId": 100,
       "decimals": 18
@@ -284,6 +284,14 @@
       "logoURI": "https://gnosisscan.io/token/images/swaprswpr_32.png",
       "chainId": 100,
       "decimals": 18
+    },
+    {
+      "address": "0x54E4cB2a4Fa0ee46E3d9A98D13Bea119666E09f6",
+      "name": "Bridged EURC (Gnosis)",
+      "symbol": "EURC.e",
+      "logoURI": "",
+      "chainId": 100,
+      "decimals": 6
     },
     {
       "address": "0x58b9cB810A68a7f3e1E4f8Cb45D1B9B3c79705E8",

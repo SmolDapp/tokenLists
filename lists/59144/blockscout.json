@@ -1,9 +1,9 @@
 {
   "name": "Blockscout",
   "description": "",
-  "timestamp": "10/03/2024 01:07:38",
+  "timestamp": "17/03/2024 01:01:09",
   "version": {
-    "major": 10,
+    "major": 11,
     "minor": 0,
     "patch": 0
   },
@@ -18,14 +18,6 @@
       "name": "xyUSDC",
       "symbol": "xyUSDC",
       "logoURI": "https://assets.smold.app/api/token/59144/0x01192De6b7f94B77adbCf588D89eca93F3a15600/logo-128.png",
-      "chainId": 59144,
-      "decimals": 18
-    },
-    {
-      "address": "0x02e47D464c3bB564964fce162e6c8F38eA744f5a",
-      "name": "TVestige",
-      "symbol": "TV",
-      "logoURI": "https://assets.smold.app/api/token/59144/0x02e47D464c3bB564964fce162e6c8F38eA744f5a/logo-128.png",
       "chainId": 59144,
       "decimals": 18
     },
@@ -50,6 +42,14 @@
       "name": "Wrapped-YDST",
       "symbol": "wYDST",
       "logoURI": "https://assets.smold.app/api/token/59144/0x059349c87D868B61108d16F5323827d268ecA8E3/logo-128.png",
+      "chainId": 59144,
+      "decimals": 18
+    },
+    {
+      "address": "0x0684FC172a0B8e6A65cF4684eDb2082272fe9050",
+      "name": "ZeroLend Renzo Restaked ETH",
+      "symbol": "z0ezETH",
+      "logoURI": "https://assets.smold.app/api/token/59144/0x0684FC172a0B8e6A65cF4684eDb2082272fe9050/logo-128.png",
       "chainId": 59144,
       "decimals": 18
     },
@@ -158,14 +158,6 @@
       "decimals": 6
     },
     {
-      "address": "0x1D12E25e5516e5aD32F97fE9Edc332Bf4683f487",
-      "name": "Velocore LP: wstETH + ETH",
-      "symbol": "wstETH-ETH-VLP",
-      "logoURI": "https://assets.smold.app/api/token/59144/0x1D12E25e5516e5aD32F97fE9Edc332Bf4683f487/logo-128.png",
-      "chainId": 59144,
-      "decimals": 18
-    },
-    {
       "address": "0x1E1F509963A6D33e169D9497b11c7DbFe73B7F13",
       "name": "USDT+",
       "symbol": "USDT+",
@@ -238,10 +230,10 @@
       "decimals": 6
     },
     {
-      "address": "0x249e5319EaAAa42BCE7237B9e3D6355Fc7223eFC",
-      "name": "SyncSwap USDC/WBTC Classic LP",
-      "symbol": "USDC/WBTC cSLP",
-      "logoURI": "https://assets.smold.app/api/token/59144/0x249e5319EaAAa42BCE7237B9e3D6355Fc7223eFC/logo-128.png",
+      "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "name": "Renzo Restaked ETH",
+      "symbol": "ezETH",
+      "logoURI": "https://assets.smold.app/api/token/59144/0x2416092f143378750bb29b79eD961ab195CcEea5/logo-128.png",
       "chainId": 59144,
       "decimals": 18
     },
@@ -270,6 +262,14 @@
       "decimals": 18
     },
     {
+      "address": "0x2E207ecA8B6Bf77a6ac82763EEEd2A94de4f081d",
+      "name": "ZeroLend USDC",
+      "symbol": "z0USDC",
+      "logoURI": "https://assets.smold.app/api/token/59144/0x2E207ecA8B6Bf77a6ac82763EEEd2A94de4f081d/logo-128.png",
+      "chainId": 59144,
+      "decimals": 6
+    },
+    {
       "address": "0x2F0b4300074aFC01726262d4cc9c1D2619d7297a",
       "name": "Wrapped USK",
       "symbol": "wUSK",
@@ -282,6 +282,14 @@
       "name": "SyncSwap USDC/DAI Stable LP",
       "symbol": "USDC/DAI sSLP",
       "logoURI": "https://assets.smold.app/api/token/59144/0x2F26E02696Fdd24B7404F1Be44562341bB0D7477/logo-128.png",
+      "chainId": 59144,
+      "decimals": 18
+    },
+    {
+      "address": "0x2Fab0952449378DfdF4625fE37F9603011F189ab",
+      "name": "Lineardo",
+      "symbol": "LINE",
+      "logoURI": "https://assets.smold.app/api/token/59144/0x2Fab0952449378DfdF4625fE37F9603011F189ab/logo-128.png",
       "chainId": 59144,
       "decimals": 18
     },
@@ -330,14 +338,6 @@
       "name": "DappGate by DappLabs",
       "symbol": "DLGATE",
       "logoURI": "https://assets.smold.app/api/token/59144/0x36e48a4c1465DBDD493a5220610F706EECBE54FC/logo-128.png",
-      "chainId": 59144,
-      "decimals": 18
-    },
-    {
-      "address": "0x3971797B7178d0f782E0b5477d53af922ebeDFea",
-      "name": "NGT Token",
-      "symbol": "NGT",
-      "logoURI": "https://assets.smold.app/api/token/59144/0x3971797B7178d0f782E0b5477d53af922ebeDFea/logo-128.png",
       "chainId": 59144,
       "decimals": 18
     },
@@ -516,14 +516,6 @@
       "logoURI": "https://assets.smold.app/api/token/59144/0x54ecc8832B65C2DB0c53235cdE94991C5CdCAbf9/logo-128.png",
       "chainId": 59144,
       "decimals": 8
-    },
-    {
-      "address": "0x55494043f91e544204bB8642Cffc21e23F1b7aF0",
-      "name": "SyncSwap LUBE/WETH Classic LP",
-      "symbol": "LUBE/WETH cSLP",
-      "logoURI": "https://assets.smold.app/api/token/59144/0x55494043f91e544204bB8642Cffc21e23F1b7aF0/logo-128.png",
-      "chainId": 59144,
-      "decimals": 18
     },
     {
       "address": "0x580E933D90091b9cE380740E3a4A39c67eB85B4c",
@@ -822,14 +814,6 @@
       "decimals": 18
     },
     {
-      "address": "0x8b1251076F23fFa2a2a6459583C587C1CDbB2c6E",
-      "name": "SyncSwap BUSD/USDT Stable LP",
-      "symbol": "BUSD/USDT sSLP",
-      "logoURI": "https://assets.smold.app/api/token/59144/0x8b1251076F23fFa2a2a6459583C587C1CDbB2c6E/logo-128.png",
-      "chainId": 59144,
-      "decimals": 18
-    },
-    {
       "address": "0x91067B912f89dFCa50c3F5529dBeB78b63C6a2E5",
       "name": "Swirl Ether",
       "symbol": "sETH",
@@ -858,14 +842,6 @@
       "name": "StakeStone Ether",
       "symbol": "STONE",
       "logoURI": "https://assets.smold.app/api/token/59144/0x93F4d0ab6a8B4271f4a28Db399b5E30612D21116/logo-128.png",
-      "chainId": 59144,
-      "decimals": 18
-    },
-    {
-      "address": "0x949f8d4360b5A82454b40664CF16117A0422C0eA",
-      "name": "LeetSwapV2 VolatileV1 Pair - BUSD/WETH",
-      "symbol": "vLS2-BUSD/WETH",
-      "logoURI": "https://assets.smold.app/api/token/59144/0x949f8d4360b5A82454b40664CF16117A0422C0eA/logo-128.png",
       "chainId": 59144,
       "decimals": 18
     },
@@ -922,6 +898,14 @@
       "name": "Lineaswap.build",
       "symbol": "LIN",
       "logoURI": "https://assets.smold.app/api/token/59144/0x9Dd6EA6f9D1fba5ed640651f06802e32FF455221/logo-128.png",
+      "chainId": 59144,
+      "decimals": 18
+    },
+    {
+      "address": "0x9E9aec6a296f94C8530e2dD01FF3E9c61555D39a",
+      "name": "LayerBank ETH",
+      "symbol": "lETH",
+      "logoURI": "https://assets.smold.app/api/token/59144/0x9E9aec6a296f94C8530e2dD01FF3E9c61555D39a/logo-128.png",
       "chainId": 59144,
       "decimals": 18
     },
@@ -1010,6 +994,14 @@
       "name": "Axelar Wrapped KNC",
       "symbol": "axlKNC",
       "logoURI": "https://assets.smold.app/api/token/59144/0xB448eC505C924944ca8B2C55EF05c299eE0781df/logo-128.png",
+      "chainId": 59144,
+      "decimals": 18
+    },
+    {
+      "address": "0xB4FFEf15daf4C02787bC5332580b838cE39805f5",
+      "name": "ZeroLend WETH",
+      "symbol": "z0WETH",
+      "logoURI": "https://assets.smold.app/api/token/59144/0xB4FFEf15daf4C02787bC5332580b838cE39805f5/logo-128.png",
       "chainId": 59144,
       "decimals": 18
     },
@@ -1108,6 +1100,14 @@
       "logoURI": "https://assets.smold.app/api/token/59144/0xCE39EC58257c790f622fA7Dfd5B4Cc372f41Ed9e/logo-128.png",
       "chainId": 59144,
       "decimals": 8
+    },
+    {
+      "address": "0xCb2dA0F5aEce616e2Cbf29576CFc795fb15c6133",
+      "name": "ZeroLend Variable Debt WETH",
+      "symbol": "variableDebtz0WETH",
+      "logoURI": "https://assets.smold.app/api/token/59144/0xCb2dA0F5aEce616e2Cbf29576CFc795fb15c6133/logo-128.png",
+      "chainId": 59144,
+      "decimals": 18
     },
     {
       "address": "0xCeEd853798ff1c95cEB4dC48f68394eb7A86A782",
@@ -1246,6 +1246,14 @@
       "decimals": 18
     },
     {
+      "address": "0xa2703Dc9FbACCD6eC2e4CBfa700989D0238133f6",
+      "name": "ZeroLend Variable Debt USDC",
+      "symbol": "variableDebtz0USDC",
+      "logoURI": "https://assets.smold.app/api/token/59144/0xa2703Dc9FbACCD6eC2e4CBfa700989D0238133f6/logo-128.png",
+      "chainId": 59144,
+      "decimals": 6
+    },
+    {
       "address": "0xa4f5e5CAE16655193A1ee257179c5F5286DDEBA8",
       "name": "Fero",
       "symbol": "FRO",
@@ -1332,14 +1340,6 @@
       "logoURI": "https://assets.smold.app/api/token/59144/0xc04513e23Efe2Cbfcb633D1994304dDb68DF7dCd/logo-128.png",
       "chainId": 59144,
       "decimals": 18
-    },
-    {
-      "address": "0xc11c7B45cF866a4a5294f6dd78A1250091e09C41",
-      "name": "Swirl BUSD Coin",
-      "symbol": "sBUSD",
-      "logoURI": "https://assets.smold.app/api/token/59144/0xc11c7B45cF866a4a5294f6dd78A1250091e09C41/logo-128.png",
-      "chainId": 59144,
-      "decimals": 8
     },
     {
       "address": "0xc3BA79702d51Ab8fBF92ca9e4e5a6858A3e9053d",
@@ -1466,14 +1466,6 @@
       "name": "xLeet",
       "symbol": "xLEET",
       "logoURI": "https://assets.smold.app/api/token/59144/0xdf0D02351A3e7A21D3936cf1CFd1ee554Cee0a80/logo-128.png",
-      "chainId": 59144,
-      "decimals": 18
-    },
-    {
-      "address": "0xe21B3D13Fb192Bcaf92eE17eA11F94dA52fB4843",
-      "name": "Echodex LPs",
-      "symbol": "Echodex-LP",
-      "logoURI": "https://assets.smold.app/api/token/59144/0xe21B3D13Fb192Bcaf92eE17eA11F94dA52fB4843/logo-128.png",
       "chainId": 59144,
       "decimals": 18
     },

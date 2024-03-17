@@ -1,9 +1,9 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "10/03/2024 00:57:13",
+  "timestamp": "17/03/2024 00:56:39",
   "version": {
-    "major": 51,
+    "major": 52,
     "minor": 0,
     "patch": 0
   },
@@ -20,8 +20,8 @@
     },
     {
       "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
-      "name": "Angle USD",
-      "symbol": "agUSD",
+      "name": "USDA",
+      "symbol": "USDA",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -35,8 +35,16 @@
       "decimals": 18
     },
     {
+      "address": "0x000F1720A263f96532D1ac2bb9CDC12b72C6f386",
+      "name": "Fluidity",
+      "symbol": "FLY",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
       "address": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
-      "name": "Staked agEUR",
+      "name": "Staked EURA",
       "symbol": "stEUR",
       "logoURI": "https://asset-images.messari.io/images/b582c7b3-cccb-4ce5-b593-4e40acb72980/128.png",
       "chainId": 42161,
@@ -87,6 +95,14 @@
       "name": "Silo Governance Token",
       "symbol": "Silo",
       "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/network/arbitrum/0x0341C0C0ec423328621788d4854119B97f44E391.jpg",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x039D2E8f097331278BD6c1415D839310E0D5Ece4",
+      "name": "Linda",
+      "symbol": "LINDA",
+      "logoURI": "",
       "chainId": 42161,
       "decimals": 18
     },
@@ -195,18 +211,18 @@
       "decimals": 6
     },
     {
-      "address": "0x09FD3D6e6889940Ca1158B9221309Bd69faFa32b",
-      "name": "DropArb",
-      "symbol": "DROP",
-      "logoURI": "https://assets.coingecko.com/coins/images/30035/large/Logo.png?1682646041",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x0A3BB08b3a15A19b4De82F8AcFc862606FB69A2D",
       "name": "iZUMi Bond USD",
       "symbol": "iUSD",
       "logoURI": "https://assets.coingecko.com/coins/images/25388/large/iusd-logo-symbol-10k%E5%A4%A7%E5%B0%8F.png?1651660620",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x0A84edf70F30325151631CE7A61307D1f4D619a3",
+      "name": "BonzAI DePIN",
+      "symbol": "BONZAI",
+      "logoURI": "",
       "chainId": 42161,
       "decimals": 18
     },
@@ -547,6 +563,14 @@
       "decimals": 9
     },
     {
+      "address": "0x180F7cF38805d1be95C7632F653E26B0838e2969",
+      "name": "XDEFI",
+      "symbol": "XDEFI",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x1824a51C106EFC27d35A74efB56d9BF54dDb22d4",
       "name": "Perpy-Token",
       "symbol": "PRY",
@@ -731,6 +755,14 @@
       "decimals": 18
     },
     {
+      "address": "0x2389f6A46562AE5f1557Db8562c39Ef553f3832B",
+      "name": "KERC Token",
+      "symbol": "KERC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x23ee2343B892b1BB63503a4FAbc840E0e2C6810f",
       "name": "Axelar",
       "symbol": "AXL",
@@ -782,6 +814,14 @@
       "address": "0x27f485b62C4A7E635F561A87560Adf5090239E93",
       "name": "DFX Token (L2)",
       "symbol": "DFX",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x284592A004D945F98De5b040808578c61A4bB39a",
+      "name": "Air Token",
+      "symbol": "AIR",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -1393,14 +1433,6 @@
       "logoURI": "https://asset-images.messari.io/images/99a262c5-c85d-494c-b0a9-f9adaf6c706c/128.png",
       "chainId": 42161,
       "decimals": 18
-    },
-    {
-      "address": "0x4406509b532b111BD39b5b579561001CBF0d7acf",
-      "name": "ANTSpace",
-      "symbol": "ANT",
-      "logoURI": "https://assets.coingecko.com/coins/images/30464/large/fb0d911c2ac181aed2bc06dc9862ab3.png?1684663590",
-      "chainId": 42161,
-      "decimals": 9
     },
     {
       "address": "0x4425742F1EC8D98779690b5A3A6276Db85Ddc01A",
@@ -2598,7 +2630,7 @@
       "address": "0x7FB7EDe54259Cb3D4E1EaF230C7e2b1FfC951E9A",
       "name": "NUMA",
       "symbol": "NUMA",
-      "logoURI": "",
+      "logoURI": "https://asset-images.messari.io/images/72f1e691-38ff-4362-a504-78e8cb87838e/128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -2803,6 +2835,14 @@
       "decimals": 8
     },
     {
+      "address": "0x86d80fBB0701Dd500767b7bC3aF72D002EB5De77",
+      "name": "Xfish",
+      "symbol": "Xfish",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x86efb351b092A32D833a1Ad7374d9BF0fc164aAb",
       "name": "bamboo",
       "symbol": "BBO",
@@ -2919,6 +2959,14 @@
       "name": "GoldenBoys",
       "symbol": "GOLD",
       "logoURI": "https://assets.coingecko.com/coins/images/31353/large/goldenboys.png?1692612836",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8c6Bd546fB8B53fE371654a0E54D7a5bD484b319",
+      "name": "GOAT",
+      "symbol": "GOA",
+      "logoURI": "",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3411,14 +3459,6 @@
       "decimals": 6
     },
     {
-      "address": "0xB25EA095997F5bBaa6cEa962c4fBf3bfc3C09776",
-      "name": "Promethios",
-      "symbol": "FIRE",
-      "logoURI": "https://assets.smold.app/api/token/42161/0xB25EA095997F5bBaa6cEa962c4fBf3bfc3C09776/logo-128.png",
-      "chainId": 42161,
-      "decimals": 9
-    },
-    {
       "address": "0xB2d948Be3a74ECCe80378D4093E6cD7f4dC1Cf9C",
       "name": "Alt Markets",
       "symbol": "AMX",
@@ -3715,14 +3755,6 @@
       "decimals": 18
     },
     {
-      "address": "0xD3934a2e428e31ffC14B1F69B0BEc79Db3e0C614",
-      "name": "CONE",
-      "symbol": "CONE",
-      "logoURI": "https://assets.coingecko.com/coins/images/31713/large/cone_logo_small.png?1694580221",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xD4939D69B31fbE981ed6904A3aF43Ee1dc777Aab",
       "name": "ETH+",
       "symbol": "ETH+",
@@ -3822,6 +3854,14 @@
       "address": "0xDc8B6B6bEab4d5034aE91B7A1cf7D05A41f0d239",
       "name": "Gemach",
       "symbol": "GMAC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xE22c452bd2AdE15DfC8ad98286bc6bDF0c9219b7",
+      "name": "Polytrade",
+      "symbol": "TRADE",
       "logoURI": "",
       "chainId": 42161,
       "decimals": 18
@@ -4084,8 +4124,8 @@
     },
     {
       "address": "0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7",
-      "name": "agEUR",
-      "symbol": "agEUR",
+      "name": "EURA (previously agEUR)",
+      "symbol": "EURA",
       "logoURI": "https://tokens.1inch.io/0xfa5ed56a203466cbbc2430a43c66b9d8723528e7.png",
       "chainId": 42161,
       "decimals": 18
@@ -4707,6 +4747,14 @@
       "decimals": 18
     },
     {
+      "address": "0xd7b675CD5c84A13d1d0f84509345530f6421b57C",
+      "name": "Ordinals Oooi",
+      "symbol": "oooi",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xd8F728AdB72a46Ae2c92234AE8870D04907786C5",
       "name": "Advanced Micro Devices - Dinari",
       "symbol": "AMD.d",
@@ -4745,6 +4793,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/18740/large/swapr.jpg?1633516501",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0xdc1Bb8018E711F71293a6EDfb5c148187008Ebdc",
+      "name": "WALC",
+      "symbol": "WALC",
+      "logoURI": "",
+      "chainId": 42161,
+      "decimals": 24
     },
     {
       "address": "0xdce765f021410B3266aA0053c93Cb4535F1e12e0",
