@@ -1,9 +1,9 @@
 {
   "name": "Ajna",
   "description": "",
-  "timestamp": "17/03/2024 01:03:19",
+  "timestamp": "24/03/2024 01:02:31",
   "version": {
-    "major": 8,
+    "major": 9,
     "minor": 0,
     "patch": 0
   },
@@ -17,6 +17,14 @@
       "name": "Staked EURA",
       "symbol": "stEUR",
       "logoURI": "https://assets.coingecko.com/coins/images/32036/large/stEUR-x4.png?1696530832",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x028eC7330ff87667b6dfb0D94b954c820195336c",
+      "name": "DAI-1 yVault",
+      "symbol": "yvDAI-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0x028eC7330ff87667b6dfb0D94b954c820195336c/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -41,6 +49,14 @@
       "name": "vETH Pool",
       "symbol": "vETH",
       "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b",
+      "name": "DefiPulse Index",
+      "symbol": "DPI",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -237,6 +253,14 @@
       "decimals": 18
     },
     {
+      "address": "0x65c4C0517025Ec0843C9146aF266A2C5a2D148A2",
+      "name": "Index Coop Ethereum 2x Index",
+      "symbol": "ETH2X",
+      "logoURI": "https://asset-images.messari.io/images/92d05eb0-9f91-4a7f-ad3c-12e23f490bce/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
@@ -281,6 +305,14 @@
       "name": "DFX Token",
       "symbol": "DFX",
       "logoURI": "https://tokens.1inch.io/0x888888435fde8e7d4c54cab67f206e4199454c60.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8E3A59427B1D87Db234Dd4ff63B25E4BF94672f4",
+      "name": "Kelp Earned Point",
+      "symbol": "KEP",
+      "logoURI": "https://asset-images.messari.io/images/764a7f19-3ebb-4d0e-99f6-496a76b2e152/128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -405,6 +437,14 @@
       "decimals": 18
     },
     {
+      "address": "0xC1f33e0cf7e40a67375007104B929E49a581bafE",
+      "name": "SPOT",
+      "symbol": "SPOT",
+      "logoURI": "https://ethereum-optimism.github.io/data/SPOT/logo.svg",
+      "chainId": 1,
+      "decimals": 9
+    },
+    {
       "address": "0xC272B96bCcdaf1BF98F2197D355066Da3C15982a",
       "name": "MetaStreet V2 Deposit: WPUNKS-wstETH:40",
       "symbol": "mwstETH-WPUNKS:40",
@@ -457,6 +497,14 @@
       "name": "Akash",
       "symbol": "AKASH",
       "logoURI": "https://assets.smold.app/api/token/1/0xE9381723d8751d8081f4A78B5E8b13711B3d59EC/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xEDB171C18cE90B633DB442f2A6F72874093b49Ef",
+      "name": "Wrapped Ampleforth",
+      "symbol": "WAMPL",
+      "logoURI": "https://assets.coingecko.com/coins/images/20825/large/photo_2021-11-25_02-05-11.jpg?1637811951",
       "chainId": 1,
       "decimals": 18
     },
@@ -637,10 +685,26 @@
       "decimals": 18
     },
     {
+      "address": "0x62BC478FFC429161115A6E4090f819CE5C50A5d9",
+      "name": "Rocket Pool ETH",
+      "symbol": "rETH",
+      "logoURI": "https://assets.smold.app/api/token/5/0x62BC478FFC429161115A6E4090f819CE5C50A5d9/logo-128.png",
+      "chainId": 5,
+      "decimals": 18
+    },
+    {
       "address": "0x6320cD32aA674d2898A68ec82e869385Fc5f7E2f",
       "name": "Wrapped liquid staked Ether 2.0",
       "symbol": "wstETH",
       "logoURI": "https://assets.smold.app/api/token/5/0x6320cD32aA674d2898A68ec82e869385Fc5f7E2f/logo-128.png",
+      "chainId": 5,
+      "decimals": 18
+    },
+    {
+      "address": "0x679874fBE6D4E7Cc54A59e315FF1eB266686a937",
+      "name": "tBTC v2",
+      "symbol": "tBTC",
+      "logoURI": "https://assets.smold.app/api/token/5/0x679874fBE6D4E7Cc54A59e315FF1eB266686a937/logo-128.png",
       "chainId": 5,
       "decimals": 18
     },
@@ -713,6 +777,14 @@
       "name": "PoolTogether",
       "symbol": "POOL",
       "logoURI": "https://assets.smold.app/api/token/10/0x395Ae52bB17aef68C2888d941736A71dC6d4e125/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x3Ed9AcAac7Bd974eB83a8eA6432a239e3C829D5D",
+      "name": "LERNITAS",
+      "symbol": "2192",
+      "logoURI": "https://assets.smold.app/api/token/10/0x3Ed9AcAac7Bd974eB83a8eA6432a239e3C829D5D/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -1069,14 +1141,6 @@
       "decimals": 18
     },
     {
-      "address": "0x6921B130D297cc43754afba22e5EAc0FBf8Db75b",
-      "name": "doginme",
-      "symbol": "doginme",
-      "logoURI": "https://assets.smold.app/api/token/8453/0x6921B130D297cc43754afba22e5EAc0FBf8Db75b/logo-128.png",
-      "chainId": 8453,
-      "decimals": 18
-    },
-    {
       "address": "0x7F12d13B34F5F4f0a9449c16Bcd42f0da47AF200",
       "name": "Normie",
       "symbol": "NORMIE",
@@ -1109,6 +1173,14 @@
       "decimals": 18
     },
     {
+      "address": "0xAfb89a09D82FBDE58f18Ac6437B3fC81724e4dF6",
+      "name": "The Doge NFT",
+      "symbol": "DOG",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xAfb89a09D82FBDE58f18Ac6437B3fC81724e4dF6/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xB31462268e5c0907a001F655D8BC7aF8Ff579ED0",
       "name": "Curve.fi Factory Crypto Pool: Risky Ethereum",
       "symbol": "XET-f",
@@ -1121,14 +1193,6 @@
       "name": "Based ETH",
       "symbol": "bsdETH",
       "logoURI": "https://assets.smold.app/api/token/8453/0xCb327b99fF831bF8223cCEd12B1338FF3aA322Ff/logo-128.png",
-      "chainId": 8453,
-      "decimals": 18
-    },
-    {
-      "address": "0xD1dB4851bcF5B41442cAA32025Ce0Afe6B8EabC2",
-      "name": "Based ZoomerCoin",
-      "symbol": "ZOOMER",
-      "logoURI": "https://assets.smold.app/api/token/8453/0xD1dB4851bcF5B41442cAA32025Ce0Afe6B8EabC2/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1189,6 +1253,14 @@
       "decimals": 8
     },
     {
+      "address": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
+      "name": "Radiant",
+      "symbol": "RDNT",
+      "logoURI": "https://tokens.1inch.io/0x3082cc23568ea640225c2467653db90e9250aaa0.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x3a6bBd8BB827d055FD639249F8f98A53BAe855b4",
       "name": "Tholgar Warlord Token",
       "symbol": "tWAR",
@@ -1221,10 +1293,26 @@
       "decimals": 18
     },
     {
+      "address": "0x81C958C2cB5158E2b7D3D8a7c41Ef2110c0Ef98d",
+      "name": "xFORTUN",
+      "symbol": "xFORTUN",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x81C958C2cB5158E2b7D3D8a7c41Ef2110c0Ef98d/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "https://assets.smold.app/api/token/42161/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8EA5040d423410f1fdc363379Af88e1DB5eA1C34",
+      "name": "PT Renzo ezETH 27JUN2024",
+      "symbol": "PT-ezETH-27JUN2024",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x8EA5040d423410f1fdc363379Af88e1DB5eA1C34/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
