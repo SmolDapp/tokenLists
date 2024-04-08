@@ -26,7 +26,7 @@ func buildSmolAssetsTokenList() {
 	tokenList := helpers.LoadTokenListFromJsonFile(`smolAssets.json`)
 	tokenList.Name = `SmolAssets`
 	tokenList.Description = `A list of tokens supported by Smoldapp Token Assets repository`
-	tokenList.LogoURI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg`
+	tokenList.LogoURI = `https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg`
 	tokenList.Keywords = []string{`smol`, `tokenAssets`}
 	tokens := []models.TokenListToken{}
 	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {

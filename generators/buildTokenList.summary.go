@@ -40,7 +40,7 @@ type TTokenListSummary struct {
 	Lists     []TMinTokenListData `json:"lists"`
 }
 
-var BASE_URI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/`
+var BASE_URI = `https://raw.githubusercontent.com/smoldapp/tokenLists/main/`
 
 func listSupportedChains(list []models.TokenListToken) []int {
 	detectedChainsMap := map[int]bool{}

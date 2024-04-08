@@ -21,7 +21,7 @@ type TSmolAssetsList struct {
 func buildTokenListooorList() {
 	tokenList := helpers.LoadTokenListFromJsonFile(`tokenlistooor.json`)
 	tokenList.Name = `Tokenlistooor Token List`
-	tokenList.LogoURI = `https://raw.githubusercontent.com/Migratooor/tokenLists/main/.github/tokenlistooor.svg`
+	tokenList.LogoURI = `https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg`
 	tokenList.Description = `A curated list of tokens from all the token lists on tokenlistooor.`
 
 	/**************************************************************************
