@@ -1,10 +1,10 @@
 {
   "name": "Ajna",
   "description": "",
-  "timestamp": "03/03/2024 01:04:15",
+  "timestamp": "08/04/2024 13:54:49",
   "version": {
     "major": 6,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://www.ajna.finance/static/tokens/ajna.png",
@@ -14,9 +14,17 @@
   "tokens": [
     {
       "address": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
-      "name": "Staked agEUR",
+      "name": "Staked EURA",
       "symbol": "stEUR",
       "logoURI": "https://assets.coingecko.com/coins/images/32036/large/stEUR-x4.png?1696530832",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x028eC7330ff87667b6dfb0D94b954c820195336c",
+      "name": "DAI-1 yVault",
+      "symbol": "yvDAI-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0x028eC7330ff87667b6dfb0D94b954c820195336c/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -45,6 +53,14 @@
       "decimals": 18
     },
     {
+      "address": "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b",
+      "name": "DefiPulse Index",
+      "symbol": "DPI",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x15b7c0c907e4C6b9AdaAaabC300C08991D6CEA05",
       "name": "Gelato Network Token",
       "symbol": "GEL",
@@ -65,6 +81,14 @@
       "name": "tBTC v2",
       "symbol": "tBTC",
       "logoURI": "https://tokens.1inch.io/0x18084fba666a33d37592fa2633fd49a74dd93a88.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x188cA46Aa2c7ae10C14A931512B62991D5901453",
+      "name": "Tholgar Warlord Token",
+      "symbol": "tWAR",
+      "logoURI": "https://assets.smold.app/api/token/1/0x188cA46Aa2c7ae10C14A931512B62991D5901453/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -189,6 +213,14 @@
       "decimals": 18
     },
     {
+      "address": "0x57e114B691Db790C35207b2e685D4A43181e6061",
+      "name": "ENA",
+      "symbol": "ENA",
+      "logoURI": "https://assets.smold.app/api/token/1/0x57e114B691Db790C35207b2e685D4A43181e6061/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x583019fF0f430721aDa9cfb4fac8F06cA104d0B4",
       "name": "Staked Yearn Ether",
       "symbol": "st-yETH",
@@ -225,6 +257,14 @@
       "name": "Metronome Synth ETH",
       "symbol": "msETH",
       "logoURI": "",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x65c4C0517025Ec0843C9146aF266A2C5a2D148A2",
+      "name": "Index Coop Ethereum 2x Index",
+      "symbol": "ETH2X",
+      "logoURI": "https://assets.smold.app/api/token/1/0x65c4C0517025Ec0843C9146aF266A2C5a2D148A2/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -269,10 +309,26 @@
       "decimals": 18
     },
     {
+      "address": "0x86ed939B500E121C0C5f493F399084Db596dAd20",
+      "name": "SpaceChainV2",
+      "symbol": "SPC",
+      "logoURI": "https://tokens.1inch.io/0x86ed939b500e121c0c5f493f399084db596dad20.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x888888435FDe8e7d4c54cAb67f206e4199454c60",
       "name": "DFX Token",
       "symbol": "DFX",
       "logoURI": "https://tokens.1inch.io/0x888888435fde8e7d4c54cab67f206e4199454c60.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8E3A59427B1D87Db234Dd4ff63B25E4BF94672f4",
+      "name": "Kelp Earned Point",
+      "symbol": "KEP",
+      "logoURI": "https://assets.coingecko.com/coins/images/35560/large/kep.png?1709163916",
       "chainId": 1,
       "decimals": 18
     },
@@ -365,6 +421,14 @@
       "decimals": 18
     },
     {
+      "address": "0xB17548c7B510427baAc4e267BEa62e800b247173",
+      "name": "Swarm Markets",
+      "symbol": "SMT",
+      "logoURI": "https://assets.coingecko.com/coins/images/17488/large/swarm-SMT-token-symbol_200x200.png?1696517029",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xBEEF01735c132Ada46AA9aA4c54623cAA92A64CB",
       "name": "Steakhouse USDC",
       "symbol": "steakUSDC",
@@ -387,6 +451,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo-128.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xC1f33e0cf7e40a67375007104B929E49a581bafE",
+      "name": "SPOT",
+      "symbol": "SPOT",
+      "logoURI": "https://ethereum-optimism.github.io/data/SPOT/logo.svg",
+      "chainId": 1,
+      "decimals": 9
     },
     {
       "address": "0xC272B96bCcdaf1BF98F2197D355066Da3C15982a",
@@ -441,6 +513,14 @@
       "name": "Akash",
       "symbol": "AKASH",
       "logoURI": "https://assets.smold.app/api/token/1/0xE9381723d8751d8081f4A78B5E8b13711B3d59EC/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xEDB171C18cE90B633DB442f2A6F72874093b49Ef",
+      "name": "Wrapped Ampleforth",
+      "symbol": "WAMPL",
+      "logoURI": "https://assets.coingecko.com/coins/images/20825/large/photo_2021-11-25_02-05-11.jpg?1637811951",
       "chainId": 1,
       "decimals": 18
     },

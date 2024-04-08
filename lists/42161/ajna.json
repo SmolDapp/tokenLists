@@ -1,10 +1,10 @@
 {
   "name": "Ajna",
   "description": "",
-  "timestamp": "03/03/2024 01:04:15",
+  "timestamp": "08/04/2024 13:54:49",
   "version": {
     "major": 6,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://www.ajna.finance/static/tokens/ajna.png",
@@ -14,7 +14,7 @@
   "tokens": [
     {
       "address": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
-      "name": "Staked agEUR",
+      "name": "Staked EURA",
       "symbol": "stEUR",
       "logoURI": "https://asset-images.messari.io/images/b582c7b3-cccb-4ce5-b593-4e40acb72980/128.png",
       "chainId": 42161,
@@ -29,12 +29,44 @@
       "decimals": 18
     },
     {
+      "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "name": "Renzo Restaked ETH",
+      "symbol": "ezETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x2416092f143378750bb29b79eD961ab195CcEea5/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x287C48a78395f6Fa4aC7F71A5E92Dc65256f570F",
+      "name": "AKATSUKI",
+      "symbol": "AKM",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x287C48a78395f6Fa4aC7F71A5E92Dc65256f570F/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
       "name": "Wrapped BTC",
       "symbol": "WBTC",
       "logoURI": "https://tokens.1inch.io/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png",
       "chainId": 42161,
       "decimals": 8
+    },
+    {
+      "address": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
+      "name": "Radiant",
+      "symbol": "RDNT",
+      "logoURI": "https://tokens.1inch.io/0x3082cc23568ea640225c2467653db90e9250aaa0.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3a6bBd8BB827d055FD639249F8f98A53BAe855b4",
+      "name": "Tholgar Warlord Token",
+      "symbol": "tWAR",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x3a6bBd8BB827d055FD639249F8f98A53BAe855b4/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
     },
     {
       "address": "0x407274ABb9241Da0A1889c1b8Ec65359dd9d316d",
@@ -61,6 +93,14 @@
       "decimals": 18
     },
     {
+      "address": "0x81C958C2cB5158E2b7D3D8a7c41Ef2110c0Ef98d",
+      "name": "xFORTUN",
+      "symbol": "xFORTUN",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x81C958C2cB5158E2b7D3D8a7c41Ef2110c0Ef98d/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       "name": "Wrapped Ether",
       "symbol": "WETH",
@@ -69,10 +109,26 @@
       "decimals": 18
     },
     {
+      "address": "0x8EA5040d423410f1fdc363379Af88e1DB5eA1C34",
+      "name": "PT Renzo ezETH 27JUN2024",
+      "symbol": "PT-ezETH-27JUN2024",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x8EA5040d423410f1fdc363379Af88e1DB5eA1C34/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
       "name": "Arbitrum",
       "symbol": "ARB",
       "logoURI": "https://tokens.1inch.io/0x912ce59144191c1204e64559fe8253a0e49e6548.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b",
+      "name": "LUSD Stablecoin",
+      "symbol": "LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/14666/large/Group_3.png?1617631327",
       "chainId": 42161,
       "decimals": 18
     },
@@ -125,10 +181,26 @@
       "decimals": 6
     },
     {
+      "address": "0xb56C29413AF8778977093B9B4947efEeA7136C36",
+      "name": "Torque",
+      "symbol": "TORQ",
+      "logoURI": "https://asset-images.messari.io/images/6ca718b3-7e1e-407f-8e79-c1e739c34aec/128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xb86AF5eB59A8e871bfA573FA656123ea86F47c3a",
       "name": "Connext WETH StableSwap LP",
       "symbol": "CWETHLP",
       "logoURI": "https://assets.smold.app/api/token/42161/0xb86AF5eB59A8e871bfA573FA656123ea86F47c3a/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xf7F6718Cf69967203740cCb431F6bDBff1E0FB68",
+      "name": "Torque USD",
+      "symbol": "TUSD",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xf7F6718Cf69967203740cCb431F6bDBff1E0FB68/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     }

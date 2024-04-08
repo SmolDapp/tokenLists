@@ -1,9 +1,9 @@
 {
   "name": "CoinGecko",
   "description": "",
-  "timestamp": "03/03/2024 00:51:57",
+  "timestamp": "08/04/2024 13:52:04",
   "version": {
-    "major": 51,
+    "major": 52,
     "minor": 0,
     "patch": 0
   },
@@ -15,15 +15,15 @@
   "tokens": [
     {
       "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
-      "name": "Angle USD",
-      "symbol": "agUSD",
+      "name": "USDA",
+      "symbol": "USDA",
       "logoURI": "",
       "chainId": 100,
       "decimals": 18
     },
     {
       "address": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
-      "name": "Staked agEUR",
+      "name": "Staked EURA",
       "symbol": "stEUR",
       "logoURI": "https://asset-images.messari.io/images/b582c7b3-cccb-4ce5-b593-4e40acb72980/128.png",
       "chainId": 100,
@@ -42,6 +42,14 @@
       "name": "ZENF Token from Mainnet",
       "symbol": "ZENF",
       "logoURI": "https://assets.coingecko.com/coins/images/29477/large/tokenicon200px.png?1679130231",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x0f76D32CDccDcbd602A55Af23EAF58FD1eE17245",
+      "name": "Backed ERNA $ Ultrashort Bond",
+      "symbol": "bERNA",
+      "logoURI": "",
       "chainId": 100,
       "decimals": 18
     },
@@ -190,6 +198,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3f95AA88dDbB7D9D484aa3D482bf0a80009c52c9",
+      "name": "Backed ERNX € Ultrashort Bond",
+      "symbol": "bERNX",
+      "logoURI": "",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0x417602f4fbdd471A431Ae29fB5fe0A681964C11b",
       "name": "JPY Coin on xDai",
       "symbol": "JPYC",
@@ -247,8 +263,8 @@
     },
     {
       "address": "0x4b1E2c2762667331Bc91648052F646d1b0d35984",
-      "name": "agEUR",
-      "symbol": "agEUR",
+      "name": "EURA (previously agEUR)",
+      "symbol": "EURA",
       "logoURI": "https://assets.coingecko.com/coins/images/19479/large/agEUR.png?1635283566",
       "chainId": 100,
       "decimals": 18
@@ -284,6 +300,14 @@
       "logoURI": "https://gnosisscan.io/token/images/swaprswpr_32.png",
       "chainId": 100,
       "decimals": 18
+    },
+    {
+      "address": "0x54E4cB2a4Fa0ee46E3d9A98D13Bea119666E09f6",
+      "name": "Bridged EURC (Gnosis)",
+      "symbol": "EURC.e",
+      "logoURI": "",
+      "chainId": 100,
+      "decimals": 6
     },
     {
       "address": "0x58b9cB810A68a7f3e1E4f8Cb45D1B9B3c79705E8",
@@ -322,14 +346,6 @@
       "name": "Wrapped liquid staked Ether 2.0 from Mainnet",
       "symbol": "wstETH",
       "logoURI": "https://raw.githubusercontent.com/cowprotocol/token-lists/main/src/public/images/100/0x6c76971f98945ae98dd7d4dfca8711ebea946ea6/logo.png",
-      "chainId": 100,
-      "decimals": 18
-    },
-    {
-      "address": "0x703120F2f2011a0D03A03a531Ac0e84e81F15989",
-      "name": "UNCL on xDai",
-      "symbol": "UNCL",
-      "logoURI": "https://etherscan.io/token/images/unicrypt-uncl_32.png",
       "chainId": 100,
       "decimals": 18
     },

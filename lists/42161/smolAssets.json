@@ -1,10 +1,10 @@
 {
   "name": "SmolAssets",
   "description": "A list of tokens supported by Smoldapp Token Assets repository",
-  "timestamp": "03/03/2024 01:04:18",
+  "timestamp": "08/04/2024 14:09:40",
   "version": {
-    "major": 4,
-    "minor": 4,
+    "major": 5,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
@@ -14,108 +14,12 @@
   ],
   "tokens": [
     {
-      "address": "0x1dBa7641dc69188D6086a73B972aC4bda29Ec35d",
-      "name": "Curve MIM Pool Vault",
-      "symbol": "yvCurve-MIM",
-      "logoURI": "https://assets.smold.app/api/token/42161/0x1dBa7641dc69188D6086a73B972aC4bda29Ec35d/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x239e14A19DFF93a17339DCC444f74406C17f8E67",
-      "name": "Curve Tricrypto Pool Vault",
-      "symbol": "yvCurve-Tricrypto",
-      "logoURI": "https://assets.smold.app/api/token/42161/0x239e14A19DFF93a17339DCC444f74406C17f8E67/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x30dF229cefa463e991e29D42DB0bae2e122B2AC7",
-      "name": "Curve.fi Factory USD Metapool: MIM",
-      "symbol": "MIM3CRV-f",
-      "logoURI": "https://assets.smold.app/api/token/42161/0x30dF229cefa463e991e29D42DB0bae2e122B2AC7/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x49448d2B94fb9C4e41a30aD8315D32f46004A34b",
-      "name": "2CRV yVault",
-      "symbol": "yv2CRV",
-      "logoURI": "https://assets.smold.app/api/token/42161/0x49448d2B94fb9C4e41a30aD8315D32f46004A34b/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x7f90122BF0700F9E7e1F688fe926940E8839F353",
-      "name": "Curve.fi USDC/USDT",
-      "symbol": "2CRV",
-      "logoURI": "https://assets.smold.app/api/token/42161/0x7f90122BF0700F9E7e1F688fe926940E8839F353/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
-      "logoURI": "https://assets.smold.app/api/token/42161/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x8e0B8c8BB9db49a46697F3a5Bb8A308e744821D2",
-      "name": "Curve.fi USD-BTC-ETH",
-      "symbol": "crv3crypto",
-      "logoURI": "https://assets.smold.app/api/token/42161/0x8e0B8c8BB9db49a46697F3a5Bb8A308e744821D2/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xAAA6C1E32C55A7Bfa8066A6FAE9b42650F262418",
-      "name": "Ramses",
-      "symbol": "RAM",
-      "logoURI": "https://assets.smold.app/api/token/42161/0xAAA6C1E32C55A7Bfa8066A6FAE9b42650F262418/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xB25EA095997F5bBaa6cEa962c4fBf3bfc3C09776",
-      "name": "Promethios",
-      "symbol": "FIRE",
-      "logoURI": "https://assets.smold.app/api/token/42161/0xB25EA095997F5bBaa6cEa962c4fBf3bfc3C09776/logo-128.png",
-      "chainId": 42161,
-      "decimals": 9
-    },
-    {
-      "address": "0xC19669A405067927865B40Ea045a2baabbbe57f5",
-      "name": "STAR",
-      "symbol": "STAR",
-      "logoURI": "https://assets.smold.app/api/token/42161/0xC19669A405067927865B40Ea045a2baabbbe57f5/logo-128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       "name": "Ethereum",
       "symbol": "ETH",
       "logoURI": "https://assets.smold.app/api/token/42161/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
       "chainId": 42161,
       "decimals": 18
-    },
-    {
-      "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-      "name": "USD Coin (Arb1)",
-      "symbol": "USDC",
-      "logoURI": "https://assets.smold.app/api/token/42161/0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8/logo-128.png",
-      "chainId": 42161,
-      "decimals": 6
-    },
-    {
-      "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "logoURI": "https://assets.smold.app/api/token/42161/0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9/logo-128.png",
-      "chainId": 42161,
-      "decimals": 6
     }
   ]
 }

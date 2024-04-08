@@ -1,10 +1,10 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "25/02/2024 00:38:25",
+  "timestamp": "08/04/2024 14:10:13",
   "version": {
     "major": 36,
-    "minor": 3,
+    "minor": 4,
     "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -99,10 +99,26 @@
       "decimals": 18
     },
     {
+      "address": "0x2a1463CeBE85315224c536AfD389b381B43F3206",
+      "name": "Stable AMM - USDC/MAI",
+      "symbol": "sAMM-USDC/MAI",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x2a1463CeBE85315224c536AfD389b381B43F3206/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x2d25E0514f23c6367687dE89Bd5167dc754D4934",
       "name": "Volatile AMM - WETH/TAROT",
       "symbol": "vAMM-WETH/TAROT",
       "logoURI": "https://assets.smold.app/api/token/8453/0x2d25E0514f23c6367687dE89Bd5167dc754D4934/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x30BcA23B220dEb343f62c83edA1465546Ac9C7F7",
+      "name": "Aerodrome AERO-USDC Factory yVault",
+      "symbol": "yvAero-AERO-USDC-f",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x30BcA23B220dEb343f62c83edA1465546Ac9C7F7/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -127,6 +143,14 @@
       "name": "Aerodrome WELL-WETH Factory yVault",
       "symbol": "yvAero-WELL-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/8453/0x391E5dc227CDcf3cCA012E5278798121236b1861/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x3D0C3B02EB2788c97CDb0a23E369A49278E4b497",
+      "name": "Aerodrome MAI-USDC Factory yVault",
+      "symbol": "yvAero-MAI-USDC-f",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x3D0C3B02EB2788c97CDb0a23E369A49278E4b497/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -259,10 +283,26 @@
       "decimals": 18
     },
     {
+      "address": "0x6B87B8663eE63191887F18225F79D9eEb2DE0d34",
+      "name": "Volatile AMM - WETH/bsdETH",
+      "symbol": "vAMM-WETH/bsdETH",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x6B87B8663eE63191887F18225F79D9eEb2DE0d34/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x6EAB8c1B93f5799daDf2C687a30230a540DbD636",
       "name": "Stable AMM - DAI/USDbC",
       "symbol": "sAMM-DAI/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0x6EAB8c1B93f5799daDf2C687a30230a540DbD636/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
+      "name": "Volatile AMM - USDC/AERO",
+      "symbol": "vAMM-USDC/AERO",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -291,10 +331,50 @@
       "decimals": 18
     },
     {
+      "address": "0x7B8BF6D5557B7c1b5b0235B7cC2aCa6345534cdD",
+      "name": "Aerodrome WETH-USDC Factory yVault",
+      "symbol": "yvAero-WETH-USDC-f",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x7B8BF6D5557B7c1b5b0235B7cC2aCa6345534cdD/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x7cbdf03CA2B633CA9FA613945ab4b19A46b3d671",
       "name": "Aerodrome UNIDX-WETH Factory yVault",
       "symbol": "yvAero-UNIDX-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/8453/0x7cbdf03CA2B633CA9FA613945ab4b19A46b3d671/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x7f670f78B17dEC44d5Ef68a48740b6f8849cc2e6",
+      "name": "Volatile AMM - WETH/AERO",
+      "symbol": "vAMM-WETH/AERO",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x7f670f78B17dEC44d5Ef68a48740b6f8849cc2e6/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x80Ba48973490a94941eaeC6bE8DBcFf6a5aA8892",
+      "name": "Aerodrome AERO-WETH Factory yVault",
+      "symbol": "yvAero-AERO-WETH-f",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x80Ba48973490a94941eaeC6bE8DBcFf6a5aA8892/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x82A9CC022BfFba4358A4286381c0855A8e295605",
+      "name": "Aerodrome bsdETH-WETH Factory yVault",
+      "symbol": "yvAero-bsdETH-WETH-f",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x82A9CC022BfFba4358A4286381c0855A8e295605/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x82a0c1a0d4EF0c0cA3cFDA3AD1AA78309Cc6139b",
+      "name": "Volatile AMM - AERO/wstETH",
+      "symbol": "vAMM-AERO/wstETH",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x82a0c1a0d4EF0c0cA3cFDA3AD1AA78309Cc6139b/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -339,6 +419,22 @@
       "decimals": 18
     },
     {
+      "address": "0x987949D2dC1D2b70Bc3284b556D3Ecd2d7C060b7",
+      "name": "Aerodrome LUSD-USDC Factory yVault",
+      "symbol": "yvAero-LUSD-USDC-f",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x987949D2dC1D2b70Bc3284b556D3Ecd2d7C060b7/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x99e860D5bbE61A12ca215ABa714a2e886860DBC8",
+      "name": "Aerodrome AERO-wstETH Factory yVault",
+      "symbol": "yvAero-AERO-wstETH-f",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x99e860D5bbE61A12ca215ABa714a2e886860DBC8/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x9E13E1CfCd750657B81549F8f773d68f1625DCfb",
       "name": "Aerodrome eUSD-USDC Factory yVault",
       "symbol": "yvAero-eUSD-USDC-f",
@@ -372,8 +468,8 @@
     },
     {
       "address": "0xA56bE957d432a5d0eDc040B27078d9726f54E7f6",
-      "name": "Volatile AMM - agEUR/USDbC",
-      "symbol": "vAMM-agEUR/USDbC",
+      "name": "Volatile AMM - EURA/USDbC",
+      "symbol": "vAMM-EURA/USDbC",
       "logoURI": "https://assets.smold.app/api/token/8453/0xA56bE957d432a5d0eDc040B27078d9726f54E7f6/logo-128.png",
       "chainId": 8453,
       "decimals": 18
@@ -443,10 +539,26 @@
       "decimals": 18
     },
     {
+      "address": "0xcDAC0d6c6C59727a65F871236188350531885C43",
+      "name": "Volatile AMM - WETH/USDC",
+      "symbol": "vAMM-WETH/USDC",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xcDAC0d6c6C59727a65F871236188350531885C43/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xf213F2D02837012dC0236cC105061e121bB03e37",
       "name": "Stable AMM - DOLA/USDC",
       "symbol": "sAMM-DOLA/USDC",
       "logoURI": "https://assets.smold.app/api/token/8453/0xf213F2D02837012dC0236cC105061e121bB03e37/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xf53B7Af40BE75043eeBa493C622F4f56b3C27A31",
+      "name": "Stable AMM - LUSD/USDC",
+      "symbol": "sAMM-LUSD/USDC",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xf53B7Af40BE75043eeBa493C622F4f56b3C27A31/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
