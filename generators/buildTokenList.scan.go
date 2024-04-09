@@ -65,6 +65,14 @@ var BASE_EXPLORERS_URI = map[uint64]etherscanSASExplorers{
 		BaseURL: "https://blastscan.io",
 		Type:    L2,
 	},
+	59144: {
+		BaseURL: `https://explorer.linea.build/`,
+		Type:    L2,
+	},
+	534352: {
+		BaseURL: `https://blockscout.scroll.io/`,
+		Type:    L2,
+	},
 }
 
 func handleScanTokenList(chainID uint64, tokenAddresses []common.Address, imageURI []string) []models.TokenListToken {
@@ -93,7 +101,7 @@ func fetchScanTokenListForL2(chainID uint64, currentPage uint8) []models.TokenLi
 		})
 	})
 	c.OnError(func(r *colly.Response, e error) {
-		logs.Error(e)
+		logs.Error(`Error fetching token list for chainID: ` + strconv.Itoa(int(chainID)) + ` - ` + e.Error() + ` on page: ` + explorerBaseUri + `/tokens?p=` + strconv.Itoa(int(currentPage)))
 	})
 
 	for currentPage < 20 {
@@ -108,8 +116,9 @@ func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []models.TokenLi
 	imageURI := []string{}
 	tokens := []common.Address{}
 	c := colly.NewCollector(
-		colly.UserAgent(`Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36`),
+		colly.UserAgent(`Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36`),
 	)
+	c.IgnoreRobotsTxt = true
 
 	c.OnHTML("a.d-flex.align-items-center.gap-1.link-dark", func(e *colly.HTMLElement) {
 		e.ForEach("img.rounded-circle", func(i int, h *colly.HTMLElement) {
@@ -121,7 +130,7 @@ func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []models.TokenLi
 		tokens = append(tokens, common.HexToAddress(tokenAddress))
 	})
 	c.OnError(func(r *colly.Response, e error) {
-		logs.Error(e)
+		logs.Error(`Error fetching token list for chainID: ` + strconv.Itoa(int(chainID)) + ` - ` + e.Error() + ` on page: ` + explorerBaseUri + `/tokens?p=` + strconv.Itoa(int(currentPage)))
 	})
 
 	for currentPage < 20 {

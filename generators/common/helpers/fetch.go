@@ -28,7 +28,7 @@ func FetchJSON[T any](uri string) (data T) {
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		logs.Error(err)
+		logs.Error(`Error reading body for URI ` + uri + `: ` + err.Error())
 		return data
 	}
 
@@ -37,7 +37,7 @@ func FetchJSON[T any](uri string) (data T) {
 	}
 
 	if err := json.Unmarshal(body, &data); err != nil {
-		logs.Error(err)
+		logs.Error(`Error unmarshal body for URI ` + uri + `: ` + err.Error())
 		return data
 	}
 	return data

@@ -11,11 +11,8 @@ import (
 )
 
 var BLOCKSCOUTV5_URI = map[uint64]string{
-	1088:   "https://andromeda-explorer.metis.io",
-	5000:   `https://explorer.mantle.xyz/`,
-	42220:  `https://explorer.celo.org/mainnet/`,
-	59144:  `https://explorer.linea.build/`,
-	534352: `https://blockscout.scroll.io/`,
+	5000:  `https://explorer.mantle.xyz/`,
+	42220: `https://explorer.celo.org/mainnet/`,
 }
 
 var BLOCKSCOUTV6_URI = map[uint64]string{
@@ -25,6 +22,7 @@ var BLOCKSCOUTV6_URI = map[uint64]string{
 	100:     `https://gnosis.blockscout.com`,
 	137:     `https://polygon.blockscout.com`,
 	1101:    `https://zkevm.blockscout.com`,
+	1088:    `https://andromeda-explorer.metis.io`,
 	8453:    `https://base.blockscout.com`,
 	7777777: `https://explorer.zora.energy/`,
 }

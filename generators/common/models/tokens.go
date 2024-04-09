@@ -5,7 +5,7 @@ type TokenListToken struct {
 	Address  string                 `json:"address"`
 	Name     string                 `json:"name"`
 	Symbol   string                 `json:"symbol"`
-	LogoURI  string                 `json:"logoURI"`
+	LogoURI  string                 `json:"logoURI,omitempty"`
 	ChainID  uint64                 `json:"chainId"`
 	Decimals int                    `json:"decimals"`
 	Metadata map[string]interface{} `json:"metadata,omitempty"`
