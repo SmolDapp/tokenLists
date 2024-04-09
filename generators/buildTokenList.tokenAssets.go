@@ -9,6 +9,9 @@ import (
 
 func handleSmolAssetsTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
+	if len(tokenList) == 0 {
+		return tokenList
+	}
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	return tokenList
 }

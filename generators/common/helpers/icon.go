@@ -28,8 +28,9 @@ type TSmolAssetsList struct {
 }
 
 func init() {
+	basePath := `https://raw.githubusercontent.com/SmolDapp/tokenAssets/main/tokens/`
 	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
-		smoldAssetsPerChain[chainID] = FetchJSON[TSmolAssetsList](`https://assets.smold.app/tokens/` + strconv.FormatUint(chainID, 10) + `/list.json`).Tokens
+		smoldAssetsPerChain[chainID] = FetchJSON[TSmolAssetsList](basePath + strconv.FormatUint(chainID, 10) + `/list.json`).Tokens
 	}
 	cmdArgs := os.Args
 	for _, arg := range cmdArgs {

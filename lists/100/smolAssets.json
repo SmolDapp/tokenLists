@@ -1,9 +1,9 @@
 {
   "name": "SmolAssets",
   "description": "A list of tokens supported by Smoldapp Token Assets repository",
-  "timestamp": "08/04/2024 14:09:40",
+  "timestamp": "2024-04-09T17:13:32+02:00",
   "version": {
-    "major": 5,
+    "major": 6,
     "minor": 0,
     "patch": 0
   },
@@ -14,10 +14,42 @@
   ],
   "tokens": [
     {
+      "address": "0x4f4F9b8D5B4d0Dc10506e5551B0513B61fD59e75",
+      "name": "Giveth from Mainnet",
+      "symbol": "GIV",
+      "logoURI": "https://assets.smold.app/api/token/100/0x4f4F9b8D5B4d0Dc10506e5551B0513B61fD59e75/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
+      "name": "Gnosis Token on xDai",
+      "symbol": "GNO",
+      "logoURI": "https://assets.smold.app/api/token/100/0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       "name": "xDai",
       "symbol": "xDAI",
       "logoURI": "https://assets.smold.app/api/token/100/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
+      "name": "Monerium EUR emoney",
+      "symbol": "EURe",
+      "logoURI": "https://assets.smold.app/api/token/100/0xcB444e90D8198415266c6a2724b7900fb12FC56E/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
+      "name": "Wrapped XDAI",
+      "symbol": "WXDAI",
+      "logoURI": "https://assets.smold.app/api/token/100/0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d/logo-128.png",
       "chainId": 100,
       "decimals": 18
     }

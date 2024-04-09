@@ -137,9 +137,34 @@ func SaveTokenListInJsonFile(
 		tokenList.NextTokensMap[GetKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
 	}
 
+	/**************************************************************************
+	** If the list is empty, we skip
+	**************************************************************************/
 	if len(tokenList.NextTokensMap) == 0 {
 		return errors.New(`token list is empty`)
 	}
+
+	/**************************************************************************
+	** If the chain contains only the default eeee coin or only the extra tokens
+	** we don't need to save the list.
+	**************************************************************************/
+	baseCoinCount := 0
+	for _, token := range tokenList.NextTokensMap {
+		if !chains.IsChainIDSupported(token.ChainID) {
+			continue
+		}
+		if strings.EqualFold(`0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`, token.Address) {
+			baseCoinCount++
+		}
+	}
+	for _, chain := range chains.CHAINS {
+		baseCoinCount += len(chain.ExtraTokens)
+	}
+
+	if len(tokenList.NextTokensMap) <= baseCoinCount {
+		return errors.New(`token list is empty`)
+	}
+
 	tokenList.Timestamp = time.Now().Format(time.RFC3339)
 	//tokenList.Timestamp = time.Now().UTC().Format(`02/01/2006 15:04:05`)
 	tokenList.Tokens = []models.TokenListToken{}
@@ -227,8 +252,12 @@ func SaveTokenListInJsonFile(
 			continue
 		}
 		chainIDStr := strconv.FormatUint(chainID, 10)
-		tokenList.Tokens = tokens
 
+		if len(tokens) <= len(chains.CHAINS[chainID].ExtraTokens)+1 {
+			continue //If we have as much tokens as the extra tokens, we don't need to save the list, this is the default list
+		}
+
+		tokenList.Tokens = tokens
 		jsonData, err := json.MarshalIndent(tokenList, "", "  ")
 		if err != nil {
 			logs.Error(err)
