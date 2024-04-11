@@ -87,6 +87,7 @@ func fetchBlockScoutV6TokenList(chainID uint64) []models.TokenListToken {
 			tokens = append(tokens, common.HexToAddress(token.Address))
 		}
 		nextPageURI = `/api/v2/tokens?contract_address_hash=` + response.NextPage.ContractAddressHash + `&fiat_value=` + response.NextPage.FiatValue + `&holder_count=` + strconv.Itoa(response.NextPage.HolderCount) + `&is_name_null=` + strconv.FormatBool(response.NextPage.IsNameNull) + `&items_count=` + strconv.Itoa(response.NextPage.ItemsCount) + `&market_cap=` + response.NextPage.MarketCap + `&name=` + response.NextPage.Name
+		nextPageURI = strings.ReplaceAll(nextPageURI, ` `, `%20`)
 	}
 
 	return handleBlockScoutTokenList(chainID, tokens)
