@@ -1,11 +1,11 @@
 {
   "name": "SushiSwap Menu",
   "description": "",
-  "timestamp": "2024-04-09T15:50:28Z",
+  "timestamp": "2024-04-11T12:31:09Z",
   "version": {
     "major": 0,
-    "minor": 5,
-    "patch": 2
+    "minor": 6,
+    "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
   "keywords": [
@@ -559,7 +559,7 @@
       "address": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8",
       "name": "EURA (previously agEUR)",
       "symbol": "EURA",
-      "logoURI": "https://tokens.1inch.io/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8.png",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2933,6 +2933,13 @@
       "name": "TrustSwap Token",
       "symbol": "SWAP",
       "logoURI": "https://tokens.1inch.io/0xcc4304a31d09258b0029ea7fe63d032f52e44efe.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xCa14007Eff0dB1f8135f4C25B34De49AB0d42766",
+      "name": "StarkNet Token",
+      "symbol": "STRK",
       "chainId": 1,
       "decimals": 18
     },
@@ -6007,6 +6014,14 @@
       "decimals": 18
     },
     {
+      "address": "0x382586651f043cBdEc7bb586e367D77B26D7d149",
+      "name": "Wild Goat Coin",
+      "symbol": "WGC",
+      "logoURI": "https://asset-images.messari.io/images/4dcc918d-933e-4516-9419-863c61e1452a/128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
       "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
       "name": "Aavegotchi GHST Token (PoS)",
       "symbol": "GHST",
@@ -6836,7 +6851,7 @@
       "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
       "name": "EURA (previously agEUR)",
       "symbol": "EURA",
-      "logoURI": "https://tokens.1inch.io/0xe0b52e49357fd4daf2c15e02058dce6bc0057db4.png",
+      "logoURI": "https://assets.smold.app/api/token/137/0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8283,6 +8298,14 @@
       "decimals": 18
     },
     {
+      "address": "0x73DB621CC8f0a767BeD0e5C0A2920F480D77b765",
+      "name": "GTA",
+      "symbol": "GTA",
+      "logoURI": "https://asset-images.messari.io/images/a2b846c7-570a-45e3-be9c-ed6300678090/128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x78055dAA07035Aa5EBC3e5139C281Ce6312E1b22",
       "name": "Parrot Egg",
       "symbol": "PPEGG",
@@ -8662,7 +8685,7 @@
       "address": "0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7",
       "name": "EURA (previously agEUR)",
       "symbol": "EURA",
-      "logoURI": "https://tokens.1inch.io/0xfa5ed56a203466cbbc2430a43c66b9d8723528e7.png",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -8798,6 +8821,14 @@
       "name": "Cream",
       "symbol": "CREAM",
       "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/cream.jpg",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xf7693c6fD9a7172D537FA75D133D309501Cbd657",
+      "name": "Web3 No Value",
+      "symbol": "W3N",
+      "logoURI": "https://assets.coingecko.com/coins/images/32083/large/w3n-logo-comp200x200.png?1696408991",
       "chainId": 42161,
       "decimals": 18
     },
@@ -9528,6 +9559,118 @@
       "logoURI": "https://assets.smold.app/api/token/59144/0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f/logo-128.png",
       "chainId": 59144,
       "decimals": 18
+    },
+    {
+      "address": "0x0B4d0ee29857c3961b380d4ec138EA5814E346b9",
+      "name": "P@cman Blastoff",
+      "symbol": "$PACM",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x216A5a1135A9dab49FA9Ad865E0f22FE22b5630A",
+      "name": "Pump",
+      "symbol": "PUMP",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x2Ef6EE4884892b15DfCF53B33ed139FEF6141A49",
+      "name": "Dog Wif Blast",
+      "symbol": "WIF",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x34050224F9eA1859790b7CBBBe2264f1204771A6",
+      "name": "Blast Inu",
+      "symbol": "BINU",
+      "logoURI": "https://cms-cdn.avascan.com/cms2/binu.e032bd14433f.webp",
+      "chainId": 81457,
+      "decimals": 9
+    },
+    {
+      "address": "0x42E12D42b3d6C4A74a88A61063856756Ea2DB357",
+      "name": "Orbit Protocol",
+      "symbol": "ORBIT",
+      "logoURI": "https://assets.smold.app/api/token/81457/0x42E12D42b3d6C4A74a88A61063856756Ea2DB357/logo-128.png",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x4300000000000000000000000000000000000003",
+      "name": "USDB",
+      "symbol": "USDB",
+      "logoURI": "https://cms-cdn.avascan.com/cms2/usdb.9308aac74818.png",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x4300000000000000000000000000000000000004",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "logoURI": "https://cms-cdn.avascan.com/cms2/weth.1b907834c983.png",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x60701c37Cd9Fed322dDe7c17Dc1e356f09a35B88",
+      "name": "BlastDEX",
+      "symbol": "BD",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x837fE561e9C5DFa73F607fDa679295DBC2Be5E40",
+      "name": "Monoswap USD",
+      "symbol": "MUSD",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x84fC0e1Dca50cF341B497A56f843d4dD7d818B84",
+      "name": "Dyor",
+      "symbol": "Dyor",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0x9bD75c164dAf830733AC2EA71A0258f95aac7C57",
+      "name": "BlastCat",
+      "symbol": "BCat",
+      "logoURI": "https://cms-cdn.avascan.com/cms2/200x200bcat-logo.cae99912e8eb.webp",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0xA4C7aA67189EC5623121c6C94Ec757DfeD932D4B",
+      "name": "Mia",
+      "symbol": "MIA",
+      "logoURI": "https://cms-cdn.avascan.com/cms2/mia.99a1cc8f2054.webp",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0xB582Dc28968c725D2868130752aFa0c13EbF9b1a",
+      "name": "Blast Pepe",
+      "symbol": "BEPE",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0xd07379a755A8f11B57610154861D694b2A0f615a",
+      "name": "SwapBlast Finance Token",
+      "symbol": "SBF",
+      "logoURI": "https://assets.smold.app/api/token/81457/0xd07379a755A8f11B57610154861D694b2A0f615a/logo-128.png",
+      "chainId": 81457,
+      "decimals": 18
+    },
+    {
+      "address": "0xd43D8aDAC6A4C7d9Aeece7c3151FcA8f23752cf8",
+      "name": "Andy",
+      "symbol": "ANDY",
+      "chainId": 81457,
+      "decimals": 9
     },
     {
       "address": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
