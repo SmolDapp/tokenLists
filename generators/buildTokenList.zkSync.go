@@ -7,8 +7,12 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
-func handleZkSyncTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
-	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
+func handleZkSyncTokenList(
+	chainID uint64,
+	tokenAddresses []common.Address,
+	tokenIcons map[string]string,
+) []models.TokenListToken {
+	tokenList := helpers.GetTokensFromAddressesWithIcons(chainID, tokenAddresses, tokenIcons)
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	return tokenList
 }
@@ -16,8 +20,11 @@ func handleZkSyncTokenList(chainID uint64, tokenAddresses []common.Address) []mo
 func fetchZkSyncTokenList() []models.TokenListToken {
 	type TZkSyncAPIResponse struct {
 		Items []struct {
-			Address string `json:"l2address"`
-			IconURI string `json:"iconURL"`
+			Address  string `json:"l2address"`
+			IconURI  string `json:"iconURL"`
+			Name     string `json:"name"`
+			Symbol   string `json:"symbol"`
+			Decimals int    `json:"decimals"`
 		} `json:"items"`
 		Meta struct {
 			TotalItems int `json:"totalItems"`
@@ -29,21 +36,23 @@ func fetchZkSyncTokenList() []models.TokenListToken {
 
 	baseAPIEndpoint := `https://block-explorer-api.mainnet.zksync.io/`
 	nextPageURI := `tokens?page=1&limit=100&minLiquidity=0`
-	tokens := []common.Address{}
+	tokenAddresses := []common.Address{}
+	tokenIcons := make(map[string]string)
 	for i := 0; i < 40; i++ {
 		response := helpers.FetchJSON[TZkSyncAPIResponse](baseAPIEndpoint + nextPageURI)
 		for _, token := range response.Items {
-			tokens = append(tokens, common.HexToAddress(token.Address))
+			tokenAddresses = append(tokenAddresses, common.HexToAddress(token.Address))
+			tokenIcons[common.HexToAddress(token.Address).Hex()] = token.IconURI
 		}
 		nextPageURI = response.Links.Next
 		if nextPageURI == `` {
 			break
 		}
-		if len(tokens) >= response.Meta.TotalItems {
+		if len(tokenAddresses) >= response.Meta.TotalItems {
 			break
 		}
 	}
-	return handleZkSyncTokenList(324, tokens)
+	return handleZkSyncTokenList(324, tokenAddresses, tokenIcons)
 }
 
 func buildZkSyncTokenList() {

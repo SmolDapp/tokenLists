@@ -99,7 +99,7 @@ func getExistingLogo(chainID uint64, lookingFor common.Address, slice []models.T
 		if !chains.IsChainIDSupported(token.ChainID) {
 			continue
 		}
-		if token.Address == lookingFor.Hex() && chainID == token.ChainID {
+		if common.HexToAddress(token.Address).Hex() == lookingFor.Hex() && chainID == token.ChainID {
 			return token.LogoURI
 		}
 	}
@@ -157,6 +157,32 @@ func GetTokensFromAddresses(chainID uint64, tokenAddresses []common.Address) []m
 				token.Name,
 				token.Symbol,
 				`https://assets.smold.app/api/token/`+strconv.FormatUint(chainID, 10)+`/`+token.Address.Hex()+`/logo-128.png`,
+				chainID,
+				int(token.Decimals),
+			); err == nil {
+				tokenList = append(tokenList, newToken)
+			}
+		}
+	}
+	return tokenList
+}
+
+func GetTokensFromAddressesWithIcons(
+	chainID uint64,
+	tokenAddresses []common.Address,
+	tokenIcons map[string]string,
+) []models.TokenListToken {
+	tokenList := []models.TokenListToken{}
+	tokenAddresses = append(tokenAddresses, chains.CHAINS[chainID].ExtraTokens...)
+	tokensInfo := RetrieveBasicInformations(chainID, tokenAddresses)
+
+	for _, address := range tokenAddresses {
+		if token, ok := tokensInfo[address.Hex()]; ok {
+			if newToken, err := SetToken(
+				token.Address,
+				token.Name,
+				token.Symbol,
+				tokenIcons[address.Hex()],
 				chainID,
 				int(token.Decimals),
 			); err == nil {

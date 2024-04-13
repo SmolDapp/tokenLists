@@ -46,6 +46,7 @@ func GetSmolAssetsPerChain(chainID uint64) []string {
 
 func UseIcon(chainID uint64, tokenName string, tokenAddress common.Address, fallback string) string {
 	smolAssets := GetSmolAssetsPerChain(chainID)
+
 	if IncludesAddress(smolAssets, tokenAddress) {
 		return `https://assets.smold.app/api/token/` + strconv.FormatUint(chainID, 10) + `/` + tokenAddress.Hex() + `/logo-128.png`
 	}
