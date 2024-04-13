@@ -78,6 +78,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`consensys`: {
+		Exec:             buildConsensysTokenList,
+		Name:             `Consensys`,
+		Description:      `A list of tokens available on Linea, powered by Consensys`,
+		GenerationMethod: GenerationExternalList,
+		GeneratorType:    GeneratorToken,
+	},
 	`cowswap`: {
 		Exec:             buildCowswapTokenList,
 		Name:             `Cow Swap`,
