@@ -1,10 +1,10 @@
 {
   "name": "Yearn Token List",
   "description": "",
-  "timestamp": "2024-04-21T01:17:58Z",
+  "timestamp": "2024-04-28T00:44:37Z",
   "version": {
     "major": 36,
-    "minor": 8,
+    "minor": 9,
     "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -23,6 +23,14 @@
       "name": "TrueUSD",
       "symbol": "TUSD",
       "logoURI": "https://assets.smold.app/api/token/1/0x0000000000085d4780B73119b644AE5ecd22b376/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
+      "name": "USDA",
+      "symbol": "USDA",
+      "logoURI": "https://assets.smold.app/api/token/1/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -583,8 +591,8 @@
     },
     {
       "address": "0x0a35322c5C9Dd22fF592bfC5b134c5CE78154d10",
-      "name": "Curve TOKEETH-f Factory yVault",
-      "symbol": "yvCurve-TOKEETH-f-f",
+      "name": "Curve TOKE-ETH Factory yVault",
+      "symbol": "yvCurve-TOKE-ETH-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x0a35322c5C9Dd22fF592bfC5b134c5CE78154d10/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -658,6 +666,14 @@
       "name": "Curve ibAUD-USDC Pool yVault",
       "symbol": "yvCurve-ibAUD-USDC",
       "logoURI": "https://assets.smold.app/api/token/1/0x1025b1641d1F23C289412Dd5E5701e9810103a93/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x107a2e3cD2BB9a32B9eE2E4d51143149F8367eBa",
+      "name": "Pendle Market",
+      "symbol": "PENDLE-LPT",
+      "logoURI": "https://assets.smold.app/api/token/1/0x107a2e3cD2BB9a32B9eE2E4d51143149F8367eBa/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2227,6 +2243,14 @@
       "name": "Curve CVX-ETH",
       "symbol": "crvCVXETH",
       "logoURI": "https://assets.smold.app/api/token/1/0x3A283D9c08E8b55966afb64C515f5143cf907611/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x3A65cbaebBFecbeA5D0CB523ab56fDbda7fF9aAA",
+      "name": "zunETH/frxETH",
+      "symbol": "ZUNFRXETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3A65cbaebBFecbeA5D0CB523ab56fDbda7fF9aAA/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4670,6 +4694,14 @@
       "decimals": 18
     },
     {
+      "address": "0x7749F5Ed1e356EDc63D469c2fcaC9adEB56d1C2b",
+      "name": "YT Renzo ezETH 26DEC2024",
+      "symbol": "YT-ezETH-26DEC2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0x7749F5Ed1e356EDc63D469c2fcaC9adEB56d1C2b/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x774B4Cbc2703cE83fB3b828b7C782d1CD983b04A",
       "name": "Curve ankrETH Factory yVault",
       "symbol": "yvCurve-ankrETH-f",
@@ -5427,6 +5459,22 @@
       "decimals": 18
     },
     {
+      "address": "0x8C0D76C9B18779665475F3E212D9Ca1Ed6A1A0e6",
+      "name": "Zunami USD",
+      "symbol": "zunUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8C0D76C9B18779665475F3E212D9Ca1Ed6A1A0e6/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8C24b3213FD851db80245FCCc42c40B94Ac9a745",
+      "name": "crvUSD/zunUSD",
+      "symbol": "CRVZUNUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8C24b3213FD851db80245FCCc42c40B94Ac9a745/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x8CB24ed2e4f7e2065f4eB2bE5f6B0064B1919850",
       "name": "ZARP Stablecoin",
       "symbol": "ZARP",
@@ -5507,6 +5555,14 @@
       "name": "SY vETH-WETH_BalancerLP Aura",
       "symbol": "SY-vETH-WETH_BalancerLP Aura",
       "logoURI": "https://assets.smold.app/api/token/1/0x8c76E1C2c57C343afa77C4374471EB4eB6A159EA/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8c99c1FF4978790ea496c71bc6e769F1D8691e1C",
+      "name": "Curve ZUNFRXETH Factory yVault",
+      "symbol": "yvCurve-ZUNFRXETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8c99c1FF4978790ea496c71bc6e769F1D8691e1C/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6516,8 +6572,8 @@
     },
     {
       "address": "0xAc22e3a3cfE4dC82FFD4Ffa7453729Ca963CeB5a",
-      "name": "Curve GHOcrvUSD Factory yVault",
-      "symbol": "yvCurve-GHOcrvUSD-f",
+      "name": "Curve GHO-crvUSD Factory yVault",
+      "symbol": "yvCurve-GHO-crvUSD-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xAc22e3a3cfE4dC82FFD4Ffa7453729Ca963CeB5a/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -6727,6 +6783,14 @@
       "name": "bLUSD",
       "symbol": "bLUSD",
       "logoURI": "https://tokens.1inch.io/0xb9d7dddca9a4ac480991865efef82e01273f79c3.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xBA4080a3603299fa82903F841AA602a61b389551",
+      "name": "Curve CRVZUNUSD Factory yVault",
+      "symbol": "yvCurve-CRVZUNUSD-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xBA4080a3603299fa82903F841AA602a61b389551/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7043,6 +7107,14 @@
       "name": "Curve USDP Pool yVault",
       "symbol": "yvCurve-USDP",
       "logoURI": "https://assets.smold.app/api/token/1/0xC4dAf3b5e2A9e93861c3FBDd25f1e943B8D87417/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xC4ed348c56223C5953939e932E315F9d72Cd83fF",
+      "name": "SY Ethena sUSDE",
+      "symbol": "SY-sUSDE",
+      "logoURI": "https://assets.smold.app/api/token/1/0xC4ed348c56223C5953939e932E315F9d72Cd83fF/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7378,6 +7450,14 @@
       "name": "SY Zircuit Ether.fi weETH",
       "symbol": "SY-zs-weETH",
       "logoURI": "https://assets.smold.app/api/token/1/0xD7DF7E085214743530afF339aFC420c7c720BFa7/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xD8F12bCDE578c653014F27379a6114F67F0e445f",
+      "name": "Pendle Market",
+      "symbol": "PENDLE-LPT",
+      "logoURI": "https://assets.smold.app/api/token/1/0xD8F12bCDE578c653014F27379a6114F67F0e445f/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8891,8 +8971,8 @@
     },
     {
       "address": "0xbcccE9991D2C8A8056D677c0c52C20ac901f39eC",
-      "name": "Curve fxUSDGHO Factory yVault",
-      "symbol": "yvCurve-fxUSDGHO-f",
+      "name": "Curve fxUSD-GHO Factory yVault",
+      "symbol": "yvCurve-fxUSD-GHO-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xbcccE9991D2C8A8056D677c0c52C20ac901f39eC/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -8982,6 +9062,14 @@
       "name": "Balancer GHO/bb-a-USD Stable Pool",
       "symbol": "GHO/bb-a-USD",
       "logoURI": "https://assets.smold.app/api/token/1/0xc2B021133D1b0cF07dba696fd5DD89338428225B/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xc2e660C62F72c2ad35AcE6DB78a616215E2F2222",
+      "name": "Zunami ETH",
+      "symbol": "zunETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xc2e660C62F72c2ad35AcE6DB78a616215E2F2222/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -9429,6 +9517,14 @@
       "name": "xDAI-USDC01",
       "symbol": "xDAI-USDC01",
       "logoURI": "https://assets.smold.app/api/token/1/0xd7b990543EA8e9bd0b9aE2Deb9C52c4d0e660431/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xd810362556296c834E30C9A61d8e21a5cf29eAb4",
+      "name": "PT Ethena sUSDE 25JUL2024",
+      "symbol": "PT-sUSDE-25JUL2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0xd810362556296c834E30C9A61d8e21a5cf29eAb4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -9960,6 +10056,14 @@
       "decimals": 18
     },
     {
+      "address": "0xf65CD2460F4F199C5AC09c74Ac05c40559C29e4F",
+      "name": "YT Ethena sUSDE 25JUL2024",
+      "symbol": "YT-sUSDE-25JUL2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0xf65CD2460F4F199C5AC09c74Ac05c40559C29e4F/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xf6A865c4B9b087fFDd1e0DF8b5Dbb89Ee3546f49",
       "name": "PT wstETH-WETH_BalancerLP Aura 27JUN2024",
       "symbol": "PT-wstETH-WETH_BalancerLP Aura-27JUN2024",
@@ -9988,6 +10092,14 @@
       "name": "Curve dYFI-ETH Factory yVault",
       "symbol": "yvCurve-dYFI-ETH-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xf70B3F1eA3BFc659FFb8b27E84FAE7Ef38b5bD3b/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xf7906F274c174A52d444175729E3fa98f9bde285",
+      "name": "PT Renzo ezETH 26DEC2024",
+      "symbol": "PT-ezETH-26DEC2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0xf7906F274c174A52d444175729E3fa98f9bde285/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -16437,6 +16549,14 @@
       "decimals": 18
     },
     {
+      "address": "0x330DFC5Bc1a63A1dCf1cD5bc9aD3D5e5E61Bcb6C",
+      "name": "xWETH-ARB05",
+      "symbol": "xWETH-ARB05",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x330DFC5Bc1a63A1dCf1cD5bc9aD3D5e5E61Bcb6C/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x3344A88855E8242DED86aF2F874c8928F6Ad7BbA",
       "name": "xBTC.b-WETH3",
       "symbol": "xBTC.b-WETH3",
@@ -17361,6 +17481,14 @@
       "name": "Camelot PENDLE-ETH LP (27 JUN 2024)",
       "symbol": "ysPENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/42161/0x8b5aa1688297BC2e4664a18Df6ad22a70c4178B8/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8dbB0993C76d006896Ca2c894272580Ae561563d",
+      "name": "xPENDLE-WETH3",
+      "symbol": "xPENDLE-WETH3",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x8dbB0993C76d006896Ca2c894272580Ae561563d/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -18344,6 +18472,14 @@
       "name": "xTBTC-WETH05",
       "symbol": "xTBTC-WETH05",
       "logoURI": "https://assets.smold.app/api/token/42161/0xcC86572Ce5a6EEe74c76c57E9ea7b08221F06bb9/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xd147E0bE7b8cB2104274F1Ff3962B917c6c300B1",
+      "name": "xtBTC-WETH05",
+      "symbol": "xtBTC-WETH05",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xd147E0bE7b8cB2104274F1Ff3962B917c6c300B1/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
