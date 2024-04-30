@@ -45,5 +45,6 @@ func main() {
 	}
 
 	buildTokenListooorList()
+	buildPopularList()
 	buildSummary()
 }

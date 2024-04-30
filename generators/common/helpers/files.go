@@ -134,6 +134,7 @@ func SaveTokenListInJsonFile(
 			logs.Error(err)
 			continue
 		}
+		newToken.Occurrence = token.Occurrence
 		tokenList.NextTokensMap[GetKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
 	}
 
@@ -166,7 +167,6 @@ func SaveTokenListInJsonFile(
 	}
 
 	tokenList.Timestamp = time.Now().Format(time.RFC3339)
-	//tokenList.Timestamp = time.Now().UTC().Format(`02/01/2006 15:04:05`)
 	tokenList.Tokens = []models.TokenListToken{}
 
 	/**************************************************************************
@@ -235,6 +235,13 @@ func SaveTokenListInJsonFile(
 		tokenListPerChainID[chainID] = append(tokenListPerChainID[chainID], tokenList.NextTokensMap[k])
 	}
 
+	if filePath == `popular.json` {
+		occurrence := func(p1, p2 *models.TokenListToken) bool {
+			return p1.Occurrence > p2.Occurrence
+		}
+		By(occurrence).Sort(tokenList.Tokens)
+	}
+
 	/**************************************************************************
 	** Then we will just save the unified token list in a json file as well as
 	** each individual token list per chainID.
@@ -257,6 +264,12 @@ func SaveTokenListInJsonFile(
 			continue //If we have as much tokens as the extra tokens, we don't need to save the list, this is the default list
 		}
 
+		if filePath == `popular.json` {
+			occurrence := func(p1, p2 *models.TokenListToken) bool {
+				return p1.Occurrence < p2.Occurrence
+			}
+			By(occurrence).Sort(tokens)
+		}
 		tokenList.Tokens = tokens
 		jsonData, err := json.MarshalIndent(tokenList, "", "  ")
 		if err != nil {
