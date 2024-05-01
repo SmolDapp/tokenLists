@@ -73,7 +73,7 @@ func buildPopularList() {
 				tokenInitialOccurence := initialCount
 				for _, extraToken := range chains.CHAINS[token.ChainID].ExtraTokens {
 					if common.HexToAddress(token.Address) == extraToken {
-						tokenInitialOccurence = 10
+						allTokensPlain = append(allTokensPlain, token)
 					}
 				}
 

@@ -114,6 +114,7 @@ func SaveTokenListInJsonFile(
 			if err != nil {
 				continue
 			}
+			newToken.Occurrence = token.Occurrence
 			tokenList.NextTokensMap[GetKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
 		}
 	}
@@ -266,7 +267,7 @@ func SaveTokenListInJsonFile(
 
 		if filePath == `popular.json` {
 			occurrence := func(p1, p2 *models.TokenListToken) bool {
-				return p1.Occurrence < p2.Occurrence
+				return p1.Occurrence > p2.Occurrence
 			}
 			By(occurrence).Sort(tokens)
 		}
