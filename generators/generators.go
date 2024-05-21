@@ -239,6 +239,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`yearn-min`: {
+		Exec:             buildYearnMinimalTokenList,
+		Name:             `Yearn Minimal`,
+		Description:      `A minimal list of Yearn's vaults and their underlying tokens.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`zksync`: {
 		Exec:             buildZkSyncTokenList,
 		Name:             `ZKSync`,

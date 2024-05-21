@@ -61,6 +61,9 @@ func buildSummary() {
 	tokenListSummary.LogoURI = BASE_URI + `.github/tokenlistooor.svg`
 	tokenListSummary.Timestamp = time.Now().UTC().Unix()
 	for name, data := range GENERATORS {
+		if name == `yearn-min` {
+			continue
+		}
 		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
 		listElement := TMinTokenListData{
 			Name:        tokenList.Name,
