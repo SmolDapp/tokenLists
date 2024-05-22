@@ -1,23 +1,15 @@
 {
   "name": "Popular tokens",
   "description": "A curated list of popular tokens from all the token lists on tokenlistooor.",
-  "timestamp": "2024-05-22T13:22:52+02:00",
+  "timestamp": "2024-05-22T12:03:52Z",
   "version": {
     "major": 6,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
   "keywords": [],
   "tokens": [
-    {
-      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Matic",
-      "symbol": "MATIC",
-      "logoURI": "https://assets.smold.app/api/token/1101/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
-      "chainId": 1101,
-      "decimals": 18
-    },
     {
       "address": "0x7c2aF1Fb79D0b1c67d4eb802d44C673D0A1D2C04",
       "name": "Staked Frax Ether",
@@ -27,10 +19,10 @@
       "decimals": 18
     },
     {
-      "address": "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
-      "logoURI": "https://assets.smold.app/api/token/1101/0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9/logo-128.png",
+      "address": "0x2548C94A3092494dB3aF864cc2cF781a72f55678",
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "logoURI": "https://assets.smold.app/api/token/1101/0x2548C94A3092494dB3aF864cc2cF781a72f55678/logo-128.png",
       "chainId": 1101,
       "decimals": 18
     },
@@ -38,6 +30,14 @@
       "address": "0x7e2feEa957b7D1606335e339754F4e52b452B792",
       "name": "Lido DAO Token",
       "symbol": "LDO",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
+      "address": "0x83b874c1e09D316059d929da402dcB1A98e92082",
+      "name": "Staked MATIC",
+      "symbol": "stMATIC",
+      "logoURI": "https://assets.smold.app/api/token/1101/0x83b874c1e09D316059d929da402dcB1A98e92082/logo-128.png",
       "chainId": 1101,
       "decimals": 18
     },
@@ -50,10 +50,10 @@
       "decimals": 18
     },
     {
-      "address": "0x83b874c1e09D316059d929da402dcB1A98e92082",
-      "name": "Staked MATIC",
-      "symbol": "stMATIC",
-      "logoURI": "https://assets.smold.app/api/token/1101/0x83b874c1e09D316059d929da402dcB1A98e92082/logo-128.png",
+      "address": "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "logoURI": "https://assets.smold.app/api/token/1101/0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9/logo-128.png",
       "chainId": 1101,
       "decimals": 18
     },
@@ -74,10 +74,18 @@
       "decimals": 18
     },
     {
-      "address": "0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035",
-      "name": "USD Coin",
-      "symbol": "USDC",
-      "logoURI": "https://assets.smold.app/api/token/1101/0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035/logo-128.png",
+      "address": "0xa2036f0538221a77A3937F1379699f44945018d0",
+      "name": "Matic Token",
+      "symbol": "MATIC",
+      "logoURI": "https://assets.smold.app/api/token/1101/0xa2036f0538221a77A3937F1379699f44945018d0/logo-128.png",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
+      "address": "0x1E4a5963aBFD975d8c9021ce480b42188849D41d",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "logoURI": "https://assets.smold.app/api/token/1101/0x1E4a5963aBFD975d8c9021ce480b42188849D41d/logo-128.png",
       "chainId": 1101,
       "decimals": 6
     },
@@ -90,20 +98,12 @@
       "decimals": 18
     },
     {
-      "address": "0x2548C94A3092494dB3aF864cc2cF781a72f55678",
-      "name": "Uniswap",
-      "symbol": "UNI",
-      "logoURI": "https://assets.smold.app/api/token/1101/0x2548C94A3092494dB3aF864cc2cF781a72f55678/logo-128.png",
+      "address": "0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://assets.smold.app/api/token/1101/0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035/logo-128.png",
       "chainId": 1101,
-      "decimals": 18
-    },
-    {
-      "address": "0x120eF59b80774F02211563834d8E3b72cb1649d6",
-      "name": "Balancer",
-      "symbol": "BAL",
-      "logoURI": "https://assets.smold.app/api/token/1101/0x120eF59b80774F02211563834d8E3b72cb1649d6/logo-128.png",
-      "chainId": 1101,
-      "decimals": 18
+      "decimals": 6
     },
     {
       "address": "0xC5015b9d9161Dca7e18e32f6f25C4aD850731Fd4",
@@ -130,12 +130,12 @@
       "decimals": 8
     },
     {
-      "address": "0x1E4a5963aBFD975d8c9021ce480b42188849D41d",
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "logoURI": "https://assets.smold.app/api/token/1101/0x1E4a5963aBFD975d8c9021ce480b42188849D41d/logo-128.png",
+      "address": "0x120eF59b80774F02211563834d8E3b72cb1649d6",
+      "name": "Balancer",
+      "symbol": "BAL",
+      "logoURI": "https://assets.smold.app/api/token/1101/0x120eF59b80774F02211563834d8E3b72cb1649d6/logo-128.png",
       "chainId": 1101,
-      "decimals": 6
+      "decimals": 18
     },
     {
       "address": "0xFf8544feD5379D9ffa8D47a74cE6b91e632AC44D",
@@ -146,10 +146,10 @@
       "decimals": 18
     },
     {
-      "address": "0xa2036f0538221a77A3937F1379699f44945018d0",
-      "name": "Matic Token",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "name": "Matic",
       "symbol": "MATIC",
-      "logoURI": "https://assets.smold.app/api/token/1101/0xa2036f0538221a77A3937F1379699f44945018d0/logo-128.png",
+      "logoURI": "https://assets.smold.app/api/token/1101/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
       "chainId": 1101,
       "decimals": 18
     }
