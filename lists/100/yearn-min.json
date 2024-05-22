@@ -1,10 +1,10 @@
 {
   "name": "Yearn Minimal Token List",
   "description": "",
-  "timestamp": "2024-05-21T09:58:07+02:00",
+  "timestamp": "2024-05-22T13:21:36+02:00",
   "version": {
     "major": 0,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -18,6 +18,14 @@
     "vaults"
   ],
   "tokens": [
+    {
+      "address": "0x0CA1C1eC4EBf3CC67a9f545fF90a3795b318cA4a",
+      "name": "Curve EURe-3Crv",
+      "symbol": "crvEUReUSD",
+      "logoURI": "https://assets.smold.app/api/token/100/0x0CA1C1eC4EBf3CC67a9f545fF90a3795b318cA4a/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
     {
       "address": "0x39B68451F05Aaa020611CF887a7338f0991fFd60",
       "name": "AJNA EURe yVault",
@@ -47,6 +55,14 @@
       "name": "Curve EURe yVault",
       "symbol": "yvCurve-EURe",
       "logoURI": "https://assets.smold.app/api/token/100/0xa21Cc1a4a239708690134bAeD3a1B93cAD55F625/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
+      "name": "Monerium EUR emoney",
+      "symbol": "EURe",
+      "logoURI": "https://assets.smold.app/api/token/100/0xcB444e90D8198415266c6a2724b7900fb12FC56E/logo-128.png",
       "chainId": 100,
       "decimals": 18
     }

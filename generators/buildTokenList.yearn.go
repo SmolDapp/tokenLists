@@ -48,7 +48,7 @@ const (
 // TERC20Token contains the basic information of an ERC20 token
 type TYearnTokenData struct {
 	Address                   string     `json:"address"`
-	UnderlyingTokensAddresses []string   `json:"underlyingTokensAddresses"`
+	UnderlyingTokensAddresses []string   `json:"underlyingTokens"`
 	Type                      TTokenType `json:"type"`
 	Name                      string     `json:"name"`
 	Symbol                    string     `json:"symbol"`
