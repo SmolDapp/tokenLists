@@ -9,7 +9,7 @@ import (
 
 var POLYGON_ZKEVM = TChain{
 	ID:            1101,
-	RpcURI:        `https://zkevm-rpc.com`,
+	RpcURI:        `https://endpoints.omniatech.io/v1/polygon-zkevm/mainnet/public`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,
 	MulticallContract: TContractData{

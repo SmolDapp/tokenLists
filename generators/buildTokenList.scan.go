@@ -15,8 +15,9 @@ import (
 type TExplorerType string
 
 const (
-	L1 TExplorerType = "L1"
-	L2 TExplorerType = "L2"
+	L1       TExplorerType = "L1"
+	L2       TExplorerType = "L2"
+	Filecoin TExplorerType = "Filecoin"
 )
 
 type etherscanSASExplorers struct {
@@ -44,6 +45,10 @@ var BASE_EXPLORERS_URI = map[uint64]etherscanSASExplorers{
 	137: {
 		BaseURL: "https://polygonscan.com",
 		Type:    L2,
+	},
+	314: {
+		BaseURL: "https://filfox.info/api/v1/token/erc20-list",
+		Type:    Filecoin,
 	},
 	1101: {
 		BaseURL: "https://zkevm.polygonscan.com",
@@ -140,10 +145,52 @@ func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []models.TokenLi
 	return handleScanTokenList(chainID, tokens, imageURI)
 }
 
+func fetchScanTokenListForFilecoin(chainID uint64, currentPage uint8) []models.TokenListToken {
+	type TFilecoinTokenData struct {
+		Type          string `json:"type"`
+		Name          string `json:"name"`
+		Address       string `json:"address"`
+		Symbol        string `json:"symbol"`
+		Decimals      int    `json:"decimals"`
+		HolderCount   uint64 `json:"holderCount"`
+		TransferCount uint64 `json:"transferCount"`
+	}
+	type TFilecoinList struct {
+		totalCount int
+		Tokens     []TFilecoinTokenData
+	}
+
+	explorerBaseUri := BASE_EXPLORERS_URI[chainID].BaseURL
+	limit := 250
+	page := currentPage
+	tokens := []models.TokenListToken{}
+
+	uri := explorerBaseUri + `?limit=` + strconv.FormatInt(int64(limit), 10) + `&offset=` + strconv.FormatInt(int64(page), 10)
+	list := helpers.FetchJSON[TFilecoinList](uri)
+
+	for _, token := range list.Tokens {
+		if newToken, err := helpers.SetToken(
+			common.HexToAddress(token.Address),
+			token.Name,
+			token.Symbol,
+			``,
+			314,
+			token.Decimals,
+		); err == nil {
+			tokens = append(tokens, newToken)
+		}
+	}
+	page++
+	return helpers.GetTokensFromList(tokens)
+}
+
 func fetchScanTokenList(chainID uint64) []models.TokenListToken {
 	explorerBaseType := BASE_EXPLORERS_URI[chainID].Type
 	if explorerBaseType == L1 {
 		return fetchScanTokenListForL1(chainID, 1)
+	}
+	if explorerBaseType == Filecoin {
+		return fetchScanTokenListForFilecoin(chainID, 0)
 	}
 	return fetchScanTokenListForL2(chainID, 1)
 }
@@ -160,6 +207,7 @@ func buildScanTokenList() {
 	tokens = append(tokens, fetchScanTokenList(100)...)
 	tokens = append(tokens, fetchScanTokenList(137)...)
 	tokens = append(tokens, fetchScanTokenList(250)...)
+	tokens = append(tokens, fetchScanTokenList(314)...)
 	tokens = append(tokens, fetchScanTokenList(1101)...)
 	tokens = append(tokens, fetchScanTokenList(8453)...)
 	tokens = append(tokens, fetchScanTokenList(42161)...)

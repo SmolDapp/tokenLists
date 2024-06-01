@@ -25,22 +25,26 @@ func fetchVeloLikeTokenList(chainID uint64, sugarAddress common.Address) []model
 		logs.Error(err)
 		return []models.TokenListToken{}
 	}
-	allTokens, err := veloSugar.All(nil, big.NewInt(10_000), big.NewInt(0), common.Address{})
-	if err != nil {
-		logs.Error(err)
-		return []models.TokenListToken{}
-	}
 	addressesMap := make(map[common.Address]bool)
-	for _, token := range allTokens {
-		addressesMap[token.Token0] = true
-		addressesMap[token.Token1] = true
-		addressesMap[token.EmissionsToken] = true
-		addressesMap[token.Lp] = true
-	}
-	// Used to remove the duplicates
 	addressesSlice := []common.Address{}
-	for address := range addressesMap {
-		addressesSlice = append(addressesSlice, address)
+
+	for i := 0; i < 10; i++ {
+		offset := big.NewInt(int64(i * 500))
+		allTokens, err := veloSugar.All(nil, big.NewInt(500), offset, common.Address{})
+		if err != nil {
+			logs.Error(err)
+			return []models.TokenListToken{}
+		}
+		for _, token := range allTokens {
+			addressesMap[token.Token0] = true
+			addressesMap[token.Token1] = true
+			addressesMap[token.EmissionsToken] = true
+			addressesMap[token.Lp] = true
+		}
+		// Used to remove the duplicates
+		for address := range addressesMap {
+			addressesSlice = append(addressesSlice, address)
+		}
 	}
 	return handleVeloTokenList(chainID, addressesSlice)
 }
