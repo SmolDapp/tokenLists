@@ -40,6 +40,7 @@ var CHAINS = map[uint64]TChain{
 	100:     GNOSIS,
 	137:     POLYGON,
 	250:     FANTOM,
+	314:     FILECOIN,
 	324:     ZKSYNC,
 	1088:    METIS,
 	1101:    POLYGON_ZKEVM,
