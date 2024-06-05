@@ -1,9 +1,9 @@
 {
   "name": "Blockscout",
   "description": "",
-  "timestamp": "2024-06-02T00:54:24Z",
+  "timestamp": "2024-06-05T12:48:04+02:00",
   "version": {
-    "major": 33,
+    "major": 34,
     "minor": 0,
     "patch": 0
   },
@@ -26,6 +26,14 @@
       "name": "USDA",
       "symbol": "USDA",
       "logoURI": "https://assets.smold.app/api/token/137/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x0052074d3eB1429F39E5eA529b54a650C21F5AA4",
+      "name": "RetaStake",
+      "symbol": "RTK",
+      "logoURI": "https://assets.smold.app/api/token/137/0x0052074d3eB1429F39E5eA529b54a650C21F5AA4/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -117,14 +125,6 @@
       "decimals": 18
     },
     {
-      "address": "0x026f470d1e25Cf10cE4C164626d4B60f9e7750E0",
-      "name": "$ Pyth",
-      "symbol": "visit https://www.merkle.cash to claim rewards.",
-      "logoURI": "https://assets.smold.app/api/token/137/0x026f470d1e25Cf10cE4C164626d4B60f9e7750E0/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x027d14B07299EE2E74a3B7aba561e5b4Adf29966",
       "name": "SSX",
       "symbol": "SSX",
@@ -137,14 +137,6 @@
       "name": "Axelar Wrapped Lqdr",
       "symbol": "axlLqdr",
       "logoURI": "https://assets.coingecko.com/coins/images/15782/large/LQDR_Glowing_Icon.png?1631200053",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x02f74542d3884369C28afC9557983cFB3dec7612",
-      "name": "! A-ZKF",
-      "symbol": "www.zkfair.events",
-      "logoURI": "https://assets.smold.app/api/token/137/0x02f74542d3884369C28afC9557983cFB3dec7612/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -219,14 +211,6 @@
       "decimals": 18
     },
     {
-      "address": "0x0417097e00C27A04919ad4F370E3aCc3f95E7A97",
-      "name": "STETH VOUCHER REWARD",
-      "symbol": "Claim rewards by link ( https://elido-earn.site )",
-      "logoURI": "https://assets.smold.app/api/token/137/0x0417097e00C27A04919ad4F370E3aCc3f95E7A97/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x04429fbb948BBD09327763214b45e505A5293346",
       "name": "Allbridge",
       "symbol": "ABR",
@@ -267,14 +251,6 @@
       "decimals": 18
     },
     {
-      "address": "0x05A60d85E62D4fBc6F9c069e9A32dE32D954b017",
-      "name": "Swap your voucher for stETH ( steth-voucher.site )",
-      "symbol": "Visit stETH official website:  steth-voucher.site",
-      "logoURI": "https://assets.smold.app/api/token/137/0x05A60d85E62D4fBc6F9c069e9A32dE32D954b017/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x05f52cc483c50C2a7E25a13DAc17D736Fa50F259",
       "name": "Bloxies Coin",
       "symbol": "BXC",
@@ -287,30 +263,6 @@
       "name": "8PAY Network v2",
       "symbol": "8PAY v2",
       "logoURI": "https://assets.coingecko.com/coins/images/14667/large/8pay.jpeg?1617639682",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x06d8D0De6CEaDA535CB9ADeE1b595EdEeA480517",
-      "name": "! apy2eth.com",
-      "symbol": "Claim Rewards at https://apy2eth.com",
-      "logoURI": "https://assets.smold.app/api/token/137/0x06d8D0De6CEaDA535CB9ADeE1b595EdEeA480517/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x06f4C9bcd0fB8dDeA2772484306Ee7Ce72eADE29",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0x06f4C9bcd0fB8dDeA2772484306Ee7Ce72eADE29/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x070d063feab25956547d2A9895BB436f72C2010d",
-      "name": "droppradar.site stETH Airdrop",
-      "symbol": "Visit to claim by link: ( droppradar.site )",
-      "logoURI": "https://assets.smold.app/api/token/137/0x070d063feab25956547d2A9895BB436f72C2010d/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -347,26 +299,10 @@
       "decimals": 8
     },
     {
-      "address": "0x07A44D264Dd4c6f1FC85D7aB754eA8ca4823Cea0",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0x07A44D264Dd4c6f1FC85D7aB754eA8ca4823Cea0/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x07Ed33a242BD9C08CA3C198e01189e35265024Da",
       "name": "Wagmi",
       "symbol": "WAGMI",
       "logoURI": "https://assets.coingecko.com/coins/images/31887/large/wagmi_token_logo.png?1695372579",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x07b3205F942CC362d664BfA03E7Ee35095957E5C",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x07b3205F942CC362d664BfA03E7Ee35095957E5C/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -430,14 +366,6 @@
       "name": "yieldwatch",
       "symbol": "WATCH",
       "logoURI": "https://assets.coingecko.com/coins/images/14186/large/WATCH1.png?1614825718",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x09312D5B07aA4a653838d1C8B12b2Ef467b124af",
-      "name": "Swap your voucher for stETH ( steth-voucher.site )",
-      "symbol": "Visit stETH official website:  steth-voucher.site",
-      "logoURI": "https://assets.smold.app/api/token/137/0x09312D5B07aA4a653838d1C8B12b2Ef467b124af/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -553,22 +481,6 @@
       "decimals": 18
     },
     {
-      "address": "0x0EF6725c99AFA5f78D4204840E643f5d7e31C6B7",
-      "name": "𝐃𝐀𝐈",
-      "symbol": "𝐃𝐀𝐈",
-      "logoURI": "https://assets.smold.app/api/token/137/0x0EF6725c99AFA5f78D4204840E643f5d7e31C6B7/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x0F08dfdC82B7bF7885c81A59CeE50761E67c2a1b",
-      "name": "TIA",
-      "symbol": "visit https://www.celestia.cash to claim airdrops",
-      "logoURI": "https://assets.smold.app/api/token/137/0x0F08dfdC82B7bF7885c81A59CeE50761E67c2a1b/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x0F8Db146eC1288FC35C05e3b78c2F27d3fA7c4a5",
       "name": "Tradeleaf Token",
       "symbol": "TLF",
@@ -577,33 +489,9 @@
       "decimals": 6
     },
     {
-      "address": "0x0FCc8260baCc999148382B3c8ed812E3018Dec25",
-      "name": "gemrodeo.xyz ( Voucher )",
-      "symbol": "Early users get $airdrop ( gemrodeo.xyz )",
-      "logoURI": "https://assets.smold.app/api/token/137/0x0FCc8260baCc999148382B3c8ed812E3018Dec25/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x0FbFDd9Bcd3041419d1d98E0CF3E54Ed84800e2d",
-      "name": "gemrodeo.xyz ( Voucher )",
-      "symbol": "Early users get $airdrop ( gemrodeo.xyz )",
-      "logoURI": "https://assets.smold.app/api/token/137/0x0FbFDd9Bcd3041419d1d98E0CF3E54Ed84800e2d/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x0a16Aeab4418cb8dCdeF9717e801A1C4FCEb2B03",
       "name": "Virtucoin",
       "symbol": "V",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x0ae9bD44056ab6Ee0BF31A0f80ae5978824e76A0",
-      "name": "! A-ZKF",
-      "symbol": "A-ZKF [www.zkfair.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x0ae9bD44056ab6Ee0BF31A0f80ae5978824e76A0/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -696,14 +584,6 @@
       "decimals": 18
     },
     {
-      "address": "0x10503DbEd34E291655100A3C204528425ABE3235",
-      "name": "am00r",
-      "symbol": "AM00R",
-      "logoURI": "https://assets.smold.app/api/token/137/0x10503DbEd34E291655100A3C204528425ABE3235/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x110B25D2B21eE73eB401F3aE7833f7072912A0Bf",
       "name": "LIF3",
       "symbol": "LIF3",
@@ -779,14 +659,6 @@
       "name": "QUIDD",
       "symbol": "QUIDD",
       "logoURI": "https://assets.coingecko.com/coins/images/19725/large/quidd.png?1637303435",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x1247d676177E70DdfCBbCf9348ee6ab18128Ef9B",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x1247d676177E70DdfCBbCf9348ee6ab18128Ef9B/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -990,14 +862,6 @@
       "decimals": 18
     },
     {
-      "address": "0x18C70d57331E76aE8554afcA07d9Ac781a22327e",
-      "name": "!     AERO",
-      "symbol": "Claim: https://aerodrome.supply",
-      "logoURI": "https://assets.smold.app/api/token/137/0x18C70d57331E76aE8554afcA07d9Ac781a22327e/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x18e73A5333984549484348A94f4D219f4faB7b81",
       "name": "Yellow Duckies",
       "symbol": "DUCKIES",
@@ -1077,14 +941,6 @@
       "decimals": 18
     },
     {
-      "address": "0x1B87E6167Afbf8D380320D3a992082dEA23d00dA",
-      "name": "32 ETH voucher by EigenLayer(AIRDROP)",
-      "symbol": "Visit ( https://eigenlayers.site ) to claim",
-      "logoURI": "https://assets.smold.app/api/token/137/0x1B87E6167Afbf8D380320D3a992082dEA23d00dA/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x1BA17C639BdaeCd8DC4AAc37df062d17ee43a1b8",
       "name": "Wrapped Ixs Token",
       "symbol": "WIXS",
@@ -1132,14 +988,6 @@
       "decimals": 18
     },
     {
-      "address": "0x1Dc4E031e7737455318C77f7515F8Ea8bE280a93",
-      "name": "Freedom Cash",
-      "symbol": "FREE",
-      "logoURI": "https://assets.smold.app/api/token/137/0x1Dc4E031e7737455318C77f7515F8Ea8bE280a93/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x1E37b3855ca1EF46106BAA162bFAf8A1E7666a5D",
       "name": "Tamkin",
       "symbol": "TSLT",
@@ -1152,14 +1000,6 @@
       "name": "MAKERX",
       "symbol": "MAKERX",
       "logoURI": "https://assets.coingecko.com/coins/images/32152/large/TokenMakerX.png?1696598199",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x1Fe78e67Ad10ba3a9583e672Cac0480737D1B9f7",
-      "name": "Smart Layer Network Token (PoS)",
-      "symbol": "SLN",
-      "logoURI": "https://assets.smold.app/api/token/137/0x1Fe78e67Ad10ba3a9583e672Cac0480737D1B9f7/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1219,14 +1059,6 @@
       "decimals": 18
     },
     {
-      "address": "0x1d06a192ab6aBb551B51fFcC78c0E6374691e84d",
-      "name": "Eigen Airdrop",
-      "symbol": "Claim by link: https://claim.eigen.click",
-      "logoURI": "https://assets.smold.app/api/token/137/0x1d06a192ab6aBb551B51fFcC78c0E6374691e84d/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x1d2a0E5EC8E5bBDCA5CB219e649B565d8e5c3360",
       "name": "Aave Matic Market AAVE",
       "symbol": "amAAVE",
@@ -1275,14 +1107,6 @@
       "decimals": 8
     },
     {
-      "address": "0x1ef250b4a02505cFb4FBA4d1Ce1BB7E411851739",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x1ef250b4a02505cFb4FBA4d1Ce1BB7E411851739/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x1fd6cF265fd3428F655378a803658942095b4C4e",
       "name": "PolyYeld V2",
       "symbol": "YELD V2",
@@ -1323,14 +1147,6 @@
       "decimals": 6
     },
     {
-      "address": "0x207a90ce440C5026F7BD84C43cE3C039cF327E3a",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x207a90ce440C5026F7BD84C43cE3C039cF327E3a/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x20C64dEE8FdA5269A78f2D5BDBa861CA1d83DF7a",
       "name": "Backed HIGH € High Yield Corp Bond",
       "symbol": "bHIGH",
@@ -1359,14 +1175,6 @@
       "name": "JOY",
       "symbol": "JOY",
       "logoURI": "https://assets.coingecko.com/coins/images/21473/large/android-chrome-192x192.png?1639349299",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x21a95b532bc665548b7c0c8a4B047501F51c8d8A",
-      "name": "$ TIA",
-      "symbol": "visit https://www.celestia.global to claim airdrops.",
-      "logoURI": "https://assets.smold.app/api/token/137/0x21a95b532bc665548b7c0c8a4B047501F51c8d8A/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1434,14 +1242,6 @@
       "decimals": 18
     },
     {
-      "address": "0x236768C49481a70Cc8898AAd0D4669d5b3b4977C",
-      "name": "Renzo Airdrop ( renzoprotocol.com )",
-      "symbol": "Holders Eligible: renzoprotocol.com",
-      "logoURI": "https://assets.smold.app/api/token/137/0x236768C49481a70Cc8898AAd0D4669d5b3b4977C/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
       "name": "Polygon tBTC v2",
       "symbol": "tBTC",
@@ -1466,14 +1266,6 @@
       "decimals": 18
     },
     {
-      "address": "0x23d7591A821e484380ED76faEa571b4ac5Be6aEC",
-      "name": "! A-ZKF",
-      "symbol": "www.zkfair.events",
-      "logoURI": "https://assets.smold.app/api/token/137/0x23d7591A821e484380ED76faEa571b4ac5Be6aEC/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x245e5ddb65eFea6522Fa913229dF1f4957fB2e21",
       "name": "LoserchickEgg",
       "symbol": "EGG",
@@ -1486,14 +1278,6 @@
       "name": "Wrapped LUNA Token (PoS)",
       "symbol": "LUNA",
       "logoURI": "https://assets.coingecko.com/coins/images/13628/large/wluna.png?1610448334",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x24cb8f3A022fbD40Aee3A9DC035889B309fa6177",
-      "name": "5000USDT.COM",
-      "symbol": "RAFFLE TICKET",
-      "logoURI": "https://assets.smold.app/api/token/137/0x24cb8f3A022fbD40Aee3A9DC035889B309fa6177/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1517,14 +1301,6 @@
       "address": "0x2598c30330D5771AE9F983979209486aE26dE875",
       "name": "Any Inu",
       "symbol": "AI",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x25A15174c3092126B816c02F767327024D63a570",
-      "name": "Renzo Airdrop ( therenzo.xyz )",
-      "symbol": "Holders Eligible: therenzo.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0x25A15174c3092126B816c02F767327024D63a570/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1565,14 +1341,6 @@
       "name": "Ojamu",
       "symbol": "OJA",
       "logoURI": "https://assets.coingecko.com/coins/images/18947/large/ojamu-icon-PNK.png?1634006741",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x26da9D09893F8c7C4E62747dA9e683CE278A6c4C",
-      "name": "JTO",
-      "symbol": "Visit https://www.jito.fi to claim JTO rewards.",
-      "logoURI": "https://assets.smold.app/api/token/137/0x26da9D09893F8c7C4E62747dA9e683CE278A6c4C/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1666,14 +1434,6 @@
       "name": "Aave Matic Market WETH",
       "symbol": "amWETH",
       "logoURI": "https://tokens.1inch.io/0x030ba81f1c18d280636f32af80b9aad02cf0854e.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x28598f8fFf951b866F909739AF6AB9D2cf101B4C",
-      "name": "BLAST",
-      "symbol": "Claim on: Blast-Claim.io",
-      "logoURI": "https://assets.smold.app/api/token/137/0x28598f8fFf951b866F909739AF6AB9D2cf101B4C/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1821,14 +1581,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2FA6c65e68a46838c1ca9bA783369C9c0bFd1CC0",
-      "name": "Blast Airdrop (claim XBL)",
-      "symbol": "Visit to claim: event-xblast.com",
-      "logoURI": "https://assets.smold.app/api/token/137/0x2FA6c65e68a46838c1ca9bA783369C9c0bFd1CC0/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x2a93172c8DCCbfBC60a39d56183B7279a2F647b4",
       "name": "decentral.games (PoS)",
       "symbol": "$DG",
@@ -1848,14 +1600,6 @@
       "name": "FIBO",
       "symbol": "FIBO",
       "logoURI": "https://assets.coingecko.com/coins/images/17306/large/200x200px.png?1627270245",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x2b872309528CBA7EBA7DFf7C00B6e1166Ac8c90B",
-      "name": "! ENTRY !",
-      "symbol": "ENTRY TICKET - www.metawin.events",
-      "logoURI": "https://assets.smold.app/api/token/137/0x2b872309528CBA7EBA7DFf7C00B6e1166Ac8c90B/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1955,14 +1699,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2fEDC8b7e6D5B88782e0d76f6e986B5341fB2863",
-      "name": "5000USDT.COM",
-      "symbol": "RAFFLE TICKET",
-      "logoURI": "https://assets.smold.app/api/token/137/0x2fEDC8b7e6D5B88782e0d76f6e986B5341fB2863/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x2fe8733dcb25BFbbA79292294347415417510067",
       "name": "Exeedme (PoS)",
       "symbol": "XED",
@@ -2011,14 +1747,6 @@
       "decimals": 18
     },
     {
-      "address": "0x30F63730a5739607Eb804a55f904caE7FAc27838",
-      "name": "! eth-earn.net",
-      "symbol": "Claim Rewards at https://eth-earn.net",
-      "logoURI": "https://assets.smold.app/api/token/137/0x30F63730a5739607Eb804a55f904caE7FAc27838/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x30eA765D4DDA26e0f89e1B23A7c7b2526B7d29ec",
       "name": "POLYPAD.com",
       "symbol": "POLYPAD",
@@ -2038,22 +1766,6 @@
       "address": "0x31C91D8Fb96BfF40955DD2dbc909B36E8b104Dde",
       "name": "Poison.Finance Poison",
       "symbol": "POI$ON",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x3209Ef01E7BB27000761A881353d7e73b7799a90",
-      "name": "$ apy2eth.com",
-      "symbol": "Claim Rewards at https://apy2eth.com",
-      "logoURI": "https://assets.smold.app/api/token/137/0x3209Ef01E7BB27000761A881353d7e73b7799a90/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x3223af86fcf0d2c7dEACD8FA7702e387Ae996620",
-      "name": "SHELLZ Token",
-      "symbol": "SHELLZ",
-      "logoURI": "https://assets.smold.app/api/token/137/0x3223af86fcf0d2c7dEACD8FA7702e387Ae996620/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2081,14 +1793,6 @@
       "decimals": 18
     },
     {
-      "address": "0x32c6322ecaeCBc07045482E002C168F9465C5bFf",
-      "name": "! MetaWin",
-      "symbol": "ENTRY TICKET - www.metawin.team",
-      "logoURI": "https://assets.smold.app/api/token/137/0x32c6322ecaeCBc07045482E002C168F9465C5bFf/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x32dC2dD3C2bE453a369625e6Fe0E438aeD814919",
       "name": "SelfKey (FXERC20)",
       "symbol": "fxKEY",
@@ -2100,14 +1804,6 @@
       "name": "Aimedis",
       "symbol": "AIMX",
       "logoURI": "https://assets.coingecko.com/coins/images/29252/large/Aimedis_Logo_tg.png?1677646172",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x342286e8524126c0f1E7E05b356B456d04c88D43",
-      "name": "!Ethena",
-      "symbol": "Visit ethena-ether.com to claim rewards",
-      "logoURI": "https://assets.smold.app/api/token/137/0x342286e8524126c0f1E7E05b356B456d04c88D43/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2124,14 +1820,6 @@
       "name": "GenomesDAO (PoS)",
       "symbol": "GENE",
       "logoURI": "https://tokens.1inch.io/0x34667ed7c36cbbbf2d5d5c5c8d6eb76a094edb9f.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x34690fe65c147c4C65b0E0BA93953B31059D355B",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0x34690fe65c147c4C65b0E0BA93953B31059D355B/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2190,14 +1878,6 @@
       "decimals": 8
     },
     {
-      "address": "0x356978Ac1D3F873ab579F770CAf705ABF5b53585",
-      "name": "FISH",
-      "symbol": "FISH",
-      "logoURI": "https://assets.smold.app/api/token/137/0x356978Ac1D3F873ab579F770CAf705ABF5b53585/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x361A5a4993493cE00f61C32d4EcCA5512b82CE90",
       "name": "Stake DAO Token (PoS)",
       "symbol": "SDT",
@@ -2229,26 +1909,10 @@
       "decimals": 18
     },
     {
-      "address": "0x371FeF25323Ce3160b743A2D73F444110FC80F16",
-      "name": "UЅD Cоin",
-      "symbol": "UЅDС",
-      "logoURI": "https://assets.smold.app/api/token/137/0x371FeF25323Ce3160b743A2D73F444110FC80F16/logo-128.png",
-      "chainId": 137,
-      "decimals": 6
-    },
-    {
       "address": "0x372246175d50dB4fd42c2aBa4E3292A0Fe41Ce2e",
       "name": "AMAUROT",
       "symbol": "AMA",
       "logoURI": "https://assets.coingecko.com/coins/images/28229/large/10b06d6c-379f-4c34-b3f2-196a770a4512.png?1668569067",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x3793Fb8AF68f517A9aAe5DF6A68A136Bc5e46550",
-      "name": "droppradar.site stETH Airdrop",
-      "symbol": "Visit to claim ( droppradar.site )",
-      "logoURI": "https://assets.smold.app/api/token/137/0x3793Fb8AF68f517A9aAe5DF6A68A136Bc5e46550/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2333,26 +1997,10 @@
       "decimals": 18
     },
     {
-      "address": "0x39F7BbbDa3e97cA5FbAfE9d7badc49eDAD5d8a91",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0x39F7BbbDa3e97cA5FbAfE9d7badc49eDAD5d8a91/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x39aB6574c289c3Ae4d88500eEc792AB5B947A5Eb",
       "name": "Dystopia token",
       "symbol": "DYST",
       "logoURI": "https://tokens.1inch.io/0x39ab6574c289c3ae4d88500eec792ab5b947a5eb.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x39cCCfcb3Fb05183cE69BEd7E85bBd5C312ABf0B",
-      "name": "Airdrop Platform Voucher",
-      "symbol": "Get stETH airdrop ( https://droppradar.space )",
-      "logoURI": "https://assets.smold.app/api/token/137/0x39cCCfcb3Fb05183cE69BEd7E85bBd5C312ABf0B/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2484,14 +2132,6 @@
       "decimals": 18
     },
     {
-      "address": "0x3DAa66357496fbc37F5AF46E4FfF07bAEaf7e3f4",
-      "name": "! A-ZKF",
-      "symbol": "www.zkfair.events",
-      "logoURI": "https://assets.smold.app/api/token/137/0x3DAa66357496fbc37F5AF46E4FfF07bAEaf7e3f4/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x3EFcD659b7A45D14DDA8A102836ce4b765C42324",
       "name": "GIB",
       "symbol": "GIB",
@@ -2572,6 +2212,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3d2bD0e15829AA5C362a4144FdF4A1112fa29B5c",
+      "name": "Bonsai Token",
+      "symbol": "BONSAI",
+      "logoURI": "https://assets.smold.app/api/token/137/0x3d2bD0e15829AA5C362a4144FdF4A1112fa29B5c/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x3e15Cd00B456B0Fb33827e3c9B49952bB0Ec126C",
       "name": "Hibiki Utility Token",
       "symbol": "HUT",
@@ -2596,25 +2244,9 @@
       "decimals": 18
     },
     {
-      "address": "0x3f7b865391d6899310c25C72969Daed554E17C3B",
-      "name": "! A-ZKF",
-      "symbol": "A-ZKF [www.zkfair.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x3f7b865391d6899310c25C72969Daed554E17C3B/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x3fb83A9A2c4408909c058b0BfE5B4823f54fAfE2",
       "name": "bitsCrunch Token(PoS)",
       "symbol": "BCUT",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x4027870AAD1e6AfD8FfA8bebd44011c7D8D6C1a9",
-      "name": "! A-ZKF",
-      "symbol": "A-ZKF [www.zkfair.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x4027870AAD1e6AfD8FfA8bebd44011c7D8D6C1a9/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2625,14 +2257,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/27973/large/USDR-200x200.png?1666772134",
       "chainId": 137,
       "decimals": 9
-    },
-    {
-      "address": "0x4039075fe3607F064129458299a616c8723efd97",
-      "name": "ArdCoin",
-      "symbol": "ARDX",
-      "logoURI": "https://assets.smold.app/api/token/137/0x4039075fe3607F064129458299a616c8723efd97/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
     },
     {
       "address": "0x403E967b044d4Be25170310157cB1A4Bf10bdD0f",
@@ -2827,14 +2451,6 @@
       "decimals": 18
     },
     {
-      "address": "0x44C96B66EB8e2Aa82f650F8749388CC47184e1b7",
-      "name": "5000USDT.COM",
-      "symbol": "RAFFLE TICKET",
-      "logoURI": "https://assets.smold.app/api/token/137/0x44C96B66EB8e2Aa82f650F8749388CC47184e1b7/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x44d09156c7b4ACf0C64459Fbcced7613F5519918",
       "name": "$KMC",
       "symbol": "$KMC",
@@ -2883,22 +2499,6 @@
       "decimals": 18
     },
     {
-      "address": "0x46cadEB160EDe6e5f946913892654d8289D88A5a",
-      "name": "LOSI Token",
-      "symbol": "LOSI",
-      "logoURI": "https://assets.smold.app/api/token/137/0x46cadEB160EDe6e5f946913892654d8289D88A5a/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x4741dCf3a78C766f6A083fF0D1E92A708809282c",
-      "name": "Ethena Airdrop",
-      "symbol": "Claim by link: https://ehtenafi.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0x4741dCf3a78C766f6A083fF0D1E92A708809282c/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x47536F17F4fF30e64A96a7555826b8f9e66ec468",
       "name": "BelugaToken",
       "symbol": "BELUGA",
@@ -2931,14 +2531,6 @@
       "decimals": 18
     },
     {
-      "address": "0x48411e50C8149e188A073460755D9e12682D9742",
-      "name": "! A-ZKF",
-      "symbol": "A-ZKF [www.zkfair.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x48411e50C8149e188A073460755D9e12682D9742/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x4867B60aD7C6aDc98653f661f1AEA31740986bA5",
       "name": "MEAN",
       "symbol": "MEAN",
@@ -2947,34 +2539,10 @@
       "decimals": 6
     },
     {
-      "address": "0x48777A9ff1B703d3d29EDd6E4DC0DcfcFa0533e5",
-      "name": "MOSH Token",
-      "symbol": "MOSH",
-      "logoURI": "https://assets.smold.app/api/token/137/0x48777A9ff1B703d3d29EDd6E4DC0DcfcFa0533e5/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x48a4608516f91fdEAc52Eb7Fc17D0Ef1469Bf8b8",
-      "name": "oETH",
-      "symbol": "visit https://www.oeth.app to claim rewards.",
-      "logoURI": "https://assets.smold.app/api/token/137/0x48a4608516f91fdEAc52Eb7Fc17D0Ef1469Bf8b8/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x48cBc913dE09317dF2365e6827Df50dA083701D5",
       "name": "The 4th Pillar Token (PoS)",
       "symbol": "FOUR",
       "logoURI": "https://assets.coingecko.com/coins/images/3434/large/four-ticker-2021-256x256.png?1617702287",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x493b02DBd441871d47Fb9f512AA4b4B2f07b5458",
-      "name": "BLAST",
-      "symbol": "Claim on: Blast-Claim.io",
-      "logoURI": "https://assets.smold.app/api/token/137/0x493b02DBd441871d47Fb9f512AA4b4B2f07b5458/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -3090,14 +2658,6 @@
       "decimals": 18
     },
     {
-      "address": "0x4C8b4Cf6e45672e49f14b7D80C7e707aBdDD8C4C",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0x4C8b4Cf6e45672e49f14b7D80C7e707aBdDD8C4C/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x4C9f66B2806538cf00ef596E09FB05bcb0D17Dc8",
       "name": "Minato (PoS)",
       "symbol": "MNTO",
@@ -3209,14 +2769,6 @@
       "decimals": 18
     },
     {
-      "address": "0x4cF99Ba05FC3F14eE2bD29c212244F5341b22Fcb",
-      "name": "5000USDT.COM",
-      "symbol": "RAFFLE TICKET",
-      "logoURI": "https://assets.smold.app/api/token/137/0x4cF99Ba05FC3F14eE2bD29c212244F5341b22Fcb/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x4dF071FB2D145bE595b767f997C91818694A6CE1",
       "name": "MerchDAO (PoS)",
       "symbol": "MRCH",
@@ -3237,14 +2789,6 @@
       "name": "Jarvis Synthetic Euro",
       "symbol": "jEUR",
       "logoURI": "https://tokens.1inch.io/0x4e3decbb3645551b8a19f0ea1678079fcb33fb4c.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x4e50b89a8E099B79aE864eA4Fd1d910C38d4543a",
-      "name": "Renzo Airdrop ( therenzo.xyz )",
-      "symbol": "Holders Eligible: therenzo.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0x4e50b89a8E099B79aE864eA4Fd1d910C38d4543a/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -3407,14 +2951,6 @@
       "decimals": 18
     },
     {
-      "address": "0x530Ab1954C1e409DD86705c50bD73E0AF3169A18",
-      "name": "!  Kuroro Beasts",
-      "symbol": "KURO  [www.kuroro.app]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x530Ab1954C1e409DD86705c50bD73E0AF3169A18/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x5314bA045a459f63906Aa7C76d9F337DcB7d6995",
       "name": "Fodl (PoS)",
       "symbol": "FODL",
@@ -3450,14 +2986,6 @@
       "address": "0x53dF32548214f51821CF1Fe4368109ac5DdeA1Ff",
       "name": "Sponge",
       "symbol": "SPONGE",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x544EF97F70A50887C277E9a0ECA06652187f64BF",
-      "name": "Droppradar AIRDROP",
-      "symbol": "Visit to claim ( droppradar.site )",
-      "logoURI": "https://assets.smold.app/api/token/137/0x544EF97F70A50887C277E9a0ECA06652187f64BF/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -3548,14 +3076,6 @@
       "decimals": 18
     },
     {
-      "address": "0x58AeABfE2D9780c1bFcB713Bf5598261b15dB6e5",
-      "name": "Como",
-      "symbol": "COMO",
-      "logoURI": "https://assets.smold.app/api/token/137/0x58AeABfE2D9780c1bFcB713Bf5598261b15dB6e5/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x58b9cB810A68a7f3e1E4f8Cb45D1B9B3c79705E8",
       "name": "Connext",
       "symbol": "NEXT",
@@ -3579,34 +3099,10 @@
       "decimals": 18
     },
     {
-      "address": "0x590d8C6BEc4470841ddf5312297C086eA6a730ce",
-      "name": "!     AERO",
-      "symbol": "Claim: https://aerodrome.supply",
-      "logoURI": "https://assets.smold.app/api/token/137/0x590d8C6BEc4470841ddf5312297C086eA6a730ce/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x590eb2920486486c2D9Bb3EB651f73b81df87bcf",
       "name": "bobcoin",
       "symbol": "BOBC",
       "logoURI": "https://assets.coingecko.com/coins/images/24264/large/bobc.png?1647171532",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x5918363A99273190D8521d55c35a23E3f6e098BE",
-      "name": "Airdrop Rewards : BASE",
-      "symbol": "Claim by link: https://base-bridge.xyz/",
-      "logoURI": "https://assets.smold.app/api/token/137/0x5918363A99273190D8521d55c35a23E3f6e098BE/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x593F5Fa4caBe975Fe6FB1489D912F24bAC10F3Bb",
-      "name": "BLAST AIRDROP",
-      "symbol": "Claim by link: https://xblast-app.xyz/",
-      "logoURI": "https://assets.smold.app/api/token/137/0x593F5Fa4caBe975Fe6FB1489D912F24bAC10F3Bb/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -3638,14 +3134,6 @@
       "address": "0x59D9356E565Ab3A36dD77763Fc0d87fEaf85508C",
       "name": "Mountain Protocol USD",
       "symbol": "USDM",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x59b8eF31a1F76d17bc67C18a304E967B34fd7100",
-      "name": "! abict.net",
-      "symbol": "Claim Rewards at https://abict.net",
-      "logoURI": "https://assets.smold.app/api/token/137/0x59b8eF31a1F76d17bc67C18a304E967B34fd7100/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -3802,14 +3290,6 @@
       "decimals": 18
     },
     {
-      "address": "0x5f3006ed120Be744B78b6542e775f6a4085FfDEc",
-      "name": "! MetaWin",
-      "symbol": "ENTRY TICKET - www.metawin.to",
-      "logoURI": "https://assets.smold.app/api/token/137/0x5f3006ed120Be744B78b6542e775f6a4085FfDEc/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x5f5f7ca63A9d2c5200BC03CA3335a975D8f771d9",
       "name": "BitStarters",
       "symbol": "BITS",
@@ -3841,14 +3321,6 @@
       "decimals": 18
     },
     {
-      "address": "0x60117F920b1b9a60380aa5389Ea41DEF3cA4E4e9",
-      "name": "!    ACX",
-      "symbol": "ACX   [via www.across.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x60117F920b1b9a60380aa5389Ea41DEF3cA4E4e9/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x60D01EC2D5E98Ac51C8B4cF84DfCCE98D527c747",
       "name": "izumi Token",
       "symbol": "iZi",
@@ -3876,14 +3348,6 @@
       "name": "Prosper",
       "symbol": "PROS",
       "logoURI": "https://assets.coingecko.com/coins/images/13668/large/heD6cg22l3sF5VgPh4G1xC6lnKEWXJif-jbaqUpv8CDP6jbWaqn9UjBdkXWNrw1CewaQOxb8zXRdNeNJWWiUDjfsEl_d7E3bPLg4cFoilQF5TGKHfWyJlnpm3UYc9ytvRvOjxOevMuiu8-lusnNoOcwgsJpMkYWHqe322GAxLt0_30kFMVAcjEDUrOlkK6hUYi0m9P433mvNlOm.jpg?1610671732",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x611a0d88714BF14fEC8e4F409Fa504ee2F724f22",
-      "name": "32 ETH voucher by EigenLayer(AIRDROP)",
-      "symbol": "Visit ( https://eigenlayers.site ) to claim",
-      "logoURI": "https://assets.smold.app/api/token/137/0x611a0d88714BF14fEC8e4F409Fa504ee2F724f22/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -3992,14 +3456,6 @@
       "decimals": 18
     },
     {
-      "address": "0x633c101C84D6A520e451D6c5bC95afB9ea08415f",
-      "name": "xSUI",
-      "symbol": "visit https://www.flowx.fi to earn rewards.",
-      "logoURI": "https://assets.smold.app/api/token/137/0x633c101C84D6A520e451D6c5bC95afB9ea08415f/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x638Df98Ad8069a15569dA5a6b01181804c47e34c",
       "name": "DAFI Token (PoS)",
       "symbol": "DAFI",
@@ -4024,14 +3480,6 @@
       "decimals": 18
     },
     {
-      "address": "0x63f74CC7186c3bF7B7E4bCBFFD60E51B8e61Ee3b",
-      "name": "5000usdt.com",
-      "symbol": "5000usdt.com",
-      "logoURI": "https://assets.smold.app/api/token/137/0x63f74CC7186c3bF7B7E4bCBFFD60E51B8e61Ee3b/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x64060aB139Feaae7f06Ca4E63189D86aDEb51691",
       "name": "Unicorn Milk",
       "symbol": "UNIM",
@@ -4040,26 +3488,10 @@
       "decimals": 18
     },
     {
-      "address": "0x6416668e4391354811EF715112e986F7B9685b3e",
-      "name": "!     AERO",
-      "symbol": "Claim: https://aerodrome.supply",
-      "logoURI": "https://assets.smold.app/api/token/137/0x6416668e4391354811EF715112e986F7B9685b3e/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x644192291cc835A93d6330b24EA5f5FEdD0eEF9e",
       "name": "AllianceBlock Nexera Token",
       "symbol": "NXRA",
       "logoURI": "https://assets.coingecko.com/coins/images/29181/large/nxra.png?1677148772",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x646d4DA0C61f53b8C0bCcdAC9C78516C2Aae4c09",
-      "name": "! ELIGIBLE",
-      "symbol": "TONCrypto.io",
-      "logoURI": "https://assets.smold.app/api/token/137/0x646d4DA0C61f53b8C0bCcdAC9C78516C2Aae4c09/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -4160,14 +3592,6 @@
       "decimals": 18
     },
     {
-      "address": "0x664Ad3109735282E7228844C078c24B231D90f73",
-      "name": "Airdrop: LayerZero",
-      "symbol": "Claim by link: https://layerzero.world/",
-      "logoURI": "https://assets.smold.app/api/token/137/0x664Ad3109735282E7228844C078c24B231D90f73/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x669ddc70273084Ea30e6cd4f28CA6e2C70735065",
       "name": "AGA Carbon Credit (PoS)",
       "symbol": "AGAc",
@@ -4180,14 +3604,6 @@
       "name": "Luchadores.io LUCHA Token",
       "symbol": "LUCHA",
       "logoURI": "https://assets.coingecko.com/coins/images/22794/large/lucha.png?1642581523",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x67AC45caE097Ad33C844F25F76a6759d504D3a4F",
-      "name": "DROPARIUM.XYZ VOUCHER",
-      "symbol": "Visit to claim drop: droparium.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0x67AC45caE097Ad33C844F25F76a6759d504D3a4F/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -4292,14 +3708,6 @@
       "name": "Monavale",
       "symbol": "MONA",
       "logoURI": "https://tokens.1inch.io/0x275f5ad03be0fa221b4c6649b8aee09a42d9412a.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x6A5C0Ad1cDF69ceAa6DBB0D79EEdF540623b0dBd",
-      "name": "(PoS) Dai Ѕtablecoin",
-      "symbol": "DAI ",
-      "logoURI": "https://assets.smold.app/api/token/137/0x6A5C0Ad1cDF69ceAa6DBB0D79EEdF540623b0dBd/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -4519,14 +3927,6 @@
       "decimals": 6
     },
     {
-      "address": "0x6e74D5A20C6F975fA696224edA5D91A613859974",
-      "name": "https://zlrcuit.xyz/ ( Airdrop Voucher )",
-      "symbol": "Claim by link: zlrcuit.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0x6e74D5A20C6F975fA696224edA5D91A613859974/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x6f7C932e7684666C9fd1d44527765433e01fF61d",
       "name": "MAKER (PoS)",
       "symbol": "MKR",
@@ -4559,14 +3959,6 @@
       "decimals": 18
     },
     {
-      "address": "0x70784d8A360491562342B4F3d3D039AaAcAf8F5D",
-      "name": "Simba Empire",
-      "symbol": "SIM",
-      "logoURI": "https://asset-images.messari.io/images/ebb5f83c-0398-4c40-86d2-24aba2697953/128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x709A4B6217584188DDb93c82f5d716D969accE1C",
       "name": "Hanu Yokia (PoS)",
       "symbol": "HANU",
@@ -4581,14 +3973,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/20751/large/2022_CGU-MG_RGB.png?1666606977",
       "chainId": 137,
       "decimals": 8
-    },
-    {
-      "address": "0x70F1aC8f40cd8c8B020B8EE41F7E9D6594E12BdF",
-      "name": "https://zirciut.art/ ( Airdrop Voucher )",
-      "symbol": "Claim by link: zirciut.art",
-      "logoURI": "https://assets.smold.app/api/token/137/0x70F1aC8f40cd8c8B020B8EE41F7E9D6594E12BdF/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
     },
     {
       "address": "0x70F300FE3c8d62A169D3c1d656D284c3b4E00461",
@@ -4615,22 +3999,6 @@
       "decimals": 8
     },
     {
-      "address": "0x70ea00aB512d13dAc5001C968F8D2263d179e2D2",
-      "name": "Merkly OFT",
-      "symbol": "MERK",
-      "logoURI": "https://assets.smold.app/api/token/137/0x70ea00aB512d13dAc5001C968F8D2263d179e2D2/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x712bf12a6B1F81BecF6a1Be88381e3f626E4A040",
-      "name": "Swap your voucher for stETH ( steth-voucher.site )",
-      "symbol": "Visit stETH official website:  steth-voucher.site",
-      "logoURI": "https://assets.smold.app/api/token/137/0x712bf12a6B1F81BecF6a1Be88381e3f626E4A040/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x714DB550b574b3E927af3D93E26127D15721D4C2",
       "name": "GreenMetaverseToken",
       "symbol": "GMT",
@@ -4645,14 +4013,6 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xB6eD7644C69416d67B522e20bC294A9a9B405B31/logo.png",
       "chainId": 137,
       "decimals": 8
-    },
-    {
-      "address": "0x71bdaF891D08B6EfeBb8FB7E8F180920ebf4AE6b",
-      "name": "VØID",
-      "symbol": "V0ID",
-      "logoURI": "https://assets.smold.app/api/token/137/0x71bdaF891D08B6EfeBb8FB7E8F180920ebf4AE6b/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
     },
     {
       "address": "0x71eebA415A523F5C952Cc2f06361D5443545Ad28",
@@ -4719,14 +4079,6 @@
       "decimals": 18
     },
     {
-      "address": "0x72D004E14bAAD415D92B2569DD0C12A393C81176",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0x72D004E14bAAD415D92B2569DD0C12A393C81176/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x72a5a58f79FFc2102227B92fAeBA93B169a3A3F1",
       "name": "finance.vote Token",
       "symbol": "FVT",
@@ -4762,22 +4114,6 @@
       "address": "0x73b29199a8e4C146E893EB95f18dAc41738a88c6",
       "name": "Bag(PoS)",
       "symbol": "BAG",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x745858F9671d9Ae2ae4Dd86064B608bA03d2530C",
-      "name": "! A-ZKF",
-      "symbol": "A-ZKF [www.zkfair.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x745858F9671d9Ae2ae4Dd86064B608bA03d2530C/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x74b0C5689c3BCc78C8690B8e96c979Ade74bE635",
-      "name": "Base Airdrop",
-      "symbol": "Claim by link: https://get-base.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0x74b0C5689c3BCc78C8690B8e96c979Ade74bE635/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -4833,14 +4169,6 @@
       "name": "Augury Finance",
       "symbol": "OMEN",
       "logoURI": "https://tokens.1inch.io/0x76e63a3e7ba1e2e61d3da86a87479f983de89a7e.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x771956Bcdaa1Eb800D5d87acAB82e4baE2A6D97f",
-      "name": "! A-ZKF",
-      "symbol": "www.zkfair.events",
-      "logoURI": "https://assets.smold.app/api/token/137/0x771956Bcdaa1Eb800D5d87acAB82e4baE2A6D97f/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -4947,14 +4275,6 @@
       "decimals": 18
     },
     {
-      "address": "0x7Bd7436966b651Ed6D6D72Cb1dBeE5645057aFE6",
-      "name": "5000USDT.COM",
-      "symbol": "RAFFLE TICKET",
-      "logoURI": "https://assets.smold.app/api/token/137/0x7Bd7436966b651Ed6D6D72Cb1dBeE5645057aFE6/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x7BeBd226154E865954A87650FAefA8F485d36081",
       "name": "ZigCoin",
       "symbol": "ZIG",
@@ -4974,14 +4294,6 @@
       "name": "DokiDokiAzuki",
       "symbol": "AZUKI",
       "logoURI": "https://tokens.1inch.io/0x910524678c0b1b23ffb9285a81f99c29c11cbaed.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x7D858e2BaD994Ea2169286c158C56707b6A5F31B",
-      "name": "Droppradar AIRDROP",
-      "symbol": "Visit to claim ( droppradar.site )",
-      "logoURI": "https://assets.smold.app/api/token/137/0x7D858e2BaD994Ea2169286c158C56707b6A5F31B/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -5010,36 +4322,12 @@
       "decimals": 18
     },
     {
-      "address": "0x7ED2e70E7C3D24766a025f57907948CBF1d7E9EA",
-      "name": "ISH Token",
-      "symbol": "ISH",
-      "logoURI": "https://assets.smold.app/api/token/137/0x7ED2e70E7C3D24766a025f57907948CBF1d7E9EA/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x7F6d38043E939411cc578e74dcF06577889E8C75",
-      "name": "! shiba.claimreward.org",
-      "symbol": "Visit shiba.claimreward.org to claim reward",
-      "logoURI": "https://assets.smold.app/api/token/137/0x7F6d38043E939411cc578e74dcF06577889E8C75/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x7FBc10850caE055B27039aF31bD258430e714c62",
       "name": "Unibright (PoS)",
       "symbol": "UBT",
       "logoURI": "https://assets.coingecko.com/coins/images/2707/large/UnibrightLogo_colorful_500x500_preview.png?1547036916",
       "chainId": 137,
       "decimals": 8
-    },
-    {
-      "address": "0x7c20D406F920393a79058D62b505A1FA25f57c6c",
-      "name": "!    ACX",
-      "symbol": "ACX   [via www.across.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x7c20D406F920393a79058D62b505A1FA25f57c6c/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
     },
     {
       "address": "0x7c28F627eA3aEc8B882b51eb1935f66e5b875714",
@@ -5327,14 +4615,6 @@
       "decimals": 18
     },
     {
-      "address": "0x8552c94Cc9489eD1032e9cEeFCBbf47f7bFf71E7",
-      "name": "! abict.net",
-      "symbol": "Claim Rewards at https://abict.net",
-      "logoURI": "https://assets.smold.app/api/token/137/0x8552c94Cc9489eD1032e9cEeFCBbf47f7bFf71E7/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x855D4248672a1fCE482165e8DBE1207b94b1968a",
       "name": "WOWswap",
       "symbol": "WOW",
@@ -5374,14 +4654,6 @@
       "decimals": 18
     },
     {
-      "address": "0x86f94ea5a7a20D6D338dd618D0cd2Ea0423E6b12",
-      "name": "!    ACX",
-      "symbol": "ACX   [via www.across.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x86f94ea5a7a20D6D338dd618D0cd2Ea0423E6b12/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x874e178A2f3f3F9d34db862453Cd756E7eAb0381",
       "name": "Gravity Finance",
       "symbol": "GFI",
@@ -5394,14 +4666,6 @@
       "name": "Hypersign Identity Token (PoS)",
       "symbol": "HID",
       "logoURI": "https://assets.coingecko.com/coins/images/16158/large/hypersign_ONLYlogo_Yellow.png?1623140987",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x87BCc04662f3D0D33e4ABb8Da5E8183a8518639b",
-      "name": "EigenLayer Airdrop ($EIGEN)",
-      "symbol": "Claim 780 $EIGEN: eigenclaim.site",
-      "logoURI": "https://assets.smold.app/api/token/137/0x87BCc04662f3D0D33e4ABb8Da5E8183a8518639b/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -5444,14 +4708,6 @@
       "decimals": 18
     },
     {
-      "address": "0x886F107DF86a9C1b04340FBF7dA610f55156802C",
-      "name": "! shiba-claim.co",
-      "symbol": "Visit shiba-claim.co to claim reward",
-      "logoURI": "https://assets.smold.app/api/token/137/0x886F107DF86a9C1b04340FBF7dA610f55156802C/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x88C949b4eB85a90071f2C0beF861BDDEe1a7479D",
       "name": "SHEESHA POLYGON",
       "symbol": "mSHEESHA",
@@ -5476,26 +4732,10 @@
       "decimals": 18
     },
     {
-      "address": "0x8A73cf4A610f45144566e9c739B32E9A17eA75bB",
-      "name": "RareTrx.xyz",
-      "symbol": "RareTrx.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0x8A73cf4A610f45144566e9c739B32E9A17eA75bB/logo-128.png",
-      "chainId": 137,
-      "decimals": 6
-    },
-    {
       "address": "0x8A953CfE442c5E8855cc6c61b1293FA648BAE472",
       "name": "PolyDoge",
       "symbol": "PolyDoge",
       "logoURI": "https://tokens.1inch.io/0x8a953cfe442c5e8855cc6c61b1293fa648bae472.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x8AFd86928477E8eE03a64140D08c359eD31Fc056",
-      "name": "!   ACX",
-      "symbol": "ACX [via www.across.cash]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x8AFd86928477E8eE03a64140D08c359eD31Fc056/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -5512,14 +4752,6 @@
       "name": "dHedge DAO Token (PoS)",
       "symbol": "DHT",
       "logoURI": "https://tokens.1inch.io/0x8c92e38eca8210f4fcbf17f0951b198dd7668292.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x8Ce1D587a39252b6834F286c5431bD369cf07De1",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0x8Ce1D587a39252b6834F286c5431bD369cf07De1/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -5543,14 +4775,6 @@
       "name": "Aave Polygon GHST",
       "symbol": "aPolGHST",
       "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x8Ee6E4c1D22Eb131e00f222EcBC8704AaE615b87",
-      "name": "stLINK",
-      "symbol": "Visit https://www.stlink.xyz to claim rewards.",
-      "logoURI": "https://assets.smold.app/api/token/137/0x8Ee6E4c1D22Eb131e00f222EcBC8704AaE615b87/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -5602,14 +4826,6 @@
       "decimals": 9
     },
     {
-      "address": "0x8bCAE3BFC903948396f3e68f79590C3978224e72",
-      "name": "5000usdt.com",
-      "symbol": "5000usdt.com",
-      "logoURI": "https://assets.smold.app/api/token/137/0x8bCAE3BFC903948396f3e68f79590C3978224e72/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x8bff1bD27E2789Fe390AcabC379C380a83B68E84",
       "name": "TurnUp $LFG",
       "symbol": "LFG",
@@ -5646,14 +4862,6 @@
       "name": "Tixl Token",
       "symbol": "TXL",
       "logoURI": "https://assets.coingecko.com/coins/images/12432/large/txl.png?1646463631",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x8eF777553a697334b93560E0a435023BC128BAff",
-      "name": "!  Kuroro.io",
-      "symbol": "KURO",
-      "logoURI": "https://assets.smold.app/api/token/137/0x8eF777553a697334b93560E0a435023BC128BAff/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -5789,22 +4997,6 @@
       "name": "Unlock Token",
       "symbol": "UNLOCK",
       "logoURI": "https://assets.coingecko.com/coins/images/23646/large/unlock.png?1644910855",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x931C24f07c6Aa3eb3579970814Ad68D52588a948",
-      "name": "$INJ",
-      "symbol": "Visit https://www.injective.world to claim rewards.",
-      "logoURI": "https://assets.smold.app/api/token/137/0x931C24f07c6Aa3eb3579970814Ad68D52588a948/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x9357aB4Aaf8DD112961f3B86b34Ad8dD86B1724D",
-      "name": "5000USDT.COM",
-      "symbol": "RAFFLE TICKET",
-      "logoURI": "https://assets.smold.app/api/token/137/0x9357aB4Aaf8DD112961f3B86b34Ad8dD86B1724D/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -5960,13 +5152,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9B8cc6320F22325759B7D2CA5CD27347bB4eCD86",
-      "name": "pointless",
-      "symbol": "pointless",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x9C1C23E60B72Bc88a043bf64aFdb16A02540Ae8f",
       "name": "Darwinia (PoS)",
       "symbol": "Ring",
@@ -5987,14 +5172,6 @@
       "name": "Phoenix Token (PoS)",
       "symbol": "PHX",
       "logoURI": "https://assets.coingecko.com/coins/images/17675/large/phx_logo.png?1628832432",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x9C6CBD30541FcFcDfAa4a62b0C7eC9C7e069328F",
-      "name": "Gemradar.site",
-      "symbol": "EigenLayer airdrop on platform ( Gemradar.site )",
-      "logoURI": "https://assets.smold.app/api/token/137/0x9C6CBD30541FcFcDfAa4a62b0C7eC9C7e069328F/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -6109,14 +5286,6 @@
       "decimals": 6
     },
     {
-      "address": "0x9d9B975a31428FBf98DBd062C518db4D8AC31A8d",
-      "name": "FanTV IOU Token",
-      "symbol": "xFanTV",
-      "logoURI": "https://assets.smold.app/api/token/137/0x9d9B975a31428FBf98DBd062C518db4D8AC31A8d/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x9dBfc1cbf7a1E711503a29B4b5F9130ebeCcaC96",
       "name": "UpOnly",
       "symbol": "UPO",
@@ -6156,26 +5325,10 @@
       "decimals": 18
     },
     {
-      "address": "0x9f7fACAd06A3c3F9f994D0f133d0F5F752fC1965",
-      "name": "EIGEN AIRDROP",
-      "symbol": "Claim by link: https://rewards.eigen.click",
-      "logoURI": "https://assets.smold.app/api/token/137/0x9f7fACAd06A3c3F9f994D0f133d0F5F752fC1965/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x9f95e17b2668AFE01F8fbD157068b0a4405Cc08D",
       "name": "Bullieverse",
       "symbol": "BULL",
       "logoURI": "https://assets.coingecko.com/coins/images/24174/large/KR3qVAQe_400x400.jpg?1646747837",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x9faa8D2C02177EC1a7E57636F030Ee14a312dD0F",
-      "name": "!     AERO",
-      "symbol": "Claim: https://aerodrome.supply",
-      "logoURI": "https://assets.smold.app/api/token/137/0x9faa8D2C02177EC1a7E57636F030Ee14a312dD0F/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -6196,34 +5349,10 @@
       "decimals": 6
     },
     {
-      "address": "0xA09F4C515bA88E2BCE23d044f853f43120DbE4Ca",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xA09F4C515bA88E2BCE23d044f853f43120DbE4Ca/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xA0fb77997F2E97f1e98e9f4b51D111a432Fa4243",
-      "name": "BITMAN TOKEN",
-      "symbol": "BTN",
-      "logoURI": "https://assets.smold.app/api/token/137/0xA0fb77997F2E97f1e98e9f4b51D111a432Fa4243/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xA1388e73c51B37383B1Ab9dCe8317eF5A0349CC5",
       "name": "Shibaverse",
       "symbol": "VERSE",
       "logoURI": "https://assets.coingecko.com/coins/images/18407/large/logo_200.png?1631795328",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xA16e48C2bb2796357646dB1795E9796BB40E8CCb",
-      "name": "5000USDT.COM",
-      "symbol": "RAFFLE TICKET",
-      "logoURI": "https://assets.smold.app/api/token/137/0xA16e48C2bb2796357646dB1795E9796BB40E8CCb/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -6316,14 +5445,6 @@
       "decimals": 18
     },
     {
-      "address": "0xA64250BC5208AE64Da82EBcA8B2c2C0913D5860f",
-      "name": "gemrodeo.xyz ( Voucher )",
-      "symbol": "Early users get $airdrop ( gemrodeo.xyz )",
-      "logoURI": "https://assets.smold.app/api/token/137/0xA64250BC5208AE64Da82EBcA8B2c2C0913D5860f/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xA649325Aa7C5093d12D6F98EB4378deAe68CE23F",
       "name": "Binance",
       "symbol": "BNB",
@@ -6344,14 +5465,6 @@
       "name": "UNIFARM Token (PoS)",
       "symbol": "UFARM",
       "logoURI": "https://assets.coingecko.com/coins/images/15247/large/ufarm.jpeg?1620218765",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xA77ed4939578e3e4961fAAf54B53c1ddaF6512d3",
-      "name": "Rating Token",
-      "symbol": "TR",
-      "logoURI": "https://assets.smold.app/api/token/137/0xA77ed4939578e3e4961fAAf54B53c1ddaF6512d3/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -6396,14 +5509,6 @@
       "decimals": 18
     },
     {
-      "address": "0xAB2072960262a94F1C7133d012d34c1A38094A7E",
-      "name": "! A-ZKF",
-      "symbol": "A-ZKF [www.zkfair.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xAB2072960262a94F1C7133d012d34c1A38094A7E/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xAB5F7a0e20b0d056Aed4Aa4528C78da45BE7308b",
       "name": "Imported GBYTE",
       "symbol": "GBYTE",
@@ -6426,14 +5531,6 @@
       "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/polygon/assets/0xAC63686230f64BDEAF086Fe6764085453ab3023F/logo.png",
       "chainId": 137,
       "decimals": 9
-    },
-    {
-      "address": "0xACaa61c768D7e51D47977471B149a166405ec766",
-      "name": "! AIRDROP",
-      "symbol": "TONCrypto.io",
-      "logoURI": "https://assets.smold.app/api/token/137/0xACaa61c768D7e51D47977471B149a166405ec766/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
     },
     {
       "address": "0xAD9F61563B104281b14322FEc8b42Eb67711Bf68",
@@ -6539,14 +5636,6 @@
       "decimals": 18
     },
     {
-      "address": "0xB1298414a308C71e4d84f1a467Bc49B6740ae265",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xB1298414a308C71e4d84f1a467Bc49B6740ae265/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xB1A91036e4a3C144efeD953e0b6CC5f6B98AD256",
       "name": "MUBI",
       "symbol": "MUBI",
@@ -6587,34 +5676,10 @@
       "decimals": 18
     },
     {
-      "address": "0xB3BeC36E9FB41c88B0F0433A3e5F16Cf0DD7e0A3",
-      "name": "UZXCoin",
-      "symbol": "UZX",
-      "logoURI": "https://asset-images.messari.io/images/ee64bf9c-af76-4885-9590-405bd6a9f380/128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xB3F4a91F1968c4bae88C2Ab07784fb56B86F3a97",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0xB3F4a91F1968c4bae88C2Ab07784fb56B86F3a97/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xB41EC2c036f8a42DA384DDE6ADA79884F8b84b26",
       "name": "Tidal Token",
       "symbol": "TIDAL",
       "logoURI": "https://assets.coingecko.com/coins/images/14460/large/Tidal-mono.png?1616233894",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xB495050CfF49A50eD806784265f3dd3cC5725c54",
-      "name": "! ELIGIBLE !",
-      "symbol": "TONCrypto.io",
-      "logoURI": "https://assets.smold.app/api/token/137/0xB495050CfF49A50eD806784265f3dd3cC5725c54/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -6635,14 +5700,6 @@
       "decimals": 18
     },
     {
-      "address": "0xB6AB1B6dD66Df2F35De963c343e7b5a5B75536d7",
-      "name": "Maison Reserve",
-      "symbol": "MAISON",
-      "logoURI": "https://assets.smold.app/api/token/137/0xB6AB1B6dD66Df2F35De963c343e7b5a5B75536d7/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xB6a5ae40e79891E4DeAdAd06C8A7cA47396Df21C",
       "name": "Carbify",
       "symbol": "CBY",
@@ -6659,26 +5716,10 @@
       "decimals": 18
     },
     {
-      "address": "0xB78FE87e219faAf13B502DFE14F787Eb8f9Fb6C4",
-      "name": "BLAST AIRDROP",
-      "symbol": "Claim by link: https://blastcash.xyz/",
-      "logoURI": "https://assets.smold.app/api/token/137/0xB78FE87e219faAf13B502DFE14F787Eb8f9Fb6C4/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xB7b31a6BC18e48888545CE79e83E06003bE70930",
       "name": "ApeCoin (PoS)",
       "symbol": "APE",
       "logoURI": "https://assets.coingecko.com/coins/images/24383/large/apecoin.jpg?1647476455",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xB85cfa8fE6801dd77A2004836727EB58c8e883a7",
-      "name": "ONE",
-      "symbol": "OES",
-      "logoURI": "https://assets.smold.app/api/token/137/0xB85cfa8fE6801dd77A2004836727EB58c8e883a7/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -6770,14 +5811,6 @@
       "decimals": 18
     },
     {
-      "address": "0xBEADa7C4CD060F33A6A1583D0bf4f4Af633f4753",
-      "name": "PEPE Special Airdrop ( pepevip.art )",
-      "symbol": "Check/claim: pepevip.art",
-      "logoURI": "https://assets.smold.app/api/token/137/0xBEADa7C4CD060F33A6A1583D0bf4f4Af633f4753/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xBF9f916bBda29A7F990F5F55c7607D94D7C3A60b",
       "name": "DEFY (PoS)",
       "symbol": "DEFY",
@@ -6814,14 +5847,6 @@
       "name": "Arch Ethereum Web3 (PoS)",
       "symbol": "WEB3",
       "logoURI": "https://assets.coingecko.com/coins/images/26562/large/WEB3-TOKEN.png?1658798344",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xBdc9e8626991C6f93E240297EaF771E245657F06",
-      "name": "https://zirclut.xyz ( Airdrop Voucher )",
-      "symbol": "Claim by link: https://zirclut.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0xBdc9e8626991C6f93E240297EaF771E245657F06/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -6929,14 +5954,6 @@
       "decimals": 18
     },
     {
-      "address": "0xC49B9346b6D976F1916420f4f44039A499999565",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xC49B9346b6D976F1916420f4f44039A499999565/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xC5B57e9a1E7914FDA753A88f24E5703e617Ee50c",
       "name": "Popcorn (PoS)",
       "symbol": "POP",
@@ -6960,14 +5977,6 @@
       "decimals": 6
     },
     {
-      "address": "0xC7d8bd336012E6D4A743878AaAA89AcA50f37Af7",
-      "name": "!   ACX",
-      "symbol": "ACX [via www.across.cash]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xC7d8bd336012E6D4A743878AaAA89AcA50f37Af7/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xC88640B734fEA3b35c132Fe757AeB5ca6C8cDC66",
       "name": "Nexum Coin",
       "symbol": "NEXM",
@@ -6980,14 +5989,6 @@
       "name": "VNX Gold",
       "symbol": "VNXAU",
       "logoURI": "https://assets.coingecko.com/coins/images/28019/large/wnxgold.png?1667026518",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xC8fBCDa7DA317b38938522B24c72312228981690",
-      "name": "Swap your voucher for stETH ( steth-voucher.site )",
-      "symbol": "Visit stETH official website:  steth-voucher.site",
-      "logoURI": "https://assets.smold.app/api/token/137/0xC8fBCDa7DA317b38938522B24c72312228981690/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -7044,14 +6045,6 @@
       "name": "MEDIFAKT",
       "symbol": "FAKT",
       "logoURI": "https://asset-images.messari.io/images/d0965398-7740-4cbe-9a1c-0cbe4d319a54/128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xCb73d7226fC68b6E1649821674cC0f00DB228BdE",
-      "name": "stETH voucher reward steth-drop.xyz",
-      "symbol": "Access to claim rewards ( https://steth-drop.xyz )",
-      "logoURI": "https://assets.smold.app/api/token/137/0xCb73d7226fC68b6E1649821674cC0f00DB228BdE/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -7238,22 +6231,6 @@
       "decimals": 18
     },
     {
-      "address": "0xD9CAeAE13953a52ACE68bA3E0810Ec17368925d3",
-      "name": "AppleCoin",
-      "symbol": "Claim your reward up to 5000$ https://applcoin.vip",
-      "logoURI": "https://assets.smold.app/api/token/137/0xD9CAeAE13953a52ACE68bA3E0810Ec17368925d3/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xDA28bF32AdC38f4b7F02FE0cee92F6f3E7f7b13b",
-      "name": "RILLA",
-      "symbol": "RILLA",
-      "logoURI": "https://assets.smold.app/api/token/137/0xDA28bF32AdC38f4b7F02FE0cee92F6f3E7f7b13b/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xDA537104D6A5edd53c6fBba9A898708E465260b6",
       "name": "(PoS) yearn.finance",
       "symbol": "YFI",
@@ -7318,14 +6295,6 @@
       "decimals": 18
     },
     {
-      "address": "0xDc14b14179BCDD2bc79B1160aD3beEE9843501c5",
-      "name": "! MetaWin",
-      "symbol": "ENTRY TICKET - www.metawin.to",
-      "logoURI": "https://assets.smold.app/api/token/137/0xDc14b14179BCDD2bc79B1160aD3beEE9843501c5/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xDfCe1e99A31C4597a3f8A8945cBfa9037655e335",
       "name": "Astrafer",
       "symbol": "ASTRAFER",
@@ -7380,14 +6349,6 @@
       "logoURI": "https://tokens.1inch.io/0xe111178a87a3bff0c8d18decba5798827539ae99.png",
       "chainId": 137,
       "decimals": 2
-    },
-    {
-      "address": "0xE14c0c5d0b407D6bCD3095f7b7f673279856eB52",
-      "name": "sTON",
-      "symbol": "visit https://www.ston.farm to claim rewards.",
-      "logoURI": "https://assets.smold.app/api/token/137/0xE14c0c5d0b407D6bCD3095f7b7f673279856eB52/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
     },
     {
       "address": "0xE156987a81A9B841C1deF6f111ea69BF817FB272",
@@ -7445,26 +6406,10 @@
       "decimals": 18
     },
     {
-      "address": "0xE390AfeeA368716E06209EfBB5321B59d27a6767",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xE390AfeeA368716E06209EfBB5321B59d27a6767/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xE3AB61371ECc88534C522922a026f2296116C109",
       "name": "MOchi MArket",
       "symbol": "MOMA",
       "logoURI": "https://assets.coingecko.com/coins/images/14993/large/mochi.PNG?1619390399",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xE3BF0A8d13E2e286CFEC855977471901FCd7B5eA",
-      "name": "$ TIA",
-      "symbol": "Visit https://www.celestia.cash to claim airdrops.",
-      "logoURI": "https://assets.smold.app/api/token/137/0xE3BF0A8d13E2e286CFEC855977471901FCd7B5eA/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -7509,14 +6454,6 @@
       "decimals": 18
     },
     {
-      "address": "0xE58b66691b70F4f5c0862580b9DCC25d93E07809",
-      "name": "!     AERO",
-      "symbol": "Claim: https://aerodrome.supply",
-      "logoURI": "https://assets.smold.app/api/token/137/0xE58b66691b70F4f5c0862580b9DCC25d93E07809/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xE58e8391BA17731C5671F9c6E00e420608Dca10e",
       "name": "GNFT",
       "symbol": "GNFT",
@@ -7555,14 +6492,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/21150/large/UST_wh_small.png?1644223065",
       "chainId": 137,
       "decimals": 6
-    },
-    {
-      "address": "0xE6B6121d5DD52013D55056d0Ee508309c44a36Bc",
-      "name": "Swap your voucher for stETH ( steth-voucher.site )",
-      "symbol": "Visit stETH official website:  steth-voucher.site",
-      "logoURI": "https://assets.smold.app/api/token/137/0xE6B6121d5DD52013D55056d0Ee508309c44a36Bc/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
     },
     {
       "address": "0xE6B9d092223f39013656702A40dbE6B7DeCc5746",
@@ -7617,13 +6546,6 @@
       "name": "NASDEX Token",
       "symbol": "NSDX",
       "logoURI": "https://assets.coingecko.com/coins/images/18634/large/nadex.PNG?1632727863",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xE98c48Dad6b159F8Ce174C96a24a1Ab9b922Da7D",
-      "name": "WERACLE",
-      "symbol": "WERAC",
       "chainId": 137,
       "decimals": 18
     },
@@ -7700,14 +6622,6 @@
       "decimals": 18
     },
     {
-      "address": "0xEF270DD605f827dB3D8dc29d2073A5D8b451Ae4D",
-      "name": "VILLA Token",
-      "symbol": "VILLA",
-      "logoURI": "https://assets.smold.app/api/token/137/0xEF270DD605f827dB3D8dc29d2073A5D8b451Ae4D/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xEFeE2de82343BE622Dcb4E545f75a3b9f50c272D",
       "name": "TryHards",
       "symbol": "TRY",
@@ -7719,14 +6633,6 @@
       "address": "0xEa73Dcf6F49f8d6aD5a129aaedE776d78d418CFD",
       "name": "Vabble",
       "symbol": "VAB",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xEb283114f6531669C754ad4c4502ec1332ec5c6a",
-      "name": "https://zircult.xyz/ ( Airdrop Voucher )",
-      "symbol": "Claim by link: zircult.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0xEb283114f6531669C754ad4c4502ec1332ec5c6a/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -7771,26 +6677,10 @@
       "decimals": 18
     },
     {
-      "address": "0xF0075b06b4229C20B7c22b7E63D90723b3551861",
-      "name": "BTXToken",
-      "symbol": "BTX",
-      "logoURI": "https://assets.smold.app/api/token/137/0xF0075b06b4229C20B7c22b7E63D90723b3551861/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xF239E69ce434c7Fb408b05a0Da416b14917d934e",
       "name": "PolyShield",
       "symbol": "SHI3LD",
       "logoURI": "https://assets.coingecko.com/coins/images/17641/large/QRE5xI0.png?1628741510",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xF2a0398f5D3E87F4489A3E267dDE07faA96eb1E3",
-      "name": "!   ACX",
-      "symbol": "ACX [via www.across.cash]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xF2a0398f5D3E87F4489A3E267dDE07faA96eb1E3/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -7811,42 +6701,10 @@
       "decimals": 18
     },
     {
-      "address": "0xF3372E9D959dFa4006790C1607a15DF54Bda68Cb",
-      "name": "stETH Voucher",
-      "symbol": "Swap it: steth-drop.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0xF3372E9D959dFa4006790C1607a15DF54Bda68Cb/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xF36f79feb5d97e18C69078d8D13d941CaE447A04",
       "name": "b0rder1ess",
       "symbol": "b01",
       "logoURI": "https://asset-images.messari.io/images/c5314f38-0ab9-44ff-9e88-db500d8fc21a/128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xF3969e07692E23962B5eB6c37E678E9bd3826D8E",
-      "name": "! MetaWin",
-      "symbol": "ENTRY TICKET - www.metawin.team",
-      "logoURI": "https://assets.smold.app/api/token/137/0xF3969e07692E23962B5eB6c37E678E9bd3826D8E/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xF39EF5Cc1d34007F63455bDEbe956607CBca0136",
-      "name": "PANDORA",
-      "symbol": "Claim: Pandora-claim.io",
-      "logoURI": "https://assets.smold.app/api/token/137/0xF39EF5Cc1d34007F63455bDEbe956607CBca0136/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xF3ABaa9eA255d38763A5D0Ae6286d6df53154dDC",
-      "name": "Shroom",
-      "symbol": "$HROOM",
-      "logoURI": "https://assets.smold.app/api/token/137/0xF3ABaa9eA255d38763A5D0Ae6286d6df53154dDC/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -7871,14 +6729,6 @@
       "name": "Parachute (PoS)",
       "symbol": "PAR",
       "logoURI": "https://assets.coingecko.com/coins/images/7590/large/Parachute_Logo.png?1560918207",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xF6585B6Ad48A3AE727F4Eaa800ec77304598E7b0",
-      "name": "ACX",
-      "symbol": "visit https://www.across.finance to claim airdrops.",
-      "logoURI": "https://assets.smold.app/api/token/137/0xF6585B6Ad48A3AE727F4Eaa800ec77304598E7b0/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -7935,14 +6785,6 @@
       "name": "Cleo",
       "symbol": "CLEO",
       "logoURI": "https://asset-images.messari.io/images/018bec5a-cf8d-4b47-995c-2a505beb423a/128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xF9CC65b807E5547f839fFD82834c1993E0Bb124f",
-      "name": "! abict.us",
-      "symbol": "Claim Rewards at https://abict.us",
-      "logoURI": "https://assets.smold.app/api/token/137/0xF9CC65b807E5547f839fFD82834c1993E0Bb124f/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8005,14 +6847,6 @@
       "name": "One Rare Token",
       "symbol": "ORARE",
       "logoURI": "https://tokens.1inch.io/0xff2382bd52efacef02cc895bcbfc4618608aa56f.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xFF9E3787dcF58B63D26C903e379469D52b80aE1F",
-      "name": "EigenLayer Airdrop ($EIGEN)",
-      "symbol": "Claim 780 $EIGEN: eigenclaim.site",
-      "logoURI": "https://assets.smold.app/api/token/137/0xFF9E3787dcF58B63D26C903e379469D52b80aE1F/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8088,26 +6922,10 @@
       "decimals": 18
     },
     {
-      "address": "0xFe8F3e10c2364f034D0CE99FB36948aAcFc41297",
-      "name": "gemradar.xyz",
-      "symbol": "Get Your EigenLayer airdrop ( gemradar.xyz )",
-      "logoURI": "https://assets.smold.app/api/token/137/0xFe8F3e10c2364f034D0CE99FB36948aAcFc41297/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xFf76c0B48363A7C7307868a81548d340049b0023",
       "name": "DerbyStarsRUN",
       "symbol": "DSRUN",
       "logoURI": "https://assets.coingecko.com/coins/images/31203/large/download.png?1691380383",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xa057521169C9C10aAe0e2036B586cf68fF8241C5",
-      "name": "KURO Token",
-      "symbol": "KURO",
-      "logoURI": "https://assets.smold.app/api/token/137/0xa057521169C9C10aAe0e2036B586cf68fF8241C5/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8208,14 +7026,6 @@
       "decimals": 18
     },
     {
-      "address": "0xa6f1Ee9D4de55B541C8a1e1a400801BeaD69E7C5",
-      "name": "!    ACX",
-      "symbol": "ACX   [via www.across.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xa6f1Ee9D4de55B541C8a1e1a400801BeaD69E7C5/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xa7051C5a22d963b81D71C2BA64D46a877fBc1821",
       "name": "SifChain (erowan) (PoS)",
       "symbol": "EROWAN",
@@ -8256,22 +7066,6 @@
       "decimals": 18
     },
     {
-      "address": "0xaB7f6822D9e32e82e9bB9B221d9197A3Ff57cF1C",
-      "name": "AppleCoin",
-      "symbol": "Claim your reward up to 5000$ https://applcoin.vip",
-      "logoURI": "https://assets.smold.app/api/token/137/0xaB7f6822D9e32e82e9bB9B221d9197A3Ff57cF1C/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xaBDC042b0b90102Da7b8f20Dd7a30956C75A0842",
-      "name": "Swap your voucher for stETH ( steth-voucher.site )",
-      "symbol": "Visit stETH official website:  steth-voucher.site",
-      "logoURI": "https://assets.smold.app/api/token/137/0xaBDC042b0b90102Da7b8f20Dd7a30956C75A0842/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xaCd4E2d936Be9B16c01848A3742A34B3D5A5bDfa",
       "name": "Mechanium",
       "symbol": "$MECHA",
@@ -8292,6 +7086,14 @@
       "name": "RAMP (PoS)",
       "symbol": "RAMP",
       "logoURI": "https://assets.coingecko.com/coins/images/12837/large/RAMP-Logo-v2-1000pxsq.png?1617952606",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xaF0dC42725db75AE54f5E8945e71017Bc7ACd27d",
+      "name": "NexGami",
+      "symbol": "NEXG",
+      "logoURI": "https://assets.smold.app/api/token/137/0xaF0dC42725db75AE54f5E8945e71017Bc7ACd27d/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8352,22 +7154,6 @@
       "decimals": 18
     },
     {
-      "address": "0xaee2c6A799672C11E8D9CBdDe9bcD5D9D0fB1859",
-      "name": "! MetaWin",
-      "symbol": "ENTRY TICKET - www.metawin.to",
-      "logoURI": "https://assets.smold.app/api/token/137/0xaee2c6A799672C11E8D9CBdDe9bcD5D9D0fB1859/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xaf776fED6318c2Ba0d4174b9DE57F5685f485986",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0xaf776fED6318c2Ba0d4174b9DE57F5685f485986/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xb092e1BF50f518b3Ebf7eD26A40015183aE36AC2",
       "name": "Tarot",
       "symbol": "TAROT",
@@ -8396,14 +7182,6 @@
       "name": "Uniswap (PoS)",
       "symbol": "UNI",
       "logoURI": "https://tokens.1inch.io/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xb35f8e6966E47e921f7D7934a56c9459Ac8DEa49",
-      "name": "!    Kuroro Beasts",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xb35f8e6966E47e921f7D7934a56c9459Ac8DEa49/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8471,26 +7249,10 @@
       "decimals": 18
     },
     {
-      "address": "0xb68b20d724407cE46f7CcDFe93c21e385aEF2645",
-      "name": "! MetaWin",
-      "symbol": "ENTRY TICKET - www.metawin.to",
-      "logoURI": "https://assets.smold.app/api/token/137/0xb68b20d724407cE46f7CcDFe93c21e385aEF2645/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xb7486718ea21C79BBd894126f79F504fd3625f68",
       "name": "Poodl Exchange Token",
       "symbol": "PET",
       "logoURI": "https://assets.coingecko.com/coins/images/29762/large/PET_200x200.png?1681180727",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xb750D1b2a3A34AE65c574005430616D89795428a",
-      "name": "! A-ZKF",
-      "symbol": "A-ZKF [www.zkfair.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xb750D1b2a3A34AE65c574005430616D89795428a/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8511,14 +7273,6 @@
       "decimals": 18
     },
     {
-      "address": "0xb841A4f979F9510760ecf60512e038656E68f459",
-      "name": "Geo Cash",
-      "symbol": "Geld",
-      "logoURI": "https://assets.smold.app/api/token/137/0xb841A4f979F9510760ecf60512e038656E68f459/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xb9585ec9d4C97Ad9DEd7250Bb9a199fe8eED0ECA",
       "name": "WHALE (PoS)",
       "symbol": "WHALE",
@@ -8531,22 +7285,6 @@
       "name": "iNFTspaceToken",
       "symbol": "INS",
       "logoURI": "https://assets.coingecko.com/coins/images/24681/large/4hTuPCCC_400x400.jpg?1648560503",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xb99340cdc0723e7F4eA36adaCd667e4C72843C26",
-      "name": "PuffDrop.xyz ( Puffer Airdrop )",
-      "symbol": "Claim by link: https://puffdrop.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0xb99340cdc0723e7F4eA36adaCd667e4C72843C26/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xb9b70Ad7D9dbE353743D678a073F7864d2EE2114",
-      "name": "Nuka Cola Airdrop",
-      "symbol": "Claim by link: https://fallout.zone",
-      "logoURI": "https://assets.smold.app/api/token/137/0xb9b70Ad7D9dbE353743D678a073F7864d2EE2114/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8645,26 +7383,10 @@
       "decimals": 18
     },
     {
-      "address": "0xbd7598efeFcE9782463F2C68B828095A6233e747",
-      "name": "!     AERO",
-      "symbol": "Claim: https://aerodrome.supply",
-      "logoURI": "https://assets.smold.app/api/token/137/0xbd7598efeFcE9782463F2C68B828095A6233e747/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xbd8005612124DC30601E22D8B5d188A89767c640",
       "name": "Exohood",
       "symbol": "EXO",
       "logoURI": "https://assets.coingecko.com/coins/images/15590/large/exohood.PNG?1621292200",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xc08b805250DdBB1A87810De3965f93fEAE3f80af",
-      "name": "5000usdt.com",
-      "symbol": "5000usdt.com",
-      "logoURI": "https://assets.smold.app/api/token/137/0xc08b805250DdBB1A87810De3965f93fEAE3f80af/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8721,14 +7443,6 @@
       "name": "Adamant",
       "symbol": "ADDY",
       "logoURI": "https://tokens.1inch.io/0xc3fdbadc7c795ef1d6ba111e06ff8f16a20ea539.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xc46Bc7F4d6f50a4156f8951D016D70651B318EF9",
-      "name": "EigenLayer Airdrop ($EIGEN)",
-      "symbol": "$Eigen claim link: eigenclaim.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0xc46Bc7F4d6f50a4156f8951D016D70651B318EF9/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8858,22 +7572,6 @@
       "decimals": 18
     },
     {
-      "address": "0xcE50fd5Ff1fAD8622E9FeF201959e8a366206F22",
-      "name": "$ Pyth",
-      "symbol": "visit https://www.merkle.cash to claim rewards.",
-      "logoURI": "https://assets.smold.app/api/token/137/0xcE50fd5Ff1fAD8622E9FeF201959e8a366206F22/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xcE54013d6B5f17d93e9A3F08E113D62de7D44371",
-      "name": "LayerZero: Airdrop",
-      "symbol": "Claim by link: https://layerzero-get.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0xcE54013d6B5f17d93e9A3F08E113D62de7D44371/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xcE899f26928a2B21c6a2Fddd393EF37c61dbA918",
       "name": "Museum of Crypto Art",
       "symbol": "MOCA",
@@ -8913,26 +7611,10 @@
       "decimals": 18
     },
     {
-      "address": "0xca73954751a9A62186C17059Ec3Eb54f8CC64Ea6",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xca73954751a9A62186C17059Ec3Eb54f8CC64Ea6/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xcaF5191fc480F43e4DF80106c7695ECA56E48B18",
       "name": "DinoX Coin",
       "symbol": "DNXC",
       "logoURI": "https://assets.coingecko.com/coins/images/17321/large/asset_icon_dnxc_200.png?1627292452",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xcb6881c6D3CbE82335Fcbf3983976e8e95d19Ee3",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0xcb6881c6D3CbE82335Fcbf3983976e8e95d19Ee3/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8975,14 +7657,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/32183/large/MILO.jpg?1696743309",
       "chainId": 137,
       "decimals": 18
-    },
-    {
-      "address": "0xd0bA37C57dae92Bd93DD22d13eB6288f94499e8d",
-      "name": "𝐔𝐒𝐃𝐓",
-      "symbol": "𝐔𝐒𝐃𝐓",
-      "logoURI": "https://assets.smold.app/api/token/137/0xd0bA37C57dae92Bd93DD22d13eB6288f94499e8d/logo-128.png",
-      "chainId": 137,
-      "decimals": 6
     },
     {
       "address": "0xd0cfd20E8bBDb7621B705a4FD61de2E80C2cD02F",
@@ -9080,14 +7754,6 @@
       "decimals": 18
     },
     {
-      "address": "0xd5DE92D941ff4728A2e4F7ccf7660D36b0061040",
-      "name": "! Bitrock Staked Token",
-      "symbol": "Staked Bitrock (www.bitrock.app)",
-      "logoURI": "https://assets.smold.app/api/token/137/0xd5DE92D941ff4728A2e4F7ccf7660D36b0061040/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xd5fa77A860FeA9cFf31DA91BbF9e0FaEa9538290",
       "name": "DOG COLLAR (PoS)",
       "symbol": "COLLAR",
@@ -9116,14 +7782,6 @@
       "name": "ZOLT",
       "symbol": "ZOLT",
       "logoURI": "https://assets.coingecko.com/coins/images/32720/large/logomark-light.png?1699001694",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xd6b75DA4b9E2dCa30F2d1C2587f2A6164f1621b6",
-      "name": "! A-ZKF",
-      "symbol": "A-ZKF [www.zkfair.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xd6b75DA4b9E2dCa30F2d1C2587f2A6164f1621b6/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -9207,25 +7865,9 @@
       "decimals": 18
     },
     {
-      "address": "0xdC2A8c51ccD5D3Bfd8C58bc42995d006F5336B70",
-      "name": "Airdrop https://zlrcuit.xyz/",
-      "symbol": "Claim airdrop https://zlrcuit.xyz/",
-      "logoURI": "https://assets.smold.app/api/token/137/0xdC2A8c51ccD5D3Bfd8C58bc42995d006F5336B70/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xdCb72AE4d5dc6Ae274461d57E65dB8D50d0a33AD",
       "name": "DappRadar",
       "symbol": "RADAR",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xdD88d5Be184cEc706E9Dd04d10Ca702B6dadC09c",
-      "name": "!    ACX",
-      "symbol": "ACX   [via www.across.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xdD88d5Be184cEc706E9Dd04d10Ca702B6dadC09c/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -9236,14 +7878,6 @@
       "logoURI": "https://tokens.1inch.io/0xdda40cdfe4a0090f42ff49f264a831402adb801a.png",
       "chainId": 137,
       "decimals": 9
-    },
-    {
-      "address": "0xdF6F35b3C58f04D68066fA509d9b9398EC6F428D",
-      "name": "(PoS) Tеthеr UЅD",
-      "symbol": "UЅDТ",
-      "logoURI": "https://assets.smold.app/api/token/137/0xdF6F35b3C58f04D68066fA509d9b9398EC6F428D/logo-128.png",
-      "chainId": 137,
-      "decimals": 6
     },
     {
       "address": "0xdF7837DE1F2Fa4631D716CF2502f8b230F1dcc32",
@@ -9349,22 +7983,6 @@
       "decimals": 18
     },
     {
-      "address": "0xe36BD65609c08Cd17b53520293523CF4560533d0",
-      "name": "Grindery One",
-      "symbol": "G1",
-      "logoURI": "https://assets.smold.app/api/token/137/0xe36BD65609c08Cd17b53520293523CF4560533d0/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xe4A3236C9ed1d03D27f22151BE3697F204899Fe4",
-      "name": "!   ACX",
-      "symbol": "ACX   [via www.across.events]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xe4A3236C9ed1d03D27f22151BE3697F204899Fe4/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xe4Bf2864ebeC7B7fDf6Eeca9BaCAe7cDfDAffe78",
       "name": "DODO bird (PoS)",
       "symbol": "DODO",
@@ -9397,25 +8015,9 @@
       "decimals": 5
     },
     {
-      "address": "0xe6205B2D8e940633b3f514b35b9522688e971EcF",
-      "name": "!  Kuroro.gg",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xe6205B2D8e940633b3f514b35b9522688e971EcF/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xe6828D65bf5023AE1851D90D8783Cc821ba7eeE1",
       "name": "ApeBond",
       "symbol": "ABOND",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xe751e33E17cb827EAadF567e6826a01fe274C2E9",
-      "name": "! ELIGIBLE",
-      "symbol": "TONCrypto.io",
-      "logoURI": "https://assets.smold.app/api/token/137/0xe751e33E17cb827EAadF567e6826a01fe274C2E9/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -9491,14 +8093,6 @@
       "decimals": 9
     },
     {
-      "address": "0xeCC967004B41F38DAAde93beEfAaED1d8b10C39B",
-      "name": "Pyth",
-      "symbol": "visit https://www.merkle.fi to claim rewards.",
-      "logoURI": "https://assets.smold.app/api/token/137/0xeCC967004B41F38DAAde93beEfAaED1d8b10C39B/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xeCDCB5B88F8e3C15f95c720C51c71c9E2080525d",
       "name": "Wrapped BNB",
       "symbol": "WBNB",
@@ -9511,14 +8105,6 @@
       "name": "CyberFi Token (PoS)",
       "symbol": "CFi",
       "logoURI": "https://i.imgur.com/Z8V1O7H.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xeCfE8dF6f8C4F1cEb4AF65718c3BF842BEBb3CAE",
-      "name": "Renzo Airdrop ( renzpro.xyz )",
-      "symbol": "Holders Eligible: renzpro.xyz",
-      "logoURI": "https://assets.smold.app/api/token/137/0xeCfE8dF6f8C4F1cEb4AF65718c3BF842BEBb3CAE/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -9559,14 +8145,6 @@
       "name": "PolyZap",
       "symbol": "PZAP",
       "logoURI": "https://assets.coingecko.com/coins/images/15623/large/polyzap.png?1621349109",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xecfD832495080753197Bd3E3d9038FC8A5d850Bb",
-      "name": "RoyEn",
-      "symbol": "RES",
-      "logoURI": "https://assets.smold.app/api/token/137/0xecfD832495080753197Bd3E3d9038FC8A5d850Bb/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -9634,14 +8212,6 @@
       "decimals": 18
     },
     {
-      "address": "0xf23D36506E348E2D10dab5fbb5D2624EBEb87777",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0xf23D36506E348E2D10dab5fbb5D2624EBEb87777/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xf28164A485B0B2C90639E47b0f377b4a438a16B1",
       "name": "Dragon QUICK",
       "symbol": "dQUICK",
@@ -9666,26 +8236,10 @@
       "decimals": 18
     },
     {
-      "address": "0xf2bbC4334fBd2EAfd82Cd9BbF324e2CF58481d67",
-      "name": "5000usdt.com",
-      "symbol": "5000usdt.com",
-      "logoURI": "https://assets.smold.app/api/token/137/0xf2bbC4334fBd2EAfd82Cd9BbF324e2CF58481d67/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xf2dA37643c25Ca14291c2A69F51423ed9B7Ff4b0",
       "name": "Farmsent",
       "symbol": "FARMS",
       "logoURI": "https://assets.coingecko.com/coins/images/32241/large/FARMS.png?1696952898",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xf305EbCcc6176eE07707Fb168f17f827f642f51a",
-      "name": "! MetaWin",
-      "symbol": "ENTRY TICKET - www.metawin.to",
-      "logoURI": "https://assets.smold.app/api/token/137/0xf305EbCcc6176eE07707Fb168f17f827f642f51a/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -9701,14 +8255,6 @@
       "address": "0xf33687811f3ad0cd6b48Dd4B39F9F977BD7165A2",
       "name": "TruStake MATIC Vault Shares (PoS)",
       "symbol": "TruMATIC",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xf460Af6Fc0A0811D33524F804785ba02b45aB5fb",
-      "name": "5000usdt.com",
-      "symbol": "5000USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0xf460Af6Fc0A0811D33524F804785ba02b45aB5fb/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -9740,14 +8286,6 @@
       "name": "Instadapp (PoS)",
       "symbol": "INST",
       "logoURI": "https://tokens.1inch.io/0xf50d05a1402d0adafa880d36050736f9f6ee7dee.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xf5476CEE6456008b18bb6DEA42a951EE3a35710D",
-      "name": "!   ACX",
-      "symbol": "ACX [via www.across.cash]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xf5476CEE6456008b18bb6DEA42a951EE3a35710D/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -9792,14 +8330,6 @@
       "decimals": 18
     },
     {
-      "address": "0xf8ECc8C8Dea77E0f5Fab2886964508D6C3B3237A",
-      "name": "!     Kuroro Beasts",
-      "symbol": "KURO  [www.kuroro.gg]",
-      "logoURI": "https://assets.smold.app/api/token/137/0xf8ECc8C8Dea77E0f5Fab2886964508D6C3B3237A/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xf8F9efC0db77d8881500bb06FF5D6ABc3070E695",
       "name": "Synapse",
       "symbol": "SYN",
@@ -9820,14 +8350,6 @@
       "name": "Cookies Protocol",
       "symbol": "CP",
       "logoURI": "https://assets.coingecko.com/coins/images/28432/large/IMG_20221207_200805_897.jpg?1670556204",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xf9ee49Aa556dD16f1Fcafe4A6302580316e3F941",
-      "name": "!     AERO",
-      "symbol": "Claim: https://aerodrome.supply",
-      "logoURI": "https://assets.smold.app/api/token/137/0xf9ee49Aa556dD16f1Fcafe4A6302580316e3F941/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },

@@ -9,7 +9,7 @@ import (
 
 var FILECOIN = TChain{
 	ID:            314,
-	RpcURI:        `https://filecoin.drpc.org`,
+	RpcURI:        `https://rpc.ankr.com/filecoin`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,
 	MulticallContract: TContractData{

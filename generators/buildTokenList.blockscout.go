@@ -11,7 +11,6 @@ import (
 )
 
 var BLOCKSCOUTV5_URI = map[uint64]string{
-	5000:  `https://explorer.mantle.xyz/`,
 	42220: `https://explorer.celo.org/mainnet/`,
 }
 
@@ -21,10 +20,18 @@ var BLOCKSCOUTV6_URI = map[uint64]string{
 	10:      `https://optimism.blockscout.com`,
 	100:     `https://gnosis.blockscout.com`,
 	137:     `https://polygon.blockscout.com`,
+	314:     `https://filecoin.blockscout.com`, //No market cap
 	1101:    `https://zkevm.blockscout.com`,
-	1088:    `https://andromeda-explorer.metis.io`,
+	1088:    `https://andromeda-explorer.metis.io`, //No market cap
+	5000:    `https://explorer.mantle.xyz`,
 	8453:    `https://base.blockscout.com`,
-	7777777: `https://explorer.zora.energy/`,
+	7777777: `https://explorer.zora.energy`, //No market cap
+}
+
+var ALLOW_EMPTY_MARKET_CAP = map[uint64]bool{
+	314:     false,
+	1088:    true,
+	7777777: true,
 }
 
 func handleBlockScoutTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
@@ -59,9 +66,10 @@ func fetchBlockScoutV5TokenList(chainID uint64) []models.TokenListToken {
 func fetchBlockScoutV6TokenList(chainID uint64) []models.TokenListToken {
 	type TBlockScoutAPIResponse struct {
 		Items []struct {
-			Address string `json:"address"`
-			IconURI string `json:"icon_url"`
-			Type    string `json:"type"`
+			Address   string `json:"address"`
+			IconURI   string `json:"icon_url"`
+			Type      string `json:"type"`
+			MarketCap string `json:"circulating_market_cap,omitempty"`
 		} `json:"items"`
 		NextPage struct {
 			ContractAddressHash string `json:"contract_address_hash"`
@@ -83,6 +91,11 @@ func fetchBlockScoutV6TokenList(chainID uint64) []models.TokenListToken {
 		for _, token := range response.Items {
 			if token.Type == `ERC-721` || token.Type == `ERC-1155` {
 				continue
+			}
+			if token.MarketCap == `0` || token.MarketCap == `` {
+				if !ALLOW_EMPTY_MARKET_CAP[chainID] {
+					continue
+				}
 			}
 			tokens = append(tokens, common.HexToAddress(token.Address))
 		}

@@ -1,6 +1,7 @@
 package helpers
 
 import (
+	"bytes"
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
@@ -37,6 +38,47 @@ func FetchJSON[T any](uri string) (data T) {
 	}
 
 	if err := json.Unmarshal(body, &data); err != nil {
+		logs.Error(`Error unmarshal body for URI ` + uri + `: ` + err.Error())
+		return data
+	}
+	return data
+}
+
+func FetchJSONPost[T any](uri string) (data T) {
+	type Payload struct{}
+	payloadData := Payload{}
+	payloadBytes, err := json.Marshal(payloadData)
+	if err != nil {
+		logs.Error(err)
+		return data
+	}
+	body := bytes.NewReader(payloadBytes)
+
+	req, err := http.NewRequest("POST", uri, body)
+	if err != nil {
+		logs.Error(err)
+		return data
+	}
+	req.Header.Set("Accept", "application/json, text/plain, */*")
+	req.Header.Set("Content-Type", "application/json")
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		logs.Error(err)
+		return data
+	}
+	defer resp.Body.Close()
+	respBody, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		logs.Error(`Error reading body for URI ` + uri + `: ` + err.Error())
+		return data
+	}
+
+	if (resp.StatusCode < 200) || (resp.StatusCode > 299) {
+		logs.Error(`Error status code for URI ` + uri + `: ` + resp.Status)
+		return data
+	}
+
+	if err := json.Unmarshal(respBody, &data); err != nil {
 		logs.Error(`Error unmarshal body for URI ` + uri + `: ` + err.Error())
 		return data
 	}

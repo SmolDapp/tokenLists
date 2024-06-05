@@ -1,16 +1,16 @@
 {
   "name": "Tokenlistooor summary",
-  "timestamp": 1717290861,
+  "timestamp": 1717584609,
   "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
   "lists": [
     {
       "name": "Popular tokens",
       "description": "A curated list of popular tokens from all the token lists on tokenlistooor.",
-      "timestamp": "2024-06-02T01:14:21Z",
+      "timestamp": "2024-06-05T12:50:09+02:00",
       "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/popular.json",
       "keywords": [],
-      "tokenCount": 3107,
+      "tokenCount": 4496,
       "metadata": {
         "supportedChains": [
           1,
@@ -35,19 +35,19 @@
         ],
         "generationMethod": "API",
         "tokenCountPerChain": {
-          "1": 326,
+          "1": 1145,
           "10": 44,
           "100": 14,
-          "1088": 1734,
-          "1101": 18,
-          "137": 42,
+          "1088": 1733,
+          "1101": 12,
+          "137": 582,
           "250": 33,
-          "314": 7,
+          "314": 12,
           "324": 288,
           "42161": 19,
           "42220": 6,
           "43114": 115,
-          "5000": 1,
+          "5000": 33,
           "534352": 7,
           "56": 346,
           "59144": 54,
@@ -57,7 +57,7 @@
         }
       },
       "version": {
-        "major": 10,
+        "major": 12,
         "minor": 0,
         "patch": 0
       }
@@ -218,20 +218,21 @@
     {
       "name": "Blockscout",
       "description": "A list of tokens available on Blockscout, an Open-Source Explorer",
-      "timestamp": "2024-06-02T00:54:24Z",
+      "timestamp": "2024-06-05T12:48:04+02:00",
       "logoURI": "https://2383309224-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Lq1XoWGmy8zggj_u2fM%2Ficon%2FyFkt6mPJJvjKiSBBOppe%2FBS_logo_slack.png?alt=media",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/blockscout.json",
       "keywords": [
         "explorer",
         "blockscout"
       ],
-      "tokenCount": 7631,
+      "tokenCount": 5769,
       "metadata": {
         "supportedChains": [
           1,
           10,
           100,
           137,
+          314,
           1088,
           1101,
           5000,
@@ -241,20 +242,21 @@
         ],
         "generationMethod": "API",
         "tokenCountPerChain": {
-          "1": 1988,
-          "10": 775,
-          "100": 180,
-          "1088": 1734,
-          "1101": 578,
-          "137": 1251,
+          "1": 1983,
+          "10": 204,
+          "100": 92,
+          "1088": 1733,
+          "1101": 23,
+          "137": 1066,
+          "314": 1,
           "42220": 39,
-          "5000": 1,
+          "5000": 33,
           "7777777": 19,
-          "8453": 1066
+          "8453": 576
         }
       },
       "version": {
-        "major": 33,
+        "major": 34,
         "minor": 0,
         "patch": 0
       }
@@ -441,6 +443,31 @@
       "version": {
         "major": 82,
         "minor": 0,
+        "patch": 0
+      }
+    },
+    {
+      "name": "Filecoin (Static)",
+      "description": "A list of curated tokens available on Filecoin.",
+      "timestamp": "2024-06-05T11:39:37+02:00",
+      "logoURI": "https://assets.smold.app/api/chains/314/logo-128.png",
+      "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/filecoin-static.json",
+      "keywords": [
+        "filecoin"
+      ],
+      "tokenCount": 11,
+      "metadata": {
+        "supportedChains": [
+          314
+        ],
+        "generationMethod": "External",
+        "tokenCountPerChain": {
+          "314": 11
+        }
+      },
+      "version": {
+        "major": 0,
+        "minor": 1,
         "patch": 0
       }
     },
@@ -868,11 +895,11 @@
     {
       "name": "Tokenlistooor Token List",
       "description": "A curated list of tokens from all the token lists on tokenlistooor.",
-      "timestamp": "2024-06-02T01:13:45Z",
+      "timestamp": "2024-06-05T12:49:18+02:00",
       "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/tokenlistooor.json",
       "keywords": [],
-      "tokenCount": 4109,
+      "tokenCount": 6352,
       "metadata": {
         "supportedChains": [
           1,
@@ -897,29 +924,29 @@
         ],
         "generationMethod": "API",
         "tokenCountPerChain": {
-          "1": 727,
-          "10": 151,
-          "100": 14,
-          "1088": 1734,
-          "1101": 18,
-          "137": 239,
-          "250": 43,
-          "314": 7,
+          "1": 1963,
+          "10": 258,
+          "100": 19,
+          "1088": 1733,
+          "1101": 12,
+          "137": 811,
+          "250": 60,
+          "314": 12,
           "324": 288,
-          "42161": 284,
+          "42161": 345,
           "42220": 6,
           "43114": 115,
-          "5000": 1,
+          "5000": 33,
           "534352": 7,
           "56": 346,
           "59144": 54,
           "7777777": 19,
           "81457": 13,
-          "8453": 43
+          "8453": 258
         }
       },
       "version": {
-        "major": 233,
+        "major": 237,
         "minor": 0,
         "patch": 0
       }
@@ -1091,6 +1118,31 @@
         "major": 36,
         "minor": 18,
         "patch": 1
+      }
+    },
+    {
+      "name": "filecoin",
+      "description": "A list of tokens available through different Filecoin explorers.",
+      "timestamp": "2024-06-05T12:22:14+02:00",
+      "logoURI": "https://assets.smold.app/api/chains/314/logo-128.png",
+      "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/filecoin.json",
+      "keywords": [
+        "filecoin"
+      ],
+      "tokenCount": 9,
+      "metadata": {
+        "supportedChains": [
+          314
+        ],
+        "generationMethod": "External",
+        "tokenCountPerChain": {
+          "314": 9
+        }
+      },
+      "version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 0
       }
     },
     {

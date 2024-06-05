@@ -120,6 +120,20 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`filecoin`: {
+		Exec:             buildFilecoinTokenList,
+		Name:             `Filecoin`,
+		Description:      `A list of tokens available through different Filecoin explorers.`,
+		GenerationMethod: GenerationExternalList,
+		GeneratorType:    GeneratorToken,
+	},
+	`filecoin-static`: {
+		Exec:             buildFilecoinStaticTokenList,
+		Name:             `Filecoin (Static)`,
+		Description:      `A list of curated tokens available on Filecoin.`,
+		GenerationMethod: GenerationExternalList,
+		GeneratorType:    GeneratorToken,
+	},
 	`ledger`: {
 		Exec:             buildLedgersTokenList,
 		Name:             `Ledger`,

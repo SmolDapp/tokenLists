@@ -2,6 +2,7 @@ package main
 
 import (
 	"math"
+	"strings"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
@@ -73,6 +74,24 @@ func buildTokenListooorList() {
 			}
 
 			if existingToken, ok := allTokens[token.ChainID][helpers.ToAddress(token.Address)]; ok {
+				newOccurence := existingToken.Occurrence
+				if newOccurence != math.MaxInt32 {
+					foundInExtraTokens := false
+					for _, extraToken := range chains.CHAINS[token.ChainID].ExtraTokens {
+						if common.HexToAddress(token.Address) == extraToken {
+							foundInExtraTokens = true
+							break
+						}
+					}
+					if foundInExtraTokens {
+						newOccurence = math.MaxInt32
+					} else if strings.HasSuffix(name, `-static`) {
+						newOccurence = math.MaxInt32
+					} else {
+						newOccurence += 1
+					}
+				}
+
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
 					Address:    existingToken.Address,
 					Name:       helpers.SafeString(existingToken.Name, token.Name),
@@ -80,7 +99,7 @@ func buildTokenListooorList() {
 					LogoURI:    helpers.SafeString(existingToken.LogoURI, token.LogoURI),
 					Decimals:   helpers.SafeInt(existingToken.Decimals, token.Decimals),
 					ChainID:    token.ChainID,
-					Occurrence: existingToken.Occurrence + 1,
+					Occurrence: newOccurence,
 				}
 			} else {
 				tokenInitialOccurence := initialCount
@@ -88,6 +107,9 @@ func buildTokenListooorList() {
 					if common.HexToAddress(token.Address) == extraToken {
 						tokenInitialOccurence = math.MaxInt32
 					}
+				}
+				if strings.HasSuffix(name, `-static`) {
+					tokenInitialOccurence = math.MaxInt32
 				}
 
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
