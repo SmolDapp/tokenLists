@@ -8,7 +8,7 @@ import (
 	"github.com/migratooor/tokenLists/generators/static"
 )
 
-func handleAjnaStaticTokenList(chainID uint64, tokens []static.TStaticElement) []models.TokenListToken {
+func handleStaticTokenList(chainID uint64, tokens []static.TStaticElement) []models.TokenListToken {
 	tokenAddresses := []common.Address{}
 	for _, token := range tokens {
 		tokenAddresses = append(tokenAddresses, token.Address)
@@ -20,7 +20,7 @@ func handleAjnaStaticTokenList(chainID uint64, tokens []static.TStaticElement) [
 
 func fetchAjnaStaticTokenList(chainID uint64) []models.TokenListToken {
 	tokens := static.AJNA_STATIC_TOKENLIST
-	return handleAjnaStaticTokenList(chainID, tokens[chainID])
+	return handleStaticTokenList(chainID, tokens[chainID])
 }
 
 func buildAjnaStaticTokenList() {
