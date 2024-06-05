@@ -44,9 +44,10 @@ func FetchJSON[T any](uri string) (data T) {
 	return data
 }
 
+type FetchJSONPayload struct{}
+
 func FetchJSONPost[T any](uri string) (data T) {
-	type Payload struct{}
-	payloadData := Payload{}
+	payloadData := FetchJSONPayload{}
 	payloadBytes, err := json.Marshal(payloadData)
 	if err != nil {
 		logs.Error(err)
