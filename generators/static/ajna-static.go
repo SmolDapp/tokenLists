@@ -1713,6 +1713,6 @@ var AJNA_STATIC_TOKENLIST = map[uint64][]TStaticElement{
 		{common.HexToAddress(`0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270`), `https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912`},
 	},
 	42161: {
-		{common.HexToAddress(`0x050C24dBf1eEc17babE5fc585F06116A259CC77A`), `https://dlc-public-assets.s3.amazonaws.com/dlcBTC_Token.png`},
-	}
+		{common.HexToAddress(`0x050C24dBf1eEc17babE5fc585F06116A259CC77A`), `https://raw.githubusercontent.com/SmolDapp/tokenAssets/main/tokens/42161/0x050c24dbf1eec17babe5fc585f06116a259cc77a/logo-128.png`},
+	},
 }
