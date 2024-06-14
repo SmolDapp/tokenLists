@@ -90,6 +90,8 @@ func buildTokenListooorList() {
 					} else {
 						newOccurence += 1
 					}
+				} else {
+					newOccurence += 1
 				}
 
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{

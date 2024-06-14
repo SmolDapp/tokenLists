@@ -257,11 +257,13 @@ func SaveTokenListInJsonFile(
 
 	for chainID, tokens := range tokenListPerChainID {
 		if !chains.IsChainIDSupported(chainID) {
+			logs.Info(`ChainID ` + strconv.FormatUint(chainID, 10) + ` is not supported`)
 			continue
 		}
 		chainIDStr := strconv.FormatUint(chainID, 10)
 
 		if len(tokens) <= len(chains.CHAINS[chainID].ExtraTokens)+1 {
+			logs.Info(`No need to save the list for chainID ` + chainIDStr)
 			continue //If we have as much tokens as the extra tokens, we don't need to save the list, this is the default list
 		}
 

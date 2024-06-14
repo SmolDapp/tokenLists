@@ -1,10 +1,10 @@
 {
   "name": "Ajna",
   "description": "",
-  "timestamp": "2024-06-05T11:37:36Z",
+  "timestamp": "2024-06-14T13:57:45+02:00",
   "version": {
-    "major": 22,
-    "minor": 0,
+    "major": 24,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://www.ajna.finance/static/tokens/ajna.png",
@@ -12,6 +12,14 @@
     "Ajna"
   ],
   "tokens": [
+    {
+      "address": "0x0000000000000000000000000000000000001010",
+      "name": "Matic Token",
+      "symbol": "MATIC",
+      "logoURI": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+      "chainId": 137,
+      "decimals": 18
+    },
     {
       "address": "0x00e8c0E92eB3Ad88189E7125Ec8825eDc03Ab265",
       "name": "Wrapped USDR",
@@ -85,10 +93,26 @@
       "decimals": 18
     },
     {
+      "address": "0x24b0559a93bbd9Ae6364Be2eB6173Ad8fe10d011",
+      "name": "LendFix",
+      "symbol": "LFIX",
+      "logoURI": "https://assets.smold.app/api/token/137/0x24b0559a93bbd9Ae6364Be2eB6173Ad8fe10d011/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x250856157b144e7B7aC75A8fBCd7258a2A76A101",
       "name": "Test2",
       "symbol": "TEST2",
       "logoURI": "https://assets.smold.app/api/token/137/0x250856157b144e7B7aC75A8fBCd7258a2A76A101/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x257BB4079a21bF458D81FBAd1c82aC73994d475d",
+      "name": "Short Me",
+      "symbol": "SHME",
+      "logoURI": "https://assets.smold.app/api/token/137/0x257BB4079a21bF458D81FBAd1c82aC73994d475d/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -205,10 +229,42 @@
       "decimals": 18
     },
     {
+      "address": "0x40EC1d24e1fdfCFD2c422CF7592a33cB5894DFC8",
+      "name": "ZV Wrapped Ether",
+      "symbol": "ZVWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x40EC1d24e1fdfCFD2c422CF7592a33cB5894DFC8/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x42f2c39C67Aa4F14085dc8AC66Fa32576506C125",
+      "name": "Elef",
+      "symbol": "ELEF",
+      "logoURI": "https://assets.smold.app/api/token/137/0x42f2c39C67Aa4F14085dc8AC66Fa32576506C125/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x433Ce9A15A740Cd9fA65fe40dAF95cbA34e32910",
+      "name": "Lend Wrapped Ether",
+      "symbol": "LDWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x433Ce9A15A740Cd9fA65fe40dAF95cbA34e32910/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x433cDE5a82b5e0658dA3543b47A375dffd126Eb6",
+      "name": "GOON",
+      "symbol": "GOON",
+      "logoURI": "https://assets.smold.app/api/token/137/0x433cDE5a82b5e0658dA3543b47A375dffd126Eb6/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x4C6B65fe93fc9DaF413498b88195FAfFF36dD960",
       "name": "Liquid staked Ether 2.0 (PoS)",
       "symbol": "stETH",
-      "logoURI": "https://assets.coingecko.com/coins/images/13442/large/steth_logo.png?1608607546",
+      "logoURI": "https://assets.smold.app/api/token/137/0x4C6B65fe93fc9DaF413498b88195FAfFF36dD960/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -217,6 +273,30 @@
       "name": "USDCTEST2",
       "symbol": "TEST2",
       "logoURI": "https://assets.smold.app/api/token/137/0x4aA508ac876252843e4EFee366155c68B9d2fb6C/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x4b118bE5AaBd3A6166b90b9e7a830A369A501B54",
+      "name": "IanMatt",
+      "symbol": "IMT",
+      "logoURI": "https://assets.smold.app/api/token/137/0x4b118bE5AaBd3A6166b90b9e7a830A369A501B54/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x4bbb478F212c6299daD6D2531514dF7860C61350",
+      "name": "ELE",
+      "symbol": "ELE",
+      "logoURI": "https://assets.smold.app/api/token/137/0x4bbb478F212c6299daD6D2531514dF7860C61350/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x4e604CE4F3502f3E16214B16054Fe0709eA91146",
+      "name": "MOONINC",
+      "symbol": "MOON",
+      "logoURI": "https://assets.smold.app/api/token/137/0x4e604CE4F3502f3E16214B16054Fe0709eA91146/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -260,6 +340,14 @@
       "decimals": 18
     },
     {
+      "address": "0x66e001bD3Ae202928B333723615263a465418C12",
+      "name": "TestUSDT",
+      "symbol": "TestUSDT",
+      "logoURI": "https://assets.smold.app/api/token/137/0x66e001bD3Ae202928B333723615263a465418C12/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x6eb3605c2E7c5A53dC12CCbD5c3D3c633d2ABE3A",
       "name": "Risky Bitcoin",
       "symbol": "XBT",
@@ -272,6 +360,14 @@
       "name": "SHIBA INU (PoS)",
       "symbol": "SHIB",
       "logoURI": "https://assets.coingecko.com/coins/images/11939/large/shiba.png?1622619446",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x750F276015831c1Bd40B1f098Ea0F24a466940d6",
+      "name": "123",
+      "symbol": "123",
+      "logoURI": "https://assets.smold.app/api/token/137/0x750F276015831c1Bd40B1f098Ea0F24a466940d6/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -292,6 +388,14 @@
       "decimals": 18
     },
     {
+      "address": "0x7FfFEa64AdCb0905674fF559ad6100C309bA8210",
+      "name": "MOON",
+      "symbol": "MOON",
+      "logoURI": "https://assets.smold.app/api/token/137/0x7FfFEa64AdCb0905674fF559ad6100C309bA8210/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
       "name": "Wrapped Ether",
       "symbol": "WETH",
@@ -304,6 +408,14 @@
       "name": "SMOL",
       "symbol": "FSMOL",
       "logoURI": "https://assets.smold.app/api/token/137/0x8184bA35Ad1d2A4419690d25B9ea34840086F624/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x82A805A827D50a98d7445b02D46589cf33318D5B",
+      "name": "KL Wrapped Ether",
+      "symbol": "KWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x82A805A827D50a98d7445b02D46589cf33318D5B/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -356,6 +468,14 @@
       "decimals": 18
     },
     {
+      "address": "0x93C3740Cb967FC111b7A2f20163a5BbEAEEA478a",
+      "name": "KickTest",
+      "symbol": "kTEST",
+      "logoURI": "https://assets.smold.app/api/token/137/0x93C3740Cb967FC111b7A2f20163a5BbEAEEA478a/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x944f91925A3F2D19f5776722f4c885efDB126cCd",
       "name": "FakeBTC",
       "symbol": "FBTC",
@@ -396,10 +516,42 @@
       "decimals": 6
     },
     {
+      "address": "0xA0A6815f14Ab87179674EE87726c6D1f89D6a57a",
+      "name": "Short Me",
+      "symbol": "SHME",
+      "logoURI": "https://assets.smold.app/api/token/137/0xA0A6815f14Ab87179674EE87726c6D1f89D6a57a/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xA5d3dBa081ED44897d859fe741B1EE9596bf851e",
+      "name": "KL Wrapped Ether",
+      "symbol": "KLVETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0xA5d3dBa081ED44897d859fe741B1EE9596bf851e/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xB0beC3aB55018B5b35F8789db118b1a2Ed19C74c",
+      "name": "Fake USDC",
+      "symbol": "fUSDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0xB0beC3aB55018B5b35F8789db118b1a2Ed19C74c/logo-128.png",
+      "chainId": 137,
+      "decimals": 10
+    },
+    {
       "address": "0xB70c70A1440B8F413d92574ECcAb2d973358F203",
       "name": "TestBTC2",
       "symbol": "TBTC2",
       "logoURI": "https://assets.smold.app/api/token/137/0xB70c70A1440B8F413d92574ECcAb2d973358F203/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xBa073eE3FDEB0fe00fda35E58F7CD75563aEC607",
+      "name": "Peter",
+      "symbol": "PTR",
+      "logoURI": "https://assets.smold.app/api/token/137/0xBa073eE3FDEB0fe00fda35E58F7CD75563aEC607/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -539,6 +691,22 @@
       "decimals": 18
     },
     {
+      "address": "0xaeE94E07ED83795ccd23C207568e3541fa48D219",
+      "name": "NSC",
+      "symbol": "NSC",
+      "logoURI": "https://assets.smold.app/api/token/137/0xaeE94E07ED83795ccd23C207568e3541fa48D219/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xb5EAc04d431D762F4C6D7F62fbDAC0776b61D564",
+      "name": "Lend Wrapped Ether",
+      "symbol": "LDVWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0xb5EAc04d431D762F4C6D7F62fbDAC0776b61D564/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xbDC8BE220Ab8DE38A0d8e850F7c13DBA9329C2e1",
       "name": "ZEBE",
       "symbol": "ZEBE",
@@ -567,6 +735,22 @@
       "name": "FakeBitcoin",
       "symbol": "FABTC",
       "logoURI": "https://assets.smold.app/api/token/137/0xd3690ad3F9A44c6648933C89B8eEc3c3A6A48bee/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xe3C16828cE661699413002F320909a49F20b982A",
+      "name": "Elefant",
+      "symbol": "ELEF",
+      "logoURI": "https://assets.smold.app/api/token/137/0xe3C16828cE661699413002F320909a49F20b982A/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xf08B776B6d85866305866601b47Bff154d440462",
+      "name": "Compass",
+      "symbol": "COMPASS",
+      "logoURI": "https://assets.smold.app/api/token/137/0xf08B776B6d85866305866601b47Bff154d440462/logo-128.png",
       "chainId": 137,
       "decimals": 18
     }
