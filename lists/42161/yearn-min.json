@@ -1,9 +1,9 @@
 {
   "name": "Yearn Minimal Token List",
   "description": "",
-  "timestamp": "2024-06-14T13:28:40Z",
+  "timestamp": "2024-06-23T01:08:39Z",
   "version": {
-    "major": 3,
+    "major": 4,
     "minor": 0,
     "patch": 0
   },
@@ -18,6 +18,30 @@
     "vaults"
   ],
   "tokens": [
+    {
+      "address": "0x022061d81e42fcb59711193346Bab758D24D6c43",
+      "name": "yPT-MUXLP (auto-rolling Pendle PT)",
+      "symbol": "yPT-MUXLP",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x022061d81e42fcb59711193346Bab758D24D6c43/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x02822b7B6dE0bf087DcEa626f6f19a838AeDB7be",
+      "name": "yPT-mPENDLE (auto-rolling Pendle PT)",
+      "symbol": "yPT-mPENDLE",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x02822b7B6dE0bf087DcEa626f6f19a838AeDB7be/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x044E75fCbF7BD3f8f4577FF317554e9c0037F145",
+      "name": "yPT-weETH (auto-rolling Pendle PT)",
+      "symbol": "yPT-weETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x044E75fCbF7BD3f8f4577FF317554e9c0037F145/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
     {
       "address": "0x074943fEfE3391D033A15557dfa1b6f246Ce5fD0",
       "name": "eETH LP (25 APR 2024)",
@@ -43,6 +67,14 @@
       "decimals": 18
     },
     {
+      "address": "0x08e3D13d50310aFbeA2da20A3DBD92aAcFc503Ac",
+      "name": "yPT-wstETH (auto-rolling Pendle PT)",
+      "symbol": "yPT-wstETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x08e3D13d50310aFbeA2da20A3DBD92aAcFc503Ac/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x0A21291A184cf36aD3B0a0def4A17C12Cbd66A14",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -55,6 +87,14 @@
       "name": "GLP LP (26 SEP 2024)",
       "symbol": "ysPENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/42161/0x0A5e1394Ba0c23D71167233A3b4b55cb8d214279/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x0F2ae7531A83982F15ff1D26B165E2bF3D7566da",
+      "name": "yPT-ezETH (auto-rolling Pendle PT)",
+      "symbol": "yPT-ezETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x0F2ae7531A83982F15ff1D26B165E2bF3D7566da/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -107,12 +147,28 @@
       "decimals": 18
     },
     {
+      "address": "0x1Dd930ADD968ff5913C3627dAA1e6e6FCC9dc544",
+      "name": "yPT-rsETH (auto-rolling Pendle PT)",
+      "symbol": "yPT-rsETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x1Dd930ADD968ff5913C3627dAA1e6e6FCC9dc544/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x1E6fD3251c949E1708a5277Faa773CC88E799B99",
       "name": "Silo Finance Borrowable WETH Deposit in PT-rsETH-26SEP2024 Silo",
       "symbol": "sWETH-PT-rsETH-26SEP2024",
       "logoURI": "https://assets.smold.app/api/token/42161/0x1E6fD3251c949E1708a5277Faa773CC88E799B99/logo-128.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x1bd173F9a1186A1AbE680071E0F57d4D83c18430",
+      "name": "Compound V3 USDC.e Lender",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x1bd173F9a1186A1AbE680071E0F57d4D83c18430/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
     },
     {
       "address": "0x1dBa7641dc69188D6086a73B972aC4bda29Ec35d",
@@ -155,6 +211,14 @@
       "decimals": 18
     },
     {
+      "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "name": "Renzo Restaked ETH",
+      "symbol": "ezETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x2416092f143378750bb29b79eD961ab195CcEea5/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x24e4Df37ea00C4954d668e3ce19fFdcffDEc2cF6",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -169,6 +233,14 @@
       "logoURI": "https://arbiscan.io/token/images/penpie_32.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x2B0B6376083c6E1F376C7439F328436A673F333c",
+      "name": "yPT-aUSDC (auto-rolling Pendle PT)",
+      "symbol": "yPT-aUSDC",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x2B0B6376083c6E1F376C7439F328436A673F333c/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
     },
     {
       "address": "0x2e48847FE29C3883c98125Cb2C44244d6602d549",
@@ -195,6 +267,22 @@
       "decimals": 18
     },
     {
+      "address": "0x34a2b066AF16409648eF15d239E656edB8790ca0",
+      "name": "yPT-USDe (auto-rolling Pendle PT)",
+      "symbol": "yPT-USDe",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x34a2b066AF16409648eF15d239E656edB8790ca0/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
+      "name": "Wrapped eETH",
+      "symbol": "weETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x368d79018e525dB25dBA517a0b5d3cc34c87cAFa",
       "name": "gDAI LP (26 SEP 2024)",
       "symbol": "ysPENDLE-LPT",
@@ -207,6 +295,14 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/42161/0x3803D89c31dE8B7DEf55C86f2469A5ea4Db41B92/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x39Ce72aCE7722fe38A4AfF02bfbe7789B58c6905",
+      "name": "AaveV3 ARB Lender",
+      "symbol": "ysARB",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x39Ce72aCE7722fe38A4AfF02bfbe7789B58c6905/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -231,6 +327,14 @@
       "name": "KelpDao Restaked ETH",
       "symbol": "rsETH",
       "logoURI": "https://assets.smold.app/api/token/42161/0x4186BFC76E2E237523CBC30FD220FE055156b41F/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x4307fbDCD9Ec7AEA5a1c2958deCaa6f316952bAb",
+      "name": "HLP",
+      "symbol": "HLP",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x4307fbDCD9Ec7AEA5a1c2958deCaa6f316952bAb/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -307,6 +411,14 @@
       "decimals": 18
     },
     {
+      "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
+      "logoURI": "https://tokens.1inch.io/0x5979d7b546e38e414f7e9822514be443a4800529.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x59bF0545FCa0E5Ad48E13DA269faCD2E8C886Ba4",
       "name": "Curve.fi Factory Plain Pool: VST+FRAX",
       "symbol": "VSTFRAX-f",
@@ -355,6 +467,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6DBd962b4f62D18F756b5DE57425574c4B8228D6",
+      "name": "Dolomite: USDC",
+      "symbol": "dUSDC",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x6DBd962b4f62D18F756b5DE57425574c4B8228D6/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
       "address": "0x6EA328bf810ef0F0bD1291Eb52f1529aA073cEfa",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -387,10 +507,34 @@
       "decimals": 18
     },
     {
+      "address": "0x7CbaF5a14D953fF896E5B3312031515c858737C8",
+      "name": "MUX LP",
+      "symbol": "MUXLP",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x7CbaF5a14D953fF896E5B3312031515c858737C8/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x7DEB119b92b76f78C212bc54FBBb34CEA75f4d4A",
+      "name": "ARB-1 yVault",
+      "symbol": "yvARB-1",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x7DEB119b92b76f78C212bc54FBBb34CEA75f4d4A/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x7f90122BF0700F9E7e1F688fe926940E8839F353",
       "name": "Curve.fi USDC/USDT",
       "symbol": "2CRV",
       "logoURI": "https://assets.smold.app/api/token/42161/0x7f90122BF0700F9E7e1F688fe926940E8839F353/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x7fD798ED77368E787E216DfDb5Be5F6CAe4C5aD5",
+      "name": "yPT-HLP (auto-rolling Pendle PT)",
+      "symbol": "yPT-HLP",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x7fD798ED77368E787E216DfDb5Be5F6CAe4C5aD5/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -423,6 +567,14 @@
       "name": "SY Dolomite USDC",
       "symbol": "SY-dUSDC",
       "logoURI": "https://assets.smold.app/api/token/42161/0x84E0efc0633041aac9D0196B7aC8aF3505e8CC32/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0x85968BF0f1f110C707fEF10a59f80118F349c058",
+      "name": "AaveV3 USDC.e Lender",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x85968BF0f1f110C707fEF10a59f80118F349c058/logo-128.png",
       "chainId": 42161,
       "decimals": 6
     },
@@ -475,10 +627,26 @@
       "decimals": 18
     },
     {
+      "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "logoURI": "https://tokens.1inch.io/0x912ce59144191c1204e64559fe8253a0e49e6548.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x92F1E6D904f21c05074952bbAD51D91fd9F8730f",
       "name": "ezETH LP (27 JUN 2024)",
       "symbol": "ysPENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/42161/0x92F1E6D904f21c05074952bbAD51D91fd9F8730f/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x985c0271ad0bF0a45951b64EB6FC58010B050908",
+      "name": "yPT-Pendle-ETH-Camelot (auto-rolling Pendle PT)",
+      "symbol": "yPT-Pendle-ETH-Camelot",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x985c0271ad0bF0a45951b64EB6FC58010B050908/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -507,6 +675,14 @@
       "decimals": 6
     },
     {
+      "address": "0x9FA306b1F4a6a83FEC98d8eBbaBEDfF78C407f6B",
+      "name": "USDC-2 yVault",
+      "symbol": "yvUSDC-2",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x9FA306b1F4a6a83FEC98d8eBbaBEDfF78C407f6B/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
       "address": "0x9d0c7DAFE3b34B51010DB522b9F17455Fa9Cea7C",
       "name": "Silo Finance Borrowable WETH Deposit in PT-weETH-26SEP2024 Silo",
       "symbol": "sWETH-PT-weETH-26SEP2024",
@@ -520,6 +696,14 @@
       "symbol": "OMNI",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x9eD00a5dc4b8e96ECDa1B863975A597917948C38",
+      "name": "yPT-dUSDC (auto-rolling Pendle PT)",
+      "symbol": "yPT-dUSDC",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x9eD00a5dc4b8e96ECDa1B863975A597917948C38/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
     },
     {
       "address": "0xACcd9A7cb5518326BeD715f90bD32CDf2fEc2D14",
@@ -536,6 +720,14 @@
       "logoURI": "https://assets.smold.app/api/token/42161/0xAce460a8e3F5F219Ea9DDB10a0764AedeE8C09e1/logo-128.png",
       "chainId": 42161,
       "decimals": 6
+    },
+    {
+      "address": "0xAebA9F4a9293213e0E3ed18A2F688BDDd7f5FB0c",
+      "name": "yPT-gDAI (auto-rolling Pendle PT)",
+      "symbol": "yPT-gDAI",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xAebA9F4a9293213e0E3ed18A2F688BDDd7f5FB0c/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
     },
     {
       "address": "0xB688BA096b7Bb75d7841e47163Cd12D18B36A5bF",
@@ -558,6 +750,22 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/42161/0xBa4A858d664Ddb052158168DB04AFA3cFF5CFCC8/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xBfCa4230115DE8341F3A3d5e8845fFb3337B2Be3",
+      "name": "Camelot LP",
+      "symbol": "CMLT-LP",
+      "logoURI": "https://assets.coingecko.com/coins/images/28416/large/vj5DIMhP_400x400.jpeg?",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xC40DA6a01Ac36F39736731ee50fb3b1B8204e2D3",
+      "name": "yPT-rETH (auto-rolling Pendle PT)",
+      "symbol": "yPT-rETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xC40DA6a01Ac36F39736731ee50fb3b1B8204e2D3/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -586,12 +794,28 @@
       "decimals": 18
     },
     {
+      "address": "0xD21E503d8aC357A7C8F8897BF84a4Bfd14fEc6E1",
+      "name": "yPT-USDC-Dolomite (auto-rolling Pendle PT)",
+      "symbol": "yPT-USDC-Dolomite",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xD21E503d8aC357A7C8F8897BF84a4Bfd14fEc6E1/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://tokens.1inch.io/0x6b175474e89094c44da98b954eedeac495271d0f.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0xDa3b69a45797DCA697Ff5bB2c10682f14373c063",
+      "name": "USDC-1 yVault",
+      "symbol": "yvUSDC-1",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xDa3b69a45797DCA697Ff5bB2c10682f14373c063/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
     },
     {
       "address": "0xDfaa4001308F5eC4d06920cD0D2C649c6f930e2C",
@@ -606,6 +830,14 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/42161/0xE11f9786B06438456b044B3E21712228ADcAA0D1/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
+      "name": "Rocket Pool ETH",
+      "symbol": "rETH",
+      "logoURI": "https://tokens.1inch.io/0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8.png",
       "chainId": 42161,
       "decimals": 18
     },
