@@ -148,7 +148,7 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 
 		tempPackedResp, err := caller.execute(group, blockNumber)
 		if err != nil {
-			LIMIT_ERROR := strings.Contains(strings.ToLower(err.Error()), "call retuned result on length") && strings.Contains(strings.ToLower(err.Error()), "exceeding limit")
+			LIMIT_ERROR := strings.Contains(strings.ToLower(err.Error()), "call returned result on length") && (strings.Contains(strings.ToLower(err.Error()), "exceeding limit") || strings.Contains(strings.ToLower(err.Error()), "--rpc.returndata.limit"))
 			SIZE_ERROR := strings.Contains(strings.ToLower(err.Error()), "request entity too large")
 			OUT_OF_GAS_ERROR := strings.Contains(strings.ToLower(err.Error()), "out of gas")
 			isAssumingOutOfGas := false

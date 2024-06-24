@@ -126,7 +126,6 @@ func buildTokenListooorList() {
 			}
 		}
 	}
-
 	for chainID, tokens := range allTokens {
 		for _, token := range tokens {
 			if _, ok := listsPerChain[chainID]; !ok {
