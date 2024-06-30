@@ -1,10 +1,10 @@
 {
   "name": "Uniswap Labs Default",
   "description": "",
-  "timestamp": "2024-06-24T19:31:33+02:00",
+  "timestamp": "2024-06-30T01:09:15Z",
   "version": {
-    "major": 4,
-    "minor": 1,
+    "major": 5,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
@@ -13,6 +13,13 @@
     "default"
   ],
   "tokens": [
+    {
+      "address": "0x07ad578FF86B135bE19A12759064b802Cb88854D",
+      "name": "Boba Token",
+      "symbol": "BOBA",
+      "chainId": 10,
+      "decimals": 18
+    },
     {
       "address": "0x0994206dfE8De6Ec6920FF4D779B0d950605Fb53",
       "name": "Curve DAO Token",
@@ -150,6 +157,14 @@
       "decimals": 8
     },
     {
+      "address": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "name": "LayerZero",
+      "symbol": "ZRO",
+      "logoURI": "https://assets.coingecko.com/coins/images/28206/large/ftxG9_TJ_400x400.jpeg?1668396420",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
       "address": "0x6fd9d7AD17242c41f7131d257212c54A0e816691",
       "name": "Uniswap",
       "symbol": "UNI",
@@ -250,6 +265,13 @@
       "name": "Celo native asset",
       "symbol": "CELO",
       "logoURI": "https://raw.githubusercontent.com/wormhole-foundation/wormhole-token-list/main/assets/celo_wh.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x9db118D43069B73B8a252bF0be49d50Edbd81fc8",
+      "name": "XY Oracle",
+      "symbol": "XYO",
       "chainId": 10,
       "decimals": 18
     },

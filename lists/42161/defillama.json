@@ -1,9 +1,9 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "2024-06-24T19:30:30+02:00",
+  "timestamp": "2024-06-30T00:45:29Z",
   "version": {
-    "major": 73,
+    "major": 74,
     "minor": 0,
     "patch": 0
   },
@@ -23,6 +23,14 @@
       "name": "USDA",
       "symbol": "USDA",
       "logoURI": "https://assets.smold.app/api/token/42161/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x0002BcDaf53f4889BF2f43A3252d7c03Fe1b80bc",
+      "name": "BorpaToken",
+      "symbol": "BORPA",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/38681/thumb/borpa.jpeg?1718333210",
       "chainId": 42161,
       "decimals": 18
     },
@@ -945,7 +953,7 @@
       "address": "0x292975973200064B1C6453505AeAC5be697F5233",
       "name": "Lumi to da moon",
       "symbol": "LUDAMOON",
-      "logoURI": "https://coin-images.coingecko.com/coins/images/38855/thumb/Token-x.png?1719213356",
+      "logoURI": "https://asset-images.messari.io/images/10bd0596-2cd0-4f3a-89c9-2013566db0b7/128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -1089,14 +1097,6 @@
       "logoURI": "https://tokens.1inch.io/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png",
       "chainId": 42161,
       "decimals": 8
-    },
-    {
-      "address": "0x306634BD3a7982AfdB42DeC1C6b15176cd9e02e0",
-      "name": "CEX",
-      "symbol": "CEX",
-      "logoURI": "https://assets.coingecko.com/coins/images/32492/large/CEX.jpg?1698293422",
-      "chainId": 42161,
-      "decimals": 18
     },
     {
       "address": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
@@ -1953,14 +1953,6 @@
       "decimals": 18
     },
     {
-      "address": "0x54355cc6913B26A15ccA1F820cf17D362FA65DB5",
-      "name": "SolidLizard synthetic USDC",
-      "symbol": "slzUSDC",
-      "logoURI": "https://assets.coingecko.com/coins/images/29900/large/slzUSDC2.png?1681983868",
-      "chainId": 42161,
-      "decimals": 6
-    },
-    {
       "address": "0x5441695f4445E40900b4c4B0Fb3eD2B9E51601A6",
       "name": "ARTH Valuecoin",
       "symbol": "ARTH",
@@ -2082,7 +2074,7 @@
       "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
       "name": "Wrapped liquid staked Ether 2.0",
       "symbol": "wstETH",
-      "logoURI": "https://tokens.1inch.io/0x5979d7b546e38e414f7e9822514be443a4800529.png",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x5979D7b546E38E414F7E9822514be443A4800529/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -2175,14 +2167,6 @@
       "address": "0x60D01EC2D5E98Ac51C8B4cF84DfCCE98D527c747",
       "name": "izumi Token",
       "symbol": "iZi",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x617B76412bD9f3f80FE87d1533dc7017Defa8AD1",
-      "name": "XRender AI",
-      "symbol": "XRAI",
-      "logoURI": "https://assets.coingecko.com/coins/images/32364/large/image_2023-10-14_16-00-43.png?1698029814",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3163,14 +3147,6 @@
       "decimals": 18
     },
     {
-      "address": "0x903CA00944D0b51e50D9F4fC96167c89F211542A",
-      "name": "Poolshark",
-      "symbol": "FIN",
-      "logoURI": "https://asset-images.messari.io/images/ac9f22c4-8292-4aff-b921-192606cfe8d2/128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x910d3c72c5177c3f1bfb0863b793ec23Fa7f6990",
       "name": "NitroShiba",
       "symbol": "NISHIB",
@@ -3769,7 +3745,7 @@
       "address": "0xB688BA096b7Bb75d7841e47163Cd12D18B36A5bF",
       "name": "mPendle",
       "symbol": "mPendle",
-      "logoURI": "https://assets.coingecko.com/coins/images/31918/large/mPendle.png?1695644044",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xB688BA096b7Bb75d7841e47163Cd12D18B36A5bF/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -4220,7 +4196,7 @@
       "address": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
       "name": "Rocket Pool ETH",
       "symbol": "rETH",
-      "logoURI": "https://tokens.1inch.io/0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8.png",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -4616,6 +4592,14 @@
       "decimals": 18
     },
     {
+      "address": "0xaFAfd68AFe3fe65d376eEC9Eab1802616cFacCb8",
+      "name": "SolvBTC Ethena",
+      "symbol": "SolvBTC.ENA",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/38931/thumb/BTC_ena.png?1719562313",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xaaE0c3856e665ff9b3E2872B6D75939D810b7E40",
       "name": "YieldFarming Index",
       "symbol": "YFX",
@@ -4845,14 +4829,6 @@
       "address": "0xc3aBC47863524ced8DAf3ef98d74dd881E131C38",
       "name": "Lumi Finance Token",
       "symbol": "LUA",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xc4A0E0915D538B5ec2E6895261D34f70C64Fb13D",
-      "name": "Bitago",
-      "symbol": "XBIT",
-      "logoURI": "https://asset-images.messari.io/images/b911f1f9-854f-486d-951b-036ebedadcb5/128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -5159,7 +5135,7 @@
       "address": "0xdadeca1167fe47499e53Eb50F261103630974905",
       "name": "Neuron",
       "symbol": "NRN",
-      "logoURI": "https://coin-images.coingecko.com/coins/images/38838/thumb/NRN_-_Logo_-_Transparent.png?1719199369",
+      "logoURI": "https://asset-images.messari.io/images/4cac98ca-fb2a-4c0a-98d1-f65f0c6f1148/128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -5603,6 +5579,14 @@
       "logoURI": "https://asset-images.messari.io/images/d0732b6d-418f-4283-971a-0815cc7c4ba2/128.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0xfc90518D5136585ba45e34ED5E1D108BD3950CFa",
+      "name": "USD+",
+      "symbol": "USD+",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/38879/thumb/USDplus-200.png?1719374938",
+      "chainId": 42161,
+      "decimals": 6
     },
     {
       "address": "0xfd2fb8DE10eC41DdD898A8c7FA70D8Fc100834C4",
