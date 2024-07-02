@@ -1123,6 +1123,9 @@ var AJNA_STATIC_TOKENLIST = map[uint64][]TStaticElement{
 		{common.HexToAddress(`0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2`), `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png`},
 		{common.HexToAddress(`0x24Ae2dA0f361AA4BE46b48EB19C91e02c5e4f27E`), `https://assets.smold.app/api/token/1/0x24Ae2dA0f361AA4BE46b48EB19C91e02c5e4f27E/logo-128.png`},
 	},
+	10: {
+		{common.HexToAddress(`0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85`), `https://raw.githubusercontent.com/SmolDapp/tokenAssets/main/tokens/10/0x0b2c639c533813f4aa9d7837caf62653d097ff85/logo-128.png`},
+	},
 	5: {
 		{common.HexToAddress(`0xaadebCF61AA7Da0573b524DE57c67aDa797D46c5`), `https://assets.coingecko.com/coins/images/30187/large/AJNA-Icon-200.png?1683601845`},
 		{common.HexToAddress(`0x7ccf0411c7932b99fc3704d68575250f032e3bb7`), `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png`},
