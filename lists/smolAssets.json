@@ -1,10 +1,10 @@
 {
   "name": "SmolAssets",
   "description": "A list of tokens supported by Smoldapp Token Assets repository",
-  "timestamp": "2024-06-30T01:09:47Z",
+  "timestamp": "2024-07-02T09:47:19Z",
   "version": {
     "major": 11,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
@@ -858,6 +858,14 @@
       "name": "Curve RAI Pool yVault",
       "symbol": "yvCurve-RAI",
       "logoURI": "https://assets.smold.app/api/token/1/0x2D5D4869381C4Fce34789BC1D38aCCe747E295AE/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x2DABcea55a12d73191AeCe59F508b191Fb68AdaC",
+      "name": "Karak - Wrapped eETH",
+      "symbol": "KweETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x2DABcea55a12d73191AeCe59F508b191Fb68AdaC/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1826,6 +1834,14 @@
       "name": "Wrapped Mountain Protocol USD",
       "symbol": "wUSDM",
       "logoURI": "https://assets.smold.app/api/token/1/0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x57e114B691Db790C35207b2e685D4A43181e6061",
+      "name": "ENA",
+      "symbol": "ENA",
+      "logoURI": "https://assets.smold.app/api/token/1/0x57e114B691Db790C35207b2e685D4A43181e6061/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3134,6 +3150,14 @@
       "decimals": 18
     },
     {
+      "address": "0x917ceE801a67f933F2e6b33fC0cD1ED2d5909D88",
+      "name": "Super Symbiotic LRT",
+      "symbol": "weETHs",
+      "logoURI": "https://assets.smold.app/api/token/1/0x917ceE801a67f933F2e6b33fC0cD1ED2d5909D88/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x91aE8fEaBe09182Fe5F91Fc273040b7D8F7aeFE7",
       "name": "Curve Paxos Factory yVault",
       "symbol": "yvCurve-USDP-f",
@@ -3798,6 +3822,14 @@
       "decimals": 18
     },
     {
+      "address": "0xBE3cA34D0E877A1Fc889BD5231D65477779AFf4e",
+      "name": "Karak - USDe",
+      "symbol": "KUSDe",
+      "logoURI": "https://assets.smold.app/api/token/1/0xBE3cA34D0E877A1Fc889BD5231D65477779AFf4e/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xBE86e8918DFc7d3Cb10d295fc220F941A1470C5c",
       "name": "Yearn mStable USD",
       "symbol": "cyMUSD",
@@ -4234,6 +4266,14 @@
       "name": "Curve msUSD-FRAXBP Factory yVault",
       "symbol": "yvCurve-msUSD-FRAXBP-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xDb26d8815EdA864Dfa43306766f2F8CA50C03F9E/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xDe5Bff0755F192C333B126A449FF944Ee2B69681",
+      "name": "Karak - Staked USDe",
+      "symbol": "KsUSDe",
+      "logoURI": "https://assets.smold.app/api/token/1/0xDe5Bff0755F192C333B126A449FF944Ee2B69681/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8414,10 +8454,26 @@
       "decimals": 18
     },
     {
+      "address": "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83",
+      "name": "USD//C on xDai",
+      "symbol": "USDC",
+      "logoURI": "https://assets.smold.app/api/token/100/0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83/logo-128.png",
+      "chainId": 100,
+      "decimals": 6
+    },
+    {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       "name": "xDai",
       "symbol": "xDAI",
       "logoURI": "https://assets.smold.app/api/token/100/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
+      "name": "Savings xDAI",
+      "symbol": "sDAI",
+      "logoURI": "https://assets.smold.app/api/token/100/0xaf204776c7245bF4147c2612BF6e5972Ee483701/logo-128.png",
       "chainId": 100,
       "decimals": 18
     },
@@ -8438,10 +8494,314 @@
       "decimals": 18
     },
     {
+      "address": "0x02203f2351E7aC6aB5051205172D3f772db7D814",
+      "name": "awMATIC-WETH",
+      "symbol": "awMATIC-WETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x02203f2351E7aC6aB5051205172D3f772db7D814/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x04d521E2c414E6d898c6F2599FdD863Edf49e247",
+      "name": "awMATIC-USDC",
+      "symbol": "awMATIC-USDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x04d521E2c414E6d898c6F2599FdD863Edf49e247/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x06eD7C67755344548FAFe1822bEE365C4208a57F",
+      "name": "yearn-V3-Stargate-DAI",
+      "symbol": "ysDAI",
+      "logoURI": "https://assets.smold.app/api/token/137/0x06eD7C67755344548FAFe1822bEE365C4208a57F/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "name": "Wrapped Matic",
+      "symbol": "WMATIC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x12c3Ad898e8eB1C0ec0Bb74f9748F36C46593F68",
+      "name": "Aave V3 WMATIC Lender",
+      "symbol": "ysWMATIC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x12c3Ad898e8eB1C0ec0Bb74f9748F36C46593F68/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x255707B70BF90aa112006E1b07B9AeA6De021424",
+      "name": "TETU Reward Token",
+      "symbol": "TETU",
+      "logoURI": "https://assets.smold.app/api/token/137/0x255707B70BF90aa112006E1b07B9AeA6De021424/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "name": "Bridged USD Coin (PoS)",
+      "symbol": "USDC.e",
+      "logoURI": "https://assets.smold.app/api/token/137/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x28F53bA70E5c8ce8D03b1FaD41E9dF11Bb646c36",
+      "name": "WMATIC yVault-A",
+      "symbol": "yvWMATIC-A",
+      "logoURI": "https://assets.smold.app/api/token/137/0x28F53bA70E5c8ce8D03b1FaD41E9dF11Bb646c36/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x2a42A69F48EfffDF2d4Fb079Af60D98D3e34D49C",
+      "name": "CompV3 WMATIC Lender USDC Borrower",
+      "symbol": "ysWMATIC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x2a42A69F48EfffDF2d4Fb079Af60D98D3e34D49C/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x2c5d0c3DB75D2f8A4957c74BE09194a9271Cf28D",
+      "name": "yearn-V3-Stargate-USDT",
+      "symbol": "ysUSDT",
+      "logoURI": "https://assets.smold.app/api/token/137/0x2c5d0c3DB75D2f8A4957c74BE09194a9271Cf28D/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x305F25377d0a39091e99B975558b1bdfC3975654",
+      "name": "WETH yVault-A",
+      "symbol": "yvWETH-A",
+      "logoURI": "https://assets.smold.app/api/token/137/0x305F25377d0a39091e99B975558b1bdfC3975654/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x34b9421Fe3d52191B64bC32ec1aB764dcBcDbF5e",
+      "name": "USDC-1 yVault",
+      "symbol": "USDC-1",
+      "logoURI": "https://assets.smold.app/api/token/137/0x34b9421Fe3d52191B64bC32ec1aB764dcBcDbF5e/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
+      "name": "Aavegotchi GHST Token (PoS)",
+      "symbol": "GHST",
+      "logoURI": "https://assets.smold.app/api/token/137/0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x3Cc20A6795c4b57d9817399F68E83e71C8626580",
+      "name": "aUSDC-WETH",
+      "symbol": "aUSDC-WETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x3Cc20A6795c4b57d9817399F68E83e71C8626580/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x3bd8C987286D8Ad00c05fdb2Ae3E8C9a0f054734",
+      "name": "AaveV3 USDT Lender",
+      "symbol": "ysUSDT",
+      "logoURI": "https://assets.smold.app/api/token/137/0x3bd8C987286D8Ad00c05fdb2Ae3E8C9a0f054734/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x3f35705479d9d77c619b2aAC9dd7a64e57151506",
+      "name": "aWBTC-USDC",
+      "symbol": "aWBTC-USDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x3f35705479d9d77c619b2aAC9dd7a64e57151506/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x4987d1856F93DFf29e08aa605A805FaF43dC3103",
+      "name": "yvAjnaUSDC-compounder",
+      "symbol": "ysyvAjnaUSDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x4987d1856F93DFf29e08aa605A805FaF43dC3103/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x4B9e26a02121a1C541403a611b542965Bd4b68Ce",
+      "name": "aWBTC-WETH",
+      "symbol": "aWBTC-WETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x4B9e26a02121a1C541403a611b542965Bd4b68Ce/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x4e78011Ce80ee02d2c3e649Fb657E45898257815",
+      "name": "Klima DAO",
+      "symbol": "KLIMA",
+      "logoURI": "https://assets.smold.app/api/token/137/0x4e78011Ce80ee02d2c3e649Fb657E45898257815/logo-128.png",
+      "chainId": 137,
+      "decimals": 9
+    },
+    {
+      "address": "0x5136c2F7aB13E202eD42bc1AE82Dd63475919653",
+      "name": "CompV3 WETH Lender USDC Borrower",
+      "symbol": "ysWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x5136c2F7aB13E202eD42bc1AE82Dd63475919653/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x52367C8E381EDFb068E9fBa1e7E9B2C847042897",
+      "name": "Aave V3 USDC Lender",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x52367C8E381EDFb068E9fBa1e7E9B2C847042897/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x6077177d4c41E114780D9901C9b5c784841C523f",
+      "name": "aUSDC-WETH",
+      "symbol": "aUSDC-WETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x6077177d4c41E114780D9901C9b5c784841C523f/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x6Ed737EF2Ef74e04005dC9810366De5ad38Cf7D6",
+      "name": "yearn-V3-LST",
+      "symbol": "ysWMATIC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x6Ed737EF2Ef74e04005dC9810366De5ad38Cf7D6/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x7486325A843590b84c98563c6962C58655569EcA",
+      "name": "yearn-V3-LST-WSTETH",
+      "symbol": "ysWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x7486325A843590b84c98563c6962C58655569EcA/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x795f8c9B0A0Da9Cd8dea65Fc10f9B57AbC532E58",
+      "name": "aUSDC-USDT",
+      "symbol": "aUSDC-USDT",
+      "logoURI": "https://assets.smold.app/api/token/137/0x795f8c9B0A0Da9Cd8dea65Fc10f9B57AbC532E58/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x81Cec323BF8C4164c66ec066F53cc053A535f03D",
+      "name": "awMATIC-WETH",
+      "symbol": "awMATIC-WETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x81Cec323BF8C4164c66ec066F53cc053A535f03D/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x820802Fa8a99901F52e39acD21177b0BE6EE2974",
+      "name": "EUROe Stablecoin",
+      "symbol": "EUROe",
+      "logoURI": "https://assets.smold.app/api/token/137/0x820802Fa8a99901F52e39acD21177b0BE6EE2974/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x8BBa7AFd0f9B1b664C161EC31d812a8Ec15f7e1a",
+      "name": "yearn-V3-Stargate-USDC",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x8BBa7AFd0f9B1b664C161EC31d812a8Ec15f7e1a/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x8dd3BF71eF18dd88869d128BDE058C9d8c270176",
+      "name": "aWMATIC-MATICX",
+      "symbol": "aWMATIC-MATICX",
+      "logoURI": "https://assets.smold.app/api/token/137/0x8dd3BF71eF18dd88869d128BDE058C9d8c270176/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "name": "(PoS) Dai Stablecoin",
+      "symbol": "DAI",
+      "logoURI": "https://assets.smold.app/api/token/137/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B",
+      "name": "DAI yVault-A",
+      "symbol": "yvDAI-A",
+      "logoURI": "https://assets.smold.app/api/token/137/0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x9E31214Db6931727B7d63a0D2b6236DB455c0965",
+      "name": "aUSDC-DAI",
+      "symbol": "aUSDC-DAI",
+      "logoURI": "https://assets.smold.app/api/token/137/0x9E31214Db6931727B7d63a0D2b6236DB455c0965/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x9d36F8f62347538440a212e9162f534f797542df",
       "name": "Satoshi",
       "symbol": "SATS",
       "logoURI": "https://assets.smold.app/api/token/137/0x9d36F8f62347538440a212e9162f534f797542df/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0",
+      "name": "USDC yVault-A",
+      "symbol": "yvUSDC-A",
+      "logoURI": "https://assets.smold.app/api/token/137/0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0xBEDA9A5300393e00229dc15cC54D5185E7646c56",
+      "name": "AaveV3 WETH Lender",
+      "symbol": "ysWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0xBEDA9A5300393e00229dc15cC54D5185E7646c56/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xBb287E6017d3DEb0e2E65061e8684eab21060123",
+      "name": "USDT yVault-A",
+      "symbol": "yvUSDT-A",
+      "logoURI": "https://assets.smold.app/api/token/137/0xBb287E6017d3DEb0e2E65061e8684eab21060123/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
+      "name": "EURA (previously agEUR)",
+      "symbol": "EURA",
+      "logoURI": "https://assets.smold.app/api/token/137/0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8454,12 +8814,52 @@
       "decimals": 18
     },
     {
+      "address": "0xF54a15F6da443041Bb075959EA66EE47655DDFcA",
+      "name": "Yearn-Ajna USDC Vault ",
+      "symbol": "yvAjnaUSDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0xF54a15F6da443041Bb075959EA66EE47655DDFcA/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0xb1403908F772E4374BB151F7C67E88761a0Eb4f1",
+      "name": "Compound V3 USDC Lender",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0xb1403908F772E4374BB151F7C67E88761a0Eb4f1/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "name": "(PoS) Tether USD",
+      "symbol": "USDT",
+      "logoURI": "https://assets.smold.app/api/token/137/0xc2132D05D31c914a87C6611C10748AEb04B58e8F/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
       "address": "0xcAA17796bB3d4a71005CeBd817CFEebF85D581b7",
       "name": "USDC yVault",
       "symbol": "yvUSDC",
       "logoURI": "https://assets.smold.app/api/token/137/0xcAA17796bB3d4a71005CeBd817CFEebF85D581b7/logo-128.png",
       "chainId": 137,
       "decimals": 6
+    },
+    {
+      "address": "0xdB92B89Ca415c0dab40Dc96E99Fc411C08F20780",
+      "name": "Aave V3 USDC Lender",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0xdB92B89Ca415c0dab40Dc96E99Fc411C08F20780/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0xf4F9d5697341B4C9B0Cc8151413e05A90f7dc24F",
+      "name": "AaveV3 DAI Lender",
+      "symbol": "ysDAI",
+      "logoURI": "https://assets.smold.app/api/token/137/0xf4F9d5697341B4C9B0Cc8151413e05A90f7dc24F/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
     },
     {
       "address": "0x03B82e4070cA32FF63A03F2EcfC16c0165689a9d",
@@ -9950,6 +10350,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6e2c81b6c2C0e02360F00a0dA694e489acB0b05e",
+      "name": "Reflect",
+      "symbol": "RFL",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x6e2c81b6c2C0e02360F00a0dA694e489acB0b05e/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x6ef3864876424ADE834a7C1BE8C0CF3d71208B84",
       "name": "Zunami USD",
       "symbol": "zunUSD",
@@ -9996,6 +10404,14 @@
       "logoURI": "https://assets.smold.app/api/token/8453/0x7466dE7bb8B5E41Ee572f4167de6be782a7fA75d/logo-128.png",
       "chainId": 8453,
       "decimals": 18
+    },
+    {
+      "address": "0x749D57006A1FF4F7ff8Cd0a238525B08D85eCE33",
+      "name": "BASED CLOWN",
+      "symbol": "BLOWN",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x749D57006A1FF4F7ff8Cd0a238525B08D85eCE33/logo-128.png",
+      "chainId": 8453,
+      "decimals": 7
     },
     {
       "address": "0x74ccbe53F77b08632ce0CB91D3A545bF6B8E0979",
@@ -10998,6 +11414,14 @@
       "decimals": 18
     },
     {
+      "address": "0xe2c86869216aC578bd62a4b8313770d9EE359A05",
+      "name": "EMAIL Token",
+      "symbol": "EMT",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xe2c86869216aC578bd62a4b8313770d9EE359A05/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xe2dCA969624795985F2f083BcD0b674337ba130a",
       "name": "Saakuru",
       "symbol": "SKR",
@@ -11246,6 +11670,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4307fbDCD9Ec7AEA5a1c2958deCaa6f316952bAb",
+      "name": "HLP",
+      "symbol": "HLP",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x4307fbDCD9Ec7AEA5a1c2958deCaa6f316952bAb/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x49448d2B94fb9C4e41a30aD8315D32f46004A34b",
       "name": "2CRV yVault",
       "symbol": "yv2CRV",
@@ -11294,6 +11726,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6DBd962b4f62D18F756b5DE57425574c4B8228D6",
+      "name": "Dolomite: USDC",
+      "symbol": "dUSDC",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x6DBd962b4f62D18F756b5DE57425574c4B8228D6/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
       "address": "0x6EA328bf810ef0F0bD1291Eb52f1529aA073cEfa",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -11306,6 +11746,14 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/42161/0x6F02C88650837C8dfe89F66723c4743E9cF833cd/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x7CbaF5a14D953fF896E5B3312031515c858737C8",
+      "name": "MUX LP",
+      "symbol": "MUXLP",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x7CbaF5a14D953fF896E5B3312031515c858737C8/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -11330,6 +11778,14 @@
       "name": "Curve.fi USD-BTC-ETH",
       "symbol": "crv3crypto",
       "logoURI": "https://assets.smold.app/api/token/42161/0x8e0B8c8BB9db49a46697F3a5Bb8A308e744821D2/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x912CE59144191C1204E64559FE8253a0e49E6548/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
