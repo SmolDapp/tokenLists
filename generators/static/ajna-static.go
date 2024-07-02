@@ -3,7 +3,7 @@ package static
 import "github.com/ethereum/go-ethereum/common"
 
 // The Ajna tokenlist is static because no rebasing token are allowed and we currently have no way to detect them
-// This list has been manually curated by the Ajna team and added on the 2023-10-27
+// This list has been manually curated by the Ajna team and added on the 2024-07-02
 var AJNA_STATIC_TOKENLIST = map[uint64][]TStaticElement{
 	1: {
 		{common.HexToAddress(`0x583019fF0f430721aDa9cfb4fac8F06cA104d0B4`), `https://assets.coingecko.com/coins/images/32222/large/st-yETH-128px.png?1696914941`},
@@ -1125,6 +1125,7 @@ var AJNA_STATIC_TOKENLIST = map[uint64][]TStaticElement{
 	},
 	10: {
 		{common.HexToAddress(`0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85`), `https://raw.githubusercontent.com/SmolDapp/tokenAssets/main/tokens/10/0x0b2c639c533813f4aa9d7837caf62653d097ff85/logo-128.png`},
+		{common.HexToAddress(`0x4200000000000000000000000000000000000042`), `https://assets.smold.app/token/10/0x4200000000000000000000000000000000000042/logo-128.png`},
 	},
 	5: {
 		{common.HexToAddress(`0xaadebCF61AA7Da0573b524DE57c67aDa797D46c5`), `https://assets.coingecko.com/coins/images/30187/large/AJNA-Icon-200.png?1683601845`},
