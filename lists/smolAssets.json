@@ -1,9 +1,9 @@
 {
   "name": "SmolAssets",
   "description": "A list of tokens supported by Smoldapp Token Assets repository",
-  "timestamp": "2024-07-08T08:09:49Z",
+  "timestamp": "2024-07-14T00:50:01Z",
   "version": {
-    "major": 12,
+    "major": 13,
     "minor": 0,
     "patch": 0
   },
@@ -4822,6 +4822,14 @@
       "decimals": 18
     },
     {
+      "address": "0xa3f152837492340dAAf201F4dFeC6cD73A8a9760",
+      "name": "coveYFI/YFI",
+      "symbol": "COVEYFI",
+      "logoURI": "https://assets.smold.app/api/token/1/0xa3f152837492340dAAf201F4dFeC6cD73A8a9760/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xa456b515303B2Ce344E9d2601f91270f8c2Fea5E",
       "name": "Cornichon",
       "symbol": "CORN",
@@ -8614,28 +8622,12 @@
       "decimals": 18
     },
     {
-      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
-      "name": "Wrapped Matic",
-      "symbol": "WMATIC",
-      "logoURI": "https://assets.smold.app/api/token/137/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x12c3Ad898e8eB1C0ec0Bb74f9748F36C46593F68",
       "name": "Aave V3 WMATIC Lender",
       "symbol": "ysWMATIC",
       "logoURI": "https://assets.smold.app/api/token/137/0x12c3Ad898e8eB1C0ec0Bb74f9748F36C46593F68/logo-128.png",
       "chainId": 137,
       "decimals": 18
-    },
-    {
-      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-      "name": "Bridged USD Coin (PoS)",
-      "symbol": "USDC.e",
-      "logoURI": "https://assets.smold.app/api/token/137/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174/logo-128.png",
-      "chainId": 137,
-      "decimals": 6
     },
     {
       "address": "0x28F53bA70E5c8ce8D03b1FaD41E9dF11Bb646c36",
@@ -8690,14 +8682,6 @@
       "name": "AaveV3 USDT Lender",
       "symbol": "ysUSDT",
       "logoURI": "https://assets.smold.app/api/token/137/0x3bd8C987286D8Ad00c05fdb2Ae3E8C9a0f054734/logo-128.png",
-      "chainId": 137,
-      "decimals": 6
-    },
-    {
-      "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
-      "name": "USD Coin",
-      "symbol": "USDC",
-      "logoURI": "https://assets.smold.app/api/token/137/0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359/logo-128.png",
       "chainId": 137,
       "decimals": 6
     },
@@ -8774,14 +8758,6 @@
       "decimals": 18
     },
     {
-      "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
-      "logoURI": "https://assets.smold.app/api/token/137/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x81Cec323BF8C4164c66ec066F53cc053A535f03D",
       "name": "awMATIC-WETH",
       "symbol": "awMATIC-WETH",
@@ -8802,14 +8778,6 @@
       "name": "aWMATIC-MATICX",
       "symbol": "aWMATIC-MATICX",
       "logoURI": "https://assets.smold.app/api/token/137/0x8dd3BF71eF18dd88869d128BDE058C9d8c270176/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-      "name": "(PoS) Dai Stablecoin",
-      "symbol": "DAI",
-      "logoURI": "https://assets.smold.app/api/token/137/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -8862,30 +8830,6 @@
       "decimals": 6
     },
     {
-      "address": "0xC19669A405067927865B40Ea045a2baabbbe57f5",
-      "name": "STAR",
-      "symbol": "STAR",
-      "logoURI": "https://assets.smold.app/api/token/137/0xC19669A405067927865B40Ea045a2baabbbe57f5/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xC91c06DB0f7bFFba61e2A5645CC15686F0a8c828",
-      "name": "RAZOR (PoS)",
-      "symbol": "RAZOR",
-      "logoURI": "https://assets.smold.app/api/token/137/0xC91c06DB0f7bFFba61e2A5645CC15686F0a8c828/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
-      "name": "EURA (previously agEUR)",
-      "symbol": "EURA",
-      "logoURI": "https://assets.smold.app/api/token/137/0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       "name": "Matic",
       "symbol": "MATIC",
@@ -8906,14 +8850,6 @@
       "name": "Compound V3 USDC Lender",
       "symbol": "ysUSDC",
       "logoURI": "https://assets.smold.app/api/token/137/0xb1403908F772E4374BB151F7C67E88761a0Eb4f1/logo-128.png",
-      "chainId": 137,
-      "decimals": 6
-    },
-    {
-      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
-      "name": "(PoS) Tether USD",
-      "symbol": "USDT",
-      "logoURI": "https://assets.smold.app/api/token/137/0xc2132D05D31c914a87C6611C10748AEb04B58e8F/logo-128.png",
       "chainId": 137,
       "decimals": 6
     },
@@ -10094,6 +10030,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4154550f4Db74Dc38d1FE98e1F3F28ed6daD627d",
+      "name": "Jarvis Synthetic Euro",
+      "symbol": "jEUR",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x4154550f4Db74Dc38d1FE98e1F3F28ed6daD627d/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x416bd43Bc76D496ff49923c20eCaf86b52Ab078d",
       "name": "Harbor Token",
       "symbol": "HBR",
@@ -10652,6 +10596,14 @@
       "logoURI": "https://assets.smold.app/api/token/8453/0x85483696Cc9970Ad9EdD786b2C5ef735F38D156f/logo-128.png",
       "chainId": 8453,
       "decimals": 6
+    },
+    {
+      "address": "0x877935876F1b0Ac524d557d31fD4654233Db4524",
+      "name": "Synthereum USDC-jEUR 120% Vault",
+      "symbol": "USDC-jEUR-120-vLP",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x877935876F1b0Ac524d557d31fD4654233Db4524/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
     },
     {
       "address": "0x8901cB2e82CC95c01e42206F8d1F417FE53e7Af0",
@@ -11458,6 +11410,14 @@
       "name": "Based Degens Club",
       "symbol": "$BDC",
       "logoURI": "https://assets.smold.app/api/token/8453/0xcd1Fa2ca3f678906248170A13360B73B60678F4F/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xcdE172dc5ffC46D228838446c57C1227e0B82049",
+      "name": "Boomer",
+      "symbol": "BOOMER",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xcdE172dc5ffC46D228838446c57C1227e0B82049/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
