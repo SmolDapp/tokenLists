@@ -1,13 +1,5 @@
-name: 📑 Updating lists
+name: ♻️ Testing stuff
 on:
-  schedule:
-    - cron: '0 0 * * Sun'
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
