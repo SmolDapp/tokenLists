@@ -135,4 +135,6 @@ func buildPopularList() {
 	}
 
 	helpers.SaveTokenListInJsonFile(tokenList, tokens, `popular.json`, helpers.SavingMethodStandard)
+	helpers.SaveChainListInJsonFile(tokenList, tokens)
+
 }

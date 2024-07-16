@@ -9,6 +9,9 @@ import (
 
 var METIS = TChain{
 	ID:            1088,
+	Name:          `Metis`,
+	LogoURI:       `https://assets.smold.app/chains/1088/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://metis-mainnet.public.blastapi.io`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

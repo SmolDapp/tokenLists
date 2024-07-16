@@ -9,6 +9,9 @@ import (
 
 var POLYGON = TChain{
 	ID:            137,
+	Name:          `Polygon`,
+	LogoURI:       `https://assets.smold.app/chains/137/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://polygon.llamarpc.com`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

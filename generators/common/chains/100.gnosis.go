@@ -9,6 +9,9 @@ import (
 
 var GNOSIS = TChain{
 	ID:            100,
+	Name:          `Gnosis`,
+	LogoURI:       `https://assets.smold.app/chains/100/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://rpc.gnosis.gateway.fm`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

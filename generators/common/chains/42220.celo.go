@@ -9,6 +9,9 @@ import (
 
 var CELO = TChain{
 	ID:            42220,
+	Name:          `Celo`,
+	LogoURI:       `https://assets.smold.app/chains/42220/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://1rpc.io/celo`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

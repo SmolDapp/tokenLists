@@ -4,7 +4,7 @@ import "github.com/ethereum/go-ethereum/common"
 
 // This list has been manually curated by the Filecoin team and last updated on 05/06/2024
 
-var NOTICE = `
+var FILECOIN_NOTICE = `
 ------------------------------------------------------------------------------------------------------------------------
 - PLEASE UPDATE TIMESTAMP ABOVE
 ------------------------------------------------------------------------------------------------------------------------

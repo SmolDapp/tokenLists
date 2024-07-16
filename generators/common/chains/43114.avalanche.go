@@ -9,6 +9,9 @@ import (
 
 var AVALANCHE = TChain{
 	ID:            43114,
+	Name:          `Avax`,
+	LogoURI:       `https://assets.smold.app/chains/43114/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://1rpc.io/avax/c`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

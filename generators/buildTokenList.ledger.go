@@ -12,14 +12,15 @@ import (
 )
 
 func handleLedgerTokenList(tokensPerChainID map[uint64][]common.Address) []models.TokenListToken {
-	tokenList := []models.TokenListToken{}
+	tokenLists := []models.TokenListToken{}
 
 	for chainID, list := range tokensPerChainID {
 		tokenList := helpers.GetTokensFromAddresses(chainID, list)
 		tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
+		tokenLists = append(tokenLists, tokenList...)
 	}
 
-	return tokenList
+	return tokenLists
 }
 
 func fetchLedgerTokenList() []models.TokenListToken {

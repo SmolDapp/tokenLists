@@ -9,6 +9,9 @@ import (
 
 var ARBITRUM = TChain{
 	ID:            42161,
+	Name:          `Arbitrum`,
+	LogoURI:       `https://assets.smold.app/chains/42161/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://arbitrum.public-rpc.com`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

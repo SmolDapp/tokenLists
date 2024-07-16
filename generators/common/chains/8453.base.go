@@ -9,6 +9,9 @@ import (
 
 var BASE = TChain{
 	ID:            8453,
+	Name:          `Base`,
+	LogoURI:       `https://assets.smold.app/chains/8453/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://mainnet.base.org/`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

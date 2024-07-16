@@ -9,6 +9,9 @@ import (
 
 var ZKSYNC = TChain{
 	ID:            324,
+	Name:          `ZKSync`,
+	LogoURI:       `https://assets.smold.app/chains/324/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://mainnet.era.zksync.io`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

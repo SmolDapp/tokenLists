@@ -52,9 +52,8 @@ func fetchDefillamaTokenList() []models.TokenListToken {
 			if chains.IsTokenIgnored(chainID, common.HexToAddress(addressOnPlatform)) {
 				continue
 			}
-			v.Address = common.HexToAddress(addressOnPlatform)
 			listPerChainID = append(listPerChainID, models.TokenListToken{
-				Address: addressOnPlatform,
+				Address: common.HexToAddress(addressOnPlatform).Hex(),
 				Name:    v.Name,
 				Symbol:  v.Symbol,
 				LogoURI: v.LogoURI,

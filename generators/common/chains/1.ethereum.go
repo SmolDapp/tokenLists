@@ -9,6 +9,9 @@ import (
 
 var ETHEREUM = TChain{
 	ID:            1,
+	Name:          `Ethereum`,
+	LogoURI:       `https://assets.smold.app/chains/1/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://eth.public-rpc.com`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

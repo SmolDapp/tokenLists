@@ -9,6 +9,9 @@ import (
 
 var ZORA = TChain{
 	ID:            7777777,
+	Name:          `Zora`,
+	LogoURI:       `https://assets.smold.app/chains/7777777/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://rpc.zora.energy`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

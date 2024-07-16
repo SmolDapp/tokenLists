@@ -9,6 +9,9 @@ import (
 
 var BLAST = TChain{
 	ID:            81457,
+	Name:          `Blast`,
+	LogoURI:       `https://assets.smold.app/chains/81457/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://rpc.blast.io`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

@@ -9,6 +9,9 @@ import (
 
 var LINEA = TChain{
 	ID:            59144,
+	Name:          `Linea`,
+	LogoURI:       `https://assets.smold.app/chains/59144/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://rpc.linea.build`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

@@ -9,6 +9,9 @@ import (
 
 var POLYGON_ZKEVM = TChain{
 	ID:            1101,
+	Name:          `Polygon ZKEvm`,
+	LogoURI:       `https://assets.smold.app/chains/1101/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://endpoints.omniatech.io/v1/polygon-zkevm/mainnet/public`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

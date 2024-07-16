@@ -9,6 +9,9 @@ import (
 
 var OPTIMISM = TChain{
 	ID:            10,
+	Name:          `Optimism`,
+	LogoURI:       `https://assets.smold.app/chains/10/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://mainnet.optimism.io`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

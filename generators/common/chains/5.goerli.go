@@ -10,6 +10,9 @@ import (
 var GOERLI = TChain{
 	ID:            5,
 	RpcURI:        `https://gateway.tenderly.co/public/goerli`,
+	Name:          `Ethereum`,
+	LogoURI:       `https://assets.smold.app/chains/1/logo-128.png`,
+	IsTestNet:     true,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,
 	MulticallContract: TContractData{

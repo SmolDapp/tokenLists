@@ -9,6 +9,9 @@ import (
 
 var MANTLE = TChain{
 	ID:            5000,
+	Name:          `Mantle`,
+	LogoURI:       `https://assets.smold.app/chains/5000/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://rpc.mantle.xyz`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

@@ -19,9 +19,12 @@ type TCoin struct {
 }
 type TChain struct {
 	ID                uint64
+	Name              string
+	LogoURI           string
 	RpcURI            string
 	MaxBlockRange     uint64
 	MaxBatchSize      uint64
+	IsTestNet         bool
 	MulticallContract TContractData
 	Coin              models.TokenListToken
 	BlacklistedVaults []common.Address

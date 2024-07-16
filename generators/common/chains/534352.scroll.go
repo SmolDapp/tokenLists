@@ -9,6 +9,9 @@ import (
 
 var SCROLL = TChain{
 	ID:            534352,
+	Name:          `Scroll`,
+	LogoURI:       `https://assets.smold.app/chains/534352/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://1rpc.io/scroll`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

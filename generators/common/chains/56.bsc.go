@@ -9,6 +9,9 @@ import (
 
 var BINANCE_SMART_CHAIN = TChain{
 	ID:            56,
+	Name:          `BSC`,
+	LogoURI:       `https://assets.smold.app/chains/56/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://1rpc.io/bnb`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

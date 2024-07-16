@@ -9,6 +9,9 @@ import (
 
 var FILECOIN = TChain{
 	ID:            314,
+	Name:          `Filecoin`,
+	LogoURI:       `https://assets.smold.app/chains/314/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://rpc.ankr.com/filecoin`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,

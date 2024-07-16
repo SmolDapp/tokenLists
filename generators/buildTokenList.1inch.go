@@ -30,7 +30,7 @@ var APIURIFor1Inch = map[uint64]string{
 }
 
 func fetch1InchTokenList() []models.TokenListToken {
-	tokenList := []models.TokenListToken{}
+	tokenLists := []models.TokenListToken{}
 
 	for chainID, uri := range APIURIFor1Inch {
 		if !chains.IsChainIDSupported(chainID) {
@@ -44,9 +44,10 @@ func fetch1InchTokenList() []models.TokenListToken {
 		}
 		tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 		tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
+		tokenLists = append(tokenLists, tokenList...)
 	}
 
-	return tokenList
+	return tokenLists
 }
 
 func build1InchTokenList() {

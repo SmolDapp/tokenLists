@@ -9,6 +9,9 @@ import (
 
 var FANTOM = TChain{
 	ID:            250,
+	Name:          `Fantom`,
+	LogoURI:       `https://assets.smold.app/chains/250/logo-128.png`,
+	IsTestNet:     false,
 	RpcURI:        `https://rpc.ftm.tools`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,
