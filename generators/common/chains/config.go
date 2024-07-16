@@ -1,6 +1,8 @@
 package chains
 
 import (
+	"sort"
+
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
@@ -64,6 +66,8 @@ func init() {
 	for k := range CHAINS {
 		SUPPORTED_CHAIN_IDS = append(SUPPORTED_CHAIN_IDS, k)
 	}
+	//Sort the chain IDs
+	sort.Slice(SUPPORTED_CHAIN_IDS, func(i, j int) bool { return SUPPORTED_CHAIN_IDS[i] < SUPPORTED_CHAIN_IDS[j] })
 }
 
 // IsChainIDSupported returns true if the chainID is supported by our program

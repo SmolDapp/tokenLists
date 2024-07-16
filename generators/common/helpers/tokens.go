@@ -14,7 +14,8 @@ var ALL_EXISTING_TOKENS = map[uint64]map[string]models.TokenListToken{}
 func init() {
 	chainCoins := []models.TokenListToken{}
 
-	for _, chain := range chains.CHAINS {
+	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
+		chain := chains.CHAINS[chainID]
 		chainCoins = append(chainCoins, chain.Coin)
 	}
 

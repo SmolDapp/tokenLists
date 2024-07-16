@@ -147,7 +147,8 @@ func buildSummary() {
 
 	// Add the chainLists
 	{
-		for chainID, chain := range chains.CHAINS {
+		for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
+			chain := chains.CHAINS[chainID]
 			chainIDStr := strconv.FormatUint(chainID, 10)
 			popular := helpers.LoadTokenListFromJsonFile(chainIDStr + `.json`)
 			listElement := TMinTokenListData{

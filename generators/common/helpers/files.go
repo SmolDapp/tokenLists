@@ -159,7 +159,8 @@ func SaveTokenListInJsonFile(
 			baseCoinCount++
 		}
 	}
-	for _, chain := range chains.CHAINS {
+	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
+		chain := chains.CHAINS[chainID]
 		baseCoinCount += len(chain.ExtraTokens)
 	}
 
@@ -348,7 +349,8 @@ func SaveChainListInJsonFile(
 			baseCoinCount++
 		}
 	}
-	for _, chain := range chains.CHAINS {
+	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
+		chain := chains.CHAINS[chainID]
 		baseCoinCount += len(chain.ExtraTokens)
 	}
 
@@ -431,6 +433,9 @@ func SaveChainListInJsonFile(
 	for chainID, tokens := range tokenListPerChainID {
 		if !chains.IsChainIDSupported(chainID) {
 			logs.Info(`ChainID ` + strconv.FormatUint(chainID, 10) + ` is not supported`)
+			continue
+		}
+		if chains.CHAINS[chainID].IsTestNet {
 			continue
 		}
 		chainIDStr := strconv.FormatUint(chainID, 10)

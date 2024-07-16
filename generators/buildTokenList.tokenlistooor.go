@@ -33,7 +33,8 @@ func buildTokenListooorList() {
 	allTokensPlain := []models.TokenListToken{}
 	listsPerChain := make(map[uint64][]string)
 
-	for _, chain := range chains.CHAINS {
+	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
+		chain := chains.CHAINS[chainID]
 		allTokensPlain = append(allTokensPlain, chain.Coin)
 	}
 
