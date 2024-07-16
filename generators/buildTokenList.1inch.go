@@ -19,14 +19,14 @@ type T1InchList struct {
 }
 
 var APIURIFor1Inch = map[uint64]string{
-	1:     `https://api.1inch.io/v5.0/1/tokens`,
-	10:    `https://api.1inch.io/v5.0/10/tokens`,
-	56:    `https://api.1inch.io/v5.0/56/tokens`,
-	100:   `https://api.1inch.io/v5.0/100/tokens`,
-	137:   `https://api.1inch.io/v5.0/137/tokens`,
-	250:   `https://api.1inch.io/v5.0/250/tokens`,
-	42161: `https://api.1inch.io/v5.0/42161/tokens`,
-	43114: `https://api.1inch.io/v5.0/43114/tokens`,
+	1:     `https://api.1inch.dev/token/v1.2/1/token-list`,
+	10:    `https://api.1inch.dev/token/v1.2/10/token-list`,
+	56:    `https://api.1inch.dev/token/v1.2/56/token-list`,
+	100:   `https://api.1inch.dev/token/v1.2/100/token-list`,
+	137:   `https://api.1inch.dev/token/v1.2/137/token-list`,
+	250:   `https://api.1inch.dev/token/v1.2/250/token-list`,
+	42161: `https://api.1inch.dev/token/v1.2/42161/token-list`,
+	43114: `https://api.1inch.dev/token/v1.2/43114/token-list`,
 }
 
 func fetch1InchTokenList() []models.TokenListToken {
@@ -37,7 +37,7 @@ func fetch1InchTokenList() []models.TokenListToken {
 			continue
 		}
 
-		list := helpers.FetchJSON[T1InchList](uri)
+		list := helpers.FetchJSON[models.TokenListData[models.TokenListToken]](uri)
 		tokenAddresses := []common.Address{}
 		for _, token := range list.Tokens {
 			tokenAddresses = append(tokenAddresses, common.HexToAddress(token.Address))

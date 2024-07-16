@@ -42,16 +42,6 @@ jobs:
             RPC_URI_FOR_56288=${{ secrets.RPC_URI_FOR_56288 }}
             RPC_URI_FOR_81457=${{ secrets.RPC_URI_FOR_81457 }}
             RPC_URI_FOR_111188=${{ secrets.RPC_URI_FOR_111188 }}
-            RPC_URI_FOR_2522=${{ secrets.RPC_URI_FOR_2522 }}
-            RPC_URI_FOR_9728=${{ secrets.RPC_URI_FOR_9728 }}
-            RPC_URI_FOR_17000=${{ secrets.RPC_URI_FOR_17000 }}
-            RPC_URI_FOR_18233=${{ secrets.RPC_URI_FOR_18233 }}
-            RPC_URI_FOR_28882=${{ secrets.RPC_URI_FOR_28882 }}
-            RPC_URI_FOR_80001=${{ secrets.RPC_URI_FOR_80001 }}
-            RPC_URI_FOR_84532=${{ secrets.RPC_URI_FOR_84532 }}
-            RPC_URI_FOR_421614=${{ secrets.RPC_URI_FOR_421614 }}
-            RPC_URI_FOR_11155111=${{ secrets.RPC_URI_FOR_11155111 }}
-            RPC_URI_FOR_11155420=${{ secrets.RPC_URI_FOR_11155420 }}
             go run ./generators tokens
         - name: Commit files
           run: |

@@ -78,6 +78,7 @@ func SaveTokenListInJsonFile(
 	filePath string,
 	method JSONSaveTokensMethods,
 ) error {
+	listName := BASE_PATH + `/lists/` + filePath
 	tokens := []models.TokenListToken{}
 	addresses := make(map[string]bool)
 	for _, token := range tokensMaybeDuplicates {
@@ -120,6 +121,184 @@ func SaveTokenListInJsonFile(
 	}
 
 	for _, token := range tokens {
+		if !chains.IsChainIDSupported(token.ChainID) {
+			continue
+		}
+		newToken, err := SetToken(
+			common.HexToAddress(token.Address),
+			token.Name,
+			token.Symbol,
+			token.LogoURI,
+			token.ChainID,
+			token.Decimals,
+		)
+		if err != nil {
+			logs.Error(err)
+			continue
+		}
+		newToken.Occurrence = token.Occurrence
+		tokenList.NextTokensMap[GetKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
+	}
+
+	/**************************************************************************
+	** If the list is empty, we skip
+	**************************************************************************/
+	if len(tokenList.NextTokensMap) == 0 {
+		return errors.New(`token list is empty for ` + listName)
+	}
+
+	/**************************************************************************
+	** If the chain contains only the default eeee coin or only the extra tokens
+	** we don't need to save the list.
+	**************************************************************************/
+	baseCoinCount := 0
+	for _, token := range tokenList.NextTokensMap {
+		if !chains.IsChainIDSupported(token.ChainID) {
+			continue
+		}
+		if strings.EqualFold(`0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`, token.Address) {
+			baseCoinCount++
+		}
+	}
+	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
+		chain := chains.CHAINS[chainID]
+		baseCoinCount += len(chain.ExtraTokens)
+	}
+
+	if len(tokenList.NextTokensMap) <= baseCoinCount {
+		return errors.New(`token list is empty for ` + listName)
+	}
+
+	tokenList.Timestamp = time.Now().Format(time.RFC3339)
+	tokenList.Tokens = []models.TokenListToken{}
+
+	/**************************************************************************
+	** Detect the changes in the token list.
+	** If a token is removed, the major version is bumped.
+	** If a token is added, the minor version is bumped.
+	** If a token is modified, the patch version is bumped.
+	** Skip if we are not using the standard method.
+	**************************************************************************/
+	shouldBumpMajor := false
+	shouldBumpMinor := false
+	shouldBumpPatch := false
+	for _, token := range tokenList.NextTokensMap {
+		key := GetKey(token.ChainID, common.HexToAddress(token.Address))
+		if _, ok := tokenList.PreviousTokensMap[key]; !ok {
+			shouldBumpMinor = true
+		} else if !reflect.DeepEqual(token, tokenList.PreviousTokensMap[key]) {
+			shouldBumpPatch = true
+		}
+		tokenList.Tokens = append(tokenList.Tokens, token)
+		delete(tokenList.PreviousTokensMap, key)
+	}
+	if len(tokenList.PreviousTokensMap) > 0 {
+		shouldBumpMajor = true
+	}
+
+	/**************************************************************************
+	** If there are no changes, we will just return.
+	**************************************************************************/
+	if !shouldBumpMajor && !shouldBumpMinor && !shouldBumpPatch {
+		return errors.New(`no changes detected for ` + listName)
+	}
+
+	if shouldBumpMajor {
+		tokenList.Version.Major++
+		tokenList.Version.Minor = 0
+		tokenList.Version.Patch = 0
+	} else if shouldBumpMinor {
+		tokenList.Version.Minor++
+		tokenList.Version.Patch = 0
+	} else if shouldBumpPatch {
+		tokenList.Version.Patch++
+	}
+
+	/**************************************************************************
+	** To make it easy to work with the list, we will sort the token by their
+	** chainID in ascending order.
+	**************************************************************************/
+	tokenListPerChainID := make(map[uint64][]models.TokenListToken)
+	keys := make([]string, 0, len(tokenList.NextTokensMap))
+	for k := range tokenList.NextTokensMap {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	for i, k := range keys {
+		chainID, _ := strconv.ParseUint(strings.Split(k, `_`)[0], 10, 64)
+		if _, ok := tokenListPerChainID[chainID]; !ok {
+			tokenListPerChainID[chainID] = []models.TokenListToken{}
+		}
+
+		token := tokenList.NextTokensMap[k]
+		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, common.HexToAddress(token.Address)) {
+			continue
+		}
+		tokenList.Tokens[i] = tokenList.NextTokensMap[k]
+		tokenListPerChainID[chainID] = append(tokenListPerChainID[chainID], tokenList.NextTokensMap[k])
+	}
+
+	if filePath == `popular.json` {
+		occurrence := func(p1, p2 *models.TokenListToken) bool {
+			return p1.Occurrence > p2.Occurrence
+		}
+		By(occurrence).Sort(tokenList.Tokens)
+	}
+
+	/**************************************************************************
+	** Then we will just save the unified token list in a json file as well as
+	** each individual token list per chainID.
+	**************************************************************************/
+	jsonData, err := json.MarshalIndent(tokenList, "", "  ")
+	if err != nil {
+		return err
+	}
+	if err = os.WriteFile(BASE_PATH+`/lists/`+filePath, jsonData, 0644); err != nil {
+		return err
+	}
+
+	for chainID, tokens := range tokenListPerChainID {
+		if !chains.IsChainIDSupported(chainID) {
+			continue
+		}
+		chainIDStr := strconv.FormatUint(chainID, 10)
+
+		if len(tokens) <= len(chains.CHAINS[chainID].ExtraTokens)+1 {
+			logs.Info(`No need to save the list ` + filePath + ` for chainID ` + chainIDStr)
+			continue //If we have as much tokens as the extra tokens, we don't need to save the list, this is the default list
+		}
+
+		if filePath == `popular.json` {
+			occurrence := func(p1, p2 *models.TokenListToken) bool {
+				return p1.Occurrence > p2.Occurrence
+			}
+			By(occurrence).Sort(tokens)
+		}
+		tokenList.Tokens = tokens
+		jsonData, err := json.MarshalIndent(tokenList, "", "  ")
+		if err != nil {
+			logs.Error(err)
+			return err
+		}
+		if err := CreateFile(BASE_PATH + `/lists/` + chainIDStr); err != nil {
+			logs.Error(err)
+			return err
+		}
+
+		if err = os.WriteFile(BASE_PATH+`/lists/`+chainIDStr+`/`+filePath, jsonData, 0644); err != nil {
+			logs.Error(err)
+			return err
+		}
+	}
+
+	return nil
+}
+
+// SaveChainListInJsonFile saves a chain list in a json file
+func SaveChainListInJsonFile(
+	tokenList models.TokenListData[models.TokenListToken],
+) error {
+	for _, token := range tokenList.Tokens {
 		if !chains.IsChainIDSupported(token.ChainID) {
 			continue
 		}
@@ -200,196 +379,6 @@ func SaveTokenListInJsonFile(
 	**************************************************************************/
 	if !shouldBumpMajor && !shouldBumpMinor && !shouldBumpPatch {
 		return errors.New(`no changes detected`)
-	}
-
-	if shouldBumpMajor {
-		tokenList.Version.Major++
-		tokenList.Version.Minor = 0
-		tokenList.Version.Patch = 0
-	} else if shouldBumpMinor {
-		tokenList.Version.Minor++
-		tokenList.Version.Patch = 0
-	} else if shouldBumpPatch {
-		tokenList.Version.Patch++
-	}
-
-	/**************************************************************************
-	** To make it easy to work with the list, we will sort the token by their
-	** chainID in ascending order.
-	**************************************************************************/
-	tokenListPerChainID := make(map[uint64][]models.TokenListToken)
-	keys := make([]string, 0, len(tokenList.NextTokensMap))
-	for k := range tokenList.NextTokensMap {
-		keys = append(keys, k)
-	}
-	sort.Strings(keys)
-	for i, k := range keys {
-		chainID, _ := strconv.ParseUint(strings.Split(k, `_`)[0], 10, 64)
-		if _, ok := tokenListPerChainID[chainID]; !ok {
-			tokenListPerChainID[chainID] = []models.TokenListToken{}
-		}
-
-		token := tokenList.NextTokensMap[k]
-		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, common.HexToAddress(token.Address)) {
-			continue
-		}
-		tokenList.Tokens[i] = tokenList.NextTokensMap[k]
-		tokenListPerChainID[chainID] = append(tokenListPerChainID[chainID], tokenList.NextTokensMap[k])
-	}
-
-	if filePath == `popular.json` {
-		occurrence := func(p1, p2 *models.TokenListToken) bool {
-			return p1.Occurrence > p2.Occurrence
-		}
-		By(occurrence).Sort(tokenList.Tokens)
-	}
-
-	/**************************************************************************
-	** Then we will just save the unified token list in a json file as well as
-	** each individual token list per chainID.
-	**************************************************************************/
-	jsonData, err := json.MarshalIndent(tokenList, "", "  ")
-	if err != nil {
-		return err
-	}
-	if err = os.WriteFile(BASE_PATH+`/lists/`+filePath, jsonData, 0644); err != nil {
-		return err
-	}
-
-	for chainID, tokens := range tokenListPerChainID {
-		if !chains.IsChainIDSupported(chainID) {
-			logs.Info(`ChainID ` + strconv.FormatUint(chainID, 10) + ` is not supported`)
-			continue
-		}
-		chainIDStr := strconv.FormatUint(chainID, 10)
-
-		if len(tokens) <= len(chains.CHAINS[chainID].ExtraTokens)+1 {
-			logs.Info(`No need to save the list for chainID ` + chainIDStr)
-			continue //If we have as much tokens as the extra tokens, we don't need to save the list, this is the default list
-		}
-
-		if filePath == `popular.json` {
-			occurrence := func(p1, p2 *models.TokenListToken) bool {
-				return p1.Occurrence > p2.Occurrence
-			}
-			By(occurrence).Sort(tokens)
-		}
-		tokenList.Tokens = tokens
-		jsonData, err := json.MarshalIndent(tokenList, "", "  ")
-		if err != nil {
-			logs.Error(err)
-			return err
-		}
-		if err := CreateFile(BASE_PATH + `/lists/` + chainIDStr); err != nil {
-			logs.Error(err)
-			return err
-		}
-
-		if err = os.WriteFile(BASE_PATH+`/lists/`+chainIDStr+`/`+filePath, jsonData, 0644); err != nil {
-			logs.Error(err)
-			return err
-		}
-	}
-
-	return nil
-}
-
-// SaveChainListInJsonFile saves a chain list in a json file
-func SaveChainListInJsonFile(
-	tokenList models.TokenListData[models.TokenListToken],
-	tokensMaybeDuplicates []models.TokenListToken,
-) error {
-	tokens := []models.TokenListToken{}
-	addresses := make(map[string]bool)
-	for _, token := range tokensMaybeDuplicates {
-		key := token.Address + strconv.FormatUint(token.ChainID, 10)
-		if _, ok := addresses[key]; !ok {
-			addresses[key] = true
-			tokens = append(tokens, token)
-		}
-	}
-
-	for _, token := range tokens {
-		if !chains.IsChainIDSupported(token.ChainID) {
-			continue
-		}
-		newToken, err := SetToken(
-			common.HexToAddress(token.Address),
-			token.Name,
-			token.Symbol,
-			token.LogoURI,
-			token.ChainID,
-			token.Decimals,
-		)
-		if err != nil {
-			logs.Error(err)
-			continue
-		}
-		newToken.Occurrence = token.Occurrence
-		tokenList.NextTokensMap[GetKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
-	}
-
-	/**************************************************************************
-	** If the list is empty, we skip
-	**************************************************************************/
-	if len(tokenList.NextTokensMap) == 0 {
-		return errors.New(`token list is empty`)
-	}
-
-	/**************************************************************************
-	** If the chain contains only the default eeee coin or only the extra tokens
-	** we don't need to save the list.
-	**************************************************************************/
-	baseCoinCount := 0
-	for _, token := range tokenList.NextTokensMap {
-		if !chains.IsChainIDSupported(token.ChainID) {
-			continue
-		}
-		if strings.EqualFold(`0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`, token.Address) {
-			baseCoinCount++
-		}
-	}
-	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
-		chain := chains.CHAINS[chainID]
-		baseCoinCount += len(chain.ExtraTokens)
-	}
-
-	if len(tokenList.NextTokensMap) <= baseCoinCount {
-		return errors.New(`token list is empty`)
-	}
-
-	tokenList.Timestamp = time.Now().Format(time.RFC3339)
-	tokenList.Tokens = []models.TokenListToken{}
-
-	/**************************************************************************
-	** Detect the changes in the token list.
-	** If a token is removed, the major version is bumped.
-	** If a token is added, the minor version is bumped.
-	** If a token is modified, the patch version is bumped.
-	** Skip if we are not using the standard method.
-	**************************************************************************/
-	shouldBumpMajor := false
-	shouldBumpMinor := false
-	shouldBumpPatch := false
-	for _, token := range tokenList.NextTokensMap {
-		key := GetKey(token.ChainID, common.HexToAddress(token.Address))
-		if _, ok := tokenList.PreviousTokensMap[key]; !ok {
-			shouldBumpMinor = true
-		} else if !reflect.DeepEqual(token, tokenList.PreviousTokensMap[key]) {
-			shouldBumpPatch = true
-		}
-		tokenList.Tokens = append(tokenList.Tokens, token)
-		delete(tokenList.PreviousTokensMap, key)
-	}
-	if len(tokenList.PreviousTokensMap) > 0 {
-		shouldBumpMajor = true
-	}
-
-	/**************************************************************************
-	** If there are no changes, we will just return.
-	**************************************************************************/
-	if !shouldBumpMajor && !shouldBumpMinor && !shouldBumpPatch {
-		return nil
 	}
 
 	if shouldBumpMajor {

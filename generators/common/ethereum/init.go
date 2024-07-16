@@ -36,6 +36,7 @@ func Init() {
 	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
 		client, err := ethclient.Dial(GetRPCURI(chainID))
 		if err != nil {
+			logs.Warning(`Missing environment variable RPC_URI_FOR_` + strconv.FormatUint(chainID, 10))
 			os.Setenv(`RPC_URI_FOR_`+strconv.FormatUint(chainID, 10), chains.CHAINS[chainID].RpcURI)
 			RPC_ENDPOINTS[chainID] = useEnv(`RPC_URI_FOR_`+strconv.FormatUint(chainID, 10), RPC_ENDPOINTS[chainID])
 			client, err = ethclient.Dial(RPC_ENDPOINTS[chainID])

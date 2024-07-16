@@ -136,6 +136,8 @@ func buildPopularList() {
 	}
 
 	helpers.SaveTokenListInJsonFile(tokenList, tokens, `popular.json`, helpers.SavingMethodStandard)
-	helpers.SaveChainListInJsonFile(tokenList, tokens)
 
+	// Update the chainlist with the new tokens
+	tokenList = helpers.LoadTokenListFromJsonFile(`popular.json`)
+	helpers.SaveChainListInJsonFile(tokenList)
 }

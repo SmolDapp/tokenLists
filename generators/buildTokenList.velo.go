@@ -28,12 +28,12 @@ func fetchVeloLikeTokenList(chainID uint64, sugarAddress common.Address) []model
 	addressesMap := make(map[common.Address]bool)
 	addressesSlice := []common.Address{}
 
-	for i := 0; i < 10; i++ {
-		offset := big.NewInt(int64(i * 500))
-		allTokens, err := veloSugar.All(nil, big.NewInt(500), offset, common.Address{})
+	for i := 0; i < 100; i++ {
+		offset := big.NewInt(int64(i * 25))
+		allTokens, err := veloSugar.All(nil, big.NewInt(25), offset, common.Address{})
 		if err != nil {
 			logs.Error(err)
-			return []models.TokenListToken{}
+			break
 		}
 		for _, token := range allTokens {
 			addressesMap[token.Token0] = true

@@ -1,10 +1,10 @@
 {
   "name": "1inch Token List",
   "description": "",
-  "timestamp": "27/06/2023 10:42:18",
+  "timestamp": "2024-07-16T16:09:22+02:00",
   "version": {
-    "major": 8,
-    "minor": 0,
+    "major": 9,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://app.1inch.io/assets/images/logo.png",
@@ -143,6 +143,14 @@
       "name": "Frax Share",
       "symbol": "FXS",
       "logoURI": "https://tokens.1inch.io/0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x228a48df6819CCc2eCa01e2192ebAFfFdAD56c19",
+      "name": "VNX Franc",
+      "symbol": "VCHF",
+      "logoURI": "https://assets.coingecko.com/coins/images/29547/large/VNXCHF_%282%29.png?1679561328",
       "chainId": 43114,
       "decimals": 18
     },
@@ -302,7 +310,7 @@
       "address": "0x4f60a160D8C2DDdaAfe16FCC57566dB84D674BD6",
       "name": "Jewels",
       "symbol": "JEWEL",
-      "logoURI": "https://tokens.1inch.io/0x4f60a160d8c2dddaafe16fcc57566db84d674bd6.png",
+      "logoURI": "https://assets.smold.app/api/token/43114/0x4f60a160D8C2DDdaAfe16FCC57566dB84D674BD6/logo-128.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -340,7 +348,7 @@
     },
     {
       "address": "0x544c42fBB96B39B21DF61cf322b5EDC285EE7429",
-      "name": "InsurAce",
+      "name": "Avalanche INSUR Token",
       "symbol": "INSUR",
       "logoURI": "https://tokens.1inch.io/0x544c42fbb96b39b21df61cf322b5edc285ee7429.png",
       "chainId": 43114,
@@ -367,6 +375,13 @@
       "name": "Chainlink Token",
       "symbol": "LINK.e",
       "logoURI": "https://tokens.1inch.io/0x697256caa3ccafd62bb6d3aa1c7c5671786a5fd9.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "chainId": 43114,
       "decimals": 18
     },
@@ -419,6 +434,14 @@
       "decimals": 8
     },
     {
+      "address": "0x69260B9483F9871ca57f81A90D91E2F96c2Cd11d",
+      "name": "GoGoPool Protocol",
+      "symbol": "GGP",
+      "logoURI": "https://assets.coingecko.com/coins/images/30267/large/GGP_logo_square.png?1683776057",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0x6D923f688C7FF287dc3A5943CAeefc994F97b290",
       "name": "SmarterCoin",
       "symbol": "SMRTr",
@@ -455,6 +478,14 @@
       "name": "ElasticSwap Tic Token",
       "symbol": "TIC",
       "logoURI": "https://tokens.1inch.io/0x75739a693459f33b1fbcc02099eea3ebcf150cbe.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x7678e162f38ec9ef2Bfd1d0aAF9fd93355E5Fa0b",
+      "name": "VNX Euro",
+      "symbol": "VEUR",
+      "logoURI": "https://assets.coingecko.com/coins/images/29351/large/VNXEUR_%281%29.png?1678262021",
       "chainId": 43114,
       "decimals": 18
     },
@@ -563,6 +594,14 @@
       "decimals": 18
     },
     {
+      "address": "0xA25EaF2906FA1a3a13EdAc9B9657108Af7B703e3",
+      "name": "GoGoPool Liquid Staking Token",
+      "symbol": "ggAVAX",
+      "logoURI": "https://asset-images.messari.io/images/05e859a2-2634-4f50-9db4-c13a9f163288/128.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0xA32608e873F9DdEF944B24798db69d80Bbb4d1ed",
       "name": "CRA",
       "symbol": "CRA",
@@ -580,8 +619,8 @@
     },
     {
       "address": "0xAEC8318a9a59bAEb39861d10ff6C7f7bf1F96C57",
-      "name": "agEUR",
-      "symbol": "agEUR",
+      "name": "EURA (previously agEUR)",
+      "symbol": "EURA",
       "logoURI": "https://tokens.1inch.io/0xaec8318a9a59baeb39861d10ff6c7f7bf1f96c57.png",
       "chainId": 43114,
       "decimals": 18
@@ -653,7 +692,7 @@
     {
       "address": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD",
       "name": "Euro Coin",
-      "symbol": "EUROC",
+      "symbol": "EURC",
       "logoURI": "https://tokens.1inch.io/0xc891eb4cbdeff6e073e859e987815ed1505c2acd.png",
       "chainId": 43114,
       "decimals": 6
@@ -699,14 +738,6 @@
       "decimals": 18
     },
     {
-      "address": "0xE1C110E1B1b4A1deD0cAf3E42BfBdbB7b5d7cE1C",
-      "name": "Elk",
-      "symbol": "ELK",
-      "logoURI": "https://tokens.1inch.io/0xe1c110e1b1b4a1ded0caf3e42bfbdbb7b5d7ce1c.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0xEd2b42D3C9c6E97e11755BB37df29B6375ede3EB",
       "name": "HonToken",
       "symbol": "HON",
@@ -716,8 +747,8 @@
     },
     {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "name": "Avalanche",
-      "symbol": "AVAX",
+      "name": "Ethereum",
+      "symbol": "ETH",
       "logoURI": "https://tokens.1inch.io/0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7.png",
       "chainId": 43114,
       "decimals": 18
@@ -767,6 +798,13 @@
       "name": "chikn feed",
       "symbol": "FEED",
       "logoURI": "https://tokens.1inch.io/0xab592d197acc575d16c3346f4eb70c703f308d1e.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0xb262a485d98D8e19175818D47453e7812cA255A8",
+      "name": "Bingo",
+      "symbol": "BINGO",
       "chainId": 43114,
       "decimals": 18
     },
@@ -878,7 +916,7 @@
       "address": "0xe83cE6bfb580583bd6A62B4Be7b34fC25F02910D",
       "name": "Avalanche ABBC",
       "symbol": "AVABBC",
-      "logoURI": "https://tokens.1inch.io/0xe83ce6bfb580583bd6a62b4be7b34fc25f02910d.png",
+      "logoURI": "https://assets.smold.app/api/token/43114/0xe83cE6bfb580583bd6A62B4Be7b34fC25F02910D/logo-128.png",
       "chainId": 43114,
       "decimals": 8
     },
