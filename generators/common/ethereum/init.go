@@ -27,6 +27,11 @@ var RPC_ENDPOINTS = map[uint64]string{}
 func Init() {
 	godotenv.Load(`.env`)
 
+	bearer := os.Getenv(`BEARER_FOR_1INCH`)
+	if bearer == "" {
+		logs.Warning(`Missing environment variable BEARER_FOR_1INCH`)
+	}
+
 	// Load the RPC_ENDPOINTS from the env variables
 	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
 		RPC_ENDPOINTS[chainID] = useEnv(`RPC_URI_FOR_`+strconv.FormatUint(chainID, 10), RPC_ENDPOINTS[chainID])
