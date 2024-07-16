@@ -7,6 +7,7 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
@@ -142,6 +143,35 @@ func buildSummary() {
 		}
 		//prepend the popular list
 		tokenListSummary.Lists = append([]TMinTokenListData{listElement}, tokenListSummary.Lists...)
+	}
+
+	// Add the chainLists
+	{
+		for chainID, chain := range chains.CHAINS {
+			chainIDStr := strconv.FormatUint(chainID, 10)
+			popular := helpers.LoadTokenListFromJsonFile(chainIDStr + `.json`)
+			listElement := TMinTokenListData{
+				Name:        popular.Name,
+				Timestamp:   popular.Timestamp,
+				LogoURI:     popular.LogoURI,
+				URI:         BASE_URI + `lists/` + chainIDStr + `.json`,
+				Keywords:    popular.Keywords,
+				Version:     popular.Version,
+				TokenCount:  len(popular.Tokens),
+				Description: `The most popular tokens on ` + chain.Name + `.`,
+			}
+			listElement.Metadata.SupportedChains = listSupportedChains(popular.Tokens)
+			listElement.Metadata.GenerationMethod = string(GenerationChain)
+			listElement.Metadata.TokenCountPerChain = make(map[string]int)
+			for _, token := range popular.Tokens {
+				chainStr := strconv.FormatUint(token.ChainID, 10)
+				if _, ok := listElement.Metadata.TokenCountPerChain[chainStr]; !ok {
+					listElement.Metadata.TokenCountPerChain[chainStr] = 0
+				}
+				listElement.Metadata.TokenCountPerChain[chainStr]++
+			}
+			tokenListSummary.Lists = append(tokenListSummary.Lists, listElement)
+		}
 	}
 
 	jsonData, _ := json.MarshalIndent(tokenListSummary, "", "  ")
