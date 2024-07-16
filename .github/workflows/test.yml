@@ -18,24 +18,7 @@ jobs:
            go-version-file: './go.mod'
            go-version: '1.19.3'
         - name: run
-          run: >
-            RPC_URI_FOR_1=${{ secrets.RPC_URI_FOR_1 }}
-            RPC_URI_FOR_10=${{ secrets.RPC_URI_FOR_10 }}
-            RPC_URI_FOR_56=${{ secrets.RPC_URI_FOR_56 }}
-            RPC_URI_FOR_100=${{ secrets.RPC_URI_FOR_100 }}
-            RPC_URI_FOR_137=${{ secrets.RPC_URI_FOR_137 }}
-            RPC_URI_FOR_250=${{ secrets.RPC_URI_FOR_250 }}
-            RPC_URI_FOR_252=${{ secrets.RPC_URI_FOR_252 }}
-            RPC_URI_FOR_288=${{ secrets.RPC_URI_FOR_288 }}
-            RPC_URI_FOR_8453=${{ secrets.RPC_URI_FOR_8453 }}
-            RPC_URI_FOR_42161=${{ secrets.RPC_URI_FOR_42161 }}
-            RPC_URI_FOR_42170=${{ secrets.RPC_URI_FOR_42170 }}
-            RPC_URI_FOR_43114=${{ secrets.RPC_URI_FOR_43114 }} 
-            RPC_URI_FOR_56288=${{ secrets.RPC_URI_FOR_56288 }}
-            RPC_URI_FOR_81457=${{ secrets.RPC_URI_FOR_81457 }}
-            RPC_URI_FOR_111188=${{ secrets.RPC_URI_FOR_111188 }}
-            BEARER_FOR_1INCH=${{ secrets.BEARER_FOR_1INCH }}
-            go run ./generators test
+          run: RPC_URI_FOR_1=${{ secrets.RPC_URI_FOR_1 }} RPC_URI_FOR_10=${{ secrets.RPC_URI_FOR_10 }} RPC_URI_FOR_56=${{ secrets.RPC_URI_FOR_56 }} RPC_URI_FOR_100=${{ secrets.RPC_URI_FOR_100 }} RPC_URI_FOR_137=${{ secrets.RPC_URI_FOR_137 }} RPC_URI_FOR_250=${{ secrets.RPC_URI_FOR_250 }} RPC_URI_FOR_252=${{ secrets.RPC_URI_FOR_252 }} RPC_URI_FOR_288=${{ secrets.RPC_URI_FOR_288 }} RPC_URI_FOR_8453=${{ secrets.RPC_URI_FOR_8453 }} RPC_URI_FOR_42161=${{ secrets.RPC_URI_FOR_42161 }} RPC_URI_FOR_42170=${{ secrets.RPC_URI_FOR_42170 }} RPC_URI_FOR_43114=${{ secrets.RPC_URI_FOR_43114 }}  RPC_URI_FOR_56288=${{ secrets.RPC_URI_FOR_56288 }} RPC_URI_FOR_81457=${{ secrets.RPC_URI_FOR_81457 }} RPC_URI_FOR_111188=${{ secrets.RPC_URI_FOR_111188 }} BEARER_FOR_1INCH=${{ secrets.BEARER_FOR_1INCH }} go run ./generators test
         - name: Commit files
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

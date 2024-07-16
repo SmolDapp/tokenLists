@@ -42,6 +42,7 @@ func main() {
 				logs.Success(`Done!`)
 			} else {
 				logs.Error(`Unknown generator:`, arg)
+				os.Exit(0)
 			}
 		}
 	}

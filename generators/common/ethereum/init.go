@@ -31,6 +31,8 @@ func Init() {
 	if bearer == "" {
 		logs.Warning(`Missing environment variable BEARER_FOR_1INCH`)
 	}
+	logs.Pretty(`Using 1inch Bearer:`, bearer)
+	logs.Pretty(`Using opt:`, os.Getenv(`RPC_URI_FOR_10`))
 
 	// Load the RPC_ENDPOINTS from the env variables
 	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
