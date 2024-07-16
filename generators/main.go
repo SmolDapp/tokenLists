@@ -40,6 +40,8 @@ func main() {
 				logs.Info(`Running generator:`, strings.ToTitle(arg))
 				GENERATORS[arg].Exec()
 				logs.Success(`Done!`)
+			} else {
+				logs.Error(`Unknown generator:`, arg)
 			}
 		}
 	}
