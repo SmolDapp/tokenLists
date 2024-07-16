@@ -198,7 +198,7 @@ func SaveTokenListInJsonFile(
 	** If there are no changes, we will just return.
 	**************************************************************************/
 	if !shouldBumpMajor && !shouldBumpMinor && !shouldBumpPatch {
-		return nil
+		return errors.New(`no changes detected`)
 	}
 
 	if shouldBumpMajor {

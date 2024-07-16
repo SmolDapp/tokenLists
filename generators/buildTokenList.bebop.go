@@ -43,16 +43,26 @@ func bebopMapNetworkChainIDToName(chainID uint64) string {
 	switch chainID {
 	case 1:
 		return `ethereum`
+	case 10:
+		return `optimism`
+	case 56:
+		return `bsc`
 	case 137:
 		return `polygon`
+	case 324:
+		return `zksync`
+	case 8453:
+		return `base`
 	case 42161:
 		return `arbitrum`
+	case 81457:
+		return `blast`
 	}
 	return `ethereum`
 }
 
-func fetchbebopTokenList() []models.TokenListToken {
-	supportedChainID := []uint64{1, 137, 42161}
+func fetchBebopTokenList() []models.TokenListToken {
+	supportedChainID := []uint64{1, 10, 56, 137, 8453, 42161, 81457}
 	tokens := []models.TokenListToken{}
 
 	type TBebopTokenListToken struct {
@@ -64,54 +74,31 @@ func fetchbebopTokenList() []models.TokenListToken {
 		} `json:"extensions"`
 	}
 
-	tokenList := helpers.FetchJSON[models.TokenListData[TBebopTokenListToken]](`https://api.bebop.xyz/token_list`)
-	tokenMap := map[string]TBebopTokenListToken{}
-	for _, token := range tokenList.Tokens {
-		tokenMap[token.Address] = token
-	}
-
 	for _, chainID := range supportedChainID {
-		list := helpers.FetchJSON[TBebopList](`https://api.bebop.xyz/` + bebopMapNetworkChainIDToName(chainID) + `/v2/token-info`)
+		list := helpers.FetchJSON[models.TokenListData[TBebopTokenListToken]](`https://api.bebop.xyz/pmm/` + bebopMapNetworkChainIDToName(chainID) + `/v3/tokenlist?active_only=true`)
 
+		tokenMap := map[string]TBebopTokenListToken{}
 		tokenList := []common.Address{}
 		for _, token := range list.Tokens {
-			if !token.Availability.IsAvailable {
-				continue
-			}
-			if !token.Availability.CanBuy && !token.Availability.CanSell {
-				continue
-			}
+			tokenMap[token.Address] = token
 			tokenList = append(tokenList, common.HexToAddress(token.Address))
 		}
 
 		tokensInfo := helpers.RetrieveBasicInformations(chainID, tokenList)
 		for _, existingToken := range list.Tokens {
-			if !existingToken.Availability.IsAvailable {
-				continue
-			}
-			if !existingToken.Availability.CanBuy && !existingToken.Availability.CanSell {
-				continue
-			}
-			logoURI := ``
-			if tokenFromList, ok := tokenMap[common.HexToAddress(existingToken.Address).Hex()]; ok {
-				logoURI = tokenFromList.LogoURI
-			}
-
 			if token, ok := tokensInfo[common.HexToAddress(existingToken.Address).Hex()]; ok {
 				if newToken, err := helpers.SetToken(
 					token.Address,
 					helpers.SafeString(token.Name, existingToken.Name),
 					helpers.SafeString(token.Symbol, existingToken.Symbol),
-					logoURI,
+					helpers.SafeString(existingToken.LogoURI, ""),
 					chainID,
 					int(token.Decimals),
 				); err == nil {
-					if tokenFromList, ok := tokenMap[common.HexToAddress(existingToken.Address).Hex()]; ok {
-						newToken.Metadata = map[string]any{
-							`tags`:            tokenFromList.Tags,
-							`color`:           tokenFromList.Extensions.Color,
-							`displayDecimals`: tokenFromList.Extensions.DisplayDecimals,
-						}
+					newToken.Metadata = map[string]any{
+						`tags`:            existingToken.Tags,
+						`color`:           existingToken.Extensions.Color,
+						`displayDecimals`: existingToken.Extensions.DisplayDecimals,
 					}
 					tokens = append(tokens, newToken)
 				}
@@ -126,6 +113,6 @@ func buildBebopTokenList() {
 	tokenList.Name = "Bebop"
 	tokenList.LogoURI = "https://bebop-public-images.s3.eu-west-2.amazonaws.com/bebop-logo.png"
 
-	tokens := fetchbebopTokenList()
+	tokens := fetchBebopTokenList()
 	helpers.SaveTokenListInJsonFile(tokenList, tokens, `bebop.json`, helpers.SavingMethodStandard)
 }

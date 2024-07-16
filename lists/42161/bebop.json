@@ -1,15 +1,63 @@
 {
   "name": "Bebop",
   "description": "",
-  "timestamp": "2024-06-13T10:21:41Z",
+  "timestamp": "2024-07-16T14:30:18+02:00",
   "version": {
     "major": 16,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://bebop-public-images.s3.eu-west-2.amazonaws.com/bebop-logo.png",
   "keywords": null,
   "tokens": [
+    {
+      "address": "0x2297aEbD383787A160DD0d9F71508148769342E3",
+      "name": "Bitcoin",
+      "symbol": "BTC.b",
+      "logoURI": "https://assets.coingecko.com/coins/images/26115/large/btcb.png?1655921693",
+      "chainId": 42161,
+      "decimals": 8
+    },
+    {
+      "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "logoURI": "https://tokens.1inch.io/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png",
+      "chainId": 42161,
+      "decimals": 8
+    },
+    {
+      "address": "0x371c7ec6D8039ff7933a2AA28EB827Ffe1F52f07",
+      "name": "JoeToken",
+      "symbol": "JOE",
+      "logoURI": "https://tokens.1inch.io/0x371c7ec6d8039ff7933a2aa28eb827ffe1f52f07.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x539bdE0d7Dbd336b79148AA742883198BBF60342",
+      "name": "MAGIC",
+      "symbol": "MAGIC",
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/network/arbitrum/0x539bdE0d7Dbd336b79148AA742883198BBF60342.jpg",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x6694340fc020c5E6B96567843da2df01b2CE1eb6",
+      "name": "StargateToken",
+      "symbol": "STG",
+      "logoURI": "https://tokens.1inch.io/0x6694340fc020c5e6b96567843da2df01b2ce1eb6.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "name": "LayerZero",
+      "symbol": "ZRO",
+      "logoURI": "https://assets.coingecko.com/coins/images/28206/large/ftxG9_TJ_400x400.jpeg?1668396420",
+      "chainId": 42161,
+      "decimals": 18
+    },
     {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       "name": "Wrapped Ether",
@@ -22,7 +70,23 @@
       "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
       "name": "Arbitrum",
       "symbol": "ARB",
-      "logoURI": "https://tokens.1inch.io/0x912ce59144191c1204e64559fe8253a0e49e6548.png",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x912CE59144191C1204E64559FE8253a0e49E6548/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x9d2F299715D94d8A7E6F5eaa8E654E8c74a988A7",
+      "name": "Frax Share",
+      "symbol": "FXS",
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/fxs.jpg",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "logoURI": "https://tokens.1inch.io/0x6b175474e89094c44da98b954eedeac495271d0f.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -63,6 +127,14 @@
       "name": "ChainLink Token",
       "symbol": "LINK",
       "logoURI": "https://tokens.1inch.io/0x514910771af9ca656af840dff83e8264ecf986ca.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
+      "name": "GMX",
+      "symbol": "GMX",
+      "logoURI": "https://tokens.1inch.io/0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a.png",
       "chainId": 42161,
       "decimals": 18
     }
