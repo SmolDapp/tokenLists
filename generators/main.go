@@ -41,6 +41,9 @@ func main() {
 				GENERATORS[arg].Exec()
 				logs.Success(`Done!`)
 			} else {
+				if arg == `popular` {
+					break
+				}
 				logs.Error(`Unknown generator:`, arg)
 				os.Exit(0)
 			}

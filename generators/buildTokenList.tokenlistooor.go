@@ -45,6 +45,9 @@ func buildTokenListooorList() {
 	** 50% of the lists for a given chain to be added to the aggregated list.
 	**************************************************************************/
 	for name, generatorData := range GENERATORS {
+		if generatorData.Exclude {
+			continue
+		}
 		if name == `tokenlistooor` {
 			continue
 		}

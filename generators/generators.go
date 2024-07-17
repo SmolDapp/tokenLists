@@ -27,7 +27,8 @@ type TGenerators struct {
 	Description      string
 	GenerationMethod TGenerationMethods
 	GeneratorType    TGeneratorType
-	Tags             []string //
+	Tags             []string
+	Exclude          bool // Should we exclude this generator from computation (ex: old, deprecated)
 }
 
 var GENERATORS = map[string]TGenerators{
@@ -121,6 +122,7 @@ var GENERATORS = map[string]TGenerators{
 		Description:      `The top of tokens available on by market cap.`,
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
+		Exclude:          true,
 	},
 	`filecoin`: {
 		Exec:             buildFilecoinTokenList,
