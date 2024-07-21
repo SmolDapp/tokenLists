@@ -1,11 +1,11 @@
 {
   "name": "CoW Swap",
   "description": "",
-  "timestamp": "2024-07-02T09:46:45Z",
+  "timestamp": "2024-07-21T00:46:25Z",
   "version": {
     "major": 0,
-    "minor": 9,
-    "patch": 1
+    "minor": 10,
+    "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/cowprotocol/cowswap/c5974fb8a45d678029ecb013dab33722e152daaa/src/assets/cow-swap/cow_v2.svg",
   "keywords": [
@@ -18,6 +18,13 @@
       "address": "0x1b896893dfc86bb67Cf57767298b9073D2c1bA2c",
       "name": "PancakeSwap Token",
       "symbol": "Cake",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x498Bf2B1e120FeD3ad3D42EA2165E9b73f99C1e5",
+      "name": "Curve.Fi USD Stablecoin",
+      "symbol": "crvUSD",
       "chainId": 42161,
       "decimals": 18
     },

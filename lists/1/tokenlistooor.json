@@ -1,9 +1,9 @@
 {
   "name": "Tokenlistooor Token List",
   "description": "A curated list of tokens from all the token lists on tokenlistooor.",
-  "timestamp": "2024-07-17T09:56:04+02:00",
+  "timestamp": "2024-07-21T01:24:33Z",
   "version": {
-    "major": 256,
+    "major": 257,
     "minor": 0,
     "patch": 0
   },
@@ -23,6 +23,22 @@
       "name": "Tokenlon",
       "symbol": "LON",
       "logoURI": "https://tokens.1inch.io/0x0000000000095413afc295d19edeb1ad7b71c952.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
+      "name": "USDA",
+      "symbol": "USDA",
+      "logoURI": "https://assets.smold.app/api/token/1/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x0022228a2cc5E7eF0274A7Baa600d44da5aB5776",
+      "name": "Staked USDA",
+      "symbol": "stUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/34509/large/stUSD_copie.png?1705288386",
       "chainId": 1,
       "decimals": 18
     },
@@ -90,14 +106,6 @@
       "decimals": 18
     },
     {
-      "address": "0x00e8Eb340f8AF587EEA6200D2081E31dC87285ac",
-      "name": "Curve XAI-FRAXBP Factory yVault",
-      "symbol": "yvCurve-XAI-FRAXBP-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x00e8Eb340f8AF587EEA6200D2081E31dC87285ac/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x013889973Cced40030175D138c685266b055e3F4",
       "name": "YT sDAI 28MAR2024",
       "symbol": "YT-sDAI-28MAR2024",
@@ -118,14 +126,6 @@
       "name": "Curve rgUSD-fxUSD Factory yVault",
       "symbol": "yvCurve-rgUSD-fxUSD-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x019015647be0b2604506F4EB8290908F062B62cb/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x01B01C4A1F4C522aD341A9da5eaA48aF207ab3Ec",
-      "name": "Curve pUSD-FRAXBP Factory yVault",
-      "symbol": "yvCurve-pUSD-FRAXBP-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x01B01C4A1F4C522aD341A9da5eaA48aF207ab3Ec/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -206,14 +206,6 @@
       "name": "Charged Particles - IONX",
       "symbol": "IONX",
       "logoURI": "https://assets.coingecko.com/coins/images/15836/large/DrKjSQMH_400x400.png?1696515454",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x02D928E68D8F10C0358566152677Db51E1e2Dc8C",
-      "name": "Balancer Boosted swETH-WETH",
-      "symbol": "swETH-bb-a-WETH-BPT",
-      "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
       "chainId": 1,
       "decimals": 18
     },
@@ -338,18 +330,17 @@
       "decimals": 18
     },
     {
-      "address": "0x03eaE26089A8c28DDC4c81d65bEfE014C793A60d",
-      "name": "Curve stETH-frxETH Factory yVault",
-      "symbol": "yvCurve-stETH-frxETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x03eaE26089A8c28DDC4c81d65bEfE014C793A60d/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x0407C810546f1DC007F01A80E65983072D5C6DFa",
       "name": "Visor COMP-ETH Uni v3",
       "symbol": "vCOMP-ETHV3-1",
       "logoURI": "https://assets.smold.app/api/token/1/0x0407C810546f1DC007F01A80E65983072D5C6DFa/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x04545c88f0839B7FFFbfFD328C38C1Fc574ED6F1",
+      "name": "Diana Token",
+      "symbol": "DIANA",
       "chainId": 1,
       "decimals": 18
     },
@@ -378,6 +369,13 @@
       "decimals": 18
     },
     {
+      "address": "0x04A289fe4cE5fa87a76F58d0214340fb5893A58c",
+      "name": "RealBlock.io",
+      "symbol": "REAL",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x04AeBe2e4301CdF5E9c57B01eBdfe4Ac4B48DD13",
       "name": "mkUSD yVault-A",
       "symbol": "yvmkUSD-A",
@@ -394,6 +392,21 @@
       "decimals": 18
     },
     {
+      "address": "0x04BEc8130Afd0fc5C5eAfE7a979D6921C05E1f67",
+      "name": "YT Ethena USDe 24OCT2024",
+      "symbol": "YT-USDe-24OCT2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0x04BEc8130Afd0fc5C5eAfE7a979D6921C05E1f67/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x04C154b66CB340F3Ae24111CC767e0184Ed00Cc6",
+      "name": "Pirex Ether",
+      "symbol": "pxETH",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x04C17b9D3b29A78F7Bd062a57CF44FC633e71f85",
       "name": "IMPT",
       "symbol": "IMPT",
@@ -402,12 +415,12 @@
       "decimals": 18
     },
     {
-      "address": "0x04D549bAfE83B8BdCCC8dF38F15b90199D20f1eE",
-      "name": "Curve tBTC Factory yVault",
-      "symbol": "yvCurve-tBTC-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x04D549bAfE83B8BdCCC8dF38F15b90199D20f1eE/logo-128.png",
+      "address": "0x04F2694C8fcee23e8Fd0dfEA1d4f5Bb8c352111F",
+      "name": "Staked Olympus",
+      "symbol": "sOHM",
+      "logoURI": "https://asset-images.messari.io/images/1decde6d-532f-4b65-87b8-4e960fc6b8ea/128.png",
       "chainId": 1,
-      "decimals": 18
+      "decimals": 9
     },
     {
       "address": "0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828",
@@ -426,18 +439,18 @@
       "decimals": 18
     },
     {
-      "address": "0x04c8bfe2eb09a1e2e9fA97A2fd970E06d87B43de",
-      "name": "Curve GEAR-ETH Factory yVault",
-      "symbol": "yvCurve-GEAR-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x04c8bfe2eb09a1e2e9fA97A2fd970E06d87B43de/logo-128.png",
+      "address": "0x04b727C7e246CA70d496ecF52E6b6280f3c8077D",
+      "name": "Curve.fi Factory USD Metapool: apeUSDFRAXBP",
+      "symbol": "APEUSDBP3CRV-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x04b727C7e246CA70d496ecF52E6b6280f3c8077D/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
     {
-      "address": "0x04d73c87b20d372cB3240C72eEFB9d79bA5e4959",
-      "name": "Curve UST Wormhole Pool yVault",
-      "symbol": "yvCurve-UST",
-      "logoURI": "https://assets.smold.app/api/token/1/0x04d73c87b20d372cB3240C72eEFB9d79bA5e4959/logo-128.png",
+      "address": "0x04bC0Ab673d88aE9dbC9DA2380cB6B79C4BCa9aE",
+      "name": "iearn BUSD",
+      "symbol": "yBUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x04bC0Ab673d88aE9dbC9DA2380cB6B79C4BCa9aE/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -470,14 +483,6 @@
       "name": "PT Ethena USDe 25APR2024",
       "symbol": "PT-USDe-25APR2024",
       "logoURI": "https://assets.smold.app/api/token/1/0x05402A3A056563187c75C4e1d6799d55e2442B7c/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x054AF22E1519b020516D72D749221c24756385C9",
-      "name": "Curve HUSD Pool yVault",
-      "symbol": "yvCurve-HUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0x054AF22E1519b020516D72D749221c24756385C9/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -554,6 +559,22 @@
       "decimals": 18
     },
     {
+      "address": "0x06B884e60794Ce02AafAb13791B59A2e6A07442f",
+      "name": "Unbanked",
+      "symbol": "UNBNK",
+      "logoURI": "https://assets.coingecko.com/coins/images/20171/large/logo_-_2021-11-11T115427.135.png?1696519584",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x06c03069de266F58d10A0724a4f65C3D4feFfF4D",
+      "name": "Spectra ERC4626 Wrapper: Amphor Restaked ETH",
+      "symbol": "sw-amphrETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x06c03069de266F58d10A0724a4f65C3D4feFfF4D/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x072987D5B36aD8d45552aEd98879a7101cCdd749",
       "name": "BunnyVerse",
       "symbol": "BNV",
@@ -566,6 +587,22 @@
       "name": "SUKU",
       "symbol": "SUKU",
       "logoURI": "https://assets.coingecko.com/coins/images/11969/large/UmfW5S6f_400x400.jpg?1596602238",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x077DFfdADF5Fa9037254E4e30B138E67ED4e156A",
+      "name": "Pendle Market",
+      "symbol": "PENDLE-LPT",
+      "logoURI": "https://assets.smold.app/api/token/1/0x077DFfdADF5Fa9037254E4e30B138E67ED4e156A/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x07D1718fF05a8C53C8F05aDAEd57C0d672945f9a",
+      "name": "Aladdin rUSD",
+      "symbol": "arUSD",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/38795/thumb/Screenshot_2024-06-20_at_2.41.40%E2%80%AFPM.png?1718880106",
       "chainId": 1,
       "decimals": 18
     },
@@ -602,10 +639,25 @@
       "decimals": 18
     },
     {
+      "address": "0x085780639CC2cACd35E474e71f4d000e2405d8f6",
+      "name": "f(x) USD",
+      "symbol": "fxUSD",
+      "logoURI": "https://asset-images.messari.io/images/0d39b2de-90c7-42c8-8e05-8975d0797a4d/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x0869055C098Fe927E1816CAAfb16E9133e5258FE",
       "name": "PT Ethena USDe 4APR2024",
       "symbol": "PT-USDe-4APR2024",
       "logoURI": "https://assets.smold.app/api/token/1/0x0869055C098Fe927E1816CAAfb16E9133e5258FE/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x08A75dbC7167714CeaC1a8e43a8d643A4EDd625a",
+      "name": "Wild Credit",
+      "symbol": "WILD",
       "chainId": 1,
       "decimals": 18
     },
@@ -762,14 +814,6 @@
       "decimals": 18
     },
     {
-      "address": "0x0CD6f267b2086bea681E922E19D40512511BE538",
-      "name": "Curve.fi Factory Plain Pool: crvUSD/Frax",
-      "symbol": "crvUSDFRAX-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x0CD6f267b2086bea681E922E19D40512511BE538/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x0CDF9acd87E940837ff21BB40c9fd55F68bba059",
       "name": "Public Mint",
       "symbol": "MINT",
@@ -890,6 +934,13 @@
       "decimals": 18
     },
     {
+      "address": "0x0F83287FF768D1c1e17a42F44d644D7F22e8ee1d",
+      "name": "Synth sCHF",
+      "symbol": "sCHF",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x0FCDAeDFb8A7DfDa2e9838564c5A1665d856AFDF",
       "name": "yearn Curve.fi MUSD/3Crv",
       "symbol": "yvmusd3CRV",
@@ -1002,10 +1053,9 @@
       "decimals": 18
     },
     {
-      "address": "0x0d4EA8536F9A13e4FBa16042a46c30f092b06aA5",
-      "name": "Curve EURT Pool yVault",
-      "symbol": "yvCurve-EURT",
-      "logoURI": "https://assets.smold.app/api/token/1/0x0d4EA8536F9A13e4FBa16042a46c30f092b06aA5/logo-128.png",
+      "address": "0x0d86883FAf4FfD7aEb116390af37746F45b6f378",
+      "name": "Web 3 Dollar",
+      "symbol": "USD3",
       "chainId": 1,
       "decimals": 18
     },
@@ -1138,14 +1188,6 @@
       "decimals": 18
     },
     {
-      "address": "0x1025b1641d1F23C289412Dd5E5701e9810103a93",
-      "name": "Curve ibAUD-USDC Pool yVault",
-      "symbol": "yvCurve-ibAUD-USDC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x1025b1641d1F23C289412Dd5E5701e9810103a93/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x1070E528dd1561a4276bbB13a0C837deB8b69c7a",
       "name": "PT Zircuit Staking USDe 22AUG2024",
       "symbol": "PT-zs-USDe-22AUG2024",
@@ -1174,6 +1216,13 @@
       "name": "Kelp rsETH LP (27 JUN 2024)",
       "symbol": "ysPENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/1/0x10856c8c8e41b8888868789080c7BEA6267A2b08/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x10978Db3885bA79Bf1Bc823E108085FB88e6F02f",
+      "name": "Pirex BTRFLY",
+      "symbol": "pxBTRFLY",
       "chainId": 1,
       "decimals": 18
     },
@@ -1258,14 +1307,6 @@
       "decimals": 18
     },
     {
-      "address": "0x12A9cC33A980DAa74E00cc2d1A0E74C57A93d12C",
-      "name": "Iron Bank Synthetix Network Token",
-      "symbol": "iSNX",
-      "logoURI": "https://assets.smold.app/api/token/1/0x12A9cC33A980DAa74E00cc2d1A0E74C57A93d12C/logo-128.png",
-      "chainId": 1,
-      "decimals": 8
-    },
-    {
       "address": "0x12BB890508c125661E03b09EC06E404bc9289040",
       "name": "Radio Caca V2",
       "symbol": "RACA",
@@ -1298,10 +1339,10 @@
       "decimals": 18
     },
     {
-      "address": "0x132d8D2C76Db3812403431fAcB00F3453Fc42125",
-      "name": "Curve ankrETH Pool yVault",
-      "symbol": "yvCurve-ankrETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x132d8D2C76Db3812403431fAcB00F3453Fc42125/logo-128.png",
+      "address": "0x1321f1f1aa541A56C31682c57b80ECfCCd9bB288",
+      "name": "ARCx Governance Token",
+      "symbol": "ARCX",
+      "logoURI": "https://tokens.1inch.io/0xed30dd7e50edf3581ad970efc5d9379ce2614adb.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1342,6 +1383,21 @@
       "name": "Alpha",
       "symbol": "ALPHA",
       "logoURI": "https://assets.coingecko.com/coins/images/22199/large/logo2023.png?1696521542",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x13Cc8D626445c6fcCC548aAE172CBACF572EF5A4",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "chainId": 1,
+      "decimals": 6
+    },
+    {
+      "address": "0x1456688345527bE1f37E9e627DA0837D6f08C925",
+      "name": "USDP Stablecoin",
+      "symbol": "USDP",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1456688345527bE1f37E9e627DA0837D6f08C925/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1482,6 +1538,14 @@
       "decimals": 18
     },
     {
+      "address": "0x1605A410c8480A18A3e958fAFF3b6D2834fbae22",
+      "name": "SY Ethena sUSDE",
+      "symbol": "SY-sUSDE",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1605A410c8480A18A3e958fAFF3b6D2834fbae22/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x1614F18Fc94f47967A3Fbe5FfcD46d4e7Da3D787",
       "name": "PAID Network",
       "symbol": "PAID",
@@ -1498,26 +1562,10 @@
       "decimals": 18
     },
     {
-      "address": "0x1635b506a88fBF428465Ad65d00e8d6B6E5846C3",
-      "name": "Curve CVX-ETH Pool yVault",
-      "symbol": "yvCurve-CVXETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x1635b506a88fBF428465Ad65d00e8d6B6E5846C3/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x16756EC1DEb89A2106C35E0B586a799D0A61837D",
       "name": "Chedda Token",
       "symbol": "CHEDDA",
       "logoURI": "https://assets.coingecko.com/coins/images/22654/large/cMckil70_400x400.jpg?1696521967",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x16825039dfe2a5b01F3E1E6a2BBF9a576c6F95c4",
-      "name": "Curve d3pool Pool yVault",
-      "symbol": "yvCurve-d3pool",
-      "logoURI": "https://assets.smold.app/api/token/1/0x16825039dfe2a5b01F3E1E6a2BBF9a576c6F95c4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1534,6 +1582,14 @@
       "name": "Route",
       "symbol": "ROUTE",
       "logoURI": "https://tokens.1inch.io/0x16eccfdbb4ee1a85a33f3a9b21175cd7ae753db4.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x16de59092dAE5CcF4A1E6439D611fd0653f0Bd01",
+      "name": "iearn DAI",
+      "symbol": "yDAI",
+      "logoURI": "https://assets.smold.app/api/token/1/0x16de59092dAE5CcF4A1E6439D611fd0653f0Bd01/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1698,6 +1754,21 @@
       "decimals": 18
     },
     {
+      "address": "0x196f4727526eA7FB1e17b2071B3d8eAA38486988",
+      "name": "Reserve",
+      "symbol": "RSV",
+      "logoURI": "https://assets.smold.app/api/token/1/0x196f4727526eA7FB1e17b2071B3d8eAA38486988/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x19747816A030fECDa3394C6062CDF6b9B4dB0E0b",
+      "name": "Hemelios",
+      "symbol": "HEM",
+      "chainId": 1,
+      "decimals": 8
+    },
+    {
       "address": "0x198139F26d42F2028C10427a161e2d0e8bb00346",
       "name": "SY Mellow amphrETH",
       "symbol": "SY-amphrETH",
@@ -1714,12 +1785,11 @@
       "decimals": 18
     },
     {
-      "address": "0x19D3364A399d251E894aC732651be8B0E4e85001",
-      "name": "DAI yVault",
-      "symbol": "yvDAI",
-      "logoURI": "https://assets.smold.app/api/token/1/0x19D3364A399d251E894aC732651be8B0E4e85001/logo-128.png",
+      "address": "0x19b3bDe6F02Fc2C985947dcC1Dc2A4cDDfd43eE8",
+      "name": "Cream Tether USD",
+      "symbol": "crUSDT",
       "chainId": 1,
-      "decimals": 18
+      "decimals": 8
     },
     {
       "address": "0x19b8Bc5CcF9700e16f2780bEA152F01C449f45D0",
@@ -1734,14 +1804,6 @@
       "name": "BitDAO",
       "symbol": "BIT",
       "logoURI": "https://tokens.1inch.io/0x1a4b46696b2bb4794eb3d4c26f1c55f9170fa4c5.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x1A5ebfF0E881Aec34837845e4D0EB430a1B4b737",
-      "name": "Curve FRAXBP Factory yVault",
-      "symbol": "yvCurve-FRAXBP-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x1A5ebfF0E881Aec34837845e4D0EB430a1B4b737/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1802,26 +1864,18 @@
       "decimals": 9
     },
     {
-      "address": "0x1C6a9783F812b3Af3aBbf7de64c3cD7CC7D1af44",
-      "name": "Curve UST Pool yVault",
-      "symbol": "yvCurve-UST",
-      "logoURI": "https://assets.smold.app/api/token/1/0x1C6a9783F812b3Af3aBbf7de64c3cD7CC7D1af44/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x1C97e67Dc7ca179aE82E0c4AFF4Af9ff66612A43",
-      "name": "Curve PAL-ETH Factory yVault",
-      "symbol": "yvCurve-PAL-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x1C97e67Dc7ca179aE82E0c4AFF4Af9ff66612A43/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x1C9922314ED1415c95b9FD453c3818fd41867d0B",
       "name": "TOWER",
       "symbol": "TOWER",
       "logoURI": "https://tokens.1inch.io/0x1c9922314ed1415c95b9fd453c3818fd41867d0b.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x1CC481cE2BD2EC7Bf67d1Be64d4878b16078F309",
+      "name": "Iron Bank CHF",
+      "symbol": "ibCHF",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1CC481cE2BD2EC7Bf67d1Be64d4878b16078F309/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1840,6 +1894,21 @@
       "logoURI": "https://etherscan.io/token/images/kompete_32.png",
       "chainId": 1,
       "decimals": 10
+    },
+    {
+      "address": "0x1E19CF2D73a72Ef1332C882F20534B6519Be0276",
+      "name": "Balancer rETH Stable Pool",
+      "symbol": "B-rETH-STABLE",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1E19CF2D73a72Ef1332C882F20534B6519Be0276/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x1E2391a261217c93D09Ff3Ae9aB1903EA237BdA8",
+      "name": "bl",
+      "symbol": "bl",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x1E2F15302B90EddE696593607b6bD444B64e8F02",
@@ -1994,12 +2063,12 @@
       "decimals": 18
     },
     {
-      "address": "0x1b905331F7dE2748F4D6a0678e1521E20347643F",
-      "name": "Curve ibAUD Pool yVault",
-      "symbol": "yvCurve-ibAUD",
-      "logoURI": "https://assets.smold.app/api/token/1/0x1b905331F7dE2748F4D6a0678e1521E20347643F/logo-128.png",
+      "address": "0x1bE5d71F2dA660BFdee8012dDc58D024448A0A59",
+      "name": "Curve (iearn fork) USDT",
+      "symbol": "ycUSDT",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x1bE5d71F2dA660BFdee8012dDc58D024448A0A59/logo-128.png",
       "chainId": 1,
-      "decimals": 18
+      "decimals": 6
     },
     {
       "address": "0x1bb04fCBC210bAA384531079ed7f59d9149309ba",
@@ -2038,6 +2107,14 @@
       "name": "Keep3rV1",
       "symbol": "KP3R",
       "logoURI": "https://assets.smold.app/api/token/1/0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x1d00E86748573C322f4cc41518AA0e77BD912Eb4",
+      "name": "USDE Stablecoin",
+      "symbol": "USDE",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1d00E86748573C322f4cc41518AA0e77BD912Eb4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2138,6 +2215,13 @@
       "decimals": 18
     },
     {
+      "address": "0x20658291677a29EFddfd0E303f8b23113d837cC7",
+      "name": "Boosted",
+      "symbol": "LUSD",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x2084b373979415Bc93190071AF3390F92DcDD189",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -2230,6 +2314,14 @@
       "name": "SY Ethena sUSDE",
       "symbol": "SY-sUSDE",
       "logoURI": "https://assets.smold.app/api/token/1/0x215a61deaD7e1303b8571Bb429491aeAc5f2061e/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x216f3aC5d0566F934C0FC15c89422cD5e7505df6",
+      "name": "WE Token",
+      "symbol": "WTK",
+      "logoURI": "https://assets.smold.app/api/token/1/0x216f3aC5d0566F934C0FC15c89422cD5e7505df6/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2330,6 +2422,14 @@
       "decimals": 18
     },
     {
+      "address": "0x22Fc5A29bd3d6CCe19a06f844019fd506fCe4455",
+      "name": "Equilibria Pendle",
+      "symbol": "ePendle",
+      "logoURI": "https://ethereum-optimism.github.io/data/ePENDLE/logo.svg",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x233D32d4D33eD5F2D6b8544137c8836249de372F",
       "name": "YT Tensorplex Staked TAO 27JUN2024",
       "symbol": "YT-stTAO-27JUN2024",
@@ -2352,6 +2452,14 @@
       "logoURI": "https://jpyc.jp/static/media/jpyc.0d1e5d3f.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+      "name": "Aave Ethereum USDT",
+      "symbol": "aEthUSDT",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 1,
+      "decimals": 6
     },
     {
       "address": "0x23894DC9da6c94ECb439911cAF7d337746575A72",
@@ -2386,6 +2494,22 @@
       "decimals": 18
     },
     {
+      "address": "0x23Da77203EEad71e72d7326654c431ef563567A4",
+      "name": "Amber phantom Butterfly",
+      "symbol": "APB",
+      "logoURI": "https://assets.coingecko.com/coins/images/31898/large/20230922_004931.png?1696530709",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x23E7817bC73645063FB2fa85c1d098EfFE84bE90",
+      "name": "Curve.fi Factory Crypto Pool: JPEG/pETH",
+      "symbol": "JPEGpETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x23E7817bC73645063FB2fa85c1d098EfFE84bE90/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x23aEfCeD9255aD3560CDaa4A10CbFe9EC230DC5A",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -2406,14 +2530,6 @@
       "name": "Curve Lend crvUSD-tBTC Factory yVault",
       "symbol": "yvCurveLend-crvUSD-tBTC-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x2407b40c08e528A627Ebd99CCcea89d888d00906/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x241AdD131B9aaa7527132b752252b99420937ADc",
-      "name": "Curve USDT-crvUSD Factory yVault",
-      "symbol": "yvCurve-USDT-crvUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x241AdD131B9aaa7527132b752252b99420937ADc/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2446,6 +2562,14 @@
       "name": "SY Ethena USDe",
       "symbol": "SY-USDe",
       "logoURI": "https://assets.smold.app/api/token/1/0x248d83f7Ac03CEbCC06d5C1A52c9B5d0EbB9936e/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x248f43B622cE2F35A14dB3FC528284730b619cD5",
+      "name": "Spectra ERC4626 Wrapper: Universal ETH",
+      "symbol": "sw-uniETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x248f43B622cE2F35A14dB3FC528284730b619cD5/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2490,6 +2614,14 @@
       "decimals": 18
     },
     {
+      "address": "0x24E79e946dEa5482212c38aaB2D0782F04cdB0E0",
+      "name": "Paladin stkAAVE",
+      "symbol": "palStkAAVE",
+      "logoURI": "https://asset-images.messari.io/images/1d9e6f94-834f-42e7-a9ae-d8005434b0c7/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x24E89bDf2f65326b94E36978A7EDeAc63623DAFA",
       "name": "Tiger King",
       "symbol": "TKING",
@@ -2522,14 +2654,6 @@
       "decimals": 18
     },
     {
-      "address": "0x25212Df29073FfFA7A67399AcEfC2dd75a831A1A",
-      "name": "Curve EURS Pool yVault",
-      "symbol": "yvCurve-EURS",
-      "logoURI": "https://assets.smold.app/api/token/1/0x25212Df29073FfFA7A67399AcEfC2dd75a831A1A/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x253008ba4aE2f3E6488DC998a5321D4EB1a0c905",
       "name": "SY Puffer ETH",
       "symbol": "SY pufETH",
@@ -2558,14 +2682,6 @@
       "name": "YT Renzo ezETH 25APR2024",
       "symbol": "YT-ezETH-25APR2024",
       "logoURI": "https://assets.smold.app/api/token/1/0x256Fb830945141f7927785c06b65dAbc3744213c/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x2570f1bD5D2735314FC102eb12Fc1aFe9e6E7193",
-      "name": "TryLSD",
-      "symbol": "TryLSD",
-      "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2610,6 +2726,30 @@
       "decimals": 18
     },
     {
+      "address": "0x264411731264940258950941f05284a920a21EF5",
+      "name": "PT Ethena sUSDE 31OCT2024",
+      "symbol": "PT-sUSDE-31OCT2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0x264411731264940258950941f05284a920a21EF5/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x269895a3dF4D73b077Fc823dD6dA1B95f72Aaf9B",
+      "name": "Synth sKRW",
+      "symbol": "sKRW",
+      "logoURI": "https://assets.smold.app/api/token/1/0x269895a3dF4D73b077Fc823dD6dA1B95f72Aaf9B/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x26EA744E5B887E5205727f55dFBE8685e3b21951",
+      "name": "iearn USDC",
+      "symbol": "yUSDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0x26EA744E5B887E5205727f55dFBE8685e3b21951/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
+    },
+    {
       "address": "0x26c8AFBBFE1EBaca03C2bB082E69D0476Bffe099",
       "name": "Cellframe Token",
       "symbol": "CELL",
@@ -2642,18 +2782,18 @@
       "decimals": 18
     },
     {
-      "address": "0x27C70Cd1946795B66be9d954418546998b546634",
-      "name": "DOGE KILLER",
-      "symbol": "LEASH",
-      "logoURI": "https://tokens.1inch.io/0x27c70cd1946795b66be9d954418546998b546634.png",
+      "address": "0x279e76FA6310976dc651c5F48EC7e768e9e2CCb4",
+      "name": "YT Ethena sUSDE 24OCT2024",
+      "symbol": "YT-sUSDE-24OCT2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0x279e76FA6310976dc651c5F48EC7e768e9e2CCb4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
     {
-      "address": "0x27b7b1ad7288079A66d12350c828D3C00A6F07d7",
-      "name": "Curve Iron Bank Pool yVault",
-      "symbol": "yvCurve-IronBank",
-      "logoURI": "https://assets.smold.app/api/token/1/0x27b7b1ad7288079A66d12350c828D3C00A6F07d7/logo-128.png",
+      "address": "0x27C70Cd1946795B66be9d954418546998b546634",
+      "name": "DOGE KILLER",
+      "symbol": "LEASH",
+      "logoURI": "https://tokens.1inch.io/0x27c70cd1946795b66be9d954418546998b546634.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2690,26 +2830,10 @@
       "decimals": 18
     },
     {
-      "address": "0x2889302a794dA87fBF1D6Db415C1492194663D13",
-      "name": "TricryptoLLAMA",
-      "symbol": "crvCRVUSDTBTCWSTETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x2889302a794dA87fBF1D6Db415C1492194663D13/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x28B703Ab847FB4a9548AF7A4bCe38CD94F508298",
       "name": "yPT-eETH (auto-rolling Pendle PT)",
       "symbol": "yPT-eETH",
       "logoURI": "https://assets.smold.app/api/token/1/0x28B703Ab847FB4a9548AF7A4bCe38CD94F508298/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x28a5b95C101df3Ded0C0d9074DB80C438774B6a9",
-      "name": "Curve USDT Pool yVault",
-      "symbol": "yvCurve-USDT",
-      "logoURI": "https://assets.smold.app/api/token/1/0x28a5b95C101df3Ded0C0d9074DB80C438774B6a9/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2736,6 +2860,13 @@
       "logoURI": "https://assets.coingecko.com/coins/images/24692/large/token_%283%29.png?1696523859",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x2915ACAa744e36BEfB3c539c3d99A7f82AD8E6c9",
+      "name": "Greek Drachma",
+      "symbol": "GRD",
+      "chainId": 1,
+      "decimals": 7
     },
     {
       "address": "0x293811f161fBFea8f417e222B226BB821548Ba63",
@@ -2826,14 +2957,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2Ab6578239eD541Ef7cC7D11a45D740cE9F0a1F4",
-      "name": "Curve CTR-ETH Factory yVault",
-      "symbol": "yvCurve-CTR-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x2Ab6578239eD541Ef7cC7D11a45D740cE9F0a1F4/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x2Ab6Bb8408ca3199B8Fa6C92d5b455F820Af03c4",
       "name": "TE-FOOD/TustChain",
       "symbol": "TONE",
@@ -2898,22 +3021,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2D59aa422A7AaE58038CF8aE6eD07330Cc7d3ae8",
-      "name": "Curve bLUSD Factory yVault",
-      "symbol": "yvCurve-bLUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x2D59aa422A7AaE58038CF8aE6eD07330Cc7d3ae8/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x2D5D4869381C4Fce34789BC1D38aCCe747E295AE",
-      "name": "Curve RAI Pool yVault",
-      "symbol": "yvCurve-RAI",
-      "logoURI": "https://assets.smold.app/api/token/1/0x2D5D4869381C4Fce34789BC1D38aCCe747E295AE/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x2D85Ac3F2AeD4f0A14DC6852f1725240E47Cfc1f",
       "name": "Curve TryLSD Factory yVault",
       "symbol": "yvCurve-TryLSD-f",
@@ -2922,18 +3029,17 @@
       "decimals": 18
     },
     {
-      "address": "0x2DfB14E32e2F8156ec15a2c21c3A6c053af52Be8",
-      "name": "Curve MIM Pool yVault",
-      "symbol": "yvCurve-MIM",
-      "logoURI": "https://assets.smold.app/api/token/1/0x2DfB14E32e2F8156ec15a2c21c3A6c053af52Be8/logo-128.png",
+      "address": "0x2DABcea55a12d73191AeCe59F508b191Fb68AdaC",
+      "name": "Karak - Wrapped eETH",
+      "symbol": "KweETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x2DABcea55a12d73191AeCe59F508b191Fb68AdaC/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
     {
-      "address": "0x2E2b268cbC86917D2809CE2715A19E58a210FceE",
-      "name": "Curve HBTC Factory yVault",
-      "symbol": "yvCurve-HBTC-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x2E2b268cbC86917D2809CE2715A19E58a210FceE/logo-128.png",
+      "address": "0x2DD4239206E6a4933E0CFe139950042bA6DcC7F0",
+      "name": "Tether",
+      "symbol": "USDT",
       "chainId": 1,
       "decimals": 18
     },
@@ -3010,14 +3116,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2a38B9B0201Ca39B17B460eD2f11e4929559071E",
-      "name": "Curve GUSD Pool yVault",
-      "symbol": "yvCurve-GUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0x2a38B9B0201Ca39B17B460eD2f11e4929559071E/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x2a3bFF78B79A009976EeA096a51A948a3dC00e34",
       "name": "Wilder",
       "symbol": "WILD",
@@ -3030,14 +3128,6 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/1/0x2a41384C28B3E327bEDA4ffB3D3706CAd571d5fb/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x2a82DcdcBfB88e92021B8BcC3DA22703a2E4459c",
-      "name": "Curve BUSD Factory yVault",
-      "symbol": "yvCurve-BUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x2a82DcdcBfB88e92021B8BcC3DA22703a2E4459c/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3146,10 +3236,9 @@
       "decimals": 18
     },
     {
-      "address": "0x2e5c7e9B1Da0D9Cb2832eBb06241d18552A85400",
-      "name": "Curve ibCHF-USDC Pool yVault",
-      "symbol": "yvCurve-ibCHF-USDC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x2e5c7e9B1Da0D9Cb2832eBb06241d18552A85400/logo-128.png",
+      "address": "0x2e60f6C4CA05bC55A8e577DEeBD61FCe727c4a6e",
+      "name": "EtherTulip Founder DAO",
+      "symbol": "PETAL",
       "chainId": 1,
       "decimals": 18
     },
@@ -3194,10 +3283,33 @@
       "decimals": 18
     },
     {
+      "address": "0x2f65AAc617D2AeB822C4a5A61BEB5e17872F4B18",
+      "name": "Ingot",
+      "symbol": "INGOT",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x2fB06235aB90812e5BaE28404024C9498fF9414d",
       "name": "Curve JPEG-pETH Factory yVault",
       "symbol": "yvCurve-JPEG-pETH-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x2fB06235aB90812e5BaE28404024C9498fF9414d/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x2fE94ea3d5d4a175184081439753DE15AeF9d614",
+      "name": "Curve.fi oBTC/sbtcCRV",
+      "symbol": "oBTC/sbtcCRV",
+      "logoURI": "https://assets.smold.app/api/token/1/0x2fE94ea3d5d4a175184081439753DE15AeF9d614/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x2fc1E74BC8A6D15fE768c10C2EDe7D6d95ec27e9",
+      "name": "Tholgar Warlord Vault",
+      "symbol": "thWAR",
+      "logoURI": "https://assets.smold.app/api/token/1/0x2fc1E74BC8A6D15fE768c10C2EDe7D6d95ec27e9/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3226,14 +3338,6 @@
       "decimals": 18
     },
     {
-      "address": "0x30B801F933e676Cb25892D1838FDCC00A1dde4cf",
-      "name": "Curve JPEG-pETH Factory yVault",
-      "symbol": "yvCurve-JPEG-pETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x30B801F933e676Cb25892D1838FDCC00A1dde4cf/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x30D20208d987713f46DFD34EF128Bb16C404D10f",
       "name": "Stader",
       "symbol": "SD",
@@ -3246,6 +3350,13 @@
       "name": "yPT-eETH-Karak (auto-rolling Pendle PT)",
       "symbol": "yPT-eETH-Karak",
       "logoURI": "https://assets.smold.app/api/token/1/0x30DD04107DeE5e64fBD2981f7Ab980B9f82C2429/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x30E193bd3F52713D5562cf316f35115034525f44",
+      "name": "Green Tech Coin",
+      "symbol": "GTEC",
       "chainId": 1,
       "decimals": 18
     },
@@ -3330,6 +3441,14 @@
       "decimals": 18
     },
     {
+      "address": "0x31d4Eb09a216e181eC8a43ce79226A487D6F0BA9",
+      "name": "USDM",
+      "symbol": "USDM",
+      "logoURI": "https://assets.smold.app/api/token/1/0x31d4Eb09a216e181eC8a43ce79226A487D6F0BA9/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x320623b8E4fF03373931769A31Fc52A4E78B5d70",
       "name": "Reserve Rights",
       "symbol": "RSR",
@@ -3342,22 +3461,6 @@
       "name": "Cryptex",
       "symbol": "CTX",
       "logoURI": "https://tokens.1inch.io/0x321c2fe4446c7c963dc41dd58879af648838f98d.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x321d570790fd2f109Fe4e55aa419Adf2fce0c842",
-      "name": "Curve agEUR-EUROC Factory yVault",
-      "symbol": "yvCurve-agEUR-EUROC-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x321d570790fd2f109Fe4e55aa419Adf2fce0c842/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x3221BFBE308144f19089CB197b7C11c2Bf495906",
-      "name": "Curve BTRFLY-ETH Factory yVault",
-      "symbol": "yvCurve-BTRFLY-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x3221BFBE308144f19089CB197b7C11c2Bf495906/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3392,6 +3495,13 @@
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x32651dD149a6EC22734882F790cBEB21402663F9/logo-128.png",
       "chainId": 1,
       "decimals": 6
+    },
+    {
+      "address": "0x326f5834d73a2dc02b3c492E9ef1b24399d430b3",
+      "name": "StargateToken",
+      "symbol": "STG",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x32a7C02e79c4ea1008dD6564b35F131428673c41",
@@ -3490,14 +3600,6 @@
       "decimals": 18
     },
     {
-      "address": "0x341bb10D8f5947f3066502DC8125d9b8949FD3D6",
-      "name": "Curve STG-USDC Pool yVault",
-      "symbol": "yvCurve-STG-USDC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x341bb10D8f5947f3066502DC8125d9b8949FD3D6/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x34280882267ffa6383B363E278B027Be083bBe3b",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -3570,14 +3672,6 @@
       "decimals": 18
     },
     {
-      "address": "0x34D655069F4cAc1547E4C8cA284FfFF5ad4A8db0",
-      "name": "Curve.fi Factory Plain Pool: crvUSD/TUSD",
-      "symbol": "crvUSDTUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x34D655069F4cAc1547E4C8cA284FfFF5ad4A8db0/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x34F0915a5f15a66Eba86F6a58bE1A471FB7836A7",
       "name": "PulseDogecoin",
       "symbol": "PLSD",
@@ -3632,6 +3726,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/19721/large/chiro200x200.png?1696519146",
       "chainId": 1,
       "decimals": 9
+    },
+    {
+      "address": "0x352A4B34B8e9f43B869F6F80728978CCcDCED406",
+      "name": "SOUNDLINX",
+      "symbol": "SDLX",
+      "logoURI": "https://assets.smold.app/api/token/1/0x352A4B34B8e9f43B869F6F80728978CCcDCED406/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x358AA737e033F34df7c54306960a38d09AaBd523",
@@ -3710,6 +3812,14 @@
       "name": "FXN Token",
       "symbol": "FXN",
       "logoURI": "https://assets.coingecko.com/coins/images/31889/large/FXN_200x200.png?1696530700",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x3660BD168494d61ffDac21E403d0F6356cF90fD7",
+      "name": "Curve.fi Factory Crypto Pool: OHM/ETH",
+      "symbol": "OHMETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3660BD168494d61ffDac21E403d0F6356cF90fD7/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3826,6 +3936,13 @@
       "decimals": 18
     },
     {
+      "address": "0x3835a58CA93Cdb5f912519ad366826aC9a752510",
+      "name": "FraxlendV1 - Curve DAO Token/Frax - Variable Time-Weighted Interest Rate - 6",
+      "symbol": "FraxlendV1 - CRV/FRAX",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x383E6b4437b59fff47B619CBA855CA29342A8559",
       "name": "PayPool",
       "symbol": "PYUSDUSDC",
@@ -3866,6 +3983,13 @@
       "decimals": 18
     },
     {
+      "address": "0x389fB29230D02e67eB963C1F5A00f2b16f95BEb7",
+      "name": "LP Pirex CVX",
+      "symbol": "lpxCvx",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x38A2fDc11f526Ddd5a607C1F251C065f40fBF2f7",
       "name": "PhoenixDAO",
       "symbol": "PHNX",
@@ -3890,14 +4014,6 @@
       "decimals": 18
     },
     {
-      "address": "0x38EA452219524Bb87e18dE1C24D3bB59510BD783",
-      "name": "Tether USD-LP",
-      "symbol": "S*USDT",
-      "logoURI": "https://assets.coingecko.com/coins/images/24413/large/STG_LOGO.png",
-      "chainId": 1,
-      "decimals": 6
-    },
-    {
       "address": "0x38d9eb07A7b8Df7D86F440A4A5c4a4c1a27E1a08",
       "name": "bloXmove Token",
       "symbol": "BLXM",
@@ -3910,14 +4026,6 @@
       "name": "Concentrated Voting Power",
       "symbol": "CVP",
       "logoURI": "https://tokens.1inch.io/0x38e4adb44ef08f22f5b5b76a8f0c2d0dcbe7dca1.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x390f3595bCa2Df7d23783dFd126427CCeb997BF4",
-      "name": "Curve.fi Factory Plain Pool: crvUSD/USDT",
-      "symbol": "crvUSDUSDT-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x390f3595bCa2Df7d23783dFd126427CCeb997BF4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3946,20 +4054,20 @@
       "decimals": 18
     },
     {
+      "address": "0x398C66C98AC421b87fC72aa5f654295F9A0E467C",
+      "name": "Principal Token: WOETH-1750118420",
+      "symbol": "PT-WOETH-1750118420",
+      "logoURI": "https://assets.smold.app/api/token/1/0x398C66C98AC421b87fC72aa5f654295F9A0E467C/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x39AA39c021dfbaE8faC545936693aC917d5E7563",
       "name": "Compound USD Coin",
       "symbol": "cUSDC",
       "logoURI": "https://assets.smold.app/api/token/1/0x39AA39c021dfbaE8faC545936693aC917d5E7563/logo-128.png",
       "chainId": 1,
       "decimals": 8
-    },
-    {
-      "address": "0x39CAF13a104FF567f71fd2A4c68C026FDB6E740B",
-      "name": "Curve Aave Pool yVault",
-      "symbol": "yvCurve-Aave",
-      "logoURI": "https://assets.smold.app/api/token/1/0x39CAF13a104FF567f71fd2A4c68C026FDB6E740B/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
     },
     {
       "address": "0x39Fa206c1648944f92E8F7B626e1CBdf78d7E9dB",
@@ -3994,6 +4102,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3B3Ac5386837Dc563660FB6a0937DFAa5924333B",
+      "name": "Curve.fi yDAI/yUSDC/yUSDT/yBUSD",
+      "symbol": "yDAI+yUSDC+yUSDT+yBUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3B3Ac5386837Dc563660FB6a0937DFAa5924333B/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x3B604747ad1720C01ded0455728b62c0d2F100F0",
       "name": "WAGMI GAMES",
       "symbol": "WAGMIGAMES",
@@ -4006,14 +4122,6 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/1/0x3B621df9B429Ed1AD64428Ea7d8D142374c45121/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x3B96d491f067912D18563d56858Ba7d6EC67a6fa",
-      "name": "Curve USDN Pool yVault",
-      "symbol": "yvCurve-USDN",
-      "logoURI": "https://assets.smold.app/api/token/1/0x3B96d491f067912D18563d56858Ba7d6EC67a6fa/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4082,18 +4190,17 @@
       "decimals": 18
     },
     {
-      "address": "0x3D27705c64213A5DcD9D26880c1BcFa72d5b6B0E",
-      "name": "Curve USDK Pool yVault",
-      "symbol": "yvCurve-USDK",
-      "logoURI": "https://assets.smold.app/api/token/1/0x3D27705c64213A5DcD9D26880c1BcFa72d5b6B0E/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x3D3D35bb9bEC23b06Ca00fe472b50E7A4c692C30",
       "name": "Vidya",
       "symbol": "VIDYA",
       "logoURI": "https://tokens.1inch.io/0x3d3d35bb9bec23b06ca00fe472b50e7a4c692c30.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x3D5a15A9d8EA1D76A32cD70eea882968992d8D95",
+      "name": "Quinta Eco",
+      "symbol": "QUINTA",
       "chainId": 1,
       "decimals": 18
     },
@@ -4104,14 +4211,6 @@
       "logoURI": "https://tokens.1inch.io/0x3d658390460295fb963f54dc0899cfb1c30776df.png",
       "chainId": 1,
       "decimals": 8
-    },
-    {
-      "address": "0x3D980E50508CFd41a13837A60149927a11c03731",
-      "name": "Curve triCrypto Pool yVault",
-      "symbol": "yvCurve-triCrypto",
-      "logoURI": "https://assets.smold.app/api/token/1/0x3D980E50508CFd41a13837A60149927a11c03731/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
     },
     {
       "address": "0x3Dd98C8A089dBCFF7e8FC8d4f532BD493501Ab7F",
@@ -4150,6 +4249,13 @@
       "name": "Gro DAO Token",
       "symbol": "GRO",
       "logoURI": "https://tokens.1inch.io/0x3ec8798b81485a254928b70cda1cf0a2bb0b74d7.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x3Ef73fdC7Eff65eDF3Fb8e8b10B2Fc5f8b3ae535",
+      "name": "Test",
+      "symbol": "Test",
       "chainId": 1,
       "decimals": 18
     },
@@ -4194,6 +4300,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3Fb78e61784C9c637D560eDE23Ad57CA1294c14a",
+      "name": "Curve.fi Factory Plain Pool: Neutrino EUR",
+      "symbol": "EURN/EURT-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3Fb78e61784C9c637D560eDE23Ad57CA1294c14a/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x3a4f40631a4f906c2BaD353Ed06De7A5D3fCb430",
       "name": "PlayDapp Token",
       "symbol": "PLA",
@@ -4202,10 +4316,10 @@
       "decimals": 18
     },
     {
-      "address": "0x3a51269E0707A3416044bad5066858A12198fCf5",
-      "name": "Curve CLEV-ETH Factory yVault",
-      "symbol": "yvCurve-CLEV-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x3a51269E0707A3416044bad5066858A12198fCf5/logo-128.png",
+      "address": "0x3a664Ab939FD8482048609f652f9a0B0677337B9",
+      "name": "Curve.fi DUSD/3Crv",
+      "symbol": "dusd3CRV",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3a664Ab939FD8482048609f652f9a0B0677337B9/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4250,6 +4364,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3b6831c0077a1e44ED0a21841C3bC4dC11bCE833",
+      "name": "Curve EURT-3Crv",
+      "symbol": "crvEURTUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3b6831c0077a1e44ED0a21841C3bC4dC11bCE833/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x3bc9731dE20aa4fA7D6eb6bB84b359bE3F28D230",
       "name": "Yearn-Ajna Pool ezETH/WETH Vault-compounder",
       "symbol": "ysWETH",
@@ -4258,18 +4380,26 @@
       "decimals": 18
     },
     {
-      "address": "0x3c5DF3077BcF800640B5DAE8c91106575a4826E6",
-      "name": "Curve pBTC Pool yVault",
-      "symbol": "yvCurve-pBTC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x3c5DF3077BcF800640B5DAE8c91106575a4826E6/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x3cBb7f5d7499Af626026E96a2f05df806F2200DC",
       "name": "PandaDAO",
       "symbol": "PANDA",
       "logoURI": "https://assets.coingecko.com/coins/images/24926/large/PandaDAO_logo_512.png?1696524082",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x3d1E7312dE9b8fC246ddEd971EE7547B0a80592A",
+      "name": "Pendle Market",
+      "symbol": "PENDLE-LPT",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3d1E7312dE9b8fC246ddEd971EE7547B0a80592A/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x3d1FD4382bB3B1fE9dAc005e77DeB7a9BFB3AA14",
+      "name": "Principal Token: stUSD-1748217638",
+      "symbol": "PT-stUSD-1748217638",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3d1FD4382bB3B1fE9dAc005e77DeB7a9BFB3AA14/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4286,6 +4416,14 @@
       "name": "CARD.STARTER",
       "symbol": "CARDS",
       "logoURI": "https://tokens.1inch.io/0x3d6f0dea3ac3c607b3998e6ce14b6350721752d9.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x3d99935C992CB9FB9d86ACf9082AaCF1bd5bCAE4",
+      "name": "SY Ethena USDe",
+      "symbol": "SY-USDe",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3d99935C992CB9FB9d86ACf9082AaCF1bd5bCAE4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4314,10 +4452,10 @@
       "decimals": 18
     },
     {
-      "address": "0x3f34A7eF4f17528CbFFb7817060941BCdaC924fa",
-      "name": "Curve TriCRV Factory yVault",
-      "symbol": "yvCurve-TriCRV-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
+      "address": "0x3f0e7916681452D23Cd36B1281457DA721F2E5dF",
+      "name": "Curve.fi Factory Crypto Pool: Concentrator CTR/ETH",
+      "symbol": "CTRETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3f0e7916681452D23Cd36B1281457DA721F2E5dF/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4394,12 +4532,28 @@
       "decimals": 18
     },
     {
+      "address": "0x410e3E86ef427e30B9235497143881f717d93c2A",
+      "name": "Curve.fi bBTC/sbtcCRV",
+      "symbol": "bBTC/sbtcCRV",
+      "logoURI": "https://assets.smold.app/api/token/1/0x410e3E86ef427e30B9235497143881f717d93c2A/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x4123a133ae3c521FD134D7b13A2dEC35b56c2463",
       "name": "Qredo Token",
       "symbol": "QRDO",
       "logoURI": "https://assets.coingecko.com/coins/images/17541/large/qrdo.png?1630637735",
       "chainId": 1,
       "decimals": 8
+    },
+    {
+      "address": "0x41252E8691e964f7DE35156B68493bAb6797a275",
+      "name": "Discount YFI",
+      "symbol": "dYFI",
+      "logoURI": "https://assets.smold.app/api/token/1/0x41252E8691e964f7DE35156B68493bAb6797a275/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x4139cDC6345aFFbaC0692b43bed4D059Df3e6d65",
@@ -4490,14 +4644,6 @@
       "decimals": 18
     },
     {
-      "address": "0x41c84c0e2EE0b740Cf0d31F63f3B6F627DC6b393",
-      "name": "Iron Bank Wrapped Ether",
-      "symbol": "iWETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x41c84c0e2EE0b740Cf0d31F63f3B6F627DC6b393/logo-128.png",
-      "chainId": 1,
-      "decimals": 8
-    },
-    {
       "address": "0x41e5560054824eA6B0732E656E3Ad64E20e94E45",
       "name": "Civic",
       "symbol": "CVC",
@@ -4534,14 +4680,6 @@
       "name": "PickleToken",
       "symbol": "PICKLE",
       "logoURI": "https://assets.smold.app/api/token/1/0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x429EA2d8d5B06CA40dD986FaC0734BA0E0CaC022",
-      "name": "Curve sdCRV Factory yVault",
-      "symbol": "yvCurve-sdCRV-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x429EA2d8d5B06CA40dD986FaC0734BA0E0CaC022/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4634,6 +4772,14 @@
       "decimals": 18
     },
     {
+      "address": "0x43E54C2E7b3e294De3A155785F52AB49d87B9922",
+      "name": "Aladdin sdCRV",
+      "symbol": "asdCRV",
+      "logoURI": "https://assets.coingecko.com/coins/images/31428/large/asdCRV_logo.jpg?1696530243",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x440d08d85cb12352DaBac2971De81e9be702d239",
       "name": "SY Autocompounding Pirex ETH",
       "symbol": "SY-apxETH",
@@ -4666,6 +4812,21 @@
       "decimals": 18
     },
     {
+      "address": "0x4425C9C6302bD2a815c21012DC7F692216Fb3176",
+      "name": "Phanes Coins",
+      "symbol": "PHNS",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x442ED5A1E34AEEe5aF714B6A4fb17037Be319db3",
+      "name": "Moes Group ",
+      "symbol": "MG",
+      "logoURI": "https://assets.smold.app/api/token/1/0x442ED5A1E34AEEe5aF714B6A4fb17037Be319db3/logo-128.png",
+      "chainId": 1,
+      "decimals": 8
+    },
+    {
       "address": "0x444444444444C1a66F394025Ac839A535246FCc8",
       "name": "Genius",
       "symbol": "GENI",
@@ -4686,14 +4847,6 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/1/0x445D25a1c31445Fb29e65d12DA8E0eea38174176/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x445F62Ee351E57cACBF3161F66562Ff2B1261db4",
-      "name": "Curve TUSD-crvUSD Factory yVault",
-      "symbol": "yvCurve-TUSD-crvUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x445F62Ee351E57cACBF3161F66562Ff2B1261db4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4742,14 +4895,6 @@
       "name": "Sanin Inu",
       "symbol": "SANI",
       "logoURI": "https://assets.coingecko.com/coins/images/25222/large/B7r0ocfQ_400x400.jpg?1696524365",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x4560b99C904aAD03027B5178CCa81584744AC01f",
-      "name": "Curve cvxCRV Pool yVault",
-      "symbol": "yvCurve-cvxCRV",
-      "logoURI": "https://assets.smold.app/api/token/1/0x4560b99C904aAD03027B5178CCa81584744AC01f/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4842,14 +4987,6 @@
       "decimals": 2
     },
     {
-      "address": "0x468C76f16B7735303f7215b3839D270d058b3d7a",
-      "name": "Curve eUSD-FRAXBP Factory yVault",
-      "symbol": "yvCurve-eUSD-FRAXBP-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B",
       "name": "Wootrade Network",
       "symbol": "WOO",
@@ -4894,6 +5031,14 @@
       "name": "rETH-ETH05",
       "symbol": "rETH-ETH05",
       "logoURI": "https://assets.smold.app/api/token/1/0x46e4DDB5B87152DDA90AFE75daeDfDDAB1C16513/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x470f623e8bc3C870F96516b8CBfc6A27E253424D",
+      "name": "Principal Token: sw-amphrETH-1726790425",
+      "symbol": "PT-sw-amphrETH-1726790425",
+      "logoURI": "https://assets.smold.app/api/token/1/0x470f623e8bc3C870F96516b8CBfc6A27E253424D/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5010,14 +5155,6 @@
       "decimals": 18
     },
     {
-      "address": "0x490bD0886F221A5F79713D3E84404355A9293C50",
-      "name": "Curve ibCHF Pool yVault",
-      "symbol": "yvCurve-ibCHF",
-      "logoURI": "https://assets.smold.app/api/token/1/0x490bD0886F221A5F79713D3E84404355A9293C50/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x491604c0FDF08347Dd1fa4Ee062a822A5DD06B5D",
       "name": "Cartesi Token",
       "symbol": "CTSI",
@@ -5106,14 +5243,6 @@
       "decimals": 18
     },
     {
-      "address": "0x4B5BfD52124784745c1071dcB244C6688d2533d3",
-      "name": "Curve Y Pool yVault",
-      "symbol": "yUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0x4B5BfD52124784745c1071dcB244C6688d2533d3/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x4BAfDF5932c3f39288fE8Ff5e6e40641deBDB3ca",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -5174,22 +5303,6 @@
       "name": "Ross Ulbricht Genesis Collection",
       "symbol": "FREE",
       "logoURI": "https://assets.coingecko.com/coins/images/21648/large/free.jpg?1696521006",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x4CbB6A5EC00cEEC252a7091559484F7adb83165f",
-      "name": "Curve alUSD Factory yVault",
-      "symbol": "yvCurve-alUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x4CbB6A5EC00cEEC252a7091559484F7adb83165f/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x4CbdE5C4B4B53EBE4aF4adB85404725985406163",
-      "name": "ETHx/bb-a-WETH Stable Pool",
-      "symbol": "B-ETHx/bb-a-WETH ",
-      "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
       "chainId": 1,
       "decimals": 18
     },
@@ -5274,6 +5387,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4F65A884eB41cd09a2F0a4505De2c6d698A78C73",
+      "name": "Principal Token: afCVX-1727222454",
+      "symbol": "PT-afCVX-1727222454",
+      "logoURI": "https://assets.smold.app/api/token/1/0x4F65A884eB41cd09a2F0a4505De2c6d698A78C73/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x4F7997158d66CA31d9734674FdCD12CC74e503a7",
       "name": "Visor USDC-USDT Uni v3",
       "symbol": "vUSDC-USDTV3-1",
@@ -5338,6 +5459,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4aCc1BF7D6a591016641325aA6664A1Cd178F002",
+      "name": "Curve.fi Factory Crypto Pool: DYDX/ETH",
+      "symbol": "DYDXETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x4aCc1BF7D6a591016641325aA6664A1Cd178F002/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x4aa41bC1649C9C3177eD16CaaA11482295fC7441",
       "name": "XFIT",
       "symbol": "XFIT",
@@ -5362,10 +5491,9 @@
       "decimals": 18
     },
     {
-      "address": "0x4c2dF8adB2B14e1d5FDBD9d11A2cf7562b67adC9",
-      "name": "Curve mevETH-frxETH Factory yVault",
-      "symbol": "yvCurve-mevETH-frxETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x4c2dF8adB2B14e1d5FDBD9d11A2cf7562b67adC9/logo-128.png",
+      "address": "0x4c1Aa92781c8813a79596eF5122476E28d656686",
+      "name": "SolidaPreSale",
+      "symbol": "SLD",
       "chainId": 1,
       "decimals": 18
     },
@@ -5390,6 +5518,14 @@
       "name": "ApeCoin",
       "symbol": "APE",
       "logoURI": "https://tokens.1inch.io/0x4d224452801aced8b2f0aebe155379bb5d594381.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x4d7564f1272E24111280918b8Ae4Df9953A6253F",
+      "name": "The Llamas Wrapped NFT",
+      "symbol": "LLAMAwnft",
+      "logoURI": "https://assets.smold.app/api/token/1/0x4d7564f1272E24111280918b8Ae4Df9953A6253F/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5446,14 +5582,6 @@
       "name": "Yearn-Ajna Pool csETH/WETH Vault-compounder",
       "symbol": "ysWETH",
       "logoURI": "https://assets.smold.app/api/token/1/0x4e7Aa7085ef4651eE2270859C1702Fbe5A7Cf847/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x4eBdF703948ddCEA3B11f675B4D1Fba9d2414A14",
-      "name": "TriCRV",
-      "symbol": "crvUSDETHCRV",
-      "logoURI": "https://assets.smold.app/api/token/1/0x4eBdF703948ddCEA3B11f675B4D1Fba9d2414A14/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5526,14 +5654,6 @@
       "name": "SHIBGF",
       "symbol": "SHIBGF",
       "logoURI": "https://assets.coingecko.com/coins/images/19699/large/shibgf_logo.png?1696519126",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x507c6dE33f50c0505F77F598c0B3CA7b5fEB3D68",
-      "name": "Curve alUSD-FRAXBP Factory yVault",
-      "symbol": "yvCurve-alUSD-FRAXBP-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x507c6dE33f50c0505F77F598c0B3CA7b5fEB3D68/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5642,14 +5762,6 @@
       "decimals": 18
     },
     {
-      "address": "0x528D50dC9a333f01544177a924893FA1F5b9F748",
-      "name": "Curve ibKRW Pool yVault",
-      "symbol": "yvCurve-ibKRW",
-      "logoURI": "https://assets.smold.app/api/token/1/0x528D50dC9a333f01544177a924893FA1F5b9F748/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x52cE16B1F37Ea7BE4352B29fcDE3331E225380FF",
       "name": "xETH-BABL0.3%",
       "symbol": "xETH-BABL0.3%",
@@ -5666,26 +5778,10 @@
       "decimals": 18
     },
     {
-      "address": "0x5331009B82853e9FB711bC0b300E1b374724AdaC",
-      "name": "Curve sdYFI Factory yVault",
-      "symbol": "yvCurve-sdYFI-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5331009B82853e9FB711bC0b300E1b374724AdaC/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x5334e150B938dd2b6bd040D9c4a03Cff0cED3765",
       "name": "yearn Curve.fi renBTC/wBTC",
       "symbol": "yvcrvRenWBTC",
       "logoURI": "https://assets.smold.app/api/token/1/0x5334e150B938dd2b6bd040D9c4a03Cff0cED3765/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x5359680A80c1FB2175cD33efF32f762e43cD8C41",
-      "name": "Curve ibKRW Factory yVault",
-      "symbol": "yvCurve-ibKRW-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5359680A80c1FB2175cD33efF32f762e43cD8C41/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5738,14 +5834,6 @@
       "decimals": 18
     },
     {
-      "address": "0x5426178799ee0a0181A89b4f57eFddfAb49941Ec",
-      "name": "TricryptoINV",
-      "symbol": "crvUSDCWETHINV",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5426178799ee0a0181A89b4f57eFddfAb49941Ec/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x54264c1b0355c71A678d5A171Ca796429DDCB4f4",
       "name": "SY Renzo REZ Staking",
       "symbol": "SY-REZtake",
@@ -5774,14 +5862,6 @@
       "name": "InsurAce",
       "symbol": "INSUR",
       "logoURI": "https://tokens.1inch.io/0x544c42fbb96b39b21df61cf322b5edc285ee7429.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x547213367cfB08ab418E7b54d7883b2C2AA27Fd7",
-      "name": "Staked USDz",
-      "symbol": "sUSDz",
-      "logoURI": "https://assets.smold.app/api/token/1/0x547213367cfB08ab418E7b54d7883b2C2AA27Fd7/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5830,6 +5910,14 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/1/0x5546d0f27BEd4075eA03a22c58F7016E24c94EA7/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x5555f75e3d5278082200Fb451D1b6bA946D8e13b",
+      "name": "Iron Bank JPY",
+      "symbol": "ibJPY",
+      "logoURI": "https://assets.smold.app/api/token/1/0x5555f75e3d5278082200Fb451D1b6bA946D8e13b/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5918,14 +6006,6 @@
       "name": "Rena",
       "symbol": "RENA",
       "logoURI": "https://assets.coingecko.com/coins/images/15667/large/photo_2021-05-21_17-31-35.png?1696515297",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x571B384636BA518697d745AC218aD4cEE5EE0ABC",
-      "name": "Curve sBTCv2 Factory yVault",
-      "symbol": "yvCurve-sBTCv2-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x571B384636BA518697d745AC218aD4cEE5EE0ABC/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6042,14 +6122,6 @@
       "decimals": 18
     },
     {
-      "address": "0x59518884EeBFb03e90a18ADBAAAB770d4666471e",
-      "name": "Curve ibJPY Pool yVault",
-      "symbol": "yvCurve-ibJPY",
-      "logoURI": "https://assets.smold.app/api/token/1/0x59518884EeBFb03e90a18ADBAAAB770d4666471e/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x595832F8FC6BF59c85C527fEC3740A1b7a361269",
       "name": "PowerLedger",
       "symbol": "POWR",
@@ -6090,6 +6162,14 @@
       "decimals": 18
     },
     {
+      "address": "0x5A56Da75c50aA2733F5Fa9A2442AaEfcBc60B2e6",
+      "name": "Cortex DAO Token",
+      "symbol": "CXD",
+      "logoURI": "https://tokens.1inch.io/0x5a56da75c50aa2733f5fa9a2442aaefcbc60b2e6.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x5A9780Bfe63f3ec57f01b087cD65BD656C9034A8",
       "name": "Communis",
       "symbol": "COM",
@@ -6106,18 +6186,18 @@
       "decimals": 18
     },
     {
-      "address": "0x5AB64C599FcC59f0f2726A300b03166A395578Da",
-      "name": "Curve 3EUR Pool yVault",
-      "symbol": "yvCurve-3EUR",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5AB64C599FcC59f0f2726A300b03166A395578Da/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x5Ae176BbcB9A4461aEEeb97c90C2a80c2078006a",
       "name": "YT Bedrock UniETH 27JUN2024",
       "symbol": "YT-uniETH-27JUN2024",
       "logoURI": "https://assets.smold.app/api/token/1/0x5Ae176BbcB9A4461aEEeb97c90C2a80c2078006a/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x5B3b5DF2BF2B6543f78e053bD91C4Bdd820929f1",
+      "name": "Curve.fi Factory USD Metapool: USDM",
+      "symbol": "USDM3CRV-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x5B3b5DF2BF2B6543f78e053bD91C4Bdd820929f1/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6138,10 +6218,17 @@
       "decimals": 8
     },
     {
-      "address": "0x5B8C556B8b2a78696F0B9B830B3d67623122E270",
-      "name": "Curve stETH Factory yVault",
-      "symbol": "yvCurve-stETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5B8C556B8b2a78696F0B9B830B3d67623122E270/logo-128.png",
+      "address": "0x5B8C023d162Ee3661cb9740ec271b8BD261767F3",
+      "name": "Bombala Coin",
+      "symbol": "BBLC",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x5BC25f649fc4e26069dDF4cF4010F9f706c23831",
+      "name": "DefiDollar",
+      "symbol": "DUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x5BC25f649fc4e26069dDF4cF4010F9f706c23831/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6182,6 +6269,14 @@
       "name": "Relay Token",
       "symbol": "RELAY",
       "logoURI": "https://assets.coingecko.com/coins/images/17816/large/relay-logo-200.png?1696517336",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x5D8B3cd632c58D5CE75C2141C1C8b3b0C209b3ed",
+      "name": "YT Ethena USDe 26DEC2024",
+      "symbol": "YT-USDe-26DEC2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0x5D8B3cd632c58D5CE75C2141C1C8b3b0C209b3ed/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6250,14 +6345,6 @@
       "decimals": 18
     },
     {
-      "address": "0x5F208d3a8b13062adE45a33Ca9Bc8de64D520CB9",
-      "name": "Curve stETHv2 Factory yVault",
-      "symbol": "yvCurve-stETHv2-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5F208d3a8b13062adE45a33Ca9Bc8de64D520CB9/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x5F474906637bdCDA05f29C74653F6962bb0f8eDa",
       "name": "DeFinity",
       "symbol": "DEFX",
@@ -6314,14 +6401,6 @@
       "decimals": 18
     },
     {
-      "address": "0x5b2384D566D2E4a0b29B8eccB642C63199cd393c",
-      "name": "Curve sUSD Factory yVault",
-      "symbol": "yvCurve-sUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5b2384D566D2E4a0b29B8eccB642C63199cd393c/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x5b52bfB8062Ce664D74bbCd4Cd6DC7Df53Fd7233",
       "name": "ZENIQ",
       "symbol": "ZENIQ",
@@ -6346,14 +6425,6 @@
       "decimals": 18
     },
     {
-      "address": "0x5c0A86A32c129538D62C106Eb8115a8b02358d57",
-      "name": "Curve rETH-wstETH Pool yVault",
-      "symbol": "yvCurve-rETHwstETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5c0A86A32c129538D62C106Eb8115a8b02358d57/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x5c147e74D63B1D31AA3Fd78Eb229B65161983B2b",
       "name": "Wrapped Flow",
       "symbol": "WFLOW",
@@ -6366,6 +6437,14 @@
       "name": "Dev",
       "symbol": "DEV",
       "logoURI": "https://tokens.1inch.io/0x5caf454ba92e6f2c929df14667ee360ed9fd5b26.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x5ca0313D44551e32e0d7a298EC024321c4BC59B4",
+      "name": "Curve.fi Factory Crypto Pool: bLUSD_LUSD3CRV",
+      "symbol": "bLUSDLUSD3-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x5ca0313D44551e32e0d7a298EC024321c4BC59B4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6434,10 +6513,9 @@
       "decimals": 18
     },
     {
-      "address": "0x5e74C9036fb86BD7eCdcb084a0673EFc32eA31cb",
-      "name": "Synth sETH",
-      "symbol": "sETH",
-      "logoURI": "https://tokens.1inch.io/0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb.png",
+      "address": "0x5ee08f40b637417bcC9d2C51B62F4820ec9cF5D8",
+      "name": "Bao Stable Basket",
+      "symbol": "bSTBL",
       "chainId": 1,
       "decimals": 18
     },
@@ -6466,14 +6544,6 @@
       "decimals": 18
     },
     {
-      "address": "0x5fA5B62c8AF877CB37031e0a3B2f34A78e3C56A6",
-      "name": "Curve LUSD Pool yVault",
-      "symbol": "yvCurve-LUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5fA5B62c8AF877CB37031e0a3B2f34A78e3C56A6/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x5fAa989Af96Af85384b8a938c2EdE4A7378D9875",
       "name": "Project Galaxy",
       "symbol": "GAL",
@@ -6486,14 +6556,6 @@
       "name": "Amphor Restaked ETH",
       "symbol": "amphrETH",
       "logoURI": "https://assets.smold.app/api/token/1/0x5fD13359Ba15A84B76f7F87568309040176167cd/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x5faF6a2D186448Dfa667c51CB3D695c7A6E52d8E",
-      "name": "Curve stETH-WETH Pool yVault",
-      "symbol": "yvCurve-stETH-WETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x5faF6a2D186448Dfa667c51CB3D695c7A6E52d8E/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6518,6 +6580,13 @@
       "name": "SHAKE token by SpaceSwap v2",
       "symbol": "SHAKE",
       "logoURI": "https://tokens.1inch.io/0x6006fc2a849fedaba8330ce36f5133de01f96189.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x6021444f1706f15465bEe85463BCc7d7cC17Fc03",
+      "name": "Uniswap V2",
+      "symbol": "UNI-V2",
       "chainId": 1,
       "decimals": 18
     },
@@ -6570,14 +6639,6 @@
       "decimals": 18
     },
     {
-      "address": "0x60D604890feaa0b5460B28A424407c24fe89374a",
-      "name": "Balancer Aave v3 Boosted Pool (WETH)",
-      "symbol": "bb-a-WETH",
-      "logoURI": "https://assets.coingecko.com/coins/images/30386/large/bb-a-weth.png?1696529275",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x6100dd79fCAA88420750DceE3F735d168aBcB771",
       "name": "Ethereans",
       "symbol": "OS",
@@ -6606,6 +6667,13 @@
       "name": "Launchpool token",
       "symbol": "LPOOL",
       "logoURI": "https://tokens.1inch.io/0x6149c26cd2f7b5ccdb32029af817123f6e37df5b.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x614Da3b37B6F66F7Ce69B4Bbbcf9a55CE6168707",
+      "name": "M2 Global Wealth Limited",
+      "symbol": "MMX",
       "chainId": 1,
       "decimals": 18
     },
@@ -6658,18 +6726,24 @@
       "decimals": 18
     },
     {
-      "address": "0x625b7DF2fa8aBe21B0A976736CDa4775523aeD1E",
-      "name": "Curve HBTC Pool yVault",
-      "symbol": "yvCurve-HBTC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x625b7DF2fa8aBe21B0A976736CDa4775523aeD1E/logo-128.png",
+      "address": "0x6256aB9480B84Cf70d75773121C0523F87B0D588",
+      "name": "pTON",
+      "symbol": "pTON",
       "chainId": 1,
-      "decimals": 18
+      "decimals": 9
     },
     {
       "address": "0x626E8036dEB333b408Be468F951bdB42433cBF18",
       "name": "AIOZ Network",
       "symbol": "AIOZ",
       "logoURI": "https://tokens.1inch.io/0x626e8036deb333b408be468f951bdb42433cbf18.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x6270234E3eDA5370aA7224696a6Dc9263973C3e8",
+      "name": "LP Uncle CVX",
+      "symbol": "lpUncleCvx",
       "chainId": 1,
       "decimals": 18
     },
@@ -6720,6 +6794,13 @@
       "logoURI": "https://etherscan.io/token/images/peakdefi_32.png",
       "chainId": 1,
       "decimals": 8
+    },
+    {
+      "address": "0x63121B8f2a88ea0fEF99E3a1614454Ef1837423B",
+      "name": "Uncle CVX",
+      "symbol": "uncleCVX",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x633dEfD7E79f94cDb77fe469f348Bd919c4b678a",
@@ -6778,14 +6859,6 @@
       "decimals": 18
     },
     {
-      "address": "0x63bD3Bbb6c5cb6E457C3f3cbb2D8aa2536E319F1",
-      "name": "Curve GUSD Factory yVault",
-      "symbol": "yvCurve-GUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x63bD3Bbb6c5cb6E457C3f3cbb2D8aa2536E319F1/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x63c5c0604Ec410130C69C958aCab81794f7a622F",
       "name": "Curve MATIC-ETH Factory yVault",
       "symbol": "yvCurve-MATIC-ETH-f",
@@ -6806,6 +6879,13 @@
       "name": "LP Yearn BAL Vault",
       "symbol": "lp-yBAL",
       "logoURI": "https://assets.smold.app/api/token/1/0x640D2a6540F180aaBa2223480F445D3CD834788B/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x64351fC9810aDAd17A690E4e1717Df5e7e085160",
+      "name": "Metronome Synth ETH",
+      "symbol": "msETH",
       "chainId": 1,
       "decimals": 18
     },
@@ -6848,6 +6928,14 @@
       "logoURI": "https://tokens.1inch.io/0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5.png",
       "chainId": 1,
       "decimals": 9
+    },
+    {
+      "address": "0x64eda51d3Ad40D56b9dFc5554E06F94e1Dd786Fd",
+      "name": "Curve.fi tBTC/sbtcCrv",
+      "symbol": "tbtc/sbtcCrv",
+      "logoURI": "https://assets.smold.app/api/token/1/0x64eda51d3Ad40D56b9dFc5554E06F94e1Dd786Fd/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x6524B87960c2d573AE514fd4181777E7842435d4",
@@ -6902,6 +6990,14 @@
       "name": "Visor OHM-ETH Uni v3",
       "symbol": "vOHM-ETHV3-1",
       "logoURI": "https://assets.smold.app/api/token/1/0x65Bc5c6A2630a87C2B494f36148E338dD76C054F/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x65D72AA8DA931F047169112fcf34f52DbaAE7D18",
+      "name": "f(x) rUSD",
+      "symbol": "rUSD",
+      "logoURI": "https://asset-images.messari.io/images/8379b767-9d3a-4736-a3aa-c882a452bedf/128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7026,6 +7122,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6732Efaf6f39926346BeF8b821a04B6361C4F3e5",
+      "name": "Simple Asymmetry Finance ETH",
+      "symbol": "safETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/30426/large/safETH_BACKGROUND.png?1696529314",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x674C6Ad92Fd080e4004b2312b45f796a192D27a0",
       "name": "Neutrino USD",
       "symbol": "USDN",
@@ -7098,14 +7202,6 @@
       "decimals": 9
     },
     {
-      "address": "0x67e019bfbd5a67207755D04467D6A70c0B75bF60",
-      "name": "Curve ibEUR Pool yVault",
-      "symbol": "yvCurve-ibEUR",
-      "logoURI": "https://assets.smold.app/api/token/1/0x67e019bfbd5a67207755D04467D6A70c0B75bF60/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x6810e776880C02933D47DB1b9fc05908e5386b96",
       "name": "Gnosis Token",
       "symbol": "GNO",
@@ -7146,18 +7242,17 @@
       "decimals": 18
     },
     {
-      "address": "0x6941b1B6B29948A2f74CAd0Ef2866E93436a5E2D",
-      "name": "xFRAX-USDC05",
-      "symbol": "xFRAX-USDC05",
-      "logoURI": "https://assets.smold.app/api/token/1/0x6941b1B6B29948A2f74CAd0Ef2866E93436a5E2D/logo-128.png",
+      "address": "0x691c25C461DaFC47792b6E4d674FBB637bca1C6F",
+      "name": "iBBT Utility Token",
+      "symbol": "iBBT",
       "chainId": 1,
       "decimals": 18
     },
     {
-      "address": "0x6949145469362F9eeaB3c96Ea41b51D9B4cC2b21",
-      "name": "Curve TriCryptoINV Factory yVault",
-      "symbol": "yvCurve-TriCryptoINV-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x6949145469362F9eeaB3c96Ea41b51D9B4cC2b21/logo-128.png",
+      "address": "0x6941b1B6B29948A2f74CAd0Ef2866E93436a5E2D",
+      "name": "xFRAX-USDC05",
+      "symbol": "xFRAX-USDC05",
+      "logoURI": "https://assets.smold.app/api/token/1/0x6941b1B6B29948A2f74CAd0Ef2866E93436a5E2D/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7170,10 +7265,25 @@
       "decimals": 18
     },
     {
+      "address": "0x69681f8fde45345C3870BCD5eaf4A05a60E7D227",
+      "name": "Iron Bank GBP",
+      "symbol": "ibGBP",
+      "logoURI": "https://assets.smold.app/api/token/1/0x69681f8fde45345C3870BCD5eaf4A05a60E7D227/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x6982508145454Ce325dDbE47a25d4ec3d2311933",
       "name": "Pepe",
       "symbol": "PEPE",
       "logoURI": "https://tokens.1inch.io/0x6982508145454ce325ddbe47a25d4ec3d2311933.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x699bA988e0D34ADeDb9Ebdfb11e6ED14E2485eCc",
+      "name": "Inmark",
+      "symbol": "IMK",
       "chainId": 1,
       "decimals": 18
     },
@@ -7274,14 +7384,6 @@
       "decimals": 18
     },
     {
-      "address": "0x6B5ce31AF687a671a804d8070Ddda99Cab926dfE",
-      "name": "Curve ibGBP-USDC Pool yVault",
-      "symbol": "yvCurve-ibGBP-USDC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x6B5ce31AF687a671a804d8070Ddda99Cab926dfE/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x6B9f031D718dDed0d681c20cB754F97b3BB81b78",
       "name": "Geeq",
       "symbol": "GEEQ",
@@ -7338,6 +7440,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6DEF54aE7e38992A7d1AB60D279483Ba7f7b0aEb",
+      "name": "Principal Token: KweETH-1727308807",
+      "symbol": "PT-KweETH-1727308807",
+      "logoURI": "https://assets.smold.app/api/token/1/0x6DEF54aE7e38992A7d1AB60D279483Ba7f7b0aEb/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x6Dca182ac5E3f99985bC4Ee0f726d6472aB1ec55",
       "name": "Ushi",
       "symbol": "USHI",
@@ -7350,14 +7460,6 @@
       "name": "Render Token",
       "symbol": "RNDR",
       "logoURI": "https://tokens.1inch.io/0x6de037ef9ad2725eb40118bb1702ebb27e4aeb24.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x6Ede7F19df5df6EF23bD5B9CeDb651580Bdf56Ca",
-      "name": "Curve BUSD Pool yVault",
-      "symbol": "yvCurve-BUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0x6Ede7F19df5df6EF23bD5B9CeDb651580Bdf56Ca/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7418,6 +7520,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6ade6971Ca3d90990C30d39c78b0534C7166e07b",
+      "name": "Curve.fi Factory Crypto Pool: pxETH/mkUSD",
+      "symbol": "pxETHmkUSD-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x6ade6971Ca3d90990C30d39c78b0534C7166e07b/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x6b32022693210cD2Cfc466b9Ac0085DE8fC34eA6",
       "name": "Maximus Decimus",
       "symbol": "DECI",
@@ -7430,6 +7540,13 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/1/0x6b4740722e46048874d84306B2877600ABCea3Ae/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x6bAD6A9BcFdA3fd60Da6834aCe5F93B8cFed9598",
+      "name": "USDC Savings Vault",
+      "symbol": "USV",
       "chainId": 1,
       "decimals": 18
     },
@@ -7486,14 +7603,6 @@
       "name": "Phala",
       "symbol": "PHA",
       "logoURI": "https://tokens.1inch.io/0x6c5ba91642f10282b576d91922ae6448c9d52f4e.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x6c6371E15499FedCdadEE06ADc5b55680b3d0785",
-      "name": "Curve cbETH-frxETH Factory yVault",
-      "symbol": "yvCurve-cbETH-frxETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x6c6371E15499FedCdadEE06ADc5b55680b3d0785/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7696,14 +7805,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/28476/large/200.png?1671003986",
       "chainId": 1,
       "decimals": 9
-    },
-    {
-      "address": "0x708c42E0236fe8f5916C5638a462Ee83DA99d07b",
-      "name": "Curve LDO-ETH Factory yVault",
-      "symbol": "yvCurve-LDO-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x708c42E0236fe8f5916C5638a462Ee83DA99d07b/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
     },
     {
       "address": "0x708d1A6FDF342D53F4d006aa9B85e223c68a0Edb",
@@ -7962,6 +8063,14 @@
       "decimals": 18
     },
     {
+      "address": "0x73a052500105205d34Daf004eAb301916DA8190f",
+      "name": "iearn TUSD",
+      "symbol": "yTUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x73a052500105205d34Daf004eAb301916DA8190f/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x73a0cba58c19ed5F27C6590BD792eC38dE4815Ea",
       "name": "crvUSD/sFRAX",
       "symbol": "crvsFRAX",
@@ -8033,6 +8142,14 @@
       "decimals": 18
     },
     {
+      "address": "0x752B4c6e92d96467fE9b9a2522EF07228E00F87c",
+      "name": "Stake DAO ANGLE",
+      "symbol": "sdANGLE",
+      "logoURI": "https://assets.coingecko.com/coins/images/13724/large/stakedao_logo.jpg",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x7589C9E17BCFcE1Ccaa1f921196FDa177F0207Fc",
       "name": "Yearn Y3CRV",
       "symbol": "cyY3CRV",
@@ -8045,14 +8162,6 @@
       "name": "Phonon DAO",
       "symbol": "PHONON",
       "logoURI": "https://assets.coingecko.com/coins/images/22308/large/ezgif-2-e7fb84364d.png?1696521653",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x75A291F0232ADD37d72Dd1Dcff55B715755ECDEe",
-      "name": "Curve CVX-ETH Factory yVault",
-      "symbol": "yvCurve-CVX-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x75A291F0232ADD37d72Dd1Dcff55B715755ECDEe/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8105,6 +8214,13 @@
       "decimals": 18
     },
     {
+      "address": "0x76F7774139bf0097d2882C41AF5A37717e3641A7",
+      "name": "bl",
+      "symbol": "bl",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x76c5449F4950f6338A393F53CdA8b53B0cd3Ca3a",
       "name": "BT.Finance",
       "symbol": "BT",
@@ -8121,26 +8237,10 @@
       "decimals": 18
     },
     {
-      "address": "0x7736Ffb07104c0C400Bb0CC9A7C228452A732992",
-      "name": "Iron Bank DefiPulse Index",
-      "symbol": "iDPI",
-      "logoURI": "https://assets.smold.app/api/token/1/0x7736Ffb07104c0C400Bb0CC9A7C228452A732992/logo-128.png",
-      "chainId": 1,
-      "decimals": 8
-    },
-    {
       "address": "0x7749F5Ed1e356EDc63D469c2fcaC9adEB56d1C2b",
       "name": "YT Renzo ezETH 26DEC2024",
       "symbol": "YT-ezETH-26DEC2024",
       "logoURI": "https://assets.smold.app/api/token/1/0x7749F5Ed1e356EDc63D469c2fcaC9adEB56d1C2b/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x774B4Cbc2703cE83fB3b828b7C782d1CD983b04A",
-      "name": "Curve ankrETH Factory yVault",
-      "symbol": "yvCurve-ankrETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x774B4Cbc2703cE83fB3b828b7C782d1CD983b04A/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8241,14 +8341,6 @@
       "decimals": 18
     },
     {
-      "address": "0x7845Ebf66c9575Fc5f5A0dBb9a34a706Ad997a3f",
-      "name": "Curve TriCryptoUSDT Factory yVault",
-      "symbol": "yvCurve-3CryptoUSDT-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x7845Ebf66c9575Fc5f5A0dBb9a34a706Ad997a3f/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x785c34312dfA6B74F6f1829f79ADe39042222168",
       "name": "BUMP",
       "symbol": "BUMP",
@@ -8265,10 +8357,9 @@
       "decimals": 18
     },
     {
-      "address": "0x790a60024bC3aea28385b60480f15a0771f26D09",
-      "name": "Curve YFI-ETH Pool yVault",
-      "symbol": "yvCurve-YFIETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x790a60024bC3aea28385b60480f15a0771f26D09/logo-128.png",
+      "address": "0x78da5799CF427Fee11e9996982F4150eCe7a99A7",
+      "name": "Revenue Generating USD",
+      "symbol": "rgUSD",
       "chainId": 1,
       "decimals": 18
     },
@@ -8285,14 +8376,6 @@
       "name": "PT Karak USDE 26SEP2024",
       "symbol": "PT-Karak-USDE-26SEP2024",
       "logoURI": "https://assets.smold.app/api/token/1/0x791c1E9D38029092E8aD1E252d0Bb97261809A2c/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x793F2D5Cd52dfafe7a1a1B0B3988940Ba2d6a63D",
-      "name": "Balancer vETH StablePool",
-      "symbol": "B-vETH-STABLE",
-      "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
       "chainId": 1,
       "decimals": 18
     },
@@ -8329,18 +8412,10 @@
       "decimals": 18
     },
     {
-      "address": "0x79F4a9ed7a6196c67a2D6BCE8eC55E9F18802018",
-      "name": "Curve oETH Factory yVault",
-      "symbol": "yvCurve-oETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x79F4a9ed7a6196c67a2D6BCE8eC55E9F18802018/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x79c58f70905F734641735BC61e45c19dD9Ad60bC",
-      "name": "Balancer USDC-DAI-USDT Stable Pool",
-      "symbol": "USDC-DAI-USDT",
-      "logoURI": "https://assets.smold.app/api/token/1/0x79c58f70905F734641735BC61e45c19dD9Ad60bC/logo-128.png",
+      "address": "0x79E281BC69A03DaBCcD66858c65EF6724e50aebe",
+      "name": "Curve.fi Factory Plain Pool: sdYFI",
+      "symbol": "sdYFIYFI-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x79E281BC69A03DaBCcD66858c65EF6724e50aebe/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8385,18 +8460,25 @@
       "decimals": 18
     },
     {
-      "address": "0x7B50775383d3D6f0215A8F290f2C9e2eEBBEceb2",
-      "name": "Balancer Aave Boosted StablePool (USD)",
-      "symbol": "bb-a-USD",
-      "logoURI": "https://assets.smold.app/api/token/1/0x7B50775383d3D6f0215A8F290f2C9e2eEBBEceb2/logo-128.png",
+      "address": "0x7BB46c33a972349EF48E7545cAC068Fb77B89e5a",
+      "name": "JZC Miners",
+      "symbol": "JZC",
       "chainId": 1,
-      "decimals": 18
+      "decimals": 4
     },
     {
       "address": "0x7BEF710a5759d197EC0Bf621c3Df802C2D60D848",
       "name": "SPLYT SHOPX",
       "symbol": "SHOPX",
       "logoURI": "https://tokens.1inch.io/0x7bef710a5759d197ec0bf621c3df802c2d60d848.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x7C0d189E1FecB124487226dCbA3748bD758F98E4",
+      "name": "Curve.fi Factory Plain Pool: Stakehouse dETH / frxETH",
+      "symbol": "dETHfrxETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x7C0d189E1FecB124487226dCbA3748bD758F98E4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8465,14 +8547,6 @@
       "decimals": 18
     },
     {
-      "address": "0x7Da96a3891Add058AdA2E826306D812C638D87a7",
-      "name": "USDT yVault",
-      "symbol": "yvUSDT",
-      "logoURI": "https://assets.smold.app/api/token/1/0x7Da96a3891Add058AdA2E826306D812C638D87a7/logo-128.png",
-      "chainId": 1,
-      "decimals": 6
-    },
-    {
       "address": "0x7DbbCaE15d4DB168e01673400D7844870cc1e36f",
       "name": "WOLFYCOIN",
       "symbol": "WOLFY",
@@ -8533,14 +8607,6 @@
       "name": "yearn Curve.fi oBTC/sbtcCRV",
       "symbol": "yvoBTC/sbtcCRV",
       "logoURI": "https://assets.smold.app/api/token/1/0x7F83935EcFe4729c4Ea592Ab2bC1A32588409797/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x7F86Bf177Dd4F3494b841a37e810A34dD56c829B",
-      "name": "TricryptoUSDC",
-      "symbol": "crvUSDCWBTCWETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x7F86Bf177Dd4F3494b841a37e810A34dD56c829B/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8623,14 +8689,6 @@
       "logoURI": "https://tokens.1inch.io/0x7c8155909cd385f120a56ef90728dd50f9ccbe52.png",
       "chainId": 1,
       "decimals": 15
-    },
-    {
-      "address": "0x7cA00559B978CFde81297849be6151d3ccB408A9",
-      "name": "Curve USDC-crvUSD Factory yVault",
-      "symbol": "yvCurve-USDC-crvUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x7cA00559B978CFde81297849be6151d3ccB408A9/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
     },
     {
       "address": "0x7cA4408137eb639570F8E647d9bD7B7E8717514A",
@@ -8745,10 +8803,10 @@
       "decimals": 18
     },
     {
-      "address": "0x801Ab06154Bf539dea4385a39f5fa8534fB53073",
-      "name": "Curve EURS-USDC Pool yVault",
-      "symbol": "yvCurve-EURSUSDC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x801Ab06154Bf539dea4385a39f5fa8534fB53073/logo-128.png",
+      "address": "0x8064d9Ae6cDf087b1bcd5BDf3531bD5d8C537a68",
+      "name": "BoringDAO BTC",
+      "symbol": "oBTC",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8064d9Ae6cDf087b1bcd5BDf3531bD5d8C537a68/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8757,14 +8815,6 @@
       "name": "Curve rETH-frxETH Factory yVault",
       "symbol": "yvCurve-rETH-frxETH-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x8072B1d66389a1AA039e21Aac35A92464005baF5/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x8078198Fc424986ae89Ce4a910Fc109587b6aBF3",
-      "name": "Curve 3Crypto Factory yVault",
-      "symbol": "yvCurve-3Crypto-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x8078198Fc424986ae89Ce4a910Fc109587b6aBF3/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8833,14 +8883,6 @@
       "decimals": 18
     },
     {
-      "address": "0x8176b059BD8f63aeB7e20282b12D243b4626E2AE",
-      "name": "Curve FRAX-crvUSD Factory yVault",
-      "symbol": "yvCurve-FRAX-crvUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x8176b059BD8f63aeB7e20282b12D243b4626E2AE/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x817bbDbC3e8A1204f3691d14bB44992841e3dB35",
       "name": "CudosToken",
       "symbol": "CUDOS",
@@ -8853,6 +8895,14 @@
       "name": "Aluna",
       "symbol": "ALN",
       "logoURI": "https://assets.coingecko.com/coins/images/14379/large/uaLoLU8c_400x400_%281%29.png?1696514071",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x81Cb62d2cD9261f63a1aE96dF715748dCbc97d46",
+      "name": "RaeX",
+      "symbol": "RaeX",
+      "logoURI": "https://assets.smold.app/api/token/1/0x81Cb62d2cD9261f63a1aE96dF715748dCbc97d46/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8897,14 +8947,6 @@
       "decimals": 18
     },
     {
-      "address": "0x8272E1A3dBef607C04AA6e5BD3a1A134c8ac063B",
-      "name": "Curve.fi Factory Plain Pool: crvUSD/DOLA",
-      "symbol": "crvUSDDOLA-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x8272E1A3dBef607C04AA6e5BD3a1A134c8ac063B/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4",
       "name": "Ankr Network",
       "symbol": "ANKR",
@@ -8925,14 +8967,6 @@
       "name": "uniETH LP (27 JUN 2024)",
       "symbol": "ysPENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/1/0x82c24073a19f4C46ab2646323B322427Eb98F616/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x82c83ddA32DB09F63F9A59A129278f3fdC3EeE67",
-      "name": "Curve 3EUR Factory yVault",
-      "symbol": "yvCurve-3EUR-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x82c83ddA32DB09F63F9A59A129278f3fdC3EeE67/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8985,6 +9019,14 @@
       "decimals": 18
     },
     {
+      "address": "0x836A808d4828586A69364065A1e064609F5078c7",
+      "name": "JPEG’d ETH",
+      "symbol": "pETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/28376/large/peth.png?1696527377",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x83E9F223e1edb3486F876EE888d76bFba26c475A",
       "name": "BlockchainSpace",
       "symbol": "GUILD",
@@ -9009,20 +9051,20 @@
       "decimals": 18
     },
     {
+      "address": "0x83f798e925BcD4017Eb265844FDDAbb448f1707D",
+      "name": "iearn USDT",
+      "symbol": "yUSDT",
+      "logoURI": "https://assets.smold.app/api/token/1/0x83f798e925BcD4017Eb265844FDDAbb448f1707D/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
+    },
+    {
       "address": "0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
       "name": "UniBright",
       "symbol": "UBT",
       "logoURI": "https://tokens.1inch.io/0x8400d94a5cb0fa0d041a3788e395285d61c9ee5e.png",
       "chainId": 1,
       "decimals": 8
-    },
-    {
-      "address": "0x8414Db07a7F743dEbaFb402070AB01a4E0d2E45e",
-      "name": "Curve sBTC Pool yVault",
-      "symbol": "yvCurve-sBTC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x8414Db07a7F743dEbaFb402070AB01a4E0d2E45e/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
     },
     {
       "address": "0x841FB148863454A3b3570f515414759BE9091465",
@@ -9193,12 +9235,28 @@
       "decimals": 18
     },
     {
+      "address": "0x8668a15b7b023Dc77B372a740FCb8939E15257Cf",
+      "name": "Asymmetry Finance afCVX",
+      "symbol": "afCVX",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8668a15b7b023Dc77B372a740FCb8939E15257Cf/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x8686525d6627A25C68De82c228448f43c97999F2",
       "name": "Lilly Finance",
       "symbol": "Ly",
       "logoURI": "https://assets.coingecko.com/coins/images/23787/large/jQlMieu.png?1645437427",
       "chainId": 1,
       "decimals": 9
+    },
+    {
+      "address": "0x86B4dBE5D203e634a12364C0e428fa242A3FbA98",
+      "name": "poundtoken",
+      "symbol": "1GBP",
+      "logoURI": "https://tokens.1inch.io/0x86b4dbe5d203e634a12364c0e428fa242a3fba98.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x86a0ADF389Ba99006633978dDd43c5aa711DDF3E",
@@ -9213,6 +9271,13 @@
       "name": "SpaceChainV2",
       "symbol": "SPC",
       "logoURI": "https://tokens.1inch.io/0x86ed939b500e121c0c5f493f399084db596dad20.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8751D4196027d4e6DA63716fA7786B5174F04C15",
+      "name": "Wrapped Interest-Bearing Bitcoin",
+      "symbol": "wibBTC",
       "chainId": 1,
       "decimals": 18
     },
@@ -9273,10 +9338,26 @@
       "decimals": 18
     },
     {
+      "address": "0x87f9793F0260ac0Eb481755a46851C8Dee2CE129",
+      "name": "PT Ethena USDe 31OCT2024",
+      "symbol": "PT-USDe-31OCT2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0x87f9793F0260ac0Eb481755a46851C8Dee2CE129/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x880cC97A7222C6b7Ed77232143a220fd2dcB3004",
       "name": "PT ETHx-BbAWeth_BalancerLP Aura 26SEP2024",
       "symbol": "PT-ETHx-BbAWeth_BalancerLP Aura-26SEP2024",
       "logoURI": "https://assets.smold.app/api/token/1/0x880cC97A7222C6b7Ed77232143a220fd2dcB3004/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8818a9bb44Fbf33502bE7c15c500d0C783B73067",
+      "name": "Curve.fi Factory Plain Pool: ibJPY/sJPY",
+      "symbol": "ibJPY+sJPY-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8818a9bb44Fbf33502bE7c15c500d0C783B73067/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -9409,14 +9490,6 @@
       "decimals": 6
     },
     {
-      "address": "0x8A34b5ad76F528bfEc06c80D85EF3b53dA7FC300",
-      "name": "Balancer ankrETH-WETH Stable Pool",
-      "symbol": "B-ankrETH-WETH-Stable",
-      "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x8A878E3149051B810F078FD3F2E0924290be34A6",
       "name": "yPT-USDe (auto-rolling Pendle PT)",
       "symbol": "yPT-USDe",
@@ -9437,14 +9510,6 @@
       "name": "MESSIER",
       "symbol": "M87",
       "logoURI": "https://assets.coingecko.com/coins/images/25957/large/MESSIERlogonew_%281%29.png?1666773848",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x8Aa95B71D8e0e1C7949bd84223E0C7911D85171C",
-      "name": "Curve RSR-FRAXBP Factory yVault",
-      "symbol": "yvCurve-RSR-FRAXBP-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x8Aa95B71D8e0e1C7949bd84223E0C7911D85171C/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -9481,6 +9546,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8C0D76C9B18779665475F3E212D9Ca1Ed6A1A0e6",
+      "name": "Zunami USD",
+      "symbol": "zunUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8C0D76C9B18779665475F3E212D9Ca1Ed6A1A0e6/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x8C24b3213FD851db80245FCCc42c40B94Ac9a745",
       "name": "crvUSD/zunUSD",
       "symbol": "CRVZUNUSD",
@@ -9497,10 +9570,24 @@
       "decimals": 18
     },
     {
+      "address": "0x8CB24ed2e4f7e2065f4eB2bE5f6B0064B1919850",
+      "name": "ZARP Stablecoin",
+      "symbol": "ZARP",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
       "name": "Swipe",
       "symbol": "SXP",
       "logoURI": "https://tokens.1inch.io/0x8ce9137d39326ad0cd6491fb5cc0cba0e089b6a9.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8D8802c567e70ccADAF730263aecc60A91AC163D",
+      "name": "Scrap.sh Wrapped Staked LYRA",
+      "symbol": "wsLYRA",
       "chainId": 1,
       "decimals": 18
     },
@@ -9553,20 +9640,20 @@
       "decimals": 18
     },
     {
+      "address": "0x8F22779662Ad253844013D8E99EcCB4d80e31417",
+      "name": "CURVEBOBR",
+      "symbol": "BobrCRV",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8F22779662Ad253844013D8E99EcCB4d80e31417/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x8F22F75C9BA36d7dBA4061D9C73781F206C74A3D",
       "name": "USDT Stakehouse Morpho Blue Vault",
       "symbol": "yvUSDT-SMorpho-STK",
       "logoURI": "https://assets.smold.app/api/token/1/0x8F22F75C9BA36d7dBA4061D9C73781F206C74A3D/logo-128.png",
       "chainId": 1,
       "decimals": 6
-    },
-    {
-      "address": "0x8Fc8BFD80d6A9F17Fb98A373023d72531792B431",
-      "name": "Iron Bank Wrapped BTC",
-      "symbol": "iWBTC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x8Fc8BFD80d6A9F17Fb98A373023d72531792B431/logo-128.png",
-      "chainId": 1,
-      "decimals": 8
     },
     {
       "address": "0x8Fc8f8269ebca376D046Ce292dC7eaC40c8D358A",
@@ -9593,6 +9680,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8a49f2AC2730ba15AB7EA832EdaC7f6BA22289f8",
+      "name": "Pendle Market",
+      "symbol": "PENDLE-LPT",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8a49f2AC2730ba15AB7EA832EdaC7f6BA22289f8/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x8a6D4C8735371EBAF8874fBd518b56Edd66024eB",
       "name": "BLOCKS",
       "symbol": "BLOCKS",
@@ -9609,10 +9704,24 @@
       "decimals": 18
     },
     {
+      "address": "0x8ad5505BfE38692630A51f1a47EDe66a8d2E8b13",
+      "name": "Cream Curve.Fi USD Stablecoin",
+      "symbol": "crCrvUSD",
+      "chainId": 1,
+      "decimals": 8
+    },
+    {
       "address": "0x8b9C0c24307344B6D7941ab654b2Aeee25347473",
       "name": "Curve EURN Pool yVault",
       "symbol": "yvCurve-EURN",
       "logoURI": "https://assets.smold.app/api/token/1/0x8b9C0c24307344B6D7941ab654b2Aeee25347473/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8bb08042c06FA0Fc26cd2474C5F0C03a1056Ad2F",
+      "name": "Consumer Price Index",
+      "symbol": "CPI",
       "chainId": 1,
       "decimals": 18
     },
@@ -9637,6 +9746,14 @@
       "name": "SY vETH-WETH_BalancerLP Aura",
       "symbol": "SY-vETH-WETH_BalancerLP Aura",
       "logoURI": "https://assets.smold.app/api/token/1/0x8c76E1C2c57C343afa77C4374471EB4eB6A159EA/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8c9532a60E0E7C6BbD2B2c1303F63aCE1c3E9811",
+      "name": "Renzo Restaked LST ",
+      "symbol": "pzETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8c9532a60E0E7C6BbD2B2c1303F63aCE1c3E9811/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -9721,6 +9838,14 @@
       "decimals": 18
     },
     {
+      "address": "0x8f01036563831FeabBf3bEE396D99b117c032428",
+      "name": "Principal Token: sw-amphrLRT-1728172816",
+      "symbol": "PT-sw-amphrLRT-1728172816",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8f01036563831FeabBf3bEE396D99b117c032428/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x8f3470A7388c05eE4e7AF3d01D8C722b0FF52374",
       "name": "Veritaseum",
       "symbol": "VERI",
@@ -9741,14 +9866,6 @@
       "name": "Request Token",
       "symbol": "REQ",
       "logoURI": "https://tokens.1inch.io/0x8f8221afbb33998d8584a2b05749ba73c37a938a.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x8fA3A9ecd9EFb07A8CE90A6eb014CF3c0E3B32Ef",
-      "name": "Curve BBTC Pool yVault",
-      "symbol": "yvCurve-BBTC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x8fA3A9ecd9EFb07A8CE90A6eb014CF3c0E3B32Ef/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -9801,6 +9918,20 @@
       "decimals": 18
     },
     {
+      "address": "0x905F06DEBcd355809c0EAbe2aBc1332A5C7159CD",
+      "name": "GoXcoin ",
+      "symbol": "Goxc",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x905Ff01Bf05bbd2De91B3F09Cc86187EA07EDec3",
+      "name": "Dev Coin",
+      "symbol": "DEV",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x9068678b49B8D633952aEF7bc0077FDa71Ca68b8",
       "name": "Curve Lend crvUSD-USDe Factory yVault",
       "symbol": "yvCurveLend-crvUSD-USDe-f",
@@ -9829,6 +9960,14 @@
       "name": "SY sDAI",
       "symbol": "SY-sDAI",
       "logoURI": "https://assets.smold.app/api/token/1/0x90f1935f733Dd8826DcA2Bd01ccFc600F20E978E/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x912fF30d1536BB4B2dB604B7B0fCa2Da76a0C5f3",
+      "name": "Principal Token: sw-amphrETH-1726704008",
+      "symbol": "PT-sw-amphrETH-1726704008",
+      "logoURI": "https://assets.smold.app/api/token/1/0x912fF30d1536BB4B2dB604B7B0fCa2Da76a0C5f3/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -9889,12 +10028,11 @@
       "decimals": 18
     },
     {
-      "address": "0x91aE8fEaBe09182Fe5F91Fc273040b7D8F7aeFE7",
-      "name": "Curve Paxos Factory yVault",
-      "symbol": "yvCurve-USDP-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x91aE8fEaBe09182Fe5F91Fc273040b7D8F7aeFE7/logo-128.png",
+      "address": "0x9220f3eff6F4a32Ebcd414198c52da86D78DcCEb",
+      "name": "Bitcoin",
+      "symbol": "BTC",
       "chainId": 1,
-      "decimals": 18
+      "decimals": 8
     },
     {
       "address": "0x923b83c26B3809d960fF80332Ed00aA46D7Ed375",
@@ -10033,20 +10171,27 @@
       "decimals": 18
     },
     {
-      "address": "0x93ef1Ea305D11A9b2a3EbB9bB4FCc34695292E7d",
-      "name": "TranchessV2 WETH QUEEN",
-      "symbol": "qETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x93ef1Ea305D11A9b2a3EbB9bB4FCc34695292E7d/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x940a2dB1B7008B6C776d4faaCa729d6d4A4AA551",
       "name": "Dusk Network",
       "symbol": "DUSK",
       "logoURI": "https://tokens.1inch.io/0x940a2db1b7008b6c776d4faaca729d6d4a4aa551.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x9416bA76e88D873050A06e5956A3EBF10386b863",
+      "name": "Virtue",
+      "symbol": "VIRTUE",
+      "logoURI": "https://asset-images.messari.io/images/2949fef3-ee27-44e7-8ba2-1904a65feba1/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x9435F39C4a1A51765DD4294fc84fE024F5aCE0D2",
+      "name": "Cream Dai Stablecoin",
+      "symbol": "crDAI",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0x943c5F4F54509d1e78B1fCD93B92c43ce83d3141",
@@ -10057,10 +10202,10 @@
       "decimals": 18
     },
     {
-      "address": "0x944d749017053e0D37ec206c9898716A21e0B2E2",
-      "name": "Curve mUSD Factory yVault",
-      "symbol": "yvCurve-mUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x944d749017053e0D37ec206c9898716A21e0B2E2/logo-128.png",
+      "address": "0x9468b647b36A23af2E48DaB81a178596a6aF95D9",
+      "name": "PT Ethena USDe 24OCT2024",
+      "symbol": "PT-USDe-24OCT2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0x9468b647b36A23af2E48DaB81a178596a6aF95D9/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -10085,14 +10230,6 @@
       "name": "Merit Circle",
       "symbol": "MC",
       "logoURI": "https://tokens.1inch.io/0x949d48eca67b17269629c7194f4b727d4ef9e5d6.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x94cC50e4521bD271C1a997a3A4Dc815C2F920b41",
-      "name": "Curve.fi Factory Plain Pool: crvUSD/SUSD",
-      "symbol": "crvUSDSUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x94cC50e4521bD271C1a997a3A4Dc815C2F920b41/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -10193,6 +10330,14 @@
       "decimals": 18
     },
     {
+      "address": "0x95dFDC8161832e4fF7816aC4B6367CE201538253",
+      "name": "Iron Bank KRW",
+      "symbol": "ibKRW",
+      "logoURI": "https://assets.smold.app/api/token/1/0x95dFDC8161832e4fF7816aC4B6367CE201538253/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
       "name": "DeFiYieldProtocol",
       "symbol": "DYP",
@@ -10213,6 +10358,14 @@
       "name": "Ocean Token",
       "symbol": "OCEAN",
       "logoURI": "https://tokens.1inch.io/0x967da4048cd07ab37855c090aaf366e4ce1b9f48.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x9680d4D049d16230f042065DAA6e045905D35454",
+      "name": "Litra NFT for Beta Testing Wrapped NFT",
+      "symbol": "LNBTwnft",
+      "logoURI": "https://assets.smold.app/api/token/1/0x9680d4D049d16230f042065DAA6e045905D35454/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -10265,6 +10418,14 @@
       "decimals": 18
     },
     {
+      "address": "0x9777d7E2b60bB01759D0E2f8be2095df444cb07E",
+      "name": "Curve (iearn fork) USDC",
+      "symbol": "ycUSDC",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x9777d7E2b60bB01759D0E2f8be2095df444cb07E/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
+    },
+    {
       "address": "0x9784Ded306E42C0b8130f668e9B7533Faa72e65D",
       "name": "Sturdy Sommelier Compounder",
       "symbol": "ysWETH",
@@ -10279,6 +10440,21 @@
       "logoURI": "https://assets.coingecko.com/coins/images/16082/large/AstroElon.png?1696515690",
       "chainId": 1,
       "decimals": 9
+    },
+    {
+      "address": "0x97efFB790f2fbB701D88f89DB4521348A2B77be8",
+      "name": "Convergence",
+      "symbol": "CVG",
+      "logoURI": "https://asset-images.messari.io/images/cd4938f3-e528-45f7-b799-291a4b9baae2/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x97fe22E7341a0Cd8Db6F6C021A24Dc8f4DAD855F",
+      "name": "Synth sGBP",
+      "symbol": "sGBP",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x980703fAE7ab5BDEFC3e1cefc9D15014461FE39D",
@@ -10297,6 +10473,22 @@
       "decimals": 18
     },
     {
+      "address": "0x982E5a072cb6634f45715665A02C723392977e9F",
+      "name": "Principal Token: thWAR-1725581923",
+      "symbol": "PT-thWAR-1725581923",
+      "logoURI": "https://assets.smold.app/api/token/1/0x982E5a072cb6634f45715665A02C723392977e9F/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x9848482da3Ee3076165ce6497eDA906E66bB85C5",
+      "name": "Curve.fi Factory Pool: pETH",
+      "symbol": "pETH-ETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x9848482da3Ee3076165ce6497eDA906E66bB85C5/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x98601E27d41ccff643da9d981dc708cf9eF1F150",
       "name": "YT Zircuit Staking ezETH 27JUN2024",
       "symbol": "YT-zs-ezETH-27JUN2024",
@@ -10305,10 +10497,9 @@
       "decimals": 18
     },
     {
-      "address": "0x986b4AFF588a109c09B50A03f42E4110E29D353F",
-      "name": "Curve sETH Pool yVault",
-      "symbol": "yvCurve-sETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0x986b4AFF588a109c09B50A03f42E4110E29D353F/logo-128.png",
+      "address": "0x987b30f2852780524078a87ea72696C2297A8d6E",
+      "name": "GACHIMUCHI",
+      "symbol": "GACHIMUCHI",
       "chainId": 1,
       "decimals": 18
     },
@@ -10349,14 +10540,6 @@
       "name": "Curve dgnETH-ETH+ Factory yVault",
       "symbol": "yvCurve-dgnETH-ETH+-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x98b72deBe9BEdCc11aF3f1f5BFAc6994aac43786/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x98fA691998a9e6f410702dEA8BC08a9d500AaAFe",
-      "name": "Curve STG-FRAXBP Factory yVault",
-      "symbol": "yvCurve-STG-FRAXBP-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x98fA691998a9e6f410702dEA8BC08a9d500AaAFe/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -10425,6 +10608,14 @@
       "decimals": 18
     },
     {
+      "address": "0x99d1Fa417f94dcD62BfE781a1213c092a47041Bc",
+      "name": "Curve (iearn fork) DAI",
+      "symbol": "ycDAI",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0x99d1Fa417f94dcD62BfE781a1213c092a47041Bc/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x99ea4dB9EE77ACD40B119BD1dC4E33e1C070b80d",
       "name": "Quantstamp Token",
       "symbol": "QSP",
@@ -10437,14 +10628,6 @@
       "name": "ACoconut",
       "symbol": "AC",
       "logoURI": "https://tokens.1inch.io/0x9a0aba393aac4dfbff4333b06c407458002c6183.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x9A39f31DD5EDF5919A5C0c2433cE053fAD2E0336",
-      "name": "Curve ibJPY-USDC Pool yVault",
-      "symbol": "yvCurve-ibJPY-USDC",
-      "logoURI": "https://assets.smold.app/api/token/1/0x9A39f31DD5EDF5919A5C0c2433cE053fAD2E0336/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -10469,6 +10652,14 @@
       "name": "Guild of Guardians",
       "symbol": "GOG",
       "logoURI": "https://tokens.1inch.io/0x9ab7bb7fdc60f4357ecfef43986818a2a3569c62.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x9Ba021B0a9b958B5E75cE9f6dff97C7eE52cb3E6",
+      "name": "Autocompounding Pirex Ether",
+      "symbol": "apxETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x9Ba021B0a9b958B5E75cE9f6dff97C7eE52cb3E6/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -10529,6 +10720,14 @@
       "decimals": 18
     },
     {
+      "address": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
+      "name": "Staked USDe",
+      "symbol": "sUSDe",
+      "logoURI": "https://assets.coingecko.com/coins/images/33669/large/photo_2023-12-14_17-00-20.jpg?1702696035",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x9D65fF81a3c488d585bBfb0Bfe3c7707c7917f54",
       "name": "SSV Token",
       "symbol": "SSV",
@@ -10545,10 +10744,16 @@
       "decimals": 18
     },
     {
-      "address": "0x9E0E0AF468FbD041Cab7883c5eEf16D1A99a47C3",
-      "name": "Curve sdANGLE Factory yVault",
-      "symbol": "yvCurve-sdANGLE-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x9E0E0AF468FbD041Cab7883c5eEf16D1A99a47C3/logo-128.png",
+      "address": "0x9Dbd4Ac4D5A84Ec6258aBCD43cfB6C0c5ba8819F",
+      "name": "ChinolaToken",
+      "symbol": "CHNT",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x9E0441E084F5dB0606565737158aa6Ab6B970fE0",
+      "name": "Bent CVX",
+      "symbol": "bentCVX",
       "chainId": 1,
       "decimals": 18
     },
@@ -10601,14 +10806,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9F8B5c0fc18B79DdFc05b21c43da7E324Cf3B8Eb",
-      "name": "Curve ibEUR-USDC Factory yVault",
-      "symbol": "yvCurve-ibEUR-USDC-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0x9F8B5c0fc18B79DdFc05b21c43da7E324Cf3B8Eb/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x9F9c8ec3534c3cE16F928381372BfbFBFb9F4D24",
       "name": "GraphLinq",
       "symbol": "GLQ",
@@ -10657,6 +10854,13 @@
       "decimals": 18
     },
     {
+      "address": "0x9b451BEB49a03586e6995E5A93b9c745D068581e",
+      "name": "Index USD",
+      "symbol": "iUSD",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x9b53E429B0baDd98ef7F01F03702986c516a5715",
       "name": "hybrix hydra",
       "symbol": "HY",
@@ -10693,14 +10897,6 @@
       "name": "Chooky Inu",
       "symbol": "$CHOO",
       "logoURI": "https://assets.coingecko.com/coins/images/28525/large/New-Inu.jpeg?1696527517",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x9c6d47Ff73e0F5E51BE5FD53236e3F595C5793F2",
-      "name": "Balancer cbETH-wstETH Stable Pool",
-      "symbol": "B-cbETH-wstETH-Stable",
-      "logoURI": "https://assets.smold.app/api/token/1/0x9c6d47Ff73e0F5E51BE5FD53236e3F595C5793F2/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -10825,6 +11021,13 @@
       "decimals": 18
     },
     {
+      "address": "0x9fcf418B971134625CdF38448B949C8640971671",
+      "name": "Neutrino EUR",
+      "symbol": "EURN",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xA01199c61841Fce3b3daFB83FeFC1899715c8756",
       "name": "Cirus",
       "symbol": "CIRUS",
@@ -10885,6 +11088,13 @@
       "name": "Pundi X Token",
       "symbol": "NPXS",
       "logoURI": "https://assets.coingecko.com/coins/images/2170/large/pundi-x.png?1696503130",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xA1f82E14bc09A1b42710dF1A8a999B62f294e592",
+      "name": "ethereum Conflux",
+      "symbol": "eCFX",
       "chainId": 1,
       "decimals": 18
     },
@@ -10985,6 +11195,21 @@
       "decimals": 18
     },
     {
+      "address": "0xA663B02CF0a4b149d2aD41910CB81e23e1c41c32",
+      "name": "Staked FRAX",
+      "symbol": "sFRAX",
+      "logoURI": "https://assets.coingecko.com/coins/images/35383/large/sfrax.png?1708445569",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xA6787BcBA1D1775906a64799A60DF7b8011F3f46",
+      "name": "Kickstand Coin",
+      "symbol": "KSTND",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xA67E9F021B9d208F7e3365B2A155E3C55B27de71",
       "name": "KleeKai",
       "symbol": "KLEE",
@@ -11001,18 +11226,18 @@
       "decimals": 9
     },
     {
-      "address": "0xA74d4B67b3368E83797a35382AFB776bAAE4F5C8",
-      "name": "Curve alUSD Pool yVault",
-      "symbol": "yvCurve-alUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0xA74d4B67b3368E83797a35382AFB776bAAE4F5C8/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xA76436957378bF3812dba0A98E864686086fd0e6",
       "name": "Curve FXS-crvUSD Factory yVault",
       "symbol": "yvCurve-FXS-crvUSD-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xA76436957378bF3812dba0A98E864686086fd0e6/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xA8778DD6B7f1F61f2CFda5D3cB18be8F99A8dB30",
+      "name": "PT Ethena USDe 26DEC2024",
+      "symbol": "PT-USDe-26DEC2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0xA8778DD6B7f1F61f2CFda5D3cB18be8F99A8dB30/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -11063,14 +11288,6 @@
       "logoURI": "https://tokens.1inch.io/0xa8b919680258d369114910511cc87595aec0be6d.png",
       "chainId": 1,
       "decimals": 18
-    },
-    {
-      "address": "0xA8caeA564811af0e92b1E044f3eDd18Fa9a73E4F",
-      "name": "Iron Bank STASIS EURS Token",
-      "symbol": "iEURS",
-      "logoURI": "https://assets.smold.app/api/token/1/0xA8caeA564811af0e92b1E044f3eDd18Fa9a73E4F/logo-128.png",
-      "chainId": 1,
-      "decimals": 8
     },
     {
       "address": "0xA91ac63D040dEB1b7A5E4d4134aD23eb0ba07e14",
@@ -11177,6 +11394,14 @@
       "decimals": 9
     },
     {
+      "address": "0xAD038Eb671c44b853887A7E32528FaB35dC5D710",
+      "name": "Dola Borrowing Right",
+      "symbol": "DBR",
+      "logoURI": "https://asset-images.messari.io/images/33603580-b4f6-45c9-a7b5-113b0709952c/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xAD2f9A55518Dba12E8AB069502820923351667C5",
       "name": "Curve msETH Factory yVault",
       "symbol": "yvCurve-msETH-f",
@@ -11209,10 +11434,10 @@
       "decimals": 18
     },
     {
-      "address": "0xAE6eD98B1Bd9aAdd3185160324e0e011159B61D3",
-      "name": "Curve Compound Factory yVault",
-      "symbol": "yvCurve-Compound-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xAE6eD98B1Bd9aAdd3185160324e0e011159B61D3/logo-128.png",
+      "address": "0xAE5099C39f023C91d3dd55244CAFB36225B0850E",
+      "name": "PT Ethena sUSDE 24OCT2024",
+      "symbol": "PT-sUSDE-24OCT2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0xAE5099C39f023C91d3dd55244CAFB36225B0850E/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -11401,14 +11626,6 @@
       "decimals": 18
     },
     {
-      "address": "0xB08885e6026bab4333A80024Ec25a1a3e1FF2b8A",
-      "name": "Balancer staFiETH-WETH Stable Pool",
-      "symbol": "B-staFiETH-WETH-Stable",
-      "logoURI": "https://assets.smold.app/api/token/1/0xB08885e6026bab4333A80024Ec25a1a3e1FF2b8A/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A",
       "name": "MAGIC",
       "symbol": "MAGIC",
@@ -11489,6 +11706,14 @@
       "decimals": 18
     },
     {
+      "address": "0xB30dA2376F63De30b42dC055C93fa474F31330A5",
+      "name": "Curve.fi Factory USD Metapool: alUSDFRAXBP",
+      "symbol": "alUSDFRAXB3CRV-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xB30dA2376F63De30b42dC055C93fa474F31330A5/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xB364D19c3FF37e0fa4B94bf4cf626729533C1c26",
       "name": "FRAX yVault",
       "symbol": "yvFRAX",
@@ -11497,10 +11722,10 @@
       "decimals": 18
     },
     {
-      "address": "0xB4AdA607B9d6b2c9Ee07A275e9616B84AC560139",
-      "name": "Curve FRAX Pool yVault",
-      "symbol": "yvCurve-FRAX",
-      "logoURI": "https://assets.smold.app/api/token/1/0xB4AdA607B9d6b2c9Ee07A275e9616B84AC560139/logo-128.png",
+      "address": "0xB4Bd4628e6EFb0Cb521D9ec35050C75840320374",
+      "name": "frETH",
+      "symbol": "frETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/28734/large/freth.png?1696527714",
       "chainId": 1,
       "decimals": 18
     },
@@ -11521,26 +11746,10 @@
       "decimals": 18
     },
     {
-      "address": "0xB512D68A3194ba294A5b8146FA9beCd6a5Fea137",
-      "name": "Curve sUSD-crvUSD Factory yVault",
-      "symbol": "yvCurve-sUSD-crvUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xB512D68A3194ba294A5b8146FA9beCd6a5Fea137/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xB542f4Cb10b7913307e3eD432aCD9BF2e709F5FA",
       "name": "Visor sOHM-ETH Uni 1%",
       "symbol": "sOHM-ETH10",
       "logoURI": "https://assets.smold.app/api/token/1/0xB542f4Cb10b7913307e3eD432aCD9BF2e709F5FA/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xB54E6AADBF1ac1a3EF2A56E358706F0f8E320a03",
-      "name": "Balancer vETH/WETH StablePool",
-      "symbol": "vETH/WETH BPT",
-      "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
       "chainId": 1,
       "decimals": 18
     },
@@ -11569,12 +11778,12 @@
       "decimals": 18
     },
     {
-      "address": "0xB5dE7250128775a317B3f775a7AFcEC73571B732",
-      "name": "Curve sETH Factory yVault",
-      "symbol": "yvCurve-sETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xB5dE7250128775a317B3f775a7AFcEC73571B732/logo-128.png",
+      "address": "0xB60acD2057067DC9ed8c083f5aa227a244044fD6",
+      "name": "Tensorplex Staked TAO",
+      "symbol": "stTAO",
+      "logoURI": "https://assets.coingecko.com/coins/images/35330/large/stTAO_Logo.png?1708268881",
       "chainId": 1,
-      "decimals": 18
+      "decimals": 9
     },
     {
       "address": "0xB620Be8a1949AA9532e6a3510132864EF9Bc3F82",
@@ -11599,6 +11808,14 @@
       "logoURI": "https://tokens.1inch.io/0xb64ef51c888972c908cfacf59b47c1afbc0ab8ac.png",
       "chainId": 1,
       "decimals": 8
+    },
+    {
+      "address": "0xB657B895B265C38c53FFF00166cF7F6A3C70587d",
+      "name": "Curve.fi Factory Plain Pool: alETHfrxETH",
+      "symbol": "alfrxETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xB657B895B265C38c53FFF00166cF7F6A3C70587d/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0xB6Ca7399B4F9CA56FC27cBfF44F4d2e4Eef1fc81",
@@ -11665,10 +11882,26 @@
       "decimals": 18
     },
     {
+      "address": "0xB8C3B7A2A618C552C23B1E4701109a9E756Bab67",
+      "name": "1INCH yVault",
+      "symbol": "yv1INCH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xB8C3B7A2A618C552C23B1E4701109a9E756Bab67/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
       "name": "BNB",
       "symbol": "BNB",
       "logoURI": "https://etherscan.io/token/images/bnb_28_2.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xB8d400f82C100ce5A996E85f46f5ceA2b114C989",
+      "name": "Superdragoncoin",
+      "symbol": "SDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0xB8d400f82C100ce5A996E85f46f5ceA2b114C989/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -11833,6 +12066,13 @@
       "decimals": 18
     },
     {
+      "address": "0xBCe0Cf87F513102F22232436CCa2ca49e815C3aC",
+      "name": "Pirex CVX",
+      "symbol": "pxCVX",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3",
       "name": "Dynamic Set Dollar",
       "symbol": "DSD",
@@ -11847,6 +12087,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xBD7c44d61C923eF6Efb09697F9d64e0376A0b9CB/logo-128.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xBDE752ef69880c00a795D88438040b8f737Eb254",
+      "name": "Spectra ERC4626 Wrapper: uniBTC",
+      "symbol": "sw-uniBTC",
+      "logoURI": "https://assets.smold.app/api/token/1/0xBDE752ef69880c00a795D88438040b8f737Eb254/logo-128.png",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0xBE1fa1303e2979Ab4d4e5dF3D1c6e3656ACAb027",
@@ -11905,14 +12153,6 @@
       "decimals": 18
     },
     {
-      "address": "0xBFa4D8AA6d8a379aBFe7793399D3DdaCC5bBECBB",
-      "name": "DAI yVault",
-      "symbol": "yvDAI",
-      "logoURI": "https://assets.smold.app/api/token/1/0xBFa4D8AA6d8a379aBFe7793399D3DdaCC5bBECBB/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xBa3335588D9403515223F109EdC4eB7269a9Ab5D",
       "name": "Gearbox",
       "symbol": "GEAR",
@@ -11937,12 +12177,34 @@
       "decimals": 18
     },
     {
+      "address": "0xBbe3a58585121F7DC4A5c6e7dE6514eC86987A77",
+      "name": "LondonCoinGold",
+      "symbol": "LDXG",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xBbff34E47E559ef680067a6B1c980639EEb64D24",
       "name": "Leverj Gluon",
       "symbol": "L2",
       "logoURI": "https://etherscan.io/token/images/leverjgluon_32.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xBcB8b7FC9197fEDa75C101fA69d3211b5a30dCD9",
+      "name": "Stax Frax/Temple LP Token",
+      "symbol": "xFraxTempleLP",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xBcca60bB61934080951369a648Fb03DF4F96263C",
+      "name": "Aave interest bearing USDC",
+      "symbol": "aUSDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0xBcca60bB61934080951369a648Fb03DF4F96263C/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
     },
     {
       "address": "0xBd2949F67DcdC549c6Ebe98696449Fa79D988A9F",
@@ -12073,6 +12335,14 @@
       "decimals": 18
     },
     {
+      "address": "0xC0d4Ceb216B3BA9C3701B291766fDCbA977ceC3A",
+      "name": "BTRFLY",
+      "symbol": "BTRFLY",
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/network/ethereum/0xC0d4Ceb216B3BA9C3701B291766fDCbA977ceC3A.jpg",
+      "chainId": 1,
+      "decimals": 9
+    },
+    {
       "address": "0xC112B12aDDc11f988AbC1AAfb47e4C2F62fb6070",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -12129,6 +12399,14 @@
       "decimals": 8
     },
     {
+      "address": "0xC25a3A3b969415c80451098fa907EC722572917F",
+      "name": "Curve.fi DAI/USDC/USDT/sUSD",
+      "symbol": "crvPlain3andSUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0xC25a3A3b969415c80451098fa907EC722572917F/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xC28e931814725BbEB9e670676FaBBCb694Fe7DF2",
       "name": "QuadrantProtocol",
       "symbol": "eQUAD",
@@ -12137,10 +12415,18 @@
       "decimals": 18
     },
     {
-      "address": "0xC2ADaD1Bd59a1DA3D35bd86cDb555694372f488F",
-      "name": "Curve MIM-crvUSD Factory yVault",
-      "symbol": "yvCurve-MIM-crvUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xC2ADaD1Bd59a1DA3D35bd86cDb555694372f488F/logo-128.png",
+      "address": "0xC2Ee6b0334C261ED60C72f6054450b61B8f18E35",
+      "name": "Curve.fi RSV/3Crv",
+      "symbol": "rsv3CRV",
+      "logoURI": "https://assets.smold.app/api/token/1/0xC2Ee6b0334C261ED60C72f6054450b61B8f18E35/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xC2cB1040220768554cf699b0d863A3cd4324ce32",
+      "name": "iearn DAI",
+      "symbol": "yDAI",
+      "logoURI": "https://assets.smold.app/api/token/1/0xC2cB1040220768554cf699b0d863A3cd4324ce32/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -12167,6 +12453,13 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xC40dC53931cd184F782f3602d95C7e3609706004/logo-128.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xC42D8F3D791C107C458b2FeA025A36669B51fC5f",
+      "name": "Cream USD Coin",
+      "symbol": "crUSDC",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0xC477D038d5420C6A9e0b031712f61c5120090de9",
@@ -12197,14 +12490,6 @@
       "name": "Hoichi 芳一",
       "symbol": "HOICHI",
       "logoURI": "https://assets.coingecko.com/coins/images/27227/large/3dBs4VvW_400x400.jpeg?1696526278",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xC4dAf3b5e2A9e93861c3FBDd25f1e943B8D87417",
-      "name": "Curve USDP Pool yVault",
-      "symbol": "yvCurve-USDP",
-      "logoURI": "https://assets.smold.app/api/token/1/0xC4dAf3b5e2A9e93861c3FBDd25f1e943B8D87417/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -12409,14 +12694,6 @@
       "decimals": 18
     },
     {
-      "address": "0xCa978A0528116DDA3cbA9ACD3e68bc6191CA53D0",
-      "name": "Curve.fi Factory Plain Pool: crvUSD/USDP",
-      "symbol": "crvUSDUSDP-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xCa978A0528116DDA3cbA9ACD3e68bc6191CA53D0/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xCae72A7A0Fd9046cf6b165CA54c9e3a3872109E0",
       "name": "AnRKey X",
       "symbol": "$ANRX",
@@ -12429,6 +12706,14 @@
       "name": "SY swETH-BbAWeth_BalancerLP Aura",
       "symbol": "SY-swETH-BbAWeth_BalancerLP Aura",
       "logoURI": "https://assets.smold.app/api/token/1/0xCb611D0BD02a74C491B75d51D6EA5558f1887Da3/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xCb9f85730f57732fc899fb158164b9Ed60c77D49",
+      "name": "Staked Lyra",
+      "symbol": "stkLYRA",
+      "logoURI": "https://ethereum-optimism.github.io/data/stkLYRA/logo.svg",
       "chainId": 1,
       "decimals": 18
     },
@@ -12569,6 +12854,14 @@
       "decimals": 18
     },
     {
+      "address": "0xD1b5651E55D4CeeD36251c61c50C889B36F6abB5",
+      "name": "Stake DAO CRV",
+      "symbol": "sdCRV",
+      "logoURI": "https://assets.coingecko.com/coins/images/13724/large/stakedao_logo.jpg",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xD23367155B55d67492DFDC0FC7f8bB1dF7114fD9",
       "name": "Amplifi",
       "symbol": "AMPLIFI",
@@ -12593,10 +12886,26 @@
       "decimals": 18
     },
     {
+      "address": "0xD288755556c235afFfb6316702719C32bD8706e8",
+      "name": "SY Ethena sUSDE",
+      "symbol": "SY-sUSDE",
+      "logoURI": "https://assets.smold.app/api/token/1/0xD288755556c235afFfb6316702719C32bD8706e8/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xD291E7a03283640FDc51b121aC401383A46cC623",
       "name": "Rari Governance Token",
       "symbol": "RGT",
       "logoURI": "https://assets.smold.app/api/token/1/0xD291E7a03283640FDc51b121aC401383A46cC623/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xD2967f45c4f384DEEa880F807Be904762a3DeA07",
+      "name": "Curve.fi GUSD/3Crv",
+      "symbol": "gusd3CRV",
+      "logoURI": "https://assets.smold.app/api/token/1/0xD2967f45c4f384DEEa880F807Be904762a3DeA07/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -12621,14 +12930,6 @@
       "name": "Rocket Pool Protocol",
       "symbol": "RPL",
       "logoURI": "https://tokens.1inch.io/0xd33526068d116ce69f19a9ee46f0bd304f21a51f.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xD347e7A3DdF5Ce4C42E19a4F30eEAA761795C72B",
-      "name": "Curve ibEUR Factory yVault",
-      "symbol": "yvCurve-ibEUR-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xD347e7A3DdF5Ce4C42E19a4F30eEAA761795C72B/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -12677,6 +12978,14 @@
       "name": "Polkamarkets",
       "symbol": "POLK",
       "logoURI": "https://tokens.1inch.io/0xd478161c952357f05f0292b56012cd8457f1cfbf.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xD4c0aB44698BcA5070624eF62c66b1F4d1488551",
+      "name": "Principal Token: sw-uniETH-1727136009",
+      "symbol": "PT-sw-uniETH-1727136009",
+      "logoURI": "https://assets.smold.app/api/token/1/0xD4c0aB44698BcA5070624eF62c66b1F4d1488551/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -12761,18 +13070,18 @@
       "decimals": 18
     },
     {
-      "address": "0xD6A4180c819324A9E432CA07C689EcBF00088cd6",
-      "name": "Curve EURS Factory yVault",
-      "symbol": "yvCurve-EURS-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xD6A4180c819324A9E432CA07C689EcBF00088cd6/logo-128.png",
+      "address": "0xD6Ac1CB9019137a896343Da59dDE6d097F710538",
+      "name": "Curve.fi Factory Plain Pool: ibGBP/sGBP",
+      "symbol": "ibGBP+sGBP-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xD6Ac1CB9019137a896343Da59dDE6d097F710538/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
     {
-      "address": "0xD6Ea40597Be05c201845c0bFd2e96A60bACde267",
-      "name": "Curve Compound Pool yVault",
-      "symbol": "yvCurve-Compound",
-      "logoURI": "https://assets.smold.app/api/token/1/0xD6Ea40597Be05c201845c0bFd2e96A60bACde267/logo-128.png",
+      "address": "0xD71eCFF9342A5Ced620049e616c5035F1dB98620",
+      "name": "Synth sEUR",
+      "symbol": "sEUR",
+      "logoURI": "https://assets.smold.app/api/token/1/0xD71eCFF9342A5Ced620049e616c5035F1dB98620/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -12849,10 +13158,26 @@
       "decimals": 18
     },
     {
+      "address": "0xD905e2eaeBe188fc92179b6350807D8bd91Db0D8",
+      "name": "Curve.fi DAI/USDC/USDT/PAX",
+      "symbol": "ypaxCrv",
+      "logoURI": "https://assets.smold.app/api/token/1/0xD905e2eaeBe188fc92179b6350807D8bd91Db0D8/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xD961c25aDb22171B142f7e9E14dF01962D4decDf",
       "name": "PT ankrETH-WETH_BalancerLP Aura 26SEP2024",
       "symbol": "PT-ankrETH-WETH_BalancerLP Aura-26SEP2024",
       "logoURI": "https://assets.smold.app/api/token/1/0xD961c25aDb22171B142f7e9E14dF01962D4decDf/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xD9A442856C234a39a81a089C06451EBAa4306a72",
+      "name": "pufETH",
+      "symbol": "pufETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xD9A442856C234a39a81a089C06451EBAa4306a72/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -12893,6 +13218,13 @@
       "name": "UniX Gaming",
       "symbol": "UNIX",
       "logoURI": "https://tokens.1inch.io/0xddd6a0ecc3c6f6c102e5ea3d8af7b801d1a77ac8.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xDDDe38696FBe5d11497D72d8801F651642d62353",
+      "name": "ParaSpace Derivative Token cAPE",
+      "symbol": "pcAPE",
       "chainId": 1,
       "decimals": 18
     },
@@ -13113,14 +13445,6 @@
       "decimals": 18
     },
     {
-      "address": "0xE14d13d8B3b85aF791b2AADD661cDBd5E6097Db1",
-      "name": "YFI yVault",
-      "symbol": "yvYFI",
-      "logoURI": "https://assets.smold.app/api/token/1/0xE14d13d8B3b85aF791b2AADD661cDBd5E6097Db1/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xE1578305ACC1BA40a331fd8cC9c8aEA1C2F21c9c",
       "name": "YT rETH-WETH_BalancerLP Aura 26DEC2024",
       "symbol": "YT-rETH-WETH_BalancerLP Aura-26DEC2024",
@@ -13161,14 +13485,6 @@
       "decimals": 18
     },
     {
-      "address": "0xE2CaD35CFD1A9B5acD557558f44B096ef8340C1B",
-      "name": "Curve TriCryptoLLAMA Factory yVault",
-      "symbol": "yvCurve-TriCryptoLLAMA-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xE403bbF2262643c2e996E7469be736E211D5B272",
       "name": "yPT-ezETH (auto-rolling Pendle PT)",
       "symbol": "yPT-ezETH",
@@ -13193,26 +13509,10 @@
       "decimals": 18
     },
     {
-      "address": "0xE510E87d0eF7d987Ed1baF8E1D7Aaef5b9e3db42",
-      "name": "Curve OHM-ETH Factory yVault",
-      "symbol": "yvCurve-OHM-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xE510E87d0eF7d987Ed1baF8E1D7Aaef5b9e3db42/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xE5323ca5B11EB8495C56473756De679e43168d57",
       "name": "StrategyGearboxLenderGHO",
       "symbol": "ysGHO",
       "logoURI": "https://assets.smold.app/api/token/1/0xE5323ca5B11EB8495C56473756De679e43168d57/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xE537B5cc158EB71037D4125BDD7538421981E6AA",
-      "name": "Curve 3Crypto Pool yVault",
-      "symbol": "yvCurve-3Crypto",
-      "logoURI": "https://assets.smold.app/api/token/1/0xE537B5cc158EB71037D4125BDD7538421981E6AA/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -13233,14 +13533,6 @@
       "decimals": 6
     },
     {
-      "address": "0xE5eDcE53e39Cbc6d819E2C340BCF295e0084ff7c",
-      "name": "Curve ibEUR-USDC Pool yVault",
-      "symbol": "yvCurve-ibEUR-USDC",
-      "logoURI": "https://assets.smold.app/api/token/1/0xE5eDcE53e39Cbc6d819E2C340BCF295e0084ff7c/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xE61F6e39711cEc14f8D6c637c2f4568bAA9FF7Ee",
       "name": "Hey",
       "symbol": "HEY",
@@ -13255,6 +13547,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xE625F5923303f1CE7A43ACFEFd11fd12f30DbcA4/logo-128.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xE6354ed5bC4b393a5Aad09f21c46E101e692d447",
+      "name": "iearn USDT",
+      "symbol": "yUSDT",
+      "logoURI": "https://assets.smold.app/api/token/1/0xE6354ed5bC4b393a5Aad09f21c46E101e692d447/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
     },
     {
       "address": "0xE64542B15f18f6926b49e0eF53681a84dC8c28f1",
@@ -13305,6 +13605,14 @@
       "decimals": 9
     },
     {
+      "address": "0xE72B141DF173b999AE7c1aDcbF60Cc9833Ce56a8",
+      "name": "ETHPlus",
+      "symbol": "ETH+",
+      "logoURI": "https://ethereum-optimism.github.io/data/ETH+/logo.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xE74dC43867E0cbEB208F1a012fc60DcBbF0E3044",
       "name": "deFIRE",
       "symbol": "CWAP",
@@ -13319,14 +13627,6 @@
       "logoURI": "https://tokens.1inch.io/0xe796d6ca1ceb1b022ece5296226bf784110031cd.png",
       "chainId": 1,
       "decimals": 18
-    },
-    {
-      "address": "0xE7BFf2Da8A2f619c2586FB83938Fa56CE803aA16",
-      "name": "Iron Bank ChainLink Token",
-      "symbol": "iLINK",
-      "logoURI": "https://assets.smold.app/api/token/1/0xE7BFf2Da8A2f619c2586FB83938Fa56CE803aA16/logo-128.png",
-      "chainId": 1,
-      "decimals": 8
     },
     {
       "address": "0xE7E1043eA932DBAA7De79450824a92f40481c82b",
@@ -13357,6 +13657,14 @@
       "name": "SY Mellow Re7LRT",
       "symbol": "SY-Re7LRT",
       "logoURI": "https://assets.smold.app/api/token/1/0xE833C7A12A10A44Cb8b19BdF0931053AC136F105/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xE8449F1495012eE18dB7Aa18cD5706b47e69627c",
+      "name": "Curve.fi Factory Crypto Pool: dYFI/ETH",
+      "symbol": "dYFIETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xE8449F1495012eE18dB7Aa18cD5706b47e69627c/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -13489,10 +13797,26 @@
       "decimals": 18
     },
     {
+      "address": "0xEd4064f376cB8d68F770FB1Ff088a3d0F3FF5c4d",
+      "name": "Curve CRV-ETH",
+      "symbol": "crvCRVETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xEd4064f376cB8d68F770FB1Ff088a3d0F3FF5c4d/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xEd40834A13129509A89be39a9bE9C0E96A0DDd71",
       "name": "Warp Token",
       "symbol": "WARP",
       "logoURI": "https://tokens.1inch.io/0xed40834a13129509a89be39a9be9c0e96a0ddd71.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xEdA43FA2F35EA174a7E9b73658b18a7dA00ADf38",
+      "name": "Namx",
+      "symbol": "NAMX",
+      "logoURI": "https://assets.coingecko.com/coins/images/32437/large/Screenshot_2023-10-18_at_13.20.36.png?1698226504",
       "chainId": 1,
       "decimals": 18
     },
@@ -13509,6 +13833,14 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/1/0xEe6BdFAc6767eFEf0879B924feA12a3437d281A2/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xEe9085fC268F6727d5D4293dBABccF901ffDCC29",
+      "name": "PT Ethena sUSDE 26DEC2024",
+      "symbol": "PT-sUSDE-26DEC2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0xEe9085fC268F6727d5D4293dBABccF901ffDCC29/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -13569,10 +13901,25 @@
       "decimals": 18
     },
     {
+      "address": "0xF05CFb8b4382c69f3B451C5FB55210B232E0edFA",
+      "name": "Curve.fi Factory Plain Pool: agEUR/VEUR",
+      "symbol": "agEUR-VEUR-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xF05CFb8b4382c69f3B451C5FB55210B232E0edFA/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xF063fE1aB7a291c5d06a86e14730b00BF24cB589",
       "name": "DxSale.Network",
       "symbol": "SALE",
       "logoURI": "https://tokens.1inch.io/0xf063fe1ab7a291c5d06a86e14730b00bf24cb589.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xF0FC841832E1367e7a4F249908139ea010943B87",
+      "name": "stETH Yield Token",
+      "symbol": "stETH-Y",
       "chainId": 1,
       "decimals": 18
     },
@@ -13681,6 +14028,29 @@
       "decimals": 8
     },
     {
+      "address": "0xF48A6134AaE5fC7186fEe6a7F874426AF69Aecf8",
+      "name": "WRAPPED-KIBHO",
+      "symbol": "WKBO",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xF48e200EAF9906362BB1442fca31e0835773b8B4",
+      "name": "Synth sAUD",
+      "symbol": "sAUD",
+      "logoURI": "https://asset-images.messari.io/images/8f51b084-8b2a-48f5-bc7a-b55e317983d5/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xF4Dc48D260C93ad6a96c5Ce563E70CA578987c74",
+      "name": "Babylon.Finance",
+      "symbol": "BABL",
+      "logoURI": "https://asset-images.messari.io/images/fa25bc19-8fc1-42b1-a31f-f9ec234a1124/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xF4b5470523cCD314C6B9dA041076e7D79E0Df267",
       "name": "BlockBank",
       "symbol": "BBANK",
@@ -13729,14 +14099,6 @@
       "decimals": 18
     },
     {
-      "address": "0xF56fB6cc29F0666BDD1662FEaAE2A3C935ee3469",
-      "name": "Curve USDP-crvUSD Factory yVault",
-      "symbol": "yvCurve-USDP-crvUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xF56fB6cc29F0666BDD1662FEaAE2A3C935ee3469/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xF57e7e7C23978C3cAEC3C3548E3D615c346e79fF",
       "name": "Immutable X",
       "symbol": "IMX",
@@ -13745,10 +14107,10 @@
       "decimals": 18
     },
     {
-      "address": "0xF59D66c1d593Fb10e2f8c2a6fD2C958792434B9c",
-      "name": "Curve OUSD Pool yVault",
-      "symbol": "yvCurve-OUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0xF59D66c1d593Fb10e2f8c2a6fD2C958792434B9c/logo-128.png",
+      "address": "0xF58e22D224e465fB65F4257573B58DBFb0f704A0",
+      "name": "Principal Token: arUSD-1734480037",
+      "symbol": "PT-arUSD-1734480037",
+      "logoURI": "https://assets.smold.app/api/token/1/0xF58e22D224e465fB65F4257573B58DBFb0f704A0/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -13777,22 +14139,6 @@
       "decimals": 18
     },
     {
-      "address": "0xF5f33812c93C5f2Ae2F28c041eEb393212439502",
-      "name": "Curve GUSD-crvUSD Factory yVault",
-      "symbol": "yvCurve-GUSD-crvUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xF5f33812c93C5f2Ae2F28c041eEb393212439502/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xF614d3864EF53510909a94c618a5EC1Ff75103BF",
-      "name": "Curve cbETH Factory yVault",
-      "symbol": "yvCurve-cbETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xF614d3864EF53510909a94c618a5EC1Ff75103BF/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xF61718057901F84C4eEC4339EF8f0D86D2B45600",
       "name": "iearn SUSD",
       "symbol": "ySUSD",
@@ -13817,18 +14163,17 @@
       "decimals": 18
     },
     {
-      "address": "0xF6B9DFE6bc42ed2eaB44D6B829017f7B78B29f88",
-      "name": "Curve ibKRW-USDC Pool yVault",
-      "symbol": "yvCurve-ibKRW-USDC",
-      "logoURI": "https://assets.smold.app/api/token/1/0xF6B9DFE6bc42ed2eaB44D6B829017f7B78B29f88/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xF6C9E9AF314982A4b38366f4AbfAa00595C5A6fC",
       "name": "yearn Curve.fi UST/3Crv",
       "symbol": "yvust3CRV",
       "logoURI": "https://assets.smold.app/api/token/1/0xF6C9E9AF314982A4b38366f4AbfAa00595C5A6fC/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xF6b1C627e95BFc3c1b4c9B825a032Ff0fBf3e07d",
+      "name": "Synth sJPY",
+      "symbol": "sJPY",
       "chainId": 1,
       "decimals": 18
     },
@@ -13857,10 +14202,26 @@
       "decimals": 18
     },
     {
+      "address": "0xF85640Cf6Ec7658180761927516d11264D635775",
+      "name": "Principal Token: asdCRV-1733973768",
+      "symbol": "PT-asdCRV-1733973768",
+      "logoURI": "https://assets.smold.app/api/token/1/0xF85640Cf6Ec7658180761927516d11264D635775/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xF88Cf36C49f19713E2BB6FdfAD02c5e73e3019d0",
       "name": "YT ankrETH-WETH_BalancerLP Aura 28MAR2024",
       "symbol": "YT-ankrETH-WETH_BalancerLP Aura-28MAR2024",
       "logoURI": "https://assets.smold.app/api/token/1/0xF88Cf36C49f19713E2BB6FdfAD02c5e73e3019d0/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xF9078Fb962A7D13F55d40d49C8AA6472aBD1A5a6",
+      "name": "Curve.fi Factory Plain Pool: Clever clevCVX/CVX",
+      "symbol": "clevCVX-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xF9078Fb962A7D13F55d40d49C8AA6472aBD1A5a6/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -13877,6 +14238,14 @@
       "name": "Yield",
       "symbol": "YLD",
       "logoURI": "https://tokens.1inch.io/0xf94b5c5651c888d928439ab6514b93944eee6f48.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xF95AAa7EBB1620e46221B73588502960Ef63dBa0",
+      "name": "Curve.fi Factory USD Metapool: tBTC/wBTC/sBTC",
+      "symbol": "TBTCSBTC23CRV-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xF95AAa7EBB1620e46221B73588502960Ef63dBa0/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -13905,10 +14274,34 @@
       "decimals": 18
     },
     {
+      "address": "0xFAFdF0C4c1CB09d430Bf88c75D88BB46DAe09967",
+      "name": "Iron Bank AUD",
+      "symbol": "ibAUD",
+      "logoURI": "https://assets.smold.app/api/token/1/0xFAFdF0C4c1CB09d430Bf88c75D88BB46DAe09967/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0",
+      "name": "rswETH",
+      "symbol": "rswETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xFAe103DC9cf190eD75350761e95403b7b8aFa6c0/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xFB2E038F179F5dfB34a695225F8FD9B854360636",
       "name": "yPT-eETH (auto-rolling Pendle PT)",
       "symbol": "yPT-eETH",
       "logoURI": "https://assets.smold.app/api/token/1/0xFB2E038F179F5dfB34a695225F8FD9B854360636/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xFB588886715a263F69c1edd4e84e0Ac1855E928A",
+      "name": "Conic Debt Token",
+      "symbol": "cncDT",
+      "logoURI": "https://assets.smold.app/api/token/1/0xFB588886715a263F69c1edd4e84e0Ac1855E928A/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -13977,14 +14370,6 @@
       "decimals": 18
     },
     {
-      "address": "0xFa3472f7319477c9bFEcdD66E4B948569E7621b9",
-      "name": "Iron Bank yearn.finance",
-      "symbol": "iYFI",
-      "logoURI": "https://assets.smold.app/api/token/1/0xFa3472f7319477c9bFEcdD66E4B948569E7621b9/logo-128.png",
-      "chainId": 1,
-      "decimals": 8
-    },
-    {
       "address": "0xFb087F3Da58e59f4707f2E38e98B44F194468ccD",
       "name": "SY vETH-WETH_BalancerLP Aura",
       "symbol": "SY-vETH-WETH_BalancerLP Aura",
@@ -14005,6 +14390,21 @@
       "name": "EDDA",
       "symbol": "EDDA",
       "logoURI": "https://tokens.1inch.io/0xfbbe9b1142c699512545f47937ee6fae0e4b0aa9.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xFbdCA68601f835b27790D98bbb8eC7f05FDEaA9B",
+      "name": "Curve.fi Factory BTC Metapool: ibBTC",
+      "symbol": "ibbtc/sbtcCRV-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xFbdCA68601f835b27790D98bbb8eC7f05FDEaA9B/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xFc0B1EEf20e4c68B3DCF36c4537Cfa7Ce46CA70b",
+      "name": "USDC Plus",
+      "symbol": "USDC+",
       "chainId": 1,
       "decimals": 18
     },
@@ -14057,6 +14457,14 @@
       "decimals": 18
     },
     {
+      "address": "0xFd2a8fA60Abd58Efe3EeE34dd494cD491dC14900",
+      "name": "Curve.fi aDAI/aUSDC/aUSDT",
+      "symbol": "a3CRV",
+      "logoURI": "https://assets.smold.app/api/token/1/0xFd2a8fA60Abd58Efe3EeE34dd494cD491dC14900/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xFe2e637202056d30016725477c5da089Ab0A043A",
       "name": "StakeWise Staked ETH2",
       "symbol": "sETH2",
@@ -14105,10 +14513,10 @@
       "decimals": 18
     },
     {
-      "address": "0xFf4ce5AAAb5a627bf82f4A571AB1cE94Aa365eA6",
-      "name": "DOLA USDC Stable Pool",
-      "symbol": "DOLA-USDC BSP",
-      "logoURI": "https://assets.smold.app/api/token/1/0xFf4ce5AAAb5a627bf82f4A571AB1cE94Aa365eA6/logo-128.png",
+      "address": "0xFf71841EeFca78a64421db28060855036765c248",
+      "name": "Cove YFI",
+      "symbol": "coveYFI",
+      "logoURI": "https://assets.coingecko.com/coins/images/38133/large/coveyfi.png?1716570267",
       "chainId": 1,
       "decimals": 18
     },
@@ -14117,14 +14525,6 @@
       "name": "Yearn-Ajna Pool xETH/WETH Vault",
       "symbol": "yv-ajna-xeth-weth",
       "logoURI": "https://assets.smold.app/api/token/1/0xFf8b9980fdA386cafAAFaB472963C4Cb5fb8C412/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xFfA0F0616229eE2aC08FA4C358D23b18D980134B",
-      "name": "Curve PRISMA-ETH Factory yVault",
-      "symbol": "yvCurve-PRISMA-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xFfA0F0616229eE2aC08FA4C358D23b18D980134B/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -14153,6 +14553,14 @@
       "decimals": 8
     },
     {
+      "address": "0xa0ab94DeBB3cC9A7eA77f3205ba4AB23276feD08",
+      "name": "Pendle Market",
+      "symbol": "PENDLE-LPT",
+      "logoURI": "https://assets.smold.app/api/token/1/0xa0ab94DeBB3cC9A7eA77f3205ba4AB23276feD08/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb",
       "name": "DePay",
       "symbol": "DEPAY",
@@ -14175,6 +14583,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/21456/large/61b142508fba4235f29d57eb_Frame_24_%281%29.png?1696520818",
       "chainId": 1,
       "decimals": 9
+    },
+    {
+      "address": "0xa183754F09aF59fa1E0b5b9E32B9DEA91b6dC0A3",
+      "name": "Pendle Market",
+      "symbol": "PENDLE-LPT",
+      "logoURI": "https://assets.smold.app/api/token/1/0xa183754F09aF59fa1E0b5b9E32B9DEA91b6dC0A3/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0xa1c739fa2FDfdD7049E385D60d4921EF7226Daa5",
@@ -14337,10 +14753,10 @@
       "decimals": 18
     },
     {
-      "address": "0xa540744DEDBDA9eF64cf753F0E851EfE4a419EA9",
-      "name": "Curve MIM Factory yVault",
-      "symbol": "yvCurve-MIM-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xa540744DEDBDA9eF64cf753F0E851EfE4a419EA9/logo-128.png",
+      "address": "0xa4c567c662349BeC3D0fB94C4e7f85bA95E208e4",
+      "name": "Curve.fi Factory Plain Pool: msETH/WETH",
+      "symbol": "msETHWETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xa4c567c662349BeC3D0fB94C4e7f85bA95E208e4/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -14377,14 +14793,6 @@
       "decimals": 18
     },
     {
-      "address": "0xa669d6C2Df33F41940c2646A9BF3031e2524d515",
-      "name": "Curve sdCRVv2 Factory yVault",
-      "symbol": "yvCurve-sdCRVv2-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xa669d6C2Df33F41940c2646A9BF3031e2524d515/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xa6a0C2b9d06b769635F6C85deB6b500f49F672E8",
       "name": "PT Autocompounding Pirex ETH 27MAR2025",
       "symbol": "PT-apxETH-27MAR2025",
@@ -14407,14 +14815,6 @@
       "logoURI": "https://tokens.1inch.io/0xa7de087329bfcda5639247f96140f9dabe3deed1.png",
       "chainId": 1,
       "decimals": 18
-    },
-    {
-      "address": "0xa7c4054AFD3DbBbF5bFe80f41862b89ea05c9806",
-      "name": "Iron Bank Synth sUSD",
-      "symbol": "iSUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0xa7c4054AFD3DbBbF5bFe80f41862b89ea05c9806/logo-128.png",
-      "chainId": 1,
-      "decimals": 8
     },
     {
       "address": "0xa8076aE31e4B6c64D07b1Ed27889924a962a70d3",
@@ -14472,6 +14872,14 @@
       "decimals": 18
     },
     {
+      "address": "0xa94ec39c91DF334DCAb55aDaA8EdD9C1dAF67cA7",
+      "name": "Spectra ERC4626 Wrapper: stk GHO",
+      "symbol": "sw-stkGHO",
+      "logoURI": "https://assets.smold.app/api/token/1/0xa94ec39c91DF334DCAb55aDaA8EdD9C1dAF67cA7/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xa96FeBd6c5FAF7739d3149bfB43211Ec6844a37C",
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
@@ -14488,18 +14896,17 @@
       "decimals": 9
     },
     {
-      "address": "0xa9fE4601811213c340e850ea305481afF02f5b28",
-      "name": "WETH yVault",
-      "symbol": "yvWETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0xa9fE4601811213c340e850ea305481afF02f5b28/logo-128.png",
+      "address": "0xaA17A236F2bAdc98DDc0Cf999AbB47D47Fc0A6Cf",
+      "name": "Curve.fi ETH/aETH",
+      "symbol": "ankrCRV",
+      "logoURI": "https://assets.smold.app/api/token/1/0xaA17A236F2bAdc98DDc0Cf999AbB47D47Fc0A6Cf/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
     {
-      "address": "0xaA379c2aA72529d5ec0da8A41e2F41ED7Fe4b48C",
-      "name": "Curve TriCryptoUSDC Factory yVault",
-      "symbol": "yvCurve-3CryptoUSDC-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xaA379c2aA72529d5ec0da8A41e2F41ED7Fe4b48C/logo-128.png",
+      "address": "0xaA4b6506493582f169C9329AC0Da99fff23c2911",
+      "name": "ParaSpace Derivative Token WETH",
+      "symbol": "pWETH",
       "chainId": 1,
       "decimals": 18
     },
@@ -14544,6 +14951,14 @@
       "decimals": 18
     },
     {
+      "address": "0xaCdf0DBA4B9839b96221a8487e9ca660a48212be",
+      "name": "High Yield USD",
+      "symbol": "hyUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/30899/large/correctlogo.png?1696529745",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xaDB2437e6F65682B85F814fBc12FeC0508A7B1D0",
       "name": "UniCrypt",
       "symbol": "UNCX",
@@ -14568,10 +14983,9 @@
       "decimals": 18
     },
     {
-      "address": "0xaE8535c23afeDdA9304B03c68a3563B75fc8f92b",
-      "name": "swETH/Boosted Aave v3 WETH",
-      "symbol": "swETH-bb-a-WETH-BPT",
-      "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
+      "address": "0xaF0b1FDf9c6BfeC7b3512F207553c0BA00D7f1A2",
+      "name": "Test Citadel",
+      "symbol": "Test CTDL",
       "chainId": 1,
       "decimals": 18
     },
@@ -14604,6 +15018,13 @@
       "name": "gameswap.org",
       "symbol": "GSWAP",
       "logoURI": "https://tokens.1inch.io/0xaac41ec512808d64625576eddd580e7ea40ef8b2.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xab5eB14c09D416F0aC63661E57EDB7AEcDb9BEfA",
+      "name": "Metronome Synth USD",
+      "symbol": "msUSD",
       "chainId": 1,
       "decimals": 18
     },
@@ -14688,18 +15109,18 @@
       "decimals": 18
     },
     {
-      "address": "0xb089C87F41BF37afdD71280660ffED15E3162fF8",
-      "name": "Pendle Market",
-      "symbol": "PENDLE-LPT",
-      "logoURI": "https://assets.smold.app/api/token/1/0xb089C87F41BF37afdD71280660ffED15E3162fF8/logo-128.png",
+      "address": "0xb05097849BCA421A3f51B249BA6CCa4aF4b97cb9",
+      "name": "Float Protocol: FLOAT",
+      "symbol": "FLOAT",
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0xb05097849BCA421A3f51B249BA6CCa4aF4b97cb9/logo.png",
       "chainId": 1,
       "decimals": 18
     },
     {
-      "address": "0xb09F2a67a731466182518fae980feAe96479d80b",
-      "name": "KP3RETH-f yVault",
-      "symbol": "yvKP3RETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xb09F2a67a731466182518fae980feAe96479d80b/logo-128.png",
+      "address": "0xb089C87F41BF37afdD71280660ffED15E3162fF8",
+      "name": "Pendle Market",
+      "symbol": "PENDLE-LPT",
+      "logoURI": "https://assets.smold.app/api/token/1/0xb089C87F41BF37afdD71280660ffED15E3162fF8/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -14710,6 +15131,13 @@
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xb0D6d7C0ed4b9C2B8186a3Ac3Acad88683586e35/logo-128.png",
       "chainId": 1,
       "decimals": 6
+    },
+    {
+      "address": "0xb185A192E5E9ce5Ea2204Dcfee0f4467008D4216",
+      "name": "bl",
+      "symbol": "bl",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0xb19189Fb36c816f3e0f16065057B07B790998fDC",
@@ -14824,14 +15252,6 @@
       "decimals": 18
     },
     {
-      "address": "0xb37094c1B5614Bd6EcE40AFb295C26F4377069d3",
-      "name": "Curve FRAX Factory yVault",
-      "symbol": "yvCurve-FRAX-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xb37094c1B5614Bd6EcE40AFb295C26F4377069d3/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xb387596CAab50D974eDBf42e1028cD96B1773e4F",
       "name": "PT vETH-WETH_BalancerLP Aura 27JUN2024",
       "symbol": "PT-vETH-WETH_BalancerLP Aura-27JUN2024",
@@ -14876,14 +15296,6 @@
       "name": "Pendle Market",
       "symbol": "PENDLE-LPT",
       "logoURI": "https://assets.smold.app/api/token/1/0xb4460e76D99eCaD95030204D3C25fb33C4833997/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xb4D1Be44BfF40ad6e506edf43156577a3f8672eC",
-      "name": "Curve sAave Pool yVault",
-      "symbol": "yvCurve-sAave",
-      "logoURI": "https://assets.smold.app/api/token/1/0xb4D1Be44BfF40ad6e506edf43156577a3f8672eC/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15016,6 +15428,13 @@
       "decimals": 18
     },
     {
+      "address": "0xb97fca5a2967ed91F36C1cBb60DbFe4c53C1DF44",
+      "name": "Equal RUB",
+      "symbol": "RUBE",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xb9EF770B6A5e12E45983C5D80545258aA38F3B78",
       "name": "0chain",
       "symbol": "ZCN",
@@ -15028,14 +15447,6 @@
       "name": "yPT-sUSDe-Karak (auto-rolling Pendle PT)",
       "symbol": "yPT-sUSDe-Karak",
       "logoURI": "https://assets.smold.app/api/token/1/0xb9ef23c587f3F3DEa54F42De5B71e78f822C74e8/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xbA61BaA1D96c2F4E25205B331306507BcAeA4677",
-      "name": "LP Yearn PRISMA Vault",
-      "symbol": "lp-yPRISMA",
-      "logoURI": "https://assets.smold.app/api/token/1/0xbA61BaA1D96c2F4E25205B331306507BcAeA4677/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15060,6 +15471,30 @@
       "name": "Curve Lend crvUSD-WBTC Factory yVault",
       "symbol": "yvCurveLend-crvUSD-WBTC-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xbB12C45849831201617ca6bFc0ef6EA5990580Ff/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xbB6881874825E60e1160416D6C426eae65f2459E",
+      "name": "Balancer Aave v3 Boosted Pool (WETH)",
+      "symbol": "bb-a-WETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/31285/large/eth-diamond-black-gray.png?1696530108",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6",
+      "name": "Synth sLINK",
+      "symbol": "sLINK",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xbBC455cb4F1B9e4bFC4B73970d360c8f032EfEE6/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xbBf399db59A845066aAFce9AE55e68c505FA97B7",
+      "name": "Pendle Market",
+      "symbol": "PENDLE-LPT",
+      "logoURI": "https://assets.smold.app/api/token/1/0xbBf399db59A845066aAFce9AE55e68c505FA97B7/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15110,6 +15545,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xbDb97eC319c41c6FA383E94eCE6Bdf383dFC7BE4/logo-128.png",
       "chainId": 1,
       "decimals": 6
+    },
+    {
+      "address": "0xbE05538f48D76504953c5d1068898C6642937427",
+      "name": "YT Ethena sUSDE 26DEC2024",
+      "symbol": "YT-sUSDE-26DEC2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0xbE05538f48D76504953c5d1068898C6642937427/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0xbE4afE6737CCf34cA21cdeF461E5C7547Adc8C77",
@@ -15248,10 +15691,10 @@
       "decimals": 18
     },
     {
-      "address": "0xbf91b696a35b539b1142e2f921A2A88BB019506a",
-      "name": "Curve ETHx-WETH Factory yVault",
-      "symbol": "yvCurve-ETHx-WETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xbf91b696a35b539b1142e2f921A2A88BB019506a/logo-128.png",
+      "address": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+      "name": "Renzo Restaked ETH",
+      "symbol": "ezETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xbf5495Efe5DB9ce00f80364C8B423567e58d2110/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15320,10 +15763,26 @@
       "decimals": 18
     },
     {
+      "address": "0xc270b3B858c335B6BA5D5b10e2Da8a09976005ad",
+      "name": "Curve.fi Factory USD Metapool: Paxos Dollar (USDP)",
+      "symbol": "pax-usdp3CRV-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xc270b3B858c335B6BA5D5b10e2Da8a09976005ad/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xc2B021133D1b0cF07dba696fd5DD89338428225B",
       "name": "Balancer GHO/bb-a-USD Stable Pool",
       "symbol": "GHO/bb-a-USD",
       "logoURI": "https://assets.smold.app/api/token/1/0xc2B021133D1b0cF07dba696fd5DD89338428225B/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xc2e660C62F72c2ad35AcE6DB78a616215E2F2222",
+      "name": "Zunami ETH",
+      "symbol": "zunETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xc2e660C62F72c2ad35AcE6DB78a616215E2F2222/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15348,6 +15807,14 @@
       "name": "Voucher Ethereum",
       "symbol": "vETH",
       "logoURI": "https://tokens.1inch.io/0xc3d088842dcf02c13699f936bb83dfbbc6f721ab.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xc3b19502F8c02be75F3f77fd673503520DEB51dD",
+      "name": "Curve.fi Factory USD Metapool: msUSD/FRAXBP",
+      "symbol": "msUSDFRAX3CRV-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xc3b19502F8c02be75F3f77fd673503520DEB51dD/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15404,14 +15871,6 @@
       "name": "WETH-1 yVault",
       "symbol": "yvWETH-1",
       "logoURI": "https://assets.smold.app/api/token/1/0xc56413869c6CDf96496f2b1eF801fEDBdFA7dDB0/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xc5F3D11580c41cD07104e9AF154Fc6428bb93c73",
-      "name": "Balancer Boosted Aave USD Pool yVault",
-      "symbol": "yvBalancer-BoostedAaveUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0xc5F3D11580c41cD07104e9AF154Fc6428bb93c73/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15520,6 +15979,14 @@
       "decimals": 18
     },
     {
+      "address": "0xc7D669E7CC521a6676B20e209b3a49A1e64856f1",
+      "name": "Principal Token: sw-stkGHO-1732492824",
+      "symbol": "PT-sw-stkGHO-1732492824",
+      "logoURI": "https://assets.smold.app/api/token/1/0xc7D669E7CC521a6676B20e209b3a49A1e64856f1/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xc813EA5e3b48BEbeedb796ab42A30C5599b01740",
       "name": "Autonio",
       "symbol": "NIOX",
@@ -15552,6 +16019,14 @@
       "decimals": 18
     },
     {
+      "address": "0xc8809F6C743179e794c4D9B95Ca862aA24976e74",
+      "name": "The Lattice",
+      "symbol": "LATI",
+      "logoURI": "https://assets.smold.app/api/token/1/0xc8809F6C743179e794c4D9B95Ca862aA24976e74/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xc8D3DCb63C38607Cb0c9d3F55E8eccE628A01C36",
       "name": "MatrixSwapToken",
       "symbol": "MATRIX",
@@ -15572,14 +16047,6 @@
       "name": "Graph Token",
       "symbol": "GRT",
       "logoURI": "https://tokens.1inch.io/0xc944e90c64b2c07662a292be6244bdf05cda44a7.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xc97511a1dDB162C8742D39FF320CfDCd13fBcf7e",
-      "name": "Curve Paxos Pool yVault",
-      "symbol": "yvCurve-USDP",
-      "logoURI": "https://assets.smold.app/api/token/1/0xc97511a1dDB162C8742D39FF320CfDCd13fBcf7e/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15622,14 +16089,6 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xcB4a5d1286e67570f2234fd3863548DeaeB02c96/logo-128.png",
       "chainId": 1,
       "decimals": 18
-    },
-    {
-      "address": "0xcB550A6D4C8e3517A939BC79d0c7093eb7cF56B5",
-      "name": "WBTC yVault",
-      "symbol": "yvWBTC",
-      "logoURI": "https://assets.smold.app/api/token/1/0xcB550A6D4C8e3517A939BC79d0c7093eb7cF56B5/logo-128.png",
-      "chainId": 1,
-      "decimals": 8
     },
     {
       "address": "0xcB71c2A73fd7588E1599DF90b88de2316585A860",
@@ -15716,14 +16175,6 @@
       "name": "dHedge DAO Token",
       "symbol": "DHT",
       "logoURI": "https://tokens.1inch.io/0xca1207647ff814039530d7d35df0e1dd2e91fa84.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xca46d6e44499AfbD8795f8F86910F068a6bF1a7c",
-      "name": "Curve DYDX-ETH Factory yVault",
-      "symbol": "yvCurve-DYDX-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xca46d6e44499AfbD8795f8F86910F068a6bF1a7c/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15824,10 +16275,10 @@
       "decimals": 18
     },
     {
-      "address": "0xcd68c3fC3e94C5AcC10366556b836855D96bfa93",
-      "name": "Curve dETH Factory yVault",
-      "symbol": "yvCurve-dETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xcd68c3fC3e94C5AcC10366556b836855D96bfa93/logo-128.png",
+      "address": "0xcee60cFa923170e4f8204AE08B4fA6A3F5656F3a",
+      "name": "Curve.fi LINK/sLINK",
+      "symbol": "linkCRV",
+      "logoURI": "https://assets.smold.app/api/token/1/0xcee60cFa923170e4f8204AE08B4fA6A3F5656F3a/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15844,14 +16295,6 @@
       "name": "PT stETH 30MAR2023",
       "symbol": "PT-stETH-30MAR2023",
       "logoURI": "https://assets.smold.app/api/token/1/0xcf44E8402a99Db82d2AccCC4d9354657Be2121Db/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xd02b103f7f5dba89Ad316E2b3Fe247F280CcE5b2",
-      "name": "Curve xETH Factory yVault",
-      "symbol": "yvCurve-xETH-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -15936,6 +16379,14 @@
       "decimals": 18
     },
     {
+      "address": "0xd29a7D69cF5f06CCd777e53d6E437032804aBf89",
+      "name": "SY Ethena USDe",
+      "symbol": "SY-USDe",
+      "logoURI": "https://assets.smold.app/api/token/1/0xd29a7D69cF5f06CCd777e53d6E437032804aBf89/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xd2eFB90C569eBD5b83D5cFB8632322edFAc203A5",
       "name": "Aave V3 WETH Lender",
       "symbol": "ysWETH",
@@ -16008,6 +16459,13 @@
       "decimals": 18
     },
     {
+      "address": "0xd6242E984E6db6B5286FB2c26C69330Da639da12",
+      "name": "RAREPEPE Series 1 Card 1",
+      "symbol": "RAREPEPE",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xd6327ce1fb9D6020E8C2c0E124A1eC23DCAb7536",
       "name": "Cum Inu",
       "symbol": "CUMINU",
@@ -16032,12 +16490,12 @@
       "decimals": 18
     },
     {
-      "address": "0xd6b2f4F0586BCfc9B1bf5cD8E22546aDD7B81a64",
-      "name": "Curve T-ETH Factory yVault",
-      "symbol": "yvCurve-T-ETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xd6b2f4F0586BCfc9B1bf5cD8E22546aDD7B81a64/logo-128.png",
+      "address": "0xd6aD7a6750A7593E092a9B218d66C0A814a3436e",
+      "name": "iearn USDC",
+      "symbol": "yUSDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0xd6aD7a6750A7593E092a9B218d66C0A814a3436e/logo-128.png",
       "chainId": 1,
-      "decimals": 18
+      "decimals": 6
     },
     {
       "address": "0xd6eCfD0d5f1Dfd3ad30f267a3a29b3E1bC4fd54f",
@@ -16104,34 +16562,10 @@
       "decimals": 18
     },
     {
-      "address": "0xd88dBBA3f9c4391Ee46f5FF548f289054db6E51C",
-      "name": "Curve DOLA Pool yVault",
-      "symbol": "yvCurve-DOLA",
-      "logoURI": "https://assets.smold.app/api/token/1/0xd88dBBA3f9c4391Ee46f5FF548f289054db6E51C/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xd8C620991b8E626C099eAaB29B1E3eEa279763bb",
-      "name": "Curve MIM-UST Pool yVault",
-      "symbol": "yvCurve-MIMUST",
-      "logoURI": "https://assets.smold.app/api/token/1/0xd8C620991b8E626C099eAaB29B1E3eEa279763bb/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xd8DBdb77305898365D7bA6Dd438f2663f7D4e409",
       "name": "Visor UNI-ETH Uni v3",
       "symbol": "vUNI-ETHV3-1",
       "logoURI": "https://assets.smold.app/api/token/1/0xd8DBdb77305898365D7bA6Dd438f2663f7D4e409/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xd901DCf4948a29d7D9D7E015AAF61591825AC267",
-      "name": "Curve mkUSD-crvUSD Factory yVault",
-      "symbol": "yvCurve-mkUSD-crvUSD-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -16168,20 +16602,28 @@
       "decimals": 18
     },
     {
+      "address": "0xdA16Cf041E2780618c49Dbae5d734B89a6Bac9b3",
+      "name": "Betswap.gg",
+      "symbol": "BSGG",
+      "logoURI": "https://asset-images.messari.io/images/3ae46dd5-5632-4038-8ee5-a1f9a8984236/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xdA816459F1AB5631232FE5e97a05BBBb94970c95",
+      "name": "DAI yVault",
+      "symbol": "yvDAI",
+      "logoURI": "https://assets.smold.app/api/token/1/0xdA816459F1AB5631232FE5e97a05BBBb94970c95/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "name": "Tether USD",
       "symbol": "USDT",
       "logoURI": "https://assets.smold.app/api/token/1/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo-128.png",
       "chainId": 1,
       "decimals": 6
-    },
-    {
-      "address": "0xdADbB5472474E612A6fA9d82d3395DEA5829a52a",
-      "name": "Curve frxETH Factory yVault",
-      "symbol": "yvCurve-frxETH-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xdADbB5472474E612A6fA9d82d3395DEA5829a52a/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
     },
     {
       "address": "0xdB25f211AB05b1c97D595516F45794528a807ad8",
@@ -16216,14 +16658,6 @@
       "decimals": 18
     },
     {
-      "address": "0xdCD90C7f6324cfa40d7169ef80b12031770B4325",
-      "name": "Curve stETH Pool yVault",
-      "symbol": "yvCurve-stETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0xdCD90C7f6324cfa40d7169ef80b12031770B4325/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xdD69DB25F6D620A7baD3023c5d32761D353D3De9",
       "name": "Goerli ETH",
       "symbol": "GETH",
@@ -16252,6 +16686,14 @@
       "name": "PT Super Symbiotic LRT 29AUG2024",
       "symbol": "PT-weETHs-29AUG2024",
       "logoURI": "https://assets.smold.app/api/token/1/0xda6530EfaFD63A42d7b9a0a5a60A03839CDb813A/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xdaDfD00A2bBEb1abc4936b1644a3033e1B653228",
+      "name": "Curve.fi Factory Plain Pool: Stax Frax/Temple xLP + LP",
+      "symbol": "xFraxTplLP-f",
+      "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xdaDfD00A2bBEb1abc4936b1644a3033e1B653228/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -16292,6 +16734,13 @@
       "name": "Utrust Token",
       "symbol": "UTK",
       "logoURI": "https://tokens.1inch.io/0xdc9ac3c20d1ed0b540df9b1fedc10039df13f99c.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xdcafD1914afDBC5788B701F47283CaeEAa5FBAed",
+      "name": "WETH/AMPH/wUSDA",
+      "symbol": "AMPHDUP",
       "chainId": 1,
       "decimals": 18
     },
@@ -16356,14 +16805,6 @@
       "name": "revPool",
       "symbol": "revPool",
       "logoURI": "https://assets.smold.app/api/token/1/0xdf9015472Ea23e3BeA6fbD6092915F9Ed6980a99/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xdfE6e7e18f6Cc65FA13C8D8966013d4FdA74b6ba",
-      "name": "Balancer ankrETH/wstETH StablePool",
-      "symbol": "ankrETH/wstETH",
-      "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?",
       "chainId": 1,
       "decimals": 18
     },
@@ -16440,10 +16881,10 @@
       "decimals": 18
     },
     {
-      "address": "0xe1747F4D30479D7a2DCFEa5af69fb86B8f71cCeC",
-      "name": "Curve TRYb Factory yVault",
-      "symbol": "yvCurve-TRYb-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xe1747F4D30479D7a2DCFEa5af69fb86B8f71cCeC/logo-128.png",
+      "address": "0xe16574fAd95b7c8853f1f3ec3C1cA18b4Dc0D1eb",
+      "name": "YT Ethena USDe 31OCT2024",
+      "symbol": "YT-USDe-31OCT2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0xe16574fAd95b7c8853f1f3ec3C1cA18b4Dc0D1eb/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -16472,14 +16913,6 @@
       "decimals": 18
     },
     {
-      "address": "0xe2277cC76f806925DC6c9a5E4E5933605f43c3c4",
-      "name": "Curve LUSD-crvUSD Factory yVault",
-      "symbol": "yvCurve-LUSD-crvUSD-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xe24BA27551aBE96Ca401D39761cA2319Ea14e3CB",
       "name": "Yearn-Ajna DAI Vault",
       "symbol": "yvAjnaDAI",
@@ -16502,14 +16935,6 @@
       "logoURI": "https://tokens.1inch.io/0xe28b3b32b6c345a34ff64674606124dd5aceca30.png",
       "chainId": 1,
       "decimals": 18
-    },
-    {
-      "address": "0xe2F6b9773BF3A015E2aA70741Bde1498bdB9425b",
-      "name": "Yearn USDC Vault",
-      "symbol": "yvUSDC",
-      "logoURI": "https://assets.smold.app/api/token/1/0xe2F6b9773BF3A015E2aA70741Bde1498bdB9425b/logo-128.png",
-      "chainId": 1,
-      "decimals": 6
     },
     {
       "address": "0xe2FdF0526629D85b719DCbC6EFE833b1B5b3Cb36",
@@ -16584,20 +17009,20 @@
       "decimals": 18
     },
     {
-      "address": "0xe5F625e8f4D2A038AE9583Da254945285E5a77a4",
-      "name": "Curve DOLA-FRAXBP Factory yVault",
-      "symbol": "yvCurve-DOLA-FRXBP-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xe5F625e8f4D2A038AE9583Da254945285E5a77a4/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xe5feeaC09D36B18b3FA757E5Cf3F8dA6B8e27F4C",
       "name": "NFT INDEX",
       "symbol": "NFTI",
       "logoURI": "https://tokens.1inch.io/0xe5feeac09d36b18b3fa757e5cf3f8da6b8e27f4c.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xe617fC640413171100c32cC8Dbf69fC7928d895e",
+      "name": "Principal Token: sw-uniBTC-1732752015",
+      "symbol": "PT-sw-uniBTC-1732752015",
+      "logoURI": "https://assets.smold.app/api/token/1/0xe617fC640413171100c32cC8Dbf69fC7928d895e/logo-128.png",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0xe6FE6e1f6Ef1de6a21Cd752E805F953673A7C0F0",
@@ -16636,14 +17061,6 @@
       "name": "DAI-STB yVault",
       "symbol": "stbDAI",
       "logoURI": "https://assets.smold.app/api/token/1/0xe7c4bD9ae62B96bF1B77ac5eDB7cCdEb662b479C/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xe80Cc7b2b69f32999766c1a0035ab77E8fb5B99C",
-      "name": "Curve cvxFXS Factory yVault",
-      "symbol": "yvCurve-cvxFXS-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xe80Cc7b2b69f32999766c1a0035ab77E8fb5B99C/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -16704,10 +17121,10 @@
       "decimals": 18
     },
     {
-      "address": "0xe8b96C38a0b370eAfb11D9b8Df4131415423577a",
-      "name": "Curve STBT Factory yVault",
-      "symbol": "yvCurve-STBT-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xe8b96C38a0b370eAfb11D9b8Df4131415423577a/logo-128.png",
+      "address": "0xe8a5677171c87fCB65b76957f2852515B404C7b1",
+      "name": "Curve.fi Factory Crypto Pool: ETH+/ETH",
+      "symbol": "ETH+ETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xe8a5677171c87fCB65b76957f2852515B404C7b1/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -16740,14 +17157,6 @@
       "name": "Rainicorn",
       "symbol": "RAINI",
       "logoURI": "https://tokens.1inch.io/0xeb953eda0dc65e3246f43dc8fa13f35623bdd5ed.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xeCDd0cE505da71cd9dE855CD6804BA1e8C7bdB07",
-      "name": "Curve.fi Factory Plain Pool: crvUSD/GUSD",
-      "symbol": "crvUSDGUSD-f",
-      "logoURI": "https://assets.smold.app/api/token/1/0xeCDd0cE505da71cd9dE855CD6804BA1e8C7bdB07/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -16820,6 +17229,14 @@
       "name": "xH2O-ETH03",
       "symbol": "xH2O-ETH03",
       "logoURI": "https://assets.smold.app/api/token/1/0xeaA629224B3ab2b42b42fDDB53a1B51351acBE4F/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xeaB93Ec2A82eB235a1f426Accd9254f2aB32A99d",
+      "name": "Spectra ERC4626 Wrapper: Amphor Symbiotic LRT (WSTETH)",
+      "symbol": "sw-amphrLRT",
+      "logoURI": "https://assets.smold.app/api/token/1/0xeaB93Ec2A82eB235a1f426Accd9254f2aB32A99d/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -16910,6 +17327,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xef3F0167b97EFF6979AEf3Bf7AD29cD8e20C5B09/logo-128.png",
       "chainId": 1,
       "decimals": 6
+    },
+    {
+      "address": "0xf05e58fCeA29ab4dA01A495140B349F8410Ba904",
+      "name": "CLever CVX",
+      "symbol": "clevCVX",
+      "logoURI": "https://asset-images.messari.io/images/87c21111-295c-444f-ab72-59ee5973809d/128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0xf0E4244Ca93Ac36752DA5939Afd9CB73B0637b06",
@@ -17184,6 +17609,14 @@
       "decimals": 18
     },
     {
+      "address": "0xf83AB9d6D00A64A19fABC67cCD5406531375C2D7",
+      "name": "YT Ethena sUSDE 31OCT2024",
+      "symbol": "YT-sUSDE-31OCT2024",
+      "logoURI": "https://assets.smold.app/api/token/1/0xf83AB9d6D00A64A19fABC67cCD5406531375C2D7/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xf874D4957861E193AEC9937223062679C14f9Aca",
       "name": "xUSDC-ETH05",
       "symbol": "xUSDC-ETH05",
@@ -17328,10 +17761,10 @@
       "decimals": 18
     },
     {
-      "address": "0xfF11566C1Bfe3c625804c9cd707dD2f36797BF1D",
-      "name": "Curve cvxPRISMA Factory yVault",
-      "symbol": "yvCurve-cvxPRISMA-f",
-      "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
+      "address": "0xfE80D611c6403f70e5B1b9B722D2B3510B740B2B",
+      "name": "Equilibria Token",
+      "symbol": "EQB",
+      "logoURI": "https://ethereum-optimism.github.io/data/EQB/logo.svg",
       "chainId": 1,
       "decimals": 18
     },
@@ -17340,6 +17773,14 @@
       "name": "Amp",
       "symbol": "AMP",
       "logoURI": "https://tokens.1inch.io/0xff20817765cb7f73d4bde2e66e067e58d11095c2.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xfF709449528B6fB6b88f557F7d93dEce33bca78D",
+      "name": "ApeUSD",
+      "symbol": "ApeUSD",
+      "logoURI": "https://asset-images.messari.io/images/3b40480a-ce9e-4f82-acc6-d4fc466d721f/128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -17432,6 +17873,13 @@
       "decimals": 18
     },
     {
+      "address": "0xfd56a3DCFc0690881A466AE432D71bB2dB588083",
+      "name": "Fleet Token",
+      "symbol": "FLEET",
+      "chainId": 1,
+      "decimals": 6
+    },
+    {
       "address": "0xfe2d379117895Fa6144B209C13894A17aB18C86c",
       "name": "SY Karak USDE",
       "symbol": "SY-Karak-USDE",
@@ -17468,6 +17916,14 @@
       "name": "Balancer Aave v3 Boosted StablePool",
       "symbol": "bb-a-USD",
       "logoURI": "https://assets.smold.app/api/token/1/0xfeBb0bbf162E64fb9D0dfe186E517d84C395f016/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xfed2B54453F75634bcdaEA5e5b11a3f99b9C28Fa",
+      "name": "Curve.fi Factory Crypto Pool: USDC+",
+      "symbol": "USDC+LP-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xfed2B54453F75634bcdaEA5e5b11a3f99b9C28Fa/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
