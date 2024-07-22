@@ -15,6 +15,7 @@ var FANTOM = TChain{
 	RpcURI:        `https://rpc.ftm.tools`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,
+	WeightRatio:   0.5,
 	MulticallContract: TContractData{
 		Address: common.HexToAddress(`0x470ADB45f5a9ac3550bcFFaD9D990Bf7e2e941c9`),
 		Block:   0,

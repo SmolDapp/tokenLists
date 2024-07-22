@@ -2,11 +2,13 @@ package main
 
 import (
 	"math"
+	"strconv"
 	"strings"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
@@ -48,12 +50,12 @@ func buildPopularList() {
 		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
 		totalNumberOfTokens += len(tokenList.Tokens)
 	}
-	weightedThreshold := 0.5 * float64(totalNumberOfTokens)
 
 	/**********************************************************************************************
 	** Now we can calculate the weight of each list. We will use the number of tokens in the list
 	** divided by the total number of tokens in all lists.
 	**********************************************************************************************/
+	sumWeights := 0.0
 	listWeights := make(map[string]float64)
 	for name, generatorData := range GENERATORS {
 		if generatorData.Exclude {
@@ -67,6 +69,8 @@ func buildPopularList() {
 		}
 		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
 		listWeights[name] = float64(len(tokenList.Tokens)) / float64(totalNumberOfTokens)
+		sumWeights += listWeights[name]
+		logs.Info(`List weight for ` + name + ` is ` + strconv.FormatFloat(listWeights[name], 'f', -1, 64))
 	}
 
 	/**********************************************************************************************
@@ -153,6 +157,10 @@ func buildPopularList() {
 					OccurrenceFloat: tokenInitialOccurence,
 				}
 			}
+
+			// if token.ChainID == 10 {
+			// 	logs.Info(`Token ` + token.Name + ` found in ` + name + ` with weight ` + strconv.FormatFloat(listWeights[name], 'f', -1, 64))
+			// }
 		}
 	}
 
@@ -165,6 +173,7 @@ func buildPopularList() {
 			if _, ok := listsPerChain[chainID]; !ok {
 				continue
 			}
+			weightedThreshold := chains.CHAINS[chainID].WeightRatio * float64(sumWeights)
 			if token.OccurrenceFloat >= weightedThreshold {
 				allTokensPlain = append(allTokensPlain, token)
 			}

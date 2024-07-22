@@ -26,6 +26,7 @@ type TChain struct {
 	RpcURI            string
 	MaxBlockRange     uint64
 	MaxBatchSize      uint64
+	WeightRatio       float64
 	IsTestNet         bool
 	MulticallContract TContractData
 	Coin              models.TokenListToken

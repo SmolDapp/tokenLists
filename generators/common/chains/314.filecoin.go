@@ -15,6 +15,7 @@ var FILECOIN = TChain{
 	RpcURI:        `https://rpc.ankr.com/filecoin`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,
+	WeightRatio:   0.2,
 	MulticallContract: TContractData{
 		Address: common.HexToAddress(`0xcA11bde05977b3631167028862bE2a173976CA11`),
 		Block:   0,

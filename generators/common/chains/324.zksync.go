@@ -15,6 +15,7 @@ var ZKSYNC = TChain{
 	RpcURI:        `https://mainnet.era.zksync.io`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,
+	WeightRatio:   0.1,
 	MulticallContract: TContractData{
 		Address: common.HexToAddress(`0xF9cda624FBC7e059355ce98a31693d299FACd963`),
 		Block:   0,

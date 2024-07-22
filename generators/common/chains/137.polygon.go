@@ -15,6 +15,7 @@ var POLYGON = TChain{
 	RpcURI:        `https://polygon.llamarpc.com`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,
+	WeightRatio:   0.8,
 	MulticallContract: TContractData{
 		Address: common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
 		Block:   0,
