@@ -29,12 +29,52 @@ func buildPopularList() {
 		allTokensPlain = append(allTokensPlain, chain.Coin)
 	}
 
-	/**************************************************************************
-	** We want to know which tokens to add to the aggregated tokenlistooor list
-	** and to do that we need to know in how many lists they are present.
-	** This is chain sensitive: we need a token to be available in at least
-	** 50% of the lists for a given chain to be added to the aggregated list.
-	**************************************************************************/
+	/**********************************************************************************************
+	** First, we want to calculate each list weight. Absolute weight cannot work because some lists
+	** are very smol and thus break the 50% rule.
+	** To do this, we need to know the total number of tokens in all lists.
+	**********************************************************************************************/
+	totalNumberOfTokens := 0
+	for name, generatorData := range GENERATORS {
+		if generatorData.Exclude {
+			continue
+		}
+		if name == `tokenlistooor` {
+			continue
+		}
+		if generatorData.GeneratorType == GeneratorPool {
+			continue
+		}
+		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
+		totalNumberOfTokens += len(tokenList.Tokens)
+	}
+	weightedThreshold := 0.5 * float64(totalNumberOfTokens)
+
+	/**********************************************************************************************
+	** Now we can calculate the weight of each list. We will use the number of tokens in the list
+	** divided by the total number of tokens in all lists.
+	**********************************************************************************************/
+	listWeights := make(map[string]float64)
+	for name, generatorData := range GENERATORS {
+		if generatorData.Exclude {
+			continue
+		}
+		if name == `tokenlistooor` {
+			continue
+		}
+		if generatorData.GeneratorType == GeneratorPool {
+			continue
+		}
+		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
+		listWeights[name] = float64(len(tokenList.Tokens)) / float64(totalNumberOfTokens)
+	}
+
+	/**********************************************************************************************
+	** Once we have this, we can calculate the weighted frequency: for each token, we calculate its
+	** weighted frequency across all lists.
+	** So, everytime a token is found in a list, we increment its frequency by the weight of the
+	** list.
+	**********************************************************************************************/
 	for name, generatorData := range GENERATORS {
 		if generatorData.Exclude {
 			continue
@@ -46,7 +86,6 @@ func buildPopularList() {
 			continue
 		}
 
-		initialCount := 1
 		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
 		for _, token := range tokenList.Tokens {
 			if !chains.IsChainIDSupported(token.ChainID) {
@@ -65,7 +104,7 @@ func buildPopularList() {
 			}
 
 			if existingToken, ok := allTokens[token.ChainID][helpers.ToAddress(token.Address)]; ok {
-				newOccurence := existingToken.Occurrence
+				newOccurence := existingToken.OccurrenceFloat
 				if newOccurence != math.MaxInt32 {
 					foundInExtraTokens := false
 					for _, extraToken := range chains.CHAINS[token.ChainID].ExtraTokens {
@@ -79,22 +118,22 @@ func buildPopularList() {
 					} else if strings.HasSuffix(name, `-static`) {
 						newOccurence = math.MaxInt32
 					} else {
-						newOccurence += 1
+						newOccurence += listWeights[name]
 					}
 				} else {
-					newOccurence += 1
+					newOccurence += listWeights[name]
 				}
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
-					Address:    existingToken.Address,
-					Name:       helpers.SafeString(existingToken.Name, token.Name),
-					Symbol:     helpers.SafeString(existingToken.Symbol, token.Symbol),
-					LogoURI:    helpers.SafeString(existingToken.LogoURI, token.LogoURI),
-					Decimals:   helpers.SafeInt(existingToken.Decimals, token.Decimals),
-					ChainID:    token.ChainID,
-					Occurrence: newOccurence,
+					Address:         existingToken.Address,
+					Name:            helpers.SafeString(existingToken.Name, token.Name),
+					Symbol:          helpers.SafeString(existingToken.Symbol, token.Symbol),
+					LogoURI:         helpers.SafeString(existingToken.LogoURI, token.LogoURI),
+					Decimals:        helpers.SafeInt(existingToken.Decimals, token.Decimals),
+					ChainID:         token.ChainID,
+					OccurrenceFloat: newOccurence,
 				}
 			} else {
-				tokenInitialOccurence := initialCount
+				tokenInitialOccurence := listWeights[name]
 				for _, extraToken := range chains.CHAINS[token.ChainID].ExtraTokens {
 					if common.HexToAddress(token.Address) == extraToken {
 						tokenInitialOccurence = math.MaxInt32
@@ -105,25 +144,28 @@ func buildPopularList() {
 				}
 
 				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
-					Address:    helpers.ToAddress(token.Address),
-					Name:       helpers.SafeString(token.Name, ``),
-					Symbol:     helpers.SafeString(token.Symbol, ``),
-					LogoURI:    helpers.SafeString(token.LogoURI, ``),
-					Decimals:   helpers.SafeInt(token.Decimals, 18),
-					ChainID:    token.ChainID,
-					Occurrence: tokenInitialOccurence,
+					Address:         helpers.ToAddress(token.Address),
+					Name:            helpers.SafeString(token.Name, ``),
+					Symbol:          helpers.SafeString(token.Symbol, ``),
+					LogoURI:         helpers.SafeString(token.LogoURI, ``),
+					Decimals:        helpers.SafeInt(token.Decimals, 18),
+					ChainID:         token.ChainID,
+					OccurrenceFloat: tokenInitialOccurence,
 				}
 			}
 		}
 	}
 
+	/**********************************************************************************************
+	** Now that we have the weighted frequency of each token, we can filter out the tokens that
+	** have a frequency below 50% to only keep the popular ones.
+	**********************************************************************************************/
 	for chainID, tokens := range allTokens {
 		for _, token := range tokens {
 			if _, ok := listsPerChain[chainID]; !ok {
 				continue
 			}
-			chainCount := len(listsPerChain[uint64(chainID)])
-			if token.Occurrence >= int(math.Ceil(float64(chainCount)*0.5)) {
+			if token.OccurrenceFloat >= weightedThreshold {
 				allTokensPlain = append(allTokensPlain, token)
 			}
 		}
@@ -133,7 +175,7 @@ func buildPopularList() {
 	for _, token := range allTokensPlain {
 		for i, t := range tokens {
 			if common.HexToAddress(token.Address).Hex() == common.HexToAddress(t.Address).Hex() {
-				tokens[i].Occurrence = token.Occurrence
+				tokens[i].OccurrenceFloat = token.OccurrenceFloat
 			}
 		}
 	}
