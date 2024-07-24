@@ -15,7 +15,7 @@ var RARI = TChain{
 	RpcURI:        `https://mainnet.rpc.rarichain.org/http`,
 	MaxBlockRange: 100_000_000,
 	MaxBatchSize:  math.MaxInt64,
-	WeightRatio:   0,
+	WeightRatio:   0.0,
 	MulticallContract: TContractData{
 		Address: common.HexToAddress(`0xb6D5B39F96d379569d47cC84024f3Cd78c5Ef651`),
 		Block:   0,

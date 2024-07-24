@@ -1,16 +1,16 @@
 {
   "name": "Tokenlistooor summary",
-  "timestamp": 1721639242,
+  "timestamp": 1721819858,
   "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
   "lists": [
     {
       "name": "Popular tokens",
       "description": "A curated list of popular tokens from all the token lists on tokenlistooor.",
-      "timestamp": "2024-07-22T11:07:21+02:00",
+      "timestamp": "2024-07-24T13:17:36+02:00",
       "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/popular.json",
       "keywords": [],
-      "tokenCount": 3908,
+      "tokenCount": 3912,
       "metadata": {
         "supportedChains": [
           1,
@@ -30,7 +30,8 @@
           59144,
           81457,
           534352,
-          7777777
+          7777777,
+          1380012617
         ],
         "generationMethod": "API",
         "tokenCountPerChain": {
@@ -40,6 +41,7 @@
           "1088": 1,
           "1101": 23,
           "137": 654,
+          "1380012617": 4,
           "250": 189,
           "314": 11,
           "324": 1,
@@ -56,7 +58,7 @@
       },
       "version": {
         "major": 28,
-        "minor": 0,
+        "minor": 1,
         "patch": 0
       }
     },
@@ -162,32 +164,34 @@
     {
       "name": "Ajna (Static)",
       "description": "A list of non-rebased tokens that could work on Ajna.",
-      "timestamp": "2024-07-21T00:42:31Z",
+      "timestamp": "2024-07-24T13:15:02+02:00",
       "logoURI": "https://www.ajna.finance/static/tokens/ajna.png",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/ajna-static.json",
       "keywords": [
         "Ajna"
       ],
-      "tokenCount": 1690,
+      "tokenCount": 1694,
       "metadata": {
         "supportedChains": [
           1,
           10,
           137,
-          42161
+          42161,
+          1380012617
         ],
         "generationMethod": "External",
         "tokenCountPerChain": {
           "1": 1111,
           "10": 2,
           "137": 575,
+          "1380012617": 4,
           "42161": 2
         }
       },
       "version": {
         "major": 11,
-        "minor": 1,
-        "patch": 1
+        "minor": 2,
+        "patch": 0
       }
     },
     {
@@ -863,11 +867,11 @@
     {
       "name": "Tokenlistooor Token List",
       "description": "A curated list of tokens from all the token lists on tokenlistooor.",
-      "timestamp": "2024-07-22T11:06:14+02:00",
+      "timestamp": "2024-07-24T13:16:39+02:00",
       "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/tokenlistooor.json",
       "keywords": [],
-      "tokenCount": 6457,
+      "tokenCount": 8237,
       "metadata": {
         "supportedChains": [
           1,
@@ -888,20 +892,22 @@
           59144,
           81457,
           534352,
-          7777777
+          7777777,
+          1380012617
         ],
         "generationMethod": "API",
         "tokenCountPerChain": {
-          "1": 2245,
-          "10": 192,
-          "100": 21,
+          "1": 2655,
+          "10": 1246,
+          "100": 20,
           "1088": 1721,
           "1101": 12,
-          "137": 781,
-          "250": 68,
+          "137": 821,
+          "1380012617": 4,
+          "250": 90,
           "314": 12,
           "324": 297,
-          "42161": 441,
+          "42161": 499,
           "42220": 6,
           "43114": 114,
           "5000": 35,
@@ -910,12 +916,12 @@
           "59144": 55,
           "7777777": 18,
           "81457": 8,
-          "8453": 90
+          "8453": 283
         }
       },
       "version": {
-        "major": 266,
-        "minor": 0,
+        "major": 267,
+        "minor": 1,
         "patch": 0
       }
     },
@@ -1590,6 +1596,29 @@
       "version": {
         "major": 22,
         "minor": 1,
+        "patch": 0
+      }
+    },
+    {
+      "name": "Rari",
+      "description": "The most popular tokens on Zora.",
+      "timestamp": "2024-07-24T12:11:36+02:00",
+      "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
+      "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/1380012617.json",
+      "keywords": [],
+      "tokenCount": 366,
+      "metadata": {
+        "supportedChains": [
+          1380012617
+        ],
+        "generationMethod": "Chains",
+        "tokenCountPerChain": {
+          "1380012617": 366
+        }
+      },
+      "version": {
+        "major": 29,
+        "minor": 0,
         "patch": 0
       }
     }

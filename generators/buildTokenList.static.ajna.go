@@ -34,5 +34,6 @@ func buildAjnaStaticTokenList() {
 	tokens = append(tokens, fetchAjnaStaticTokenList(10)...)
 	tokens = append(tokens, fetchAjnaStaticTokenList(137)...)
 	tokens = append(tokens, fetchAjnaStaticTokenList(42161)...)
+	tokens = append(tokens, fetchAjnaStaticTokenList(1380012617)...)
 	helpers.SaveTokenListInJsonFile(tokenList, tokens, `ajna-static.json`, helpers.SavingMethodStandard)
 }
