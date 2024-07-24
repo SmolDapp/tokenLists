@@ -9,7 +9,7 @@ import (
 
 var RARI = TChain{
 	ID:            1380012617,
-	Name:          `Zora`,
+	Name:          `Rari`,
 	LogoURI:       `https://assets.smold.app/chains/1380012617/logo-128.png`,
 	IsTestNet:     false,
 	RpcURI:        `https://mainnet.rpc.rarichain.org/http`,
