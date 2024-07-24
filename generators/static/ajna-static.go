@@ -2,8 +2,20 @@ package static
 
 import "github.com/ethereum/go-ethereum/common"
 
-// The Ajna tokenlist is static because no rebasing token are allowed and we currently have no way to detect them
-// This list has been manually curated by the Ajna team and added on the 2024-07-02
+// This list has been manually curated by the Ajna team and last updated on 24/07/2024
+var AJNA_NOTICE = `
+------------------------------------------------------------------------------------------------------------------------
+- PLEASE UPDATE TIMESTAMP ABOVE
+------------------------------------------------------------------------------------------------------------------------
+- ALWAYS ADD NEW TOKENS TO THE END OF THE LIST
+- THE FIRST ELEMENT IN THE OBJECT IS THE TOKEN ADDRESS. PLEASE MAKE SURE TO KEEP THE common.hexToAddress PART
+- THE SECOND ELEMENT IN THE OBJECT IS THE LOGO URI. IF THE LOGO URI IS NOT AVAILABLE, PLEASE LEAVE IT EMPTY WITH AN EMPTY STRING
+- THE NAME, SYMBOL, DECIMALS WILL BE FETCHED FROM THE BLOCKCHAIN
+- TO ADD A NEW NETWORK, PLEASE ADD A NEW MAP WITH THE NETWORK ID AS THE KEY AND THE LIST OF TOKENS AS THE VALUE
+- /!!!!\ THE TOKEN MUST BE NON-REBASING /!!!!\ 
+------------------------------------------------------------------------------------------------------------------------
+`
+
 var AJNA_STATIC_TOKENLIST = map[uint64][]TStaticElement{
 	1: {
 		{common.HexToAddress(`0x583019fF0f430721aDa9cfb4fac8F06cA104d0B4`), `https://assets.coingecko.com/coins/images/32222/large/st-yETH-128px.png?1696914941`},
