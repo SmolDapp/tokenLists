@@ -1720,8 +1720,8 @@ var AJNA_STATIC_TOKENLIST = map[uint64][]TStaticElement{
 		{common.HexToAddress(`0x050C24dBf1eEc17babE5fc585F06116A259CC77A`), `https://raw.githubusercontent.com/SmolDapp/tokenAssets/main/tokens/42161/0x050c24dbf1eec17babe5fc585f06116a259cc77a/logo-128.png`},
 	},
 	1380012617: {
-		{common.HexToAddress(`0xf037540e51D71b2D2B1120e8432bA49F29EDFBD0`), `https://raw.githubusercontent.com/SmolDapp/tokenAssets/main/tokens/1/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png`}, // wETH
-		{common.HexToAddress(`0xC6bB9Ff34E246302C047BF8b494Fe723c2A7E59f`), `https://assets.smold.app/api/token/42161/0x912CE59144191C1204E64559FE8253a0e49E6548/logo-128.png`},                             // ARB
-		{common.HexToAddress(`0xFbDa5F676cB37624f28265A144A48B0d6e87d3b6`), `https://assets.smold.app/api/token/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo-128.png`},                                 // USDCe
+		{common.HexToAddress(`0xf037540e51d71b2d2b1120e8432ba49f29edfbd0`), `https://assets.smold.app/api/token/1380012617/0xf037540e51d71b2d2b1120e8432ba49f29edfbd0/logo-128.png`}, // wETH
+		{common.HexToAddress(`0xfbda5f676cb37624f28265a144a48b0d6e87d3b6`), `https://assets.smold.app/api/token/1380012617/0xfbda5f676cb37624f28265a144a48b0d6e87d3b6/logo-128.png`}, // USDC
+		{common.HexToAddress(`0x362fae9a75b27bbc550aac28a7c1f96c8d483120`), `https://assets.smold.app/api/token/1380012617/0x362fae9a75b27bbc550aac28a7c1f96c8d483120/logo-128.png`}, // USDT
 	},
 }
