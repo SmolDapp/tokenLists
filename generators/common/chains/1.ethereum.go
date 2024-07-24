@@ -33,5 +33,6 @@ var ETHEREUM = TChain{
 	},
 	ExtraTokens: []common.Address{
 		common.HexToAddress(`0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079`), // Ajna
+		common.HexToAddress(`0x6df0e641fc9847c0c6fde39be6253045440c14d3`), // DINERO
 	},
 }
