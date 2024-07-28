@@ -1,15 +1,46 @@
 {
   "name": "Paraswap Token List",
   "description": "",
-  "timestamp": "2024-07-21T01:20:01Z",
+  "timestamp": "2024-07-28T01:04:03Z",
   "version": {
-    "major": 30,
-    "minor": 1,
+    "major": 31,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://app.paraswap.io/psp_logo.svg",
   "keywords": [],
   "tokens": [
+    {
+      "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "name": "Wrapped eETH",
+      "symbol": "weETH",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x0a1d576f3eFeF75b330424287a95A366e8281D54",
+      "name": "Aave Base USDbC",
+      "symbol": "aBasUSDbC",
+      "chainId": 8453,
+      "decimals": 6
+    },
+    {
+      "address": "0x16A004065dfb11276DcB29Dc03fb8A85f9A43C6e",
+      "name": "Static Aave Base cbETH",
+      "symbol": "stataBascbETH",
+      "logoURI": "ipfs://QmUcybh2RkTK1DyhCGUigSBsiajr2GLoSuFMLcDjHSe2qr",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "name": "Coinbase Wrapped Staked ETH",
+      "symbol": "cbETH",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
     {
       "address": "0x4200000000000000000000000000000000000006",
       "name": "Wrapped Ether",
@@ -19,10 +50,48 @@
       "decimals": 18
     },
     {
+      "address": "0x468973e3264F2aEba0417A8f2cD0Ec397E738898",
+      "name": "Static Aave Base WETH",
+      "symbol": "stataBasWETH",
+      "logoURI": "ipfs://QmXzX6n31pVXvFm6Ff6zi3wTro88DEvaNYbUeWg3NtPEwr",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc",
+      "name": "Static Aave Base USDC",
+      "symbol": "stataBasUSDC",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc/logo-128.png",
+      "chainId": 8453,
+      "decimals": 6
+    },
+    {
+      "address": "0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB",
+      "name": "Aave Base USDC",
+      "symbol": "aBasUSDC",
+      "chainId": 8453,
+      "decimals": 6
+    },
+    {
       "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://assets.smold.app/api/token/8453/0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x6fCe2756794128B1771324caA860965801DCbCdB",
+      "name": "Static Aave Base USDbC",
+      "symbol": "stataBasUSDbC",
+      "logoURI": "ipfs://QmU66EapHG1qN7Y4RLLiouMAN8jPa73sDMkG3t8isESauA",
+      "chainId": 8453,
+      "decimals": 6
+    },
+    {
+      "address": "0x7C307e128efA31F540F2E2d976C995E0B65F51F6",
+      "name": "Aave Base weETH",
+      "symbol": "aBasweETH",
       "chainId": 8453,
       "decimals": 18
     },
@@ -35,10 +104,41 @@
       "decimals": 6
     },
     {
+      "address": "0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D",
+      "name": "Aave Base wstETH",
+      "symbol": "aBaswstETH",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7",
+      "name": "Aave Base WETH",
+      "symbol": "aBasWETH",
+      "logoURI": "https://basescan.org/token/images/aave_weth.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       "name": "Ethereum",
       "symbol": "ETH",
       "logoURI": "https://assets.smold.app/api/token/8453/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad",
+      "name": "Aave Base cbETH",
+      "symbol": "aBascbETH",
+      "logoURI": "https://basescan.org/token/images/aave_cbeth.png",
       "chainId": 8453,
       "decimals": 18
     },

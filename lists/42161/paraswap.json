@@ -1,10 +1,10 @@
 {
   "name": "Paraswap Token List",
   "description": "",
-  "timestamp": "2024-07-21T01:20:01Z",
+  "timestamp": "2024-07-28T01:04:03Z",
   "version": {
-    "major": 30,
-    "minor": 1,
+    "major": 31,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://app.paraswap.io/psp_logo.svg",
@@ -19,6 +19,22 @@
       "decimals": 8
     },
     {
+      "address": "0x0Bc9E52051f553E75550CA22C196bf132c52Cf0B",
+      "name": "Static Aave Arbitrum USDC",
+      "symbol": "stataArbUSDC",
+      "logoURI": "ipfs://QmRSVBEwfG2v5jV9aR8B9h2MjSig8MpqE2JuqtF1UmA9pP",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+      "name": "Frax",
+      "symbol": "FRAX",
+      "logoURI": "https://tokens.1inch.io/0x17fc002b466eec40dae837fc4be5c67993ddbd6f.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
       "name": "Aave Arbitrum LINK",
       "symbol": "aArbLINK",
@@ -27,12 +43,84 @@
       "decimals": 18
     },
     {
+      "address": "0x1C0c8EcED17aE093b3C1a1a8fFeBE2E9513a9346",
+      "name": "Static Aave Arbitrum AAVE",
+      "symbol": "stataArbAAVE",
+      "logoURI": "ipfs://QmRfMKzQ8Nq2oyDeRBvS36YbDXDuVi4EgcY56kLoxaBrA1",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x27dE098EF2772386cBCf1a4c8BEb886368b7F9a9",
+      "name": "Static Aave Arbitrum LINK",
+      "symbol": "stataArbLINK",
+      "logoURI": "ipfs://QmceCJrUgAjjKjqcMQ2xcrV4ZYJYGLsyusinPrDrYU7rjZ",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
       "name": "Wrapped BTC",
       "symbol": "WBTC",
-      "logoURI": "https://tokens.1inch.io/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f/logo-128.png",
       "chainId": 42161,
       "decimals": 8
+    },
+    {
+      "address": "0x32B95Fbe04e5a51cF99FeeF4e57Cf7e3FC9c5A93",
+      "name": "Static Aave Arbitrum WBTC",
+      "symbol": "stataArbWBTC",
+      "logoURI": "ipfs://QmRHKbYScFWygn3rU2Pksj3BBAVJxYRuXnjjWxzjXnb5CN",
+      "chainId": 42161,
+      "decimals": 8
+    },
+    {
+      "address": "0x352F3475716261dCC991Bd5F2aF973eB3D0F5878",
+      "name": "Static Aave Arbitrum WETH",
+      "symbol": "stataArbWETH",
+      "logoURI": "ipfs://QmXzX6n31pVXvFm6Ff6zi3wTro88DEvaNYbUeWg3NtPEwr",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
+      "name": "Wrapped eETH",
+      "symbol": "weETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5",
+      "name": "Aave Arbitrum FRAX",
+      "symbol": "aArbFRAX",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/polygon/assets/0xa3Fa99A148fA48D14Ed51d610c367C61876997F1/logo.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
+      "name": "Aave Arbitrum wstETH",
+      "symbol": "aArbwstETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x5979D7b546E38E414F7E9822514be443A4800529/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
     },
     {
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
@@ -41,6 +129,22 @@
       "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
       "chainId": 42161,
       "decimals": 6
+    },
+    {
+      "address": "0x6533afac2E7BCCB20dca161449A13A32D391fb00",
+      "name": "Aave Arbitrum ARB",
+      "symbol": "aArbARB",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x68235105d6d33A19369D24b746cb7481FB2b34fd",
+      "name": "Static Aave Arbitrum rETH",
+      "symbol": "stataArbrETH",
+      "logoURI": "ipfs://QmdKPd4KWhBMgJVUX5aw2dxga9yY3cUJRzDt9xxPxnirED",
+      "chainId": 42161,
+      "decimals": 18
     },
     {
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
@@ -56,6 +160,38 @@
       "symbol": "aArbEURS",
       "chainId": 42161,
       "decimals": 2
+    },
+    {
+      "address": "0x724dc807b04555b71ed48a6896b6F41593b8C637",
+      "name": "Aave Arbitrum USDCn",
+      "symbol": "aArbUSDCn",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0x7775d4Ae4Dbb79a624fB96AAcDB8Ca74F671c0DF",
+      "name": "Static Aave Arbitrum wstETH",
+      "symbol": "stataArbwstETH",
+      "logoURI": "ipfs://QmaVefYiKoaA9o22zUV3p7PGqhFhx8vaPos2M7jxx9DU33",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x7CFaDFD5645B50bE87d546f42699d863648251ad",
+      "name": "Static Aave Arbitrum USDCn",
+      "symbol": "stataArbUSDCn",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x7CFaDFD5645B50bE87d546f42699d863648251ad/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
+      "address": "0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33",
+      "name": "Gho Token",
+      "symbol": "GHO",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
     },
     {
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
@@ -74,10 +210,73 @@
       "decimals": 18
     },
     {
+      "address": "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77",
+      "name": "Aave Arbitrum weETH",
+      "symbol": "aArbweETH",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x89AEc2023f89E26Dbb7eaa7a98fe3996f9d112A8",
+      "name": "Static Aave Arbitrum FRAX",
+      "symbol": "stataArbFRAX",
+      "logoURI": "ipfs://QmdAKJZQqmUfTm4Ah5Wwi9ZFeWEQ5w8Q8CNKSHtaPZTzCs",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8Eb270e296023E9D92081fdF967dDd7878724424",
+      "name": "Aave Arbitrum rETH",
+      "symbol": "aArbrETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
+      "name": "Aave Arbitrum LUSD",
+      "symbol": "aArbLUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
       "name": "Arbitrum",
       "symbol": "ARB",
       "logoURI": "https://assets.smold.app/api/token/42161/0x912CE59144191C1204E64559FE8253a0e49E6548/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b",
+      "name": "LUSD Stablecoin",
+      "symbol": "LUSD",
+      "logoURI": "https://assets.coingecko.com/coins/images/14666/large/Group_3.png?1617631327",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x9a40747BE51185A416B181789B671E78a8d045dD",
+      "name": "Static Aave Arbitrum EURS",
+      "symbol": "stataArbEURS",
+      "logoURI": "ipfs://QmfVHpYk8KrXoHm6T9nMXFAGuJS6JZebcNDVYGhjmotnLz",
+      "chainId": 42161,
+      "decimals": 2
+    },
+    {
+      "address": "0x9b5637d7952BC9fa2D693aAE51f3103760Bf2693",
+      "name": "Static Aave Arbitrum ARB",
+      "symbol": "stataArbARB",
+      "logoURI": "ipfs://QmQyk5ckejQ5pLDLuWWxjyT844PN1HoTg9wb7aNc75k27A",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xB4a0a2692D82301703B27082Cda45B083F68CAcE",
+      "name": "Static Aave Arbitrum MAI",
+      "symbol": "stataArbMAI",
+      "logoURI": "ipfs://QmVTo3VE3oiUeB7B1QPAQ61ZC9PCguFVZ3pkyhdmdP2XFZ",
       "chainId": 42161,
       "decimals": 18
     },
@@ -92,7 +291,23 @@
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
-      "logoURI": "https://tokens.1inch.io/0x6b175474e89094c44da98b954eedeac495271d0f.png",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xDbB6314b5b07E63B7101844c0346309B79f8C20A",
+      "name": "Static Aave Arbitrum LUSD",
+      "symbol": "stataArbLUSD",
+      "logoURI": "ipfs://QmP1ELmLsgTWubFuy3exnwvzUZvR9mVETCVHLPRf4AGRob",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
+      "name": "Rocket Pool ETH",
+      "symbol": "rETH",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -121,6 +336,14 @@
       "decimals": 6
     },
     {
+      "address": "0xb165a74407fE1e519d6bCbDeC1Ed3202B35a4140",
+      "name": "Static Aave Arbitrum USDT",
+      "symbol": "stataArbUSDT",
+      "logoURI": "ipfs://Qmb8xoWyKYRwcm8mbUgGTpVSGaTkq3jHbjaV2Prg3mnVwW",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
       "address": "0xba5DdD1f9d7F570dc94a51479a000E3BCE967196",
       "name": "Aave Token",
       "symbol": "AAVE",
@@ -129,10 +352,33 @@
       "decimals": 18
     },
     {
+      "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
+      "name": "Aave Arbitrum MAI",
+      "symbol": "aArbMAI",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xc91c5297d7E161aCC74b482aAfCc75B85cc0bfeD",
+      "name": "Static Aave Arbitrum DAI",
+      "symbol": "stataArbDAI",
+      "logoURI": "ipfs://QmSU8whDiDpbXxK5ndZMFoQkwvAUzbG6DbhCNYiH8zE59T",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
       "name": "Aave Arbitrum WETH",
       "symbol": "aArbWETH",
       "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D",
+      "name": "Aave Arbitrum GHO",
+      "symbol": "aArbGHO",
       "chainId": 42161,
       "decimals": 18
     },
