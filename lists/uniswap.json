@@ -1,10 +1,10 @@
 {
   "name": "Uniswap Labs Default",
   "description": "",
-  "timestamp": "2024-07-28T01:21:12Z",
+  "timestamp": "2024-08-04T01:29:13Z",
   "version": {
-    "major": 6,
-    "minor": 3,
+    "major": 7,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
@@ -401,6 +401,14 @@
       "name": "Tokemak",
       "symbol": "TOKE",
       "logoURI": "https://tokens.1inch.io/0x2e9d63788249371f1dfc918a52f8d799f4a38c94.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x30D20208d987713f46DFD34EF128Bb16C404D10f",
+      "name": "Stader",
+      "symbol": "SD",
+      "logoURI": "https://tokens.1inch.io/0x30d20208d987713f46dfd34ef128bb16c404d10f.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1268,6 +1276,13 @@
       "decimals": 4
     },
     {
+      "address": "0x88909D489678dD17aA6D9609F89B0419Bf78FD9a",
+      "name": "Layer3",
+      "symbol": "L3",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x88dF592F8eb5D7Bd38bFeF7dEb0fBc02cf3778a0",
       "name": "Tellor Tributes",
       "symbol": "TRB",
@@ -1967,6 +1982,14 @@
       "name": "Terra Virtua Kolect",
       "symbol": "TVK",
       "logoURI": "https://tokens.1inch.io/0xd084b83c305dafd76ae3e1b4e1f1fe2ecccb3988.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xd0a6053f087E87a25dC60701ba6E663b1a548E85",
+      "name": "BLOCKLORDS",
+      "symbol": "LRDS",
+      "logoURI": "https://asset-images.messari.io/images/b060c18b-faa7-4e34-ae83-749811c28b59/128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2676,6 +2699,14 @@
       "name": "AIOZ Network",
       "symbol": "AIOZ",
       "logoURI": "https://assets.coingecko.com/coins/images/14631/large/aioz_logo.png?1617413126",
+      "chainId": 56,
+      "decimals": 18
+    },
+    {
+      "address": "0x3BC5AC0dFdC871B365d159f728dd1B9A0B5481E8",
+      "name": "Stader",
+      "symbol": "SD",
+      "logoURI": "https://assets.coingecko.com/coins/images/20658/large/sd.png?1642927667",
       "chainId": 56,
       "decimals": 18
     },
@@ -3643,6 +3674,14 @@
       "decimals": 18
     },
     {
+      "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "name": "EURC",
+      "symbol": "EURC",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42/logo-128.png",
+      "chainId": 8453,
+      "decimals": 6
+    },
+    {
       "address": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
       "name": "LayerZero",
       "symbol": "ZRO",
@@ -3863,6 +3902,13 @@
       "name": "Lido DAO Token",
       "symbol": "LDO",
       "logoURI": "https://tokens.1inch.io/0x13ad51ed4f1b7e9dc168d8a00cb3f4ddd85efa60.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x1629c4112952a7a377cB9B8d7d8c903092f34B63",
+      "name": "Stader",
+      "symbol": "SD",
       "chainId": 42161,
       "decimals": 18
     },
@@ -4979,14 +5025,6 @@
       "decimals": 6
     },
     {
-      "address": "0x130966628846BFd36ff31a822705796e8cb8C18D",
-      "name": "Magic Internet Money",
-      "symbol": "MIM",
-      "logoURI": "https://snowtrace.io/token/images/mimstablecoin_32.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0x1f1E7c893855525b303f99bDF5c3c05Be09ca251",
       "name": "Synapse",
       "symbol": "SYN",
@@ -5049,22 +5087,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/27277/large/V-65_xQ1_400x400.jpeg",
       "chainId": 43114,
       "decimals": 6
-    },
-    {
-      "address": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
-      "name": "Wrapped Ether",
-      "symbol": "WETH.e",
-      "logoURI": "https://tokens.1inch.io/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0x50b7545627a5162F82A992c33b87aDc75187B218",
-      "name": "Wrapped BTC",
-      "symbol": "WBTC.e",
-      "logoURI": "https://tokens.1inch.io/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png",
-      "chainId": 43114,
-      "decimals": 8
     },
     {
       "address": "0x5947BB275c521040051D82396192181b413227A3",
@@ -5147,14 +5169,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
-      "name": "TetherToken",
-      "symbol": "USDt",
-      "logoURI": "https://tokens.1inch.io/0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7.png",
-      "chainId": 43114,
-      "decimals": 6
-    },
-    {
       "address": "0x97Cd1CFE2ed5712660bb6c14053C0EcB031Bff7d",
       "name": "Rai Reflex Index",
       "symbol": "RAI",
@@ -5203,22 +5217,6 @@
       "decimals": 18
     },
     {
-      "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
-      "name": "Wrapped AVAX",
-      "symbol": "WAVAX",
-      "logoURI": "https://tokens.1inch.io/0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
-      "name": "USD Coin",
-      "symbol": "USDC",
-      "logoURI": "https://tokens.1inch.io/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png",
-      "chainId": 43114,
-      "decimals": 6
-    },
-    {
       "address": "0xBeC243C995409E6520D7C41E404da5dEba4b209B",
       "name": "Synthetix Network Token",
       "symbol": "SNX.e",
@@ -5227,26 +5225,10 @@
       "decimals": 18
     },
     {
-      "address": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD",
-      "name": "Euro Coin",
-      "symbol": "EURC",
-      "logoURI": "https://tokens.1inch.io/0xc891eb4cbdeff6e073e859e987815ed1505c2acd.png",
-      "chainId": 43114,
-      "decimals": 6
-    },
-    {
       "address": "0xCE1bFFBD5374Dac86a2893119683F4911a2F7814",
       "name": "Spell Token",
       "symbol": "SPELL",
       "logoURI": "https://tokens.1inch.io/0x090185f2135308bad17527004364ebcc2d37e5f6.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64",
-      "name": "Frax",
-      "symbol": "FRAX",
-      "logoURI": "https://tokens.1inch.io/0x853d955acef822db058eb8505911ed77f175b99e.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -5279,14 +5261,6 @@
       "name": "1INCH Token",
       "symbol": "1INCH.e",
       "logoURI": "https://assets.coingecko.com/coins/images/13469/large/1inch-token.png?1608803028",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
-      "name": "Dai Stablecoin",
-      "symbol": "DAI.e",
-      "logoURI": "https://tokens.1inch.io/0x6b175474e89094c44da98b954eedeac495271d0f.png",
       "chainId": 43114,
       "decimals": 18
     },
