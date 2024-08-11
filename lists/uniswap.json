@@ -1,9 +1,9 @@
 {
   "name": "Uniswap Labs Default",
   "description": "",
-  "timestamp": "2024-08-04T01:29:13Z",
+  "timestamp": "2024-08-11T00:44:31Z",
   "version": {
-    "major": 7,
+    "major": 8,
     "minor": 0,
     "patch": 0
   },
@@ -1156,6 +1156,14 @@
       "decimals": 18
     },
     {
+      "address": "0x7ABc8A5768E6bE61A6c693a6e4EAcb5B60602C4D",
+      "name": "Covalent X Token",
+      "symbol": "CXT",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/39177/thumb/CXT_Ticker.png?1720829918",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x7C84e62859D0715eb77d1b1C4154Ecd6aBB21BEC",
       "name": "Shping Coin",
       "symbol": "SHPING",
@@ -1279,6 +1287,7 @@
       "address": "0x88909D489678dD17aA6D9609F89B0419Bf78FD9a",
       "name": "Layer3",
       "symbol": "L3",
+      "logoURI": "https://assets.smold.app/api/token/1/0x88909D489678dD17aA6D9609F89B0419Bf78FD9a/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5049,30 +5058,6 @@
       "decimals": 18
     },
     {
-      "address": "0x214DB107654fF987AD859F34125307783fC8e387",
-      "name": "Frax Share",
-      "symbol": "FXS",
-      "logoURI": "https://tokens.1inch.io/0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-      "name": "StargateToken",
-      "symbol": "STG",
-      "logoURI": "https://tokens.1inch.io/0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0x37B608519F91f70F2EeB0e5Ed9AF4061722e4F76",
-      "name": "SushiToken",
-      "symbol": "SUSHI.e",
-      "logoURI": "https://tokens.1inch.io/0x6b3595068778dd592e39a122f4f5a5cf09c90fe2.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0x3Bd2B1c7ED8D396dbb98DED3aEbb41350a5b2339",
       "name": "UMA Voting Token v1",
       "symbol": "UMA.e",
@@ -5089,34 +5074,10 @@
       "decimals": 6
     },
     {
-      "address": "0x5947BB275c521040051D82396192181b413227A3",
-      "name": "Chainlink Token",
-      "symbol": "LINK.e",
-      "logoURI": "https://tokens.1inch.io/0x697256caa3ccafd62bb6d3aa1c7c5671786a5fd9.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0x596fA47043f99A4e0F122243B841E55375cdE0d2",
       "name": "ZRX",
       "symbol": "ZRX.e",
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xE41d2489571d322189246DaFA5ebDe1F4699F498/logo.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0x62edc0692BD897D2295872a9FFCac5425011c661",
-      "name": "GMX",
-      "symbol": "GMX",
-      "logoURI": "https://tokens.1inch.io/0x62edc0692bd897d2295872a9ffcac5425011c661.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
-      "name": "Aave Token",
-      "symbol": "AAVE.e",
-      "logoURI": "https://tokens.1inch.io/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -5185,14 +5146,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9C9e5fD8bbc25984B178FdCE6117Defa39d2db39",
-      "name": "BUSD Token",
-      "symbol": "BUSD",
-      "logoURI": "https://assets.coingecko.com/coins/images/9576/large/BUSD.png?1568947766",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0x9Fb9a33956351cf4fa040f65A13b835A3C8764E3",
       "name": "Multichain",
       "symbol": "MULTI",
@@ -5209,14 +5162,6 @@
       "decimals": 18
     },
     {
-      "address": "0xAEC8318a9a59bAEb39861d10ff6C7f7bf1F96C57",
-      "name": "EURA (previously agEUR)",
-      "symbol": "EURA",
-      "logoURI": "https://tokens.1inch.io/0xaec8318a9a59baeb39861d10ff6c7f7bf1f96c57.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0xBeC243C995409E6520D7C41E404da5dEba4b209B",
       "name": "Synthetix Network Token",
       "symbol": "SNX.e",
@@ -5225,12 +5170,12 @@
       "decimals": 18
     },
     {
-      "address": "0xCE1bFFBD5374Dac86a2893119683F4911a2F7814",
-      "name": "Spell Token",
-      "symbol": "SPELL",
-      "logoURI": "https://tokens.1inch.io/0x090185f2135308bad17527004364ebcc2d37e5f6.png",
+      "address": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD",
+      "name": "Euro Coin",
+      "symbol": "EURC",
+      "logoURI": "https://tokens.1inch.io/0xc891eb4cbdeff6e073e859e987815ed1505c2acd.png",
       "chainId": 43114,
-      "decimals": 18
+      "decimals": 6
     },
     {
       "address": "0xFE6B19286885a4F7F55AdAD09C3Cd1f906D2478F",
