@@ -1,10 +1,10 @@
 {
   "name": "Ajna",
   "description": "",
-  "timestamp": "2024-08-18T00:44:59Z",
+  "timestamp": "2024-08-25T00:50:30Z",
   "version": {
     "major": 32,
-    "minor": 7,
+    "minor": 8,
     "patch": 0
   },
   "logoURI": "https://www.ajna.finance/static/tokens/ajna.png",
@@ -88,6 +88,14 @@
       "name": "Tholgar Warlord Token",
       "symbol": "tWAR",
       "logoURI": "https://assets.smold.app/api/token/1/0x188cA46Aa2c7ae10C14A931512B62991D5901453/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x1B4d88f5f38988BEA334C79f48aa69BEEeFE2e1e",
+      "name": "Karak - rswETH",
+      "symbol": "KrswETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1B4d88f5f38988BEA334C79f48aa69BEEeFE2e1e/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -557,7 +565,7 @@
       "address": "0xC1f33e0cf7e40a67375007104B929E49a581bafE",
       "name": "SPOT",
       "symbol": "SPOT",
-      "logoURI": "https://ethereum-optimism.github.io/data/SPOT/logo.svg",
+      "logoURI": "https://assets.smold.app/api/token/1/0xC1f33e0cf7e40a67375007104B929E49a581bafE/logo-128.png",
       "chainId": 1,
       "decimals": 9
     },
@@ -613,7 +621,7 @@
       "address": "0xDcEe70654261AF21C44c093C300eD3Bb97b78192",
       "name": "Wrapped OETH",
       "symbol": "WOETH",
-      "logoURI": "https://assets.coingecko.com/coins/images/29734/large/wOETH.png?1696528664",
+      "logoURI": "https://assets.smold.app/api/token/1/0xDcEe70654261AF21C44c093C300eD3Bb97b78192/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -709,6 +717,14 @@
       "name": "Prime",
       "symbol": "PRIME",
       "logoURI": "https://assets.coingecko.com/coins/images/29053/large/PRIMELOGOOO.png?1676976222",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xb8b295df2cd735b15BE5Eb419517Aa626fc43cD5",
+      "name": "Staked LINK",
+      "symbol": "stLINK",
+      "logoURI": "https://assets.coingecko.com/coins/images/29271/large/ST.LINK_tokenl_blue.png?1696528224",
       "chainId": 1,
       "decimals": 18
     },
@@ -1217,6 +1233,14 @@
       "decimals": 18
     },
     {
+      "address": "0x2772d01d938f638c762a73B718a81e135f106752",
+      "name": "mWETH",
+      "symbol": "mWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x2772d01d938f638c762a73B718a81e135f106752/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
       "name": "Bridged USD Coin (PoS)",
       "symbol": "USDC.e",
@@ -1349,6 +1373,14 @@
       "name": "Bonsai Token",
       "symbol": "BONSAI",
       "logoURI": "https://assets.smold.app/api/token/137/0x3d2bD0e15829AA5C362a4144FdF4A1112fa29B5c/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x3dC1A55D946bEC3E8312C3a84FcF007eE6d3A695",
+      "name": "MON Wrapped Ether",
+      "symbol": "MONWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x3dC1A55D946bEC3E8312C3a84FcF007eE6d3A695/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1720,10 +1752,26 @@
       "decimals": 18
     },
     {
+      "address": "0x9F198F1e4963412292c70a2415Da54fa48B1e50f",
+      "name": "mwstETH",
+      "symbol": "mwstETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x9F198F1e4963412292c70a2415Da54fa48B1e50f/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0x9a9519134dda2D7fB24b28E1649f2b07fB09979d",
       "name": "WIETH2",
       "symbol": "WIETH2",
       "logoURI": "https://assets.smold.app/api/token/137/0x9a9519134dda2D7fB24b28E1649f2b07fB09979d/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x9aea45B8d4248e7a65e4b1ec95f09afc3818E159",
+      "name": "THURWETH",
+      "symbol": "THURWETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0x9aea45B8d4248e7a65e4b1ec95f09afc3818E159/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1756,6 +1804,14 @@
       "name": "KL Wrapped Ether",
       "symbol": "KLVETH",
       "logoURI": "https://assets.smold.app/api/token/137/0xA5d3dBa081ED44897d859fe741B1EE9596bf851e/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xAF67b419274904e068ff0748Fd4587F6F22b8807",
+      "name": "THURWSTETH",
+      "symbol": "THURWSTETH",
+      "logoURI": "https://assets.smold.app/api/token/137/0xAF67b419274904e068ff0748Fd4587F6F22b8807/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2399,6 +2455,14 @@
       "decimals": 18
     },
     {
+      "address": "0x98bEAa72230788572e3e3Be58D91C232dda315d4",
+      "name": "Moo Aero OVN-USD+",
+      "symbol": "mooAeroOVN-USD+",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x98bEAa72230788572e3e3Be58D91C232dda315d4/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x9DE16c805A3227b9b92e39a446F9d56cf59fe640",
       "name": "Bento",
       "symbol": "BENTO",
@@ -2602,7 +2666,7 @@
       "address": "0xfA980cEd6895AC314E7dE34Ef1bFAE90a5AdD21b",
       "name": "Prime",
       "symbol": "PRIME",
-      "logoURI": "https://assets.coingecko.com/coins/images/29053/large/PRIMELOGOOO.png?1676976222",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xfA980cEd6895AC314E7dE34Ef1bFAE90a5AdD21b/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -2639,6 +2703,14 @@
       "decimals": 18
     },
     {
+      "address": "0x0FeBb0b1b88BDFA78b9Ad2a8bE80872cB35DbEf6",
+      "name": "Vested Pool GS",
+      "symbol": "vpGS",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x0FeBb0b1b88BDFA78b9Ad2a8bE80872cB35DbEf6/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978",
       "name": "Curve DAO Token",
       "symbol": "CRV",
@@ -2661,6 +2733,14 @@
       "logoURI": "https://assets.smold.app/api/token/42161/0x287C48a78395f6Fa4aC7F71A5E92Dc65256f570F/logo-128.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x2Be6Fab4d1408e7ad6AD91cE7B77FA2A7670782f",
+      "name": "PT gUSDC 26DEC2024",
+      "symbol": "PT-gUSDC-26DEC2024",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x2Be6Fab4d1408e7ad6AD91cE7B77FA2A7670782f/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
     },
     {
       "address": "0x2Ec7FA7A87EbA241636B2C03bA287AC3897601FC",
@@ -2769,6 +2849,14 @@
       "name": "Wrapped Ether",
       "symbol": "WETH",
       "logoURI": "https://assets.smold.app/api/token/42161/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x891b4416477e76C4D877CC8C93Fae4Ad0c0c41cd",
+      "name": "Staked GS LP",
+      "symbol": "sGSlp",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x891b4416477e76C4D877CC8C93Fae4Ad0c0c41cd/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
