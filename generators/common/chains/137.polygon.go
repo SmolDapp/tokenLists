@@ -31,4 +31,7 @@ var POLYGON = TChain{
 	IgnoredTokens: []common.Address{
 		common.HexToAddress(`0xec6432B90e7fD4d9f872cc5C781f05B617DB861E`),
 	},
+	ExtraTokens: []common.Address{
+		common.HexToAddress(`0x3c499c542cef5e3811e1192ce70d8cc03d5c3359`), // USDC
+	},
 }
