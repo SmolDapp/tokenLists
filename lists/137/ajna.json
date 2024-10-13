@@ -1,10 +1,10 @@
 {
   "name": "Ajna",
   "description": "",
-  "timestamp": "2024-10-06T01:16:57Z",
+  "timestamp": "2024-10-13T01:33:46Z",
   "version": {
     "major": 33,
-    "minor": 2,
+    "minor": 3,
     "patch": 0
   },
   "logoURI": "https://www.ajna.finance/static/tokens/ajna.png",
@@ -12,6 +12,14 @@
     "Ajna"
   ],
   "tokens": [
+    {
+      "address": "0x0000000000000000000000000000000000001010",
+      "name": "Polygon Ecosystem Token",
+      "symbol": "POL",
+      "logoURI": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+      "chainId": 137,
+      "decimals": 18
+    },
     {
       "address": "0x00B0728fb571Cdab817E74C9e21A3aC7EDfF59c6",
       "name": "6wstETH",
@@ -73,6 +81,14 @@
       "name": "Newtest2",
       "symbol": "N2TEST",
       "logoURI": "https://assets.smold.app/api/token/137/0x0F972eCe94292cFcCb7ee5a1e273f7C9e23C49eB/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "name": "Wrapped Polygon Ecosystem Token",
+      "symbol": "WPOL",
+      "logoURI": "https://assets.smold.app/api/token/137/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },

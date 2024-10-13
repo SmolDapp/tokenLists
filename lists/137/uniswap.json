@@ -1,9 +1,9 @@
 {
   "name": "Uniswap Labs Default",
   "description": "",
-  "timestamp": "2024-09-29T01:14:57Z",
+  "timestamp": "2024-10-13T01:37:37Z",
   "version": {
-    "major": 10,
+    "major": 11,
     "minor": 0,
     "patch": 0
   },
@@ -13,6 +13,14 @@
     "default"
   ],
   "tokens": [
+    {
+      "address": "0x0000000000000000000000000000000000001010",
+      "name": "Polygon Ecosystem Token",
+      "symbol": "POL",
+      "logoURI": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+      "chainId": 137,
+      "decimals": 18
+    },
     {
       "address": "0x0621d647cecbFb64b79E44302c1933cB4f27054d",
       "name": "Amp Token (PoS)",
@@ -26,6 +34,14 @@
       "name": "Numeraire (PoS)",
       "symbol": "NMR",
       "logoURI": "https://assets.smold.app/api/token/137/0x0Bf519071b02F22C17E7Ed5F4002ee1911f46729/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "name": "Wrapped Polygon Ecosystem Token",
+      "symbol": "WPOL",
+      "logoURI": "https://assets.smold.app/api/token/137/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },

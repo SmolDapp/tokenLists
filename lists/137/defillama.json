@@ -1,15 +1,23 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "2024-10-06T01:33:14Z",
+  "timestamp": "2024-10-13T01:37:04Z",
   "version": {
-    "major": 92,
+    "major": 93,
     "minor": 0,
     "patch": 0
   },
   "logoURI": "https://wiki.defillama.com/w/resources/assets/wiki.png?88de1",
   "keywords": [],
   "tokens": [
+    {
+      "address": "0x0000000000000000000000000000000000001010",
+      "name": "Polygon Ecosystem Token",
+      "symbol": "POL",
+      "logoURI": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+      "chainId": 137,
+      "decimals": 18
+    },
     {
       "address": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
       "name": "USDA",
@@ -31,13 +39,6 @@
       "name": "Lovely Finance",
       "symbol": "LOVELY",
       "logoURI": "https://assets.smold.app/api/token/137/0x00560E906B7C73eE2D18EBFd191591A83aE27eA0/logo-128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x0059ca765Cc75A9B977293681A1B8Add0424F5f8",
-      "name": "DPlat Token",
-      "symbol": "DPLAT",
       "chainId": 137,
       "decimals": 18
     },
@@ -285,6 +286,14 @@
       "name": "Bloxies Coin",
       "symbol": "BXC",
       "logoURI": "https://assets.coingecko.com/coins/images/31400/large/BXC_Coin_200x200.png?1692783061",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x06480AcAAe64BcFA6da8Fd176F60982584385090",
+      "name": "IVY Trading System",
+      "symbol": "IVY",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/50570/thumb/logo-200.png?1728374566",
       "chainId": 137,
       "decimals": 18
     },
@@ -564,6 +573,14 @@
       "name": "NextEarthToken",
       "symbol": "NXTT",
       "logoURI": "https://tokens.1inch.io/0x0d0b8488222f7f83b23e365320a4021b12ead608.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "name": "Wrapped Polygon Ecosystem Token",
+      "symbol": "WPOL",
+      "logoURI": "https://assets.smold.app/api/token/137/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270/logo-128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -1002,14 +1019,6 @@
       "name": "WinsToken",
       "symbol": "WINS",
       "logoURI": "https://assets.coingecko.com/coins/images/31007/large/icon_wins.png?1689673393",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x1A70807F022CBD3aC5380a6A2af3524E56a6184D",
-      "name": "Strix",
-      "symbol": "STRIX",
-      "logoURI": "https://asset-images.messari.io/images/269290c6-4c2f-4767-a57a-4e089b7f4914/128.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -2212,14 +2221,6 @@
       "name": "GALAXIS Token(PoS)",
       "symbol": "GALAXIS",
       "logoURI": "https://asset-images.messari.io/images/66cb854e-1101-4ee7-83ab-b7eeb02dca45/128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x3C720206bFaCB2d16fA3ac0ed87D2048Dbc401Fc",
-      "name": "UnirisToken (PoS)",
-      "symbol": "UCO",
-      "logoURI": "https://tokens.1inch.io/0x3c720206bfacb2d16fa3ac0ed87d2048dbc401fc.png",
       "chainId": 137,
       "decimals": 18
     },
@@ -3710,14 +3711,6 @@
       "decimals": 9
     },
     {
-      "address": "0x63c54c41794e14D283123CD38895f7ABdF33C379",
-      "name": "QOODO",
-      "symbol": "QDO",
-      "logoURI": "https://asset-images.messari.io/images/05bf4f99-0914-463b-a344-a7d23007f127/128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x644192291cc835A93d6330b24EA5f5FEdD0eEF9e",
       "name": "AllianceBlock Nexera Token",
       "symbol": "NXRA",
@@ -3954,14 +3947,6 @@
       "name": "APWine Token (PoS)",
       "symbol": "APW",
       "logoURI": "https://tokens.1inch.io/0x4104b135dbc9609fc1a9490e61369036497660c8.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0x6C526368e1185e4Cd8A50468Eb3429c5AeB674f3",
-      "name": "SelfBar",
-      "symbol": "SBAR",
-      "logoURI": "https://assets.coingecko.com/coins/images/20599/large/sbar-icon.png?1637286886",
       "chainId": 137,
       "decimals": 18
     },
@@ -4848,14 +4833,6 @@
       "decimals": 18
     },
     {
-      "address": "0x860Ca4c7A60dCdc045BA1012c27788860cFa565f",
-      "name": "Polysport",
-      "symbol": "PLS",
-      "logoURI": "https://asset-images.messari.io/images/7108dcb1-66c7-4cbf-8743-0f197bfc8a76/128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
       "address": "0x8626264B6a1B4e920905Efd381002abA52EA0Eea",
       "name": "BlackHat",
       "symbol": "BLKC",
@@ -5330,14 +5307,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/2539/large/purpose.png?1547036654",
       "chainId": 137,
       "decimals": 18
-    },
-    {
-      "address": "0x9767203e89dcD34851240B3919d4900d3E5069f1",
-      "name": "A4",
-      "symbol": "A4",
-      "logoURI": "https://assets.coingecko.com/coins/images/21992/large/ba384ad07217a4be75cb85314f5760f7.jpg?1640582786",
-      "chainId": 137,
-      "decimals": 6
     },
     {
       "address": "0x978bF545a15e29595E6C583aefA76f5Fe71070c2",
@@ -6509,6 +6478,14 @@
       "decimals": 18
     },
     {
+      "address": "0xD9a1070f832Cc02ff9d839500EEf6E8c64983726",
+      "name": "BATIC",
+      "symbol": "BAT",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/50675/thumb/batic.jpg?1728693607",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
       "address": "0xDA537104D6A5edd53c6fBba9A898708E465260b6",
       "name": "(PoS) yearn.finance",
       "symbol": "YFI",
@@ -7431,6 +7408,14 @@
       "decimals": 18
     },
     {
+      "address": "0xaa53B93608C88EE55fAD8db4C504Fa20E52642aD",
+      "name": "Archethic Universal Coin",
+      "symbol": "UCO",
+      "logoURI": "https://assets.coingecko.com/coins/images/12330/large/uco.png?1639550258",
+      "chainId": 137,
+      "decimals": 8
+    },
+    {
       "address": "0xab0b2ddB9C7e440fAc8E140A89c0dbCBf2d7Bbff",
       "name": "Harvest Interest Token",
       "symbol": "miFARM",
@@ -8204,14 +8189,6 @@
       "name": "Tanpin",
       "symbol": "TANPIN",
       "logoURI": "https://asset-images.messari.io/images/11ef9493-7844-48e2-8130-33a17696e869/128.png",
-      "chainId": 137,
-      "decimals": 18
-    },
-    {
-      "address": "0xdAb529f40E671A1D4bF91361c21bf9f0C9712ab7",
-      "name": "(PoS) Binance USD",
-      "symbol": "BUSD",
-      "logoURI": "https://assets.coingecko.com/coins/images/9576/large/BUSD.png?1568947766",
       "chainId": 137,
       "decimals": 18
     },
