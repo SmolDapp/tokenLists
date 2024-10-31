@@ -1,7 +1,6 @@
 package main
 
 import (
-	"os"
 	"strconv"
 
 	"github.com/ethereum/go-ethereum/common"
@@ -63,9 +62,6 @@ func fetchLifiTokenList() []models.TokenListToken {
 		tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 		tokenLists = append(tokenLists, tokenList...)
 	}
-
-	logs.Pretty(tokenLists)
-	os.Exit(1)
 
 	return tokenLists
 }
