@@ -149,6 +149,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},
+	`lifi`: {
+		Exec:             buildLifiTokenList,
+		Name:             `Lifi`,
+		Description:      `A list of tokens that can be used as default on LI.FI`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`messari`: {
 		Exec:             buildMessariTokenList,
 		Name:             `Messari`,
