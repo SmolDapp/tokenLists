@@ -3,13 +3,13 @@ package chains
 import (
 	"math"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var FILECOIN = TChain{
 	ID:            314,
 	Name:          `Filecoin`,
+	Type:          `EVM`,
 	LogoURI:       `https://assets.smold.app/chains/314/logo-128.png`,
 	IsTestNet:     false,
 	RpcURI:        `https://rpc.ankr.com/filecoin`,
@@ -17,7 +17,7 @@ var FILECOIN = TChain{
 	MaxBatchSize:  math.MaxInt64,
 	WeightRatio:   0.2,
 	MulticallContract: TContractData{
-		Address: common.HexToAddress(`0xcA11bde05977b3631167028862bE2a173976CA11`),
+		Address: `0xcA11bde05977b3631167028862bE2a173976CA11`,
 		Block:   0,
 	},
 	Coin: models.TokenListToken{
@@ -28,5 +28,5 @@ var FILECOIN = TChain{
 		ChainID:  314,
 		Decimals: 18,
 	},
-	IgnoredTokens: []common.Address{},
+	IgnoredTokens: []string{},
 }

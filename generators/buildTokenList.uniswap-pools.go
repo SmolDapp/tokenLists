@@ -7,13 +7,14 @@ import (
 	"sync"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 var UNI_POOL_THRESHOLD_FOR_CHAINID = map[uint64]int{
@@ -27,14 +28,14 @@ var UNI_POOL_THRESHOLD_FOR_CHAINID = map[uint64]int{
 	43114: 3,
 }
 
-func handleUniswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, allPoolsPerChainID map[uint64]map[string]string) []models.TokenListToken {
+func handleUniswapPoolsTokenList(tokensPerChainID map[uint64][]string, allPoolsPerChainID map[uint64]map[string]string) []models.TokenListToken {
 	tokensForChainIDSyncMap := helpers.InitSyncMap(tokensPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
 	perChainWG := sync.WaitGroup{}
 	perChainWG.Add(len(tokensPerChainID))
 	for chainID, list := range tokensPerChainID {
-		go func(chainID uint64, list []common.Address) {
+		go func(chainID uint64, list []string) {
 			defer perChainWG.Done()
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
 			syncMap := syncMapRaw.([]models.TokenListToken)
@@ -56,14 +57,14 @@ func handleUniswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, a
 					continue
 				}
 
-				token1, ok1 := underlyingTokenInfo[helpers.ToAddress(splittedTokens[0])]
-				token2, ok2 := underlyingTokenInfo[helpers.ToAddress(splittedTokens[1])]
+				token1, ok1 := underlyingTokenInfo[utils.ToAddress(splittedTokens[0])]
+				token2, ok2 := underlyingTokenInfo[utils.ToAddress(splittedTokens[1])]
 				if !ok1 || !ok2 {
 					continue
 				}
 
 				if newToken, err := helpers.SetToken(
-					common.HexToAddress(pool),
+					pool,
 					`Uniswap V2 `+token1.Name+` + `+token2.Name,
 					`UNI-V2 `+token1.Symbol+` + `+token2.Symbol,
 					``,
@@ -82,7 +83,7 @@ func handleUniswapPoolsTokenList(tokensPerChainID map[uint64][]common.Address, a
 }
 
 func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]models.TokenListToken, map[uint64]string) {
-	tokensPerChainID := make(map[uint64][]common.Address)
+	tokensPerChainID := make(map[uint64][]string)
 	poolsPerChainID := make(map[uint64]map[string]string)
 	allTokens := make(map[string]int)
 	allPools := make(map[string]string)
@@ -98,7 +99,7 @@ func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]models.TokenLis
 		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
-		tokensPerChainID[chainID] = []common.Address{}
+		tokensPerChainID[chainID] = []string{}
 		poolsPerChainID[chainID] = make(map[string]string)
 
 		/**********************************************************************
@@ -110,7 +111,7 @@ func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]models.TokenLis
 		if sync, ok := extra[`lastBlockSyncFor_`+chainIDStr]; ok {
 			lastBlockSyncForChainID, _ = strconv.ParseUint(sync.(string), 10, 64)
 		}
-		client := ethereum.GetRPC(chainID)
+		client := ethereum.GetRPC(chainID).(*ethclient.Client)
 		currentBlockNumber, _ := client.BlockNumber(context.Background())
 		threshold := uint64(100_000)
 		if chainID == 56 {
@@ -170,12 +171,12 @@ func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]models.TokenLis
 		for pool, tokensInPool := range allPools {
 			tokens := strings.Split(tokensInPool, `_`)
 			if (allTokens[tokens[0]] >= chainThreshold) && (allTokens[tokens[1]] >= chainThreshold) {
-				if chains.IsTokenIgnored(chainID, common.HexToAddress(tokens[0])) ||
-					chains.IsTokenIgnored(chainID, common.HexToAddress(tokens[1])) {
+				if chains.IsTokenIgnored(chainID, tokens[0]) ||
+					chains.IsTokenIgnored(chainID, tokens[1]) {
 					continue
 				}
-				tokensPerChainID[chainID] = append(tokensPerChainID[chainID], common.HexToAddress(tokens[0]))
-				tokensPerChainID[chainID] = append(tokensPerChainID[chainID], common.HexToAddress(tokens[1]))
+				tokensPerChainID[chainID] = append(tokensPerChainID[chainID], tokens[0])
+				tokensPerChainID[chainID] = append(tokensPerChainID[chainID], tokens[1])
 				poolsPerChainID[chainID][pool] = tokensInPool
 			}
 		}

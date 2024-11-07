@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 func loadAllTokenLogoURI() map[uint64]map[string]string {
@@ -13,13 +13,13 @@ func loadAllTokenLogoURI() map[uint64]map[string]string {
 			if _, ok := allTokenLogoURI[token.ChainID]; !ok {
 				allTokenLogoURI[token.ChainID] = make(map[string]string)
 			}
-			currentIcon := allTokenLogoURI[token.ChainID][helpers.ToAddress(token.Address)]
+			currentIcon := allTokenLogoURI[token.ChainID][utils.ToAddress(token.Address)]
 			if currentIcon == helpers.DEFAULT_SMOL_NOT_FOUND ||
 				currentIcon == helpers.DEFAULT_PARASWAP_NOT_FOUND ||
 				currentIcon == helpers.DEFAULT_ETHERSCAN_NOT_FOUND ||
 				currentIcon == `` {
-				baseIcon := helpers.UseIcon(token.ChainID, token.Name+` - `+token.Symbol, common.HexToAddress(token.Address), token.LogoURI)
-				allTokenLogoURI[token.ChainID][helpers.ToAddress(token.Address)] = baseIcon
+				baseIcon := helpers.UseIcon(token.ChainID, token.Name+` - `+token.Symbol, token.Address, token.LogoURI)
+				allTokenLogoURI[token.ChainID][utils.ToAddress(token.Address)] = baseIcon
 			}
 
 		}

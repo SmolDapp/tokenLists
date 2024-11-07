@@ -13,7 +13,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
@@ -64,7 +63,7 @@ func LoadTokenListFromJsonFile(filePath string) models.TokenListData[models.Toke
 		if !chains.IsChainIDSupported(token.ChainID) {
 			continue
 		}
-		key := GetKey(token.ChainID, common.HexToAddress(token.Address))
+		key := GetKey(token.ChainID, token.Address)
 		tokenList.PreviousTokensMap[key] = token
 	}
 	tokenList.NextTokensMap = make(map[string]models.TokenListToken)
@@ -101,11 +100,11 @@ func SaveTokenListInJsonFile(
 			if !chains.IsChainIDSupported(token.ChainID) {
 				continue
 			}
-			if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, common.HexToAddress(token.Address)) {
+			if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, token.Address) {
 				continue
 			}
 			newToken, err := SetToken(
-				common.HexToAddress(token.Address),
+				token.Address,
 				token.Name,
 				token.Symbol,
 				token.LogoURI,
@@ -116,7 +115,7 @@ func SaveTokenListInJsonFile(
 				continue
 			}
 			newToken.Occurrence = token.Occurrence
-			tokenList.NextTokensMap[GetKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
+			tokenList.NextTokensMap[GetKey(token.ChainID, token.Address)] = newToken
 		}
 	}
 
@@ -125,7 +124,7 @@ func SaveTokenListInJsonFile(
 			continue
 		}
 		newToken, err := SetToken(
-			common.HexToAddress(token.Address),
+			token.Address,
 			token.Name,
 			token.Symbol,
 			token.LogoURI,
@@ -137,7 +136,7 @@ func SaveTokenListInJsonFile(
 			continue
 		}
 		newToken.Occurrence = token.Occurrence
-		tokenList.NextTokensMap[GetKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
+		tokenList.NextTokensMap[GetKey(token.ChainID, token.Address)] = newToken
 	}
 
 	/**************************************************************************
@@ -183,7 +182,7 @@ func SaveTokenListInJsonFile(
 	shouldBumpMinor := false
 	shouldBumpPatch := false
 	for _, token := range tokenList.NextTokensMap {
-		key := GetKey(token.ChainID, common.HexToAddress(token.Address))
+		key := GetKey(token.ChainID, token.Address)
 		if _, ok := tokenList.PreviousTokensMap[key]; !ok {
 			shouldBumpMinor = true
 		} else if !reflect.DeepEqual(token, tokenList.PreviousTokensMap[key]) {
@@ -231,7 +230,7 @@ func SaveTokenListInJsonFile(
 		}
 
 		token := tokenList.NextTokensMap[k]
-		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, common.HexToAddress(token.Address)) {
+		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, token.Address) {
 			continue
 		}
 		tokenList.Tokens[i] = tokenList.NextTokensMap[k]
@@ -303,7 +302,7 @@ func SaveChainListInJsonFile(
 			continue
 		}
 		newToken, err := SetToken(
-			common.HexToAddress(token.Address),
+			token.Address,
 			token.Name,
 			token.Symbol,
 			token.LogoURI,
@@ -315,7 +314,7 @@ func SaveChainListInJsonFile(
 			continue
 		}
 		newToken.Occurrence = token.Occurrence
-		tokenList.NextTokensMap[GetKey(token.ChainID, common.HexToAddress(token.Address))] = newToken
+		tokenList.NextTokensMap[GetKey(token.ChainID, token.Address)] = newToken
 	}
 
 	/**************************************************************************
@@ -361,7 +360,7 @@ func SaveChainListInJsonFile(
 	shouldBumpMinor := false
 	shouldBumpPatch := false
 	for _, token := range tokenList.NextTokensMap {
-		key := GetKey(token.ChainID, common.HexToAddress(token.Address))
+		key := GetKey(token.ChainID, token.Address)
 		if _, ok := tokenList.PreviousTokensMap[key]; !ok {
 			shouldBumpMinor = true
 		} else if !reflect.DeepEqual(token, tokenList.PreviousTokensMap[key]) {
@@ -409,7 +408,7 @@ func SaveChainListInJsonFile(
 		}
 
 		token := tokenList.NextTokensMap[k]
-		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, common.HexToAddress(token.Address)) {
+		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, token.Address) {
 			continue
 		}
 		tokenList.Tokens[i] = tokenList.NextTokensMap[k]

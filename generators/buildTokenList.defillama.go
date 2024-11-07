@@ -49,7 +49,7 @@ func fetchDefillamaTokenList() []models.TokenListToken {
 			if !chains.IsChainIDSupported(chainID) {
 				continue
 			}
-			if chains.IsTokenIgnored(chainID, common.HexToAddress(addressOnPlatform)) {
+			if chains.IsTokenIgnored(chainID, addressOnPlatform) {
 				continue
 			}
 			listPerChainID = append(listPerChainID, models.TokenListToken{

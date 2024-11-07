@@ -4,29 +4,31 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
-func handleVeloTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
+func handleVeloTokenList(chainID uint64, tokenAddresses []string) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	return tokenList
 }
 
 func fetchVeloLikeTokenList(chainID uint64, sugarAddress common.Address) []models.TokenListToken {
-	client := ethereum.GetRPC(chainID)
+	client := ethereum.GetRPC(chainID).(*ethclient.Client)
 	veloSugar, err := contracts.NewVeloSugarV2Caller(sugarAddress, client)
 	if err != nil {
 		logs.Error(err)
 		return []models.TokenListToken{}
 	}
-	addressesMap := make(map[common.Address]bool)
-	addressesSlice := []common.Address{}
+	addressesMap := make(map[string]bool)
+	addressesSlice := []string{}
 
 	for i := 0; i < 100; i++ {
 		offset := big.NewInt(int64(i * 25))
@@ -36,10 +38,10 @@ func fetchVeloLikeTokenList(chainID uint64, sugarAddress common.Address) []model
 			break
 		}
 		for _, token := range allTokens {
-			addressesMap[token.Token0] = true
-			addressesMap[token.Token1] = true
-			addressesMap[token.EmissionsToken] = true
-			addressesMap[token.Lp] = true
+			addressesMap[utils.ToAddress(token.Token0.Hex())] = true
+			addressesMap[utils.ToAddress(token.Token1.Hex())] = true
+			addressesMap[utils.ToAddress(token.EmissionsToken.Hex())] = true
+			addressesMap[utils.ToAddress(token.Lp.Hex())] = true
 		}
 		// Used to remove the duplicates
 		for address := range addressesMap {

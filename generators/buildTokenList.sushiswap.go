@@ -7,6 +7,7 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 type TSushiContracts struct {
@@ -79,7 +80,7 @@ func buildSushiswapTokenList() {
 
 		tokensInfo := helpers.RetrieveBasicInformations(chainID, tokensForChain)
 		for _, existingToken := range tokensForChain {
-			if token, ok := tokensInfo[existingToken.Hex()]; ok {
+			if token, ok := tokensInfo[utils.ToAddress(existingToken)]; ok {
 				if newToken, err := helpers.SetToken(
 					token.Address,
 					token.Name,
@@ -99,11 +100,11 @@ func buildSushiswapTokenList() {
 	* save it in a json file
 	**************************************************************************/
 	for _, token := range newTokenList {
-		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, common.HexToAddress(token.Address)) {
+		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, token.Address) {
 			continue
 		}
 
-		key := helpers.GetKey(token.ChainID, common.HexToAddress(token.Address))
+		key := helpers.GetKey(token.ChainID, token.Address)
 		tokenList.NextTokensMap[key] = token
 	}
 

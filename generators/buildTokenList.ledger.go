@@ -5,13 +5,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
-func handleLedgerTokenList(tokensPerChainID map[uint64][]common.Address) []models.TokenListToken {
+func handleLedgerTokenList(tokensPerChainID map[uint64][]string) []models.TokenListToken {
 	tokenLists := []models.TokenListToken{}
 
 	for chainID, list := range tokensPerChainID {
@@ -24,10 +23,10 @@ func handleLedgerTokenList(tokensPerChainID map[uint64][]common.Address) []model
 }
 
 func fetchLedgerTokenList() []models.TokenListToken {
-	tokensPerChainID := map[uint64][]common.Address{}
-	tokensPerChainID[1] = []common.Address{}
-	tokensPerChainID[56] = []common.Address{}
-	tokensPerChainID[137] = []common.Address{}
+	tokensPerChainID := map[uint64][]string{}
+	tokensPerChainID[1] = []string{}
+	tokensPerChainID[56] = []string{}
+	tokensPerChainID[137] = []string{}
 
 	resp, err := http.Get(`https://raw.githubusercontent.com/LedgerHQ/ledger-live/develop/apps/ledger-live-desktop/cryptoassets.md`)
 	if err != nil {
@@ -54,22 +53,22 @@ func fetchLedgerTokenList() []models.TokenListToken {
 		if strings.HasPrefix(line, "| Ethereum |") {
 			address := strings.Split(line, "|")[3]
 			address = strings.TrimSpace(address)
-			if !chains.IsTokenIgnored(1, common.HexToAddress(address)) {
-				tokensPerChainID[1] = append(tokensPerChainID[1], common.HexToAddress(address))
+			if !chains.IsTokenIgnored(1, address) {
+				tokensPerChainID[1] = append(tokensPerChainID[1], address)
 			}
 		}
 		if strings.HasPrefix(line, "| Binance Smart Chain |") {
 			address := strings.Split(line, "|")[3]
 			address = strings.TrimSpace(address)
-			if !chains.IsTokenIgnored(56, common.HexToAddress(address)) {
-				tokensPerChainID[56] = append(tokensPerChainID[56], common.HexToAddress(address))
+			if !chains.IsTokenIgnored(56, address) {
+				tokensPerChainID[56] = append(tokensPerChainID[56], address)
 			}
 		}
 		if strings.HasPrefix(line, "| Polygon |") {
 			address := strings.Split(line, "|")[3]
 			address = strings.TrimSpace(address)
-			if !chains.IsTokenIgnored(137, common.HexToAddress(address)) {
-				tokensPerChainID[137] = append(tokensPerChainID[137], common.HexToAddress(address))
+			if !chains.IsTokenIgnored(137, address) {
+				tokensPerChainID[137] = append(tokensPerChainID[137], address)
 			}
 		}
 	}

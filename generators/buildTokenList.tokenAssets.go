@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
-func handleSmolAssetsTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
+func handleSmolAssetsTokenList(chainID uint64, tokenAddresses []string) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 	if len(tokenList) == 0 {
 		return tokenList
@@ -18,9 +18,9 @@ func handleSmolAssetsTokenList(chainID uint64, tokenAddresses []common.Address) 
 
 func fetchSmolAssetsTokenList(chainID uint64) []models.TokenListToken {
 	smolAssets := helpers.GetSmolAssetsPerChain(chainID)
-	allTokensToAdd := []common.Address{}
+	allTokensToAdd := []string{}
 	for _, token := range smolAssets {
-		allTokensToAdd = append(allTokensToAdd, common.HexToAddress(token))
+		allTokensToAdd = append(allTokensToAdd, utils.ToAddress(token))
 	}
 	return handleSmolAssetsTokenList(chainID, allTokensToAdd)
 }

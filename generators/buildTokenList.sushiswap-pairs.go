@@ -6,32 +6,33 @@ import (
 	"sync"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 var SUSHI_PAIR_THRESHOLD = 3
 
-func handleSushiswapPairsTokenList(tokensPerChainID map[uint64][]common.Address) []models.TokenListToken {
+func handleSushiswapPairsTokenList(tokensPerChainID map[uint64][]string) []models.TokenListToken {
 	tokensForChainIDSyncMap := helpers.InitSyncMap(tokensPerChainID)
 
 	// Fetch the basic informations for all the tokens for all the chains
 	perChainWG := sync.WaitGroup{}
 	perChainWG.Add(len(tokensPerChainID))
 	for chainID, list := range tokensPerChainID {
-		go func(chainID uint64, list []common.Address) {
+		go func(chainID uint64, list []string) {
 			defer perChainWG.Done()
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
 			syncMap := syncMapRaw.([]models.TokenListToken)
 
 			tokensInfo := helpers.RetrieveBasicInformations(chainID, list)
 			for _, address := range list {
-				if token, ok := tokensInfo[address.Hex()]; ok {
+				if token, ok := tokensInfo[utils.ToAddress(address)]; ok {
 					if token.Name == `` || token.Symbol == `` {
 						continue
 					}
@@ -56,7 +57,7 @@ func handleSushiswapPairsTokenList(tokensPerChainID map[uint64][]common.Address)
 }
 
 func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]models.TokenListToken, map[uint64]string) {
-	tokensPerChainID := make(map[uint64][]common.Address)
+	tokensPerChainID := make(map[uint64][]string)
 	allTokens := make(map[string]int)
 	lastBlockSync := make(map[uint64]string)
 
@@ -70,7 +71,7 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]models.TokenL
 		if !chains.IsChainIDSupported(chainID) {
 			continue
 		}
-		tokensPerChainID[chainID] = []common.Address{}
+		tokensPerChainID[chainID] = []string{}
 
 		/**********************************************************************
 		** Init the RPC and get the current block number to know where to start
@@ -81,7 +82,7 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]models.TokenL
 		if sync, ok := extra[`lastBlockSyncFor_`+chainIDStr]; ok {
 			lastBlockSyncForChainID, _ = strconv.ParseUint(sync.(string), 10, 64)
 		}
-		client := ethereum.GetRPC(chainID)
+		client := ethereum.GetRPC(chainID).(*ethclient.Client)
 		currentBlockNumber, _ := client.BlockNumber(context.Background())
 		threshold := uint64(100_000)
 		if chainID == 56 {
@@ -133,11 +134,11 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]models.TokenL
 		** function
 		**********************************************************************/
 		for address, count := range allTokens {
-			if chains.IsTokenIgnored(chainID, common.HexToAddress(address)) {
+			if chains.IsTokenIgnored(chainID, address) {
 				continue
 			}
 			if count >= SUSHI_PAIR_THRESHOLD {
-				tokensPerChainID[chainID] = append(tokensPerChainID[chainID], common.HexToAddress(address))
+				tokensPerChainID[chainID] = append(tokensPerChainID[chainID], address)
 			}
 		}
 	}

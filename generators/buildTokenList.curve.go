@@ -3,10 +3,10 @@ package main
 import (
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 type TCurveTokenData struct {
@@ -71,24 +71,24 @@ func handleCurveTokenList(listPerChainID map[uint64][]TCurveTokenData) []models.
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
 			syncMap := syncMapRaw.([]models.TokenListToken)
 
-			listOfAddresses := []common.Address{}
+			listOfAddresses := []string{}
 			for _, token := range list {
-				if !chains.IsTokenIgnored(chainID, common.HexToAddress(token.Address)) {
-					listOfAddresses = append(listOfAddresses, common.HexToAddress(token.Address))
+				if !chains.IsTokenIgnored(chainID, token.Address) {
+					listOfAddresses = append(listOfAddresses, token.Address)
 				}
-				if !chains.IsTokenIgnored(chainID, common.HexToAddress(token.LpTokenAddress)) {
-					listOfAddresses = append(listOfAddresses, common.HexToAddress(token.LpTokenAddress))
+				if !chains.IsTokenIgnored(chainID, token.LpTokenAddress) {
+					listOfAddresses = append(listOfAddresses, token.LpTokenAddress)
 				}
 				for _, coinAddress := range token.CoinsAddresses {
-					if !chains.IsTokenIgnored(chainID, common.HexToAddress(coinAddress)) {
-						listOfAddresses = append(listOfAddresses, common.HexToAddress(coinAddress))
+					if !chains.IsTokenIgnored(chainID, coinAddress) {
+						listOfAddresses = append(listOfAddresses, coinAddress)
 					}
 				}
 			}
 
 			tokensInfo := helpers.RetrieveBasicInformations(chainID, listOfAddresses)
 			for _, address := range listOfAddresses {
-				if token, ok := tokensInfo[address.Hex()]; ok {
+				if token, ok := tokensInfo[utils.ToAddress(address)]; ok {
 					if newToken, err := helpers.SetToken(
 						token.Address,
 						token.Name,

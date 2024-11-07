@@ -3,13 +3,13 @@ package chains
 import (
 	"math"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var GNOSIS = TChain{
 	ID:            100,
 	Name:          `Gnosis`,
+	Type:          `EVM`,
 	LogoURI:       `https://assets.smold.app/chains/100/logo-128.png`,
 	IsTestNet:     false,
 	RpcURI:        `https://rpc.gnosis.gateway.fm`,
@@ -17,7 +17,7 @@ var GNOSIS = TChain{
 	MaxBatchSize:  math.MaxInt64,
 	WeightRatio:   0.3,
 	MulticallContract: TContractData{
-		Address: common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
+		Address: `0xca11bde05977b3631167028862be2a173976ca11`,
 		Block:   0,
 	},
 	Coin: models.TokenListToken{
@@ -28,5 +28,5 @@ var GNOSIS = TChain{
 		ChainID:  100,
 		Decimals: 18,
 	},
-	IgnoredTokens: []common.Address{},
+	IgnoredTokens: []string{},
 }

@@ -212,6 +212,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationExternalList,
 		GeneratorType:    GeneratorToken,
 	},
+	`solanafm`: {
+		Exec:             buildSolanaFMTokenList,
+		Name:             `SolanaFM`,
+		Description:      `A list of tokens available on SolanaFM.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`sushiswap-pairs`: {
 		Exec:             buildSushiswapPairsTokenList,
 		Name:             `SushiSwap (token pairs)`,

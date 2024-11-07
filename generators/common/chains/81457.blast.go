@@ -3,13 +3,13 @@ package chains
 import (
 	"math"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var BLAST = TChain{
 	ID:            81457,
 	Name:          `Blast`,
+	Type:          `EVM`,
 	LogoURI:       `https://assets.smold.app/chains/81457/logo-128.png`,
 	IsTestNet:     false,
 	RpcURI:        `https://rpc.blast.io`,
@@ -17,7 +17,7 @@ var BLAST = TChain{
 	MaxBatchSize:  math.MaxInt64,
 	WeightRatio:   0.05,
 	MulticallContract: TContractData{
-		Address: common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
+		Address: `0xca11bde05977b3631167028862be2a173976ca11`,
 		Block:   0,
 	},
 	Coin: models.TokenListToken{
@@ -28,9 +28,9 @@ var BLAST = TChain{
 		ChainID:  81457,
 		Decimals: 18,
 	},
-	IgnoredTokens: []common.Address{},
-	ExtraTokens: []common.Address{
-		common.HexToAddress(`0x6d5564584b70240691bd6ff7a834b9fab844e0d4`),
-		common.HexToAddress(`0x38aD23b0902D0d86c2F3949BC505194D70B762F5`),
+	IgnoredTokens: []string{},
+	ExtraTokens: []string{
+		`0x6d5564584b70240691bd6ff7a834b9fab844e0d4`,
+		`0x38aD23b0902D0d86c2F3949BC505194D70B762F5`,
 	},
 }

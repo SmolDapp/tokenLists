@@ -3,13 +3,13 @@ package chains
 import (
 	"math"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var SCROLL = TChain{
 	ID:            534352,
 	Name:          `Scroll`,
+	Type:          `EVM`,
 	LogoURI:       `https://assets.smold.app/chains/534352/logo-128.png`,
 	IsTestNet:     false,
 	RpcURI:        `https://1rpc.io/scroll`,
@@ -17,7 +17,7 @@ var SCROLL = TChain{
 	MaxBatchSize:  math.MaxInt64,
 	WeightRatio:   0.05,
 	MulticallContract: TContractData{
-		Address: common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
+		Address: `0xca11bde05977b3631167028862be2a173976ca11`,
 		Block:   0,
 	},
 	Coin: models.TokenListToken{
@@ -28,5 +28,5 @@ var SCROLL = TChain{
 		ChainID:  534352,
 		Decimals: 18,
 	},
-	IgnoredTokens: []common.Address{},
+	IgnoredTokens: []string{},
 }

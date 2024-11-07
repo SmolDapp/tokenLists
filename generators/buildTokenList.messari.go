@@ -4,7 +4,6 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
@@ -65,11 +64,11 @@ func fetchMessariTokenList() []models.TokenListToken {
 				if !chains.IsChainIDSupported(chainID) {
 					continue
 				}
-				if chains.IsTokenIgnored(chainID, common.HexToAddress(platformData.ContractAddress)) {
+				if chains.IsTokenIgnored(chainID, platformData.ContractAddress) {
 					continue
 				}
 				if newToken, err := helpers.SetToken(
-					common.HexToAddress(platformData.ContractAddress),
+					platformData.ContractAddress,
 					token.Name,
 					token.Symbol,
 					logoURI,

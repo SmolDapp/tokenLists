@@ -3,13 +3,13 @@ package chains
 import (
 	"math"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var POLYGON_ZKEVM = TChain{
 	ID:            1101,
 	Name:          `Polygon ZKEvm`,
+	Type:          `EVM`,
 	LogoURI:       `https://assets.smold.app/chains/1101/logo-128.png`,
 	IsTestNet:     false,
 	RpcURI:        `https://endpoints.omniatech.io/v1/polygon-zkevm/mainnet/public`,
@@ -17,7 +17,7 @@ var POLYGON_ZKEVM = TChain{
 	MaxBatchSize:  math.MaxInt64,
 	WeightRatio:   0.05,
 	MulticallContract: TContractData{
-		Address: common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
+		Address: `0xca11bde05977b3631167028862be2a173976ca11`,
 		Block:   0,
 	},
 	Coin: models.TokenListToken{
@@ -28,5 +28,5 @@ var POLYGON_ZKEVM = TChain{
 		ChainID:  1101,
 		Decimals: 18,
 	},
-	IgnoredTokens: []common.Address{},
+	IgnoredTokens: []string{},
 }

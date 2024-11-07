@@ -4,14 +4,14 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 // GetKey returns the key of a token in a specific format to make it sortable
-func GetKey(chainID uint64, address common.Address) string {
+func GetKey(chainID uint64, address string) string {
 	chainIDStr := strconv.FormatUint(chainID, 10)
 	chainIDStr = strings.Repeat("0", 18-len(chainIDStr)) + chainIDStr
-	return chainIDStr + `_` + address.Hex()
+	return chainIDStr + `_` + utils.ToAddress(address)
 }
 
 // SafeString returns the provided variable or a fallback if it is empty
@@ -30,14 +30,9 @@ func SafeInt(value int, fallback int) int {
 	return value
 }
 
-// ToAddress convert a string to a checksummed address
-func ToAddress(value string) string {
-	return common.HexToAddress(value).Hex()
-}
-
-func IncludesAddress(slice []string, value common.Address) bool {
+func IncludesAddress(slice []string, value string) bool {
 	for _, item := range slice {
-		if common.HexToAddress(item).Hex() == value.Hex() {
+		if strings.EqualFold(item, value) {
 			return true
 		}
 	}

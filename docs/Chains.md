@@ -27,7 +27,7 @@ Our project supports the following chains:
 - Scroll (ChainID: 534352)
 - Zora (ChainID: 7777777)
 - Rari (ChainID: 1380012617)
-
+- Solana (ChainID: 1151111081099710)
 
 ## Adding a New Supported Chain
 
@@ -37,6 +37,7 @@ To add a new supported chain:
 2. Add the new chain to the `CHAINS` map in `config.go`.
 
 Example of adding a new chain:
+
 ```go
 var NEW_CHAIN = TChain{
     ID:            12345,
@@ -59,9 +60,9 @@ var NEW_CHAIN = TChain{
         Decimals: 18,
         LogoURI:  "https://example.com/new_chain_coin_logo.png",
     },
-    BlacklistedVaults: []common.Address{},
-    ExtraTokens:       []common.Address{},
-    IgnoredTokens:     []common.Address{},
+    BlacklistedVaults: []string{},
+    ExtraTokens:       []string{},
+    IgnoredTokens:     []string{},
 }
 
 // In config.go
@@ -73,10 +74,10 @@ var CHAINS = map[uint64]TChain{
 
 3. Some generators might need to be updated/added to support the new chain.
 
-
 ## TChain Struct Explanation
 
 The `TChain` struct contains essential information about each supported chain:
+
 ```go
 type TChain struct {
 	ID uint64 // The unique identifier for the chain (ChainID)
@@ -89,8 +90,8 @@ type TChain struct {
 	IsTestNet bool // Boolean indicating whether the chain is a testnet
 	MulticallContract TContractData // Information about the Multicall contract on this chain
 	Coin models.TokenListToken // Details about the native coin of the chain
-	BlacklistedVaults []common.Address // List of addresses for blacklisted vaults
-	ExtraTokens []common.Address // Additional token addresses to include
-	IgnoredTokens []common.Address // Token addresses to ignore during processing
+	BlacklistedVaults []string // List of addresses for blacklisted vaults
+	ExtraTokens []string // Additional token addresses to include
+	IgnoredTokens []string // Token addresses to ignore during processing
 }
 ```

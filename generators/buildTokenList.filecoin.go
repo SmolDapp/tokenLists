@@ -20,7 +20,7 @@ func fetchFilscanTokens(chainID uint64) []models.TokenListToken {
 	}
 
 	explorerBaseUri := `https://api-v2.filscan.io/api/v1/ERC20List`
-	tokenAddresses := []common.Address{}
+	tokenAddresses := []string{}
 	tokenIcons := map[string]string{}
 
 	uri := explorerBaseUri
@@ -30,7 +30,7 @@ func fetchFilscanTokens(chainID uint64) []models.TokenListToken {
 		if token.MarketCap == `0` || token.MarketCap == `` {
 			continue
 		}
-		tokenAddresses = append(tokenAddresses, common.HexToAddress(token.Address))
+		tokenAddresses = append(tokenAddresses, token.Address)
 		tokenIcons[common.HexToAddress(token.Address).Hex()] = token.LogoURI
 	}
 	return helpers.GetTokensFromAddressesWithIcons(chainID, tokenAddresses, tokenIcons)

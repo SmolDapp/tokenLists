@@ -8,6 +8,7 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 type TCoingeckoList struct {
@@ -49,7 +50,7 @@ func fetchCoingeckoLegacyListLogoURI() map[string]string {
 	return logoURIList
 }
 
-func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []models.TokenListToken {
+func handleCoingeckoTokenList(tokensPerChainID map[uint64][]string) []models.TokenListToken {
 	logoURIs := fetchCoingeckoLegacyListLogoURI()
 	tokensForChainIDSyncMap := helpers.InitSyncMap(tokensPerChainID)
 
@@ -57,19 +58,19 @@ func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []mo
 	perChainWG := sync.WaitGroup{}
 	perChainWG.Add(len(tokensPerChainID))
 	for chainID, list := range tokensPerChainID {
-		go func(chainID uint64, list []common.Address) {
+		go func(chainID uint64, list []string) {
 			defer perChainWG.Done()
 			syncMapRaw, _ := tokensForChainIDSyncMap.Load(chainID)
 			syncMap := syncMapRaw.([]models.TokenListToken)
 
 			tokensInfo := helpers.RetrieveBasicInformations(chainID, list)
 			for _, address := range list {
-				if token, ok := tokensInfo[address.Hex()]; ok {
+				if token, ok := tokensInfo[utils.ToAddress(address)]; ok {
 					if newToken, err := helpers.SetToken(
 						token.Address,
 						token.Name,
 						token.Symbol,
-						helpers.SafeString(logoURIs[strconv.FormatInt(int64(chainID), 10)+`_`+token.Address.Hex()], ``),
+						helpers.SafeString(logoURIs[strconv.FormatInt(int64(chainID), 10)+`_`+common.HexToAddress(token.Address).Hex()], ``),
 						chainID,
 						int(token.Decimals),
 					); err == nil {
@@ -86,7 +87,7 @@ func handleCoingeckoTokenList(tokensPerChainID map[uint64][]common.Address) []mo
 }
 
 func fetchCoingeckoTokenList() []models.TokenListToken {
-	tokensPerChainID := make(map[uint64][]common.Address)
+	tokensPerChainID := make(map[uint64][]string)
 	list := helpers.FetchJSON[[]TCoingeckoList](`https://api.coingecko.com/api/v3/coins/list?include_platform=true`)
 
 	for _, v := range list {
@@ -99,13 +100,13 @@ func fetchCoingeckoTokenList() []models.TokenListToken {
 			if !chains.IsChainIDSupported(chainID) {
 				continue
 			}
-			if chains.IsTokenIgnored(chainID, common.HexToAddress(addressOnPlatform)) {
+			if chains.IsTokenIgnored(chainID, common.HexToAddress(addressOnPlatform).Hex()) {
 				continue
 			}
 			if _, ok := tokensPerChainID[chainID]; !ok {
-				tokensPerChainID[chainID] = []common.Address{}
+				tokensPerChainID[chainID] = []string{}
 			}
-			tokensPerChainID[chainID] = append(tokensPerChainID[chainID], common.HexToAddress(addressOnPlatform))
+			tokensPerChainID[chainID] = append(tokensPerChainID[chainID], common.HexToAddress(addressOnPlatform).Hex())
 		}
 	}
 	return handleCoingeckoTokenList(tokensPerChainID)

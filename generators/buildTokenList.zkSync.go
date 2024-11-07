@@ -1,15 +1,15 @@
 package main
 
 import (
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 func handleZkSyncTokenList(
 	chainID uint64,
-	tokenAddresses []common.Address,
+	tokenAddresses []string,
 	tokenIcons map[string]string,
 ) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddressesWithIcons(chainID, tokenAddresses, tokenIcons)
@@ -36,13 +36,13 @@ func fetchZkSyncTokenList() []models.TokenListToken {
 
 	baseAPIEndpoint := `https://block-explorer-api.mainnet.zksync.io/`
 	nextPageURI := `tokens?page=1&limit=100&minLiquidity=0`
-	tokenAddresses := []common.Address{}
+	tokenAddresses := []string{}
 	tokenIcons := make(map[string]string)
 	for i := 0; i < 40; i++ {
 		response := helpers.FetchJSON[TZkSyncAPIResponse](baseAPIEndpoint + nextPageURI)
 		for _, token := range response.Items {
-			tokenAddresses = append(tokenAddresses, common.HexToAddress(token.Address))
-			tokenIcons[common.HexToAddress(token.Address).Hex()] = token.IconURI
+			tokenAddresses = append(tokenAddresses, token.Address)
+			tokenIcons[utils.ToAddress(token.Address)] = token.IconURI
 		}
 		nextPageURI = response.Links.Next
 		if nextPageURI == `` {

@@ -3,7 +3,6 @@ package main
 import (
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
@@ -54,9 +53,9 @@ func fetchLifiTokenList() []models.TokenListToken {
 
 		logs.Info(`Fetching Lifi token list for chainID: ` + strconv.FormatUint(chainID, 10))
 		list := helpers.FetchJSON[[]TLifiTokenData](uri)
-		tokenAddresses := []common.Address{}
+		tokenAddresses := []string{}
 		for _, token := range list {
-			tokenAddresses = append(tokenAddresses, common.HexToAddress(token.Address))
+			tokenAddresses = append(tokenAddresses, token.Address)
 		}
 		tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 		tokenList = append(tokenList, chains.CHAINS[chainID].Coin)

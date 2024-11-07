@@ -3,12 +3,12 @@ package main
 import (
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/gocolly/colly"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 // L1 and L2 use a different code
@@ -75,7 +75,7 @@ var BASE_EXPLORERS_URI = map[uint64]etherscanSASExplorers{
 	},
 }
 
-func handleScanTokenList(chainID uint64, tokenAddresses []common.Address, imageURI []string) []models.TokenListToken {
+func handleScanTokenList(chainID uint64, tokenAddresses []string, imageURI []string) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	return tokenList
@@ -84,7 +84,7 @@ func handleScanTokenList(chainID uint64, tokenAddresses []common.Address, imageU
 func fetchScanTokenListForL2(chainID uint64, currentPage uint8) []models.TokenListToken {
 	explorerBaseUri := BASE_EXPLORERS_URI[chainID].BaseURL
 	imageURI := []string{}
-	tokens := []common.Address{}
+	tokens := []string{}
 	c := colly.NewCollector(
 		colly.UserAgent(`Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36`),
 	)
@@ -97,7 +97,7 @@ func fetchScanTokenListForL2(chainID uint64, currentPage uint8) []models.TokenLi
 		e.ForEach("a.text-primary", func(i int, h *colly.HTMLElement) {
 			tokenHref := h.Attr("href")
 			tokenAddress := tokenHref[7:]
-			tokens = append(tokens, common.HexToAddress(tokenAddress))
+			tokens = append(tokens, utils.ToAddress(tokenAddress))
 		})
 	})
 	c.OnError(func(r *colly.Response, e error) {
@@ -114,7 +114,7 @@ func fetchScanTokenListForL2(chainID uint64, currentPage uint8) []models.TokenLi
 func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []models.TokenListToken {
 	explorerBaseUri := BASE_EXPLORERS_URI[chainID].BaseURL
 	imageURI := []string{}
-	tokens := []common.Address{}
+	tokens := []string{}
 	c := colly.NewCollector(
 		colly.UserAgent(`Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36`),
 	)
@@ -127,7 +127,7 @@ func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []models.TokenLi
 		})
 		tokenHref := e.Attr("href")
 		tokenAddress := tokenHref[7:]
-		tokens = append(tokens, common.HexToAddress(tokenAddress))
+		tokens = append(tokens, utils.ToAddress(tokenAddress))
 	})
 	c.OnError(func(r *colly.Response, e error) {
 		logs.Error(`Error fetching token list for chainID: ` + strconv.Itoa(int(chainID)) + ` - ` + e.Error() + ` on page: ` + explorerBaseUri + `/tokens?p=` + strconv.Itoa(int(currentPage)))

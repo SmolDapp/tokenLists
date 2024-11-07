@@ -4,6 +4,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 type TBebopTokenData struct {
@@ -78,15 +79,15 @@ func fetchBebopTokenList() []models.TokenListToken {
 		list := helpers.FetchJSON[models.TokenListData[TBebopTokenListToken]](`https://api.bebop.xyz/pmm/` + bebopMapNetworkChainIDToName(chainID) + `/v3/tokenlist?active_only=true`)
 
 		tokenMap := map[string]TBebopTokenListToken{}
-		tokenList := []common.Address{}
+		tokenList := []string{}
 		for _, token := range list.Tokens {
 			tokenMap[token.Address] = token
-			tokenList = append(tokenList, common.HexToAddress(token.Address))
+			tokenList = append(tokenList, common.HexToAddress(token.Address).Hex())
 		}
 
 		tokensInfo := helpers.RetrieveBasicInformations(chainID, tokenList)
 		for _, existingToken := range list.Tokens {
-			if token, ok := tokensInfo[common.HexToAddress(existingToken.Address).Hex()]; ok {
+			if token, ok := tokensInfo[utils.ToAddress(existingToken.Address)]; ok {
 				if newToken, err := helpers.SetToken(
 					token.Address,
 					helpers.SafeString(token.Name, existingToken.Name),

@@ -3,13 +3,13 @@ package chains
 import (
 	"math"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var BASE = TChain{
 	ID:            8453,
 	Name:          `Base`,
+	Type:          `EVM`,
 	LogoURI:       `https://assets.smold.app/chains/8453/logo-128.png`,
 	IsTestNet:     false,
 	RpcURI:        `https://mainnet.base.org/`,
@@ -17,7 +17,7 @@ var BASE = TChain{
 	MaxBatchSize:  math.MaxInt64,
 	WeightRatio:   0.05,
 	MulticallContract: TContractData{
-		Address: common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
+		Address: `0xca11bde05977b3631167028862be2a173976ca11`,
 		Block:   0,
 	},
 	Coin: models.TokenListToken{
@@ -28,5 +28,5 @@ var BASE = TChain{
 		ChainID:  8453,
 		Decimals: 18,
 	},
-	IgnoredTokens: []common.Address{},
+	IgnoredTokens: []string{},
 }

@@ -3,7 +3,6 @@ package main
 import (
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
@@ -67,7 +66,7 @@ func fetchPortalsTokenList() []models.TokenListToken {
 				logoURI = token.Images[0]
 			}
 			if newToken, err := helpers.SetToken(
-				common.HexToAddress(token.Address),
+				token.Address,
 				token.Name,
 				token.Symbol,
 				logoURI,

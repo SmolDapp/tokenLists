@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/logs"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 const DEFAULT_SMOL_NOT_FOUND = `https://assets.smold.app/not-found.png`
@@ -44,15 +44,16 @@ func GetSmolAssetsPerChain(chainID uint64) []string {
 	return smoldAssetsPerChain[chainID]
 }
 
-func UseIcon(chainID uint64, tokenName string, tokenAddress common.Address, fallback string) string {
+func UseIcon(chainID uint64, tokenName string, tokenAddress string, fallback string) string {
+	tokenAddress = utils.ToAddress(tokenAddress)
 	smolAssets := GetSmolAssetsPerChain(chainID)
 
 	if IncludesAddress(smolAssets, tokenAddress) {
-		return `https://assets.smold.app/api/token/` + strconv.FormatUint(chainID, 10) + `/` + tokenAddress.Hex() + `/logo-128.png`
+		return `https://assets.smold.app/api/token/` + strconv.FormatUint(chainID, 10) + `/` + tokenAddress + `/logo-128.png`
 	}
 
 	if shouldLogAssetError {
-		logs.Info(`Missing icon for token ` + tokenName + ` (` + tokenAddress.Hex() + `) on chain ` + strconv.FormatUint(chainID, 10))
+		logs.Info(`Missing icon for token ` + tokenName + ` (` + tokenAddress + `) on chain ` + strconv.FormatUint(chainID, 10))
 	}
 	if strings.Contains(fallback, `assets.coingecko.com`) && strings.Contains(fallback, `/thumb/`) {
 		fallback = strings.Replace(fallback, `/thumb/`, `/large/`, 1)
@@ -62,7 +63,7 @@ func UseIcon(chainID uint64, tokenName string, tokenAddress common.Address, fall
 	}
 
 	if _, ok := ExistingTokenLogoURI[chainID]; ok {
-		if existingLogo, ok := ExistingTokenLogoURI[chainID][tokenAddress.Hex()]; ok {
+		if existingLogo, ok := ExistingTokenLogoURI[chainID][tokenAddress]; ok {
 			fallback = existingLogo
 		}
 	}

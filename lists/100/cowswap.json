@@ -1,10 +1,10 @@
 {
   "name": "CoW Swap",
   "description": "",
-  "timestamp": "2024-10-20T00:59:40Z",
+  "timestamp": "2024-11-07T13:04:50+01:00",
   "version": {
     "major": 0,
-    "minor": 19,
+    "minor": 20,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/cowprotocol/cowswap/c5974fb8a45d678029ecb013dab33722e152daaa/src/assets/cow-swap/cow_v2.svg",
@@ -76,6 +76,14 @@
       "logoURI": "https://tokens.1inch.io/0x6b175474e89094c44da98b954eedeac495271d0f.png",
       "chainId": 100,
       "decimals": 18
+    },
+    {
+      "address": "0x4ECaBa5870353805a9F068101A40E0f32ed605C6",
+      "name": "Tether USD on xDai",
+      "symbol": "USDT",
+      "logoURI": "https://tokens.1inch.io/0xdac17f958d2ee523a2206206994597c13d831ec7.png",
+      "chainId": 100,
+      "decimals": 6
     },
     {
       "address": "0x4d18815D14fe5c3304e87B3FA18318baa5c23820",
@@ -237,6 +245,13 @@
       "name": "Backed Coinbase Global",
       "symbol": "bCOIN",
       "logoURI": "https://assets.coingecko.com/coins/images/31872/large/b-COIN-200x200.png?1695351481",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xc791240D1F2dEf5938E2031364Ff4ed887133C3d",
+      "name": "Rocket Pool ETH from Mainnet",
+      "symbol": "rETH",
       "chainId": 100,
       "decimals": 18
     },

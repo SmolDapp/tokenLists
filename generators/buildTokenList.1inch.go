@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 type T1InchTokenData struct {
@@ -38,9 +38,9 @@ func fetch1InchTokenList() []models.TokenListToken {
 		}
 
 		list := helpers.FetchJSON[models.TokenListData[models.TokenListToken]](uri)
-		tokenAddresses := []common.Address{}
+		tokenAddresses := []string{}
 		for _, token := range list.Tokens {
-			tokenAddresses = append(tokenAddresses, common.HexToAddress(token.Address))
+			tokenAddresses = append(tokenAddresses, utils.ToAddress(token.Address))
 		}
 		tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 		tokenList = append(tokenList, chains.CHAINS[chainID].Coin)

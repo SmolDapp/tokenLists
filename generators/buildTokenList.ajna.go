@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
@@ -10,14 +11,14 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
-func handleAjnaTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
+func handleAjnaTokenList(chainID uint64, tokenAddresses []string) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	return tokenList
 }
 
 func fetchAjnaTokenList(chainID uint64, sugarAddress common.Address) []models.TokenListToken {
-	client := ethereum.GetRPC(chainID)
+	client := ethereum.GetRPC(chainID).(*ethclient.Client)
 	ajnaPoolFactory, err := contracts.NewAjnaPoolFactoryCaller(sugarAddress, client)
 	if err != nil {
 		logs.Error(err)
@@ -60,9 +61,9 @@ func fetchAjnaTokenList(chainID uint64, sugarAddress common.Address) []models.To
 	** We are supposed to get everything, so we can now remove the duplicates
 	** and build the token list.
 	**************************************************************************/
-	addressesSlice := []common.Address{}
+	addressesSlice := []string{}
 	for address := range addressesMap {
-		addressesSlice = append(addressesSlice, address)
+		addressesSlice = append(addressesSlice, address.Hex())
 	}
 	return handleAjnaTokenList(chainID, addressesSlice)
 }

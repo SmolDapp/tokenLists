@@ -3,13 +3,13 @@ package chains
 import (
 	"math"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var METIS = TChain{
 	ID:            1088,
 	Name:          `Metis`,
+	Type:          `EVM`,
 	LogoURI:       `https://assets.smold.app/chains/1088/logo-128.png`,
 	IsTestNet:     false,
 	RpcURI:        `https://metis-mainnet.public.blastapi.io`,
@@ -17,7 +17,7 @@ var METIS = TChain{
 	MaxBatchSize:  math.MaxInt64,
 	WeightRatio:   0.1,
 	MulticallContract: TContractData{
-		Address: common.HexToAddress(`0xca11bde05977b3631167028862be2a173976ca11`),
+		Address: `0xca11bde05977b3631167028862be2a173976ca11`,
 		Block:   0,
 	},
 	Coin: models.TokenListToken{
@@ -28,5 +28,5 @@ var METIS = TChain{
 		Decimals: 18,
 		ChainID:  1088,
 	},
-	IgnoredTokens: []common.Address{},
+	IgnoredTokens: []string{},
 }

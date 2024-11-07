@@ -1,22 +1,22 @@
 package main
 
 import (
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 var ROUTESCAN_URI = map[uint64]string{
 	81457: `https://cdn.routescan.io/api/evm/all/erc20`,
 }
 
-func handleRouteScanTokenList(chainID uint64, tokenAddresses []common.Address, logos map[common.Address]string) []models.TokenListToken {
+func handleRouteScanTokenList(chainID uint64, tokenAddresses []string, logos map[string]string) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 
 	for i, token := range tokenList {
-		if logo, ok := logos[common.HexToAddress(token.Address)]; ok {
+		if logo, ok := logos[utils.ToAddress(token.Address)]; ok {
 			if logo != `` {
 				tokenList[i].LogoURI = logo
 			}
@@ -44,8 +44,8 @@ func fetchRouteScanTokenList(chainID uint64) []models.TokenListToken {
 
 	explorerBaseURI := ROUTESCAN_URI[chainID]
 	nextPageURI := `?count=false&includedChainIds=81457&limit=1000&sort=marketCap%2Cdesc`
-	tokens := []common.Address{}
-	logos := map[common.Address]string{}
+	tokens := []string{}
+	logos := map[string]string{}
 	response := helpers.FetchJSON[TRoutescanAPIResponse](explorerBaseURI + nextPageURI)
 	for _, token := range response.Items {
 		if token.Detail.Type == `ERC-721` || token.Detail.Type == `ERC-1155` {
@@ -60,8 +60,8 @@ func fetchRouteScanTokenList(chainID uint64) []models.TokenListToken {
 		if token.Transfers.Last24h == 0 {
 			continue
 		}
-		tokens = append(tokens, common.HexToAddress(token.Address))
-		logos[common.HexToAddress(token.Address)] = token.Detail.Icon
+		tokens = append(tokens, token.Address)
+		logos[utils.ToAddress(token.Address)] = token.Detail.Icon
 	}
 
 	return handleRouteScanTokenList(chainID, tokens, logos)

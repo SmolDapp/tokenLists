@@ -9,9 +9,9 @@ import (
 )
 
 func handleStaticTokenList(chainID uint64, tokens []static.TStaticElement) []models.TokenListToken {
-	tokenAddresses := []common.Address{}
+	tokenAddresses := []string{}
 	for _, token := range tokens {
-		tokenAddresses = append(tokenAddresses, token.Address)
+		tokenAddresses = append(tokenAddresses, common.HexToAddress(token.Address).Hex())
 	}
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)

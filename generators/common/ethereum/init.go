@@ -8,15 +8,17 @@ import (
 	"strconv"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/ethclient"
+	solRPC "github.com/gagliardetto/solana-go/rpc"
 	"github.com/joho/godotenv"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
 // RPC contains the ethclient.Client for a specific chainID
-var RPC = map[uint64]*ethclient.Client{}
+var RPC = map[uint64]interface{}{} // Stores either *ethclient.Client or *solRPC.Client
 
 // MulticallClientForChainID holds the multicall client for a specific chainID
 var MulticallClientForChainID = make(map[uint64]TEthMultiCaller)
@@ -39,26 +41,35 @@ func Init() {
 
 	// Init the RPC clients
 	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
-		client, err := ethclient.Dial(GetRPCURI(chainID))
-		if err != nil {
-			logs.Warning(`Missing environment variable RPC_URI_FOR_` + strconv.FormatUint(chainID, 10) + ` with ` + RPC_ENDPOINTS[chainID])
-			os.Setenv(`RPC_URI_FOR_`+strconv.FormatUint(chainID, 10), chains.CHAINS[chainID].RpcURI)
-			RPC_ENDPOINTS[chainID] = useEnv(`RPC_URI_FOR_`+strconv.FormatUint(chainID, 10), RPC_ENDPOINTS[chainID])
-			client, err = ethclient.Dial(RPC_ENDPOINTS[chainID])
+		if chains.CHAINS[chainID].Type == `EVM` {
+			client, err := ethclient.Dial(GetRPCURI(chainID))
 			if err != nil {
-				logs.Error(err)
-				continue
+				logs.Warning(`Missing environment variable RPC_URI_FOR_` + strconv.FormatUint(chainID, 10) + ` with ` + RPC_ENDPOINTS[chainID])
+				os.Setenv(`RPC_URI_FOR_`+strconv.FormatUint(chainID, 10), chains.CHAINS[chainID].RpcURI)
+				RPC_ENDPOINTS[chainID] = useEnv(`RPC_URI_FOR_`+strconv.FormatUint(chainID, 10), RPC_ENDPOINTS[chainID])
+				client, err = ethclient.Dial(RPC_ENDPOINTS[chainID])
+				if err != nil {
+					logs.Error(err)
+					continue
+				}
 			}
+			RPC[chainID] = client
+		} else {
+			RPC[chainID] = solRPC.New(GetRPCURI(chainID))
 		}
-		RPC[chainID] = client
 	}
 
 	// Create the multicall client for all the chains supported by yDaemon
 	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
-		MulticallClientForChainID[chainID] = NewMulticall(
-			GetRPCURI(chainID),
-			chains.CHAINS[chainID].MulticallContract.Address,
-		)
+		if chains.CHAINS[chainID].Type == `EVM` {
+			if chains.CHAINS[chainID].MulticallContract.Address == `` {
+				continue
+			}
+			MulticallClientForChainID[chainID] = NewMulticall(
+				GetRPCURI(chainID),
+				common.HexToAddress(chains.CHAINS[chainID].MulticallContract.Address),
+			)
+		}
 	}
 }
 
@@ -73,7 +84,7 @@ func useEnv(envName string, fallback string) string {
 }
 
 // GetRPC returns the current connection for a specific chain
-func GetRPC(chainID uint64) *ethclient.Client {
+func GetRPC(chainID uint64) interface{} {
 	return RPC[chainID]
 }
 

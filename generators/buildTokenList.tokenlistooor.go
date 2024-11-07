@@ -4,10 +4,10 @@ import (
 	"math"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 type TSmolAssetsList struct {
@@ -77,12 +77,12 @@ func buildTokenListooorList() {
 				allTokens[token.ChainID] = make(map[string]models.TokenListToken)
 			}
 
-			if existingToken, ok := allTokens[token.ChainID][helpers.ToAddress(token.Address)]; ok {
+			if existingToken, ok := allTokens[token.ChainID][utils.ToAddress(token.Address)]; ok {
 				newOccurence := existingToken.Occurrence
 				if newOccurence != math.MaxInt32 {
 					foundInExtraTokens := false
 					for _, extraToken := range chains.CHAINS[token.ChainID].ExtraTokens {
-						if common.HexToAddress(token.Address) == extraToken {
+						if strings.EqualFold(token.Address, extraToken) {
 							foundInExtraTokens = true
 							break
 						}
@@ -98,7 +98,7 @@ func buildTokenListooorList() {
 					newOccurence += 1
 				}
 
-				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
+				allTokens[token.ChainID][utils.ToAddress(token.Address)] = models.TokenListToken{
 					Address:    existingToken.Address,
 					Name:       helpers.SafeString(existingToken.Name, token.Name),
 					Symbol:     helpers.SafeString(existingToken.Symbol, token.Symbol),
@@ -110,7 +110,7 @@ func buildTokenListooorList() {
 			} else {
 				tokenInitialOccurence := initialCount
 				for _, extraToken := range chains.CHAINS[token.ChainID].ExtraTokens {
-					if common.HexToAddress(token.Address) == extraToken {
+					if strings.EqualFold(token.Address, extraToken) {
 						tokenInitialOccurence = math.MaxInt32
 					}
 				}
@@ -118,8 +118,8 @@ func buildTokenListooorList() {
 					tokenInitialOccurence = math.MaxInt32
 				}
 
-				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
-					Address:    helpers.ToAddress(token.Address),
+				allTokens[token.ChainID][utils.ToAddress(token.Address)] = models.TokenListToken{
+					Address:    utils.ToAddress(token.Address),
 					Name:       helpers.SafeString(token.Name, ``),
 					Symbol:     helpers.SafeString(token.Symbol, ``),
 					LogoURI:    helpers.SafeString(token.LogoURI, ``),

@@ -3,13 +3,13 @@ package chains
 import (
 	"math"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
 var ZKSYNC = TChain{
 	ID:            324,
 	Name:          `ZKSync`,
+	Type:          `EVM`,
 	LogoURI:       `https://assets.smold.app/chains/324/logo-128.png`,
 	IsTestNet:     false,
 	RpcURI:        `https://mainnet.era.zksync.io`,
@@ -17,7 +17,7 @@ var ZKSYNC = TChain{
 	MaxBatchSize:  math.MaxInt64,
 	WeightRatio:   0.1,
 	MulticallContract: TContractData{
-		Address: common.HexToAddress(`0xF9cda624FBC7e059355ce98a31693d299FACd963`),
+		Address: `0xF9cda624FBC7e059355ce98a31693d299FACd963`,
 		Block:   0,
 	},
 	Coin: models.TokenListToken{
@@ -28,5 +28,5 @@ var ZKSYNC = TChain{
 		ChainID:  324,
 		Decimals: 18,
 	},
-	IgnoredTokens: []common.Address{},
+	IgnoredTokens: []string{},
 }

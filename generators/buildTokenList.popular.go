@@ -10,6 +10,7 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 func buildPopularList() {
@@ -107,12 +108,12 @@ func buildPopularList() {
 				allTokens[token.ChainID] = make(map[string]models.TokenListToken)
 			}
 
-			if existingToken, ok := allTokens[token.ChainID][helpers.ToAddress(token.Address)]; ok {
+			if existingToken, ok := allTokens[token.ChainID][utils.ToAddress(token.Address)]; ok {
 				newOccurence := existingToken.OccurrenceFloat
 				if newOccurence != math.MaxInt32 {
 					foundInExtraTokens := false
 					for _, extraToken := range chains.CHAINS[token.ChainID].ExtraTokens {
-						if common.HexToAddress(token.Address) == extraToken {
+						if strings.EqualFold(token.Address, extraToken) {
 							foundInExtraTokens = true
 							break
 						}
@@ -127,7 +128,7 @@ func buildPopularList() {
 				} else {
 					newOccurence += listWeights[name]
 				}
-				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
+				allTokens[token.ChainID][utils.ToAddress(token.Address)] = models.TokenListToken{
 					Address:         existingToken.Address,
 					Name:            helpers.SafeString(existingToken.Name, token.Name),
 					Symbol:          helpers.SafeString(existingToken.Symbol, token.Symbol),
@@ -139,7 +140,7 @@ func buildPopularList() {
 			} else {
 				tokenInitialOccurence := listWeights[name]
 				for _, extraToken := range chains.CHAINS[token.ChainID].ExtraTokens {
-					if common.HexToAddress(token.Address) == extraToken {
+					if strings.EqualFold(token.Address, extraToken) {
 						tokenInitialOccurence = math.MaxInt32
 					}
 				}
@@ -147,8 +148,8 @@ func buildPopularList() {
 					tokenInitialOccurence = math.MaxInt32
 				}
 
-				allTokens[token.ChainID][helpers.ToAddress(token.Address)] = models.TokenListToken{
-					Address:         helpers.ToAddress(token.Address),
+				allTokens[token.ChainID][utils.ToAddress(token.Address)] = models.TokenListToken{
+					Address:         utils.ToAddress(token.Address),
 					Name:            helpers.SafeString(token.Name, ``),
 					Symbol:          helpers.SafeString(token.Symbol, ``),
 					LogoURI:         helpers.SafeString(token.LogoURI, ``),
@@ -157,10 +158,6 @@ func buildPopularList() {
 					OccurrenceFloat: tokenInitialOccurence,
 				}
 			}
-
-			// if token.ChainID == 10 {
-			// 	logs.Info(`Token ` + token.Name + ` found in ` + name + ` with weight ` + strconv.FormatFloat(listWeights[name], 'f', -1, 64))
-			// }
 		}
 	}
 
@@ -193,5 +190,7 @@ func buildPopularList() {
 
 	// Update the chainlist with the new tokens
 	tokenList = helpers.LoadTokenListFromJsonFile(`popular.json`)
+
+	// Create the chainList
 	helpers.SaveChainListInJsonFile(tokenList)
 }

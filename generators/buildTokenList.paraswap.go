@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 type TParaswapTokenData struct {
@@ -35,15 +35,15 @@ func fetchParaswapTokenList() []models.TokenListToken {
 			continue
 		}
 
-		tokenAddresses := []common.Address{}
+		tokenAddresses := []string{}
 		list := helpers.FetchJSON[TParaswapList](uri)
 		for _, v := range list.Tokens {
-			tokenAddresses = append(tokenAddresses, common.HexToAddress(v.Address))
+			tokenAddresses = append(tokenAddresses, v.Address)
 		}
-		tokensInfo := helpers.RetrieveBasicInformations(chainID, tokenAddresses)
 
+		tokensInfo := helpers.RetrieveBasicInformations(chainID, tokenAddresses)
 		for _, existingToken := range list.Tokens {
-			if token, ok := tokensInfo[common.HexToAddress(existingToken.Address).Hex()]; ok {
+			if token, ok := tokensInfo[utils.ToAddress(existingToken.Address)]; ok {
 				logoURI := existingToken.LogoURI
 				if logoURI == `https://cdn.paraswap.io/token/token.png` {
 					logoURI = ``

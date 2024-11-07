@@ -3,6 +3,7 @@ package ethereum
 import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
+	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
 /**************************************************************************************************
@@ -122,14 +123,15 @@ func getDecimals(name string, contractAddress common.Address) Call {
 ** - a list of TERC20Token containing the basic information for the tokens
 **************************************************************************************************/
 type TERC20 struct {
-	Address  common.Address
+	Address  string
 	Name     string
 	Symbol   string
 	ChainID  uint64
 	Decimals uint64
+	LogoURI  string
 }
 
-func FetchBasicInformations(chainID uint64, tokens []common.Address) map[string]*TERC20 {
+func FetchBasicInformations(chainID uint64, tokens []string) map[string]*TERC20 {
 	/**********************************************************************************************
 	** The first step is to prepare the multicall, connecting to the multicall instance and
 	** preparing the array of calls to send. All calls for all tokens will be send in a single
@@ -138,11 +140,11 @@ func FetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 	caller := MulticallClientForChainID[chainID]
 	calls := []Call{}
 	for _, token := range tokens {
-		calls = append(calls, getName(token.String(), token))
-		calls = append(calls, getBytes32Name(token.String()+`name_bytes_32`, token))
-		calls = append(calls, getSymbol(token.String(), token))
-		calls = append(calls, getBytes32Symbol(token.String()+`symbol_bytes_32`, token))
-		calls = append(calls, getDecimals(token.String(), token))
+		calls = append(calls, getName(token, common.HexToAddress(token)))
+		calls = append(calls, getBytes32Name(token+`name_bytes_32`, common.HexToAddress(token)))
+		calls = append(calls, getSymbol(token, common.HexToAddress(token)))
+		calls = append(calls, getBytes32Symbol(token+`symbol_bytes_32`, common.HexToAddress(token)))
+		calls = append(calls, getDecimals(token, common.HexToAddress(token)))
 	}
 
 	/**********************************************************************************************
@@ -160,19 +162,19 @@ func FetchBasicInformations(chainID uint64, tokens []common.Address) map[string]
 	tokenList := make(map[string]*TERC20)
 	response := caller.ExecuteByBatch(calls, maxBatch, nil)
 	for _, token := range tokens {
-		rawName := response[token.String()+`name`]
-		rawBytes32Name := response[token.String()+`name_bytes_32`+`name`]
-		rawSymbol := response[token.String()+`symbol`]
-		rawBytes32Symbol := response[token.String()+`symbol_bytes_32`+`symbol`]
-		rawDecimals := response[token.String()+`decimals`]
+		rawName := response[token+`name`]
+		rawBytes32Name := response[token+`name_bytes_32`+`name`]
+		rawSymbol := response[token+`symbol`]
+		rawBytes32Symbol := response[token+`symbol_bytes_32`+`symbol`]
+		rawDecimals := response[token+`decimals`]
 
 		newToken := &TERC20{
-			Address:  token,
+			Address:  utils.ToAddress(token),
 			Name:     DecodeString(rawName, DecodeHex(rawBytes32Name, DecodeHex(rawBytes32Symbol, ``))),
 			Symbol:   DecodeString(rawSymbol, DecodeHex(rawBytes32Symbol, ``)),
 			Decimals: DecodeUint64(rawDecimals, 0),
 		}
-		tokenList[token.Hex()] = newToken
+		tokenList[utils.ToAddress(token)] = newToken
 	}
 
 	return tokenList

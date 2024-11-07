@@ -34,7 +34,7 @@ var ALLOW_EMPTY_MARKET_CAP = map[uint64]bool{
 	7777777: true,
 }
 
-func handleBlockScoutTokenList(chainID uint64, tokenAddresses []common.Address) []models.TokenListToken {
+func handleBlockScoutTokenList(chainID uint64, tokenAddresses []string) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	return tokenList
@@ -48,14 +48,14 @@ func fetchBlockScoutV5TokenList(chainID uint64) []models.TokenListToken {
 
 	explorerBaseURI := BLOCKSCOUTV5_URI[chainID]
 	nextPageURI := `/tokens?type=JSON`
-	tokens := []common.Address{}
+	tokens := []string{}
 
 	for i := 0; i < 20; i++ {
 		response := helpers.FetchJSON[TBlockScoutAPIResponse](explorerBaseURI + nextPageURI)
 		for _, token := range response.Items {
 			dataIdentifierHash := strings.Split(token, "data-identifier-hash=\"")[1]
 			dataIdentifierHash = strings.Split(dataIdentifierHash, "\"")[0]
-			tokens = append(tokens, common.HexToAddress(dataIdentifierHash))
+			tokens = append(tokens, common.HexToAddress(dataIdentifierHash).Hex())
 		}
 		nextPageURI = response.NextPage + `&type=JSON`
 	}
@@ -84,7 +84,7 @@ func fetchBlockScoutV6TokenList(chainID uint64) []models.TokenListToken {
 
 	explorerBaseURI := BLOCKSCOUTV6_URI[chainID]
 	nextPageURI := `/api/v2/tokens`
-	tokens := []common.Address{}
+	tokens := []string{}
 
 	for i := 0; i < 40; i++ {
 		response := helpers.FetchJSON[TBlockScoutAPIResponse](explorerBaseURI + nextPageURI)
@@ -97,7 +97,7 @@ func fetchBlockScoutV6TokenList(chainID uint64) []models.TokenListToken {
 					continue
 				}
 			}
-			tokens = append(tokens, common.HexToAddress(token.Address))
+			tokens = append(tokens, common.HexToAddress(token.Address).Hex())
 		}
 		nextPageURI = `/api/v2/tokens?contract_address_hash=` + response.NextPage.ContractAddressHash + `&fiat_value=` + response.NextPage.FiatValue + `&holder_count=` + strconv.Itoa(response.NextPage.HolderCount) + `&is_name_null=` + strconv.FormatBool(response.NextPage.IsNameNull) + `&items_count=` + strconv.Itoa(response.NextPage.ItemsCount) + `&market_cap=` + response.NextPage.MarketCap + `&name=` + response.NextPage.Name
 		nextPageURI = strings.ReplaceAll(nextPageURI, ` `, `%20`)
