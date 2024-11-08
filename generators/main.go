@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
+	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
@@ -34,6 +35,10 @@ func main() {
 				logs.Success(`Done!`)
 			}
 		}
+	} else if (len(os.Args) == 2) && (os.Args[1] == `chainlist`) {
+		tokenList := helpers.LoadTokenListFromJsonFile(`popular.json`)
+		helpers.SaveChainListInJsonFile(tokenList)
+		os.Exit(0)
 	} else {
 		for _, arg := range os.Args[1:] {
 			if _, ok := GENERATORS[arg]; ok {

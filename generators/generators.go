@@ -142,6 +142,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationStatic,
 		GeneratorType:    GeneratorToken,
 	},
+	`jupiter`: {
+		Exec:             buildJupiterTokenList,
+		Name:             `Jupiter`,
+		Description:      `A list of verified tokens available on Jupiter.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`ledger`: {
 		Exec:             buildLedgersTokenList,
 		Name:             `Ledger`,

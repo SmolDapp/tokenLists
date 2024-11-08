@@ -321,6 +321,7 @@ func SaveChainListInJsonFile(
 	** If the list is empty, we skip
 	**************************************************************************/
 	if len(tokenList.NextTokensMap) == 0 {
+		logs.Error(`token list ` + tokenList.Name + ` is empty`)
 		return errors.New(`token list is empty`)
 	}
 
@@ -336,6 +337,9 @@ func SaveChainListInJsonFile(
 		if strings.EqualFold(`0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE`, token.Address) {
 			baseCoinCount++
 		}
+		if strings.EqualFold(`So11111111111111111111111111111111111111111`, token.Address) {
+			baseCoinCount++
+		}
 	}
 	for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
 		chain := chains.CHAINS[chainID]
@@ -343,6 +347,7 @@ func SaveChainListInJsonFile(
 	}
 
 	if len(tokenList.NextTokensMap) <= baseCoinCount {
+		logs.Error(`token list ` + tokenList.Name + ` is empty`)
 		return errors.New(`token list is empty`)
 	}
 
@@ -377,6 +382,7 @@ func SaveChainListInJsonFile(
 	** If there are no changes, we will just return.
 	**************************************************************************/
 	if !shouldBumpMajor && !shouldBumpMinor && !shouldBumpPatch {
+		logs.Error(`no changes detected for ` + tokenList.Name)
 		return errors.New(`no changes detected`)
 	}
 
@@ -423,7 +429,9 @@ func SaveChainListInJsonFile(
 			logs.Info(`ChainID ` + strconv.FormatUint(chainID, 10) + ` is not supported`)
 			continue
 		}
+		logs.Info(`Saving chain list for chainID ` + strconv.FormatUint(chainID, 10))
 		if chains.CHAINS[chainID].IsTestNet {
+			logs.Info(`ChainID ` + strconv.FormatUint(chainID, 10) + ` is a testnet`)
 			continue
 		}
 		chainIDStr := strconv.FormatUint(chainID, 10)
