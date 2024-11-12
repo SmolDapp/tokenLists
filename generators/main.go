@@ -38,6 +38,7 @@ func main() {
 	} else if (len(os.Args) == 2) && (os.Args[1] == `chainlist`) {
 		tokenList := helpers.LoadTokenListFromJsonFile(`popular.json`)
 		helpers.SaveChainListInJsonFile(tokenList)
+		buildSummary()
 		os.Exit(0)
 	} else {
 		for _, arg := range os.Args[1:] {
