@@ -1,10 +1,10 @@
 {
   "name": "CoW Swap",
   "description": "",
-  "timestamp": "2024-11-07T13:04:50+01:00",
+  "timestamp": "2024-12-19T10:22:12Z",
   "version": {
     "major": 0,
-    "minor": 20,
+    "minor": 21,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/cowprotocol/cowswap/c5974fb8a45d678029ecb013dab33722e152daaa/src/assets/cow-swap/cow_v2.svg",
@@ -14,6 +14,21 @@
     "cowswap"
   ],
   "tokens": [
+    {
+      "address": "0x007115416AB6c266329a03B09a8aa39aC2eF7d9d",
+      "name": "Midas BTC Yield Token",
+      "symbol": "mBTC",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/51055/thumb/mbtc.png?1729875716",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x0655977FEb2f289A4aB78af67BAB0d17aAb84367",
+      "name": "Savings crvUSD",
+      "symbol": "scrvUSD",
+      "chainId": 1,
+      "decimals": 18
+    },
     {
       "address": "0x090185f2135308BaD17527004364eBcC2D37e5F6",
       "name": "Spell Token",
@@ -210,6 +225,7 @@
       "address": "0x2a8c22E3b10036f3AEF5875d04f8441d4188b656",
       "name": "Midas Basis Trading Token",
       "symbol": "mBASIS",
+      "logoURI": "https://assets.smold.app/api/token/1/0x2a8c22E3b10036f3AEF5875d04f8441d4188b656/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -382,10 +398,25 @@
       "decimals": 18
     },
     {
+      "address": "0x58D97B57BB95320F9a05dC918Aef65434969c2B2",
+      "name": "Morpho Token",
+      "symbol": "MORPHO",
+      "logoURI": "https://assets.smold.app/api/token/1/0x58D97B57BB95320F9a05dC918Aef65434969c2B2/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x59D9356E565Ab3A36dD77763Fc0d87fEaf85508C",
       "name": "Mountain Protocol USD",
       "symbol": "USDM",
       "logoURI": "https://assets.smold.app/api/token/1/0x59D9356E565Ab3A36dD77763Fc0d87fEaf85508C/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x59a529070fBb61e6D6c91f952CcB7f35c34Cf8Aa",
+      "name": "Asymmetry Finance Token",
+      "symbol": "ASF",
       "chainId": 1,
       "decimals": 18
     },
@@ -1101,7 +1132,7 @@
       "address": "0x177127622c4A00F3d409B75571e12cB3c8973d3c",
       "name": "CoW Protocol Token from Mainnet",
       "symbol": "COW",
-      "logoURI": "https://gnosis.mypinata.cloud/ipfs/Qme9B6jRpGtZsRFcPjHvA5T4ugFuL4c3SzWfxyMPa59AMo",
+      "logoURI": "https://assets.smold.app/api/token/100/0x177127622c4A00F3d409B75571e12cB3c8973d3c/logo-128.png",
       "chainId": 100,
       "decimals": 18
     },
@@ -1247,6 +1278,14 @@
       "decimals": 18
     },
     {
+      "address": "0xCA5d8F8a8d49439357d3CF46Ca2e720702F132b8",
+      "name": "Gyro Dollar",
+      "symbol": "GYD",
+      "logoURI": "https://assets.coingecko.com/coins/images/33428/large/resized_GYD.png?1701772473",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83",
       "name": "USD//C on xDai",
       "symbol": "USDC",
@@ -1363,6 +1402,13 @@
       "decimals": 18
     },
     {
+      "address": "0xeA50f402653c41cAdbaFD1f788341dB7B7F37816",
+      "name": "Savings GYD",
+      "symbol": "sGYD",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0x04D5ddf5f3a8939889F11E97f8c4BB48317F1938",
       "name": "USDz",
       "symbol": "USDz",
@@ -1411,6 +1457,14 @@
       "decimals": 6
     },
     {
+      "address": "0xBAa5CC21fd487B8Fcc2F632f3F4E8D37262a0842",
+      "name": "Morpho Token",
+      "symbol": "MORPHO",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xBAa5CC21fd487B8Fcc2F632f3F4E8D37262a0842/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0xCa72827a3D211CfD8F6b00Ac98824872b72CAb49",
       "name": "Cygnus Global USD",
       "symbol": "cgUSD",
@@ -1430,6 +1484,7 @@
       "address": "0xc694a91e6b071bF030A18BD3053A7fE09B6DaE69",
       "name": "CoW Protocol Token",
       "symbol": "COW",
+      "logoURI": "https://assets.smold.app/api/token/8453/0xc694a91e6b071bF030A18BD3053A7fE09B6DaE69/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1491,7 +1546,7 @@
       "address": "0x69420f9E38a4e60a62224C489be4BF7a94402496",
       "name": "Defi.Money Stablecoin",
       "symbol": "MONEY",
-      "logoURI": "https://coin-images.coingecko.com/coins/images/39230/thumb/_MONEY200p.Logomark.png?1721209171",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x69420f9E38a4e60a62224C489be4BF7a94402496/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -1507,6 +1562,7 @@
       "address": "0xcb8b5CD20BdCaea9a010aC1F8d835824F5C87A04",
       "name": "CoW Protocol Token",
       "symbol": "COW",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xcb8b5CD20BdCaea9a010aC1F8d835824F5C87A04/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     }

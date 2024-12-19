@@ -1,9 +1,9 @@
 {
   "name": "SushiSwap Menu",
   "description": "",
-  "timestamp": "2024-11-07T13:55:46+01:00",
+  "timestamp": "2024-12-19T10:27:44Z",
   "version": {
-    "major": 14,
+    "major": 15,
     "minor": 0,
     "patch": 0
   },
@@ -8006,9 +8006,79 @@
       "decimals": 18
     },
     {
-      "address": "0x2DEf4285787d58a2f811AF24755A8150622f4361",
-      "name": "Wrapped Ethereum",
-      "symbol": "cETH",
+      "address": "0x00Be915B9dCf56a3CBE739D9B9c202ca692409EC",
+      "name": "Ubeswap",
+      "symbol": "UBE",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x122013fd7dF1C6F636a5bb8f03108E876548b455",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x1a8Dbe5958c597a744Ba51763AbEBD3355996c3e",
+      "name": "RewardsCELO",
+      "symbol": "rCELO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x1bfc26cE035c368503fAE319Cc2596716428ca44",
+      "name": "USD Coin (PoS)",
+      "symbol": "USDC",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0x22401536505dd5d85F7d57f8B37172feDa8f499d",
+      "name": "CeloShiba",
+      "symbol": "CSHIBA",
+      "chainId": 42220,
+      "decimals": 9
+    },
+    {
+      "address": "0x2879BFD5e7c4EF331384E908aaA3Bd3014b703fA",
+      "name": "Savings CELO",
+      "symbol": "sCELO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x29dFce9c22003A4999930382Fd00f9Fd6133Acd1",
+      "name": "SushiToken",
+      "symbol": "SUSHI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x2A3684e9Dc20B857375EA04235F2F7edBe818FA7",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0x2E3487F967DF2Ebc2f236E16f8fCAeac7091324D",
+      "name": "Wrapped Matic",
+      "symbol": "WMATIC",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x32A9FE697a32135BFd313a6Ac28792DaE4D9979d",
+      "name": "cMCO2",
+      "symbol": "cMCO2",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x46c9757C5497c5B1f2eb73aE79b6B67D119B0B58",
+      "name": "impactMarket",
+      "symbol": "PACT",
       "chainId": 42220,
       "decimals": 18
     },
@@ -8016,6 +8086,49 @@
       "address": "0x471EcE3750Da237f93B8E339c536989b8978a438",
       "name": "Celo native asset",
       "symbol": "CELO",
+      "logoURI": "https://assets.smold.app/api/token/42220/0x471EcE3750Da237f93B8E339c536989b8978a438/logo-128.png",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x5927fd244E11dB1c7b1215619144d2aAbAc80a4F",
+      "name": "celoLaunch",
+      "symbol": "cLA",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x639A647fbe20b6c8ac19E48E2de44ea792c62c5C",
+      "name": "beefy.finance",
+      "symbol": "BIFI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x64dEFa3544c695db8c535D289d843a189aa26b98",
+      "name": "Moola cUSD AToken",
+      "symbol": "mCUSD",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x7037F7296B2fc7908de7b57a89efaa8319f0C500",
+      "name": "Moola CELO AToken",
+      "symbol": "mCELO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x73a210637f6F6B7005512677Ba6B3C96bb4AA44B",
+      "name": "Mobius DAO Token",
+      "symbol": "MOBI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x74c0C58B99b68cF16A717279AC2d056A34ba2bFe",
+      "name": "Source",
+      "symbol": "SOURCE",
       "chainId": 42220,
       "decimals": 18
     },
@@ -8023,8 +8136,44 @@
       "address": "0x765DE816845861e75A25fCA122bb6898B8B1282a",
       "name": "Celo Dollar",
       "symbol": "cUSD",
+      "logoURI": "https://assets.smold.app/api/token/42220/0x765DE816845861e75A25fCA122bb6898B8B1282a/logo-128.png",
       "chainId": 42220,
       "decimals": 18
+    },
+    {
+      "address": "0x832F03bCeE999a577cb592948983E35C048B5Aa4",
+      "name": "Duniapay West African CFA franc",
+      "symbol": "cXOF",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x88eeC49252c8cbc039DCdB394c0c2BA2f1637EA0",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0x90Ca507a5D4458a4C6C6249d186b6dCb02a5BCCd",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xBAAB46E28388d2779e6E31Fd00cF0e5Ad95E327B",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "chainId": 42220,
+      "decimals": 8
+    },
+    {
+      "address": "0xBe50a3013A1c94768A1ABb78c3cB79AB28fc1aCE",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "chainId": 42220,
+      "decimals": 8
     },
     {
       "address": "0xC16B81Af351BA9e64C1a069E3Ab18c244A1E3049",
@@ -8035,11 +8184,81 @@
       "decimals": 18
     },
     {
-      "address": "0xD629eb00dEced2a080B7EC630eF6aC117e614f1b",
-      "name": "Wrapped Bitcoin",
-      "symbol": "BTC",
+      "address": "0xD15EC721C2A896512Ad29C671997DD68f9593226",
+      "name": "SushiToken",
+      "symbol": "SUSHI",
       "chainId": 42220,
       "decimals": 18
+    },
+    {
+      "address": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73",
+      "name": "Celo Euro",
+      "symbol": "cEUR",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xD90BBdf5904cb7d275c41f897495109B9A5adA58",
+      "name": "CeloDoge",
+      "symbol": "CDOGE",
+      "chainId": 42220,
+      "decimals": 9
+    },
+    {
+      "address": "0xE4fE50cdD716522A56204352f00AA110F731932d",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xE919F65739c26a42616b7b8eedC6b5524d1e3aC4",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+      "name": "Axelar Wrapped USDC",
+      "symbol": "axlUSDC",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0xF3608F846cA73147F08FdE8D57f45E27CeEA4d61",
+      "name": "metaCelo Game NFT",
+      "symbol": "cMETA",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xa8d0E6799FF3Fd19c6459bf02689aE09c4d78Ba7",
+      "name": "Moola cEUR MToken",
+      "symbol": "mCEUR",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xb020D981420744F6b0FedD22bB67cd37Ce18a1d5",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0xef4229c8c3250C675F21BCefa42f58EfbfF6002a",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0xf2283840cE37DAe0a06B40a9A80603977f36fA3F",
+      "name": "GoodDollar",
+      "symbol": "G$",
+      "chainId": 42220,
+      "decimals": 2
     },
     {
       "address": "0x0cBD6fAdcF8096cC9A43d90B45F65826102e3eCE",
@@ -8082,12 +8301,26 @@
       "decimals": 18
     },
     {
+      "address": "0x237917E8a998b37759c8EE2fAa529D60c66c2927",
+      "name": "Sifu",
+      "symbol": "sifu",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
       "name": "StargateToken",
       "symbol": "STG",
       "logoURI": "https://tokens.1inch.io/0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590.png",
       "chainId": 43114,
       "decimals": 18
+    },
+    {
+      "address": "0x3134210a6BdB55eED6E59905bC34928DF6d74830",
+      "name": "NGN Coin",
+      "symbol": "NGNC",
+      "chainId": 43114,
+      "decimals": 6
     },
     {
       "address": "0x323665443CEf804A3b5206103304BD4872EA4253",
@@ -8105,10 +8338,38 @@
       "decimals": 18
     },
     {
+      "address": "0x39cf1BD5f15fb22eC3D9Ff86b0727aFc203427cc",
+      "name": "SushiToken",
+      "symbol": "SUSHI",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0x3B55E45fD6bd7d4724F5c47E0d1bCaEdd059263e",
       "name": "MAI",
       "symbol": "miMatic",
       "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/polygon/assets/0xa3Fa99A148fA48D14Ed51d610c367C61876997F1/logo.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x3Ee97d514BBef95a2f110e6B9b73824719030f7a",
+      "name": "Staked Spell Tokens",
+      "symbol": "sSPELL",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x3cD790449CF7D187a143d4Bd7F4654d4f2403e02",
+      "name": "BOBA Token",
+      "symbol": "BOBA",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x42A62eb3Fd2a05eD499117F128de8a3192B49EBB",
+      "name": "Axelar Wrapped ETH",
+      "symbol": "axlETH",
       "chainId": 43114,
       "decimals": 18
     },
@@ -8137,6 +8398,13 @@
       "decimals": 18
     },
     {
+      "address": "0x57319d41F71E81F3c65F2a47CA4e001EbAFd4F33",
+      "name": "JoeBar",
+      "symbol": "xJOE",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0x5947BB275c521040051D82396192181b413227A3",
       "name": "Chainlink Token",
       "symbol": "LINK.e",
@@ -8149,6 +8417,14 @@
       "name": "GMX",
       "symbol": "GMX",
       "logoURI": "https://tokens.1inch.io/0x62edc0692bd897d2295872a9ffcac5425011c661.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x63682bDC5f875e9bF69E201550658492C9763F89",
+      "name": "Betswap.gg",
+      "symbol": "BSGG",
+      "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/network/ethereum/0x69570f3E84f51Ea70b7B68055c8d667e77735a25.jpg",
       "chainId": 43114,
       "decimals": 18
     },
@@ -8201,6 +8477,13 @@
       "decimals": 18
     },
     {
+      "address": "0xA56B1b9f4e5A1A1e0868F5Fd4352ce7CdF0C2A4F",
+      "name": "Matic Token",
+      "symbol": "MATIC",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
       "name": "USD Coin",
       "symbol": "USDC.e",
@@ -8248,6 +8531,13 @@
       "decimals": 18
     },
     {
+      "address": "0xCDEB5641dC5BF05845317B00643A713CCC3b22e6",
+      "name": "Huobi Token",
+      "symbol": "HT",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0xCE1bFFBD5374Dac86a2893119683F4911a2F7814",
       "name": "Spell Token",
       "symbol": "SPELL",
@@ -8280,6 +8570,27 @@
       "decimals": 18
     },
     {
+      "address": "0xF873633DF9D5cDd62BB1f402499CC470a72A02D7",
+      "name": "Moonriver Token",
+      "symbol": "MOVR",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0xF976ba91b6bb3468C91E4f02E68B37bc64a57e66",
+      "name": "Axelar Wrapped USDT",
+      "symbol": "axlUSDT",
+      "chainId": 43114,
+      "decimals": 6
+    },
+    {
+      "address": "0xa6220B4209353dFeF03B6cE410c8F01105515f94",
+      "name": "Axelar Wrapped WBTC",
+      "symbol": "axlWBTC",
+      "chainId": 43114,
+      "decimals": 8
+    },
+    {
       "address": "0xb54f16fB19478766A268F172C9480f8da1a7c9C3",
       "name": "Time",
       "symbol": "TIME",
@@ -8310,6 +8621,13 @@
       "logoURI": "https://cdn.paraswap.io/token/USDT.png",
       "chainId": 43114,
       "decimals": 6
+    },
+    {
+      "address": "0xdef1fac7Bf08f173D286BbBDcBeeADe695129840",
+      "name": "Cerby Token",
+      "symbol": "CERBY",
+      "chainId": 43114,
+      "decimals": 18
     },
     {
       "address": "0xe0Ce60AF0850bF54072635e66E79Df17082A1109",
@@ -8492,6 +8810,48 @@
       "symbol": "ANDY",
       "chainId": 81457,
       "decimals": 9
+    },
+    {
+      "address": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "chainId": 534352,
+      "decimals": 6
+    },
+    {
+      "address": "0x3C1BCa5a656e69edCD0D4E36BEbb3FcDAcA60Cf1",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "chainId": 534352,
+      "decimals": 8
+    },
+    {
+      "address": "0x5300000000000000000000000000000000000004",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "chainId": 534352,
+      "decimals": 18
+    },
+    {
+      "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+      "name": "Axelar Wrapped USDC",
+      "symbol": "axlUSDC",
+      "chainId": 534352,
+      "decimals": 6
+    },
+    {
+      "address": "0xcA77eB3fEFe3725Dc33bccB54eDEFc3D9f764f97",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "chainId": 534352,
+      "decimals": 18
+    },
+    {
+      "address": "0xf55BEC9cafDbE8730f096Aa55dad6D22d44099Df",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "chainId": 534352,
+      "decimals": 6
     }
   ]
 }

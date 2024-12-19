@@ -1,10 +1,10 @@
 {
   "name": "CoW Swap",
   "description": "",
-  "timestamp": "2024-11-07T13:04:50+01:00",
+  "timestamp": "2024-12-19T10:22:12Z",
   "version": {
     "major": 0,
-    "minor": 20,
+    "minor": 21,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/cowprotocol/cowswap/c5974fb8a45d678029ecb013dab33722e152daaa/src/assets/cow-swap/cow_v2.svg",
@@ -14,6 +14,21 @@
     "cowswap"
   ],
   "tokens": [
+    {
+      "address": "0x007115416AB6c266329a03B09a8aa39aC2eF7d9d",
+      "name": "Midas BTC Yield Token",
+      "symbol": "mBTC",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/51055/thumb/mbtc.png?1729875716",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x0655977FEb2f289A4aB78af67BAB0d17aAb84367",
+      "name": "Savings crvUSD",
+      "symbol": "scrvUSD",
+      "chainId": 1,
+      "decimals": 18
+    },
     {
       "address": "0x090185f2135308BaD17527004364eBcC2D37e5F6",
       "name": "Spell Token",
@@ -210,6 +225,7 @@
       "address": "0x2a8c22E3b10036f3AEF5875d04f8441d4188b656",
       "name": "Midas Basis Trading Token",
       "symbol": "mBASIS",
+      "logoURI": "https://assets.smold.app/api/token/1/0x2a8c22E3b10036f3AEF5875d04f8441d4188b656/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -382,10 +398,25 @@
       "decimals": 18
     },
     {
+      "address": "0x58D97B57BB95320F9a05dC918Aef65434969c2B2",
+      "name": "Morpho Token",
+      "symbol": "MORPHO",
+      "logoURI": "https://assets.smold.app/api/token/1/0x58D97B57BB95320F9a05dC918Aef65434969c2B2/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x59D9356E565Ab3A36dD77763Fc0d87fEaf85508C",
       "name": "Mountain Protocol USD",
       "symbol": "USDM",
       "logoURI": "https://assets.smold.app/api/token/1/0x59D9356E565Ab3A36dD77763Fc0d87fEaf85508C/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x59a529070fBb61e6D6c91f952CcB7f35c34Cf8Aa",
+      "name": "Asymmetry Finance Token",
+      "symbol": "ASF",
       "chainId": 1,
       "decimals": 18
     },
