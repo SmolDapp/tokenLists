@@ -1132,6 +1132,7 @@ var AJNA_STATIC_TOKENLIST = map[uint64][]TStaticElement{
 		{`0xC91a71A1fFA3d8B22ba615BA1B9c01b2BBBf55ad`, `https://assets.coingecko.com/coins/images/26141/large/zig_zag.?1656248564`},
 		{`0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2`, `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png`},
 		{`0x24Ae2dA0f361AA4BE46b48EB19C91e02c5e4f27E`, `https://assets.smold.app/api/token/1/0x24Ae2dA0f361AA4BE46b48EB19C91e02c5e4f27E/logo-128.png`},
+		{`0x2a8c22E3b10036f3AEF5875d04f8441d4188b656`, `https://assets.smold.app/api/token/1/0x2a8c22E3b10036f3AEF5875d04f8441d4188b656/logo-128.png`},
 	},
 	10: {
 		{`0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85`, `https://raw.githubusercontent.com/SmolDapp/tokenAssets/main/tokens/10/0x0b2c639c533813f4aa9d7837caf62653d097ff85/logo-128.png`},
