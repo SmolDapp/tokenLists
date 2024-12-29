@@ -1,10 +1,10 @@
 {
   "name": "SushiSwap Menu",
   "description": "",
-  "timestamp": "2024-12-22T01:13:03Z",
+  "timestamp": "2024-12-29T00:56:21Z",
   "version": {
     "major": 16,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
@@ -730,8 +730,8 @@
     },
     {
       "address": "0x26dcFbFa8Bc267b250432c01C982Eaf81cC5480C",
-      "name": "Ankr Staked MATIC",
-      "symbol": "ankrMATIC",
+      "name": "Ankr Staked POL",
+      "symbol": "ankrPOL",
       "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/network/ethereum/0x26dcFbFa8Bc267b250432c01C982Eaf81cC5480C.jpg",
       "chainId": 1,
       "decimals": 18
@@ -8062,6 +8062,13 @@
       "decimals": 6
     },
     {
+      "address": "0x2DEf4285787d58a2f811AF24755A8150622f4361",
+      "name": "Wrapped Ethereum",
+      "symbol": "cETH",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0x2E3487F967DF2Ebc2f236E16f8fCAeac7091324D",
       "name": "Wrapped Matic",
       "symbol": "WMATIC",
@@ -8079,6 +8086,13 @@
       "address": "0x46c9757C5497c5B1f2eb73aE79b6B67D119B0B58",
       "name": "impactMarket",
       "symbol": "PACT",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x471EcE3750Da237f93B8E339c536989b8978a438",
+      "name": "Celo native asset",
+      "symbol": "CELO",
       "chainId": 42220,
       "decimals": 18
     },
@@ -8168,9 +8182,23 @@
       "decimals": 8
     },
     {
+      "address": "0xC16B81Af351BA9e64C1a069E3Ab18c244A1E3049",
+      "name": "EURA (previously agEUR)",
+      "symbol": "EURA",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0xD15EC721C2A896512Ad29C671997DD68f9593226",
       "name": "SushiToken",
       "symbol": "SUSHI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xD629eb00dEced2a080B7EC630eF6aC117e614f1b",
+      "name": "Wrapped Bitcoin",
+      "symbol": "BTC",
       "chainId": 42220,
       "decimals": 18
     },
