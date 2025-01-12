@@ -1,9 +1,9 @@
 {
   "name": "CoinGecko",
   "description": "",
-  "timestamp": "2025-01-05T01:11:50Z",
+  "timestamp": "2025-01-12T01:17:34Z",
   "version": {
-    "major": 102,
+    "major": 103,
     "minor": 0,
     "patch": 0
   },
@@ -17,6 +17,7 @@
       "address": "0x000000000000012DeF132E61759048bE5b5C6033",
       "name": "Cortex",
       "symbol": "CX",
+      "logoURI": "https://asset-images.messari.io/images/8ad0e8a6-4290-408f-82ad-55b351e298c7/128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -56,7 +57,7 @@
       "address": "0x000D636bD52BFc1B3a699165Ef5aa340BEA8939c",
       "name": "Open Dollar Governance",
       "symbol": "ODG",
-      "logoURI": "https://asset-images.messari.io/images/96fc2ec0-1c94-4bfc-a154-e48a628602d3/128.png",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x000D636bD52BFc1B3a699165Ef5aa340BEA8939c/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -617,14 +618,6 @@
       "decimals": 18
     },
     {
-      "address": "0x1622bF67e6e5747b81866fE0b85178a93C7F86e3",
-      "name": "Umami",
-      "symbol": "UMAMI",
-      "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/arbitrum/assets/0x1622bF67e6e5747b81866fE0b85178a93C7F86e3/logo.png",
-      "chainId": 42161,
-      "decimals": 9
-    },
-    {
       "address": "0x16A500Aec6c37F84447ef04E66c57cfC6254cF92",
       "name": "Umoja Token",
       "symbol": "UMJA",
@@ -874,6 +867,13 @@
       "name": "Xave Token",
       "symbol": "XAV",
       "logoURI": "https://asset-images.messari.io/images/1658cecc-306a-4bf9-a800-3514e20a2fe4/128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x1e2C4fb7eDE391d116E6B41cD0608260e8801D59",
+      "name": "Backed CSPX Core S\u0026P 500",
+      "symbol": "bCSPX",
       "chainId": 42161,
       "decimals": 18
     },
@@ -1737,14 +1737,6 @@
       "decimals": 18
     },
     {
-      "address": "0x43dF266501dFf4773F8F33179e3b96aB94dbC28d",
-      "name": "Glend",
-      "symbol": "GLEND",
-      "logoURI": "https://asset-images.messari.io/images/99a262c5-c85d-494c-b0a9-f9adaf6c706c/128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x4425742F1EC8D98779690b5A3A6276Db85Ddc01A",
       "name": "The Doge NFT",
       "symbol": "DOG",
@@ -2221,14 +2213,6 @@
       "decimals": 18
     },
     {
-      "address": "0x56b251d4b493ee3956E3f899D36b7290902D2326",
-      "name": "Mad Meerkat Finance",
-      "symbol": "MMF",
-      "logoURI": "https://assets.coingecko.com/coins/images/29729/large/MMF_Arb_org.png?1681092897",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x577Fd586c9E6BA7f2E85E025D5824DBE19896656",
       "name": "Synonym Finance",
       "symbol": "SYNO",
@@ -2644,7 +2628,7 @@
       "address": "0x6D7187220f769bdE541FF51Dd37ee07416F861d2",
       "name": "Nostra",
       "symbol": "NSTR",
-      "logoURI": "https://assets.coingecko.com/coins/images/28282/large/Nostra_200x200.png?1669978422",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x6D7187220f769bdE541FF51Dd37ee07416F861d2/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -2798,10 +2782,9 @@
       "decimals": 18
     },
     {
-      "address": "0x71eebA415A523F5C952Cc2f06361D5443545Ad28",
-      "name": "XDAO",
-      "symbol": "XDAO",
-      "logoURI": "https://arbiscan.io/token/images/xdaoapp_32.png",
+      "address": "0x7212088A11b4d8f6FC90fbB3dfE793B45dd72323",
+      "name": "Backed GameStop Corp",
+      "symbol": "bGME",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3561,14 +3544,6 @@
       "name": "Vertex",
       "symbol": "VRTX",
       "logoURI": "https://asset-images.messari.io/images/27ad7b98-f922-4045-8d6a-9bb9195b4f61/128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x9578A9937dFf45b4E29e49120AB83cb806f1aa4F",
-      "name": "AITom",
-      "symbol": "AITom",
-      "logoURI": "https://assets.coingecko.com/coins/images/32013/large/aitom.png?1696068039",
       "chainId": 42161,
       "decimals": 18
     },
@@ -4521,6 +4496,13 @@
       "decimals": 6
     },
     {
+      "address": "0xEB99748e91AfCA94a6289db3b02E7ef4a8f0A22d",
+      "name": "MahaDAO",
+      "symbol": "MAHA",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
       "name": "Rocket Pool ETH",
       "symbol": "rETH",
@@ -5123,6 +5105,7 @@
       "address": "0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e",
       "name": "Osaka Protocol",
       "symbol": "OSAK",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xbFd5206962267c7b4b4A8B3D76AC2E1b2A5c4d5e/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -5134,10 +5117,24 @@
       "decimals": 18
     },
     {
+      "address": "0xba3e932310CD1dBF5Bd13079BD3D6bAe4570886f",
+      "name": "Yield Bearing BTC",
+      "symbol": "yBTC",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0xba5DdD1f9d7F570dc94a51479a000E3BCE967196",
       "name": "Aave Token",
       "symbol": "AAVE",
       "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png?1601374110",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xbbcb0356bB9e6B3Faa5CbF9E5F36185d53403Ac9",
+      "name": "Backed Coinbase Global",
+      "symbol": "bCOIN",
       "chainId": 42161,
       "decimals": 18
     },
