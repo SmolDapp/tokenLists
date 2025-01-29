@@ -1,16 +1,16 @@
 {
   "name": "Tokenlistooor summary",
-  "timestamp": 1737853897,
+  "timestamp": 1738145925,
   "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
   "lists": [
     {
       "name": "Popular tokens",
       "description": "A curated list of popular tokens from all the token lists on tokenlistooor.",
-      "timestamp": "2025-01-26T01:11:37Z",
+      "timestamp": "2025-01-29T11:18:45+01:00",
       "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/popular.json",
       "keywords": [],
-      "tokenCount": 4062,
+      "tokenCount": 6190,
       "metadata": {
         "supportedChains": [
           1,
@@ -27,6 +27,7 @@
           8453,
           42161,
           43114,
+          57073,
           59144,
           81457,
           534352,
@@ -41,7 +42,7 @@
           "100": 85,
           "1088": 1,
           "1101": 27,
-          "1151111081099710": 1,
+          "1151111081099710": 2128,
           "137": 596,
           "1380012617": 4,
           "250": 1,
@@ -52,6 +53,7 @@
           "5000": 40,
           "534352": 1,
           "56": 1,
+          "57073": 1,
           "59144": 60,
           "7777777": 20,
           "81457": 3,
@@ -60,7 +62,7 @@
       },
       "version": {
         "major": 57,
-        "minor": 0,
+        "minor": 1,
         "patch": 0
       }
     },
@@ -427,6 +429,32 @@
         "generationMethod": "Static",
         "tokenCountPerChain": {
           "314": 11
+        }
+      },
+      "version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 0
+      }
+    },
+    {
+      "name": "Inkypump",
+      "description": "A list of tokens available on inkypump.com.",
+      "timestamp": "2025-01-29T11:07:07+01:00",
+      "logoURI": "https://assets.smold.app/api/chain/57073/logo-128.png",
+      "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/inkypump.json",
+      "keywords": [
+        "inkypump",
+        "launcher"
+      ],
+      "tokenCount": 24,
+      "metadata": {
+        "supportedChains": [
+          57073
+        ],
+        "generationMethod": "API",
+        "tokenCountPerChain": {
+          "57073": 24
         }
       },
       "version": {
@@ -944,11 +972,11 @@
     {
       "name": "Tokenlistooor Token List",
       "description": "A curated list of tokens from all the token lists on tokenlistooor.",
-      "timestamp": "2025-01-26T01:10:46Z",
+      "timestamp": "2025-01-29T11:16:23+01:00",
       "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/tokenlistooor.json",
       "keywords": [],
-      "tokenCount": 6235,
+      "tokenCount": 7292,
       "metadata": {
         "supportedChains": [
           1,
@@ -964,8 +992,8 @@
           5000,
           8453,
           42161,
-          42220,
           43114,
+          57073,
           59144,
           81457,
           534352,
@@ -975,31 +1003,31 @@
         ],
         "generationMethod": "API",
         "tokenCountPerChain": {
-          "1": 2106,
-          "10": 986,
+          "1": 1938,
+          "10": 153,
           "100": 13,
           "1088": 1647,
           "1101": 12,
-          "1151111081099710": 1,
-          "137": 729,
+          "1151111081099710": 2128,
+          "137": 725,
           "1380012617": 4,
           "250": 1,
           "314": 12,
           "324": 7,
-          "42161": 446,
-          "42220": 4,
+          "42161": 419,
           "43114": 39,
           "5000": 40,
           "534352": 7,
           "56": 1,
+          "57073": 24,
           "59144": 3,
           "7777777": 20,
           "81457": 15,
-          "8453": 142
+          "8453": 84
         }
       },
       "version": {
-        "major": 300,
+        "major": 302,
         "minor": 0,
         "patch": 0
       }
@@ -1588,6 +1616,25 @@
         "major": 50,
         "minor": 0,
         "patch": 1
+      }
+    },
+    {
+      "name": "",
+      "description": "The most popular tokens on Ink.",
+      "timestamp": "",
+      "logoURI": "",
+      "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/57073.json",
+      "keywords": [],
+      "tokenCount": 0,
+      "metadata": {
+        "supportedChains": [],
+        "generationMethod": "Chains",
+        "tokenCountPerChain": {}
+      },
+      "version": {
+        "major": 0,
+        "minor": 0,
+        "patch": 0
       }
     },
     {

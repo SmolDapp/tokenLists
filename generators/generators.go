@@ -296,4 +296,11 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`inkypump`: {
+		Exec:             buildInkypumpTokenList,
+		Name:             `Inkypump`,
+		Description:      `A list of tokens available on inkypump.com.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 }

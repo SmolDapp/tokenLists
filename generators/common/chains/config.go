@@ -63,6 +63,7 @@ var CHAINS = map[uint64]TChain{
 	7777777:          ZORA,
 	1380012617:       RARI,
 	1151111081099710: SOLANA,
+	57073:            INK,
 }
 
 var SUPPORTED_CHAIN_IDS = []uint64{}
