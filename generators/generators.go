@@ -226,6 +226,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`sophon`: {
+		Exec:             buildSophonTokenList,
+		Name:             `Sophon`,
+		Description:      `A list of tokens available on Sophon.`,
+		GenerationMethod: GenerationAPI,
+		GeneratorType:    GeneratorToken,
+	},
 	`sushiswap-pairs`: {
 		Exec:             buildSushiswapPairsTokenList,
 		Name:             `SushiSwap (token pairs)`,
