@@ -226,9 +226,9 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
-	`sophon`: {
+	`sophon-static`: {
 		Exec:             buildSophonStaticTokenList,
-		Name:             `Sophon`,
+		Name:             `Sophon (Static)`,
 		Description:      `A list of tokens available on Sophon.`,
 		GenerationMethod: GenerationStatic,
 		GeneratorType:    GeneratorToken,

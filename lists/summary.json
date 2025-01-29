@@ -1,16 +1,16 @@
 {
   "name": "Tokenlistooor summary",
-  "timestamp": 1738145925,
+  "timestamp": 1738162057,
   "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
   "lists": [
     {
       "name": "Popular tokens",
       "description": "A curated list of popular tokens from all the token lists on tokenlistooor.",
-      "timestamp": "2025-01-29T11:18:45+01:00",
+      "timestamp": "2025-01-29T15:47:37+01:00",
       "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/popular.json",
       "keywords": [],
-      "tokenCount": 6190,
+      "tokenCount": 4098,
       "metadata": {
         "supportedChains": [
           1,
@@ -27,6 +27,7 @@
           8453,
           42161,
           43114,
+          50104,
           57073,
           59144,
           81457,
@@ -42,7 +43,7 @@
           "100": 85,
           "1088": 1,
           "1101": 27,
-          "1151111081099710": 2128,
+          "1151111081099710": 1,
           "137": 596,
           "1380012617": 4,
           "250": 1,
@@ -51,6 +52,7 @@
           "42161": 310,
           "43114": 239,
           "5000": 40,
+          "50104": 12,
           "534352": 1,
           "56": 1,
           "57073": 24,
@@ -61,8 +63,8 @@
         }
       },
       "version": {
-        "major": 57,
-        "minor": 1,
+        "major": 58,
+        "minor": 0,
         "patch": 0
       }
     },
@@ -782,6 +784,33 @@
       }
     },
     {
+      "name": "Sophon (Static)",
+      "description": "A list of tokens available on Sophon.",
+      "timestamp": "2025-01-29T15:45:09+01:00",
+      "logoURI": "https://assets.smold.app/chains/50104/logo-128.png",
+      "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/sophon-static.json",
+      "keywords": [
+        "Sophon"
+      ],
+      "tokenCount": 13,
+      "metadata": {
+        "supportedChains": [
+          43114,
+          50104
+        ],
+        "generationMethod": "Static",
+        "tokenCountPerChain": {
+          "43114": 1,
+          "50104": 12
+        }
+      },
+      "version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 0
+      }
+    },
+    {
       "name": "Superchain Token List",
       "description": "A list of tokens used as the source of truth for the Optimism Gateway.",
       "timestamp": "2025-01-26T01:06:52Z",
@@ -972,11 +1001,11 @@
     {
       "name": "Tokenlistooor Token List",
       "description": "A curated list of tokens from all the token lists on tokenlistooor.",
-      "timestamp": "2025-01-29T11:16:23+01:00",
+      "timestamp": "2025-01-29T15:46:44+01:00",
       "logoURI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/.github/tokenlistooor.svg",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/tokenlistooor.json",
       "keywords": [],
-      "tokenCount": 7292,
+      "tokenCount": 7608,
       "metadata": {
         "supportedChains": [
           1,
@@ -993,6 +1022,7 @@
           8453,
           42161,
           43114,
+          50104,
           57073,
           59144,
           81457,
@@ -1003,31 +1033,32 @@
         ],
         "generationMethod": "API",
         "tokenCountPerChain": {
-          "1": 1938,
-          "10": 153,
-          "100": 13,
+          "1": 2860,
+          "10": 1156,
+          "100": 17,
           "1088": 1647,
           "1101": 12,
-          "1151111081099710": 2128,
-          "137": 725,
+          "1151111081099710": 1,
+          "137": 783,
           "1380012617": 4,
           "250": 1,
           "314": 12,
           "324": 7,
-          "42161": 419,
+          "42161": 541,
           "43114": 39,
           "5000": 40,
+          "50104": 12,
           "534352": 7,
           "56": 1,
           "57073": 24,
           "59144": 3,
           "7777777": 20,
           "81457": 15,
-          "8453": 84
+          "8453": 406
         }
       },
       "version": {
-        "major": 302,
+        "major": 303,
         "minor": 0,
         "patch": 0
       }
@@ -1619,9 +1650,28 @@
       }
     },
     {
+      "name": "",
+      "description": "The most popular tokens on Sophon.",
+      "timestamp": "",
+      "logoURI": "",
+      "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/50104.json",
+      "keywords": [],
+      "tokenCount": 0,
+      "metadata": {
+        "supportedChains": [],
+        "generationMethod": "Chains",
+        "tokenCountPerChain": {}
+      },
+      "version": {
+        "major": 0,
+        "minor": 0,
+        "patch": 0
+      }
+    },
+    {
       "name": "Ink",
       "description": "The most popular tokens on Ink.",
-      "timestamp": "",
+      "timestamp": "2025-01-29T11:07:07+01:00",
       "logoURI": "https://assets.smold.app/api/chain/57073/logo-128.png",
       "URI": "https://raw.githubusercontent.com/smoldapp/tokenLists/main/lists/57073.json",
       "keywords": [],
@@ -1637,8 +1687,8 @@
       },
       "version": {
         "major": 0,
-        "minor": 0,
-        "patch": 1
+        "minor": 1,
+        "patch": 0
       }
     },
     {
@@ -1665,7 +1715,7 @@
       }
     },
     {
-      "name": "Blast",
+      "name": "",
       "description": "The most popular tokens on Blast.",
       "timestamp": "",
       "logoURI": "",
