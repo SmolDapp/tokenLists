@@ -42,6 +42,7 @@ type TTokenListSummary struct {
 }
 
 var BASE_URI = `https://raw.githubusercontent.com/smoldapp/tokenLists/main/`
+var BASE_CHAIN_URI = `https://raw.githubusercontent.com/SmolDapp/tokenAssets/main/chains/`
 
 func listSupportedChains(list []models.TokenListToken) []int {
 	detectedChainsMap := map[int]bool{}
@@ -157,7 +158,7 @@ func buildSummary() {
 			listElement := TMinTokenListData{
 				Name:        chain.Name,
 				Timestamp:   time.Now().Format(time.RFC3339),
-				LogoURI:     BASE_URI + `chains/` + chainIDStr + `/logo-128.png`,
+				LogoURI:     BASE_CHAIN_URI + chainIDStr + `/logo-128.png`,
 				URI:         BASE_URI + `lists/` + chainIDStr + `.json`,
 				Keywords:    []string{},
 				Version:     chainList.Version,
