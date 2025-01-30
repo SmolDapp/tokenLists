@@ -382,8 +382,7 @@ func SaveChainListInJsonFile(
 	** If there are no changes, we will just return.
 	**************************************************************************/
 	if !shouldBumpMajor && !shouldBumpMinor && !shouldBumpPatch {
-		logs.Error(`no changes detected for ` + tokenList.Name)
-		return errors.New(`no changes detected`)
+		logs.Warning(`no changes detected for ` + tokenList.Name)
 	}
 
 	if shouldBumpMajor {
