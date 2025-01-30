@@ -153,21 +153,21 @@ func buildSummary() {
 		for _, chainID := range chains.SUPPORTED_CHAIN_IDS {
 			chain := chains.CHAINS[chainID]
 			chainIDStr := strconv.FormatUint(chainID, 10)
-			popular := helpers.LoadTokenListFromJsonFile(chainIDStr + `.json`)
+			chainList := helpers.LoadTokenListFromJsonFile(chainIDStr + `.json`)
 			listElement := TMinTokenListData{
-				Name:        popular.Name,
-				Timestamp:   popular.Timestamp,
-				LogoURI:     popular.LogoURI,
+				Name:        chain.Name,
+				Timestamp:   time.Now().Format(time.RFC3339),
+				LogoURI:     BASE_URI + `chains/` + chainIDStr + `/logo-128.png`,
 				URI:         BASE_URI + `lists/` + chainIDStr + `.json`,
-				Keywords:    popular.Keywords,
-				Version:     popular.Version,
-				TokenCount:  len(popular.Tokens),
+				Keywords:    []string{},
+				Version:     chainList.Version,
+				TokenCount:  len(chainList.Tokens),
 				Description: `The most popular tokens on ` + chain.Name + `.`,
 			}
-			listElement.Metadata.SupportedChains = listSupportedChains(popular.Tokens)
+			listElement.Metadata.SupportedChains = listSupportedChains(chainList.Tokens)
 			listElement.Metadata.GenerationMethod = string(GenerationChain)
 			listElement.Metadata.TokenCountPerChain = make(map[string]int)
-			for _, token := range popular.Tokens {
+			for _, token := range chainList.Tokens {
 				chainStr := strconv.FormatUint(token.ChainID, 10)
 				if _, ok := listElement.Metadata.TokenCountPerChain[chainStr]; !ok {
 					listElement.Metadata.TokenCountPerChain[chainStr] = 0
