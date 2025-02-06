@@ -70,6 +70,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`berachain-static`: {
+		Exec:             buildBerachainStaticTokenList,
+		Name:             `Berachain (Static)`,
+		Description:      `A list of tokens available on Berachain.`,
+		GenerationMethod: GenerationStatic,
+		GeneratorType:    GeneratorToken,
+	},
 	`blockscout`: {
 		Exec:             buildBlockScoutTokenList,
 		Name:             `Blockscout`,

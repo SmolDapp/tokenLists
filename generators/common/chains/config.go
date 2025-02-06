@@ -59,6 +59,7 @@ var CHAINS = map[uint64]TChain{
 	43114:            AVALANCHE,
 	50104:            SOPHON,
 	59144:            LINEA,
+	80094:            BERACHAIN,
 	81457:            BLAST,
 	534352:           SCROLL,
 	7777777:          ZORA,
