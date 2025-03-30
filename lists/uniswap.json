@@ -1,10 +1,10 @@
 {
   "name": "Uniswap Labs Default",
   "description": "",
-  "timestamp": "2025-03-23T00:57:14Z",
+  "timestamp": "2025-03-30T01:04:41Z",
   "version": {
     "major": 17,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
@@ -1472,6 +1472,14 @@
       "name": "Function X",
       "symbol": "FX",
       "logoURI": "https://assets.smold.app/api/token/1/0x8c15Ef5b4B21951d50E53E4fbdA8298FFAD25057/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8c1BEd5b9a0928467c9B1341Da1D7BD5e10b6549",
+      "name": "Liquid Staked ETH",
+      "symbol": "LsETH",
+      "logoURI": "https://assets.coingecko.com/coins/images/28848/large/LsETH-receipt-token-circle.png?1696527824",
       "chainId": 1,
       "decimals": 18
     },
@@ -6221,6 +6229,41 @@
       "symbol": "ENS",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x2DEf4285787d58a2f811AF24755A8150622f4361",
+      "name": "Wrapped Ethereum",
+      "symbol": "cETH",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x471EcE3750Da237f93B8E339c536989b8978a438",
+      "name": "Celo native asset",
+      "symbol": "CELO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e",
+      "name": "Tether USD",
+      "symbol": "USD₮",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0xD629eb00dEced2a080B7EC630eF6aC117e614f1b",
+      "name": "Wrapped Bitcoin",
+      "symbol": "BTC",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
+      "name": "USDC",
+      "symbol": "USDC",
+      "chainId": 42220,
+      "decimals": 6
     },
     {
       "address": "0x130966628846BFd36ff31a822705796e8cb8C18D",
