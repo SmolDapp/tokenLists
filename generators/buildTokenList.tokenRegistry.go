@@ -48,12 +48,11 @@ func fetchTokenRegistryTokens(chainID uint64, registryAddress common.Address) []
 func buildTokenRegistryTokenList() {
 	tokenList := helpers.LoadTokenListFromJsonFile(`tokenRegistry.json`)
 	tokenList.Name = `Token Registry`
-	tokenList.LogoURI = `https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg`
+	tokenList.LogoURI = `https://tokenregistry.builtby.mom/favicons/web-app-manifest-512x512.png`
 	tokenList.Keywords = []string{`tokenRegistry`}
 	tokens := []models.TokenListToken{}
 	tokens = append(tokens, fetchTokenRegistryTokens(10, common.HexToAddress(`0x1f393eCAadbDCC3016AF9671450E4486B53FfE19`))...)
 	tokens = append(tokens, fetchTokenRegistryTokens(8453, common.HexToAddress(`0x1f393eCAadbDCC3016AF9671450E4486B53FfE19`))...)
 
-	logs.Pretty(tokens)
 	helpers.SaveTokenListInJsonFile(tokenList, tokens, `tokenRegistry.json`, helpers.SavingMethodStandard_NOREPLACEMENT)
 }
