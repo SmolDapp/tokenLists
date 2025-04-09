@@ -21,8 +21,9 @@ import (
 type JSONSaveTokensMethods string
 
 const (
-	SavingMethodStandard JSONSaveTokensMethods = "SavingMethodStandard"
-	SavingMethodAppend   JSONSaveTokensMethods = "SavingMethodAppend"
+	SavingMethodStandard               JSONSaveTokensMethods = "SavingMethodStandard"
+	SavingMethodAppend                 JSONSaveTokensMethods = "SavingMethodAppend"
+	SavingMethodStandard_NOREPLACEMENT JSONSaveTokensMethods = "SavingMethodStandard_NOREPLACEMENT"
 )
 
 // BASE_PATH is the base path to access the data informations
@@ -123,20 +124,37 @@ func SaveTokenListInJsonFile(
 		if !chains.IsChainIDSupported(token.ChainID) {
 			continue
 		}
-		newToken, err := SetToken(
-			token.Address,
-			token.Name,
-			token.Symbol,
-			token.LogoURI,
-			token.ChainID,
-			token.Decimals,
-		)
-		if err != nil {
-			logs.Error(err)
-			continue
+		if method == SavingMethodStandard_NOREPLACEMENT {
+			newToken, err := SetToken_NOREPLACEMENT(
+				token.Address,
+				token.Name,
+				token.Symbol,
+				token.LogoURI,
+				token.ChainID,
+				token.Decimals,
+			)
+			if err != nil {
+				logs.Error(err)
+				continue
+			}
+			newToken.Occurrence = token.Occurrence
+			tokenList.NextTokensMap[GetKey(token.ChainID, token.Address)] = newToken
+		} else {
+			newToken, err := SetToken(
+				token.Address,
+				token.Name,
+				token.Symbol,
+				token.LogoURI,
+				token.ChainID,
+				token.Decimals,
+			)
+			if err != nil {
+				logs.Error(err)
+				continue
+			}
+			newToken.Occurrence = token.Occurrence
+			tokenList.NextTokensMap[GetKey(token.ChainID, token.Address)] = newToken
 		}
-		newToken.Occurrence = token.Occurrence
-		tokenList.NextTokensMap[GetKey(token.ChainID, token.Address)] = newToken
 	}
 
 	/**************************************************************************

@@ -261,6 +261,13 @@ var GENERATORS = map[string]TGenerators{
 		GenerationMethod: GenerationAPI,
 		GeneratorType:    GeneratorToken,
 	},
+	`tokenRegistry`: {
+		Exec:             buildTokenRegistryTokenList,
+		Name:             `Token Registry`,
+		Description:      `A list of tokens available on Token Registry.`,
+		GenerationMethod: GenerationChain,
+		GeneratorType:    GeneratorToken,
+	},
 	`uniswap-pairs`: {
 		Exec:             buildUniswapPairsTokenList,
 		Name:             `UniSwap (pairs)`,

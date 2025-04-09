@@ -250,3 +250,29 @@ func GetTokensFromAddressesWithIcons(
 	}
 	return tokenList
 }
+
+func GetTokensFromAddressesWithIcons_NOREPLACEMENT(
+	chainID uint64,
+	tokenAddresses []string,
+	tokenIcons map[string]string,
+) []models.TokenListToken {
+	tokenList := []models.TokenListToken{}
+	tokenAddresses = append(tokenAddresses, chains.CHAINS[chainID].ExtraTokens...)
+	tokensInfo := RetrieveBasicInformations(chainID, tokenAddresses)
+
+	for _, address := range tokenAddresses {
+		if token, ok := tokensInfo[utils.ToAddress(address)]; ok {
+			if newToken, err := SetToken_NOREPLACEMENT(
+				token.Address,
+				token.Name,
+				token.Symbol,
+				tokenIcons[utils.ToAddress(address)],
+				chainID,
+				int(token.Decimals),
+			); err == nil {
+				tokenList = append(tokenList, newToken)
+			}
+		}
+	}
+	return tokenList
+}
