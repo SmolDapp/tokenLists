@@ -1,10 +1,10 @@
 {
   "name": "Yearn Minimal Token List",
   "description": "",
-  "timestamp": "2025-04-06T01:05:55Z",
+  "timestamp": "2025-04-13T02:17:13Z",
   "version": {
     "major": 9,
-    "minor": 12,
+    "minor": 13,
     "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -64,6 +64,14 @@
       "logoURI": "https://asset-images.messari.io/images/dc633a4d-d765-4f19-98a4-7d685bcfe02d/128.png",
       "chainId": 1,
       "decimals": 8
+    },
+    {
+      "address": "0x008FE64E71602843cE310585e6bBe85c3452c2d5",
+      "name": "yGauge LP Yearn PRISMA Vault Cove Rewards Gauge",
+      "symbol": "yG-lp-yPRISMA-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x008FE64E71602843cE310585e6bBe85c3452c2d5/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x00CB87656196dD835b9E4d67018aE0477a1De8C1",
@@ -392,6 +400,14 @@
       "decimals": 18
     },
     {
+      "address": "0x093f4FCA4b71912EDb33B2d4Bb92E5b85658D833",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvCurve-yETH-f-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x093f4FCA4b71912EDb33B2d4Bb92E5b85658D833/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x09580f2305a335218bdB2EB828387d52ED8Fc2F4",
       "name": "Morpho Gauntlet DAI Core Compounder",
       "symbol": "ysDAI",
@@ -496,6 +512,14 @@
       "decimals": 18
     },
     {
+      "address": "0x0a9B2C09F8756c743B0702973ed33970d16cF6f9",
+      "name": "SY Staked lvlUSD",
+      "symbol": "SY-slvlUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x0a9B2C09F8756c743B0702973ed33970d16cF6f9/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x0bB9aB78aAF7179b7515e6753d89822b91e670C4",
       "name": "Kernel USD",
       "symbol": "kUSD",
@@ -568,6 +592,14 @@
       "decimals": 18
     },
     {
+      "address": "0x1017C97C03d6738c358576735DE76028f2395625",
+      "name": "USDS-1 yVault Liquid Locker Compounder",
+      "symbol": "yv^2USDS-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1017C97C03d6738c358576735DE76028f2395625/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x10222f882F3594455343Abc9831213854902eD8e",
       "name": "SY Staked lvlUSD",
       "symbol": "SY-slvlUSD",
@@ -588,6 +620,14 @@
       "name": "Curve.fi Factory Crypto Pool: CADC/USDC",
       "symbol": "CADCUSDC-f",
       "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x107717C98C8125A94D3d2Cc82b86a1b705f3A27C",
+      "name": "yGauge LP Yearn CRV Vault v2",
+      "symbol": "yG-lp-yCRVv2",
+      "logoURI": "https://assets.smold.app/api/token/1/0x107717C98C8125A94D3d2Cc82b86a1b705f3A27C/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -639,10 +679,25 @@
       "decimals": 18
     },
     {
+      "address": "0x120B128cF1a5117Fe8E9E12b79B3437e7396bd14",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvCurve-dYFIETH-f-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x120B128cF1a5117Fe8E9E12b79B3437e7396bd14/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x127091edE112aEd7Bae281747771b3150Bb047bB",
       "name": "Curve.fi Factory Crypto Pool: ibJPY/USDC",
       "symbol": "ibJPYUSDC-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x127091edE112aEd7Bae281747771b3150Bb047bB/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x128e72DfD8b00cbF9d12cB75E846AC87B83DdFc9",
+      "name": "yGauge DAI-1 yVault",
+      "symbol": "yG-yvDAI-1",
       "chainId": 1,
       "decimals": 18
     },
@@ -675,6 +730,14 @@
       "name": "Curve mkUSD-FRAXBP Factory yVault",
       "symbol": "yvCurve-mkUSD-FRAXBP-f",
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x13b0F3bB3934539dcC8ABa18c27F6808FDa17A19",
+      "name": "yGauge Curve YFI-ETH Pool yVault Cove Rewards Gauge",
+      "symbol": "yG-yvCurve-YFIETH-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x13b0F3bB3934539dcC8ABa18c27F6808FDa17A19/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -827,6 +890,14 @@
       "name": "SY Aladdin sdCRV",
       "symbol": "SY-asdCRV",
       "logoURI": "https://assets.smold.app/api/token/1/0x18C11b1DC74cAB82AD18d5034FDe93FE90a41D99/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x18f365ECCe58fA865Ec9FB027E9175125DB93B91",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvCurve-yETH-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x18f365ECCe58fA865Ec9FB027E9175125DB93B91/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1054,6 +1125,14 @@
       "decimals": 18
     },
     {
+      "address": "0x1eB1d7fEc395748cFF0e437F4B3e8A850550987d",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvUSDS-1-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1eB1d7fEc395748cFF0e437F4B3e8A850550987d/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x1f59cC10c6360DA918B0235c98E58008452816EB",
       "name": "yn-ETH/LSD",
       "symbol": "yn-ETH/LSD",
@@ -1156,6 +1235,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0x21b0F8109F7f797e8b40a6189D2B773bE642666e/logo-128.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x22028E652a2e937c876F2577f8E78f692d6DAA93",
+      "name": "USDC-1 yVault Liquid Locker Compounder",
+      "symbol": "yv^2USDC-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0x22028E652a2e937c876F2577f8E78f692d6DAA93/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
     },
     {
       "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
@@ -1374,6 +1461,21 @@
       "decimals": 18
     },
     {
+      "address": "0x28b2DC219c047B10F353caA2934ad8803e089A88",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvDAI-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0x28b2DC219c047B10F353caA2934ad8803e089A88/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x28da6dE3e804bDdF0aD237CFA6048f2930D0b4Dc",
+      "name": "yGauge Curve dYFIETH-f Factory yVault",
+      "symbol": "yG-yvCurve-dYFIETH-f-f",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x29059568bB40344487d62f7450E78b8E6C74e0e5",
       "name": "Curve.fi Factory Crypto Pool: YFI/ETH",
       "symbol": "YFIETH-f",
@@ -1398,6 +1500,13 @@
       "decimals": 18
     },
     {
+      "address": "0x29eE8c3FB7ea0b52261B18782F1a060C2e210aFa",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvWETH-2",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x2Ab6578239eD541Ef7cC7D11a45D740cE9F0a1F4",
       "name": "Curve CTR-ETH Factory yVault",
       "symbol": "yvCurve-CTR-ETH-f",
@@ -1410,6 +1519,14 @@
       "name": "USDa saving token",
       "symbol": "sUSDa",
       "logoURI": "https://assets.coingecko.com/coins/images/51821/large/USDA.png?1732035172",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x2BCc065433c608B2e71eA80405E260cA9B40ff65",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-lp-yCRVv2-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x2BCc065433c608B2e71eA80405E260cA9B40ff65/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1899,6 +2016,14 @@
       "decimals": 18
     },
     {
+      "address": "0x38E3d865e34f7367a69f096C80A4fc329DB38BF4",
+      "name": "yGauge DAI-2 yVault",
+      "symbol": "yG-yvDAI-2",
+      "logoURI": "https://assets.smold.app/api/token/1/0x38E3d865e34f7367a69f096C80A4fc329DB38BF4/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x38EA452219524Bb87e18dE1C24D3bB59510BD783",
       "name": "Tether USD-LP",
       "symbol": "S*USDT",
@@ -2315,6 +2440,14 @@
       "decimals": 6
     },
     {
+      "address": "0x45380B6249a1005bec67928AF03b8aA8ec4eadCC",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvDAI-2-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x45380B6249a1005bec67928AF03b8aA8ec4eadCC/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x453D92C7d4263201C69aACfaf589Ed14202d83a4",
       "name": "Curve.fi Factory Plain Pool: yCRV",
       "symbol": "yCRV-f",
@@ -2398,6 +2531,14 @@
       "name": "Curve.fi Factory USD Metapool: Binance USD",
       "symbol": "BUSD3CRV-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x4807862AA8b2bF68830e4C8dc86D0e9A998e085a/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x482Cce30Cde09292279371956a3C7c57bbe125A9",
+      "name": "Curve reUSD-scrvUSD yVault",
+      "symbol": "yvCurve-reUSD-scrvUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x482Cce30Cde09292279371956a3C7c57bbe125A9/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2514,6 +2655,14 @@
       "decimals": 18
     },
     {
+      "address": "0x4D840966887673132Ec61aB4Ffb5e3c26cB1F4BD",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvCurve-COVEYFI-f-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x4D840966887673132Ec61aB4Ffb5e3c26cB1F4BD/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x4DEcE678ceceb27446b35C672dC7d61F30bAD69E",
       "name": "Curve.fi Factory Plain Pool: crvUSD/USDC",
       "symbol": "crvUSDUSDC-f",
@@ -2536,6 +2685,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0x4Dd0FE8549641A04d7ab4f37dbb541aE7dBb2838/logo-128.png",
       "chainId": 1,
       "decimals": 6
+    },
+    {
+      "address": "0x4E69d3b01a5693DBff8dC0AD340eBF816b38D162",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvWETH-2-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x4E69d3b01a5693DBff8dC0AD340eBF816b38D162/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x4F8E1426A9d10bddc11d26042ad270F16cCb95F2",
@@ -2565,6 +2722,14 @@
       "name": "Curve.fi Factory Crypto Pool: DYDX/ETH",
       "symbol": "DYDXETH-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x4aCc1BF7D6a591016641325aA6664A1Cd178F002/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x4be42460681FCF7ed6Bb5E2C2638251f2a586017",
+      "name": "yGauge WETH-1 yVault Cove Rewards Gauge",
+      "symbol": "yG-yvWETH-1-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x4be42460681FCF7ed6Bb5E2C2638251f2a586017/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2704,6 +2869,14 @@
       "decimals": 18
     },
     {
+      "address": "0x511ecC2BaA35063315d75fCFd3754Fd242AD8318",
+      "name": "yGauge Curve COVEYFI Factory yVault Cove Rewards Gauge",
+      "symbol": "yG-yvCurve-COVEYFI-f-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x511ecC2BaA35063315d75fCFd3754Fd242AD8318/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x5120FeaBd5C21883a4696dBCC5D123d6270637E9",
       "name": "WETH yVault",
       "symbol": "yvWETH",
@@ -2758,6 +2931,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0x52c2bc859F5082C4f8c17266A3CD640b5047370e/logo-128.png",
       "chainId": 1,
       "decimals": 17
+    },
+    {
+      "address": "0x531F882a76A949c51457A3eB9E5d09a9cad50418",
+      "name": "Curve RSUP-WETH yVault",
+      "symbol": "yvCurve-RSUP-WETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x531F882a76A949c51457A3eB9E5d09a9cad50418/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0x5326d3e4c769BF9EA532470eCbF6D4898B81756b",
@@ -2832,10 +3013,26 @@
       "decimals": 18
     },
     {
+      "address": "0x552868611d2641144454140DdED98E6160b3Bfc9",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvCurve-YFIETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x552868611d2641144454140DdED98E6160b3Bfc9/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x55A8a39bc9694714E2874c1ce77aa1E599461E18",
       "name": "Curve.fi Factory Plain Pool: MIM-UST",
       "symbol": "MIM-UST-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x55A8a39bc9694714E2874c1ce77aa1E599461E18/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x560C0f86124472d6a649aC347A7c3415C34F2929",
+      "name": "DAI-2 yVault Liquid Locker Compounder",
+      "symbol": "yv^2DAI-2",
+      "logoURI": "https://assets.smold.app/api/token/1/0x560C0f86124472d6a649aC347A7c3415C34F2929/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -2952,6 +3149,13 @@
       "decimals": 18
     },
     {
+      "address": "0x5943F7090282Eb66575662EADf7C60a717a7cE4D",
+      "name": "yGauge WETH-1 yVault",
+      "symbol": "yG-yvWETH-1",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x59463BB67dDD04fe58ED291ba36C26d99A39fbc6",
       "name": "Wrapped aWETH",
       "symbol": "waWETH",
@@ -2972,6 +3176,14 @@
       "name": "Curve ibGBP Pool yVault",
       "symbol": "yvCurve-ibGBP",
       "logoURI": "https://assets.smold.app/api/token/1/0x595a68a8c9D5C230001848B69b1947ee2A607164/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x59D7Bc6260f9424E843dafc07C6950DA6CD806a1",
+      "name": "yGauge LP Yearn CRV Vault v2 Cove Rewards Gauge",
+      "symbol": "yG-lp-yCRVv2-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x59D7Bc6260f9424E843dafc07C6950DA6CD806a1/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3270,10 +3482,24 @@
       "decimals": 18
     },
     {
+      "address": "0x6130E6cD924a40b24703407F246966D7435D4998",
+      "name": "yGauge LP Yearn PRISMA Vault",
+      "symbol": "yG-lp-yPRISMA",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x6164045FC2b2b269ffcaB2197736A74B1725B6C6",
       "name": "StrategyGearboxLenderDAI",
       "symbol": "ysDAI",
       "logoURI": "https://assets.smold.app/api/token/1/0x6164045FC2b2b269ffcaB2197736A74B1725B6C6/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x622fA41799406B120f9a40dA843D358b7b2CFEE3",
+      "name": "yGauge USDC-1 yVault",
+      "symbol": "yG-yvUSDC-1",
       "chainId": 1,
       "decimals": 18
     },
@@ -3357,6 +3583,13 @@
       "decimals": 18
     },
     {
+      "address": "0x64DC55D76d1541E0853cbd7cF6586615e9E6f4C7",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvcrvUSD-2",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x64eda51d3Ad40D56b9dFc5554E06F94e1Dd786Fd",
       "name": "Curve.fi tBTC/sbtcCrv",
       "symbol": "tbtc/sbtcCrv",
@@ -3369,6 +3602,13 @@
       "name": "Curve DUSD Factory yVault",
       "symbol": "yvCurve-DUSD-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x65346970F0f66CCAd8a5bfc3a03C96836C1897bE/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x6568921f9059B6b8a3902651783A7A0E74Ca83fF",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-lp-yPRISMA",
       "chainId": 1,
       "decimals": 18
     },
@@ -3425,6 +3665,14 @@
       "name": "Curve mkUSD-USDe Factory yVault",
       "symbol": "yvCurve-mkUSD-USDe-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x66A7024fC367eBa201dF1381A9B6305d1e90919A/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x66Afc16E2FaCf4EeA0712EDEBE0B96C5f51606Fa",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvUSDC-1-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x66Afc16E2FaCf4EeA0712EDEBE0B96C5f51606Fa/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3600,6 +3848,14 @@
       "name": "Curve.fi Factory Crypto Pool: CLEV/ETH",
       "symbol": "CLEVETH-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x6C280dB098dB673d30d5B34eC04B6387185D3620/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x6C9687C19b5Ef70f3b7ba4C0a719100a6608E886",
+      "name": "yGauge DAI-2 yVault Cove Rewards Gauge",
+      "symbol": "yG-yvDAI-2-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x6C9687C19b5Ef70f3b7ba4C0a719100a6608E886/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -3843,6 +4099,13 @@
       "decimals": 6
     },
     {
+      "address": "0x71c3223D6f836f84cAA7ab5a68AAb6ECe21A9f3b",
+      "name": "yGauge crvUSD-2 yVault",
+      "symbol": "yG-yvcrvUSD-2",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x7204d6dfBbA99827c93AB6877d152e724d16A2f0",
       "name": "DAI Portofino Technologies Senior Tranches Idle Vault",
       "symbol": "sv-AAIdleCpPOR-USDC4626",
@@ -3879,6 +4142,14 @@
       "name": "Compounding Open Dollar",
       "symbol": "cUSDO",
       "logoURI": "https://assets.smold.app/api/token/1/0x72f5FcA5E8437302b666C4366E8ed090975C28c6/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x73127e809387747fe516AED11a977a8E964693d1",
+      "name": "yGauge crvUSD-2 yVault Cove Rewards Gauge",
+      "symbol": "yG-yvcrvUSD-2-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x73127e809387747fe516AED11a977a8E964693d1/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4106,6 +4377,14 @@
       "decimals": 18
     },
     {
+      "address": "0x7F43760691340CE4DDE147b2D3501D30a5e917e3",
+      "name": "yGauge DAI-1 yVault Cove Rewards Gauge",
+      "symbol": "yG-yvDAI-1-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x7F43760691340CE4DDE147b2D3501D30a5e917e3/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x7F7DF0e9a040DdA05FC609143cc8dA7cC6c59587",
       "name": "sUSD yVault",
       "symbol": "yvsUSD",
@@ -4130,6 +4409,14 @@
       "decimals": 18
     },
     {
+      "address": "0x7Fd8Af959B54A677a1D8F92265Bd0714274C56a3",
+      "name": "yGauge Curve YFI-ETH Pool yVault",
+      "symbol": "yG-yvCurve-YFIETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0x7Fd8Af959B54A677a1D8F92265Bd0714274C56a3/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x7ac8ca87959b1d5EDfe2df5325A37c304DCea4D0",
       "name": "SY Ethereal eUSDE",
       "symbol": "SY-eUSDE",
@@ -4142,6 +4429,14 @@
       "name": "Curve CADC-USDC Factory yVault",
       "symbol": "yvCurve-CADC-USDC-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x7bDeb15b00437fc8b5DbBf8Ba7B0FC6CB7F7e68c/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x7c37d1Ca716c4519BEcc9bC0CEea065C88caF98B",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvcrvUSD-2-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x7c37d1Ca716c4519BEcc9bC0CEea065C88caF98B/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4262,6 +4557,28 @@
       "name": "Curve FRAX-crvUSD Factory yVault",
       "symbol": "yvCurve-FRAX-crvUSD-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x8176b059BD8f63aeB7e20282b12D243b4626E2AE/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x81D40243c649f7d6092295F50F4B1D3A8e53DA99",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvWETH-1",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x81d93531720d86f0491DeE7D03f30b3b5aC24e59",
+      "name": "yGauge Curve yETH Factory yVault",
+      "symbol": "yG-yvCurve-yETH-f",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x81f78DeF7a3a8B0F6aABa69925efC69E70239D95",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvUSDS-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0x81f78DeF7a3a8B0F6aABa69925efC69E70239D95/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4529,6 +4846,13 @@
       "decimals": 18
     },
     {
+      "address": "0x87588D3fBCdff1bF84555F0A22056d94534A74A6",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvUSDC-1",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x87650D7bbfC3A9F10587d7778206671719d9910D",
       "name": "Curve.fi Factory USD Metapool: Origin Dollar",
       "symbol": "OUSD3CRV-f",
@@ -4652,6 +4976,14 @@
       "address": "0x8D8802c567e70ccADAF730263aecc60A91AC163D",
       "name": "Scrap.sh Wrapped Staked LYRA",
       "symbol": "wsLYRA",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x8E2485942B399EA41f3C910c1Bb8567128f79859",
+      "name": "yGauge WETH-2 yVault",
+      "symbol": "yG-yvWETH-2",
+      "logoURI": "https://assets.smold.app/api/token/1/0x8E2485942B399EA41f3C910c1Bb8567128f79859/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4795,6 +5127,14 @@
       "name": "Aave V3 WETH Lender",
       "symbol": "ysWETH",
       "logoURI": "https://assets.smold.app/api/token/1/0x90759801579208B28D2D36D13b1ED7443D1b717F/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x90B28aa7Df2eFaaAD4582afaF4D2a1c61519A245",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvDAI-1-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0x90B28aa7Df2eFaaAD4582afaF4D2a1c61519A245/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -4998,6 +5338,13 @@
       "decimals": 18
     },
     {
+      "address": "0x97A597CBcA514AfCc29cD300f04F98d9DbAA3624",
+      "name": "yGauge Curve COVEYFI Factory yVault",
+      "symbol": "yG-yvCurve-COVEYFI-f",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x97E2768e8E73511cA874545DC5Ff8067eB19B787",
       "name": "Curve.fi USDK/3Crv",
       "symbol": "usdk3CRV",
@@ -5122,6 +5469,14 @@
       "name": "Yearn-Ajna Pool dETH/WETH Vault",
       "symbol": "yv-ajna-deth-weth",
       "logoURI": "https://assets.smold.app/api/token/1/0x9C3a4C14a249504b4CDCf5c27867Be790C92BB05/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x9Cb8c5136aD079d3311F5b766D6fC370bF29E76b",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvDAI-2",
+      "logoURI": "https://assets.smold.app/api/token/1/0x9Cb8c5136aD079d3311F5b766D6fC370bF29E76b/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5374,6 +5729,14 @@
       "decimals": 18
     },
     {
+      "address": "0xA89E83E39c8A1cB173D7a0c0201Cd3956B57db6d",
+      "name": "WETH-2 yVault Liquid Locker Compounder",
+      "symbol": "yv^2WETH-2",
+      "logoURI": "https://assets.smold.app/api/token/1/0xA89E83E39c8A1cB173D7a0c0201Cd3956B57db6d/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xA89a7420B19679B5A124cD1499787a6122E800D7",
       "name": "eETH LP (27 JUN 2024)",
       "symbol": "ysPENDLE-LPT",
@@ -5410,6 +5773,14 @@
       "name": "Curve.fi Factory USD Metapool: DOLA-3pool Curve LP",
       "symbol": "DOLA3POOL3CRV-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xAA5A67c256e27A5d80712c51971408db3370927D/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xAB91485dbff271Bd7F4Cc0664E9974fAb2B2eE96",
+      "name": "yGauge USDS-1 yVault Cove Rewards Gauge",
+      "symbol": "yG-yvUSDS-1-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0xAB91485dbff271Bd7F4Cc0664E9974fAb2B2eE96/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5494,6 +5865,14 @@
       "decimals": 18
     },
     {
+      "address": "0xAc553BDE3c4c65cAf1F5B6f9c82ec549Ec1A48Ca",
+      "name": "yGauge Curve yETH Factory yVault Cove Rewards Gauge",
+      "symbol": "yG-yvCurve-yETH-f-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0xAc553BDE3c4c65cAf1F5B6f9c82ec549Ec1A48Ca/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xAd86Df2e8F989c828B25A7Da5EB1Ec363283fA3F",
       "name": "Curve LUSD Factory yVault",
       "symbol": "yvCurve-LUSD-f",
@@ -5566,10 +5945,26 @@
       "decimals": 18
     },
     {
+      "address": "0xB35b02E3353BE80A5648F5299b0336579BCf64a0",
+      "name": "WETH-1 yVault Liquid Locker Compounder",
+      "symbol": "yv^2WETH-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0xB35b02E3353BE80A5648F5299b0336579BCf64a0/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xB364D19c3FF37e0fa4B94bf4cf626729533C1c26",
       "name": "FRAX yVault",
       "symbol": "yvFRAX",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xB364D19c3FF37e0fa4B94bf4cf626729533C1c26/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xB393273baCe7C8fD0b8eD93D6692CcC7A3FD44EF",
+      "name": "yGauge USDC-1 yVault Cove Rewards Gauge",
+      "symbol": "yG-yvUSDC-1-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0xB393273baCe7C8fD0b8eD93D6692CcC7A3FD44EF/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -5946,6 +6341,14 @@
       "name": "SY Ethena sUSDE",
       "symbol": "SY-sUSDE",
       "logoURI": "https://assets.smold.app/api/token/1/0xC4ed348c56223C5953939e932E315F9d72Cd83fF/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xC5Ab829B2f7Cb3E869949747BC8c6F66ef2250Cc",
+      "name": "DAI-1 yVault Liquid Locker Compounder",
+      "symbol": "yv^2DAI-1",
+      "logoURI": "https://assets.smold.app/api/token/1/0xC5Ab829B2f7Cb3E869949747BC8c6F66ef2250Cc/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -6523,6 +6926,14 @@
       "decimals": 18
     },
     {
+      "address": "0xED08B03bAeAB9EEF24F8AAa7c752f34a3264992e",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvWETH-1-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0xED08B03bAeAB9EEF24F8AAa7c752f34a3264992e/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xEadc18ca9363565E1c8BC5415Db0110d7c91cDE5",
       "name": "Curve GHO-USR yVault",
       "symbol": "yvCurve-GHO-USR",
@@ -6771,6 +7182,14 @@
       "decimals": 18
     },
     {
+      "address": "0xF96E4C5Eee8095F918eD3312B3De3d68156798f8",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-yvCurve-COVEYFI-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xF96E4C5Eee8095F918eD3312B3De3d68156798f8/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xF980B4A4194694913Af231De69AB4593f5E0fCDc",
       "name": "mkUSD-USDC",
       "symbol": "mkUSDUSDC",
@@ -6839,6 +7258,14 @@
       "name": "WETH yVault",
       "symbol": "yvWETH",
       "logoURI": "https://raw.githubusercontent.com/yearn/yearn-assets/master/icons/multichain-tokens/1/0xFF8f8A38c80b9899a928152D58F219fDCcD4306C/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xFFcaF6549a229D63351B71313559EDbe0C467B78",
+      "name": "Curve reUSD-sfrxUSD yVault",
+      "symbol": "yvCurve-reUSD-sfrxUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0xFFcaF6549a229D63351B71313559EDbe0C467B78/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7290,6 +7717,14 @@
       "decimals": 18
     },
     {
+      "address": "0xb5907b7913F4dc10C5c0fc75c570c7D78D16768F",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvCurve-dYFIETH-f-f-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0xb5907b7913F4dc10C5c0fc75c570c7D78D16768F/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xb5ff5Da1ca2Ac2abd9dFABEe3b105CCe5A1eB057",
       "name": "Yearn-Ajna Pool dETH/WETH Vault-compounder",
       "symbol": "ysWETH",
@@ -7570,6 +8005,14 @@
       "decimals": 18
     },
     {
+      "address": "0xc553b0Ed5640Ce5cDB8EFC11f5515F06B1b3b412",
+      "name": "yGauge WETH-2 yVault Cove Rewards Gauge",
+      "symbol": "yG-yvWETH-2-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0xc553b0Ed5640Ce5cDB8EFC11f5515F06B1b3b412/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xc56413869c6CDf96496f2b1eF801fEDBdFA7dDB0",
       "name": "WETH-1 yVault",
       "symbol": "yvWETH-1",
@@ -7809,6 +8252,13 @@
       "decimals": 18
     },
     {
+      "address": "0xd57aEa3686d623dA2dCEbc87010a4F2F38Ac7B15",
+      "name": "yGauge USDS-1 yVault",
+      "symbol": "yG-yvUSDS-1",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xd6242E984E6db6B5286FB2c26C69330Da639da12",
       "name": "RAREPEPE Series 1 Card 1",
       "symbol": "RAREPEPE",
@@ -7905,8 +8355,8 @@
     },
     {
       "address": "0xd9D920AA40f578ab794426F5C90F6C731D159DEf",
-      "name": "SolvBTC Babylon",
-      "symbol": "SolvBTC.BBN",
+      "name": "xSolvBTC",
+      "symbol": "xSolvBTC",
       "logoURI": "https://coin-images.coingecko.com/coins/images/39384/thumb/unnamed.png?1721961640",
       "chainId": 1,
       "decimals": 18
@@ -8133,6 +8583,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xe3faeD70Ccaf49C9BAA95ca8d41b1777d7ae440f/logo-128.png",
       "chainId": 1,
       "decimals": 6
+    },
+    {
+      "address": "0xe4F9305d9864B24F4bc50b966f7b92C56347fe31",
+      "name": "yGauge Curve dYFIETH-f Factory yVault Cove Rewards Gauge",
+      "symbol": "yG-yvCurve-dYFIETH-f-f-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0xe4F9305d9864B24F4bc50b966f7b92C56347fe31/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
     },
     {
       "address": "0xe4b0F1967A3098e26e4c939036D58d713B30ddbF",
@@ -8391,6 +8849,14 @@
       "decimals": 18
     },
     {
+      "address": "0xf4e7Ff66Fd3d1c33B3020fFA575C33Cb2968082D",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-lp-yPRISMA-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0xf4e7Ff66Fd3d1c33B3020fFA575C33Cb2968082D/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xf4fDbc7C66Dc9832D672Ffe6242B6A386CeAd5DE",
       "name": "sUSD yVault",
       "symbol": "yvsUSD",
@@ -8427,6 +8893,14 @@
       "name": "Curve dYFI-ETH Factory yVault",
       "symbol": "yvCurve-dYFI-ETH-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xf70B3F1eA3BFc659FFb8b27E84FAE7Ef38b5bD3b/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xf750c238cE033afC224C2E57d0fcb86E64Db0221",
+      "name": "Wrapped YearnV3 Strategy Cove Rewards Gauge",
+      "symbol": "ysyG-yvCurve-YFIETH-gauge",
+      "logoURI": "https://assets.smold.app/api/token/1/0xf750c238cE033afC224C2E57d0fcb86E64Db0221/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8483,6 +8957,14 @@
       "name": "swETH",
       "symbol": "swETH",
       "logoURI": "https://assets.smold.app/api/token/1/0xf951E335afb289353dc249e82926178EaC7DEd78/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xf9A7084Ec30238495b3F5C51f05BA7Cd1C358dcF",
+      "name": "crvUSD-2 yVault Liquid Locker Compounder",
+      "symbol": "yv^2crvUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0xf9A7084Ec30238495b3F5C51f05BA7Cd1C358dcF/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -8562,6 +9044,13 @@
       "name": "Balancer GHO-LUSD Factory yVault",
       "symbol": "yvBal-GHO-LUSD-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xfb9A680825f29972629b2295E050f74CB2f4992b/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xfe08Fc631BE2DA2B47aa6adBA275ADAB2197C0cd",
+      "name": "Wrapped YearnV3 Strategy",
+      "symbol": "ysyG-lp-yCRVv2",
       "chainId": 1,
       "decimals": 18
     },
