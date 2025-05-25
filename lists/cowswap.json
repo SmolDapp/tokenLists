@@ -1,10 +1,10 @@
 {
   "name": "CoW Swap",
   "description": "",
-  "timestamp": "2025-04-27T00:58:37Z",
+  "timestamp": "2025-05-25T01:23:05Z",
   "version": {
     "major": 0,
-    "minor": 27,
+    "minor": 28,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/cowprotocol/cowswap/c5974fb8a45d678029ecb013dab33722e152daaa/src/assets/cow-swap/cow_v2.svg",
@@ -515,6 +515,14 @@
       "name": "Flex Ungovernance Token",
       "symbol": "FLX",
       "logoURI": "https://tokens.1inch.io/0x6243d8cea23066d098a15582d81a598b4e8391f4.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x6440f144b7e50D6a8439336510312d2F54beB01D",
+      "name": "BOLD Stablecoin",
+      "symbol": "BOLD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x6440f144b7e50D6a8439336510312d2F54beB01D/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -1574,6 +1582,46 @@
       "decimals": 18
     },
     {
+      "address": "0x0000000000000000000000000000000000001010",
+      "name": "Polygon Ecosystem Token",
+      "symbol": "POL",
+      "logoURI": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "name": "Wrapped Polygon Ecosystem Token",
+      "symbol": "WPOL",
+      "logoURI": "https://assets.smold.app/api/token/137/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://assets.smold.app/api/token/137/0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "name": "(PoS) Dai Stablecoin",
+      "symbol": "DAI",
+      "logoURI": "https://assets.smold.app/api/token/137/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063/logo-128.png",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "name": "(PoS) Tether USD",
+      "symbol": "USDT",
+      "logoURI": "https://assets.smold.app/api/token/137/0xc2132D05D31c914a87C6611C10748AEb04B58e8F/logo-128.png",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
       "address": "0x04D5ddf5f3a8939889F11E97f8c4BB48317F1938",
       "name": "USDz",
       "symbol": "USDz",
@@ -1802,6 +1850,22 @@
       "logoURI": "https://assets.smold.app/api/token/42161/0xcb8b5CD20BdCaea9a010aC1F8d835824F5C87A04/logo-128.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+      "name": "TetherToken",
+      "symbol": "USDt",
+      "logoURI": "https://tokens.1inch.io/0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7.png",
+      "chainId": 43114,
+      "decimals": 6
+    },
+    {
+      "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://tokens.1inch.io/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png",
+      "chainId": 43114,
+      "decimals": 6
     }
   ]
 }

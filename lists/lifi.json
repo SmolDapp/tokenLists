@@ -1,10 +1,10 @@
 {
   "name": "Lifi Token List",
   "description": "",
-  "timestamp": "2025-05-18T01:23:39Z",
+  "timestamp": "2025-05-25T01:15:49Z",
   "version": {
-    "major": 8,
-    "minor": 4,
+    "major": 9,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://avatars.githubusercontent.com/u/85288935?s=200\u0026v=4",
@@ -39,6 +39,14 @@
       "name": "Midas BTC Yield Token",
       "symbol": "mBTC",
       "logoURI": "https://coin-images.coingecko.com/coins/images/51055/thumb/mbtc.png?1729875716",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x0B010000b7624eb9B3DfBC279673C76E9D29D5F7",
+      "name": "Obol Network",
+      "symbol": "OBOL",
+      "logoURI": "https://assets.coingecko.com/coins/images/53827/large/Primary_Icon-Circle_LightBG.png?1740035882",
       "chainId": 1,
       "decimals": 18
     },
@@ -223,6 +231,14 @@
       "name": "Relay Token",
       "symbol": "RELAY",
       "logoURI": "https://assets.coingecko.com/coins/images/17816/large/relay-logo-200.png?1696517336",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x6440f144b7e50D6a8439336510312d2F54beB01D",
+      "name": "BOLD Stablecoin",
+      "symbol": "BOLD",
+      "logoURI": "https://assets.smold.app/api/token/1/0x6440f144b7e50D6a8439336510312d2F54beB01D/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -498,6 +514,14 @@
       "decimals": 18
     },
     {
+      "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
+      "name": "Liquid staked Ether 2.0",
+      "symbol": "stETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xbbcb0356bB9e6B3Faa5CbF9E5F36185d53403Ac9",
       "name": "Backed Coinbase Global",
       "symbol": "bCOIN",
@@ -606,6 +630,14 @@
       "name": "Staked EURA",
       "symbol": "stEUR",
       "logoURI": "https://assets.smold.app/api/token/10/0x004626A008B1aCdC4c74ab51644093b155e59A23/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x03569CC076654F82679C4BA2124D64774781B01D",
+      "name": "BOLD Stablecoin",
+      "symbol": "BOLD",
+      "logoURI": "https://assets.smold.app/api/token/10/0x03569CC076654F82679C4BA2124D64774781B01D/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -992,11 +1024,12 @@
       "decimals": 18
     },
     {
-      "address": "0x491a4eB4f1FC3BfF8E1d2FC856a6A46663aD556f",
-      "name": "BRZ",
+      "address": "0x4eD141110F6EeeAbA9A1df36d8c26f684d2475Dc",
+      "name": "BRZ Token",
       "symbol": "BRZ",
+      "logoURI": "https://assets.coingecko.com/coins/images/8472/large/2_vtiD3xwce9knG2COxtSMaQ.png?1597786961",
       "chainId": 137,
-      "decimals": 4
+      "decimals": 18
     },
     {
       "address": "0x644192291cc835A93d6330b24EA5f5FEdD0eEF9e",
@@ -1304,6 +1337,14 @@
       "name": "Staked EURA",
       "symbol": "stEUR",
       "logoURI": "https://assets.smold.app/api/token/8453/0x004626A008B1aCdC4c74ab51644093b155e59A23/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x03569CC076654F82679C4BA2124D64774781B01D",
+      "name": "BOLD Stablecoin",
+      "symbol": "BOLD",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x03569CC076654F82679C4BA2124D64774781B01D/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1763,6 +1804,14 @@
       "decimals": 18
     },
     {
+      "address": "0x03569CC076654F82679C4BA2124D64774781B01D",
+      "name": "BOLD Stablecoin",
+      "symbol": "BOLD",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x03569CC076654F82679C4BA2124D64774781B01D/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x097BF766E427F5CcD306F21Ba05632e0Be849B0E",
       "name": "Stably USD",
       "symbol": "USDS",
@@ -2106,6 +2155,14 @@
       "decimals": 18
     },
     {
+      "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+      "name": "USD₮0",
+      "symbol": "USD₮0",
+      "logoURI": "https://assets.smold.app/api/token/42161/0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9/logo-128.png",
+      "chainId": 42161,
+      "decimals": 6
+    },
+    {
       "address": "0xaC28C9178ACc8BA4A11A29E013a3A2627086e422",
       "name": "Backed MicroStrategy Inc",
       "symbol": "bMSTR",
@@ -2182,6 +2239,14 @@
       "name": "USDA",
       "symbol": "USDA",
       "logoURI": "https://assets.smold.app/api/token/43114/0x0000206329b97DB379d5E1Bf586BbDB969C63274/logo-128.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x03569CC076654F82679C4BA2124D64774781B01D",
+      "name": "BOLD Stablecoin",
+      "symbol": "BOLD",
+      "logoURI": "https://assets.smold.app/api/token/43114/0x03569CC076654F82679C4BA2124D64774781B01D/logo-128.png",
       "chainId": 43114,
       "decimals": 18
     },
