@@ -1,9 +1,9 @@
 {
   "name": "Blockscout",
   "description": "",
-  "timestamp": "2025-05-25T01:15:42Z",
+  "timestamp": "2025-06-01T02:07:20Z",
   "version": {
-    "major": 88,
+    "major": 89,
     "minor": 0,
     "patch": 0
   },
@@ -66,6 +66,14 @@
       "name": "Mantle",
       "symbol": "MNT",
       "logoURI": "https://etherscan.io/token/images/mantle_32.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x44ff8620b8cA30902395A7bD3F2407e1A091BF73",
+      "name": "Virtual Protocol",
+      "symbol": "VIRTUAL",
+      "logoURI": "https://asset-images.messari.io/images/4eb07099-9d91-4318-a63f-6672e191ef43/128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -134,14 +142,6 @@
       "decimals": 8
     },
     {
-      "address": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
-      "name": "Tether Gold",
-      "symbol": "XAUt",
-      "logoURI": "https://tokens.1inch.io/0x68749665ff8d2d112fa859aa293f07a622782f38.png",
-      "chainId": 1,
-      "decimals": 6
-    },
-    {
       "address": "0x6982508145454Ce325dDbE47a25d4ec3d2311933",
       "name": "Pepe",
       "symbol": "PEPE",
@@ -174,14 +174,6 @@
       "decimals": 18
     },
     {
-      "address": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
-      "name": "PayPal USD",
-      "symbol": "PYUSD",
-      "logoURI": "https://assets.smold.app/api/token/1/0x6c3ea9036406852006290770BEdFcAbA0e23A0e8/logo-128.png",
-      "chainId": 1,
-      "decimals": 6
-    },
-    {
       "address": "0x75231F58b43240C9718Dd58B4967c5114342a86c",
       "name": "OKB",
       "symbol": "OKB",
@@ -196,14 +188,6 @@
       "logoURI": "https://asset-images.messari.io/images/18282bf5-ef60-4e10-9fed-6a057fb4890a/128.png",
       "chainId": 1,
       "decimals": 6
-    },
-    {
-      "address": "0x7A56E1C57C7475CCf742a1832B028F0456652F97",
-      "name": "Solv BTC",
-      "symbol": "SolvBTC",
-      "logoURI": "https://assets.coingecko.com/coins/images/36800/large/solvBTC.png?1719810684",
-      "chainId": 1,
-      "decimals": 18
     },
     {
       "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
@@ -238,6 +222,14 @@
       "decimals": 24
     },
     {
+      "address": "0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d",
+      "name": "World Liberty Financial USD",
+      "symbol": "USD1",
+      "logoURI": "https://assets.coingecko.com/coins/images/54977/large/30Q2SFVH_400x400.jpg?1742998328",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x925206b8a707096Ed26ae47C84747fE0bb734F59",
       "name": "WBT",
       "symbol": "WBT",
@@ -270,14 +262,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
-      "name": "Maker",
-      "symbol": "MKR",
-      "logoURI": "https://assets.smold.app/api/token/1/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b",
       "name": "CRO",
       "symbol": "CRO",
@@ -298,13 +282,6 @@
       "name": "rsETH",
       "symbol": "rsETH",
       "logoURI": "https://assets.smold.app/api/token/1/0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xAf30D2a7E90d7DC361c8C4585e9BB7D2F6f15bc7",
-      "name": "FirstBlood Token",
-      "symbol": "1ST",
       "chainId": 1,
       "decimals": 18
     },
@@ -365,10 +342,26 @@
       "decimals": 18
     },
     {
+      "address": "0xF57e7e7C23978C3cAEC3C3548E3D615c346e79fF",
+      "name": "Immutable X",
+      "symbol": "IMX",
+      "logoURI": "https://tokens.1inch.io/0xf57e7e7c23978c3caec3c3548e3d615c346e79ff.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD",
       "name": "Savings USDS",
       "symbol": "sUSDS",
       "logoURI": "https://assets.smold.app/api/token/1/0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xae78736Cd615f374D3085123A210448E74Fc6393",
+      "name": "Rocket Pool ETH",
+      "symbol": "rETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xae78736Cd615f374D3085123A210448E74Fc6393/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -425,6 +418,14 @@
       "name": "USDS Stablecoin",
       "symbol": "USDS",
       "logoURI": "https://assets.smold.app/api/token/1/0xdC035D45d973E3EC169d2276DDab16f1e407384F/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30",
+      "name": "Injective Token",
+      "symbol": "INJ",
+      "logoURI": "https://tokens.1inch.io/0xe28b3b32b6c345a34ff64674606124dd5aceca30.png",
       "chainId": 1,
       "decimals": 18
     },
