@@ -1,9 +1,9 @@
 {
   "name": "Blockscout",
   "description": "",
-  "timestamp": "2025-06-01T02:07:20Z",
+  "timestamp": "2025-06-08T02:03:18Z",
   "version": {
-    "major": 89,
+    "major": 90,
     "minor": 0,
     "patch": 0
   },
@@ -114,6 +114,14 @@
       "name": "BitgetToken",
       "symbol": "BGB",
       "logoURI": "https://assets.coingecko.com/coins/images/11610/large/icon_colour.png?1696511504",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x56072C95FAA701256059aa122697B133aDEd9279",
+      "name": "SKY Governance Token",
+      "symbol": "SKY",
+      "logoURI": "https://assets.coingecko.com/coins/images/26389/large/skytoken-logo-250.png?1657751762",
       "chainId": 1,
       "decimals": 18
     },
@@ -278,14 +286,6 @@
       "decimals": 6
     },
     {
-      "address": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
-      "name": "rsETH",
-      "symbol": "rsETH",
-      "logoURI": "https://assets.smold.app/api/token/1/0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1",
       "name": "Arbitrum",
       "symbol": "ARB",
@@ -318,6 +318,14 @@
       "decimals": 18
     },
     {
+      "address": "0xC139190F447e929f090Edeb554D95AbB8b18aC1C",
+      "name": "USDtb",
+      "symbol": "USDtb",
+      "logoURI": "https://assets.coingecko.com/coins/images/52804/large/USDtbSmall.png?1734344946",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
       "name": "Wrapped eETH",
       "symbol": "weETH",
@@ -338,14 +346,6 @@
       "name": "Ethereum",
       "symbol": "ETH",
       "logoURI": "https://assets.smold.app/api/token/1/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0xF57e7e7C23978C3cAEC3C3548E3D615c346e79fF",
-      "name": "Immutable X",
-      "symbol": "IMX",
-      "logoURI": "https://tokens.1inch.io/0xf57e7e7c23978c3caec3c3548e3d615c346e79ff.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -534,6 +534,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3A18dcC9745eDcD1Ef33ecB93b0b6eBA5671e7Ca",
+      "name": "Kujira native asset",
+      "symbol": "KUJI",
+      "logoURI": "https://assets.smold.app/api/token/10/0x3A18dcC9745eDcD1Ef33ecB93b0b6eBA5671e7Ca/logo-128.png",
+      "chainId": 10,
+      "decimals": 6
+    },
+    {
       "address": "0x4200000000000000000000000000000000000006",
       "name": "Wrapped Ether",
       "symbol": "WETH",
@@ -676,14 +684,6 @@
       "logoURI": "https://assets.smold.app/api/token/10/0x93919784C523f39CACaa98Ee0a9d96c3F32b593e/logo-128.png",
       "chainId": 10,
       "decimals": 8
-    },
-    {
-      "address": "0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db",
-      "name": "VelodromeV2",
-      "symbol": "VELO",
-      "logoURI": "https://assets.smold.app/api/token/10/0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db/logo-128.png",
-      "chainId": 10,
-      "decimals": 18
     },
     {
       "address": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
@@ -9381,14 +9381,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9D34F58f26321c9f4bea3830eE66721748dc4101",
-      "name": "Tethys LP",
-      "symbol": "TETHYSLP",
-      "logoURI": "https://assets.smold.app/api/token/1088/0x9D34F58f26321c9f4bea3830eE66721748dc4101/logo-128.png",
-      "chainId": 1088,
-      "decimals": 18
-    },
-    {
       "address": "0x9D3Aa7A10a0273b99EAA938dE61b1F5EcBBFaE93",
       "name": "ARGO",
       "symbol": "ARGO",
@@ -10617,14 +10609,6 @@
       "name": "PUMPe Meme",
       "symbol": "PUMPE",
       "logoURI": "https://assets.smold.app/api/token/1088/0xCb36d532a9995F4471C99868F8DA775B7a23eBB8/logo-128.png",
-      "chainId": 1088,
-      "decimals": 18
-    },
-    {
-      "address": "0xCc15d8f93be780aD78fD1A016fB0F15F2543b5Dc",
-      "name": "Tethys LP",
-      "symbol": "TETHYSLP",
-      "logoURI": "https://assets.smold.app/api/token/1088/0xCc15d8f93be780aD78fD1A016fB0F15F2543b5Dc/logo-128.png",
       "chainId": 1088,
       "decimals": 18
     },
@@ -15021,6 +15005,14 @@
       "decimals": 18
     },
     {
+      "address": "0x2B11834Ed1FeAEd4b4b3a86A6F571315E25A884D",
+      "name": "Moca",
+      "symbol": "MOCA",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x2B11834Ed1FeAEd4b4b3a86A6F571315E25A884D/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
       "address": "0x2Da56AcB9Ea78330f947bD57C54119Debda7AF71",
       "name": "Mog Coin",
       "symbol": "Mog",
@@ -15032,7 +15024,7 @@
       "address": "0x3055913c90Fcc1A6CE9a358911721eEb942013A1",
       "name": "PancakeSwap Token",
       "symbol": "Cake",
-      "logoURI": "https://assets.smold.app/api/token/8453/0x3055913c90Fcc1A6CE9a358911721eEb942013A1/logo-128.png",
+      "logoURI": "ipfs://QmYJGr6sqpJBmcPdJpNCfiBNNJJoJVVPVBM4KNBPFtsNGn",
       "chainId": 8453,
       "decimals": 18
     },
@@ -15265,14 +15257,6 @@
       "name": "Morpho Token",
       "symbol": "MORPHO",
       "logoURI": "https://assets.smold.app/api/token/8453/0xBAa5CC21fd487B8Fcc2F632f3F4E8D37262a0842/logo-128.png",
-      "chainId": 8453,
-      "decimals": 18
-    },
-    {
-      "address": "0xBCBAf311ceC8a4EAC0430193A528d9FF27ae38C1",
-      "name": "IoTeX Network",
-      "symbol": "IOTX",
-      "logoURI": "ipfs://QmdrKD7FGQJGvmJ5dpoM8tH4Bm4uddobXM7SpSZC4pYqok",
       "chainId": 8453,
       "decimals": 18
     },
