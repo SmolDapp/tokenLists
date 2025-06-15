@@ -1,10 +1,10 @@
 {
   "name": "Uniswap Labs Default",
   "description": "",
-  "timestamp": "2025-05-11T01:04:22Z",
+  "timestamp": "2025-06-15T00:59:28Z",
   "version": {
     "major": 19,
-    "minor": 3,
+    "minor": 4,
     "patch": 0
   },
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
@@ -188,6 +188,13 @@
       "name": "Wrapped Ampleforth",
       "symbol": "WAMPL",
       "logoURI": "https://assets.smold.app/api/token/8453/0x489fe42C267fe0366B16b0c39e7AEEf977E841eF/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x4BfAa776991E85e5f8b1255461cbbd216cFc714f",
+      "name": "Home",
+      "symbol": "HOME",
       "chainId": 8453,
       "decimals": 18
     },
@@ -642,10 +649,26 @@
       "decimals": 18
     },
     {
+      "address": "0xcb585250f852C6c6bf90434AB21A00f02833a4af",
+      "name": "Coinbase Wrapped XRP",
+      "symbol": "cbXRP",
+      "logoURI": "https://assets.coingecko.com/coins/images/66267/large/Coinbase_Wrapped_XPR_%28cbXRP%29.png?1749023398",
+      "chainId": 8453,
+      "decimals": 6
+    },
+    {
       "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
       "name": "Coinbase Wrapped BTC",
       "symbol": "cbBTC",
       "logoURI": "https://assets.smold.app/api/token/8453/0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf/logo-128.png",
+      "chainId": 8453,
+      "decimals": 8
+    },
+    {
+      "address": "0xcbD06E5A2B0C65597161de254AA074E489dEb510",
+      "name": "Coinbase Wrapped DOGE",
+      "symbol": "cbDOGE",
+      "logoURI": "https://assets.coingecko.com/coins/images/66268/large/Coinbase_Wrapped_Doge_%28cbDOGE%29.png?1749023465",
       "chainId": 8453,
       "decimals": 8
     },

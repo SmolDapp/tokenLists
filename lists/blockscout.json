@@ -1,9 +1,9 @@
 {
   "name": "Blockscout",
   "description": "",
-  "timestamp": "2025-06-08T02:03:18Z",
+  "timestamp": "2025-06-15T01:47:10Z",
   "version": {
-    "major": 90,
+    "major": 91,
     "minor": 0,
     "patch": 0
   },
@@ -13,14 +13,6 @@
     "blockscout"
   ],
   "tokens": [
-    {
-      "address": "0x1151CB3d861920e07a38e03eEAd12C32178567F6",
-      "name": "Bonk",
-      "symbol": "Bonk",
-      "logoURI": "https://assets.coingecko.com/coins/images/28600/large/bonk.jpg?1696527587",
-      "chainId": 1,
-      "decimals": 5
-    },
     {
       "address": "0x163f8C2467924be0ae7B5347228CABF260318753",
       "name": "Worldcoin",
@@ -286,6 +278,14 @@
       "decimals": 6
     },
     {
+      "address": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
+      "name": "rsETH",
+      "symbol": "rsETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1",
       "name": "Arbitrum",
       "symbol": "ARB",
@@ -332,6 +332,14 @@
       "logoURI": "https://assets.smold.app/api/token/1/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee/logo-128.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xE0f63A424a4439cBE457D80E4f4b51aD25b2c56C",
+      "name": "SPX6900",
+      "symbol": "SPX",
+      "logoURI": "https://assets.coingecko.com/coins/images/31401/large/spx6900.jpeg?1696530217",
+      "chainId": 1,
+      "decimals": 8
     },
     {
       "address": "0xE66747a101bFF2dBA3697199DCcE5b743b454759",
@@ -422,14 +430,6 @@
       "decimals": 18
     },
     {
-      "address": "0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30",
-      "name": "Injective Token",
-      "symbol": "INJ",
-      "logoURI": "https://tokens.1inch.io/0xe28b3b32b6c345a34ff64674606124dd5aceca30.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xfAbA6f8e4a5E8Ab82F62fe7C39859FA577269BE3",
       "name": "Ondo",
       "symbol": "ONDO",
@@ -449,7 +449,7 @@
       "address": "0x0994206dfE8De6Ec6920FF4D779B0d950605Fb53",
       "name": "Curve DAO Token",
       "symbol": "CRV",
-      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD533a949740bb3306d119CC777fa900bA034cd52/logo.png",
+      "logoURI": "ipfs://QmcVbt1ezDs89zPw5rgaR9xy5f3bdE7dxvTz958FeFNgfQ",
       "chainId": 10,
       "decimals": 18
     },
@@ -489,7 +489,7 @@
       "address": "0x23ee2343B892b1BB63503a4FAbc840E0e2C6810f",
       "name": "Axelar",
       "symbol": "AXL",
-      "logoURI": "https://assets.coingecko.com/coins/images/27277/large/V-65_xQ1_400x400.jpeg?1663121730",
+      "logoURI": "ipfs://QmYJRge59EKjEcCzs4X9j6c3dsAJBCzJRRgN5XZtg9treW",
       "chainId": 10,
       "decimals": 6
     },
@@ -529,17 +529,9 @@
       "address": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
       "name": "ChainLink Token",
       "symbol": "LINK",
-      "logoURI": "https://tokens.1inch.io/0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6.png",
+      "logoURI": "ipfs://QmU96KikTqZ4rmV6LPim9i57fuvTLMLcV8B6HKXvkdrdcW",
       "chainId": 10,
       "decimals": 18
-    },
-    {
-      "address": "0x3A18dcC9745eDcD1Ef33ecB93b0b6eBA5671e7Ca",
-      "name": "Kujira native asset",
-      "symbol": "KUJI",
-      "logoURI": "https://assets.smold.app/api/token/10/0x3A18dcC9745eDcD1Ef33ecB93b0b6eBA5671e7Ca/logo-128.png",
-      "chainId": 10,
-      "decimals": 6
     },
     {
       "address": "0x4200000000000000000000000000000000000006",
@@ -570,6 +562,14 @@
       "name": "Venus XVS",
       "symbol": "XVS",
       "logoURI": "ipfs://QmZ8TNxnqjmh6a4RqrmxeTtSbj7WTQ5uT8VRQamEEf4R1D",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x59D9356E565Ab3A36dD77763Fc0d87fEaf85508C",
+      "name": "Mountain Protocol USD",
+      "symbol": "USDM",
+      "logoURI": "https://assets.smold.app/api/token/10/0x59D9356E565Ab3A36dD77763Fc0d87fEaf85508C/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -729,7 +729,7 @@
       "address": "0xEc6adef5E1006bb305bB1975333e8fc4071295bf",
       "name": "Cartesi Token",
       "symbol": "CTSI",
-      "logoURI": "https://assets.coingecko.com/coins/images/11038/large/cartesi.png?1592288021",
+      "logoURI": "ipfs://QmUGwJaAgBCUqg2iF3hVG3FdzTjUmUxDDP6MmaxCeMhEae",
       "chainId": 10,
       "decimals": 18
     },
@@ -745,7 +745,7 @@
       "address": "0xFE8B128bA8C78aabC59d4c64cEE7fF28e9379921",
       "name": "Balancer",
       "symbol": "BAL",
-      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
+      "logoURI": "ipfs://QmeVnk6jkW8J9ZHFxsLVamMNHpz9bigp7tsY2CJuxas297",
       "chainId": 10,
       "decimals": 18
     },
@@ -793,7 +793,7 @@
       "address": "0xaf8cA653Fa2772d58f4368B0a71980e9E3cEB888",
       "name": "Tellor",
       "symbol": "TRB",
-      "logoURI": "https://assets.coingecko.com/coins/images/9644/large/Blk_icon_current.png?1584980686",
+      "logoURI": "ipfs://QmbQVgV3iHf75aQ5ijJsfmgm2U8J8f2mACeMbaeCSgGFou",
       "chainId": 10,
       "decimals": 18
     },
@@ -4733,14 +4733,6 @@
       "decimals": 18
     },
     {
-      "address": "0x41B97e0396b460A12D3D974E5D2891b520E5C18b",
-      "name": "Testerium",
-      "symbol": "Testerium",
-      "logoURI": "https://assets.smold.app/api/token/1088/0x41B97e0396b460A12D3D974E5D2891b520E5C18b/logo-128.png",
-      "chainId": 1088,
-      "decimals": 18
-    },
-    {
       "address": "0x41a5dC32562a7102d24898e55d65567cDfeFCd84",
       "name": "BabyMetis",
       "symbol": "BabyMetis",
@@ -7219,6 +7211,14 @@
       "logoURI": "https://assets.smold.app/api/token/1088/0x6f1aE8f277fe4B2cAFD76020E93D97eAbf29240e/logo-128.png",
       "chainId": 1088,
       "decimals": 6
+    },
+    {
+      "address": "0x6f95Fff33660112e1Fa8db0B854B098ac23120d6",
+      "name": "Corrupted Alith",
+      "symbol": "CALITH",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x6f95Fff33660112e1Fa8db0B854B098ac23120d6/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
     },
     {
       "address": "0x6fD98ebbCAC6C2986eE1b3b9Ac4afe5534D33Cb6",
@@ -10213,14 +10213,6 @@
       "decimals": 9
     },
     {
-      "address": "0xB9ee3C029f08F5443c864BC2612B05D2A89d7202",
-      "name": "TEST2",
-      "symbol": "TEST2",
-      "logoURI": "https://assets.smold.app/api/token/1088/0xB9ee3C029f08F5443c864BC2612B05D2A89d7202/logo-128.png",
-      "chainId": 1088,
-      "decimals": 18
-    },
-    {
       "address": "0xBBA0e3A9Cf93417355c4250c8f65A3eAC2b7Fc2C",
       "name": "MetisPrinter",
       "symbol": "MetisP",
@@ -10993,6 +10985,14 @@
       "name": "SBL Point",
       "symbol": "SBL.P",
       "logoURI": "https://assets.smold.app/api/token/1088/0xDF00F0a40Cd7a7d1f8796117A6fA786e1a7671EA/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xDFB33b0e059f1d0b311C58239ABb8D94F45F321b",
+      "name": "Divine Essence",
+      "symbol": "DFKDE",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xDFB33b0e059f1d0b311C58239ABb8D94F45F321b/logo-128.png",
       "chainId": 1088,
       "decimals": 18
     },
@@ -13621,14 +13621,6 @@
       "decimals": 18
     },
     {
-      "address": "0xd81DBC1b7F246Fb5a6310D0bD9E8795A6ce26a62",
-      "name": "strongmetis",
-      "symbol": "STRONG",
-      "logoURI": "https://assets.smold.app/api/token/1088/0xd81DBC1b7F246Fb5a6310D0bD9E8795A6ce26a62/logo-128.png",
-      "chainId": 1088,
-      "decimals": 9
-    },
-    {
       "address": "0xd8Ab992bbcCd32458Cb5b0dD095220E1baF02c9A",
       "name": "Token",
       "symbol": "Token",
@@ -13953,14 +13945,6 @@
       "name": "Metis Doge",
       "symbol": "METISDOGE",
       "logoURI": "https://assets.smold.app/api/token/1088/0xe46Bb464A39dE52772297792fCBEE8f19d84FC32/logo-128.png",
-      "chainId": 1088,
-      "decimals": 18
-    },
-    {
-      "address": "0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E",
-      "name": "Staked FRAX",
-      "symbol": "sFRAX",
-      "logoURI": "https://assets.smold.app/api/token/1088/0xe4796cCB6bB5DE2290C417Ac337F2b66CA2E770E/logo-128.png",
       "chainId": 1088,
       "decimals": 18
     },
@@ -15005,14 +14989,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2B11834Ed1FeAEd4b4b3a86A6F571315E25A884D",
-      "name": "Moca",
-      "symbol": "MOCA",
-      "logoURI": "https://assets.smold.app/api/token/8453/0x2B11834Ed1FeAEd4b4b3a86A6F571315E25A884D/logo-128.png",
-      "chainId": 8453,
-      "decimals": 18
-    },
-    {
       "address": "0x2Da56AcB9Ea78330f947bD57C54119Debda7AF71",
       "name": "Mog Coin",
       "symbol": "Mog",
@@ -15024,7 +15000,7 @@
       "address": "0x3055913c90Fcc1A6CE9a358911721eEb942013A1",
       "name": "PancakeSwap Token",
       "symbol": "Cake",
-      "logoURI": "ipfs://QmYJGr6sqpJBmcPdJpNCfiBNNJJoJVVPVBM4KNBPFtsNGn",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x3055913c90Fcc1A6CE9a358911721eEb942013A1/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },
@@ -15305,6 +15281,14 @@
       "name": "Keeta",
       "symbol": "KTA",
       "logoURI": "https://assets.smold.app/api/token/8453/0xc0634090F2Fe6c6d75e61Be2b949464aBB498973/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0xc43F3Ae305a92043bd9b62eBd2FE14F7547ee485",
+      "name": "Chintai Exchange Token",
+      "symbol": "CHEX",
+      "logoURI": "ipfs://Qmdt98Rc8mywToTWVQ5mCzUi3LxRnfVrkUB3ZzUTJGRtUP",
       "chainId": 8453,
       "decimals": 18
     },
