@@ -1,10 +1,10 @@
 {
   "name": "Yearn Minimal Token List",
   "description": "",
-  "timestamp": "2025-07-06T02:14:45Z",
+  "timestamp": "2025-07-13T01:27:46Z",
   "version": {
     "major": 9,
-    "minor": 25,
+    "minor": 26,
     "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -592,12 +592,28 @@
       "decimals": 18
     },
     {
+      "address": "0x0d298432833E0d60372C70801FEaf868eB7451b3",
+      "name": "SY Terminal WBTC",
+      "symbol": "SY-tBTC",
+      "logoURI": "https://assets.smold.app/api/token/1/0x0d298432833E0d60372C70801FEaf868eB7451b3/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x0d4EA8536F9A13e4FBa16042a46c30f092b06aA5",
       "name": "Curve EURT Pool yVault",
       "symbol": "yvCurve-EURT",
       "logoURI": "https://assets.smold.app/api/token/1/0x0d4EA8536F9A13e4FBa16042a46c30f092b06aA5/logo-128.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x0e297dE4005883C757c9F09fdF7cF1363C20e626",
+      "name": "Morpho Yearn OG USDC Compounder",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0x0e297dE4005883C757c9F09fdF7cF1363C20e626/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
     },
     {
       "address": "0x0e880118C29F095143dDA28e64d95333A9e75A47",
@@ -2392,11 +2408,19 @@
     },
     {
       "address": "0x3DCc44ce7867a3Fd592cB9e77abC676B2675eD8a",
-      "name": "Curve yUSD USDC Factory yVault",
-      "symbol": "yvCurve-yUSD USDC-f",
+      "name": "Curve yUSD-USDC Factory yVault",
+      "symbol": "yvCurve-yUSD-USDC-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x3DCc44ce7867a3Fd592cB9e77abC676B2675eD8a/logo-128.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x3Ed6aa32c930253fc990dE58fF882B9186cd0072",
+      "name": "cap USDC",
+      "symbol": "capUSDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0x3Ed6aa32c930253fc990dE58fF882B9186cd0072/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
     },
     {
       "address": "0x3Ee118EFC826d30A29645eAf3b2EaaC9E8320185",
@@ -2709,6 +2733,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0x44AbeE98cc69d9D81782DBa715aE37ebbd381975",
+      "name": "cap USDC",
+      "symbol": "capUSDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0x44AbeE98cc69d9D81782DBa715aE37ebbd381975/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
     },
     {
       "address": "0x44e0A1134157d911C9a16eBeDfc86e825b2f1C5F",
@@ -4082,6 +4114,13 @@
       "name": "f(x) rUSD",
       "symbol": "rUSD",
       "logoURI": "https://asset-images.messari.io/images/8379b767-9d3a-4736-a3aa-c882a452bedf/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x65b05F6b0472b1f36a2F6d90A14cD21900851609",
+      "name": "USD3/sUSDS",
+      "symbol": "USD3sUSDS",
       "chainId": 1,
       "decimals": 18
     },
@@ -5588,6 +5627,14 @@
       "decimals": 18
     },
     {
+      "address": "0x888239Ffa9a0613F9142C808aA9F7d1948a14f75",
+      "name": "Morpho OEV-boosted USDC Compounder",
+      "symbol": "ysUSDC",
+      "logoURI": "https://assets.smold.app/api/token/1/0x888239Ffa9a0613F9142C808aA9F7d1948a14f75/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
+    },
+    {
       "address": "0x892D701d94a43bDBCB5eA28891DaCA2Fa22A690b",
       "name": "Curve.fi Factory USD Metapool: STBT/3CRV",
       "symbol": "STBT3CRV-f",
@@ -5923,8 +5970,8 @@
     },
     {
       "address": "0x928dB6676340e5206A91aD122a24E363131FFcE7",
-      "name": "Curve crv2USDaf Factory yVault",
-      "symbol": "yvCurve-crv2USDaf-f",
+      "name": "Curve USDaf-SR Factory yVault",
+      "symbol": "yvCurve-USDaf-SR-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x928dB6676340e5206A91aD122a24E363131FFcE7/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -6385,8 +6432,8 @@
     },
     {
       "address": "0x9cBD86ee0dA1B6552D69f1df2F689fB78fAc2dF7",
-      "name": "Curve reusdfxusd Factory yVault",
-      "symbol": "yvCurve-reusdfxusd-f",
+      "name": "Curve reUSD-fxUSD Factory yVault",
+      "symbol": "yvCurve-reUSD-fxUSD-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x9cBD86ee0dA1B6552D69f1df2F689fB78fAc2dF7/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -6537,8 +6584,8 @@
     },
     {
       "address": "0xA6AeBf9680FC87F7641c40Edd95cf52512f228B0",
-      "name": "Curve deUSDUSDC Factory yVault",
-      "symbol": "yvCurve-deUSDUSDC-f",
+      "name": "Curve deUSD-USDC Factory yVault",
+      "symbol": "yvCurve-deUSD-USDC-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xA6AeBf9680FC87F7641c40Edd95cf52512f228B0/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -7336,8 +7383,8 @@
     },
     {
       "address": "0xCFBA4c80d764fe3Cb7A9B8D72Dbb176c6e0b3716",
-      "name": "Curve s/lvlUSD Factory yVault",
-      "symbol": "yvCurve-s/lvlUSD-f",
+      "name": "Curve lvlUSD-slvlUSD Factory yVault",
+      "symbol": "yvCurve-lvlUSD-slvlUSD-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xCFBA4c80d764fe3Cb7A9B8D72Dbb176c6e0b3716/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -7778,6 +7825,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/11849/large/yfi-192x192.png",
       "chainId": 1,
       "decimals": 18
+    },
+    {
+      "address": "0xE2Fc85BfB48C4cF147921fBE110cf92Ef9f26F94",
+      "name": "Staked Stream USD",
+      "symbol": "xUSD",
+      "logoURI": "https://assets.smold.app/api/token/1/0xE2Fc85BfB48C4cF147921fBE110cf92Ef9f26F94/logo-128.png",
+      "chainId": 1,
+      "decimals": 6
     },
     {
       "address": "0xE403bbF2262643c2e996E7469be736E211D5B272",
@@ -9233,6 +9288,14 @@
       "decimals": 18
     },
     {
+      "address": "0xc9e146B126f4ca0Aa8edA3BDBCd76a960B4dcba7",
+      "name": "Curve USD3sUSDS Factory yVault",
+      "symbol": "yvCurve-USD3sUSDS-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xc9e146B126f4ca0Aa8edA3BDBCd76a960B4dcba7/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xc9e9C85B33E87fde85c44DBf72b4B842A071551D",
       "name": "SY Syrup USDC",
       "symbol": "SY-syrupUSDC",
@@ -9353,8 +9416,8 @@
     },
     {
       "address": "0xce2f57252644Db26c76011aD490553d88C3B9030",
-      "name": "Curve lvlUSDUSDC Factory yVault",
-      "symbol": "yvCurve-lvlUSDUSDC-f",
+      "name": "Curve lvlUSD-USDC Factory yVault",
+      "symbol": "yvCurve-lvlUSD-USDC-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xce2f57252644Db26c76011aD490553d88C3B9030/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -9377,8 +9440,8 @@
     },
     {
       "address": "0xcfC71c6e1d3aB51E02C7400E82D9a2d58593082d",
-      "name": "Curve ETH+ETH Factory yVault",
-      "symbol": "yvCurve-ETH+ETH-f",
+      "name": "Curve ETH+-WETH Factory yVault",
+      "symbol": "yvCurve-ETH+-WETH-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xcfC71c6e1d3aB51E02C7400E82D9a2d58593082d/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -9853,6 +9916,14 @@
       "decimals": 6
     },
     {
+      "address": "0xe770f7eF6C0667dc274194063e23621A82bB0C59",
+      "name": "SY Terminal WETH",
+      "symbol": "SY-tETH",
+      "logoURI": "https://assets.smold.app/api/token/1/0xe770f7eF6C0667dc274194063e23621A82bB0C59/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xe7c25cb1eac7D870F3cD103cBB060A6DFbc5eaF2",
       "name": "Curve ynETHx Factory yVault",
       "symbol": "yvCurve-ynETHx-f",
@@ -10009,6 +10080,14 @@
       "name": "reUSD/sfrxUSD",
       "symbol": "reusdsfrx",
       "logoURI": "https://assets.smold.app/api/token/1/0xed785Af60bEd688baa8990cD5c4166221599A441/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xee9BffF7da99e6f85AbC4f7FC33F5278473124e0",
+      "name": "SY Terminal USDe",
+      "symbol": "SY-tUSDe",
+      "logoURI": "https://assets.smold.app/api/token/1/0xee9BffF7da99e6f85AbC4f7FC33F5278473124e0/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },

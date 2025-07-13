@@ -1,10 +1,10 @@
 {
   "name": "Superchain Token List",
   "description": "",
-  "timestamp": "2025-07-06T02:16:26Z",
+  "timestamp": "2025-07-13T01:16:38Z",
   "version": {
-    "major": 5,
-    "minor": 12,
+    "major": 6,
+    "minor": 0,
     "patch": 0
   },
   "logoURI": "https://ethereum-optimism.github.io/optimism.svg",
@@ -2778,6 +2778,14 @@
       "decimals": 18
     },
     {
+      "address": "0xe53EC727dbDEB9E2d5456c3be40cFF031AB40A55",
+      "name": "SuperFarm",
+      "symbol": "SUPER",
+      "logoURI": "https://tokens.1inch.io/0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xe5e0b73380181273abCfD88695F52C4D0C825661",
       "name": "Impossible Cloud Network Token",
       "symbol": "ICNT",
@@ -3009,7 +3017,7 @@
       "address": "0x0994206dfE8De6Ec6920FF4D779B0d950605Fb53",
       "name": "Curve DAO Token",
       "symbol": "CRV",
-      "logoURI": "ipfs://QmcVbt1ezDs89zPw5rgaR9xy5f3bdE7dxvTz958FeFNgfQ",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD533a949740bb3306d119CC777fa900bA034cd52/logo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -3203,7 +3211,7 @@
       "address": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
       "name": "ChainLink Token",
       "symbol": "LINK",
-      "logoURI": "ipfs://QmU96KikTqZ4rmV6LPim9i57fuvTLMLcV8B6HKXvkdrdcW",
+      "logoURI": "https://tokens.1inch.io/0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -6719,160 +6727,6 @@
       "logoURI": "https://assets.smold.app/api/token/8453/0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2/logo-128.png",
       "chainId": 8453,
       "decimals": 6
-    },
-    {
-      "address": "0x28ba8D26F5F6710F42170EE545A0c953ca4997B9",
-      "name": "1INCH Token (Celo native bridge)",
-      "symbol": "1INCH",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x31F01af056B7e829bD41E59e8Ba3D2313d2B0Ff3",
-      "name": "Dola USD Stablecoin (Celo native bridge)",
-      "symbol": "DOLA",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x3776228836BFCFc87CaC36c28830b67759C02707",
-      "name": "Tether Gold (Celo native bridge)",
-      "symbol": "XAUt",
-      "chainId": 42220,
-      "decimals": 6
-    },
-    {
-      "address": "0x3a05ef6467309F388f90BcC3D79A522E6C39Fabb",
-      "name": "Across Protocol Token (Celo native bridge)",
-      "symbol": "ACX",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x4672ECbD03a1f93Dd67310cAEcd3a8eF6397E72A",
-      "name": "UMA Voting Token v1 (Celo native bridge)",
-      "symbol": "UMA",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x4C430944d20410A16D5cEC69B0cb66541b00A817",
-      "name": "Savings Dai (Celo native bridge)",
-      "symbol": "sDAI",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x55f3d16e6bd2b8B8E6599df6eF4593Ce9Dcae9ed",
-      "name": "Rocket Pool ETH (Celo native bridge)",
-      "symbol": "rETH",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x6981F932C2eC5F9E15d44d7EF46859a133f544dD",
-      "name": "Lido DAO Token (Celo native bridge)",
-      "symbol": "LDO",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x73A363ED1526F5e02Be99F51c59400A2C508312c",
-      "name": "Rocket Pool Protocol (Celo native bridge)",
-      "symbol": "RPL",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x75184c282e55a7393053f0b8F4F3E7BeAE067fdC",
-      "name": "Curve DAO Token (Celo native bridge)",
-      "symbol": "CRV",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x88c400d871829E381b53b55eEE79145B4287461a",
-      "name": "Worldcoin (Celo native bridge)",
-      "symbol": "WLD",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x8aC2901Dd8A1F17a1A4768A6bA4C3751e3995B2D",
-      "name": "Wrapped BTC (Celo native bridge)",
-      "symbol": "WBTC",
-      "chainId": 42220,
-      "decimals": 8
-    },
-    {
-      "address": "0x918b13745DE61380d5D3eFddf51244c369f101d5",
-      "name": "Maker (Celo native bridge)",
-      "symbol": "MKR",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0x9efD56A126A0e3a8782dB5Fd5AdB23a8dd9023C6",
-      "name": "Curve.Fi USD Stablecoin (Celo native bridge)",
-      "symbol": "crvUSD",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0xA80e318DC786c58b8BCB692579764F56F89Ab27e",
-      "name": "Gitcoin (Celo native bridge)",
-      "symbol": "GTC",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0xAC177dE2439bd0c7659c61F373Dbf247d1f41ABE",
-      "name": "Dai Stablecoin (Celo native bridge)",
-      "symbol": "DAI",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0xD221812de1BD094f35587EE8E174B07B6167D9Af",
-      "name": "Wrapped Ether (Celo native bridge)",
-      "symbol": "WETH",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0xEf6379Fa3090310862a42f6c732dBa2F20880F0A",
-      "name": "LUSD Stablecoin (Celo native bridge)",
-      "symbol": "LUSD",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0xF630876008a4eD9249FB4cAC978BA16827F52E91",
-      "name": "ChainLink Token (Celo native bridge)",
-      "symbol": "LINK",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0xF6A54aff8c97f7AF3CC86dbaeE88aF6a7AaB6288",
-      "name": "Aave Token (Celo native bridge)",
-      "symbol": "AAVE",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0xe00892B8636F0c7450177F89717539D656D870Fb",
-      "name": "PoolTogether (Celo native bridge)",
-      "symbol": "POOL",
-      "chainId": 42220,
-      "decimals": 18
-    },
-    {
-      "address": "0xeE571697998ec64e32B57D754D700c4dda2f2a0e",
-      "name": "Uniswap (Celo native bridge)",
-      "symbol": "UNI",
-      "chainId": 42220,
-      "decimals": 18
     },
     {
       "address": "0x0200C29006150606B650577BBE7B6248F58470c1",
