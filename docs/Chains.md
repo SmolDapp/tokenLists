@@ -28,6 +28,8 @@ Our project supports the following chains:
 - Zora (ChainID: 7777777)
 - Rari (ChainID: 1380012617)
 - Solana (ChainID: 1151111081099710)
+- Ink (ChainID: 57073)
+- Katana (ChainID: 747474)
 
 ## Adding a New Supported Chain
 
@@ -80,18 +82,18 @@ The `TChain` struct contains essential information about each supported chain:
 
 ```go
 type TChain struct {
-	ID uint64 // The unique identifier for the chain (ChainID)
-	Name string // The human-readable name of the chain
-	LogoURI string // URL to the chain's logo image
-	RpcURI string // The RPC endpoint for interacting with the chain
-	MaxBlockRange uint64 // Maximum number of blocks to query in a single request
-	MaxBatchSize uint64 // Maximum number of items to include in a batch request
-	WeightRatio float64 // A float value used for weighting or prioritizing the chain
-	IsTestNet bool // Boolean indicating whether the chain is a testnet
-	MulticallContract TContractData // Information about the Multicall contract on this chain
-	Coin models.TokenListToken // Details about the native coin of the chain
-	BlacklistedVaults []string // List of addresses for blacklisted vaults
-	ExtraTokens []string // Additional token addresses to include
-	IgnoredTokens []string // Token addresses to ignore during processing
+ ID uint64 // The unique identifier for the chain (ChainID)
+ Name string // The human-readable name of the chain
+ LogoURI string // URL to the chain's logo image
+ RpcURI string // The RPC endpoint for interacting with the chain
+ MaxBlockRange uint64 // Maximum number of blocks to query in a single request
+ MaxBatchSize uint64 // Maximum number of items to include in a batch request
+ WeightRatio float64 // A float value used for weighting or prioritizing the chain
+ IsTestNet bool // Boolean indicating whether the chain is a testnet
+ MulticallContract TContractData // Information about the Multicall contract on this chain
+ Coin models.TokenListToken // Details about the native coin of the chain
+ BlacklistedVaults []string // List of addresses for blacklisted vaults
+ ExtraTokens []string // Additional token addresses to include
+ IgnoredTokens []string // Token addresses to ignore during processing
 }
 ```
