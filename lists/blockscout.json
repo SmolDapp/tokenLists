@@ -1,9 +1,9 @@
 {
   "name": "Blockscout",
   "description": "",
-  "timestamp": "2025-07-13T01:13:58Z",
+  "timestamp": "2025-07-20T01:29:19Z",
   "version": {
-    "major": 95,
+    "major": 96,
     "minor": 0,
     "patch": 0
   },
@@ -286,14 +286,6 @@
       "decimals": 18
     },
     {
-      "address": "0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
-      "name": "Nexo",
-      "symbol": "NEXO",
-      "logoURI": "https://tokens.1inch.io/0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
       "name": "BNB",
       "symbol": "BNB",
@@ -430,6 +422,14 @@
       "decimals": 18
     },
     {
+      "address": "0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38",
+      "name": "Staked ETH",
+      "symbol": "osETH",
+      "logoURI": "https://asset-images.messari.io/images/7c774e28-49ff-41c9-8aba-4bccd7b65cb8/128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xfAbA6f8e4a5E8Ab82F62fe7C39859FA577269BE3",
       "name": "Ondo",
       "symbol": "ONDO",
@@ -482,6 +482,14 @@
       "name": "clBTC",
       "symbol": "clBTC",
       "logoURI": "ipfs://QmUtaBXo7GGuZL5wSjpQhmErpeYi8sjkybgP2aPLqv3eLJ",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x2218a117083f5B482B0bB821d27056Ba9c04b1D3",
+      "name": "Savings Dai",
+      "symbol": "sDAI",
+      "logoURI": "https://assets.smold.app/api/token/10/0x2218a117083f5B482B0bB821d27056Ba9c04b1D3/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -546,6 +554,14 @@
       "name": "Optimism",
       "symbol": "OP",
       "logoURI": "https://assets.smold.app/api/token/10/0x4200000000000000000000000000000000000042/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x4772D2e014F9fC3a820C444e3313968e9a5C8121",
+      "name": "YieldFi yUSD",
+      "symbol": "yUSD",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/53607/thumb/IMG_2188.jpeg?1736873763",
       "chainId": 10,
       "decimals": 18
     },
@@ -630,14 +646,6 @@
       "decimals": 18
     },
     {
-      "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
-      "name": "USD Coin",
-      "symbol": "USDC",
-      "logoURI": "https://assets.smold.app/api/token/10/0x7F5c764cBc14f9669B88837ca1490cCa17c31607/logo-128.png",
-      "chainId": 10,
-      "decimals": 6
-    },
-    {
       "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
       "name": "Frax USD",
       "symbol": "frxUSD",
@@ -676,14 +684,6 @@
       "logoURI": "https://assets.smold.app/api/token/10/0x93919784C523f39CACaa98Ee0a9d96c3F32b593e/logo-128.png",
       "chainId": 10,
       "decimals": 8
-    },
-    {
-      "address": "0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db",
-      "name": "VelodromeV2",
-      "symbol": "VELO",
-      "logoURI": "https://assets.smold.app/api/token/10/0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db/logo-128.png",
-      "chainId": 10,
-      "decimals": 18
     },
     {
       "address": "0x9923DB8d7FBAcC2E69E87fAd19b886C81cd74979",
@@ -745,7 +745,7 @@
       "address": "0xFE8B128bA8C78aabC59d4c64cEE7fF28e9379921",
       "name": "Balancer",
       "symbol": "BAL",
-      "logoURI": "ipfs://QmeVnk6jkW8J9ZHFxsLVamMNHpz9bigp7tsY2CJuxas297",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -990,6 +990,14 @@
       "decimals": 18
     },
     {
+      "address": "0x532801ED6f82FFfD2DAB70A19fC2d7B2772C4f4b",
+      "name": "Swapr on xDai",
+      "symbol": "SWPR",
+      "logoURI": "https://gnosisscan.io/token/images/swaprswpr_32.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0x58b9cB810A68a7f3e1E4f8Cb45D1B9B3c79705E8",
       "name": "Everclear",
       "symbol": "CLEAR",
@@ -1158,17 +1166,17 @@
       "decimals": 18
     },
     {
-      "address": "0xa555d5344f6FB6c65da19e403Cb4c1eC4a1a5Ee3",
-      "name": "Breadchain Stablecoin",
-      "symbol": "BREAD",
-      "logoURI": "https://coin-images.coingecko.com/coins/images/55143/thumb/solo_logo.png?1744126557",
+      "address": "0xaBEf652195F98A91E490f047A5006B71c85f058d",
+      "name": "Curve.Fi USD Stablecoin from Mainnet",
+      "symbol": "crvUSD",
       "chainId": 100,
       "decimals": 18
     },
     {
-      "address": "0xaBEf652195F98A91E490f047A5006B71c85f058d",
-      "name": "Curve.Fi USD Stablecoin from Mainnet",
-      "symbol": "crvUSD",
+      "address": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
+      "name": "Savings xDAI",
+      "symbol": "sDAI",
+      "logoURI": "https://assets.smold.app/api/token/100/0xaf204776c7245bF4147c2612BF6e5972Ee483701/logo-128.png",
       "chainId": 100,
       "decimals": 18
     },
@@ -1217,14 +1225,6 @@
       "name": "Badger on xDai",
       "symbol": "BADGER",
       "logoURI": "https://gnosisscan.io/token/images/badgerdaogno_32.png",
-      "chainId": 100,
-      "decimals": 18
-    },
-    {
-      "address": "0xeEeEEb57642040bE42185f49C52F7E9B38f8eeeE",
-      "name": "Elk",
-      "symbol": "ELK",
-      "logoURI": "https://tokens.1inch.io/0xeeeeeb57642040be42185f49c52f7e9b38f8eeee.png",
       "chainId": 100,
       "decimals": 18
     },
@@ -15005,14 +15005,6 @@
       "decimals": 18
     },
     {
-      "address": "0x322EEB45F496fa11B0134D14Bf5758d4D6F7BA3c",
-      "name": "Fwog Takes",
-      "symbol": "FWOG",
-      "logoURI": "ipfs://Qma2Kf2rsyUJamUUTqn6RfPfkFJsNyPX1hLiPwFyhffZwC",
-      "chainId": 8453,
-      "decimals": 18
-    },
-    {
       "address": "0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9",
       "name": "Resolv USD",
       "symbol": "USR",
@@ -15169,6 +15161,14 @@
       "name": "KAITO",
       "symbol": "KAITO",
       "logoURI": "https://assets.smold.app/api/token/8453/0x98d0baa52b2D063E780DE12F615f963Fe8537553/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x99aC4484e8a1dbd6A185380B3A811913Ac884D87",
+      "name": "Savings Dai",
+      "symbol": "sDAI",
+      "logoURI": "https://assets.smold.app/api/token/8453/0x99aC4484e8a1dbd6A185380B3A811913Ac884D87/logo-128.png",
       "chainId": 8453,
       "decimals": 18
     },

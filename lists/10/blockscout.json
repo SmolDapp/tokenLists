@@ -1,9 +1,9 @@
 {
   "name": "Blockscout",
   "description": "",
-  "timestamp": "2025-07-13T01:13:58Z",
+  "timestamp": "2025-07-20T01:29:19Z",
   "version": {
-    "major": 95,
+    "major": 96,
     "minor": 0,
     "patch": 0
   },
@@ -58,6 +58,14 @@
       "name": "clBTC",
       "symbol": "clBTC",
       "logoURI": "ipfs://QmUtaBXo7GGuZL5wSjpQhmErpeYi8sjkybgP2aPLqv3eLJ",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x2218a117083f5B482B0bB821d27056Ba9c04b1D3",
+      "name": "Savings Dai",
+      "symbol": "sDAI",
+      "logoURI": "https://assets.smold.app/api/token/10/0x2218a117083f5B482B0bB821d27056Ba9c04b1D3/logo-128.png",
       "chainId": 10,
       "decimals": 18
     },
@@ -122,6 +130,14 @@
       "name": "Optimism",
       "symbol": "OP",
       "logoURI": "https://assets.smold.app/api/token/10/0x4200000000000000000000000000000000000042/logo-128.png",
+      "chainId": 10,
+      "decimals": 18
+    },
+    {
+      "address": "0x4772D2e014F9fC3a820C444e3313968e9a5C8121",
+      "name": "YieldFi yUSD",
+      "symbol": "yUSD",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/53607/thumb/IMG_2188.jpeg?1736873763",
       "chainId": 10,
       "decimals": 18
     },
@@ -206,14 +222,6 @@
       "decimals": 18
     },
     {
-      "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
-      "name": "USD Coin",
-      "symbol": "USDC",
-      "logoURI": "https://assets.smold.app/api/token/10/0x7F5c764cBc14f9669B88837ca1490cCa17c31607/logo-128.png",
-      "chainId": 10,
-      "decimals": 6
-    },
-    {
       "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
       "name": "Frax USD",
       "symbol": "frxUSD",
@@ -252,14 +260,6 @@
       "logoURI": "https://assets.smold.app/api/token/10/0x93919784C523f39CACaa98Ee0a9d96c3F32b593e/logo-128.png",
       "chainId": 10,
       "decimals": 8
-    },
-    {
-      "address": "0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db",
-      "name": "VelodromeV2",
-      "symbol": "VELO",
-      "logoURI": "https://assets.smold.app/api/token/10/0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db/logo-128.png",
-      "chainId": 10,
-      "decimals": 18
     },
     {
       "address": "0x9923DB8d7FBAcC2E69E87fAd19b886C81cd74979",
@@ -321,7 +321,7 @@
       "address": "0xFE8B128bA8C78aabC59d4c64cEE7fF28e9379921",
       "name": "Balancer",
       "symbol": "BAL",
-      "logoURI": "ipfs://QmeVnk6jkW8J9ZHFxsLVamMNHpz9bigp7tsY2CJuxas297",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
       "chainId": 10,
       "decimals": 18
     },
