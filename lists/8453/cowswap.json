@@ -1,10 +1,10 @@
 {
   "name": "CoW Swap",
   "description": "",
-  "timestamp": "2025-07-13T01:00:38Z",
+  "timestamp": "2025-07-27T01:15:33Z",
   "version": {
     "major": 1,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/cowprotocol/cowswap/c5974fb8a45d678029ecb013dab33722e152daaa/src/assets/cow-swap/cow_v2.svg",
@@ -14,6 +14,13 @@
     "cowswap"
   ],
   "tokens": [
+    {
+      "address": "0x0000000f2eB9f69274678c76222B35eEc7588a65",
+      "name": "yoVaultUSD",
+      "symbol": "yoUSD",
+      "chainId": 8453,
+      "decimals": 6
+    },
     {
       "address": "0x04D5ddf5f3a8939889F11E97f8c4BB48317F1938",
       "name": "USDz",
@@ -51,6 +58,13 @@
       "name": "Resolv USD",
       "symbol": "USR",
       "logoURI": "https://assets.smold.app/api/token/8453/0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x3A43AEC53490CB9Fa922847385D82fe25d0E9De7",
+      "name": "yoVaultETH",
+      "symbol": "yoETH",
       "chainId": 8453,
       "decimals": 18
     },
@@ -164,6 +178,13 @@
       "logoURI": "https://assets.smold.app/api/token/8453/0xDEc933e2392AD908263e70A386fbF34e703Ffe8F/logo-128.png",
       "chainId": 8453,
       "decimals": 18
+    },
+    {
+      "address": "0xbCbc8cb4D1e8ED048a6276a5E94A3e952660BcbC",
+      "name": "yoVaultBTC",
+      "symbol": "yoBTC",
+      "chainId": 8453,
+      "decimals": 8
     },
     {
       "address": "0xbbcb0356bB9e6B3Faa5CbF9E5F36185d53403Ac9",

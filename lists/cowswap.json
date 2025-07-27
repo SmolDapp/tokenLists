@@ -1,10 +1,10 @@
 {
   "name": "CoW Swap",
   "description": "",
-  "timestamp": "2025-07-13T01:00:38Z",
+  "timestamp": "2025-07-27T01:15:33Z",
   "version": {
     "major": 1,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://raw.githubusercontent.com/cowprotocol/cowswap/c5974fb8a45d678029ecb013dab33722e152daaa/src/assets/cow-swap/cow_v2.svg",
@@ -860,6 +860,13 @@
       "decimals": 18
     },
     {
+      "address": "0x9Cf12ccd6020b6888e4D4C4e4c7AcA33c1eB91f8",
+      "name": "USDaf Stablecoin",
+      "symbol": "USDaf",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
       "name": "Staked USDe",
       "symbol": "sUSDe",
@@ -1707,6 +1714,13 @@
       "decimals": 6
     },
     {
+      "address": "0x0000000f2eB9f69274678c76222B35eEc7588a65",
+      "name": "yoVaultUSD",
+      "symbol": "yoUSD",
+      "chainId": 8453,
+      "decimals": 6
+    },
+    {
       "address": "0x04D5ddf5f3a8939889F11E97f8c4BB48317F1938",
       "name": "USDz",
       "symbol": "USDz",
@@ -1743,6 +1757,13 @@
       "name": "Resolv USD",
       "symbol": "USR",
       "logoURI": "https://assets.smold.app/api/token/8453/0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9/logo-128.png",
+      "chainId": 8453,
+      "decimals": 18
+    },
+    {
+      "address": "0x3A43AEC53490CB9Fa922847385D82fe25d0E9De7",
+      "name": "yoVaultETH",
+      "symbol": "yoETH",
       "chainId": 8453,
       "decimals": 18
     },
@@ -1858,6 +1879,13 @@
       "decimals": 18
     },
     {
+      "address": "0xbCbc8cb4D1e8ED048a6276a5E94A3e952660BcbC",
+      "name": "yoVaultBTC",
+      "symbol": "yoBTC",
+      "chainId": 8453,
+      "decimals": 8
+    },
+    {
       "address": "0xbbcb0356bB9e6B3Faa5CbF9E5F36185d53403Ac9",
       "name": "Backed Coinbase Global",
       "symbol": "bCOIN",
@@ -1966,6 +1994,38 @@
       "logoURI": "https://assets.smold.app/api/token/42161/0xcb8b5CD20BdCaea9a010aC1F8d835824F5C87A04/logo-128.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
+      "name": "Aave Token",
+      "symbol": "AAVE.e",
+      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png?1601374110",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+      "name": "TetherToken",
+      "symbol": "USDt",
+      "logoURI": "https://tokens.1inch.io/0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7.png",
+      "chainId": 43114,
+      "decimals": 6
+    },
+    {
+      "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX",
+      "logoURI": "https://tokens.1inch.io/0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7.png",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
+      "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://tokens.1inch.io/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png",
+      "chainId": 43114,
+      "decimals": 6
     }
   ]
 }
