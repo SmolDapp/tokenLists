@@ -1,15 +1,50 @@
 {
-  "name": "",
+  "name": "SushiSwap Menu",
   "description": "",
-  "timestamp": "2025-07-20T01:06:21Z",
+  "timestamp": "2025-09-14T01:08:05Z",
   "version": {
-    "major": 20,
-    "minor": 0,
-    "patch": 1
+    "major": 21,
+    "minor": 1,
+    "patch": 0
   },
-  "logoURI": "",
-  "keywords": null,
+  "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+  "keywords": [
+    "sushiswap",
+    "default"
+  ],
   "tokens": [
+    {
+      "address": "0x096A84536ab84E68ee210561FFD3A038E79736F1",
+      "name": "ENKI Protocol",
+      "symbol": "ENKI",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x096A84536ab84E68ee210561FFD3A038E79736F1/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x0CF2F4Cb2FAAD0FE35eFF943452339c5699D1e5c",
+      "name": "BARSIK",
+      "symbol": "BARSIK",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x0CF2F4Cb2FAAD0FE35eFF943452339c5699D1e5c/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x0E17934B9735D479B2388347fAeF0F4e58b9cc06",
+      "name": "Alchemix ETH",
+      "symbol": "alETH",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x0E17934B9735D479B2388347fAeF0F4e58b9cc06/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x17C09cfC96C865CF546d73365Cedb6dC66986963",
+      "name": "JEWEL",
+      "symbol": "JEWEL",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x17C09cfC96C865CF546d73365Cedb6dC66986963/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
     {
       "address": "0x17Ee7E4dA37B01FC1bcc908fA63DF343F23B4B7C",
       "name": "SushiToken",
@@ -27,10 +62,58 @@
       "decimals": 18
     },
     {
+      "address": "0x2136d8017ac5f4Db99A7F9E23f15116b9c98Be4E",
+      "name": "Vega Protocol",
+      "symbol": "VEGA",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x2136d8017ac5f4Db99A7F9E23f15116b9c98Be4E/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x2583A2538272f31e9A15dD12A432B8C96Ab4821d",
+      "name": "Staked Metis Token",
+      "symbol": "artMETIS",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x2583A2538272f31e9A15dD12A432B8C96Ab4821d/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x303241e2B3b4aeD0bb0F8623e7442368FED8Faf3",
+      "name": "Alchemix USD",
+      "symbol": "alUSD",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x303241e2B3b4aeD0bb0F8623e7442368FED8Faf3/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x3dbb8D7B18b83B6109829b018875fCD192D2F3Ff",
+      "name": "Cronus",
+      "symbol": "CRONUS",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x3dbb8D7B18b83B6109829b018875fCD192D2F3Ff/logo-128.png",
+      "chainId": 1088,
+      "decimals": 9
+    },
+    {
       "address": "0x420000000000000000000000000000000000000A",
       "name": "Ether",
       "symbol": "WETH",
       "logoURI": "https://assets.smold.app/api/token/1088/0x420000000000000000000000000000000000000A/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x4651B38e7ec14BB3db731369BFE5B08F2466Bd0A",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x4651B38e7ec14BB3db731369BFE5B08F2466Bd0A/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x4aAC94985cD83be30164DfE7e9AF7C054D7d2121",
+      "name": "Hummus",
+      "symbol": "HUM",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x4aAC94985cD83be30164DfE7e9AF7C054D7d2121/logo-128.png",
       "chainId": 1088,
       "decimals": 18
     },
@@ -43,10 +126,74 @@
       "decimals": 18
     },
     {
+      "address": "0x5CE34d9abe4bF239cbc08B89287c87f4CD6d80B7",
+      "name": "WOW Token",
+      "symbol": "m.WOW",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x5CE34d9abe4bF239cbc08B89287c87f4CD6d80B7/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x66673f0a3b5d99524bA76A558B93A9ca1386f4Cd",
+      "name": "XCAD Token",
+      "symbol": "XCAD",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x66673f0a3b5d99524bA76A558B93A9ca1386f4Cd/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x69fdb77064ec5c84FA2F21072973eB28441F43F3",
+      "name": "Tethys",
+      "symbol": "TETHYS",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x69fdb77064ec5c84FA2F21072973eB28441F43F3/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x6F05709bc91Bad933346F9E159f0D3FdBc2c9DCE",
+      "name": "Hera Token",
+      "symbol": "HERA",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x6F05709bc91Bad933346F9E159f0D3FdBc2c9DCE/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x721532bC0dA5ffaeB0a6A45fB24271E8098629A7",
+      "name": "BinaryDAO Token",
+      "symbol": "BYTE",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x721532bC0dA5ffaeB0a6A45fB24271E8098629A7/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x72c232D56542Ba082592DEE7C77b1C6CFA758BCD",
+      "name": "Maia",
+      "symbol": "MAIA",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x72c232D56542Ba082592DEE7C77b1C6CFA758BCD/logo-128.png",
+      "chainId": 1088,
+      "decimals": 9
+    },
+    {
       "address": "0x75cb093E4D61d2A2e65D8e0BBb01DE8d89b53481",
       "name": "Wrapped METIS",
       "symbol": "WMETIS",
       "logoURI": "https://assets.smold.app/api/token/1088/0x75cb093E4D61d2A2e65D8e0BBb01DE8d89b53481/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "name": "HeyAnon",
+      "symbol": "Anon",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x85b70D7e56BC8C4dDD7a5BB30E59b223DA383E34",
+      "name": "AraFi Token",
+      "symbol": "ARA",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x85b70D7e56BC8C4dDD7a5BB30E59b223DA383E34/logo-128.png",
       "chainId": 1088,
       "decimals": 18
     },
@@ -59,12 +206,68 @@
       "decimals": 18
     },
     {
+      "address": "0x90fE084F877C65e1b577c7b2eA64B8D8dd1AB278",
+      "name": "Netswap Token",
+      "symbol": "NETT",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x90fE084F877C65e1b577c7b2eA64B8D8dd1AB278/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0x966B25D174bE6Ba703E0fF80c68BB6e167236BA2",
+      "name": "Revenant",
+      "symbol": "GAMEFI",
+      "logoURI": "https://assets.smold.app/api/token/1088/0x966B25D174bE6Ba703E0fF80c68BB6e167236BA2/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xA4eE142e34d0676Edc2b760DD0016003D99a4ceC",
+      "name": "Athena Token",
+      "symbol": "ATH",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xA4eE142e34d0676Edc2b760DD0016003D99a4ceC/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xBbaf5fe61780CeE9aE88A12a557073825EC5FD44",
+      "name": "Crypto Chicks",
+      "symbol": "Chicks",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xBbaf5fe61780CeE9aE88A12a557073825EC5FD44/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xC029adf62Cf8F91985c49e1FDe6900affcBa0424",
+      "name": "BlockChat",
+      "symbol": "BCD",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xC029adf62Cf8F91985c49e1FDe6900affcBa0424/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
+      "name": "Metis Token",
+      "symbol": "Metis",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
       "address": "0xEA32A96608495e54156Ae48931A7c20f0dcc1a21",
       "name": "USDC Token",
       "symbol": "m.USDC",
       "logoURI": "https://assets.smold.app/api/token/1088/0xEA32A96608495e54156Ae48931A7c20f0dcc1a21/logo-128.png",
       "chainId": 1088,
       "decimals": 6
+    },
+    {
+      "address": "0xa11DD414Ad9b68cc1fe4d0a256f0F4413169Dd5E",
+      "name": "TitanBorn",
+      "symbol": "TITANS",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xa11DD414Ad9b68cc1fe4d0a256f0F4413169Dd5E/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
     },
     {
       "address": "0xa5B55ab1dAF0F8e1EFc0eB1931a957fd89B918f4",
@@ -75,6 +278,30 @@
       "decimals": 8
     },
     {
+      "address": "0xaf20f5f19698f1D19351028cd7103B63D30DE7d7",
+      "name": "Wagmi",
+      "symbol": "WAGMI",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xaf20f5f19698f1D19351028cd7103B63D30DE7d7/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xb0cf600A62C94451b844B5161A57F7ceC4Cef9ae",
+      "name": "CERUS",
+      "symbol": "CERUS",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xb0cf600A62C94451b844B5161A57F7ceC4Cef9ae/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xb27BbeaACA2C00d6258C3118BAB6b5B6975161c8",
+      "name": "Hermes",
+      "symbol": "HERMES",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xb27BbeaACA2C00d6258C3118BAB6b5B6975161c8/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
       "address": "0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC",
       "name": "USDT Token",
       "symbol": "m.USDT",
@@ -83,10 +310,42 @@
       "decimals": 6
     },
     {
+      "address": "0xbB1676046C36BCd2F6fD08d8f60672c7087d9aDF",
+      "name": "Hercules Token",
+      "symbol": "TORCH",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xbB1676046C36BCd2F6fD08d8f60672c7087d9aDF/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
       "address": "0xdFA46478F9e5EA86d57387849598dbFB2e964b02",
       "name": "Mai Stablecoin",
       "symbol": "MAI",
       "logoURI": "https://assets.smold.app/api/token/1088/0xdFA46478F9e5EA86d57387849598dbFB2e964b02/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xdf020cBd1897133978C7FcDF04B07E69d8934Efc",
+      "name": "ZKE Token",
+      "symbol": "ZKE",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xdf020cBd1897133978C7FcDF04B07E69d8934Efc/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xfBae1EAb52af0Ea3d35cB12F1221cE32D377D08E",
+      "name": "CACA",
+      "symbol": "CACA",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xfBae1EAb52af0Ea3d35cB12F1221cE32D377D08E/logo-128.png",
+      "chainId": 1088,
+      "decimals": 18
+    },
+    {
+      "address": "0xfe282Af5f9eB59C30A3f78789EEfFA704188bdD4",
+      "name": "Relay Token",
+      "symbol": "RELAY",
+      "logoURI": "https://assets.smold.app/api/token/1088/0xfe282Af5f9eB59C30A3f78789EEfFA704188bdD4/logo-128.png",
       "chainId": 1088,
       "decimals": 18
     }

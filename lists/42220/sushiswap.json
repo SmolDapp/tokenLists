@@ -1,15 +1,25 @@
 {
-  "name": "",
+  "name": "SushiSwap Menu",
   "description": "",
-  "timestamp": "2025-03-09T01:04:32Z",
+  "timestamp": "2025-09-14T01:08:05Z",
   "version": {
-    "major": 18,
+    "major": 21,
     "minor": 1,
-    "patch": 2
+    "patch": 0
   },
-  "logoURI": "",
-  "keywords": null,
+  "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+  "keywords": [
+    "sushiswap",
+    "default"
+  ],
   "tokens": [
+    {
+      "address": "0x00400FcbF0816bebB94654259de7273f4A05c762",
+      "name": "PoofCash",
+      "symbol": "POOF",
+      "chainId": 42220,
+      "decimals": 18
+    },
     {
       "address": "0x00Be915B9dCf56a3CBE739D9B9c202ca692409EC",
       "name": "Ubeswap",
@@ -18,9 +28,44 @@
       "decimals": 18
     },
     {
+      "address": "0x02De4766C272abc10Bc88c220D214A26960a7e92",
+      "name": "Toucan Protocol: Nature Carbon Tonne",
+      "symbol": "NCT",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x0a60c25Ef6021fC3B479914E6bcA7C03c18A97f1",
+      "name": "Stabilite USD",
+      "symbol": "stabilUSD",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x105d4A9306D2E55a71d2Eb95B81553AE1dC20d7B",
+      "name": "PUSO",
+      "symbol": "PUSO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0x122013fd7dF1C6F636a5bb8f03108E876548b455",
       "name": "Wrapped Ether",
       "symbol": "WETH",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x173234922eB27d5138c5e481be9dF5261fAeD450",
+      "name": "SOL",
+      "symbol": "SOL",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x17700282592D6917F6A73D0bF8AcCf4D578c131e",
+      "name": "Moola",
+      "symbol": "MOO",
       "chainId": 42220,
       "decimals": 18
     },
@@ -39,9 +84,30 @@
       "decimals": 6
     },
     {
+      "address": "0x1d18d0386F51ab03E7E84E71BdA1681EbA865F1f",
+      "name": "JumpToken",
+      "symbol": "JMPT",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x218c3c3D49d0E7B37aff0D8bB079de36Ae61A4c0",
+      "name": "Fantom",
+      "symbol": "FTM",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0x22401536505dd5d85F7d57f8B37172feDa8f499d",
       "name": "CeloShiba",
       "symbol": "CSHIBA",
+      "chainId": 42220,
+      "decimals": 9
+    },
+    {
+      "address": "0x27cd006548dF7C8c8e9fdc4A67fa05C2E3CA5CF9",
+      "name": "PLASTIK Token",
+      "symbol": "PLASTIK",
       "chainId": 42220,
       "decimals": 9
     },
@@ -81,9 +147,44 @@
       "decimals": 18
     },
     {
+      "address": "0x2b9018CeB303D540BbF08De8e7De64fDDD63396C",
+      "name": "impactMarket",
+      "symbol": "PACT",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x301a61D01A63c8D670c2B8a43f37d12eF181F997",
+      "name": "Poof CELO",
+      "symbol": "pCELO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0x32A9FE697a32135BFd313a6Ac28792DaE4D9979d",
       "name": "cMCO2",
       "symbol": "cMCO2",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x34C11A932853Ae24E845Ad4B633E3cEf91afE583",
+      "name": "cRECY",
+      "symbol": "cRECY",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x37f750B7cC259A2f741AF45294f6a16572CF5cAd",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0x456a3D042C0DbD3db53D5489e98dFb038553B0d0",
+      "name": "Celo Kenyan Shilling",
+      "symbol": "cKES",
       "chainId": 42220,
       "decimals": 18
     },
@@ -102,9 +203,65 @@
       "decimals": 18
     },
     {
+      "address": "0x47264aE1Fc0c8e6418ebe78630718E11a07346A8",
+      "name": "SBR",
+      "symbol": "SBR",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e",
+      "name": "Tether USD",
+      "symbol": "USD₮",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0x4F604735c1cF31399C6E711D5962b2B3E0225AD3",
+      "name": "Glo Dollar",
+      "symbol": "USDGLO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x4c35853A3B4e647fD266f4de678dCc8fEC410BF6",
+      "name": "Celo South African Rand",
+      "symbol": "cZAR",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x50E85c754929840B58614F48e29C64BC78C58345",
+      "name": "Biochar",
+      "symbol": "CHAR",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x56072D4832642dB29225dA12d6Fd1290E4744682",
+      "name": "Poof EUR",
+      "symbol": "pEUR",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0x5927fd244E11dB1c7b1215619144d2aAbAc80a4F",
       "name": "celoLaunch",
       "symbol": "cLA",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x59D9356E565Ab3A36dD77763Fc0d87fEaf85508C",
+      "name": "Mountain Protocol USD",
+      "symbol": "USDM",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x62B8B11039FcfE5aB0C56E502b1C372A3d2a9c7A",
+      "name": "GoodDollar",
+      "symbol": "G$",
       "chainId": 42220,
       "decimals": 18
     },
@@ -123,9 +280,44 @@
       "decimals": 18
     },
     {
+      "address": "0x66803FB87aBd4aaC3cbB3fAd7C3aa01f6F3FB207",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x6e512BFC33be36F2666754E996ff103AD1680Cc9",
+      "name": "Allbridge",
+      "symbol": "ABR",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0x7037F7296B2fc7908de7b57a89efaa8319f0C500",
       "name": "Moola CELO AToken",
       "symbol": "mCELO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x7175504C455076F15c04A2F90a8e352281F492F9",
+      "name": "Celo Australian Dollar",
+      "symbol": "cAUD",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x71e26d0E519D14591b9dE9a0fE9513A398101490",
+      "name": "Ubeswap",
+      "symbol": "UBE",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x73F93dcc49cB8A239e2032663e9475dd5ef29A08",
+      "name": "ECO CFA",
+      "symbol": "eXOF",
       "chainId": 42220,
       "decimals": 18
     },
@@ -151,9 +343,37 @@
       "decimals": 18
     },
     {
+      "address": "0x788BA01f8E2b87c08B142DB46F82094e0bdCad4F",
+      "name": "xABR",
+      "symbol": "xABR",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x7D00cd74FF385c955EA3d79e47BF06bD7386387D",
+      "name": "Moola interest bearing CELO",
+      "symbol": "mCELO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x7FF62f59e3e89EA34163EA1458EEBCc81177Cfb6",
+      "name": "Mento Token",
+      "symbol": "MENTO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0x832F03bCeE999a577cb592948983E35C048B5Aa4",
       "name": "Duniapay West African CFA franc",
       "symbol": "cXOF",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x8427bD503dd3169cCC9aFF7326c15258Bc305478",
+      "name": "Symmetric",
+      "symbol": "SYMM",
       "chainId": 42220,
       "decimals": 18
     },
@@ -165,9 +385,93 @@
       "decimals": 6
     },
     {
+      "address": "0x8A1639098644A229d08F441ea45A63AE050Ee018",
+      "name": "Green Celo",
+      "symbol": "gCELO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x8A567e2aE79CA692Bd748aB832081C45de4041eA",
+      "name": "Celo Colombian Peso",
+      "symbol": "cCOP",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x8E0C1cDCEEb773139B471fd1137502A28588178a",
+      "name": "Pleasure Coin",
+      "symbol": "NSFW",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x8E3670FD7B0935d3FE832711deBFE13BB689b690",
+      "name": "AVAX",
+      "symbol": "AVAX",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0x90Ca507a5D4458a4C6C6249d186b6dCb02a5BCCd",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x918146359264C492BD6934071c6Bd31C854EDBc3",
+      "name": "Moola interest bearing CUSD",
+      "symbol": "mcUSD",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x94140c2eA9D208D8476cA4E3045254169791C59e",
+      "name": "PREMIO",
+      "symbol": "PREMIO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x97926a82930bb7B33178E3c2f4ED1BFDc91A9FBF",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x9802d866fdE4563d088a6619F7CeF82C0B991A55",
+      "name": "Moola interest bearing CREAL",
+      "symbol": "mCREAL",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x9995cc8F20Db5896943Afc8eE0ba463259c931ed",
+      "name": "Ethix",
+      "symbol": "ETHIX",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0x9Ee153D4Fdf0E3222eFD092c442ebB21DFd346AC",
+      "name": "Marzipan Finance",
+      "symbol": "MZPN",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xB4aa2986622249B1F45eb93F28Cfca2b2606d809",
+      "name": "Poof USD",
+      "symbol": "pUSD",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xB9C8F0d3254007eE4b98970b94544e473Cd610EC",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
       "chainId": 42220,
       "decimals": 18
     },
@@ -177,6 +481,13 @@
       "symbol": "WBTC",
       "chainId": 42220,
       "decimals": 8
+    },
+    {
+      "address": "0xBddC3554269053544bE0d6d027a73271225E9859",
+      "name": "Euro Coin",
+      "symbol": "EUROC",
+      "chainId": 42220,
+      "decimals": 6
     },
     {
       "address": "0xBe50a3013A1c94768A1ABb78c3cB79AB28fc1aCE",
@@ -194,9 +505,30 @@
       "decimals": 18
     },
     {
+      "address": "0xC668583dcbDc9ae6FA3CE46462758188adfdfC24",
+      "name": "Staked CELO",
+      "symbol": "stCELO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xCCF663b1fF11028f0b19058d0f7B674004a40746",
+      "name": "Celo British Pound",
+      "symbol": "cGBP",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0xD15EC721C2A896512Ad29C671997DD68f9593226",
       "name": "SushiToken",
       "symbol": "SUSHI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xD221812de1BD094f35587EE8E174B07B6167D9Af",
+      "name": "Wrapped Ether (Celo native bridge)",
+      "symbol": "WETH",
       "chainId": 42220,
       "decimals": 18
     },
@@ -222,9 +554,44 @@
       "decimals": 9
     },
     {
+      "address": "0xDB452CC669D3Ae454226AbF232Fe211bAfF2a1F9",
+      "name": "Duino Coin on Celo",
+      "symbol": "celoDUCO",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xE2702Bd97ee33c88c8f6f92DA3B733608aa76F71",
+      "name": "Celo Nigerian Naira",
+      "symbol": "cNGN",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xE273Ad7ee11dCfAA87383aD5977EE1504aC07568",
+      "name": "Moola interest bearing CEUR",
+      "symbol": "mCEUR",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0xE4fE50cdD716522A56204352f00AA110F731932d",
       "name": "Dai Stablecoin",
       "symbol": "DAI",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xE685d21b7B0FC7A248a6A8E03b8Db22d013Aa2eE",
+      "name": "Immortal",
+      "symbol": "IMMO",
+      "chainId": 42220,
+      "decimals": 9
+    },
+    {
+      "address": "0xE74AbF23E1Fdf7ACbec2F3a30a772eF77f1601E1",
+      "name": "Poof CELO",
+      "symbol": "pCELO",
       "chainId": 42220,
       "decimals": 18
     },
@@ -243,9 +610,30 @@
       "decimals": 6
     },
     {
+      "address": "0xEadf4A7168A82D30Ba0619e64d5BCf5B30B45226",
+      "name": "Poof cUSD",
+      "symbol": "pUSD",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0xF3608F846cA73147F08FdE8D57f45E27CeEA4d61",
       "name": "metaCelo Game NFT",
       "symbol": "cMETA",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xFB42E2e90fc79CfA6A6B4EBa4877d5Faf4e29287",
+      "name": "Green Celo Dollar",
+      "symbol": "gcUSD",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xFECB3F7c54E2CAAE9dC6Ac9060A822D47E053760",
+      "name": "BRLA Token",
+      "symbol": "BRLA",
       "chainId": 42220,
       "decimals": 18
     },
@@ -257,11 +645,88 @@
       "decimals": 18
     },
     {
+      "address": "0xaCFfAe8e57Ec6E394Eb1b41939A8CF7892DbDc51",
+      "name": "Autonolas",
+      "symbol": "OLAS",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xae978582DE8cA83A53Eb1d8f879Ba854895f96b1",
+      "name": "Tegisto",
+      "symbol": "TGS",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
       "address": "0xb020D981420744F6b0FedD22bB67cd37Ce18a1d5",
       "name": "Tether USD",
       "symbol": "USDT",
       "chainId": 42220,
       "decimals": 6
+    },
+    {
+      "address": "0xb55a79F398E759E43C95b979163f30eC87Ee131D",
+      "name": "Celo Swiss Franc",
+      "symbol": "cCHF",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xb829b68f57CC546dA7E5806A929e53bE32a4625D",
+      "name": "Axelar Wrapped ETH",
+      "symbol": "axlETH",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xbDd31EFfb9E9f7509fEaAc5B4091b31645A47e4b",
+      "name": "Truefeedback Token",
+      "symbol": "TFBX",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xc3377Ea71F1dc8e55Ba360724eff2d7aD62a8670",
+      "name": "AtlasX Carbon Credits",
+      "symbol": "ATLASX",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xc45eCF20f3CD864B32D9794d6f76814aE8892e20",
+      "name": "Celo Japanese Yen",
+      "symbol": "cJPY",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
+      "name": "USDC",
+      "symbol": "USDC",
+      "chainId": 42220,
+      "decimals": 6
+    },
+    {
+      "address": "0xd252E98C5B6ea1E29A7e2789A9eC0493707A60B9",
+      "name": "KRW",
+      "symbol": "KRW",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xd71Ffd0940c920786eC4DbB5A12306669b5b81EF",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "chainId": 42220,
+      "decimals": 8
+    },
+    {
+      "address": "0xe8537a3d056DA446677B9E9d6c5dB704EaAb4787",
+      "name": "Celo Brazilian Real",
+      "symbol": "cREAL",
+      "chainId": 42220,
+      "decimals": 18
     },
     {
       "address": "0xef4229c8c3250C675F21BCefa42f58EfbfF6002a",
@@ -276,6 +741,20 @@
       "symbol": "G$",
       "chainId": 42220,
       "decimals": 2
+    },
+    {
+      "address": "0xfAeA5F3404bbA20D3cc2f8C4B0A888F55a3c7313",
+      "name": "Celo Ghanaian Cedi",
+      "symbol": "cGHS",
+      "chainId": 42220,
+      "decimals": 18
+    },
+    {
+      "address": "0xff4Ab19391af240c311c54200a492233052B6325",
+      "name": "Celo Canadian Dollar",
+      "symbol": "cCAD",
+      "chainId": 42220,
+      "decimals": 18
     }
   ]
 }

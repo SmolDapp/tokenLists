@@ -1,15 +1,40 @@
 {
-  "name": "",
+  "name": "SushiSwap Menu",
   "description": "",
-  "timestamp": "2025-08-31T00:56:45Z",
+  "timestamp": "2025-09-14T01:08:05Z",
   "version": {
     "major": 21,
-    "minor": 0,
-    "patch": 1
+    "minor": 1,
+    "patch": 0
   },
-  "logoURI": "",
-  "keywords": null,
+  "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+  "keywords": [
+    "sushiswap",
+    "default"
+  ],
   "tokens": [
+    {
+      "address": "0x10B97b19fabC54a95959Aa462e5b37518399c080",
+      "name": "CORGI",
+      "symbol": "CORGI",
+      "chainId": 314,
+      "decimals": 9
+    },
+    {
+      "address": "0x2421db204968A367CC2C866CD057fA754Cb84EdF",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://assets.smold.app/api/token/314/0x2421db204968A367CC2C866CD057fA754Cb84EdF/logo-128.png",
+      "chainId": 314,
+      "decimals": 6
+    },
+    {
+      "address": "0x2a0aaf86b2FA64E88D3739091e7773106F3ebCF5",
+      "name": "GLIF",
+      "symbol": "GLF",
+      "chainId": 314,
+      "decimals": 18
+    },
     {
       "address": "0x3C3501E6c353DbaEDDFA90376975Ce7aCe4Ac7a8",
       "name": "Staked FIL",
@@ -23,6 +48,14 @@
       "symbol": "USDT",
       "chainId": 314,
       "decimals": 6
+    },
+    {
+      "address": "0x522B61755b5FF8176B2931DA7bF1a5F9414Eb710",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "logoURI": "https://assets.smold.app/api/token/314/0x522B61755b5FF8176B2931DA7bF1a5F9414Eb710/logo-128.png",
+      "chainId": 314,
+      "decimals": 18
     },
     {
       "address": "0x5C7e299CF531eb66f2A1dF637d37AbB78e6200C7",
@@ -46,11 +79,33 @@
       "decimals": 18
     },
     {
+      "address": "0x80B98d3aa09ffff255c3ba4A241111Ff1262F045",
+      "name": "USD for Filecoin Community",
+      "symbol": "USDFC",
+      "chainId": 314,
+      "decimals": 18
+    },
+    {
+      "address": "0x97AAe66a1D2a41eAC573397B7a5656a9cF3E5616",
+      "name": "rSPD Token",
+      "symbol": "rSPD",
+      "chainId": 314,
+      "decimals": 18
+    },
+    {
       "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
       "name": "Axelar Wrapped USDC",
       "symbol": "axlUSDC",
       "chainId": 314,
       "decimals": 6
+    },
+    {
+      "address": "0xb829b68f57CC546dA7E5806A929e53bE32a4625D",
+      "name": "Axelar Wrapped ETH",
+      "symbol": "axlETH",
+      "logoURI": "https://assets.smold.app/api/token/314/0xb829b68f57CC546dA7E5806A929e53bE32a4625D/logo-128.png",
+      "chainId": 314,
+      "decimals": 18
     }
   ]
 }

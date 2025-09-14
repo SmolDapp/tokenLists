@@ -1,20 +1,37 @@
 {
-  "name": "",
+  "name": "SushiSwap Menu",
   "description": "",
-  "timestamp": "2025-08-31T00:56:45Z",
+  "timestamp": "2025-09-14T01:08:05Z",
   "version": {
     "major": 21,
-    "minor": 0,
-    "patch": 1
+    "minor": 1,
+    "patch": 0
   },
-  "logoURI": "",
-  "keywords": null,
+  "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+  "keywords": [
+    "sushiswap",
+    "default"
+  ],
   "tokens": [
+    {
+      "address": "0x0D1E753a25eBda689453309112904807625bEFBe",
+      "name": "PancakeSwap Token",
+      "symbol": "Cake",
+      "chainId": 1101,
+      "decimals": 18
+    },
     {
       "address": "0x120eF59b80774F02211563834d8E3b72cb1649d6",
       "name": "Balancer",
       "symbol": "BAL",
       "logoURI": "https://assets.smold.app/api/token/1101/0x120eF59b80774F02211563834d8E3b72cb1649d6/logo-128.png",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
+      "address": "0x12D8CE035c5DE3Ce39B1fDD4C1d5a745EAbA3b8C",
+      "name": "Ankr Staked ETH",
+      "symbol": "ankrETH",
       "chainId": 1101,
       "decimals": 18
     },
@@ -27,6 +44,13 @@
       "decimals": 6
     },
     {
+      "address": "0x22B21BedDef74FE62F031D2c5c8F7a9F8a4b304D",
+      "name": "Polygon Ecosystem Token",
+      "symbol": "POL",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
       "address": "0x2548C94A3092494dB3aF864cc2cF781a72f55678",
       "name": "Uniswap",
       "symbol": "UNI",
@@ -37,6 +61,13 @@
       "address": "0x3d5320821BfCa19fb0B5428F2c79d63bd5246f89",
       "name": "Curve DAO Token",
       "symbol": "CRV",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
+      "address": "0x40DF0C3BBAAE5Ea3A509d8F2aa9E086776C98E6c",
+      "name": "Antfarm Token",
+      "symbol": "ATF",
       "chainId": 1101,
       "decimals": 18
     },
@@ -56,9 +87,23 @@
       "decimals": 18
     },
     {
+      "address": "0x68286607A1d43602d880D349187c3c48c0fD05E6",
+      "name": "QuickSwap",
+      "symbol": "QUICK",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
       "address": "0x68791CFE079814c46e0E25C19Bcc5BFC71A744f7",
       "name": "Aave Token",
       "symbol": "AAVE",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
+      "address": "0x696c0bA235444607A1c4b93E6b34Ba14928c1B60",
+      "name": "DoveSwap",
+      "symbol": "DOV",
       "chainId": 1101,
       "decimals": 18
     },
@@ -85,6 +130,13 @@
       "decimals": 18
     },
     {
+      "address": "0x819d1Daa794c1c46B841981b61cC978d95A17b8e",
+      "name": "Davos.xyz USD",
+      "symbol": "DUSD",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
       "address": "0x83b874c1e09D316059d929da402dcB1A98e92082",
       "name": "Staked MATIC",
       "symbol": "stMATIC",
@@ -105,6 +157,13 @@
       "name": "Dai Stablecoin",
       "symbol": "DAI",
       "logoURI": "https://assets.smold.app/api/token/1101/0xC5015b9d9161Dca7e18e32f6f25C4aD850731Fd4/logo-128.png",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
+      "address": "0xCA5d8F8a8d49439357d3CF46Ca2e720702F132b8",
+      "name": "Gyro Dollar",
+      "symbol": "GYD",
       "chainId": 1101,
       "decimals": 18
     },
@@ -137,6 +196,13 @@
       "name": "Matic Token",
       "symbol": "MATIC",
       "logoURI": "https://assets.smold.app/api/token/1101/0xa2036f0538221a77A3937F1379699f44945018d0/logo-128.png",
+      "chainId": 1101,
+      "decimals": 18
+    },
+    {
+      "address": "0xddAFB91475bBf6210a151FA911AC8fdA7dE46Ec2",
+      "name": "Giveth",
+      "symbol": "GIV",
       "chainId": 1101,
       "decimals": 18
     }

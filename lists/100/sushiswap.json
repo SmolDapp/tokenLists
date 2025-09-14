@@ -1,15 +1,66 @@
 {
-  "name": "",
+  "name": "SushiSwap Menu",
   "description": "",
-  "timestamp": "2025-08-31T00:56:45Z",
+  "timestamp": "2025-09-14T01:08:05Z",
   "version": {
     "major": 21,
-    "minor": 0,
-    "patch": 1
+    "minor": 1,
+    "patch": 0
   },
-  "logoURI": "",
-  "keywords": null,
+  "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+  "keywords": [
+    "sushiswap",
+    "default"
+  ],
   "tokens": [
+    {
+      "address": "0x004626A008B1aCdC4c74ab51644093b155e59A23",
+      "name": "Staked EURA",
+      "symbol": "stEUR",
+      "logoURI": "https://asset-images.messari.io/images/b582c7b3-cccb-4ce5-b593-4e40acb72980/128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x0AA1e96D2a46Ec6beB2923dE1E61Addf5F5f1dce",
+      "name": "RealToken Ecosystem Governance",
+      "symbol": "REG",
+      "logoURI": "https://assets.smold.app/api/token/100/0x0AA1e96D2a46Ec6beB2923dE1E61Addf5F5f1dce/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x1509706a6c66CA549ff0cB464de88231DDBe213B",
+      "name": "Aura",
+      "symbol": "AURA",
+      "logoURI": "https://raw.githubusercontent.com/cowprotocol/token-lists/main/src/public/images/100/0x1509706a6c66CA549ff0cB464de88231DDBe213B/logo.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x177127622c4A00F3d409B75571e12cB3c8973d3c",
+      "name": "CoW Protocol Token from Mainnet",
+      "symbol": "COW",
+      "logoURI": "https://assets.smold.app/api/token/100/0x177127622c4A00F3d409B75571e12cB3c8973d3c/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x18E9262e68Cc6c6004dB93105cc7c001BB103e49",
+      "name": "Raid Guild Token ⚔️ on xDai",
+      "symbol": "RAID",
+      "logoURI": "https://raw.githubusercontent.com/1Hive/default-token-list/master/src/assets/xdai/0x18e9262e68cc6c6004db93105cc7c001bb103e49/logo.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x1D1498166DDCEeE616a6d99868e1E0677300056f",
+      "name": "xSpace Token",
+      "symbol": "xSPACE",
+      "logoURI": "https://assets.coingecko.com/coins/images/20676/large/jYw3kgsY_400x400.png?1637550733",
+      "chainId": 100,
+      "decimals": 18
+    },
     {
       "address": "0x1e16aa4Df73d29C029d94CeDa3e3114EC191E25A",
       "name": "Moons on xDai",
@@ -19,9 +70,81 @@
       "decimals": 18
     },
     {
+      "address": "0x1e2C4fb7eDE391d116E6B41cD0608260e8801D59",
+      "name": "Backed CSPX Core S\u0026P 500",
+      "symbol": "bCSPX",
+      "logoURI": "https://assets.smold.app/api/token/100/0x1e2C4fb7eDE391d116E6B41cD0608260e8801D59/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x1f82284C1658Ad71C576f7230E6C2DEE7901c1FA",
+      "name": "Wrapped Backed Tesla Inc",
+      "symbol": "wbTSLA",
+      "logoURI": "https://assets.smold.app/api/token/100/0x1f82284C1658Ad71C576f7230E6C2DEE7901c1FA/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x2086f52651837600180dE173B09470F54EF74910",
+      "name": "Balancer Stable USD",
+      "symbol": "staBAL3",
+      "logoURI": "https://assets.coingecko.com/coins/images/32112/large/bal3.png?1696561317",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x21a42669643f45Bc0e086b8Fc2ed70c23D67509d",
+      "name": "FOX on xDai",
+      "symbol": "FOX",
+      "logoURI": "https://tokens.1inch.io/0xc770eefad204b5180df6a14ee197d99d808ee52d.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x256eb8a51f382650B2A1e946b8811953640ee47D",
+      "name": "'Streamr'",
+      "symbol": "DATA",
+      "logoURI": "https://tokens.1inch.io/0x8f693ca8d21b157107184d29d398a8d082b38b76.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0x2995D1317DcD4f0aB89f4AE60F3f020A4F17C7CE",
       "name": "SushiToken on xDai",
       "symbol": "SUSHI",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0",
+      "name": "Bridged USDC (Gnosis)",
+      "symbol": "USDC.e",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/38775/thumb/usd-coin.jpeg?1718773178",
+      "chainId": 100,
+      "decimals": 6
+    },
+    {
+      "address": "0x37b60f4E9A31A64cCc0024dce7D0fD07eAA0F7B3",
+      "name": "Pinakion on xDai",
+      "symbol": "PNK",
+      "logoURI": "https://tokens.1inch.io/0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x38Fb649Ad3d6BA1113Be5F57B927053E97fC5bF7",
+      "name": "xDai Native Comb",
+      "symbol": "xCOMB",
+      "logoURI": "https://raw.githubusercontent.com/1Hive/default-token-list/master/src/assets/xdai/0x38Fb649Ad3d6BA1113Be5F57B927053E97fC5bF7/logo.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x3A3e9715018d80916740E8Ac300713FDf6614d19",
+      "name": "hiveWATER Token",
+      "symbol": "hiveWATER",
+      "logoURI": "https://assets.coingecko.com/coins/images/30424/large/hivewater_transparent.png?1684397277",
       "chainId": 100,
       "decimals": 18
     },
@@ -34,12 +157,68 @@
       "decimals": 18
     },
     {
+      "address": "0x3a97704a1b25F08aa230ae53B352e2e72ef52843",
+      "name": "Agave Token",
+      "symbol": "AGVE",
+      "logoURI": "https://raw.githubusercontent.com/1Hive/default-token-list/master/src/assets/xdai/0x3a97704a1b25f08aa230ae53b352e2e72ef52843/logo.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x4291F029B9e7acb02D49428458cf6fceAC545f81",
+      "name": "Water Token",
+      "symbol": "WATER",
+      "logoURI": "https://gnosisscan.io/token/images/1hivewater_32.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x44fA8E6f47987339850636F88629646662444217",
+      "name": "Dai Stablecoin on xDai",
+      "symbol": "DAI",
+      "logoURI": "https://tokens.1inch.io/0x6b175474e89094c44da98b954eedeac495271d0f.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x4537e328Bf7e4eFA29D05CAeA260D7fE26af9D74",
+      "name": "Uniswap on xDai",
+      "symbol": "UNI",
+      "logoURI": "https://gnosisscan.io/token/images/uniswapgno_32.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x48b1B0d077b4919b65b4E4114806dD803901E1D9",
+      "name": "Decentralized Insurance Protocol on xDai",
+      "symbol": "DIP",
+      "logoURI": "https://etherscan.io/token/images/etherisc_28.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0x4ECaBa5870353805a9F068101A40E0f32ed605C6",
       "name": "Tether USD on xDai",
       "symbol": "USDT",
       "logoURI": "https://tokens.1inch.io/0xdac17f958d2ee523a2206206994597c13d831ec7.png",
       "chainId": 100,
       "decimals": 6
+    },
+    {
+      "address": "0x4b1E2c2762667331Bc91648052F646d1b0d35984",
+      "name": "EURA (previously agEUR)",
+      "symbol": "EURA",
+      "logoURI": "https://assets.coingecko.com/coins/images/19479/large/agEUR.png?1635283566",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x4d18815D14fe5c3304e87B3FA18318baa5c23820",
+      "name": "Safe Token from Mainnet",
+      "symbol": "SAFE",
+      "logoURI": "https://assets.smold.app/api/token/100/0x4d18815D14fe5c3304e87B3FA18318baa5c23820/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
     },
     {
       "address": "0x4f4F9b8D5B4d0Dc10506e5551B0513B61fD59e75",
@@ -50,10 +229,57 @@
       "decimals": 18
     },
     {
+      "address": "0x524B969793a64a602342d89BC2789D43a016B13A",
+      "name": "Donut on xDai",
+      "symbol": "DONUT",
+      "logoURI": "https://tokens.1inch.io/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x532801ED6f82FFfD2DAB70A19fC2d7B2772C4f4b",
+      "name": "Swapr on xDai",
+      "symbol": "SWPR",
+      "logoURI": "https://gnosisscan.io/token/images/swaprswpr_32.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x57f664882F762FA37903FC864e2B633D384B411A",
+      "name": "Wrapped Aave Gnosis WETH",
+      "symbol": "waGnoWETH",
+      "logoURI": "https://asset-images.messari.io/images/d96cab87-149b-4728-b3f0-b9b82fdc5d67/128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x5Cb9073902F2035222B9749F8fB0c9BFe5527108",
+      "name": "Monerium GBP emoney",
+      "symbol": "GBPe",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x63e62989D9EB2d37dfDB1F93A22f063635b07d51",
+      "name": "Minerva Wallet SuperToken",
+      "symbol": "MIVA",
+      "logoURI": "https://minerva.digital/i/MIVA-Token_200x200.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
       "name": "Wrapped Ether on xDai",
       "symbol": "WETH",
       "logoURI": "https://tokens.1inch.io/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x6A8cb6714B1EE5b471a7D2eC4302cb4f5Ff25eC2",
+      "name": "Energy Web Token Bridged on xDai",
+      "symbol": "EWTB",
+      "logoURI": "https://gnosisscan.io/token/images/ewtgno_32.png",
       "chainId": 100,
       "decimals": 18
     },
@@ -73,10 +299,66 @@
       "decimals": 18
     },
     {
+      "address": "0x71850b7E9Ee3f13Ab46d67167341E4bDc905Eef9",
+      "name": "Honey",
+      "symbol": "HNY",
+      "logoURI": "https://raw.githubusercontent.com/1Hive/default-token-list/master/src/assets/xdai/0x71850b7E9Ee3f13Ab46d67167341E4bDc905Eef9/logo.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x773CDA0CADe2A3d86E6D4e30699d40bB95174ff2",
+      "name": "Wrapped Aave Gnosis wstETH",
+      "symbol": "waGnowstETH",
+      "logoURI": "https://asset-images.messari.io/images/4a6a2114-b901-46a5-b50b-b1d1a8f4f2eb/128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x7c16F0185A26Db0AE7a9377f23BC18ea7ce5d644",
+      "name": "Wrapped Aave Gnosis GNO",
+      "symbol": "waGnoGNO",
+      "logoURI": "https://asset-images.messari.io/images/39982cd4-dc02-4dee-ad8a-63205c560654/128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x7eF541E2a22058048904fE5744f9c7E4C57AF717",
+      "name": "Balancer on xDai",
+      "symbol": "BAL",
+      "logoURI": "https://assets.coingecko.com/coins/images/11683/large/Balancer.png?1592792958",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0x82dFe19164729949fD66Da1a37BC70dD6c4746ce",
       "name": "BaoToken on xDai",
       "symbol": "BAO",
       "logoURI": "https://tokens.1inch.io/0x374cb8c27130e2c9e04f44303f3c8351b9de61c1.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x83FF60E2f93F8eDD0637Ef669C69D5Fb4f64cA8E",
+      "name": "Bright on xDai",
+      "symbol": "BRIGHT",
+      "logoURI": "https://raw.githubusercontent.com/1Hive/dao-list/master/assets/BrightDAO/logo.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x84E2C67CBEfae6B5148fcA7d02B341B12ff4b5Bb",
+      "name": "Swash Token",
+      "symbol": "SWASH",
+      "logoURI": "https://gnosisscan.io/token/images/swashgno_32.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x8c88eA1fD60462Ef7004B9e288afCB4680a3c50c",
+      "name": "0xMonero on xDai",
+      "symbol": "0xMR",
+      "logoURI": "https://gnosisscan.io/token/images/0xmonero_32.png",
       "chainId": 100,
       "decimals": 18
     },
@@ -93,6 +375,38 @@
       "name": "Gnosis Token on xDai",
       "symbol": "GNO",
       "logoURI": "https://assets.smold.app/api/token/100/0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0x9fB1d52596c44603198fB0aee434fac3a679f702",
+      "name": "Jarvis Synthetic Euro",
+      "symbol": "jEUR",
+      "logoURI": "https://gnosisscan.io/token/images/jarviseur_32.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xB5d592f85ab2D955c25720EbE6FF8D4d1E1Be300",
+      "name": "Particle",
+      "symbol": "PRTCLE",
+      "logoURI": "https://raw.githubusercontent.com/ShenaniganDApp/docs/master/static/img/SHELogo.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xCA5d8F8a8d49439357d3CF46Ca2e720702F132b8",
+      "name": "Gyro Dollar",
+      "symbol": "GYD",
+      "logoURI": "https://assets.coingecko.com/coins/images/33428/large/resized_GYD.png?1701772473",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xD057604A14982FE8D88c5fC25Aac3267eA142a08",
+      "name": "HOPR Token on xDai",
+      "symbol": "HOPR",
+      "logoURI": "https://gnosisscan.io/token/images/hoprgno_32.png",
       "chainId": 100,
       "decimals": 18
     },
@@ -128,10 +442,112 @@
       "decimals": 18
     },
     {
+      "address": "0xF490c80aAE5f2616d3e3BDa2483E30C4CB21d1A0",
+      "name": "Staked GNO",
+      "symbol": "osGNO",
+      "logoURI": "https://asset-images.messari.io/images/df6db106-8b6a-4da1-b6a0-0fce1e89df7e/128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xFECB3F7c54E2CAAE9dC6Ac9060A822D47E053760",
+      "name": "BRLA Token",
+      "symbol": "BRLA",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/40062/thumb/IconGreen400.png?1725459580",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xa555d5344f6FB6c65da19e403Cb4c1eC4a1a5Ee3",
+      "name": "Breadchain Stablecoin",
+      "symbol": "BREAD",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/55143/thumb/solo_logo.png?1744126557",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xaBEf652195F98A91E490f047A5006B71c85f058d",
+      "name": "Curve.Fi USD Stablecoin from Mainnet",
+      "symbol": "crvUSD",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
+      "name": "Savings xDAI",
+      "symbol": "sDAI",
+      "logoURI": "https://assets.smold.app/api/token/100/0xaf204776c7245bF4147c2612BF6e5972Ee483701/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xb0C5f3100A4d9d9532a4CfD68c55F1AE8da987Eb",
+      "name": "DAOhaus Token on xDai",
+      "symbol": "HAUS",
+      "logoURI": "https://assets.coingecko.com/coins/images/14551/large/jN3kkqke_400x400.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
       "address": "0xb7D311E2Eb55F2f68a9440da38e7989210b9A05e",
       "name": "STAKE on xDai",
       "symbol": "STAKE",
       "logoURI": "https://tokens.1inch.io/0x0ae055097c6d159879521c384f1d2123d1f195e6.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xb90D6bec20993Be5d72A5ab353343f7a0281f158",
+      "name": "DXdao on xDai",
+      "symbol": "DXD",
+      "logoURI": "https://tokens.1inch.io/0xa1d65e8fb6e87b60feccbc582f7f97804b725521.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xbf65bfcb5da067446CeE6A706ba3Fe2fB1a9fdFd",
+      "name": "yearn.finance on xDai",
+      "symbol": "YFI",
+      "logoURI": "https://gnosisscan.io/token/images/yearnfingno_32.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xc791240D1F2dEf5938E2031364Ff4ed887133C3d",
+      "name": "Rocket Pool ETH from Mainnet",
+      "symbol": "rETH",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
+      "name": "Monerium EUR emoney",
+      "symbol": "EURe",
+      "logoURI": "https://assets.smold.app/api/token/100/0xcB444e90D8198415266c6a2724b7900fb12FC56E/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xcE11e14225575945b8E6Dc0D4F2dD4C570f79d9f",
+      "name": "Autonolas from Mainnet",
+      "symbol": "OLAS",
+      "logoURI": "https://raw.githubusercontent.com/cowprotocol/token-lists/main/src/public/images/100/0xcE11e14225575945b8E6Dc0D4F2dD4C570f79d9f/logo.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xdBF3Ea6F5beE45c02255B2c26a16F300502F68da",
+      "name": "BZZ on xDai",
+      "symbol": "BZZ",
+      "logoURI": "https://assets.coingecko.com/coins/images/16509/large/Swarm_Logo_1_%E2%97%8B_1_200px.png?1628508564",
+      "chainId": 100,
+      "decimals": 16
+    },
+    {
+      "address": "0xdd96B45877d0E8361a4DDb732da741e97f3191Ff",
+      "name": "BUSD Token on xDai",
+      "symbol": "BUSD",
+      "logoURI": "https://tokens.1inch.io/0x4fabb145d64652a948d72533023f6e7a623c7c53.png",
       "chainId": 100,
       "decimals": 18
     },
@@ -147,6 +563,22 @@
       "name": "Wrapped XDAI",
       "symbol": "WXDAI",
       "logoURI": "https://assets.smold.app/api/token/100/0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d/logo-128.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xeEeEEb57642040bE42185f49C52F7E9B38f8eeeE",
+      "name": "Elk",
+      "symbol": "ELK",
+      "logoURI": "https://tokens.1inch.io/0xeeeeeb57642040be42185f49c52f7e9b38f8eeee.png",
+      "chainId": 100,
+      "decimals": 18
+    },
+    {
+      "address": "0xec3f3e6d7907acDa3A7431abD230196CDA3FbB19",
+      "name": "Ethix on xDai",
+      "symbol": "ETHIX",
+      "logoURI": "https://gnosisscan.io/token/images/ethichub_32.png",
       "chainId": 100,
       "decimals": 18
     }
