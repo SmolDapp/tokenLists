@@ -1,10 +1,10 @@
 {
   "name": "Yearn Minimal Token List",
   "description": "",
-  "timestamp": "2025-12-14T01:13:29Z",
+  "timestamp": "2025-12-21T01:09:59Z",
   "version": {
     "major": 10,
-    "minor": 7,
+    "minor": 8,
     "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
@@ -106,6 +106,14 @@
       "decimals": 18
     },
     {
+      "address": "0x0141E81fB74C11CfD2308212D9C9a6a052Db3A98",
+      "name": "Curve ZCHF/CRVUSD Factory yVault",
+      "symbol": "yvCurve-ZCHF/CRVUSD-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0x0141E81fB74C11CfD2308212D9C9a6a052Db3A98/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x015d78C7aD1289F5aA1DEC25bD6b67ba31fAc1Cf",
       "name": "crvTETH yVault",
       "symbol": "yvcrvTETH",
@@ -142,6 +150,13 @@
       "name": "dgnETH/ETH+",
       "symbol": "dgnETHETH+",
       "logoURI": "https://assets.smold.app/api/token/1/0x021cF6B7ebb8c8EFcF21396Eb4c94658976172c7/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x027B40F5917FCd0eac57d7015e120096A5F92ca9",
+      "name": "ZCHF/CRVUSD",
+      "symbol": "ZCHF/CRVUSD",
       "chainId": 1,
       "decimals": 18
     },
@@ -5400,7 +5415,7 @@
       "name": "Wrapped USDL",
       "symbol": "wUSDL",
       "chainId": 1,
-      "decimals": 18
+      "decimals": 6
     },
     {
       "address": "0x77570CfEcf83bc6bB08E2cD9e8537aeA9F97eA2F",
@@ -6853,6 +6868,13 @@
       "address": "0x98E9599dab3A936C35DE48E13E026Ef4eA20B5e6",
       "name": "frxUSD/USDf",
       "symbol": "frxUSDUSDf",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x98b540fa89690969D111D045afCa575C91519B1A",
+      "name": "sdYB/YB",
+      "symbol": "sdYBYB-LP",
       "chainId": 1,
       "decimals": 18
     },
@@ -9950,7 +9972,7 @@
     },
     {
       "address": "0xbdC7c08592Ee4aa51D06C27Ee23D5087D65aDbcD",
-      "name": "Lift Dollar",
+      "name": "Lift Dollar - Deprecated",
       "symbol": "USDL",
       "logoURI": "https://asset-images.messari.io/images/85981d63-0569-4ad1-8b1a-ad0aa81ba817/128.png",
       "chainId": 1,
@@ -10957,6 +10979,14 @@
       "name": "Curve oBTC Pool yVault",
       "symbol": "yvCurve-oBTC",
       "logoURI": "https://assets.smold.app/api/token/1/0xe9Dc63083c464d6EDcCFf23444fF3CFc6886f6FB/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xeC456f00E1f1a6A9097b723Ab979c27AB45C5906",
+      "name": "Curve sdYBYB-LP Factory yVault",
+      "symbol": "yvCurve-sdYBYB-LP-f",
+      "logoURI": "https://assets.smold.app/api/token/1/0xeC456f00E1f1a6A9097b723Ab979c27AB45C5906/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
