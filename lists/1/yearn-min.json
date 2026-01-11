@@ -1,11 +1,11 @@
 {
   "name": "Yearn Minimal Token List",
   "description": "",
-  "timestamp": "2026-01-04T01:02:49Z",
+  "timestamp": "2026-01-11T01:05:44Z",
   "version": {
     "major": 11,
-    "minor": 0,
-    "patch": 1
+    "minor": 1,
+    "patch": 0
   },
   "logoURI": "https://assets.smold.app/api/token/1/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.svg",
   "keywords": [
@@ -107,8 +107,8 @@
     },
     {
       "address": "0x0141E81fB74C11CfD2308212D9C9a6a052Db3A98",
-      "name": "Curve ZCHF/CRVUSD Factory yVault",
-      "symbol": "yvCurve-ZCHF/CRVUSD-f",
+      "name": "Curve ZCHF-crvUSD Factory yVault",
+      "symbol": "yvCurve-ZCHF-crvUSD-f",
       "logoURI": "https://assets.smold.app/api/token/1/0x0141E81fB74C11CfD2308212D9C9a6a052Db3A98/logo-128.png",
       "chainId": 1,
       "decimals": 18
@@ -1332,6 +1332,14 @@
       "name": "Curve FEI Pool yVault",
       "symbol": "yvCurve-FEI",
       "logoURI": "https://assets.smold.app/api/token/1/0x1E6462678462c95e1F8AFE2558D7FF8692affBD0/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x1F6f16945e395593d8050d6Cc33e4328a515B648",
+      "name": "yYB yVault",
+      "symbol": "yvyYB",
+      "logoURI": "https://assets.smold.app/api/token/1/0x1F6f16945e395593d8050d6Cc33e4328a515B648/logo-128.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -7828,6 +7836,14 @@
       "decimals": 18
     },
     {
+      "address": "0xBF98480425A29197e5d99D003017f63a1e595D02",
+      "name": "SY Ethena sUSDE",
+      "symbol": "SY-sUSDE",
+      "logoURI": "https://assets.smold.app/api/token/1/0xBF98480425A29197e5d99D003017f63a1e595D02/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xBFB53910C935E837C74e6C4EF584557352d20fDe",
       "name": "StakingLPUsdc",
       "symbol": "slpUSDC",
@@ -11014,8 +11030,8 @@
     },
     {
       "address": "0xeC456f00E1f1a6A9097b723Ab979c27AB45C5906",
-      "name": "Curve sdYBYB-LP Factory yVault",
-      "symbol": "yvCurve-sdYBYB-LP-f",
+      "name": "Curve sdYB Factory yVault",
+      "symbol": "yvCurve-sdYB-f",
       "logoURI": "https://assets.smold.app/api/token/1/0xeC456f00E1f1a6A9097b723Ab979c27AB45C5906/logo-128.png",
       "chainId": 1,
       "decimals": 18
