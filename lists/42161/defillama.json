@@ -1,10 +1,10 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "2026-01-25T01:17:29Z",
+  "timestamp": "2026-02-12T17:32:07Z",
   "version": {
-    "major": 155,
-    "minor": 0,
+    "major": 158,
+    "minor": 1,
     "patch": 0
   },
   "logoURI": "https://wiki.defillama.com/w/resources/assets/wiki.png?88de1",
@@ -23,6 +23,14 @@
       "name": "GG",
       "symbol": "GG",
       "logoURI": "https://arbiscan.io/token/images/rebootgg_32.png?v=2",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x000000001DC8bd45d7E7829fb1c969cbe4D0D1eC",
+      "name": "Gauntlet USD Alpha",
+      "symbol": "gtUSDa",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102171863/thumb/gtUSDa.png?1770138785",
       "chainId": 42161,
       "decimals": 18
     },
@@ -184,14 +192,6 @@
       "logoURI": "https://assets.smold.app/api/token/42161/0x050C24dBf1eEc17babE5fc585F06116A259CC77A/logo-128.png",
       "chainId": 42161,
       "decimals": 8
-    },
-    {
-      "address": "0x0534D7272a8E4F24D269b56605F2BF6cf3271891",
-      "name": "UCOIN",
-      "symbol": "U",
-      "logoURI": "https://coin-images.coingecko.com/coins/images/51359/thumb/coingecko.png?1730877953",
-      "chainId": 42161,
-      "decimals": 18
     },
     {
       "address": "0x053C784cD87B74f42e0c089f98643E79c1A3ff16",
@@ -624,6 +624,14 @@
       "logoURI": "https://asset-images.messari.io/images/51f33e81-f084-4859-bead-af182750c03e/128.png",
       "chainId": 42161,
       "decimals": 18
+    },
+    {
+      "address": "0x116998824ff90532906bab91Becea4A8e4cE06DB",
+      "name": "$EXOD-B",
+      "symbol": "EXOD",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102171773/thumb/exodus.png?1769612116",
+      "chainId": 42161,
+      "decimals": 8
     },
     {
       "address": "0x118346C2bb9d24412ed58C53bF9BB6f61A20d7Ec",
@@ -1181,6 +1189,14 @@
       "decimals": 8
     },
     {
+      "address": "0x229917ac2842Eaab42060a1A9213CA78e01b572a",
+      "name": "Cyclo cyWBTC.pyth (Pyth oracle)",
+      "symbol": "cyWBTC.pyth",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102171827/thumb/favicon.png?1769932364",
+      "chainId": 42161,
+      "decimals": 8
+    },
+    {
       "address": "0x2363FD1235C1B6d3A5088DdF8dF3A0b3A30C5293",
       "name": "Visa xStock",
       "symbol": "Vx",
@@ -1381,6 +1397,14 @@
       "name": "Livepeer Token",
       "symbol": "LPT",
       "logoURI": "https://assets.coingecko.com/coins/images/7137/large/logo-circle-green.png?1619593365",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x28C7747D7eA25ED3dDCd075c6CCC3634313a0F59",
+      "name": "Cyclo cyWETH.pyth (Pyth oracle)",
+      "symbol": "cyWETH.pyth",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102171887/thumb/favicon.png?1770261273",
       "chainId": 42161,
       "decimals": 18
     },
@@ -2070,6 +2094,14 @@
       "name": "Milady",
       "symbol": "LADYS",
       "logoURI": "https://arbiscan.io/token/images/milady_32.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x3b8db18e69d6686Ad9371A423aFe3Dd1065C94f1",
+      "name": "Espresso",
+      "symbol": "ESP",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/67626/thumb/espresso.jpg?1753324525",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3362,6 +3394,14 @@
       "decimals": 18
     },
     {
+      "address": "0x6AEbdDF980Dc724BAbDC7CEd031c8C37934bBA72",
+      "name": "USD DWIN",
+      "symbol": "USDW",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/53767/thumb/LOGO200x200.fw.png?1737196873",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
       "address": "0x6Aa395F06986ea4eFe0a4630C7865C1eB08D5e7e",
       "name": "Jarvis Reward Token",
       "symbol": "JRT",
@@ -3595,7 +3635,7 @@
       "address": "0x7424f00845777A06E21F0bd8873f814A8A814B2D",
       "name": "Wrapped XTZ",
       "symbol": "WXTZ",
-      "logoURI": "https://assets.smold.app/api/token/42161/0x7424f00845777A06E21F0bd8873f814A8A814B2D/logo-128.png",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/51172/thumb/wxtz.png?1730278555",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3660,13 +3700,6 @@
       "name": "Bitwise Bitcoin ETF - Dinari",
       "symbol": "BITB",
       "logoURI": "https://coin-images.coingecko.com/coins/images/53863/thumb/d-token-200.png?1737614680",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x76BC2e765414E6C8b596c0f52c4240f80268f41D",
-      "name": "Unibit",
-      "symbol": "UIBT",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3882,14 +3915,6 @@
       "logoURI": "https://coin-images.coingecko.com/coins/images/54276/thumb/d-token-200.png?1738998264",
       "chainId": 42161,
       "decimals": 18
-    },
-    {
-      "address": "0x7ae9AB13fC8945323b778b3F8678145E80Ec2Efb",
-      "name": "WorldBrain Coin",
-      "symbol": "WBC",
-      "logoURI": "https://coin-images.coingecko.com/coins/images/39650/thumb/Frame_48096646.png?1723455673",
-      "chainId": 42161,
-      "decimals": 6
     },
     {
       "address": "0x7bA4a00d54A07461D9DB2aEF539e91409943AdC9",
@@ -4123,6 +4148,7 @@
       "address": "0x86f65121804D2Cdbef79F9f072D4e0c2eEbABC08",
       "name": "SEED",
       "symbol": "SEED",
+      "logoURI": "https://assets.coingecko.com/coins/images/34671/large/icon.png?1705656915",
       "chainId": 42161,
       "decimals": 18
     },
@@ -4455,13 +4481,6 @@
       "logoURI": "https://assets.coingecko.com/coins/images/14666/large/Group_3.png?1617631327",
       "chainId": 42161,
       "decimals": 18
-    },
-    {
-      "address": "0x93ca0d85837FF83158Cd14D65B169CdB223b1921",
-      "name": "Eclipse Fi",
-      "symbol": "ECLIP",
-      "chainId": 42161,
-      "decimals": 6
     },
     {
       "address": "0x94025780a1aB58868D9B2dBBB775f44b32e8E6e5",
@@ -5250,14 +5269,6 @@
       "decimals": 18
     },
     {
-      "address": "0xC84FaE1141B92Fa5Bf847276828f69cAF651Cb7F",
-      "name": "XNF",
-      "symbol": "XNF",
-      "logoURI": "https://asset-images.messari.io/images/19f484e4-2135-4ee2-a8ea-9f42394edd3e/128.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0xC8Fb643D18F1e53698CFDa5c8Fdf0cdC03C1dBec",
       "name": "Pleasing USD",
       "symbol": "PUSD",
@@ -5444,6 +5455,13 @@
       "name": "Wrapped Abbott xStock",
       "symbol": "wABTx",
       "logoURI": "https://coin-images.coingecko.com/coins/images/55772/thumb/Ticker_ABT__Company_Name_Abbot__size_200x200_2x.png?1747330846",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xD8724322f44E5c58D7A815F542036fb17DbbF839",
+      "name": "Wrapped OETH",
+      "symbol": "WOETH",
       "chainId": 42161,
       "decimals": 18
     },
@@ -5763,14 +5781,6 @@
       "logoURI": "https://coin-images.coingecko.com/coins/images/54278/thumb/d-token-200.png?1738998357",
       "chainId": 42161,
       "decimals": 18
-    },
-    {
-      "address": "0xF29Fdf6B7BdFFb025D7e6dfdF344992D2D16E249",
-      "name": "GENSX",
-      "symbol": "GENSX",
-      "logoURI": "https://assets.coingecko.com/coins/images/30904/large/GX_short_logo.png?1688622677",
-      "chainId": 42161,
-      "decimals": 6
     },
     {
       "address": "0xF2f26EEe8b40447F664F20aD3513E894153fE09E",
@@ -6547,6 +6557,14 @@
       "name": "RunBlox Token",
       "symbol": "RUX",
       "logoURI": "https://assets.coingecko.com/coins/images/26156/large/sh5z8C-0_400x400.jpg?1656321989",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0xc83563177290bdd391DB56553Ed828413b7689bc",
+      "name": "Cyclo cyARB.pyth (Pyth oracle)",
+      "symbol": "cyARB.pyth",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102171879/thumb/favicon.png?1770194672",
       "chainId": 42161,
       "decimals": 18
     },

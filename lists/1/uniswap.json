@@ -1,11 +1,11 @@
 {
   "name": "Uniswap Labs Default",
   "description": "",
-  "timestamp": "2026-01-18T01:14:09Z",
+  "timestamp": "2026-02-12T17:31:56Z",
   "version": {
-    "major": 22,
-    "minor": 10,
-    "patch": 1
+    "major": 23,
+    "minor": 1,
+    "patch": 0
   },
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
   "keywords": [
@@ -86,14 +86,6 @@
       "decimals": 18
     },
     {
-      "address": "0x04abEdA201850aC0124161F037Efd70c74ddC74C",
-      "name": "NEST",
-      "symbol": "NEST",
-      "logoURI": "https://assets.coingecko.com/coins/images/11284/large/52954052.png?1589868539",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
       "name": "Gemini dollar",
       "symbol": "GUSD",
@@ -122,6 +114,14 @@
       "name": "CRPT",
       "symbol": "CRPT",
       "logoURI": "https://assets.coingecko.com/coins/images/1901/large/crypt.png?1547036205",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0x086F405146Ce90135750Bbec9A063a8B20A8bfFb",
+      "name": "Brevis Token",
+      "symbol": "BREV",
+      "logoURI": "https://assets.coingecko.com/coins/images/71219/large/brevis.png?1766454723",
       "chainId": 1,
       "decimals": 18
     },
@@ -389,6 +389,13 @@
       "decimals": 8
     },
     {
+      "address": "0x228bEC415adE4b61D7CaF0adf8C91EAc587BA369",
+      "name": "TRIA",
+      "symbol": "TRIA",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x232CE3bd40fCd6f80f3d55A522d03f25Df784Ee2",
       "name": "Lighter",
       "symbol": "LIT",
@@ -640,14 +647,6 @@
       "name": "Aavegotchi GHST Token",
       "symbol": "GHST",
       "logoURI": "https://assets.smold.app/api/token/1/0x3F382DbD960E3a9bbCeaE22651E88158d2791550/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
-      "address": "0x3a4f40631a4f906c2BaD353Ed06De7A5D3fCb430",
-      "name": "PlayDapp Token",
-      "symbol": "PLA",
-      "logoURI": "https://tokens.1inch.io/0x3a4f40631a4f906c2bad353ed06de7a5d3fcb430.png",
       "chainId": 1,
       "decimals": 18
     },
@@ -971,6 +970,13 @@
       "decimals": 18
     },
     {
+      "address": "0x56A3BA04E95d34268A19b2a4474DC979baBDaf76",
+      "name": "Sentient",
+      "symbol": "SENT",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0x5732046A883704404F284Ce41FfADd5b007FD668",
       "name": "Bluzelle Token",
       "symbol": "BLZ",
@@ -1251,14 +1257,6 @@
       "decimals": 18
     },
     {
-      "address": "0x6DF0E641FC9847c0c6Fde39bE6253045440c14d3",
-      "name": "Dinero Governance Token",
-      "symbol": "DINERO",
-      "logoURI": "https://assets.smold.app/api/token/1/0x6DF0E641FC9847c0c6Fde39bE6253045440c14d3/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x6De037ef9aD2725EB40118Bb1702EBb27e4Aeb24",
       "name": "Render Token",
       "symbol": "RNDR",
@@ -1534,7 +1532,6 @@
       "address": "0x8408D45b61f5823298F19a09B53b7339c0280489",
       "name": "Allora",
       "symbol": "ALLO",
-      "logoURI": "https://assets.coingecko.com/coins/images/70609/large/allora.png?1762738776",
       "chainId": 1,
       "decimals": 18
     },
@@ -1795,14 +1792,6 @@
       "decimals": 18
     },
     {
-      "address": "0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079",
-      "name": "AjnaToken",
-      "symbol": "AJNA",
-      "logoURI": "https://assets.smold.app/api/token/1/0x9a96ec9B57Fb64FbC60B423d1f4da7691Bd35079/logo-128.png",
-      "chainId": 1,
-      "decimals": 18
-    },
-    {
       "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
       "name": "Maker",
       "symbol": "MKR",
@@ -1827,10 +1816,24 @@
       "decimals": 6
     },
     {
+      "address": "0xA12CC123ba206d4031D1c7f6223D1C2Ec249f4f3",
+      "name": "Zama",
+      "symbol": "ZAMA",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
       "address": "0xA2120b9e674d3fC3875f415A7DF52e382F141225",
       "name": "Automata",
       "symbol": "ATA",
       "logoURI": "https://assets.coingecko.com/coins/images/15985/large/ATA.jpg?1622535745",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xA27EC0006e59f245217Ff08CD52A7E8b169E62D2",
+      "name": "AZTEC",
+      "symbol": "AZTEC",
       "chainId": 1,
       "decimals": 18
     },
@@ -1935,6 +1938,13 @@
       "name": "Aevo",
       "symbol": "AEVO",
       "logoURI": "https://assets.smold.app/api/token/1/0xB528edBef013aff855ac3c50b381f253aF13b997/logo-128.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xB5F7b021a78f470d31D762C1DDA05ea549904fbd",
+      "name": "Rayls",
+      "symbol": "RLS",
       "chainId": 1,
       "decimals": 18
     },
@@ -2070,7 +2080,6 @@
       "address": "0xC9746F73cC33a36c2cD55b8aEFD732586946Cedd",
       "name": "BOB",
       "symbol": "BOB",
-      "logoURI": "https://assets.coingecko.com/coins/images/54720/large/BOB_symbol_colour.png?1741195397",
       "chainId": 1,
       "decimals": 18
     },
@@ -2349,7 +2358,6 @@
       "address": "0xafFbe9a60F1F45E057FD9b6DC70004Bb0Ccc8b99",
       "name": "Theoriq Token",
       "symbol": "THQ",
-      "logoURI": "https://coin-images.coingecko.com/coins/images/67759/thumb/thq.jpg?1753757049",
       "chainId": 1,
       "decimals": 18
     },
@@ -2374,6 +2382,13 @@
       "name": "Hashflow",
       "symbol": "HFT",
       "logoURI": "https://tokens.1inch.io/0xb3999f658c0391d94a37f7ff328f3fec942bcadc.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xb48c6B24f36307c7A1f2a9281E978a9ef2902BA5",
+      "name": "Immunefi",
+      "symbol": "IMU",
       "chainId": 1,
       "decimals": 18
     },
@@ -2614,6 +2629,21 @@
       "name": "Kyber Network Crystal",
       "symbol": "KNC",
       "logoURI": "https://tokens.1inch.io/0xdd974d5c2e2928dea5f71b9825b8b646686bd200.png",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xdeF1b2D939EdC0E4d35806c59b3166F790175afe",
+      "name": "Infinex",
+      "symbol": "INX",
+      "chainId": 1,
+      "decimals": 18
+    },
+    {
+      "address": "0xe1Be424F442D0687129128C6c38aAce44F8c8Dbc",
+      "name": "zkPass",
+      "symbol": "ZKP",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/70273/thumb/zkpass.png?1761379373",
       "chainId": 1,
       "decimals": 18
     },

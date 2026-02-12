@@ -1,9 +1,9 @@
 {
   "name": "Uniswap Labs Default",
   "description": "",
-  "timestamp": "2024-10-20T00:59:37Z",
+  "timestamp": "2026-02-12T17:31:56Z",
   "version": {
-    "major": 11,
+    "major": 23,
     "minor": 1,
     "patch": 0
   },
@@ -13,6 +13,13 @@
     "default"
   ],
   "tokens": [
+    {
+      "address": "0x000Ae314E2A2172a039B26378814C252734f556A",
+      "name": "Aster",
+      "symbol": "ASTER",
+      "chainId": 56,
+      "decimals": 18
+    },
     {
       "address": "0x0231f91e02DebD20345Ae8AB7D71A41f8E140cE7",
       "name": "BSC Wrapped Jupiter",
@@ -224,7 +231,6 @@
       "address": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
       "name": "LayerZero",
       "symbol": "ZRO",
-      "logoURI": "https://assets.coingecko.com/coins/images/28206/large/ftxG9_TJ_400x400.jpeg?1668396420",
       "chainId": 56,
       "decimals": 18
     },
@@ -361,14 +367,6 @@
       "name": "DeFiYieldProtocol",
       "symbol": "DYP",
       "logoURI": "https://assets.coingecko.com/coins/images/13480/large/DYP_Logo_Symbol-8.png?1655809066",
-      "chainId": 56,
-      "decimals": 18
-    },
-    {
-      "address": "0x98f8669F6481EbB341B522fCD3663f79A3d1A6A7",
-      "name": "NEST",
-      "symbol": "NEST",
-      "logoURI": "https://tokens.1inch.io/0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7.png",
       "chainId": 56,
       "decimals": 18
     },
@@ -616,7 +614,7 @@
       "address": "0xfb6115445Bff7b52FeB98650C87f44907E58f802",
       "name": "Aave Token",
       "symbol": "AAVE",
-      "logoURI": "https://assets.coingecko.com/coins/images/12645/large/AAVE.png?1601374110",
+      "logoURI": "https://assets.smold.app/api/token/56/0xfb6115445Bff7b52FeB98650C87f44907E58f802/logo-128.png",
       "chainId": 56,
       "decimals": 18
     }
