@@ -36,3 +36,5 @@ To start the generator, run the following command:
 - Using [Paraswap](https://www.paraswap.io/) API to generate the Paraswap Token List
 - Using [Portals](https://portals.fi/) API to generate the Portals Token List
 - Using [Yearn](https://yearn.fi) API to generate the Yearn Token List
+
+By Smol
