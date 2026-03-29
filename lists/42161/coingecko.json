@@ -1,9 +1,9 @@
 {
   "name": "CoinGecko",
   "description": "",
-  "timestamp": "2026-03-22T01:12:51Z",
+  "timestamp": "2026-03-29T01:19:59Z",
   "version": {
-    "major": 167,
+    "major": 168,
     "minor": 0,
     "patch": 0
   },
@@ -70,14 +70,6 @@
       "decimals": 18
     },
     {
-      "address": "0x000F1720A263f96532D1ac2bb9CDC12b72C6f386",
-      "name": "Fluidity",
-      "symbol": "FLY",
-      "logoURI": "https://asset-images.messari.io/images/4f73c464-d285-4c6a-a437-534ad1256a40/128.png",
-      "chainId": 42161,
-      "decimals": 6
-    },
-    {
       "address": "0x00312400303d02c323295f6E8b7309bc30FB6BcE",
       "name": "Caldera",
       "symbol": "ERA",
@@ -106,6 +98,13 @@
       "name": "Fidelity Wise Origin Bitcoin Fund - Dinari",
       "symbol": "FBTC",
       "logoURI": "https://coin-images.coingecko.com/coins/images/53866/thumb/d-token-200.png?1737615424",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x0290a3256c939F3Acb6CA5465154d94133DC5e02",
+      "name": "Wildcard",
+      "symbol": "WC",
       "chainId": 42161,
       "decimals": 18
     },
@@ -416,6 +415,7 @@
       "address": "0x0C709396739b9cFB72bcea6ac691Ce0Ddf66479C",
       "name": "Spiko Amundi Overnight Swap Fund",
       "symbol": "SAFO",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102172590/thumb/Fund_usdSAFO.png?1774104804",
       "chainId": 42161,
       "decimals": 5
     },
@@ -741,6 +741,7 @@
       "address": "0x1412632f2b89E87bFa20C1318A43CeD25F1D7b76",
       "name": "Spiko Amundi Overnight Swap Fund (EUR)",
       "symbol": "eurSAFO",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102172591/thumb/Fund_eurSAF0.png?1774104814",
       "chainId": 42161,
       "decimals": 5
     },
@@ -829,6 +830,13 @@
       "name": "Wrapped McDonald's xStock",
       "symbol": "wMCDx",
       "logoURI": "https://coin-images.coingecko.com/coins/images/55810/thumb/Ticker_MCD__Company_Name_McDonalds__size_200x200_2x.png?1747384160",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x17573150d67d820542EFb24210371545a4868B03",
+      "name": "Alchemix ETH",
+      "symbol": "alETH",
       "chainId": 42161,
       "decimals": 18
     },
@@ -1474,13 +1482,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2b1D36f5B61AdDAf7DA7ebbd11B35FD8cfb0DE31",
-      "name": "Interport Token",
-      "symbol": "ITP",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x2b28E826b55e399F4d4699b85f68666AC51e6f70",
       "name": "CAD Coin",
       "symbol": "CADC",
@@ -1634,14 +1635,6 @@
       "name": "Cartesi Token",
       "symbol": "CTSI",
       "logoURI": "https://assets.coingecko.com/coins/images/11038/large/cartesi.png?1592288021",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0x31C91D8Fb96BfF40955DD2dbc909B36E8b104Dde",
-      "name": "Poison.Finance Poison",
-      "symbol": "POI$ON",
-      "logoURI": "https://assets.coingecko.com/coins/images/28630/large/poisonlogo160x160.png?1672737996",
       "chainId": 42161,
       "decimals": 18
     },
@@ -3203,14 +3196,6 @@
       "decimals": 18
     },
     {
-      "address": "0x67C31056358b8977Ea95a3a899dD380D4BceD706",
-      "name": "ETHforestAI",
-      "symbol": "ETHFAI",
-      "logoURI": "https://arbiscan.io/token/images/ethforestai_32.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
       "address": "0x680447595e8b7b3Aa1B43beB9f6098C79ac2Ab3f",
       "name": "Decentralized USD",
       "symbol": "USDD",
@@ -4431,6 +4416,7 @@
       "address": "0x97e7962BCd091E7ECfb583FC96289B1E1553aC6E",
       "name": "Spiko Amundi Overnight Swap Fund (CHF)",
       "symbol": "chfSAFO",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102172593/thumb/Fund_chfSAFO.png?1774104821",
       "chainId": 42161,
       "decimals": 5
     },
@@ -4752,6 +4738,7 @@
       "address": "0xAAA0008C8CF3A7Dca931adaF04336A5D808C82Cc",
       "name": "DeFi Janus Henderson Anemoy AAA CLO Fund Token",
       "symbol": "deJAAA",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102172528/thumb/deJAAA.png?1773764620",
       "chainId": 42161,
       "decimals": 18
     },
@@ -5023,6 +5010,7 @@
       "address": "0xBE023308aC2eF7E1c3799F4e6A3003EE6d342635",
       "name": "Spiko Amundi Overnight Swap Fund (GBP)",
       "symbol": "gbpSAFO",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102172592/thumb/Fund_gbpSAFO.png?1774104818",
       "chainId": 42161,
       "decimals": 5
     },
@@ -5458,6 +5446,7 @@
       "address": "0xE7E7E741C23a4767831A56A8C99F522c5aC1E7E7",
       "name": "Everything",
       "symbol": "EV",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/71690/thumb/01_15_EV_Token_coin_white.png?1768925267",
       "chainId": 42161,
       "decimals": 18
     },
@@ -5545,14 +5534,6 @@
       "name": "Minato",
       "symbol": "MNTO",
       "logoURI": "https://arbiscan.io/token/images/minatodao_32.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xF18e4466F26B4cA55bbAb890b314a54976E45B17",
-      "name": "Game7",
-      "symbol": "G7",
-      "logoURI": "https://assets.coingecko.com/coins/images/37207/large/G.jpg?1713768185",
       "chainId": 42161,
       "decimals": 18
     },
@@ -6048,6 +6029,13 @@
       "logoURI": "https://coin-images.coingecko.com/coins/images/102172222/thumb/Unite_logo.png?1772296967",
       "chainId": 42161,
       "decimals": 4
+    },
+    {
+      "address": "0xb23bB8c2C6Cb9169eeaC8f2Bd42fcf333A1a8C55",
+      "name": "NOXCAT",
+      "symbol": "NOX",
+      "chainId": 42161,
+      "decimals": 18
     },
     {
       "address": "0xb2f6ED0ED3eEb22bEF7A648794FFC19b8aF3761C",
@@ -6863,14 +6851,6 @@
       "name": "Yum! Brands, Inc. - Dinari",
       "symbol": "YUM",
       "logoURI": "https://coin-images.coingecko.com/coins/images/54188/thumb/d-token-200.png?1738682602",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xeb8E93A0c7504Bffd8A8fFa56CD754c63aAeBFe8",
-      "name": "DAI+",
-      "symbol": "DAI+",
-      "logoURI": "https://tokens.1inch.io/0xeb8e93a0c7504bffd8a8ffa56cd754c63aaebfe8.png",
       "chainId": 42161,
       "decimals": 18
     },
