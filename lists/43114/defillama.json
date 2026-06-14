@@ -1,9 +1,9 @@
 {
   "name": "DefiLlama",
   "description": "",
-  "timestamp": "2026-05-31T02:14:14Z",
+  "timestamp": "2026-06-14T02:35:19Z",
   "version": {
-    "major": 174,
+    "major": 176,
     "minor": 0,
     "patch": 0
   },
@@ -65,6 +65,14 @@
       "logoURI": "https://assets.coingecko.com/coins/images/25307/large/ZVoPiysPJq6dPIZm_Se-6vjmsBepwhHlTQfdYZRILbHyVVTRUYCO-wmJJ4zT10HXCGv1j-ZyWr2u2sBaVlap5Y-ILqeXZuIquWdBDxxG0E0qDpgH7omLqYdgWWLSM_TUK9d1PiiYdu6bERdCDaucgFjlqwmhVQK4uV4jyUiXzchVUnu8Qt6SnxlNxz88G0mQ_tfiwkFv_vKqtgb1CcPycVZVz9.jpg?1651211260",
       "chainId": 43114,
       "decimals": 18
+    },
+    {
+      "address": "0x038Dbe3D967bB8389190446DACdfE7B95b44F73D",
+      "name": "bCircle",
+      "symbol": "bUSDC",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102173606/thumb/busdc.png?1780462992",
+      "chainId": 43114,
+      "decimals": 6
     },
     {
       "address": "0x039D2E8f097331278BD6c1415D839310E0D5Ece4",
@@ -656,14 +664,6 @@
       "decimals": 18
     },
     {
-      "address": "0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335",
-      "name": "Yield BTC.B",
-      "symbol": "YBTC.B",
-      "logoURI": "https://asset-images.messari.io/images/1e079f8c-2036-4258-a885-5bdb8ede58d6/128.png",
-      "chainId": 43114,
-      "decimals": 8
-    },
-    {
       "address": "0x2d0aFed89a6D6A100273Db377dBA7a32C739E314",
       "name": "BIG",
       "symbol": "BIG",
@@ -856,6 +856,14 @@
       "decimals": 18
     },
     {
+      "address": "0x3C594084dC7AB1864AC69DFd01AB77E8f65B83B7",
+      "name": "bTether",
+      "symbol": "bUSDT",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102173605/thumb/busdt.png?1780462874",
+      "chainId": 43114,
+      "decimals": 6
+    },
+    {
       "address": "0x3D8f74620857dd8ED6D0dA02ceB13fd0Ed8Ba678",
       "name": "OnX.finance",
       "symbol": "ONX",
@@ -892,14 +900,6 @@
       "name": "ROOBEE",
       "symbol": "ROOBEE",
       "logoURI": "https://assets.coingecko.com/coins/images/8791/large/Group_11.png?1580344629",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0x42006Ab57701251B580bDFc24778C43c9ff589A1",
-      "name": "EVO",
-      "symbol": "EVO",
-      "logoURI": "https://assets.coingecko.com/coins/images/25088/large/evoToken.png?1650269135",
       "chainId": 43114,
       "decimals": 18
     },
@@ -1087,14 +1087,6 @@
       "decimals": 18
     },
     {
-      "address": "0x4D6Ec47118f807ACE03d3B3A4EE6AA96CB2AB677",
-      "name": "Bonez",
-      "symbol": "BNZ",
-      "logoURI": "https://asset-images.messari.io/images/afe81b35-7516-4f71-ab95-90b825bd3432/128.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0x4E200fE2f3eFb977d5fd9c430A41531FB04d97B8",
       "name": "Orderly Network",
       "symbol": "ORDER",
@@ -1219,14 +1211,6 @@
       "name": "Wrapped Mountain Protocol USD",
       "symbol": "wUSDM",
       "logoURI": "https://asset-images.messari.io/images/d7ce1499-d5e4-49a3-ada6-f575ab99f6d5/128.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0x5817D4F0b62A59b17f75207DA1848C2cE75e7AF4",
-      "name": "Vector",
-      "symbol": "VTX",
-      "logoURI": "https://assets.coingecko.com/coins/images/24001/large/token-icon-brand2000px.png?1646028055",
       "chainId": 43114,
       "decimals": 18
     },
@@ -2135,14 +2119,6 @@
       "decimals": 6
     },
     {
-      "address": "0x95E376390F472fcaA21995169E11D523954b3bbb",
-      "name": "LiraT",
-      "symbol": "TRYT",
-      "logoURI": "https://asset-images.messari.io/images/a720f5a9-09e1-4ab9-ad97-76aed0741021/128.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
       "name": "DeFiYieldProtocol",
       "symbol": "DYP",
@@ -2272,7 +2248,7 @@
       "address": "0x9D92c21205383651610f90722131655A5B8ED3E0",
       "name": "Staked USDp",
       "symbol": "sUSDp",
-      "logoURI": "https://assets.smold.app/api/token/43114/0x9D92c21205383651610f90722131655A5B8ED3E0/logo-128.png",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102172374/thumb/sUSDp_w200.png?1773162285",
       "chainId": 43114,
       "decimals": 18
     },
@@ -2320,7 +2296,7 @@
       "address": "0x9eE1963f05553eF838604Dd39403be21ceF26AA4",
       "name": "USDp",
       "symbol": "USDp",
-      "logoURI": "https://assets.smold.app/api/token/43114/0x9eE1963f05553eF838604Dd39403be21ceF26AA4/logo-128.png",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/69613/thumb/usdp.png?1759221769",
       "chainId": 43114,
       "decimals": 18
     },
@@ -2329,14 +2305,6 @@
       "name": "Hypha Staked AVAX",
       "symbol": "stAVAX",
       "logoURI": "https://asset-images.messari.io/images/05e859a2-2634-4f50-9db4-c13a9f163288/128.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0xA32608e873F9DdEF944B24798db69d80Bbb4d1ed",
-      "name": "CRA",
-      "symbol": "CRA",
-      "logoURI": "https://tokens.1inch.io/0xa32608e873f9ddef944b24798db69d80bbb4d1ed.png",
       "chainId": 43114,
       "decimals": 18
     },
@@ -2629,14 +2597,6 @@
       "decimals": 18
     },
     {
-      "address": "0xCa8EBfB8e1460Aaac7c272CB9053B3D42412AAc2",
-      "name": "GAU Token",
-      "symbol": "GAU",
-      "logoURI": "https://assets.coingecko.com/coins/images/28151/large/200x200.png?1668150505",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
       "address": "0xCaC4904E1DB1589Aa17A2Ec742F5a6bCF4c4D037",
       "name": "Erol Musk",
       "symbol": "EROL",
@@ -2899,14 +2859,6 @@
       "logoURI": "https://tokens.1inch.io/0xfe6b19286885a4f7f55adad09c3cd1f906d2478f.png",
       "chainId": 43114,
       "decimals": 9
-    },
-    {
-      "address": "0xFF24003428Fb2E969C39EdEe4e9F464b0b78313d",
-      "name": "Waifu",
-      "symbol": "WAIFU",
-      "logoURI": "https://asset-images.messari.io/images/0ac2917b-9537-4156-9b70-accaed263e91/128.png",
-      "chainId": 43114,
-      "decimals": 18
     },
     {
       "address": "0xFF7F8F301F7A706E3CfD3D2275f5dc0b9EE8009B",
@@ -3172,6 +3124,14 @@
       "decimals": 18
     },
     {
+      "address": "0xbde79B2a371eA759a85901e4a185D03399C089C1",
+      "name": "APower",
+      "symbol": "APOW",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/66955/thumb/logo-apower-360-round.png?1751259027",
+      "chainId": 43114,
+      "decimals": 18
+    },
+    {
       "address": "0xc0Fbc4967259786C743361a5885ef49380473dCF",
       "name": "Aleph.im V2 SuperToken",
       "symbol": "ALEPH",
@@ -3306,6 +3266,14 @@
       "logoURI": "https://tokens.1inch.io/0xd1c3f94de7e5b45fa4edbba472491a9f4b166fc4.png",
       "chainId": 43114,
       "decimals": 18
+    },
+    {
+      "address": "0xd211b17Dfe8288D4Fb0dd8EEFF07A6C48fC679D5",
+      "name": "bAUSD",
+      "symbol": "bAUSD",
+      "logoURI": "https://coin-images.coingecko.com/coins/images/102173607/thumb/bausd.png?1780463222",
+      "chainId": 43114,
+      "decimals": 6
     },
     {
       "address": "0xd2a530170D71a9Cfe1651Fb468E2B98F7Ed7456b",
@@ -3447,14 +3415,6 @@
       "name": "InkFinance",
       "symbol": "QUILL",
       "logoURI": "https://asset-images.messari.io/images/38f6434a-d044-436a-b278-84aad9612694/128.png",
-      "chainId": 43114,
-      "decimals": 18
-    },
-    {
-      "address": "0xf3dd4E0a1dB7C5DCbf3b225698Cb6A916AEB24d9",
-      "name": "APower",
-      "symbol": "APOW",
-      "logoURI": "https://asset-images.messari.io/images/18d4c416-8fbc-40f0-b5c3-4d18bc59d0b9/128.png",
       "chainId": 43114,
       "decimals": 18
     },

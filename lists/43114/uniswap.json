@@ -1,11 +1,11 @@
 {
   "name": "Uniswap Labs Default",
   "description": "",
-  "timestamp": "2026-05-31T02:16:06Z",
+  "timestamp": "2026-06-14T02:36:12Z",
   "version": {
-    "major": 26,
-    "minor": 2,
-    "patch": 1
+    "major": 27,
+    "minor": 1,
+    "patch": 0
   },
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
   "keywords": [
@@ -13,6 +13,14 @@
     "default"
   ],
   "tokens": [
+    {
+      "address": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+      "name": "AUSD",
+      "symbol": "AUSD",
+      "logoURI": "https://asset-images.messari.io/images/784b12bc-b284-4689-9b97-8ea7fec440ba/128.png",
+      "chainId": 43114,
+      "decimals": 6
+    },
     {
       "address": "0x130966628846BFd36ff31a822705796e8cb8C18D",
       "name": "Magic Internet Money",
@@ -249,7 +257,6 @@
       "address": "0xAEC8318a9a59bAEb39861d10ff6C7f7bf1F96C57",
       "name": "EURA (previously agEUR)",
       "symbol": "EURA",
-      "logoURI": "https://assets.smold.app/api/token/43114/0xAEC8318a9a59bAEb39861d10ff6C7f7bf1F96C57/logo-128.png",
       "chainId": 43114,
       "decimals": 18
     },
