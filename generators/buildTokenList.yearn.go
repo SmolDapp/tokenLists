@@ -9,7 +9,7 @@ import (
 
 type TTokenType string
 
-// TERC20Token contains the basic information of an ERC20 token
+// TYearnTokenData contains the basic information of an ERC20 token
 type TYearnTokenData struct {
 	Address                   string     `json:"address"`
 	UnderlyingTokensAddresses []string   `json:"underlyingTokens"`
