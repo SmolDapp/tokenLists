@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
@@ -18,7 +17,7 @@ func handleAjnaTokenList(chainID uint64, tokenAddresses []string) []models.Token
 }
 
 func fetchAjnaTokenList(chainID uint64, sugarAddress common.Address) []models.TokenListToken {
-	client := ethereum.GetRPC(chainID).(*ethclient.Client)
+	client := ethereum.GetEVMRPC(chainID)
 	ajnaPoolFactory, err := contracts.NewAjnaPoolFactoryCaller(sugarAddress, client)
 	if err != nil {
 		logs.Error(err)

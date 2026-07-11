@@ -17,8 +17,11 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
 
-// RPC contains the ethclient.Client for a specific chainID
-var RPC = map[uint64]interface{}{} // Stores either *ethclient.Client or *solRPC.Client
+// EVMRPC contains the ethclient.Client for a specific chainID
+var EVMRPC = map[uint64]*ethclient.Client{}
+
+// SolanaRPC contains the solRPC.Client for a specific chainID
+var SolanaRPC = map[uint64]*solRPC.Client{}
 
 // MulticallClientForChainID holds the multicall client for a specific chainID
 var MulticallClientForChainID = make(map[uint64]TEthMultiCaller)
@@ -53,9 +56,9 @@ func Init() {
 					continue
 				}
 			}
-			RPC[chainID] = client
+			EVMRPC[chainID] = client
 		} else {
-			RPC[chainID] = solRPC.New(GetRPCURI(chainID))
+			SolanaRPC[chainID] = solRPC.New(GetRPCURI(chainID))
 		}
 	}
 
@@ -83,9 +86,14 @@ func useEnv(envName string, fallback string) string {
 	return envValue
 }
 
-// GetRPC returns the current connection for a specific chain
-func GetRPC(chainID uint64) interface{} {
-	return RPC[chainID]
+// GetEVMRPC returns the current EVM connection for a specific chain
+func GetEVMRPC(chainID uint64) *ethclient.Client {
+	return EVMRPC[chainID]
+}
+
+// GetSolanaRPC returns the current Solana connection for a specific chain
+func GetSolanaRPC(chainID uint64) *solRPC.Client {
+	return SolanaRPC[chainID]
 }
 
 // GetRPCURI returns the URI to use to connect to the node for a specific chainID

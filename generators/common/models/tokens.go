@@ -26,7 +26,7 @@ type TokenListData[T any] struct {
 		Minor int `json:"minor"`
 		Patch int `json:"patch"`
 	} `json:"version"`
-	LogoURI           string                    `json:"logoURI"`
+	LogoURI           string                    `json:"logoURI,omitempty"`
 	Keywords          []string                  `json:"keywords"`
 	Tokens            []T                       `json:"tokens"`
 	PreviousTokensMap map[string]TokenListToken `json:"-"`

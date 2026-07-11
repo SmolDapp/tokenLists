@@ -1,6 +1,7 @@
 package ethereum
 
 import (
+	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/utils"
@@ -14,99 +15,13 @@ import (
 var ERC20ABI, _ = contracts.ERC20MetaData.GetAbi()
 var ERC20ALTABI, _ = contracts.Erc20AltMetaData.GetAbi()
 
-func getName(name string, contractAddress common.Address) Call {
-	parsedData, err := ERC20ABI.Pack("name")
-	if err != nil {
-		return Call{
-			Target:   contractAddress,
-			Abi:      ERC20ABI,
-			Method:   `name`,
-			CallData: nil,
-			Name:     name,
-		}
-	}
+func newCall(name string, target common.Address, contractABI *abi.ABI, method string) Call {
+	callData, _ := contractABI.Pack(method)
 	return Call{
-		Target:   contractAddress,
-		Abi:      ERC20ABI,
-		Method:   `name`,
-		CallData: parsedData,
-		Name:     name,
-	}
-}
-func getBytes32Name(name string, contractAddress common.Address) Call {
-	parsedData, err := ERC20ALTABI.Pack("name")
-	if err != nil {
-		return Call{
-			Target:   contractAddress,
-			Abi:      ERC20ALTABI,
-			Method:   `name`,
-			CallData: nil,
-			Name:     name,
-		}
-	}
-	return Call{
-		Target:   contractAddress,
-		Abi:      ERC20ALTABI,
-		Method:   `name`,
-		CallData: parsedData,
-		Name:     name,
-	}
-}
-func getSymbol(name string, contractAddress common.Address) Call {
-	parsedData, err := ERC20ABI.Pack("symbol")
-	if err != nil {
-		return Call{
-			Target:   contractAddress,
-			Abi:      ERC20ABI,
-			Method:   `symbol`,
-			CallData: nil,
-			Name:     name,
-		}
-	}
-	return Call{
-		Target:   contractAddress,
-		Abi:      ERC20ABI,
-		Method:   `symbol`,
-		CallData: parsedData,
-		Name:     name,
-	}
-}
-func getBytes32Symbol(name string, contractAddress common.Address) Call {
-	parsedData, err := ERC20ALTABI.Pack("symbol")
-	if err != nil {
-		return Call{
-			Target:   contractAddress,
-			Abi:      ERC20ALTABI,
-			Method:   `symbol`,
-			CallData: nil,
-			Name:     name,
-		}
-	}
-	return Call{
-		Target:   contractAddress,
-		Abi:      ERC20ALTABI,
-		Method:   `symbol`,
-		CallData: parsedData,
-		Name:     name,
-	}
-}
-
-func getDecimals(name string, contractAddress common.Address) Call {
-	parsedData, err := ERC20ABI.Pack("decimals")
-	if err != nil {
-		return Call{
-			Target:   contractAddress,
-			Abi:      ERC20ABI,
-			Method:   `decimals`,
-			CallData: nil,
-			Name:     name,
-		}
-	}
-	return Call{
-		Target:   contractAddress,
-		Abi:      ERC20ABI,
-		Method:   `decimals`,
-		CallData: parsedData,
+		Target:   target,
+		Abi:      contractABI,
+		Method:   method,
+		CallData: callData,
 		Name:     name,
 	}
 }
@@ -140,21 +55,14 @@ func FetchBasicInformations(chainID uint64, tokens []string) map[string]*TERC20 
 	caller := MulticallClientForChainID[chainID]
 	calls := []Call{}
 	for _, token := range tokens {
-		calls = append(calls, getName(token, common.HexToAddress(token)))
-		calls = append(calls, getBytes32Name(token+`name_bytes_32`, common.HexToAddress(token)))
-		calls = append(calls, getSymbol(token, common.HexToAddress(token)))
-		calls = append(calls, getBytes32Symbol(token+`symbol_bytes_32`, common.HexToAddress(token)))
-		calls = append(calls, getDecimals(token, common.HexToAddress(token)))
+		calls = append(calls, newCall(token, common.HexToAddress(token), ERC20ABI, `name`))
+		calls = append(calls, newCall(token+`name_bytes_32`, common.HexToAddress(token), ERC20ALTABI, `name`))
+		calls = append(calls, newCall(token, common.HexToAddress(token), ERC20ABI, `symbol`))
+		calls = append(calls, newCall(token+`symbol_bytes_32`, common.HexToAddress(token), ERC20ALTABI, `symbol`))
+		calls = append(calls, newCall(token, common.HexToAddress(token), ERC20ABI, `decimals`))
 	}
 
-	/**********************************************************************************************
-	** Regular fix for some RPC, which limit the number of calls in a multicall to a very low
-	** number.
-	**********************************************************************************************/
 	maxBatch := uint64(420)
-	if chainID == 250 || chainID == 56 || chainID == 137 {
-		maxBatch = 420
-	}
 
 	/**********************************************************************************************
 	** Then we can proceed the responses.
@@ -189,17 +97,10 @@ func FetchNames(chainID uint64, tokens []common.Address) map[string]string {
 	caller := MulticallClientForChainID[chainID]
 	calls := []Call{}
 	for _, token := range tokens {
-		calls = append(calls, getName(token.String(), token))
+		calls = append(calls, newCall(token.String(), token, ERC20ABI, `name`))
 	}
 
-	/**********************************************************************************************
-	** Regular fix for some RPC, which limit the number of calls in a multicall to a very low
-	** number.
-	**********************************************************************************************/
 	maxBatch := uint64(420)
-	if chainID == 250 || chainID == 56 || chainID == 137 {
-		maxBatch = 420
-	}
 
 	/**********************************************************************************************
 	** Then we can proceed the responses.
@@ -223,7 +124,7 @@ func FetchDecimals(chainID uint64, tokens []common.Address) map[string]uint64 {
 	caller := MulticallClientForChainID[chainID]
 	calls := []Call{}
 	for _, token := range tokens {
-		calls = append(calls, getDecimals(token.String(), token))
+		calls = append(calls, newCall(token.String(), token, ERC20ABI, `decimals`))
 	}
 
 	/**********************************************************************************************

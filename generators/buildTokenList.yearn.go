@@ -7,43 +7,7 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
-type TExternalERC20Token struct {
-	Address                   string   `json:"address"`
-	UnderlyingTokensAddresses []string `json:"underlyingTokensAddresses"`
-	Name                      string   `json:"name"`
-	Symbol                    string   `json:"symbol"`
-	Type                      string   `json:"type"`
-	DisplayName               string   `json:"display_name"`
-	DisplaySymbol             string   `json:"display_symbol"`
-	Description               string   `json:"description"`
-	Icon                      string   `json:"icon"`
-	Decimals                  uint64   `json:"decimals"`
-}
-type TYearnVaultData struct {
-	Address       string              `json:"address"`
-	Name          string              `json:"name"`
-	Symbol        string              `json:"symbol"`
-	DisplayName   string              `json:"display_name"`
-	DisplaySymbol string              `json:"display_symbol"`
-	Token         TExternalERC20Token `json:"token"`
-	Decimals      uint64              `json:"decimals"`
-	ChainID       uint64              `json:"chainID"`
-}
 type TTokenType string
-
-const (
-	TokenTypeStandardVault           TTokenType = "Yearn Vault"
-	TokenTypeLegagyStandardVault     TTokenType = "helpers.SavingMethodStandard"
-	TokenTypeExperimentalVault       TTokenType = "Experimental Yearn Vault"
-	TokenTypeLegacyExperimentalVault TTokenType = "Experimental"
-	TokenTypeAutomatedVault          TTokenType = "Automated Yearn Vault"
-	TokenTypeLegacyAutomatedVault    TTokenType = "Automated"
-	TokenTypeNative                  TTokenType = "Native"
-	TokenTypeCurveLP                 TTokenType = "Curve LP"
-	TokenTypeCompound                TTokenType = "Compound"
-	TokenTypeAaveV1                  TTokenType = "AAVE V1"
-	TokenTypeAaveV2                  TTokenType = "AAVE V2"
-)
 
 // TERC20Token contains the basic information of an ERC20 token
 type TYearnTokenData struct {

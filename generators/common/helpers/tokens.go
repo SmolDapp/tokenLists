@@ -3,6 +3,7 @@ package helpers
 import (
 	"errors"
 	"strings"
+	"sync"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
@@ -12,6 +13,7 @@ import (
 )
 
 var ALL_EXISTING_TOKENS = map[uint64]map[string]models.TokenListToken{}
+var allExistingTokensMutex sync.RWMutex
 
 func init() {
 	chainCoins := []models.TokenListToken{}
@@ -48,36 +50,10 @@ func SetToken(
 	name string, symbol string, logoURI string,
 	chainID uint64, decimals int,
 ) (models.TokenListToken, error) {
-	token := models.TokenListToken{}
-	if name == `` {
-		return token, errors.New(`token name is empty`)
+	token, err := SetToken_NOREPLACEMENT(address, name, symbol, logoURI, chainID, decimals)
+	if err != nil {
+		return token, err
 	}
-	if symbol == `` {
-		return token, errors.New(`token symbol is empty`)
-	}
-	if decimals == 0 {
-		return token, errors.New(`token decimals is 0`)
-	}
-	if chains.IsTokenIgnored(chainID, address) {
-		return token, errors.New(`token is ignored`)
-	}
-	if !chains.IsChainIDSupported(chainID) {
-		return token, errors.New(`chainID is ignored`)
-	}
-	if strings.EqualFold(address, `0x2791bca1f2de4661ed88a30c99a7a9449aa84174`) && chainID == 137 {
-		name = `Bridged USD Coin (PoS)`
-		symbol = `USDC.e`
-	}
-
-	if chains.CHAINS[chainID].Type == `SVM` {
-		token.Address = utils.ToAddress(address)
-	} else {
-		token.Address = common.HexToAddress(address).Hex()
-	}
-	token.ChainID = chainID
-	token.Decimals = decimals
-	token.Name = name
-	token.Symbol = symbol
 	token.LogoURI = UseIcon(
 		chainID,
 		token.Name+` - `+token.Symbol,

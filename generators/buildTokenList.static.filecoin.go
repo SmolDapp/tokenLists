@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
 	"github.com/migratooor/tokenLists/generators/static"
@@ -14,7 +15,7 @@ func fetchFilecoinStaticTokenList(chainID uint64) []models.TokenListToken {
 func buildFilecoinStaticTokenList() {
 	tokenList := helpers.LoadTokenListFromJsonFile(`filecoin-static.json`)
 	tokenList.Name = `Filecoin (Static)`
-	tokenList.LogoURI = `https://assets.smold.app/api/chains/314/logo-128.png`
+	tokenList.LogoURI = chains.CHAINS[314].LogoURI
 	tokenList.Keywords = []string{`filecoin`}
 	tokens := []models.TokenListToken{}
 	tokens = append(tokens, fetchFilecoinStaticTokenList(314)...)

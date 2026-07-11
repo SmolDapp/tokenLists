@@ -33,7 +33,6 @@ var colorYellow = color.New(color.FgYellow).Add(color.Bold).SprintFunc()
 var colorBlue = color.New(color.FgBlue).Add(color.Bold).SprintFunc()
 var colorCyan = color.New(color.FgCyan).SprintFunc()
 var colorMagenta = color.New(color.FgMagenta).Add(color.Bold).SprintFunc()
-var colorGrey = color.New(color.Faint).SprintFunc()
 
 // ErrorCrash function logs an error
 func Error(err ...interface{}) {
@@ -95,47 +94,4 @@ func Info(info ...interface{}) {
 	t := time.Now().Format("2006/01/02 15:04:05")
 
 	spew.Printf("%s %-17s %s %s\n", t, colorMagenta(str0), colorBlue(str1), colorBlue(info))
-}
-
-// Debug function logs a debug message
-func Debug(debug ...interface{}) {
-	if !isLogLevelAtLeast("DEBUG") {
-		return
-	}
-
-	pc, _, line, _ := runtime.Caller(1)
-
-	str0 := `[` + strconv.Itoa(runtime.NumGoroutine()) + `]`
-	str1 := `[DBUG]`
-	str2 := `(` + runtime.FuncForPC(pc).Name() + `:` + strconv.Itoa(line) + `)`
-	t := time.Now().Format("2006/01/02 15:04:05")
-
-	spew.Printf("%s %-17s %s %s %s\n", t, colorMagenta(str0), colorBlue(str1), colorCyan(str2), colorBlue(debug))
-}
-
-func Trace(key string, status int, message string) {
-	if !isLogLevelAtLeast("DEBUG") {
-		return
-	}
-
-	str0 := `[` + strconv.Itoa(runtime.NumGoroutine()) + `]`
-	str1 := `[TRAC]`
-	t := time.Now().Format("2006/01/02 15:04:05")
-
-	if status == 0 {
-		spew.Printf("%s %-17s %s %s\n", t, colorMagenta(str0), colorGrey(str1), colorGrey(`DONE `+key+` (`+message+`)`))
-	}
-	if status == 1 {
-		spew.Printf("%s %-17s %s %s\n", t, colorMagenta(str0), colorGrey(str1), colorGrey(`INIT `+key))
-	}
-}
-
-// Pretty function disasemble a variable and display it's struct and values
-func Pretty(variable ...interface{}) {
-	spew.Config.Indent = "    "
-	fmt.Printf("%s", colorYellow("----------------------------------\n"))
-	for _, each := range variable {
-		spew.Dump(each)
-	}
-	fmt.Printf("%s", colorYellow("----------------------------------\n"))
 }

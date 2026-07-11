@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
@@ -23,8 +24,7 @@ func fetchFilscanTokens(chainID uint64) []models.TokenListToken {
 	tokenAddresses := []string{}
 	tokenIcons := map[string]string{}
 
-	uri := explorerBaseUri
-	list := helpers.FetchJSONPost[TFilescanList](uri)
+	list := helpers.FetchJSONPost[TFilescanList](explorerBaseUri)
 
 	for _, token := range list.Result.Tokens {
 		if token.MarketCap == `0` || token.MarketCap == `` {
@@ -39,13 +39,12 @@ func fetchFilscanTokens(chainID uint64) []models.TokenListToken {
 func buildFilecoinTokenList() {
 	tokenList := helpers.LoadTokenListFromJsonFile(`filecoin.json`)
 	tokenList.Name = `filecoin`
-	tokenList.LogoURI = `https://assets.smold.app/api/chains/314/logo-128.png`
+	tokenList.LogoURI = chains.CHAINS[314].LogoURI
 	tokenList.Keywords = []string{`filecoin`}
 	tokens := []models.TokenListToken{}
 	tokens = append(tokens, fetchFilscanTokens(314)...)
 
 	// We are ignoring the blockscout token list for now as we have no way to filter out the tokens with 0 market cap
-	// tokens = append(tokens, fetchBlockScoutV6TokenList(314)...)
 
 	helpers.SaveTokenListInJsonFile(tokenList, tokens, `filecoin.json`, helpers.SavingMethodStandard)
 }

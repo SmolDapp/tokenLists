@@ -75,7 +75,7 @@ var BASE_EXPLORERS_URI = map[uint64]etherscanSASExplorers{
 	},
 }
 
-func handleScanTokenList(chainID uint64, tokenAddresses []string, imageURI []string) []models.TokenListToken {
+func handleScanTokenList(chainID uint64, tokenAddresses []string) []models.TokenListToken {
 	tokenList := helpers.GetTokensFromAddresses(chainID, tokenAddresses)
 	tokenList = append(tokenList, chains.CHAINS[chainID].Coin)
 	return tokenList
@@ -83,17 +83,12 @@ func handleScanTokenList(chainID uint64, tokenAddresses []string, imageURI []str
 
 func fetchScanTokenListForL2(chainID uint64, currentPage uint8) []models.TokenListToken {
 	explorerBaseUri := BASE_EXPLORERS_URI[chainID].BaseURL
-	imageURI := []string{}
 	tokens := []string{}
 	c := colly.NewCollector(
 		colly.UserAgent(`Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36`),
 	)
 
 	c.OnHTML("div.media", func(e *colly.HTMLElement) {
-		e.ForEach("img.u-xs-avatar", func(i int, h *colly.HTMLElement) {
-			src := h.Attr("src")
-			imageURI = append(imageURI, explorerBaseUri+src)
-		})
 		e.ForEach("a.text-primary", func(i int, h *colly.HTMLElement) {
 			tokenHref := h.Attr("href")
 			tokenAddress := tokenHref[7:]
@@ -108,12 +103,11 @@ func fetchScanTokenListForL2(chainID uint64, currentPage uint8) []models.TokenLi
 		c.Visit(explorerBaseUri + `/tokens?p=` + strconv.Itoa(int(currentPage)))
 		currentPage++
 	}
-	return handleScanTokenList(chainID, tokens, imageURI)
+	return handleScanTokenList(chainID, tokens)
 }
 
 func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []models.TokenListToken {
 	explorerBaseUri := BASE_EXPLORERS_URI[chainID].BaseURL
-	imageURI := []string{}
 	tokens := []string{}
 	c := colly.NewCollector(
 		colly.UserAgent(`Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36`),
@@ -121,10 +115,6 @@ func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []models.TokenLi
 	c.IgnoreRobotsTxt = true
 
 	c.OnHTML("a.d-flex.align-items-center.gap-1.link-dark", func(e *colly.HTMLElement) {
-		e.ForEach("img.rounded-circle", func(i int, h *colly.HTMLElement) {
-			src := h.Attr("src")
-			imageURI = append(imageURI, explorerBaseUri+src)
-		})
 		tokenHref := e.Attr("href")
 		tokenAddress := tokenHref[7:]
 		tokens = append(tokens, utils.ToAddress(tokenAddress))
@@ -137,7 +127,7 @@ func fetchScanTokenListForL1(chainID uint64, currentPage uint8) []models.TokenLi
 		c.Visit(explorerBaseUri + `/tokens?p=` + strconv.Itoa(int(currentPage)))
 		currentPage++
 	}
-	return handleScanTokenList(chainID, tokens, imageURI)
+	return handleScanTokenList(chainID, tokens)
 }
 
 func fetchScanTokenList(chainID uint64) []models.TokenListToken {

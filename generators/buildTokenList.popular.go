@@ -38,6 +38,7 @@ func buildPopularList() {
 	** To do this, we need to know the total number of tokens in all lists.
 	**********************************************************************************************/
 	totalNumberOfTokens := 0
+	loadedLists := make(map[string]models.TokenListData[models.TokenListToken])
 	for name, generatorData := range GENERATORS {
 		if generatorData.Exclude {
 			continue
@@ -48,8 +49,8 @@ func buildPopularList() {
 		if generatorData.GeneratorType == GeneratorPool {
 			continue
 		}
-		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
-		totalNumberOfTokens += len(tokenList.Tokens)
+		loadedLists[name] = helpers.LoadTokenListFromJsonFile(name + `.json`)
+		totalNumberOfTokens += len(loadedLists[name].Tokens)
 	}
 
 	/**********************************************************************************************
@@ -68,8 +69,7 @@ func buildPopularList() {
 		if generatorData.GeneratorType == GeneratorPool {
 			continue
 		}
-		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
-		listWeights[name] = float64(len(tokenList.Tokens)) / float64(totalNumberOfTokens)
+		listWeights[name] = float64(len(loadedLists[name].Tokens)) / float64(totalNumberOfTokens)
 		sumWeights += listWeights[name]
 		logs.Info(`List weight for ` + name + ` is ` + strconv.FormatFloat(listWeights[name], 'f', -1, 64))
 	}
@@ -91,8 +91,7 @@ func buildPopularList() {
 			continue
 		}
 
-		tokenList := helpers.LoadTokenListFromJsonFile(name + `.json`)
-		for _, token := range tokenList.Tokens {
+		for _, token := range loadedLists[name].Tokens {
 			if !chains.IsChainIDSupported(token.ChainID) {
 				continue
 			}
@@ -178,11 +177,13 @@ func buildPopularList() {
 	}
 
 	tokens := helpers.GetTokensFromList(allTokensPlain)
+	occurrencePerAddress := make(map[string]float64)
 	for _, token := range allTokensPlain {
-		for i, t := range tokens {
-			if common.HexToAddress(token.Address).Hex() == common.HexToAddress(t.Address).Hex() {
-				tokens[i].OccurrenceFloat = token.OccurrenceFloat
-			}
+		occurrencePerAddress[common.HexToAddress(token.Address).Hex()] = token.OccurrenceFloat
+	}
+	for i, t := range tokens {
+		if occurrence, ok := occurrencePerAddress[common.HexToAddress(t.Address).Hex()]; ok {
+			tokens[i].OccurrenceFloat = occurrence
 		}
 	}
 

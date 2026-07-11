@@ -6,7 +6,6 @@ import (
 	"sync"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
@@ -82,7 +81,7 @@ func fetchSushiswapPairsTokenList(extra map[string]interface{}) ([]models.TokenL
 		if sync, ok := extra[`lastBlockSyncFor_`+chainIDStr]; ok {
 			lastBlockSyncForChainID, _ = strconv.ParseUint(sync.(string), 10, 64)
 		}
-		client := ethereum.GetRPC(chainID).(*ethclient.Client)
+		client := ethereum.GetEVMRPC(chainID)
 		currentBlockNumber, _ := client.BlockNumber(context.Background())
 		threshold := uint64(100_000)
 		if chainID == 56 {
