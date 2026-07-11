@@ -40,15 +40,5 @@ func buildExternalTokenList(tokenList models.TokenListData[models.TokenListToken
 	* Ensure the data availability for the new token list is correct and
 	* save it in a json file
 	**************************************************************************/
-	for _, token := range newTokenList {
-		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, token.Address) {
-			continue
-		}
-
-		key := helpers.GetKey(token.ChainID, token.Address)
-		tokenList.NextTokensMap[key] = token
-	}
-
-	tokens := helpers.GetTokensFromList(tokenList.Tokens)
-	helpers.SaveTokenListInJsonFile(tokenList, tokens, fileName, helpers.SavingMethodStandard)
+	helpers.SaveTokenListInJsonFile(tokenList, newTokenList, fileName, helpers.SavingMethodStandard)
 }

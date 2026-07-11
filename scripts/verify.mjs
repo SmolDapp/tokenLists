@@ -85,7 +85,11 @@ function validate(directory, validators) {
           const seenTokens = new Map();
           for (const token of data.tokens) {
             const address = String(token.address);
-            const key = `${token.chainId}-${address.toLowerCase()}`;
+            let dedupeAddress = address;
+            if (/^0x[0-9a-fA-F]{40}$/.test(address)) {
+              dedupeAddress = address.toLowerCase();
+            }
+            const key = `${token.chainId}-${dedupeAddress}`;
             if (seenTokens.has(key)) {
               console.error(
                 `Error: "${file}" has a duplicate token for chainId ${token.chainId} and address "${address}".`,
