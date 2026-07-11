@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
+	"net/url"
 	"os"
-	"strings"
 
 	"github.com/migratooor/tokenLists/generators/common/logs"
 )
@@ -14,12 +14,18 @@ func fetchJSON[T any](uri string) (data T) {
 	var resp *http.Response
 	var err error
 
-	if strings.Contains(uri, `api.portals.fi`) ||
-		strings.Contains(uri, `api.1inch.io`) {
+	u, err := url.Parse(uri)
+	if err != nil {
+		logs.Error(err)
+		return data
+	}
+
+	if u.Hostname() == `api.portals.fi` ||
+		u.Hostname() == `api.1inch.io` {
 		req, _ := http.NewRequest("GET", uri, nil)
 		req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36")
 		resp, err = http.DefaultClient.Do(req)
-	} else if strings.Contains(uri, `api.1inch.dev`) {
+	} else if u.Hostname() == `api.1inch.dev` {
 		req, _ := http.NewRequest("GET", uri, nil)
 		onInchBearerFromEnv := os.Getenv("BEARER_FOR_1INCH")
 		req.Header.Set("Authorization", "Bearer "+onInchBearerFromEnv)
