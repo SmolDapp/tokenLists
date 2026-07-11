@@ -94,7 +94,7 @@
     "logoURI": {
       "type": "string",
       "description": "A URI for the logo of the token list; prefer SVG or PNG of size 256x256",
-      "format": "uri"
+      "anyOf": [{ "const": "" }, { "format": "uri" }]
     }
   },
   "required": ["name", "timestamp", "version", "tokens"]
