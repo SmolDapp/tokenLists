@@ -11,7 +11,6 @@ Our generators are categorized based on their data collection method:
 3. **Event-based Generators** (GenerationEvents)
 4. **Chain-specific Generators** (GenerationChain)
 5. **Static Generators** (GenerationStatic)
-6. **Legacy Generators** (GenerationLegacyList)
 
 ## Generator List
 
@@ -26,10 +25,14 @@ These generators fetch data by calling external APIs:
 - Curve
 - Etherscan (excluded due to Cloudflare scraping protection)
 - Filecoin
+- Inkypump
+- Jupiter
+- Lifi
 - Messari
 - Paraswap
 - Portals
 - Routescan
+- SolanaFM
 - Token Name Service (TNS)
 - SushiSwap
 - UniSwap
@@ -63,6 +66,7 @@ These generators fetch data directly from on-chain contracts:
 
 - Aerodrome
 - Ajna
+- Token Registry
 - Velodrome
 
 ### Static Generators
@@ -70,14 +74,16 @@ These generators fetch data directly from on-chain contracts:
 These generators use static, manually curated lists:
 
 - Ajna (Static)
+- Berachain (Static)
 - Filecoin (Static)
+- Sophon (Static)
 
 ## Generator Characteristics
 
 Generators differ in several key aspects:
 
 1. **Generation Method**: API-based, External List, Event-based, Chain-specific, or Static.
-2. **Generator Type**: 
+2. **Generator Type**:
    - Token generators (GeneratorToken): Create lists of individual tokens.
    - Pool generators (GeneratorPool): Create lists of liquidity pools or token pairs.
 3. **Data Source**: Platform-specific (e.g., 1inch, Curve) or aggregators (e.g., CoinGecko, DefiLlama).
