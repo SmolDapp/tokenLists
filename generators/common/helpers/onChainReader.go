@@ -12,13 +12,6 @@ import (
 	"github.com/migratooor/tokenLists/generators/common/utils"
 )
 
-type TSolanaMetadata struct {
-	Name        string `json:"name"`
-	Image       string `json:"image"`
-	Symbol      string `json:"symbol"`
-	Description string `json:"description"`
-}
-
 /**************************************************************************************************
 * The RetrieveBasicInformations function reads the token list and returns a list of tokens with
 * their basic informations (name, symbol, logoURI, decimals, chainID). These informations are
@@ -32,12 +25,19 @@ func RetrieveBasicInformations(chainID uint64, addresses []string) map[string]et
 		return erc20Map
 	}
 
+	allExistingTokensMutex.Lock()
 	if _, ok := ALL_EXISTING_TOKENS[chainID]; !ok {
 		ALL_EXISTING_TOKENS[chainID] = make(map[string]models.TokenListToken)
 	}
+	allExistingTokensMutex.Unlock()
 
+	seen := make(map[string]bool)
 	for _, v := range addresses {
-		if token, ok := ALL_EXISTING_TOKENS[chainID][utils.ToAddress(v)]; ok {
+		addr := utils.ToAddress(v)
+		allExistingTokensMutex.RLock()
+		token, ok := ALL_EXISTING_TOKENS[chainID][addr]
+		allExistingTokensMutex.RUnlock()
+		if ok {
 			if token.Name == `` && token.Symbol == `` && token.Decimals == 0 {
 				logs.Warning(`[ALL_EXISTING_TOKENS]: Missing name, symbol and decimals for token:`, token.Address, `on chain:`, chainID)
 			} else if token.Name == `` && token.Symbol == `` {
@@ -53,14 +53,18 @@ func RetrieveBasicInformations(chainID uint64, addresses []string) map[string]et
 			} else if token.Decimals == 0 {
 				logs.Warning(`[ALL_EXISTING_TOKENS]: Missing decimals for token:`, token.Address, `on chain:`, chainID)
 			}
-			erc20Map[utils.ToAddress(v)] = ethereum.TERC20{
-				Address:  utils.ToAddress(v),
+			erc20Map[addr] = ethereum.TERC20{
+				Address:  addr,
 				Name:     token.Name,
 				Symbol:   token.Symbol,
 				Decimals: uint64(token.Decimals),
 				ChainID:  chainID,
 			}
 		} else {
+			if seen[addr] {
+				continue
+			}
+			seen[addr] = true
 			missingAddresses = append(missingAddresses, v)
 		}
 	}
@@ -79,6 +83,7 @@ func RetrieveBasicInformations(chainID uint64, addresses []string) map[string]et
 			} else if v.Symbol == `` {
 				logs.Warning(`[FETCHED_TOKEN] - Missing symbol for token:`, v.Address, `on chain:`, chainID)
 			}
+			allExistingTokensMutex.Lock()
 			ALL_EXISTING_TOKENS[chainID][utils.ToAddress(v.Address)] = models.TokenListToken{
 				Address:    utils.ToAddress(v.Address),
 				Name:       v.Name,
@@ -88,6 +93,7 @@ func RetrieveBasicInformations(chainID uint64, addresses []string) map[string]et
 				ChainID:    chainID,
 				Occurrence: 1,
 			}
+			allExistingTokensMutex.Unlock()
 		}
 	}
 	/**********************************************************************************************
@@ -118,7 +124,9 @@ func RetrieveBasicInformations(chainID uint64, addresses []string) map[string]et
 				ChainID:    chainID,
 				Occurrence: 1,
 			}
+			allExistingTokensMutex.Lock()
 			ALL_EXISTING_TOKENS[chainID][utils.ToAddress(address)] = solanaToken
+			allExistingTokensMutex.Unlock()
 		}
 	}
 
@@ -143,7 +151,10 @@ func GroupByChainID(tokens []models.TokenListToken) map[uint64][]string {
  * The getExistingLogo function is a small helper function to get the existing logo of a token
  *************************************************************************************************/
 func getExistingLogo(chainID uint64, lookingFor string, slice []models.TokenListToken) string {
-	if token, ok := ALL_EXISTING_TOKENS[chainID][utils.ToAddress(lookingFor)]; ok {
+	allExistingTokensMutex.RLock()
+	token, ok := ALL_EXISTING_TOKENS[chainID][utils.ToAddress(lookingFor)]
+	allExistingTokensMutex.RUnlock()
+	if ok {
 		if token.LogoURI != `` {
 			return token.LogoURI
 		}
@@ -225,10 +236,11 @@ func GetTokensFromAddresses(chainID uint64, tokenAddresses []string) []models.To
 	return tokenList
 }
 
-func GetTokensFromAddressesWithIcons(
+func getTokensFromAddressesWithIcons(
 	chainID uint64,
 	tokenAddresses []string,
 	tokenIcons map[string]string,
+	setToken func(string, string, string, string, uint64, int) (models.TokenListToken, error),
 ) []models.TokenListToken {
 	tokenList := []models.TokenListToken{}
 	tokenAddresses = append(tokenAddresses, chains.CHAINS[chainID].ExtraTokens...)
@@ -236,7 +248,7 @@ func GetTokensFromAddressesWithIcons(
 
 	for _, address := range tokenAddresses {
 		if token, ok := tokensInfo[utils.ToAddress(address)]; ok {
-			if newToken, err := SetToken(
+			if newToken, err := setToken(
 				token.Address,
 				token.Name,
 				token.Symbol,
@@ -251,28 +263,18 @@ func GetTokensFromAddressesWithIcons(
 	return tokenList
 }
 
+func GetTokensFromAddressesWithIcons(
+	chainID uint64,
+	tokenAddresses []string,
+	tokenIcons map[string]string,
+) []models.TokenListToken {
+	return getTokensFromAddressesWithIcons(chainID, tokenAddresses, tokenIcons, SetToken)
+}
+
 func GetTokensFromAddressesWithIcons_NOREPLACEMENT(
 	chainID uint64,
 	tokenAddresses []string,
 	tokenIcons map[string]string,
 ) []models.TokenListToken {
-	tokenList := []models.TokenListToken{}
-	tokenAddresses = append(tokenAddresses, chains.CHAINS[chainID].ExtraTokens...)
-	tokensInfo := RetrieveBasicInformations(chainID, tokenAddresses)
-
-	for _, address := range tokenAddresses {
-		if token, ok := tokensInfo[utils.ToAddress(address)]; ok {
-			if newToken, err := SetToken_NOREPLACEMENT(
-				token.Address,
-				token.Name,
-				token.Symbol,
-				tokenIcons[utils.ToAddress(address)],
-				chainID,
-				int(token.Decimals),
-			); err == nil {
-				tokenList = append(tokenList, newToken)
-			}
-		}
-	}
-	return tokenList
+	return getTokensFromAddressesWithIcons(chainID, tokenAddresses, tokenIcons, SetToken_NOREPLACEMENT)
 }

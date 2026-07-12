@@ -8,7 +8,6 @@ import (
 	solTokenMetadata "github.com/gagliardetto/metaplex-go/clients/token-metadata"
 	solana "github.com/gagliardetto/solana-go"
 	solToken "github.com/gagliardetto/solana-go/programs/token"
-	solRPC "github.com/gagliardetto/solana-go/rpc"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
 	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/utils"
@@ -23,7 +22,11 @@ type TSolanaMetadata struct {
 
 func FetchBasicInformations(chainID uint64, tokens []string) map[string]*ethereum.TERC20 {
 	tokenList := map[string]*ethereum.TERC20{}
-	client := ethereum.GetRPC(chainID).(*solRPC.Client)
+	client := ethereum.GetSolanaRPC(chainID)
+	if client == nil {
+		logs.Error(`[SOLANA] - No RPC client for chainID:`, chainID)
+		return tokenList
+	}
 	solPublicKeys := []solana.PublicKey{}
 	for _, address := range tokens {
 		solanaPublicKey, err := solana.PublicKeyFromBase58(address)
@@ -48,11 +51,14 @@ func FetchBasicInformations(chainID uint64, tokens []string) map[string]*ethereu
 			end = len(solPublicKeys)
 		}
 		out, err := client.GetMultipleAccounts(context.TODO(), solPublicKeys[i:end]...)
-		if err != nil {
+		if err != nil || out == nil {
 			logs.Error(`[SOLANA] - Error fetching token mint:`, err)
 			continue
 		}
 		for index, account := range out.Value {
+			if account == nil {
+				continue
+			}
 			key := solPublicKeys[i+index].String()
 			var mint solToken.Mint
 			if err = bin.NewBinDecoder(account.Data.GetBinary()).Decode(&mint); err != nil {
@@ -75,7 +81,7 @@ func FetchBasicInformations(chainID uint64, tokens []string) map[string]*ethereu
 			continue
 		}
 		resp, err := client.GetAccountInfo(context.TODO(), metaAddress)
-		if err != nil {
+		if err != nil || resp == nil || resp.Value == nil {
 			continue
 		}
 		d := bin.NewBorshDecoder(resp.Value.Data.GetBinary())

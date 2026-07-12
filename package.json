@@ -1,8 +1,10 @@
 {
   "name": "tokenlistooor",
-  "main": "index.js",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "verify": "node scripts/verify.mjs"
+  },
   "dependencies": {
     "ajv": "^7.0.3",
     "ajv-formats": "^1.5.1",
@@ -10,6 +12,6 @@
     "fs-extra": "^9.1.0"
   },
   "resolutions": {
-		"elliptic": "6.6.1"
-	}
+    "elliptic": "6.6.1"
+  }
 }

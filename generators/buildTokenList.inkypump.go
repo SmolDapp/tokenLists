@@ -54,7 +54,7 @@ func fetchInkypumpTokenList() []models.TokenListToken {
 func buildInkypumpTokenList() {
 	tokenList := helpers.LoadTokenListFromJsonFile(`inkypump.json`)
 	tokenList.Name = `Inkypump`
-	tokenList.LogoURI = `https://assets.smold.app/api/chain/57073/logo-128.png`
+	tokenList.LogoURI = chains.CHAINS[57073].LogoURI
 	tokenList.Keywords = []string{`inkypump`, `launcher`}
 	tokens := []models.TokenListToken{}
 	tokens = append(tokens, fetchInkypumpTokenList()...)

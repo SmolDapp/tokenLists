@@ -4,7 +4,6 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
@@ -20,7 +19,11 @@ func handleRegistryToken(chainID uint64, tokenAddresses []string, icons map[stri
 }
 
 func fetchTokenRegistryTokens(chainID uint64, registryAddress common.Address) []models.TokenListToken {
-	client := ethereum.GetRPC(chainID).(*ethclient.Client)
+	client := ethereum.GetEVMRPC(chainID)
+	if client == nil {
+		logs.Error(`No EVM RPC client for chainID:`, chainID)
+		return []models.TokenListToken{}
+	}
 	registry, err := contracts.NewTokenRegistryCaller(registryAddress, client)
 
 	if err != nil {

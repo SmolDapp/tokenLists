@@ -35,6 +35,16 @@ func getCurrentPath() string {
 	return path.Dir(filename)
 }
 
+// tokensEqualIgnoringOccurrence compares two tokens on their persisted fields
+// only, ignoring the Occurrence/OccurrenceFloat fields which are not serialized.
+func tokensEqualIgnoringOccurrence(a models.TokenListToken, b models.TokenListToken) bool {
+	a.Occurrence = 0
+	a.OccurrenceFloat = 0
+	b.Occurrence = 0
+	b.OccurrenceFloat = 0
+	return reflect.DeepEqual(a, b)
+}
+
 // CreateFile creates a file with the given path and returns the file object
 func CreateFile(p string) error {
 	if err := os.MkdirAll(p, 0770); err != nil {
@@ -48,14 +58,21 @@ func LoadTokenListFromJsonFile(filePath string) models.TokenListData[models.Toke
 	var tokenList models.TokenListData[models.TokenListToken]
 	content, err := os.ReadFile(BASE_PATH + `/lists/` + filePath)
 	if err != nil {
-		logs.Error(err)
-		if errors.Is(err, os.ErrNotExist) {
-			os.WriteFile(BASE_PATH+`/lists/`+filePath, []byte(`{}`), 0644)
+		if os.IsNotExist(err) {
+			if writeErr := os.WriteFile(BASE_PATH+`/lists/`+filePath, []byte(`{}`), 0644); writeErr != nil {
+				logs.Error(`refusing to continue: cannot create ` + filePath)
+				os.Exit(1)
+			}
+			return models.InitTokenList()
 		}
-		return models.InitTokenList()
+		logs.Error(`refusing to continue: cannot read existing ` + filePath)
+		os.Exit(1)
 	}
 	if err = json.Unmarshal(content, &tokenList); err != nil {
-		logs.Error(err)
+		if len(strings.TrimSpace(string(content))) > 0 {
+			logs.Error(`refusing to continue: cannot parse existing ` + filePath)
+			os.Exit(1)
+		}
 		return models.InitTokenList()
 	}
 
@@ -82,7 +99,7 @@ func SaveTokenListInJsonFile(
 	tokens := []models.TokenListToken{}
 	addresses := make(map[string]bool)
 	for _, token := range tokensMaybeDuplicates {
-		key := token.Address + strconv.FormatUint(token.ChainID, 10)
+		key := GetKey(token.ChainID, token.Address)
 		if _, ok := addresses[key]; !ok {
 			addresses[key] = true
 			tokens = append(tokens, token)
@@ -120,41 +137,28 @@ func SaveTokenListInJsonFile(
 		}
 	}
 
+	setToken := SetToken
+	if method == SavingMethodStandard_NOREPLACEMENT {
+		setToken = SetToken_NOREPLACEMENT
+	}
 	for _, token := range tokens {
 		if !chains.IsChainIDSupported(token.ChainID) {
 			continue
 		}
-		if method == SavingMethodStandard_NOREPLACEMENT {
-			newToken, err := SetToken_NOREPLACEMENT(
-				token.Address,
-				token.Name,
-				token.Symbol,
-				token.LogoURI,
-				token.ChainID,
-				token.Decimals,
-			)
-			if err != nil {
-				logs.Error(err)
-				continue
-			}
-			newToken.Occurrence = token.Occurrence
-			tokenList.NextTokensMap[GetKey(token.ChainID, token.Address)] = newToken
-		} else {
-			newToken, err := SetToken(
-				token.Address,
-				token.Name,
-				token.Symbol,
-				token.LogoURI,
-				token.ChainID,
-				token.Decimals,
-			)
-			if err != nil {
-				logs.Error(err)
-				continue
-			}
-			newToken.Occurrence = token.Occurrence
-			tokenList.NextTokensMap[GetKey(token.ChainID, token.Address)] = newToken
+		newToken, err := setToken(
+			token.Address,
+			token.Name,
+			token.Symbol,
+			token.LogoURI,
+			token.ChainID,
+			token.Decimals,
+		)
+		if err != nil {
+			logs.Error(err)
+			continue
 		}
+		newToken.Occurrence = token.Occurrence
+		tokenList.NextTokensMap[GetKey(token.ChainID, token.Address)] = newToken
 	}
 
 	/**************************************************************************
@@ -186,6 +190,11 @@ func SaveTokenListInJsonFile(
 		return errors.New(`token list is empty for ` + listName)
 	}
 
+	if len(tokenList.PreviousTokensMap) >= 50 && len(tokenList.NextTokensMap) < len(tokenList.PreviousTokensMap)/2 {
+		logs.Error(`refusing to save ` + listName + `: token count collapsed from ` + strconv.Itoa(len(tokenList.PreviousTokensMap)) + ` to ` + strconv.Itoa(len(tokenList.NextTokensMap)))
+		return errors.New(`token list shrank too much for ` + listName)
+	}
+
 	tokenList.Timestamp = time.Now().Format(time.RFC3339)
 	tokenList.Tokens = []models.TokenListToken{}
 
@@ -203,10 +212,9 @@ func SaveTokenListInJsonFile(
 		key := GetKey(token.ChainID, token.Address)
 		if _, ok := tokenList.PreviousTokensMap[key]; !ok {
 			shouldBumpMinor = true
-		} else if !reflect.DeepEqual(token, tokenList.PreviousTokensMap[key]) {
+		} else if !tokensEqualIgnoringOccurrence(token, tokenList.PreviousTokensMap[key]) {
 			shouldBumpPatch = true
 		}
-		tokenList.Tokens = append(tokenList.Tokens, token)
 		delete(tokenList.PreviousTokensMap, key)
 	}
 	if len(tokenList.PreviousTokensMap) > 0 {
@@ -241,7 +249,7 @@ func SaveTokenListInJsonFile(
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)
-	for i, k := range keys {
+	for _, k := range keys {
 		chainID, _ := strconv.ParseUint(strings.Split(k, `_`)[0], 10, 64)
 		if _, ok := tokenListPerChainID[chainID]; !ok {
 			tokenListPerChainID[chainID] = []models.TokenListToken{}
@@ -251,15 +259,14 @@ func SaveTokenListInJsonFile(
 		if (token.Name == `` || token.Symbol == `` || token.Decimals == 0) || chains.IsTokenIgnored(token.ChainID, token.Address) {
 			continue
 		}
-		tokenList.Tokens[i] = tokenList.NextTokensMap[k]
+		tokenList.Tokens = append(tokenList.Tokens, tokenList.NextTokensMap[k])
 		tokenListPerChainID[chainID] = append(tokenListPerChainID[chainID], tokenList.NextTokensMap[k])
 	}
 
 	if filePath == `popular.json` {
-		occurrence := func(p1, p2 *models.TokenListToken) bool {
-			return p1.Occurrence > p2.Occurrence
-		}
-		By(occurrence).Sort(tokenList.Tokens)
+		sort.Slice(tokenList.Tokens, func(i, j int) bool {
+			return tokenList.Tokens[i].Occurrence > tokenList.Tokens[j].Occurrence
+		})
 	}
 
 	/**************************************************************************
@@ -286,10 +293,9 @@ func SaveTokenListInJsonFile(
 		}
 
 		if filePath == `popular.json` {
-			occurrence := func(p1, p2 *models.TokenListToken) bool {
-				return p1.Occurrence > p2.Occurrence
-			}
-			By(occurrence).Sort(tokens)
+			sort.Slice(tokens, func(i, j int) bool {
+				return tokens[i].Occurrence > tokens[j].Occurrence
+			})
 		}
 		tokenList.Tokens = tokens
 		jsonData, err := json.MarshalIndent(tokenList, "", "  ")
@@ -386,7 +392,7 @@ func SaveChainListInJsonFile(
 		key := GetKey(token.ChainID, token.Address)
 		if _, ok := tokenList.PreviousTokensMap[key]; !ok {
 			shouldBumpMinor = true
-		} else if !reflect.DeepEqual(token, tokenList.PreviousTokensMap[key]) {
+		} else if !tokensEqualIgnoringOccurrence(token, tokenList.PreviousTokensMap[key]) {
 			shouldBumpPatch = true
 		}
 		tokenList.Tokens = append(tokenList.Tokens, token)
@@ -461,10 +467,9 @@ func SaveChainListInJsonFile(
 		/**************************************************************************
 		** Sort by occurence
 		**************************************************************************/
-		occurrence := func(p1, p2 *models.TokenListToken) bool {
-			return p1.Occurrence > p2.Occurrence
-		}
-		By(occurrence).Sort(tokens)
+		sort.Slice(tokens, func(i, j int) bool {
+			return tokens[i].Occurrence > tokens[j].Occurrence
+		})
 
 		/**************************************************************************
 		** Save the list

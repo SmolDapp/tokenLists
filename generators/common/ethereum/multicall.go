@@ -24,7 +24,6 @@ const SHOULD_LOG_WARNINGS = true
 type Call struct {
 	Name     string         `json:"name"`
 	Method   string         `json:"method"`
-	Version  string         `json:"version"`
 	Abi      *abi.ABI       `json:"abi"`
 	Target   common.Address `json:"target"`
 	CallData []byte         `json:"call_data"`
@@ -57,27 +56,33 @@ func NewMulticall(rpcURI string, multicallAddress common.Address) TEthMultiCalle
 		logs.Error("No rpcURI provided.")
 		return TEthMultiCaller{}
 	}
-	client, err := ethclient.Dial(rpcURI)
-	if err != nil {
-		logs.Error(err)
-		time.Sleep(time.Second)
-		return NewMulticall(rpcURI, multicallAddress)
+	for attempt := 0; attempt < 10; attempt++ {
+		client, err := ethclient.Dial(rpcURI)
+		if err != nil {
+			logs.Error(err)
+			time.Sleep(time.Second)
+			continue
+		}
+
+		// Load Multicall abi for later use
+		mcAbi, err := contracts.Multicall3MetaData.GetAbi()
+		if err != nil {
+			logs.Error(err)
+			client.Close()
+			time.Sleep(time.Second)
+			continue
+		}
+
+		return TEthMultiCaller{
+			Signer:          randomSigner(),
+			Client:          client,
+			Abi:             mcAbi,
+			ContractAddress: multicallAddress,
+		}
 	}
 
-	// Load Multicall abi for later use
-	mcAbi, err := contracts.Multicall3MetaData.GetAbi()
-	if err != nil {
-		logs.Error(err)
-		time.Sleep(time.Second)
-		return NewMulticall(rpcURI, multicallAddress)
-	}
-
-	return TEthMultiCaller{
-		Signer:          randomSigner(),
-		Client:          client,
-		Abi:             mcAbi,
-		ContractAddress: multicallAddress,
-	}
+	logs.Error("Failed to create multicall client after 10 attempts for:", rpcURI)
+	return TEthMultiCaller{}
 }
 
 func (caller *TEthMultiCaller) execute(
@@ -126,25 +131,17 @@ func (caller *TEthMultiCaller) ExecuteByBatch(
 
 	// Add calls to multicall structure for the contract
 	var multiCalls = make([]contracts.Multicall3Call, 0, len(calls))
-	var rawCalls = make([]Call, 0, len(calls))
 	for _, call := range calls {
 		multiCalls = append(multiCalls, call.GetMultiCall())
-		rawCalls = append(rawCalls, call)
 	}
 
 	for i := uint64(0); i < uint64(len(multiCalls)); {
 		var group []contracts.Multicall3Call
-		var rawCallsGroup []Call
-		if i > uint64(len(multiCalls)) {
-			break
-		} else if (i + batchSize) > uint64(len(multiCalls)) {
+		if (i + batchSize) > uint64(len(multiCalls)) {
 			group = multiCalls[i:]
-			rawCallsGroup = rawCalls[i:]
 		} else {
 			group = multiCalls[i : i+batchSize]
-			rawCallsGroup = rawCalls[i : i+batchSize]
 		}
-		_ = rawCallsGroup
 
 		tempPackedResp, err := caller.execute(group, blockNumber)
 		if err != nil {

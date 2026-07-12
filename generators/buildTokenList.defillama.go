@@ -15,28 +15,6 @@ type TDefillamaList struct {
 	Platforms map[string]string `json:"platforms"`
 }
 
-func defillamaMapNetworkNameToChainID(network string) uint64 {
-	switch network {
-	case `ethereum`:
-		return 1
-	case `optimistic-ethereum`:
-		return 10
-	case `binance-smart-chain`:
-		return 56
-	case `xdai`:
-		return 100
-	case `polygon-pos`:
-		return 137
-	case `fantom`:
-		return 250
-	case `arbitrum-one`:
-		return 42161
-	case `avalanche`:
-		return 43114
-	}
-	return 0
-}
-
 func fetchDefillamaTokenList() []models.TokenListToken {
 	list := helpers.FetchJSON[[]TDefillamaList](`https://defillama-datasets.llama.fi/tokenlist/all.json`)
 	listPerChainID := []models.TokenListToken{}
@@ -45,7 +23,7 @@ func fetchDefillamaTokenList() []models.TokenListToken {
 			continue
 		}
 		for platformName, addressOnPlatform := range v.Platforms {
-			chainID := defillamaMapNetworkNameToChainID(platformName)
+			chainID := coingeckoMapNetworkNameToChainID(platformName)
 			if !chains.IsChainIDSupported(chainID) {
 				continue
 			}

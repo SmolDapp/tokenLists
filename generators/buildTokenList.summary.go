@@ -2,13 +2,14 @@ package main
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"os"
 	"sort"
 	"strconv"
 	"time"
 
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
@@ -57,6 +58,14 @@ func listSupportedChains(list []models.TokenListToken) []int {
 	return detectedChains
 }
 
+func countTokensPerChain(tokens []models.TokenListToken) map[string]int {
+	tokenCountPerChain := make(map[string]int)
+	for _, token := range tokens {
+		tokenCountPerChain[strconv.FormatUint(token.ChainID, 10)]++
+	}
+	return tokenCountPerChain
+}
+
 func buildSummary() {
 	tokenListSummary := TTokenListSummary{}
 	tokenListSummary.Name = `Tokenlistooor summary`
@@ -82,14 +91,7 @@ func buildSummary() {
 		}
 		listElement.Metadata.SupportedChains = listSupportedChains(tokenList.Tokens)
 		listElement.Metadata.GenerationMethod = string(data.GenerationMethod)
-		listElement.Metadata.TokenCountPerChain = make(map[string]int)
-		for _, token := range tokenList.Tokens {
-			chainStr := strconv.FormatUint(token.ChainID, 10)
-			if _, ok := listElement.Metadata.TokenCountPerChain[chainStr]; !ok {
-				listElement.Metadata.TokenCountPerChain[chainStr] = 0
-			}
-			listElement.Metadata.TokenCountPerChain[chainStr]++
-		}
+		listElement.Metadata.TokenCountPerChain = countTokensPerChain(tokenList.Tokens)
 		tokenListSummary.Lists = append(tokenListSummary.Lists, listElement)
 	}
 
@@ -108,14 +110,7 @@ func buildSummary() {
 		}
 		listElement.Metadata.SupportedChains = listSupportedChains(tokenListooorList.Tokens)
 		listElement.Metadata.GenerationMethod = string(GenerationAPI)
-		listElement.Metadata.TokenCountPerChain = make(map[string]int)
-		for _, token := range tokenListooorList.Tokens {
-			chainStr := strconv.FormatUint(token.ChainID, 10)
-			if _, ok := listElement.Metadata.TokenCountPerChain[chainStr]; !ok {
-				listElement.Metadata.TokenCountPerChain[chainStr] = 0
-			}
-			listElement.Metadata.TokenCountPerChain[chainStr]++
-		}
+		listElement.Metadata.TokenCountPerChain = countTokensPerChain(tokenListooorList.Tokens)
 		tokenListSummary.Lists = append(tokenListSummary.Lists, listElement)
 	}
 	sort.Slice(tokenListSummary.Lists, func(i, j int) bool {
@@ -137,14 +132,7 @@ func buildSummary() {
 		}
 		listElement.Metadata.SupportedChains = listSupportedChains(popular.Tokens)
 		listElement.Metadata.GenerationMethod = string(GenerationAPI)
-		listElement.Metadata.TokenCountPerChain = make(map[string]int)
-		for _, token := range popular.Tokens {
-			chainStr := strconv.FormatUint(token.ChainID, 10)
-			if _, ok := listElement.Metadata.TokenCountPerChain[chainStr]; !ok {
-				listElement.Metadata.TokenCountPerChain[chainStr] = 0
-			}
-			listElement.Metadata.TokenCountPerChain[chainStr]++
-		}
+		listElement.Metadata.TokenCountPerChain = countTokensPerChain(popular.Tokens)
 		//prepend the popular list
 		tokenListSummary.Lists = append([]TMinTokenListData{listElement}, tokenListSummary.Lists...)
 	}
@@ -167,18 +155,17 @@ func buildSummary() {
 			}
 			listElement.Metadata.SupportedChains = listSupportedChains(chainList.Tokens)
 			listElement.Metadata.GenerationMethod = string(GenerationChain)
-			listElement.Metadata.TokenCountPerChain = make(map[string]int)
-			for _, token := range chainList.Tokens {
-				chainStr := strconv.FormatUint(token.ChainID, 10)
-				if _, ok := listElement.Metadata.TokenCountPerChain[chainStr]; !ok {
-					listElement.Metadata.TokenCountPerChain[chainStr] = 0
-				}
-				listElement.Metadata.TokenCountPerChain[chainStr]++
-			}
+			listElement.Metadata.TokenCountPerChain = countTokensPerChain(chainList.Tokens)
 			tokenListSummary.Lists = append(tokenListSummary.Lists, listElement)
 		}
 	}
 
-	jsonData, _ := json.MarshalIndent(tokenListSummary, "", "  ")
-	ioutil.WriteFile(helpers.BASE_PATH+`/lists/summary.json`, jsonData, 0644)
+	jsonData, err := json.MarshalIndent(tokenListSummary, "", "  ")
+	if err != nil {
+		logs.Error(err)
+		return
+	}
+	if err := os.WriteFile(helpers.BASE_PATH+`/lists/summary.json`, jsonData, 0644); err != nil {
+		logs.Error(err)
+	}
 }

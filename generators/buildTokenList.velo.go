@@ -4,7 +4,6 @@ import (
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/contracts"
 	"github.com/migratooor/tokenLists/generators/common/ethereum"
@@ -21,7 +20,11 @@ func handleVeloTokenList(chainID uint64, tokenAddresses []string) []models.Token
 }
 
 func fetchVeloLikeTokenList(chainID uint64, sugarAddress common.Address) []models.TokenListToken {
-	client := ethereum.GetRPC(chainID).(*ethclient.Client)
+	client := ethereum.GetEVMRPC(chainID)
+	if client == nil {
+		logs.Error(`No EVM RPC client for chainID:`, chainID)
+		return []models.TokenListToken{}
+	}
 	veloSugar, err := contracts.NewVeloSugarV2Caller(sugarAddress, client)
 	if err != nil {
 		logs.Error(err)
@@ -37,16 +40,19 @@ func fetchVeloLikeTokenList(chainID uint64, sugarAddress common.Address) []model
 			logs.Error(err)
 			break
 		}
+		if len(allTokens) == 0 {
+			break
+		}
 		for _, token := range allTokens {
 			addressesMap[utils.ToAddress(token.Token0.Hex())] = true
 			addressesMap[utils.ToAddress(token.Token1.Hex())] = true
 			addressesMap[utils.ToAddress(token.EmissionsToken.Hex())] = true
 			addressesMap[utils.ToAddress(token.Lp.Hex())] = true
 		}
-		// Used to remove the duplicates
-		for address := range addressesMap {
-			addressesSlice = append(addressesSlice, address)
-		}
+	}
+	// Used to remove the duplicates
+	for address := range addressesMap {
+		addressesSlice = append(addressesSlice, address)
 	}
 	return handleVeloTokenList(chainID, addressesSlice)
 }

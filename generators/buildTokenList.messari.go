@@ -23,28 +23,6 @@ type TMessariList struct {
 	Tokens []TMessariTokenData `json:"data,omitempty"`
 }
 
-func messariMapNetworkNameToChainID(network string) uint64 {
-	switch network {
-	case `ethereum`:
-		return 1
-	case `optimistic-ethereum`:
-		return 10
-	case `binance-smart-chain`:
-		return 56
-	case `xdai`:
-		return 100
-	case `polygon-pos`:
-		return 137
-	case `fantom`:
-		return 250
-	case `arbitrum-one`:
-		return 42161
-	case `avalanche`:
-		return 43114
-	}
-	return 0
-}
-
 func fetchMessariTokenList() []models.TokenListToken {
 	limit := 500
 	page := 1
@@ -60,7 +38,7 @@ func fetchMessariTokenList() []models.TokenListToken {
 		for _, token := range list.Tokens {
 			logoURI := `https://asset-images.messari.io/images/` + token.ID + `/128.png`
 			for _, platformData := range token.Addresses {
-				chainID := messariMapNetworkNameToChainID(platformData.Platform)
+				chainID := coingeckoMapNetworkNameToChainID(platformData.Platform)
 				if !chains.IsChainIDSupported(chainID) {
 					continue
 				}

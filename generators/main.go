@@ -47,11 +47,11 @@ func main() {
 				GENERATORS[arg].Exec()
 				logs.Success(`Done!`)
 			} else {
-				if arg == `popular` {
-					break
+				if arg == `popular` || strings.HasPrefix(arg, `--`) {
+					continue
 				}
 				logs.Error(`Unknown generator:`, arg)
-				os.Exit(0)
+				os.Exit(1)
 			}
 		}
 	}

@@ -33,10 +33,7 @@ type TSolanaFMEndpoint struct {
 var solanaFMTokenEndpoint = `https://api.solana.fm/v0/tokens`
 
 func fetchSolanaFMTokenList() []models.TokenListToken {
-	tokenLists := []models.TokenListToken{}
-
 	next := ``
-	round := 0
 	tokenAddresses := []string{}
 	for {
 		fetchingURL := solanaFMTokenEndpoint
@@ -58,10 +55,8 @@ func fetchSolanaFMTokenList() []models.TokenListToken {
 		if next == `` {
 			break
 		}
-		round++
 	}
-	tokenLists = helpers.GetTokensFromAddresses(chains.SOLANA.ID, tokenAddresses)
-	return tokenLists
+	return helpers.GetTokensFromAddresses(chains.SOLANA.ID, tokenAddresses)
 }
 
 func buildSolanaFMTokenList() {
