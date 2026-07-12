@@ -51,7 +51,7 @@ func main() {
 					continue
 				}
 				logs.Error(`Unknown generator:`, arg)
-				os.Exit(0)
+				os.Exit(1)
 			}
 		}
 	}

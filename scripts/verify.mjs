@@ -70,11 +70,11 @@ function validate(directory, validators) {
           for (const error of validator.errors) {
             if (error.keyword === "enum") {
               console.log(
-                ` - ${error.keyword}: ${error.dataPath} ${error.message}: ${error.params.allowedValues.join(", ")}`,
+                ` - ${error.keyword}: ${error.instancePath} ${error.message}: ${error.params.allowedValues.join(", ")}`,
               );
             } else {
               console.log(
-                ` - ${error.keyword}: ${error.dataPath} ${error.message}`,
+                ` - ${error.keyword}: ${error.instancePath} ${error.message}`,
               );
             }
           }
