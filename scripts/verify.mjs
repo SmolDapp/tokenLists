@@ -84,15 +84,21 @@ function validate(directory, validators) {
         if (Array.isArray(data.tokens)) {
           const seenTokens = new Map();
           for (const token of data.tokens) {
+            if (!token || typeof token !== "object") {
+              console.error(`Error: "${file}" has a non-object token entry.`);
+              allValid = false;
+              continue;
+            }
+            const chainId = token.chainId;
             const address = String(token.address);
             let dedupeAddress = address;
             if (/^0x[0-9a-fA-F]{40}$/.test(address)) {
               dedupeAddress = address.toLowerCase();
             }
-            const key = `${token.chainId}-${dedupeAddress}`;
+            const key = `${chainId}-${dedupeAddress}`;
             if (seenTokens.has(key)) {
               console.error(
-                `Error: "${file}" has a duplicate token for chainId ${token.chainId} and address "${address}".`,
+                `Error: "${file}" has a duplicate token for chainId ${chainId} and address "${address}".`,
               );
               allValid = false;
             } else {
@@ -118,7 +124,7 @@ function validate(directory, validators) {
         }
       } catch (error) {
         console.error(
-          `Error: "${file}" is not a valid JSON file: [${error.argument}: ${error.reason} for value ${error.value}]`,
+          `Error: "${file}" is not a valid JSON file: ${error.message}`,
         );
         allValid = false;
         continue;
