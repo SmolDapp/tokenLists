@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
 	"github.com/migratooor/tokenLists/generators/common/logs"
@@ -179,10 +178,10 @@ func buildPopularList() {
 	tokens := helpers.GetTokensFromList(allTokensPlain)
 	occurrencePerAddress := make(map[string]float64)
 	for _, token := range allTokensPlain {
-		occurrencePerAddress[common.HexToAddress(token.Address).Hex()] = token.OccurrenceFloat
+		occurrencePerAddress[helpers.GetKey(token.ChainID, token.Address)] = token.OccurrenceFloat
 	}
 	for i, t := range tokens {
-		if occurrence, ok := occurrencePerAddress[common.HexToAddress(t.Address).Hex()]; ok {
+		if occurrence, ok := occurrencePerAddress[helpers.GetKey(t.ChainID, t.Address)]; ok {
 			tokens[i].OccurrenceFloat = occurrence
 		}
 	}
