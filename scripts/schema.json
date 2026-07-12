@@ -50,12 +50,12 @@
         "properties": {
           "chainId": {
             "type": "integer",
-            "description": "The chain ID of the Ethereum network where this token is deployed",
+            "description": "The chain ID of the network where this token is deployed (EVM chains or Solana)",
             "minimum": 1
           },
           "address": {
             "type": "string",
-            "description": "The checksummed address of the token on the specified chain ID",
+            "description": "The token address on the specified chain: a checksummed 0x address for EVM chains, or a base58 address for Solana",
             "pattern": "^(0x[a-fA-F0-9]{40}|[1-9A-HJ-NP-Za-km-z]{32,44})$"
           },
           "decimals": {

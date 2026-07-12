@@ -22,11 +22,19 @@ func fetchJSON[T any](uri string) (data T) {
 
 	if u.Hostname() == `api.portals.fi` ||
 		u.Hostname() == `api.1inch.io` {
-		req, _ := http.NewRequest("GET", uri, nil)
+		req, reqErr := http.NewRequest("GET", uri, nil)
+		if reqErr != nil {
+			logs.Error(reqErr)
+			return data
+		}
 		req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36")
 		resp, err = http.DefaultClient.Do(req)
 	} else if u.Hostname() == `api.1inch.dev` {
-		req, _ := http.NewRequest("GET", uri, nil)
+		req, reqErr := http.NewRequest("GET", uri, nil)
+		if reqErr != nil {
+			logs.Error(reqErr)
+			return data
+		}
 		onInchBearerFromEnv := os.Getenv("BEARER_FOR_1INCH")
 		req.Header.Set("Authorization", "Bearer "+onInchBearerFromEnv)
 		req.Header.Set("Content-Type", "application/json")

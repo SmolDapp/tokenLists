@@ -9,6 +9,7 @@ import (
 
 	"github.com/migratooor/tokenLists/generators/common/chains"
 	"github.com/migratooor/tokenLists/generators/common/helpers"
+	"github.com/migratooor/tokenLists/generators/common/logs"
 	"github.com/migratooor/tokenLists/generators/common/models"
 )
 
@@ -159,6 +160,12 @@ func buildSummary() {
 		}
 	}
 
-	jsonData, _ := json.MarshalIndent(tokenListSummary, "", "  ")
-	os.WriteFile(helpers.BASE_PATH+`/lists/summary.json`, jsonData, 0644)
+	jsonData, err := json.MarshalIndent(tokenListSummary, "", "  ")
+	if err != nil {
+		logs.Error(err)
+		return
+	}
+	if err := os.WriteFile(helpers.BASE_PATH+`/lists/summary.json`, jsonData, 0644); err != nil {
+		logs.Error(err)
+	}
 }
