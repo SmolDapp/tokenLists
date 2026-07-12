@@ -20,6 +20,10 @@ func handleRegistryToken(chainID uint64, tokenAddresses []string, icons map[stri
 
 func fetchTokenRegistryTokens(chainID uint64, registryAddress common.Address) []models.TokenListToken {
 	client := ethereum.GetEVMRPC(chainID)
+	if client == nil {
+		logs.Error(`No EVM RPC client for chainID:`, chainID)
+		return []models.TokenListToken{}
+	}
 	registry, err := contracts.NewTokenRegistryCaller(registryAddress, client)
 
 	if err != nil {

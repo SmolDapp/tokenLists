@@ -21,6 +21,10 @@ func handleVeloTokenList(chainID uint64, tokenAddresses []string) []models.Token
 
 func fetchVeloLikeTokenList(chainID uint64, sugarAddress common.Address) []models.TokenListToken {
 	client := ethereum.GetEVMRPC(chainID)
+	if client == nil {
+		logs.Error(`No EVM RPC client for chainID:`, chainID)
+		return []models.TokenListToken{}
+	}
 	veloSugar, err := contracts.NewVeloSugarV2Caller(sugarAddress, client)
 	if err != nil {
 		logs.Error(err)

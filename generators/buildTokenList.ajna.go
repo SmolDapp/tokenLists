@@ -18,6 +18,10 @@ func handleAjnaTokenList(chainID uint64, tokenAddresses []string) []models.Token
 
 func fetchAjnaTokenList(chainID uint64, sugarAddress common.Address) []models.TokenListToken {
 	client := ethereum.GetEVMRPC(chainID)
+	if client == nil {
+		logs.Error(`No EVM RPC client for chainID:`, chainID)
+		return []models.TokenListToken{}
+	}
 	ajnaPoolFactory, err := contracts.NewAjnaPoolFactoryCaller(sugarAddress, client)
 	if err != nil {
 		logs.Error(err)

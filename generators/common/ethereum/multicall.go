@@ -68,6 +68,7 @@ func NewMulticall(rpcURI string, multicallAddress common.Address) TEthMultiCalle
 		mcAbi, err := contracts.Multicall3MetaData.GetAbi()
 		if err != nil {
 			logs.Error(err)
+			client.Close()
 			time.Sleep(time.Second)
 			continue
 		}

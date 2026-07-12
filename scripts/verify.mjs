@@ -6,17 +6,24 @@ import ethers from "ethers";
 const DataDirectory = "./lists/";
 const SkippedNames = ["index.json", "summary.json"];
 const StandardExtensions = [".json"];
+const SolanaChainId = 1151111081099710;
+const EVMAddress = /^0x[0-9a-fA-F]{40}$/;
+const Base58Address = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
 
 function loadValidators() {
   const ajv = new Ajv.default();
   addFormats(ajv);
   ajv.addFormat("address", (value) => {
-    if (ethers.utils.getAddress(value) === value) {
-      return true;
+    try {
+      if (ethers.utils.getAddress(value) === value) {
+        return true;
+      }
+      console.error(
+        `Error: "${value}" is not a valid address. Should be ${ethers.utils.getAddress(value)}.`,
+      );
+    } catch {
+      console.error(`Error: "${value}" is not a valid address.`);
     }
-    console.error(
-      `Error: "${value}" is not a valid address. Should be ${ethers.utils.getAddress(value)}.`,
-    );
     return false;
   });
   const validators = {};
@@ -105,7 +112,21 @@ function validate(directory, validators) {
               seenTokens.set(key, true);
             }
 
-            if (/^0x[0-9a-fA-F]{40}$/.test(address)) {
+            if (chainId === SolanaChainId) {
+              if (!Base58Address.test(address)) {
+                console.error(
+                  `Error: "${file}" has a token on the Solana chain with a non-base58 address "${address}".`,
+                );
+                allValid = false;
+              }
+            } else if (!EVMAddress.test(address)) {
+              console.error(
+                `Error: "${file}" has a token on EVM chainId ${chainId} with a non-0x address "${address}".`,
+              );
+              allValid = false;
+            }
+
+            if (EVMAddress.test(address)) {
               try {
                 if (ethers.utils.getAddress(address) !== address) {
                   console.error(

@@ -111,6 +111,10 @@ func fetchUniswapPoolsTokenList(extra map[string]interface{}) ([]models.TokenLis
 			lastBlockSyncForChainID, _ = strconv.ParseUint(sync.(string), 10, 64)
 		}
 		client := ethereum.GetEVMRPC(chainID)
+		if client == nil {
+			logs.Error(`No EVM RPC client for chainID:`, chainID)
+			continue
+		}
 		currentBlockNumber, _ := client.BlockNumber(context.Background())
 		threshold := uint64(100_000)
 		if chainID == 56 {
