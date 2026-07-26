@@ -1,9 +1,9 @@
 {
   "name": "Bebop",
   "description": "",
-  "timestamp": "2026-07-19T01:29:37Z",
+  "timestamp": "2026-07-26T01:49:57Z",
   "version": {
-    "major": 29,
+    "major": 30,
     "minor": 0,
     "patch": 0
   },
@@ -15,6 +15,22 @@
       "name": "Chip",
       "symbol": "CHIP",
       "logoURI": "https://assets.smold.app/api/token/42161/0x0C1c1C109FE34733fca54b82d7B46B75CFb71F6e/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x0c880f6761F1af8d9Aa9C466984b80DAb9a8c9e8",
+      "name": "Pendle",
+      "symbol": "PENDLE",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x0c880f6761F1af8d9Aa9C466984b80DAb9a8c9e8/logo-128.png",
+      "chainId": 42161,
+      "decimals": 18
+    },
+    {
+      "address": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978",
+      "name": "Curve DAO Token",
+      "symbol": "CRV",
+      "logoURI": "https://assets.smold.app/api/token/42161/0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978/logo-128.png",
       "chainId": 42161,
       "decimals": 18
     },
@@ -95,14 +111,6 @@
       "name": "ChainLink Token",
       "symbol": "LINK",
       "logoURI": "https://tokens.1inch.io/0x514910771af9ca656af840dff83e8264ecf986ca.png",
-      "chainId": 42161,
-      "decimals": 18
-    },
-    {
-      "address": "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
-      "name": "GMX",
-      "symbol": "GMX",
-      "logoURI": "https://tokens.1inch.io/0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a.png",
       "chainId": 42161,
       "decimals": 18
     }
